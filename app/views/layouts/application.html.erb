@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Magmateaser</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <!--[if lte IE 6]>
+    <script src="assets/ie6/warning.js"></script><script>window.onload=function(){e("assets/ie6/")}</script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+  <![endif]-->
+</head>
+<!--[if lte IE 6 ]> <body id="ie6" class="ie"> <![endif]-->
+  <!--[if IE 7 ]> <body id="ie7" class="ie"> <![endif]-->
+  <!--[if IE 8 ]> <body id="ie8" class="ie"> <![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+
+<%= yield %>
+
+</body>
+</html>
