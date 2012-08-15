@@ -13,8 +13,8 @@ $(function() {
 });
 
 $(document).ready(function () {
-	$("#parallax").pause(1000).animate({opacity: '1'},{duration: 1000});
-	$("h1").pause(2000).fadeIn(1000);
-    $("#calltoaction").pause(2400).fadeIn(1000);
-    $("#fresh-paint-pic").pause(3000).fadeIn(1000);
+	$("h1").pause(1000).fadeIn(1000);
+    $("#calltoaction").pause(1400).fadeIn(1000);
+    $("#fresh-paint-pic").pause(2000).fadeIn(1000);
+    $("#parallax").pause(3000).animate({opacity: '1'},{duration: 1000});
 });
