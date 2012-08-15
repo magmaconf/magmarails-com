@@ -1,4 +1,6 @@
 $(function() {
+  $('#calltoaction, h1, #fresh-paint-pic').css("display", "none");  
+
   $('.lights').zlayer({mass:15,force:"push",canvas:'#main'});
   $('.floor').zlayer({mass:20,force:"push",confine:"x",canvas:'#main'});
   $('.body').zlayer({mass:50,force:"pull",canvas:'#main'});
