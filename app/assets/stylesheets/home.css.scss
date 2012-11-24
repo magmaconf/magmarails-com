@@ -1,0 +1,72 @@
+body {
+  color: #333;
+  font-size: 14px;
+  font-family: 'Trebuchet MS', Trebuchet, 'Helvetica Neue', Helvetica, sans-serif;
+  background: #f3f3f3;
+  position: relative;
+  background: url('/assets/BKG.jpg');
+}
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Six Caps', sans-serif;
+  font-weight: normal;
+}
+a {
+  color: '#CE1000'dd;
+  text-decoration: none;
+  &:visited {
+    color: #ce1000;
+    text-decoration: none;
+  }
+  &:hover{
+    color: #666;
+  }
+}
+section#main {
+  margin: 0 auto;
+  width: 491px;
+  margin-top: 40px;
+  ul{
+      padding-bottom: 20px;
+    li {
+      list-style: none;
+      float: left;
+      height: 56px;
+      background-position: center;
+      background-repeat: no-repeat;
+      a { width: 56px; height: 56px; display: block; margin: 0 15px;}
+      &.find_us {
+        background-image:url('/assets/find-us-on.png');
+        width:79px;
+        margin-right: 25px;
+        margin-left: 49px;
+      }
+      &.fb{
+        background-image:url('/assets/Facebook.png');
+        &:hover {
+          background-image:url('/assets/Facebook-ON.png');
+        }
+      }
+      &.twt{
+        background-image:url('/assets/Twitter.png');
+        &:hover {
+          background-image:url('/assets/Twitter-ON.png');
+        }
+      }
+      &.gplus{
+        background-image: url('/assets/Gplus.png');
+        &:hover {
+          background-image:url('/assets/Gplus-ON.png');
+        }
+      }
+    }
+  }
+  .clearfix {
+    float: none;
+    display:block;
+  }
+}
