@@ -4,7 +4,7 @@ body {
   font-family: 'Trebuchet MS', Trebuchet, 'Helvetica Neue', Helvetica, sans-serif;
   background: #f3f3f3;
   position: relative;
-  background: url('/assets/BKG.jpg');
+  background: url('/assets/background.jpg');
 }
 html, body {
   position: relative;
@@ -36,31 +36,32 @@ section#main {
       list-style: none;
       float: left;
       height: 56px;
-      background-position: center;
       background-repeat: no-repeat;
+      background-image: url('/assets/social-sprint.png');
       a { width: 56px; height: 56px; display: block; margin: 0 15px;}
       &.find_us {
-        background-image:url('/assets/find-us-on.png');
-        width:79px;
+        background-image:url('/assets/stay-tuned-on.png');
+      background-position: center;
+        width:95px;
         margin-right: 25px;
-        margin-left: 49px;
+        margin-left: 41px;
       }
       &.fb{
-        background-image:url('/assets/Facebook.png');
+        background-position: 0 0;
         &:hover {
-          background-image:url('/assets/Facebook-ON.png');
+          background-position: 0 -64px;
         }
       }
       &.twt{
-        background-image:url('/assets/Twitter.png');
+        background-position: -84px 0;
         &:hover {
-          background-image:url('/assets/Twitter-ON.png');
+          background-position: -84px -64px;
         }
       }
       &.gplus{
-        background-image: url('/assets/Gplus.png');
+          background-position: -163px 0;
         &:hover {
-          background-image:url('/assets/Gplus-ON.png');
+          background-position: -163px -64px;
         }
       }
     }
@@ -68,5 +69,6 @@ section#main {
   .clearfix {
     float: none;
     display:block;
+    background: none;
   }
 }
