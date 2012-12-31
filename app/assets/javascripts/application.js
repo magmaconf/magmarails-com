@@ -5,4 +5,6 @@
 // the compiled file.
 //
 //= require jquery
+//= require jquery.easing.1.3
+//= require jquery.color-2.1.0.min
 //= require_tree .

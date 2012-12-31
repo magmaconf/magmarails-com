@@ -1,2 +1,23 @@
-%h1 Home#index
+#slider
+  #home.slide.active.mask
+    .container
+      .reylero
+        = image_tag 'home/gray-reylero.png', class: 'img-gray'
+        = image_tag 'home/color-reylero.png', class: 'img-color'
+        = image_tag 'home/bottom-bagde.png', class: 'bottom-badge'
+      = link_to '#', id: 'unmask' do
+        = image_tag 'home/reylero-pulling.png'
 
+  -# #call-for-papers.slide
+  -#   .container
+  -#     %span Call for papers
+  -#     %span otro
+  -# #keynotes.slide
+  -#   .container
+  -#     %span keynotes
+
+
+:javascript
+  $(function() {
+    return window.home = new Magma.home;
+  });

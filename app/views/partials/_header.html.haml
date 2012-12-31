@@ -1,0 +1,27 @@
+%nav.navbar.navbar-fixed-top
+  .container
+    %ul.pull-left.main-nav
+      %li
+        = link_to 'Spotlight'
+      %li
+        = link_to 'Keynotes'
+      %li
+        = link_to 'Venue'
+      %li
+        = link_to 'Call for papers'
+      %li
+        = link_to 'Schedule'
+    %ul.pull-right.social
+      %li
+        %span Stay tuned:
+      %li.fb
+        = link_to 'facebook', '#'
+      %li.twt
+        = link_to 'twitter', '#'
+      %li.gplus
+        = link_to 'google plus', '#'
+
+    = link_to '#', class: 'logo' do
+      = image_tag 'logo.png'
+
+
