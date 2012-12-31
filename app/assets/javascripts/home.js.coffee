@@ -18,7 +18,7 @@ class Magma.home
   init_unmask: () ->
     $(window).scroll =>
       val = 880
-      if navigator.platform == 'iPad Simulator' then val = 470
+      if navigator.platform == 'iPad' then val = 470
       if $(window).scrollTop() > val && $('.active').hasClass 'mask'
         @color_transition('remove-mask')
         $('#slider.mask').removeClass 'mask'
@@ -45,7 +45,6 @@ class Magma.home
       e.preventDefault()
       action = $(e.currentTarget).data('action')
       @color_transition action
-      # hide_height =  $('.slide.active').height()
       remove_id = $('.active').attr('id')
       console.log $("##{remove_id}").first()
       $("##{remove_id}").stop().animate
@@ -53,8 +52,8 @@ class Magma.home
       ,
         duration: 500
         step: (now, fx) =>
-          # console.log now
           if parseInt(now) > -1360
+            if $(window).scrollTop() > 0 then $(window).scrollTop 0
             $("##{remove_id}").removeClass 'active'
             $("##{action}").addClass 'active'
             @items_transition action
