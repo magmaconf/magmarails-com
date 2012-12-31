@@ -1,20 +1,23 @@
-#slider
+#slider.home.mask
   #home.slide.active.mask
     .container
       .reylero
         = image_tag 'home/gray-reylero.png', class: 'img-gray'
         = image_tag 'home/color-reylero.png', class: 'img-color'
         = image_tag 'home/bottom-bagde.png', class: 'bottom-badge'
-      = link_to '#', id: 'unmask' do
-        = image_tag 'home/reylero-pulling.png'
+    = link_to '#', id: 'unmask' do
+      = image_tag 'home/reylero-pulling.png'
 
-  -# #call-for-papers.slide
-  -#   .container
-  -#     %span Call for papers
-  -#     %span otro
-  -# #keynotes.slide
-  -#   .container
-  -#     %span keynotes
+  #keynotes.slide
+    .container
+      = image_tag 'keynotes/keynotes-main.png'
+
+  #call-for-papers.slide
+    .container
+      = image_tag 'cfp/cfp-main.png'
+      = link_to 'cfp.magmarails.com' do
+        = image_tag 'cfp/cfp-link.png'
+
 
 
 :javascript

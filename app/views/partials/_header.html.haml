@@ -2,24 +2,20 @@
   .container
     %ul.pull-left.main-nav
       %li
-        = link_to 'Spotlight'
+        = link_to 'Spotlight', '#', "data-action" => 'home'
       %li
-        = link_to 'Keynotes'
+        = link_to 'Keynotes', '#', "data-action" => 'keynotes'
       %li
-        = link_to 'Venue'
-      %li
-        = link_to 'Call for papers'
-      %li
-        = link_to 'Schedule'
+        = link_to 'Call for papers', '#', "data-action" => 'call-for-papers'
     %ul.pull-right.social
       %li
         %span Stay tuned:
       %li.fb
-        = link_to 'facebook', '#'
+        = link_to 'facebook', 'http://www.facebook.com/comunidadmagmarails'
       %li.twt
-        = link_to 'twitter', '#'
+        = link_to 'twitter', 'http://twitter.com/magmarails'
       %li.gplus
-        = link_to 'google plus', '#'
+        = link_to 'google plus', 'https://plus.google.com/108479926406306482358/posts'
 
     = link_to '#', class: 'logo' do
       = image_tag 'logo.png'

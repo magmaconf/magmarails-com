@@ -70,7 +70,7 @@ nav {
   .logo{
     display: block;
     position: relative;
-    top: 0px;
+    top: 50px;
     margin: 0 auto;
     width: 272px;
   }
@@ -82,26 +82,42 @@ nav {
 #slider {
   position: relative;
   overflow: hidden;
+  background-image: url('/assets/main-bk.png');
+  background-position: top center !important;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
+  &.home {
+    background-color: #a2cebd;
+  }
+  &.mask {
+    background-color: #d4d4d4;
+  }
+  &.call-for-papers{
+    background-color: #84171a;
+  }
+  &.keynotes {
+    background-color: #e2a63c;
+  }
 
   .slide {
-
-    background-image: url('/assets/main-bk.png');
-    background-position: top center !important;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    display: none;
+    width: 100%;
+  	position: relative;
 
     .container {
+  	  position: relative;
     }
-    width: 100%;
-    display: block;
-  	position: relative;
 
     #h1 {
       position: relative;
     }
+
+    &.active {
+      display: block;
+    }
   }
   #home{
-    background-color: #a2cebd;
     .reylero {
       position: relative;
       display: block;
@@ -135,7 +151,6 @@ nav {
 
     }
     &.mask {
-      background-color: #d4d4d4;
 
       .img-gray{
         opacity: 1;
@@ -157,9 +172,32 @@ nav {
     }
   }
   #call-for-papers{
-    background-color: red;
+    min-height: 1000px;
+    .title {
+      position: absolute;
+      right: 2000px;
+    }
+    .container {
+      opacity: 0;
+    }
+    img {
+      display: block;
+      width: 819px;
+      margin: 0 auto;
+      margin-top: 65px;
+    }
   }
   #keynotes{
-    background-color: yellow;
+    min-height: 1000px;
+    .container {
+      opacity: 0;
+    }
+    img {
+      display: block;
+      width: 819px;
+      margin: 0 auto;
+      margin-top: 65px;
+    }
   }
+
 }
