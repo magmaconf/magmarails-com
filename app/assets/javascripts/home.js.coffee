@@ -6,13 +6,20 @@ class Magma.home
     @init_slide_sizes()
     @init_unmask()
     @init_navigation()
+    @init_rotation_event()
 
   init_slide_sizes: () ->
     width = $(window).width()
 
+  init_rotation_event: () ->
+    $(window).bind 'orientationchange', () ->
+      window.location.reload()
+
   init_unmask: () ->
     $(window).scroll =>
-      if $(window).scrollTop() > 880 && $('.active').hasClass 'mask'
+      val = 880
+      if navigator.platform == 'iPad Simulator' then val = 470
+      if $(window).scrollTop() > val && $('.active').hasClass 'mask'
         @color_transition('remove-mask')
         $('#slider.mask').removeClass 'mask'
         $('#unmask').animate
@@ -21,7 +28,8 @@ class Magma.home
         ,
           duration: 4000
           step: (now, fx) ->
-            if parseInt(now) > 360
+            val = 360
+            if parseInt(now) > val
               $('.slide .img-gray').animate
                 opacity: 0
               , 1000

@@ -1,5 +1,7 @@
 body {
   margin-top: 75px;
+  font-family: 'Oswald', sans-serif !important;
+  font-weight: normal !important;
 }
 nav {
   // position: fixed;
@@ -17,6 +19,8 @@ nav {
         display: inline-block;
         padding: 0 5px;
         color: gray;
+        font-family: 'Oswald', sans-serif;
+        font-weight: normal;
       }
     }
     &.main-nav {
@@ -74,7 +78,7 @@ nav {
     position: relative;
     top: 50px;
     margin: 0 auto;
-    width: 272px;
+    width: 214px;
   }
 }
 .long {
@@ -83,6 +87,7 @@ nav {
 
 #slider {
   position: relative;
+  z-index: 0;
   overflow: hidden;
   background-image: url('/assets/main-bk.png');
   background-position: top center !important;
@@ -203,3 +208,28 @@ nav {
   }
 
 }
+
+
+.ui-bar-a {
+  border: none !important;
+  background: white !important;
+  color: gray !important;
+  font-weight: normal !important;
+  text-shadow: none !important;
+  background-image: none !important;
+  font-family: 'Oswald', sans-serif !important;
+
+}
+.ui-bar-a .ui-link {
+  color: gray !important;
+  font-family: 'Oswald', sans-serif !important;
+  font-weight: normal !important;
+}
+
+@media (min-width: 768px) and (max-width: 979px)  {
+  /* For general iPad layouts */
+  .logo {
+    top: -7px !important;
+  }
+}
+

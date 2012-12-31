@@ -3,7 +3,8 @@
   %head
     %title Magma Rails 2013: SAVE THE DATE
     %meta{:charset => "utf-8"}
-    %meta{:content => "width=device-width", :name => "viewport"}
+
+    %meta{:content => "width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0", :name => "viewport"}
     %meta{:content => "Crowd Interactive - http://crowdint.com", :name => "author"}
     %meta{:content => "Get ready for Magma conf 2013", :property => "og:title"}
     %meta{:content => "http://magmaconf.org/assets/facebook.jpg", :property => "og:image"}
@@ -16,8 +17,13 @@
     = favicon_link_tag 'apple-touch-icon-72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :sizes => '72x72'
     = favicon_link_tag 'apple-touch-icon-57-precomposed.png', :rel => 'apple-touch-icon-precomposed'
 
+
+
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
+
+    = stylesheet_link_tag "http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"
+    = javascript_include_tag "http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"
 
     = csrf_meta_tags
 
