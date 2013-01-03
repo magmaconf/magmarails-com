@@ -1,10 +1,10 @@
 #slider.home.mask
   #home.slide.active.mask
     .container
-      .reylero
-        = image_tag 'home/gray-reylero.png', class: 'img-gray'
-        = image_tag 'home/color-reylero.png', class: 'img-color'
-        = image_tag 'home/bottom-bagde.png', class: 'bottom-badge'
+      -# .reylero
+      = image_tag 'home/gray-reylero.png', class: 'img-gray'
+      = image_tag 'home/color-reylero.png', class: 'img-color'
+      = image_tag 'home/bottom-bagde.png', class: 'bottom-badge'
     = link_to '#', id: 'unmask' do
       = image_tag 'home/reylero-pulling.png'
 
@@ -15,9 +15,20 @@
   #call-for-papers.slide
     .container
       = image_tag 'cfp/cfp-main.png'
-      = link_to 'cfp.magmarails.com' do
+      = link_to 'http://cfp.magmarails.com' do
         = image_tag 'cfp/cfp-link.png'
 
+  %ul.social.hidden-desktop.hidden-tablet
+    %li
+      %span Stay tuned:
+    %li.fb
+      = link_to 'facebook', 'http://www.facebook.com/comunidadmagmarails'
+    %li.twt
+      = link_to 'twitter', 'http://twitter.com/magmarails'
+    %li.gplus
+      = link_to 'google plus', 'https://plus.google.com/108479926406306482358/posts'
+  = link_to 'http://magmazine.magmarails.com', class: 'magmazine-footer hidden-desktop hidden-tablet' do
+    = image_tag 'mobile/magmazine.png'
 
 
 :javascript

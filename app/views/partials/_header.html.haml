@@ -6,8 +6,9 @@
       %li
         = link_to 'Keynotes', '#', "data-action" => 'keynotes'
       %li
-        = link_to 'Call for papers', '#', "data-action" => 'call-for-papers'
-    %ul.pull-right.social
+        = link_to 'Call for papers', '#', "data-action" => 'call-for-papers', class: 'hidden-phone'
+        = link_to 'CFP', '#', "data-action" => 'call-for-papers', class: 'hidden-desktop hidden-tablet'
+    %ul.pull-right.social.hidden-phone
       %li
         %span Stay tuned:
       %li.fb
@@ -17,10 +18,15 @@
       %li.gplus
         = link_to 'google plus', 'https://plus.google.com/108479926406306482358/posts'
 
-    = link_to '#', class: 'logo' do
+    .hidden-desktop.mobile-menu.pull-left.hidden-tablet
+      = image_tag 'mobile/arrow.png', class: 'pull-right'
+
+    = link_to '#', class: 'logo hidden-phone' do
       = image_tag 'logo.png'
 
-= link_to 'http://magmazine.magmarails.com', class: 'magmazine' do
+
+
+= link_to 'http://magmazine.magmarails.com', class: 'magmazine hidden-phone' do
   = image_tag 'magmazine.png'
 
 

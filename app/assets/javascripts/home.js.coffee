@@ -7,6 +7,7 @@ class Magma.home
     @init_unmask()
     @init_navigation()
     @init_rotation_event()
+    @init_mobile_menu()
 
   init_slide_sizes: () ->
     width = $(window).width()
@@ -17,6 +18,7 @@ class Magma.home
 
   init_unmask: () ->
     $(window).scroll =>
+      if $(window).scrollTop() > 10 and  navigator.platform == 'iPhone'  then $('.main-nav').hide('slow')
       val = 880
       if navigator.platform == 'iPad' then val = 470
       if $(window).scrollTop() > val && $('.active').hasClass 'mask'
@@ -39,6 +41,10 @@ class Magma.home
 
               $('.slide').removeClass('mask')
 
+
+  init_mobile_menu: () ->
+    $('.mobile-menu').live 'click', (e) ->
+      $('.main-nav').show('slow');
 
   init_navigation: () ->
     $('.main-nav a').on 'click', (e) =>
@@ -91,7 +97,7 @@ class Magma.home
     $('#slider').removeClass()
     $('.keynotes').addClass('active')
     $('#slider').addClass('keynotes')
-    $(document).attr('title', 'MagmaConf - Keynotes');
+    $(document).attr('title', 'MagmaConf - Keynotes')
 
     $('.container').animate
       opacity: 1;
