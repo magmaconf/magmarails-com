@@ -18,7 +18,7 @@ class Magma.home
 
   init_unmask: () ->
     $(window).scroll =>
-      if $(window).scrollTop() > 10 and  navigator.platform == 'iPhone'  then $('.main-nav').hide('slow')
+      if $(window).scrollTop() > 10 and  navigator.platform == 'iPhone Simulator'  then $('.main-nav').hide('slow')
       val = 880
       if navigator.platform == 'iPad' then val = 470
       if $(window).scrollTop() > val && $('.active').hasClass 'mask'

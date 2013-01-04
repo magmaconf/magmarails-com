@@ -274,7 +274,7 @@ ul.social {
     background: black;
 
     ul {
-      &.main-nav { display: none; }
+      &.main-nav { display: block; }
       margin-left: 10px;
       li {
           font-size: 25px;
@@ -296,6 +296,10 @@ ul.social {
       margin-top: 27px;
       margin-right: 5px;
     }
+  }
+
+  #slider.home, #slider.mask  {
+    background-color: #a2cebd;
   }
 
   #slider #home.mask {
