@@ -1,14 +1,40 @@
-%section#main
-  = image_tag 'poster.png', class: 'poster'
-  %ul
-    %li.find_us
-      &nbsp;
+#slider.home.mask
+  #home.slide.active.mask
+    .container
+      -# .reylero
+      = image_tag 'home/gray-reylero.png', class: 'img-gray'
+      = image_tag 'home/color-reylero.png', class: 'img-color'
+      = image_tag 'home/bottom-bagde.png', class: 'bottom-badge'
+    = link_to '#', id: 'unmask' do
+      = image_tag 'home/reylero-pulling.png'
+
+  #keynotes.slide
+    .container
+      = image_tag 'keynotes/keynotes-main.png'
+
+  #call-for-papers.slide
+    .container
+      = image_tag 'cfp/cfp-main.png'
+      = link_to 'http://cfp.magmaconf.com' do
+        = image_tag 'cfp/cfp-link.png'
+
+  %ul.social.hidden-desktop.hidden-tablet
+    %li
+      %span Stay tuned:
     %li.fb
-      = link_to '','http://www.facebook.com/comunidadmagmarails'
+      = link_to 'facebook', 'http://www.facebook.com/magmaconf'
     %li.twt
-      = link_to '','http://twitter.com/magmarails'
+      = link_to 'twitter', 'http://twitter.com/magmaconf'
     %li.gplus
-      = link_to '','https://plus.google.com/108479926406306482358/posts'
-    %li.clearfix
+      = link_to 'google plus', 'https://plus.google.com/108479926406306482358/posts'
+  = link_to 'http://magmazine.magmaconf.com/en/faq', class: 'magmazine-footer hidden-desktop hidden-tablet' do
+    = image_tag 'mobile/magmazine.png'
 
 
+:javascript
+  $(function() {
+    window.home = new Magma.home;
+    if ( $(window).width() < 700 ) {
+      $('.main-nav').delay(2000).hide('slow')
+    }
+  });
