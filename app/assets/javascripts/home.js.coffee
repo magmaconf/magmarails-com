@@ -79,14 +79,14 @@ class Magma.home
     $('#slider').removeClass()
     $('.home').addClass('active')
     $('#slider').addClass('home')
-    $(document).attr('title', 'MagmaConf - Save the date');
+    $(document).attr('title', 'Magma Conf');
 
 
   load_cfp: () ->
     $('#slider').removeClass()
     $('.call-for-papers').addClass('active')
     $('#slider').addClass('call-for-papers')
-    $(document).attr('title', 'MagmaConf - Call for Papers');
+    $(document).attr('title', 'Magma Conf - Call for Papers');
 
     $('.container').animate
       opacity: 1;
@@ -97,7 +97,7 @@ class Magma.home
     $('#slider').removeClass()
     $('.keynotes').addClass('active')
     $('#slider').addClass('keynotes')
-    $(document).attr('title', 'MagmaConf - Keynotes')
+    $(document).attr('title', 'Magma Conf - Keynotes')
 
     $('.container').animate
       opacity: 1;
