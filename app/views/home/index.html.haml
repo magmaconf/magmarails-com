@@ -27,12 +27,14 @@
       = link_to 'twitter', 'http://twitter.com/magmaconf'
     %li.gplus
       = link_to 'google plus', 'https://plus.google.com/108479926406306482358/posts'
-  = link_to 'http://magmazine.magmarails.com', class: 'magmazine-footer hidden-desktop hidden-tablet' do
+  = link_to 'http://magmazine.magmaconf.com/en/faq', class: 'magmazine-footer hidden-desktop hidden-tablet' do
     = image_tag 'mobile/magmazine.png'
 
 
 :javascript
   $(function() {
     window.home = new Magma.home;
-    $('.main-nav').delay(2000).hide('slow')
+    if ( $(window).width() < 700 ) {
+      $('.main-nav').delay(2000).hide('slow')
+    }
   });
