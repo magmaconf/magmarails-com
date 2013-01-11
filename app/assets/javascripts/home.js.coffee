@@ -8,6 +8,7 @@ class Magma.home
     @init_navigation()
     @init_rotation_event()
     @init_mobile_menu()
+    @init_svf_fallbacks()
 
   init_slide_sizes: () ->
     width = $(window).width()
@@ -50,9 +51,10 @@ class Magma.home
     $('.main-nav a').on 'click', (e) =>
       e.preventDefault()
       action = $(e.currentTarget).data('action')
+      $('.main-nav a.selected').removeClass 'selected'
+      $(e.currentTarget).addClass 'selected'
       @color_transition action
       remove_id = $('.active').attr('id')
-      console.log $("##{remove_id}").first()
       $("##{remove_id}").stop().animate
         opacity: 0
       ,
@@ -113,6 +115,12 @@ class Magma.home
       when "call-for-papers" then $('#slider').animate({backgroundColor: "#84171a"}, {queue: false, duration: 'fast'})
       when "keynotes" then $('#slider').animate({backgroundColor: "#e2a63c"}, {queue: false, duration: 'fast'})
 
+  init_svf_fallbacks: () ->
+    unless Modernizr.svg
+      imgs = $("img")
+      $.each imgs, (i, img) ->
+        fallback = $(img).attr('src').split('.')[0] + '.png'
+        $(img).attr "src", fallback
 
 
 
