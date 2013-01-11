@@ -8,6 +8,7 @@ class Magma.home
     @init_navigation()
     @init_rotation_event()
     @init_mobile_menu()
+    @init_svf_fallbacks()
 
   init_slide_sizes: () ->
     width = $(window).width()
@@ -114,6 +115,12 @@ class Magma.home
       when "call-for-papers" then $('#slider').animate({backgroundColor: "#84171a"}, {queue: false, duration: 'fast'})
       when "keynotes" then $('#slider').animate({backgroundColor: "#e2a63c"}, {queue: false, duration: 'fast'})
 
+  init_svf_fallbacks: () ->
+    unless Modernizr.svg
+      imgs = $("img")
+      $.each imgs, (i, img) ->
+        fallback = $(img).attr('src').split('.')[0] + '.png'
+        $(img).attr "src", fallback
 
 
 
