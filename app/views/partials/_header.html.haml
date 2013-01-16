@@ -1,32 +1,37 @@
-%nav.navbar.navbar-fixed-top{"data-role" => "header", "data-position" =>"fixed"}
+%script#temp-menu{:type => "text/x-template"}
+  %li
+    = link_to 'Spotlight', '#spotlight', "data-action" => 'spotlight'
+  %li
+    = link_to 'Keynotes', '#keynotes', "data-action" => 'keynotes'
+  %li
+    = link_to 'Call for papers', '#call-for-papers', "data-action" => 'call-for-papers'
+%nav.navbar.navbar-fixed-top
   .container
-    %ul.pull-left.main-nav
-      %li
-        = link_to 'Spotlight', '#', "data-action" => 'home'
-      %li
-        = link_to 'Keynotes', '#', "data-action" => 'keynotes'
-      %li
-        = link_to 'Call for papers', '#', "data-action" => 'call-for-papers', class: 'hidden-phone'
-        = link_to 'CFP', '#', "data-action" => 'call-for-papers', class: 'hidden-desktop hidden-tablet'
-    %ul.pull-right.social.hidden-phone
-      %li
-        %span Stay tuned:
-      %li.fb
-        = link_to 'facebook', 'http://www.facebook.com/magmaconf'
-      %li.twt
-        = link_to 'twitter', 'http://twitter.com/magmaconf'
-      %li.gplus
-        = link_to 'google plus', 'https://plus.google.com/108479926406306482358/posts'
+    .row
+      = label_tag 'menu-mobile-handler', class: 'menu-mobile-handler' do
+        = image_tag 'mobile/button.png'
+      = link_to '#', class: 'logo span2' do
+        = image_tag 'logo.svg', class: 'desktop'
+        = image_tag 'mobile/logo.svg', class: 'mobile'
 
-    .hidden-desktop.mobile-menu.pull-left.hidden-tablet
-      = image_tag 'mobile/arrow.png', class: 'pull-right'
+      %ul.main-nav.span7
 
-    = link_to '#', class: 'logo hidden-phone' do
-      = image_tag 'logo.svg'
+      .span3
+        %ul.social.pull-right
+          %li
+            %span Stay tuned:
+          %li.fb
+            = link_to 'facebook', 'http://www.facebook.com/magmaconf'
+          %li.twt
+            = link_to 'twitter', 'http://twitter.com/magmaconf'
+          %li.gplus
+            = link_to 'google plus', 'https://plus.google.com/108479926406306482358/posts'
 
 
 
-= link_to 'http://magmazine.magmaconf.com/en/faq', class: 'magmazine hidden-phone' do
+
+
+= link_to 'http://magmazine.magmaconf.com/en/faq', class: 'magmazine' do
   = image_tag 'magmazine.svg'
 
 

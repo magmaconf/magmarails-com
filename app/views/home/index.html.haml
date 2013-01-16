@@ -1,40 +1,31 @@
-#slider.home.mask
-  #home.slide.active.mask
+%script#temp-spotlight{:type => "text/x-template"}
+  #spotlight.slide.active.mask
     .container
-      -# .reylero
       = image_tag 'home/gray-reylero.svg', class: 'img-gray'
       = image_tag 'home/color-reylero.svg', class: 'img-color'
       = image_tag 'home/bottom-bagde.svg', class: 'bottom-badge'
     = link_to '#', id: 'unmask' do
       = image_tag 'home/reylero-pulling.svg'
 
+%script#temp-keynotes{:type => "text/x-template"}
   #keynotes.slide
     .container
       = image_tag 'keynotes/keynotes-main.svg'
 
+%script#temp-call-for-papers{:type => "text/x-template"}
   #call-for-papers.slide
     .container
       = image_tag 'cfp/cfp-main.svg'
       = link_to 'http://cfp.magmaconf.com' do
         = image_tag 'cfp/cfp-link.svg'
 
-  %ul.social.hidden-desktop.hidden-tablet
-    %li
-      %span Stay tuned:
-    %li.fb
-      = link_to 'facebook', 'http://www.facebook.com/magmaconf'
-    %li.twt
-      = link_to 'twitter', 'http://twitter.com/magmaconf'
-    %li.gplus
-      = link_to 'google plus', 'https://plus.google.com/108479926406306482358/posts'
-  = link_to 'http://magmazine.magmaconf.com/en/faq', class: 'magmazine-footer hidden-desktop hidden-tablet' do
-    = image_tag 'mobile/magmazine.png'
+
+#slider.spotlight.mask
 
 
 :javascript
   $(function() {
     window.home = new Magma.home;
     if ( $(window).width() < 700 ) {
-      $('.main-nav').delay(2000).hide('slow')
     }
   });

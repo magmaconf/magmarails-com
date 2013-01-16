@@ -7,4 +7,6 @@
 //= require jquery
 //= require jquery.color-2.1.0.min
 //= require modernizr.custom
+//= require underscore-min
+//= require backbone-min.js
 //= require_tree .
