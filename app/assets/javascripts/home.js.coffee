@@ -10,7 +10,6 @@ class Magma.home
 
   init_slide_sizes: () ->
     width = $(window).width()
-    # alert $(window).height()
     offset = 0
     switch navigator.platform
       when 'iPhone' then offset = 22

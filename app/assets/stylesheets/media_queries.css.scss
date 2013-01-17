@@ -1,0 +1,253 @@
+
+@media only screen and (min-width : 768px) and (max-width: 979px) {
+  .navbar-fixed-top {
+    position: fixed;
+    margin-left: 0;
+    margin-right:0;
+  }
+  nav {
+    height: 48px;
+    .main-nav, .span3 {
+      display: none;
+    }
+  }
+  .navbar {
+    margin-bottom: 0;
+  }
+  nav .logo {
+    display: block;
+    width: 81px;
+    margin: 0 auto;
+    float: none;
+    margin-top: -32px;
+    img.mobile {display: block}
+    img.desktop {display: none}
+  }
+  .menu-mobile-handler {
+    display: block;
+  }
+
+  #slider {
+    margin-top: 16px;
+    top: 33px;
+  }
+  .row {
+    margin-left: 0px;
+  }
+
+  footer  {
+    display: none;
+    font-size: 9px;
+
+  }
+  .magmazine {
+    display: none;
+  }
+  #slider .slide#spotlight.mask, #slider .slide#spotlight  {
+    .img-color{
+      top: -1000px;
+      margin-bottom: -1000px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+  .navbar-fixed-top {
+    position: fixed;
+    margin-left: 0;
+    margin-right:0;
+  }
+  nav {
+    height: 48px;
+    .main-nav, .span3 {
+      display: none;
+    }
+  }
+  .navbar {
+    margin-bottom: 0;
+  }
+  nav .logo {
+    display: block;
+    width: 81px;
+    margin: 0 auto;
+    float: none;
+    margin-top: -32px;
+    img.mobile {display: block}
+    img.desktop {display: none}
+  }
+  .menu-mobile-handler {
+    display: block;
+  }
+
+  #slider {
+    margin-top: 16px;
+    top: 32px;
+    // min-height: 350px;
+  }
+
+  footer p {
+    font-size: 9px;
+  }
+
+  .magmazine {
+    display: none;
+  }
+
+  #slider .slide#spotlight.mask, #slider .slide#spotlight  {
+    .img-gray{
+      opacity: 0;
+      filter: alpha(opacity=0);
+      z-index: 0;
+    }
+
+    .img-color{
+      opacity: 1;
+      filter: alpha(opacity=100);
+      z-index: 1;
+      top: -450px;
+      margin-bottom: -450px;
+    }
+    #unmask {
+      display: none;
+    }
+  }
+}
+
+/** iphone5 and ipod touch 5th gen **/
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  #slider {
+    // min-height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+ .navbar .container {
+    width: 1170px;
+  }
+}
+ // iPad (portrait)
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+  .navbar-fixed-top {
+    position: fixed;
+    margin-left: 0;
+    margin-right:0;
+  }
+  nav {
+    height: 48px;
+    .main-nav, .span3 {
+      display: none;
+    }
+  }
+  .navbar {
+    margin-bottom: 0;
+  }
+  nav .logo {
+    display: block;
+    width: 81px;
+    margin: 0 auto;
+    float: none;
+    margin-top: -32px;
+    img.mobile {display: block}
+    img.desktop {display: none}
+  }
+  .menu-mobile-handler {
+    display: block;
+  }
+
+  #slider {
+    margin-top: 16px;
+    top: 33px;
+  }
+  .row {
+    margin-left: 0px;
+  }
+
+  footer  {
+    display: none;
+    font-size: 9px;
+
+  }
+  .magmazine {
+    display: none;
+  }
+  #slider .slide#spotlight.mask, #slider .slide#spotlight  {
+    .img-color{
+      top: -1000px;
+      margin-bottom: -1000px;
+    }
+  }
+
+}
+
+// Andriod portrait
+@media only screen and (max-width : 360px) and (orientation: portrait) {
+
+}
+@media (max-width: 650px) and (orientation: portrait)  {
+  body {
+    padding: 0;
+  }
+  .navbar-fixed-top {
+    position: fixed;
+    margin-left: 0;
+    margin-right:0;
+  }
+  nav {
+    height: 48px;
+    .main-nav, .span3 {
+      display: none;
+    }
+  }
+  .navbar {
+    margin-bottom: 0;
+  }
+  nav .logo {
+    display: block;
+    width: 81px;
+    margin: 0 auto;
+    float: none;
+    margin-top: -32px;
+    img.mobile {display: block}
+    img.desktop {display: none}
+  }
+  .menu-mobile-handler {
+    display: block;
+  }
+
+  #slider {
+    margin-top: 16px;
+    top: 32px;
+    // min-height: 350px;
+  }
+
+  footer p {
+    font-size: 9px;
+  }
+
+  .magmazine {
+    display: none;
+  }
+
+  #slider .slide#spotlight.mask, #slider .slide#spotlight  {
+    .img-gray{
+      opacity: 0;
+      filter: alpha(opacity=0);
+      z-index: 0;
+    }
+
+    .img-color{
+      opacity: 1;
+      filter: alpha(opacity=100);
+      z-index: 1;
+      top: -450px;
+      margin-bottom: -450px;
+    }
+    #unmask {
+      display: none;
+    }
+  }
+}
+
