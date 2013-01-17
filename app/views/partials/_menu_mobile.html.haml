@@ -1,20 +1,14 @@
-= check_box_tag 'mobile_menu_handler'
-.menu_mobile
-  %ul
+= check_box_tag 'menu-mobile-handler',1,nil, class: 'menu-handler'
+%script#temp-menu-mobile{:type => "text/x-template"}
+  = render 'partials/menu_links'
+  %li.sponsors
+    %p Sponsors
+
+#menu-mobile
+  %ul.menu-links.navigation
+  %ul.sponsors-list
     %li
-      = link_to 'Spotlight', '#', "data-action" => 'home'
-    %li
-      = link_to 'Keynotes', '#', "data-action" => 'keynotes'
-    %li
-      = link_to 'Call for papers', '#', "data-action" => 'call-for-papers'
-    %li.sponsors
-      = link_to 'sponsors'
-  %ul.social
-    %li.fb
-      = link_to 'facebook', 'http://www.facebook.com/magmaconf'
-    %li.twt
-      = link_to 'twitter', 'http://twitter.com/magmaconf'
-    %li.gplus
-      = link_to 'google plus', 'https://plus.google.com/108479926406306482358/posts'
+      = link_to 'http://www.crowdint.com' do
+        = image_tag 'mobile/sponsors/crowdint.png'
 
 

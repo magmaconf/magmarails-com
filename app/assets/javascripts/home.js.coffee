@@ -10,17 +10,26 @@ class Magma.home
 
   init_slide_sizes: () ->
     width = $(window).width()
+    # alert $(window).height()
+    offset = 0
+    switch navigator.platform
+      when 'iPhone' then offset = 22
+      when 'iPad' then offset = 70
+
+    $('#slider').css 'min-height', "#{($(window).height() - $('nav').height() - 60 - offset)}px"
+    # alert $(window).height() - $('nav').height() - 60 - offset
+
 
   init_rotation_event: () ->
     $(window).bind 'orientationchange', () ->
       window.location.reload()
 
   init_unmask: () ->
-    $(window).scroll =>
-      if $(window).scrollTop() > 10 and  $(window).width() < 700   then $('.main-nav').hide('slow')
-      val = 750
-      if navigator.platform == 'iPad' then val = 470
-      if $(window).scrollTop() > val && $('.active').hasClass 'mask'
+    $('#slider').scroll =>
+      # if $(window).scrollTop() > 10 and  $(window).width() < 700   then $('.main-nav').hide('slow')
+      val = 600
+      if navigator.platform == 'iPad' then val = 220
+      if $('#slider').scrollTop() > val && $('.active').hasClass 'mask'
         @color_transition('remove-mask')
         $('#slider.mask').removeClass 'mask'
         $('#unmask').animate
@@ -62,6 +71,25 @@ class Magma.home
       console.log section
       $("#temp-#{section}").html()
 
+    MenuMobileView = Backbone.View.extend
+      el: $('ul.menu-links')
+
+      events:
+        "click a" : 'loadPage'
+
+      initialize: ->
+        @render()
+
+      render: ->
+        html = $('#temp-menu').html()
+        @$el.html html
+
+      loadPage: (e)->
+        e.preventDefault()
+        router.navigate $(e.target).data('action'),
+          trigger: true
+
+
     MenuView = Backbone.View.extend
       el: $('ul.main-nav')
 
@@ -97,6 +125,7 @@ class Magma.home
     Router = Backbone.Router.extend
       initialize: ->
         new MenuView()
+        new MenuMobileView()
 
       routes:
         ":section": "loadPage"
@@ -110,7 +139,8 @@ class Magma.home
         @pageView_.remove()  if @pageView_
         @pageView_ = new PageView(section: section)
         @pageView_.render()
-        @pageView_.$el.appendTo "#slider"
+        # @pageView_.$el.appendTo "#slider"
+        $('#slider').prepend @pageView_.$el
         @start_transitions section
 
       start_transitions: (section) =>
@@ -118,8 +148,8 @@ class Magma.home
         $(".active").removeClass 'active'
         $("##{section}").addClass 'active'
         @color_transition section
-        $('.main-nav a.selected').removeClass 'selected'
-        $(".main-nav a[data-action='#{section}']").addClass 'selected'
+        $('.navigation a.selected').removeClass 'selected'
+        $(".navigation a[data-action='#{section}']").addClass 'selected'
         $('#slider').removeClass()
         $('#slider').addClass section
 

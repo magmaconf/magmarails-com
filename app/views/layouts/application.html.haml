@@ -33,14 +33,9 @@
         })();
 
   %body
-    = check_box_tag 'menu-mobile-handler',1,nil, class: 'menu-handler'
-    #menu-mobile
-      %ul
-        %li
-          %a{:href => "#"} Home
+    = render 'partials/menu_mobile'
 
     #wrapper
       = render 'partials/header'
       = yield
-      = render 'partials/footer'
 

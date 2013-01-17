@@ -1,11 +1,7 @@
 %script#temp-menu{:type => "text/x-template"}
-  %li
-    = link_to 'Spotlight', '#spotlight', "data-action" => 'spotlight'
-  %li
-    = link_to 'Keynotes', '#keynotes', "data-action" => 'keynotes'
-  %li
-    = link_to 'Call for papers', '#call-for-papers', "data-action" => 'call-for-papers'
-%nav.navbar.navbar-fixed-top
+  = render 'partials/menu_links'
+
+%nav.navbar
   .container
     .row
       = label_tag 'menu-mobile-handler', class: 'menu-mobile-handler' do
@@ -14,7 +10,7 @@
         = image_tag 'logo.svg', class: 'desktop'
         = image_tag 'mobile/logo.svg', class: 'mobile'
 
-      %ul.main-nav.span7
+      %ul.main-nav.span7.navigation
 
       .span3
         %ul.social.pull-right
