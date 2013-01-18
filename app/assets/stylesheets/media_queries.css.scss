@@ -41,7 +41,7 @@
 
   }
   .magmazine {
-    display: none;
+    // display: none;
   }
   #slider .slide#spotlight.mask, #slider .slide#spotlight  {
     .img-color{
@@ -49,7 +49,20 @@
       margin-bottom: -1000px;
     }
   }
+  ul.social {
+    li:first-child {
+      display: none;
+    }
+    li {
+      margin-left: 20%;
+      a {
+        background-position-y: -45px !important;
+      }
+    }
+  }
 }
+
+
 
 @media (max-width: 480px) {
   body {
@@ -114,14 +127,20 @@
       display: none;
     }
   }
-}
-
-/** iphone5 and ipod touch 5th gen **/
-@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  #slider {
-    // min-height: 400px;
+  ul.social {
+    li:first-child {
+      display: none;
+    }
+    li {
+      margin-left: 12%;
+      a {
+        background-position-y: -45px !important;
+      }
+    }
   }
 }
+
+
 
 @media (min-width: 1200px) {
  .navbar .container {
@@ -171,7 +190,7 @@
 
   }
   .magmazine {
-    display: none;
+  //   display: none;
   }
   #slider .slide#spotlight.mask, #slider .slide#spotlight  {
     .img-color{
@@ -180,6 +199,17 @@
     }
   }
 
+  ul.social {
+    li:first-child {
+      display: none;
+    }
+    li {
+      margin-left: 20%;
+      a {
+        background-position-y: -45px !important;
+      }
+    }
+  }
 }
 
 // Andriod portrait
@@ -247,6 +277,17 @@
     }
     #unmask {
       display: none;
+    }
+  }
+  ul.social {
+    li:first-child {
+      display: none;
+    }
+    li {
+      margin-left: 12%;
+      a {
+        background-position-y: -45px !important;
+      }
     }
   }
 }

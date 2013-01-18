@@ -14,20 +14,7 @@
 
       .span3
         %ul.social.pull-right
-          %li
-            %span Stay tuned:
-          %li.fb
-            = link_to 'facebook', 'http://www.facebook.com/magmaconf'
-          %li.twt
-            = link_to 'twitter', 'http://twitter.com/magmaconf'
-          %li.gplus
-            = link_to 'google plus', 'https://plus.google.com/108479926406306482358/posts'
-
-
-
-
+          = render 'partials/social_links'
 
 = link_to 'http://magmazine.magmaconf.com/en/faq', class: 'magmazine' do
   = image_tag 'magmazine.svg'
-
-

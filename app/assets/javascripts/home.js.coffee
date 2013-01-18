@@ -7,12 +7,13 @@ class Magma.home
     @init_unmask()
     @init_rotation_event()
     @init_backbone()
+    @init_large_displays_unmask()
 
   init_slide_sizes: () ->
     width = $(window).width()
     offset = 0
     switch navigator.platform
-      when 'iPhone' then offset = 22
+      when 'iPhone' then offset = 12
       when 'iPad' then offset = 70
 
     $('#slider').css 'min-height', "#{($(window).height() - $('nav').height() - 60 - offset)}px"
@@ -29,24 +30,33 @@ class Magma.home
       val = 600
       if navigator.platform == 'iPad' then val = 220
       if $('#slider').scrollTop() > val && $('.active').hasClass 'mask'
-        @color_transition('remove-mask')
-        $('#slider.mask').removeClass 'mask'
-        $('#unmask').animate
-          right: "#{$(window).width() + 590}px"
-          display: 'none'
-        ,
-          duration: 4000
-          step: (now, fx) ->
-            val = 360
-            if parseInt(now) > val
-              $('.slide .img-gray').animate
-                opacity: 0
-              , 1000
-              $('.slide .img-color').animate
-                opacity: 1
-              , 1000
+        @remove_mask()
 
-              $('.slide').removeClass('mask')
+  remove_mask: () ->
+    @color_transition('remove-mask')
+    $('#slider.mask').removeClass 'mask'
+    $('#unmask').animate
+      right: "#{$(window).width() + 590}px"
+      display: 'none'
+    ,
+      duration: 4000
+      step: (now, fx) ->
+        val = 360
+        if parseInt(now) > val
+          $('.slide .img-gray').animate
+            opacity: 0
+          , 1000
+          $('.slide .img-color').animate
+            opacity: 1
+          , 1000
+
+          $('.slide').removeClass('mask')
+
+
+  init_large_displays_unmask: () ->
+    if $(window).height() > 800
+      @remove_mask()
+
 
   init_svg_fallbacks: () ->
     unless Modernizr.svg
@@ -80,8 +90,8 @@ class Magma.home
         @render()
 
       render: ->
-        html = $('#temp-menu').html()
-        @$el.html html
+        html = $('#temp-menu-mobile').html()
+        @$el.prepend html
 
       loadPage: (e)->
         e.preventDefault()
