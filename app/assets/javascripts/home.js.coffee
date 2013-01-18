@@ -7,7 +7,7 @@ class Magma.home
     @init_unmask()
     @init_rotation_event()
     @init_backbone()
-    @preload_images()
+
 
   init_slide_sizes: () ->
     width = $(window).width()
