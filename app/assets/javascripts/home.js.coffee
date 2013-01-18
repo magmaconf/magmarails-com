@@ -7,7 +7,7 @@ class Magma.home
     @init_unmask()
     @init_rotation_event()
     @init_backbone()
-    @init_large_displays_unmask()
+    @preload_images()
 
   init_slide_sizes: () ->
     width = $(window).width()
@@ -57,6 +57,11 @@ class Magma.home
     if $(window).height() > 800
       @remove_mask()
 
+  preload_images: () ->
+    imgs = $('body').html().match(/\/assets(.*)\b/g)
+    Core.preloader.queue(imgs).preload (ui) ->
+      console.log "All loaded in " + ui.time + " sec."
+
 
   init_svg_fallbacks: () ->
     unless Modernizr.svg
@@ -77,7 +82,6 @@ class Magma.home
   init_backbone: () ->
     # Helper to get template text.
     getTemplate = (section) ->
-      console.log section
       $("#temp-#{section}").html()
 
     MenuMobileView = Backbone.View.extend
