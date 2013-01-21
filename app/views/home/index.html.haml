@@ -18,6 +18,21 @@
       = image_tag 'cfp/cfp-main.svg'
       = link_to 'http://cfp.magmaconf.com' do
         = image_tag 'cfp/cfp-link.svg'
+%script#temp-sponsoring{:type => "text/x-tempplate"}
+  #sponsoring.slide
+    .container
+      = form_tag(contacts_path, :remote => true) do
+        %label Name
+        = text_field_tag 'contact[name]'
+        %label Email
+        = text_field_tag 'contact[email]'
+        %label Company
+        = text_field_tag 'contact[company]'
+        .control-group
+          .controls
+            = submit_tag "SEND", class: 'btn'
+
+
 
 
 #slider.spotlight.mask
