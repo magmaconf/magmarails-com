@@ -9,6 +9,8 @@ gem 'jquery-rails'
 gem 'haml-rails'
 
 gem 'mandrill_mailer'
+gem 'gibbon'
+gem 'pry'
 
 # Gems used only for assets and not required
 # in production environments by default.

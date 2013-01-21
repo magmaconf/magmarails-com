@@ -31,6 +31,7 @@ GEM
     ansi (1.4.3)
     arel (3.0.2)
     builder (3.0.4)
+    coderay (1.0.8)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -44,6 +45,9 @@ GEM
     excon (0.15.5)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    gibbon (0.4.2)
+      httparty
+      json
     haml (3.1.7)
     haml-rails (0.3.5)
       actionpack (>= 3.1, < 4.1)
@@ -51,6 +55,9 @@ GEM
       haml (~> 3.1)
       railties (>= 3.1, < 4.1)
     hike (1.2.1)
+    httparty (0.10.0)
+      multi_json (~> 1.0)
+      multi_xml
     i18n (0.6.1)
     journey (1.0.4)
     jquery-rails (2.1.4)
@@ -68,10 +75,16 @@ GEM
       actionpack
       activesupport
       mandrill-api (~> 1.0.9)
+    method_source (0.8.1)
     mime-types (1.19)
     multi_json (1.5.0)
+    multi_xml (0.5.2)
     pg (0.14.1)
     polyglot (0.3.3)
+    pry (0.9.11.4)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
     rack (1.4.3)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -102,6 +115,7 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
+    slop (3.4.3)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -129,10 +143,12 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails
+  gibbon
   haml-rails
   jquery-rails
   mandrill_mailer
   pg
+  pry
   rails (~> 3.2.9)
   sass-rails
   sqlite3

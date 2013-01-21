@@ -5,12 +5,13 @@ class ContactsController < ApplicationController
 
     if contact.valid?
       contact.send_email
-      notice = 'Your message has been sent.'
+      contact.add_to_list
+      notice = 'You will recive the Prospectus soon.'
       alert = nil
     else
       notice = nil
       alert = contact.errors.full_messages.join ','
     end
-    redirect_to root_path(section: @section, anchor: 'contactus'), alert: alert, notice: notice
+    redirect_to '/sponsoring', alert: alert, notice: notice
   end
 end

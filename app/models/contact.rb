@@ -15,4 +15,28 @@ class Contact
   def send_email
     ContactMailer.send_mail(self).deliver
   end
+
+  def add_to_list
+    Gibbon.list_subscribe({:id => '6dd138846b',
+                           :email_address => self.attributes[:email],
+                           :merge_vars => {:FNAME => self.first_name,
+                                           :LNAME => self.last_name,
+                                           :COMPANY => self.attributes[:company]},
+                           :double_optin => false})
+  end
+
+  def first_name
+    self.attributes[:name].blank? ? "" : self.attributes[:name].split(" ")[0]
+  end
+
+  def last_name
+    unless self.attributes[:name].blank?
+      name = self.attributes[:name].split(" ")
+      name.shift
+      name.join(' ')
+    else
+      ""
+    end
+
+  end
 end

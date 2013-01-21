@@ -21,6 +21,10 @@
 %script#temp-sponsoring{:type => "text/x-tempplate"}
   #sponsoring.slide
     .container
+      - if flash[:alert]
+        .errors= flash[:alert]
+      - if flash[:notice]
+        .notice= flash[:notice]
       = form_tag(contacts_path, :remote => true) do
         %label Name
         = text_field_tag 'contact[name]'
