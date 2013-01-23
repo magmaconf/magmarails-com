@@ -47,15 +47,4 @@
     = image_tag 'mobile/magmazine.png'
   = render 'partials/footer'
 
-:javascript
-  $(function() {
-    window.home = new Magma.home;
-    if ( $(window).width() < 700 ) {
-      setTimeout(function(){
-        // Hide the address bar!
-        window.scrollTo(0, 1);
-      }, 0);
-    }
-    window.home.init_large_displays_unmask();
-    window.home.preload_images();
-  });
+
