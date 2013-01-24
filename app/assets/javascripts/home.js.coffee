@@ -3,20 +3,26 @@
 class Magma.home
 
   constructor: ->
-    @init_slide_sizes()
+    @init_slide_sizes(0)
     @init_unmask()
     @init_rotation_event()
     @init_backbone()
 
 
-  init_slide_sizes: () ->
+  init_slide_sizes: (i) ->
     width = $(window).width()
+    height = $(window).height()
     offset = 0
     switch navigator.platform
-      when 'iPhone' then offset = 12
-      when 'iPad' then offset = 70
-
-    $('#slider').css 'min-height', "#{($(window).height() - $('nav').height() - 60 - offset)}px"
+      when 'iPhone' then offset = 100
+      when 'iPad'
+        offset = 150
+        if window.orientation == -90 || window.orientation == 90
+          height = 768
+          offset = 210
+      else
+        offset = $('footer').height() + 69
+    $('#slider').css 'height', "#{(height - offset + (i) )}px"
     # alert $(window).height() - $('nav').height() - 60 - offset
 
 
@@ -53,8 +59,9 @@ class Magma.home
           $('.slide').removeClass('mask')
 
 
+
   init_large_displays_unmask: () ->
-    if $(window).height() > 800
+    if $(window).height() > 1000 && navigator.platform != 'iPad'
       @remove_mask()
 
   preload_images: () ->
@@ -170,6 +177,10 @@ class Magma.home
           opacity: 1;
         ,
           duration: 500
+        unless navigator.platform == 'iPhone' || navigator.platform == 'iPad'
+          if $('#spotlight').hasClass 'active' then i = -30 else i = 0
+          @init_slide_sizes(i)
+
 
     router = undefined
     $ ->

@@ -48,7 +48,11 @@
             window.scrollTo(0, 1);
           }, 0);
         }
-        window.home.init_large_displays_unmask();
         window.home.preload_images();
+        setTimeout(function(){
+            // Hide the address bar!
+            window.scrollTo(0, 1);
+            window.home.init_large_displays_unmask();
+        }, 1000);
       });
 
