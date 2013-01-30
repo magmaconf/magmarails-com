@@ -11,6 +11,7 @@ class Magma.home
 
   init_slide_sizes: (i) ->
     width = $(window).width()
+    alert width
     height = $(window).height()
     offset = 0
     switch navigator.platform

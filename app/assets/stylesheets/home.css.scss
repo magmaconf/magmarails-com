@@ -204,7 +204,46 @@ ul.social {
       right: 0px;
     }
   }
+  .slide#venue {
+    .container {
+      width: 100% !important;
+    }
+    img {
+      position: relative;
+      z-index: 3;
+      margin-top: 200px;
+    }
+    .venue-images {
+      margin-top: -2206px;
+      position: relative;
+      z-index: 2;
+      div {
+        height: 387px;
+        margin: 20px 0;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .img-1{
+        background-image: url('/assets/venue/1.jpg');
+      }
+      .img-2{
+        background-image: url('/assets/venue/2.jpg');
+      }
+      .img-3{
+        background-image: url('/assets/venue/3.jpg');
+      }
+      .img-4{
+        background-image: url('/assets/venue/4.jpg');
+      }
+      .img-5{
+        background-image: url('/assets/venue/5.jpg');
+      }
+      .img-6{
+        background-image: url('/assets/venue/6.jpg');
+      }
+    }
 
+  }
 }
 
 footer, .footer {

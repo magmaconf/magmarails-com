@@ -142,6 +142,19 @@
       }
     }
   }
+
+  #slider .slide#venue {
+    img {
+      margin-top: 110px;
+    }
+    .venue-images {
+      margin-top: -1439px;
+      div {
+        height: 249px;
+        margin:10px 0;
+      }
+    }
+  }
 }
 
 
@@ -216,10 +229,6 @@
   }
 }
 
-// Andriod portrait
-@media only screen and (max-width : 360px) and (orientation: portrait) {
-
-}
 @media (max-width: 650px) and (orientation: portrait)  {
   body {
     padding: 0;
@@ -296,3 +305,35 @@
   }
 }
 
+//Andriod HTC desire like
+@media (max-width : 360px) and (orientation: portrait)  {
+  #slider .slide#venue {
+    img {
+      margin-top: 90px;
+    }
+    .venue-images {
+      margin-top: -1119px;
+      div {
+        height: 200px;
+        margin:10px 0;
+      }
+    }
+  }
+
+}
+
+//Damm iphone super only
+@media (max-width : 320px) and (orientation: portrait)  {
+  #slider .slide#venue {
+    img {
+      margin-top: 70px;
+    }
+    .venue-images {
+      margin-top: -979px;
+      div {
+        height: 172px;
+        margin:10px 0;
+      }
+    }
+  }
+}
