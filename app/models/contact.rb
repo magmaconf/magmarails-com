@@ -3,6 +3,7 @@ class Contact
   attr_accessor :name, :email, :company, :attributes
 
   validates_presence_of :name, :email, :company
+  validates :email, :format => { :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i }
 
   def initialize(attributes = {})
     @attributes = attributes

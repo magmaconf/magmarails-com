@@ -112,9 +112,10 @@ class Magma.home
         @$el.prepend html
 
       loadPage: (e)->
-        e.preventDefault()
-        router.navigate $(e.target).data('action'),
-          trigger: true
+        unless $(e.target).attr('href').split(':')[0] == 'http'
+          e.preventDefault()
+          router.navigate $(e.target).data('action'),
+            trigger: true
 
 
     MenuView = Backbone.View.extend
@@ -131,9 +132,10 @@ class Magma.home
         @$el.html html
 
       loadPage: (e)->
-        e.preventDefault()
-        router.navigate $(e.target).data('action'),
-          trigger: true
+        unless $(e.target).attr('href').split(':')[0] == 'http'
+          e.preventDefault()
+          router.navigate $(e.target).data('action'),
+            trigger: true
 
 
     # Simple view to render a template
