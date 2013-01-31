@@ -6,7 +6,10 @@ body {
 }
 a {outline: none;}
 #wrapper {}
-
+.seo-friendly {
+  text-indent: -9999px;
+  position: fixed;
+}
 nav {
   height: 75px;
   background: white;
