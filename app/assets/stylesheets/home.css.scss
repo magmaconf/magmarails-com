@@ -140,6 +140,9 @@ ul.social {
   &.venue {
     background-color: white;
   }
+  &.sponsorship {
+    background-color: #007A80;
+  }
 
   .slide {
     display: none;
@@ -241,6 +244,60 @@ ul.social {
       .img-6{
         background-image: url('/assets/venue/6.jpg');
       }
+    }
+
+  }
+  .slide#sponsorship {
+    form {
+      padding-top: 10px;
+      input {
+        border-radius: 0;
+        height:48px;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 10px;
+        font-size: 23px;
+      }
+      input::-webkit-input-placeholder { color: transparent; }
+      input::-moz-placeholder { color: transparent; } /* firefox 19+ */
+      input:-ms-input-placeholder { color: white; } /* ie */
+      input:-moz-placeholder { color: transparent; }
+      .add-on {
+        height: 48px;
+        background: white;
+        broder-radius: 0;
+        border-left: none;
+        border-right: none;
+
+      }
+      .input-append .add-on:last-child {
+        border-radius: 0;
+        img {
+          margin-top: 13px;
+        }
+      }
+      .submit {
+        background: #F8B456;
+        display: block;
+        padding: 17px;
+        margin: 0 25%;
+      }
+    }
+    .notice p {
+      margin: 75px 0;
+      color: white;
+      text-transform: uppercase;
+      font-size: 17px;
+      font-family: 'trebuchet ms';
+      font-weight: normal;
+    }
+    .centert {
+      text-align: center;
+    }
+    .alert {
+      display: none;
+      float: none;
+      margin: 11px auto;
     }
 
   }

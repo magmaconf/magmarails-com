@@ -7,11 +7,15 @@ class Magma.home
     @init_unmask()
     @init_rotation_event()
     @init_backbone()
+    @list_submit_link()
 
+  list_submit_link: () ->
+    $('.submit').live 'click', (e) ->
+      e.preventDefault()
+      $('form').submit()
 
   init_slide_sizes: (i) ->
     width = $(window).width()
-    alert width
     height = $(window).height()
     offset = 0
     switch navigator.platform
@@ -86,6 +90,7 @@ class Magma.home
       when "call-for-papers" then $('#slider').animate({backgroundColor: "#84171a"}, {queue: false, duration: 'fast'})
       when "keynotes" then $('#slider').animate({backgroundColor: "#e2a63c"}, {queue: false, duration: 'fast'})
       when "venue" then $('#slider').animate({backgroundColor: "#ffffff"}, {queue: false, duration: 'fast'})
+      when "sponsorship" then $('#slider').animate({backgroundColor: "#007A80"}, {queue: false, duration: 'fast'})
 
 
   init_backbone: () ->

@@ -155,6 +155,22 @@
       }
     }
   }
+
+  #slider .slide#sponsorship {
+    input {
+      background-color: white;
+    }
+    .input::-webkit-input-placeholder { color: gray; }
+    .input::-moz-placeholder { color: gray; } /* firefox 19+ */
+    .input:-ms-input-placeholder { color: gray; } /* ie */
+    .input:-moz-placeholder { color: gray; }
+    .add-on {
+      display:none;
+    }
+    .submit {
+      margin: 0 1%;
+    }
+  }
 }
 
 

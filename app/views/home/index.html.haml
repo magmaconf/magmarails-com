@@ -31,24 +31,37 @@
         .img-5
         .img-6
 
-
-%script#temp-sponsoring{:type => "text/x-tempplate"}
-  #sponsoring.slide
+%script#temp-sponsorship{:type => 'text/x-template'}
+  #sponsorship.slide
     .container
-      - if flash[:alert]
-        .errors= flash[:alert]
-      - if flash[:notice]
-        .notice= flash[:notice]
+      = image_tag 'sponsorship/sponsorship.svg'
+      .notice
       = form_tag(contacts_path, :remote => true) do
-        %label Name
-        = text_field_tag 'contact[name]'
-        %label Email
-        = text_field_tag 'contact[email]'
-        %label Company
-        = text_field_tag 'contact[company]'
+        .center
+          .errors.alert-error.alert.span6
+        .inout-prepend.input-append
+          %span.add-on
+            = image_tag 'sponsorship/name.svg'
+          = text_field_tag 'contact[name]', '',class: 'span4 input', placeholder: 'Name'
+          %span.add-on
+            = image_tag 'sponsorship/blue-star.svg'
+        .inout-prepend.input-append
+          %span.add-on
+            = image_tag 'sponsorship/email.svg'
+          = text_field_tag 'contact[email]', '',class: 'span4 input', placeholder: 'Email'
+          %span.add-on
+            = image_tag 'sponsorship/blue-star.svg'
+        .input-prepend.input-append
+          %span.add-on
+            = image_tag 'sponsorship/company.svg'
+          = text_field_tag 'contact[company]', '',class: 'span4 input', placeholder: 'Company'
+          %span.add-on
+            = image_tag 'sponsorship/blue-star.svg'
+
         .control-group
           .controls
-            = submit_tag "SEND", class: 'btn'
+            = link_to '#', class:'submit' do
+              = image_tag 'sponsorship/get-more-info.svg'
 
 
 

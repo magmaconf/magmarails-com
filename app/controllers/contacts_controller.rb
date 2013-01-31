@@ -1,4 +1,5 @@
 class ContactsController < ApplicationController
+  respond_to :js
   def create
     @section = params[:section]
     contact = Contact.new params[:contact]
@@ -6,12 +7,12 @@ class ContactsController < ApplicationController
     if contact.valid?
       contact.send_email
       contact.add_to_list
-      notice = 'You will recive the Prospectus soon.'
-      alert = nil
+      @message = {:notice => "thanks for be interested, we'll send you the full prospectus via email."}
     else
-      notice = nil
-      alert = contact.errors.full_messages.join ','
+      @message = {:alert => (contact.errors.full_messages.join ',') }
     end
-    redirect_to '/sponsoring', alert: alert, notice: notice
+
+    respond_with
+
   end
 end

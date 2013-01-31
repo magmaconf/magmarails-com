@@ -17,6 +17,7 @@ class Contact
   end
 
   def add_to_list
+    Gibbon.throws_exceptions = false
     Gibbon.list_subscribe({:id => '6dd138846b',
                            :email_address => self.attributes[:email],
                            :merge_vars => {:FNAME => self.first_name,

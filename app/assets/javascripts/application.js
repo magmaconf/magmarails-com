@@ -5,6 +5,7 @@
 // the compiled file.
 //
 //= require jquery
+//= require jquery_ujs
 //= require jquery.color-2.1.0.min
 //= require modernizr.custom
 //= require underscore-min
