@@ -72,33 +72,13 @@
   #sponsorship.slide
     .container
       = image_tag 'sponsorship/sponsorship.svg'
-      .notice
-      = form_tag(contacts_path, :remote => true) do
-        .center
-          .errors.alert-error.alert.span6
-        .inout-prepend.input-append
-          %span.add-on
-            = image_tag 'sponsorship/name.svg'
-          = text_field_tag 'contact[name]', '',class: 'span4 input', placeholder: 'Name'
-          %span.add-on
-            = image_tag 'sponsorship/blue-star.svg'
-        .inout-prepend.input-append
-          %span.add-on
-            = image_tag 'sponsorship/email.svg'
-          = text_field_tag 'contact[email]', '',class: 'span4 input', placeholder: 'Email'
-          %span.add-on
-            = image_tag 'sponsorship/blue-star.svg'
-        .input-prepend.input-append
-          %span.add-on
-            = image_tag 'sponsorship/company.svg'
-          = text_field_tag 'contact[company]', '',class: 'span4 input', placeholder: 'Company'
-          %span.add-on
-            = image_tag 'sponsorship/blue-star.svg'
-
+      .form
         .control-group
           .controls
-            = link_to '#', class:'submit' do
-              = image_tag 'sponsorship/get-more-info.svg'
+            = link_to 'Download Prospectus PDF', 'http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf', class:'submit', target: '_blank'
+            %p.contact-us
+              Contact us at
+              = mail_to 'info@magmacong.com'
 
 
 

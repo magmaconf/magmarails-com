@@ -251,7 +251,7 @@ ul.social {
 
   }
   .slide#sponsorship {
-    form {
+    .form {
       padding-top: 10px;
       input {
         border-radius: 0;
@@ -283,7 +283,23 @@ ul.social {
         background: #F8B456;
         display: block;
         padding: 17px;
-        margin: 0 25%;
+        margin: 0 35%;
+        color: black;
+        font-size: 28px;
+        &:hover {
+          color: black;
+        }
+      }
+      .contact-us {
+        color: white;
+        font-size: 26px;
+        margin-top: 10px;
+        a {
+          color: white;
+          &:hover {
+            color: white;
+          }
+        }
       }
     }
     .notice p {

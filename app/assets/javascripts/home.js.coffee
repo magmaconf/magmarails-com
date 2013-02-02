@@ -7,7 +7,6 @@ class Magma.home
     @init_unmask()
     @init_rotation_event()
     @init_backbone()
-    @list_submit_link()
 
   list_submit_link: () ->
     $('.submit').live 'click', (e) ->
