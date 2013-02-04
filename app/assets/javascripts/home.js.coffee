@@ -115,6 +115,7 @@ class Magma.home
           e.preventDefault()
           router.navigate $(e.target).data('action'),
             trigger: true
+          $('.menu-handler').prop('checked', false);
 
 
     MenuView = Backbone.View.extend
