@@ -170,7 +170,12 @@ class Magma.home
         @pageView_.render()
         # @pageView_.$el.appendTo "#slider"
         $('#slider').prepend @pageView_.$el
+        @tracking()
         @start_transitions section
+
+      tracking: () ->
+        url = Backbone.history.getFragment()
+        _gaq.push(['_trackPageview', "/#{url}"])
 
       start_transitions: (section) =>
         @init_svg_fallbacks()
