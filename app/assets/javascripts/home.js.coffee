@@ -90,6 +90,7 @@ class Magma.home
       when "keynotes" then $('#slider').animate({backgroundColor: "#e2a63c"}, {queue: false, duration: 'fast'})
       when "venue" then $('#slider').animate({backgroundColor: "#ffffff"}, {queue: false, duration: 'fast'})
       when "sponsorship" then $('#slider').animate({backgroundColor: "#007A80"}, {queue: false, duration: 'fast'})
+      when "pricing" then $('#slider').animate({backgroundColor: "#348daa"}, {queue: false, duration: 'fast'})
 
 
   init_backbone: () ->

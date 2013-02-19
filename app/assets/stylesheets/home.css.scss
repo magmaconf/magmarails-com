@@ -146,6 +146,9 @@ ul.social {
   &.sponsorship {
     background-color: #007A80;
   }
+  &.pricing {
+    background-color: #348daa;
+  }
 
   .slide {
     display: none;
@@ -249,6 +252,13 @@ ul.social {
       }
     }
 
+  }
+  .slide#pricing {
+    .contact-us a {
+      color: #FF7E00;
+      text-transform: uppercase;
+      font-size: 34px;
+    }
   }
   .slide#sponsorship {
     .form {
