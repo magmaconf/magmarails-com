@@ -85,7 +85,7 @@ class Magma.home
   color_transition: (section_name) ->
     switch section_name
       when "remove-mask" then $('#slider').animate({backgroundColor: "#a2cebd"}, {queue: false, duration: 'fast'})
-      when "spotlight" then $('#slider').animate({backgroundColor: "#d4d4d4"}, {queue: false, duration: 'fast'})
+      when "spotlight" then $('#slider').animate({backgroundColor: "#a2cebd"}, {queue: false, duration: 'fast'})
       when "call-for-papers" then $('#slider').animate({backgroundColor: "#84171a"}, {queue: false, duration: 'fast'})
       when "keynotes" then $('#slider').animate({backgroundColor: "#e2a63c"}, {queue: false, duration: 'fast'})
       when "venue" then $('#slider').animate({backgroundColor: "#ffffff"}, {queue: false, duration: 'fast'})

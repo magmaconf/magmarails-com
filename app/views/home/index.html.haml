@@ -1,11 +1,8 @@
 %script#temp-spotlight{:type => "text/x-template"}
-  #spotlight.slide.active.mask
+  #spotlight.slide.active
     .container
-      = image_tag 'home/gray-reylero.svg', class: 'img-gray'
       = image_tag 'home/color-reylero.svg', class: 'img-color'
       = image_tag 'home/bottom-bagde.svg', class: 'bottom-badge'
-    = link_to '#', id: 'unmask' do
-      = image_tag 'home/reylero-pulling.svg'
 
 %script#temp-keynotes{:type => "text/x-template"}
   .seo-friendly

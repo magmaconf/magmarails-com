@@ -6,7 +6,7 @@
     .row
       = label_tag 'menu-mobile-handler', class: 'menu-mobile-handler' do
         = image_tag 'mobile/button.png'
-      = link_to '#', class: 'logo span2' do
+      = link_to '/', class: 'logo span2' do
         = image_tag 'logo.svg', class: 'desktop'
         = image_tag 'mobile/logo.svg', class: 'mobile'
 
@@ -16,5 +16,5 @@
         %ul.social.pull-right
           = render 'partials/social_links'
 
-= link_to 'http://magmazine.magmaconf.com/en/faq', class: 'magmazine' do
+= link_to 'http://magmazine.magmaconf.com/en/faq', class: 'magmazine', target: '_blank' do
   = image_tag 'magmazine.svg'
