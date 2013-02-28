@@ -49,8 +49,10 @@
   #pricing.slide
     .container
       = image_tag 'pricing/pricing_title.svg'
-      = image_tag 'pricing/ticket_only.svg'
-      = image_tag 'pricing/ticket_meals.svg'
+      = link_to 'http://magmaconf.boletia.com/new-booking', class: 'ticket', target: '_blank' do
+        = image_tag 'pricing/ticket_only.svg'
+      = link_to 'http://magmaconf.boletia.com/new-booking', class: 'ticket', target: '_blank' do
+        = image_tag 'pricing/ticket_meals.svg'
       = image_tag 'pricing/ticket_hosting.svg', usemap: '#ticket_hosting'
       %map{:name => "ticket_hosting"}
         %area{:alt => "info@magmaconf.com", :coords => "124,405,428,665", :href => "mailto:info@magmaconf.com", :shape => "rect"}/

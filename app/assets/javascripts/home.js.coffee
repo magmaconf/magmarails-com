@@ -176,7 +176,8 @@ class Magma.home
 
       tracking: () ->
         url = Backbone.history.getFragment()
-        _gaq.push(['_trackPageview', "/#{url}"])
+        if _gaq?
+          _gaq.push(['_trackPageview', "/#{url}"])
 
       start_transitions: (section) =>
         @init_svg_fallbacks()
