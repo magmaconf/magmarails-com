@@ -1,20 +1,18 @@
-%script#temp-menu{:type => "text/x-template"}
-  = render 'partials/menu_links'
-
-%nav.navbar
-  .container
+.contain-to-grid.sticky
+  %nav.top-bar
+    %ul.title-area
+      / Title Area
+      %li.name
+        %h1
+          %a{:href => "#"}= image_tag 'logo.svg'
+      / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+      %li.toggle-topbar.menu-icon
+        %a{:href => "#"}
+          %span Menu
     .row
-      = label_tag 'menu-mobile-handler', class: 'menu-mobile-handler' do
-        = image_tag 'mobile/button.png'
-      = link_to '/', class: 'logo span2' do
-        = image_tag 'logo.svg', class: 'desktop'
-        = image_tag 'mobile/logo.svg', class: 'mobile'
-
-      %ul.main-nav.span7.navigation
-
-      .span3
-        %ul.social.pull-right
+      .center.columns.large-6.large-offset-1
+        %ul
+          = render 'partials/menu_links'
+      .social.columns.large-3
+        %ul
           = render 'partials/social_links'
-
-= link_to 'http://magmazine.magmaconf.com/en/faq', class: 'magmazine', target: '_blank' do
-  = image_tag 'magmazine.svg'

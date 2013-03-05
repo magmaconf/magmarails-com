@@ -18,6 +18,7 @@ group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
+  gem 'zurb-foundation', '~> 4.0.0'
 end
 
 group :test do

@@ -1,10 +1,15 @@
 !!!
-%html
+/ paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+/[if lt IE 7 ] <html class="ie6" lang="en">
+/[if IE 7 ] <html class="ie7" lang="en">
+/[if IE 8 ] <html class="ie8" lang="en">
+/ [if (gte IE 9)|!(IE)]><!
+%html{:lang => "en"}
   %head
     %title Magma Conf 2013
     %meta{:charset => "utf-8"}
 
-    %meta{:content => "width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0", :name => "viewport"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %meta{:content => "Crowd Interactive - http://crowdint.com", :name => "author"}
     %meta{:content => "Get ready for Magma conf 2013", :property => "og:title"}
     %meta{:content => "http://www.magmaconf.com/assets/facebook.jpeg", :property => "og:image"}
@@ -12,11 +17,8 @@
     %meta{:content => "http://www.magmaconf.com", :property => "og:url"}
     / icons
     = favicon_link_tag 'favicon.ico'
-
-
-
+    %link{:href => "http://fonts.googleapis.com/css?family=Asap:400,700,400italic", :rel => "stylesheet", :type => "text/css"}/
     = stylesheet_link_tag    "application"
-
     = csrf_meta_tags
 
     - if Rails.env.production?
@@ -32,27 +34,10 @@
         })();
 
   %body
-    = render 'partials/menu_mobile'
-
     #wrapper
       = render 'partials/header'
       = yield
-
+      #push
+      = render 'partials/footer'
     = javascript_include_tag "application"
-    :javascript
-      $(function() {
-        window.home = new Magma.home;
-        if ( $(window).width() < 700 ) {
-          setTimeout(function(){
-            // Hide the address bar!
-            window.scrollTo(0, 1);
-          }, 0);
-        }
-        window.home.preload_images();
-        setTimeout(function(){
-            // Hide the address bar!
-            window.scrollTo(0, 1);
-            window.home.init_large_displays_unmask();
-        }, 1000);
-      });
 

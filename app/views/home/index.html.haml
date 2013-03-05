@@ -1,107 +1,108 @@
-%script#temp-spotlight{:type => "text/x-template"}
-  #spotlight.slide.active
-    .container
-      = image_tag 'home/color-reylero.svg', class: 'img-color'
-      = image_tag 'home/bottom-bagde.svg', class: 'bottom-badge'
-
-%script#temp-keynotes{:type => "text/x-template"}
-  .seo-friendly
-  #keynotes.slide
-    .container
-      = image_tag 'keynotes/keynotes-main.svg'
-
-%script#temp-call-for-papers{:type => "text/x-template"}
-  #call-for-papers.slide
-    .container
-      = image_tag 'cfp/cfp-main.svg'
-
-%script#temp-venue{:type => "text/x-template"}
-  .seo-friendly
-
-  #venue.slide
-    .container
-      = image_tag 'venue/venue-main.svg'
-      .venue-images
-        .img-1
-        .img-2
-        .img-3
-        .img-4
-        .img-5
-        .img-6
-
-%script#temp-sponsorship{:type => 'text/x-template'}
-  #sponsorship.slide
-    .container
-      = image_tag 'sponsorship/sponsorship.svg'
-      .form
-        .control-group
-          .controls
-            = link_to 'Download Prospectus PDF', 'http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf', class:'submit', target: '_blank'
-            %p.contact-us
-              Contact us at
-              = mail_to 'info@magmaconf.com'
+%section#home.row
+  .column.large-12.large-centered
+    .row
+      .column.large-5
+        = link_to 'http://magmaconf.boletia.com/new-reservation' do
+          = image_tag 'new/buy-tickets.png'
+      .column.large-6.large-offset-1
+        %p
+          MagmaRails is now
+          %strong MagmaConf!
+          , one of the most important web development conferences in Mexico; with
+          Ruby, Rails, Frontend and more web tecnologies sessions for developers
+          and engineers that build cutting-edge web applications.  Come and learn
+          from our speakers about tools, techniques and their experiences.
+        %p
+          Join us at Manzanillo and live the MagmaConf experience, meet engineers
+          from all around the world, chat with our speakers and have the chance to
+          swim in the warmest waters of Mexico.
+%section#speakers
+  .row
+    .column.large-6.large-centered
+      %h2= image_tag 'new/speakers/speakers.png'
+    #keynotes.row
+      .column.large-4
+        = link_to "http://magmazine.magmaconf.com/en/keynotes" do
+          = image_tag 'new/speakers/santiago-pastorino.png'
+      .column.large-4
+        = link_to "http://magmazine.magmaconf.com/en/keynotes" do
+          = image_tag 'new/speakers/gregg-pollack.png'
+      .column.large-4
+        = link_to "http://magmazine.magmaconf.com/en/keynotes" do
+          = image_tag 'new/speakers/bryan-liles.png'
+    .row
+      #schedule.column.large12
 
 
-%script#temp-pricing{:type => 'text/x-template'}
-  #pricing.slide
-    .container
-      = image_tag 'pricing/pricing_title.svg'
-      = link_to 'http://magmaconf.boletia.com/new-booking', class: 'ticket', target: '_blank' do
-        = image_tag 'pricing/ticket_only.svg'
-      = link_to 'http://magmaconf.boletia.com/new-booking', class: 'ticket', target: '_blank' do
-        = image_tag 'pricing/ticket_meals.svg'
-      = image_tag 'pricing/ticket_hosting.svg', usemap: '#ticket_hosting'
-      %map{:name => "ticket_hosting"}
-        %area{:alt => "info@magmaconf.com", :coords => "124,405,428,665", :href => "mailto:info@magmaconf.com", :shape => "rect"}/
-      = image_tag 'mzo.png'
+%section#location
+  .row
+    .column.large-6.large-centered
+      %h2= image_tag 'new/location/location.png', class: 'location-title'
+    .row
+      .column.large-7
+        %p
+          Manzanillo is known as the World's Sailfish Capital.  Since 1957,
+          it has hosted important national and international fishing competitions,
+          making it a very attractive fishing destination.
+        %p
+          Located in the Pacific Ocean, Manzanillo is the populous city of
+          the State of Colima, México. It has a highly developed
+          infrastructure for all kinds of tourism, including luxury hotels in
+          which you can have business meetings or just get away from the routine,
+          three excellent golf courts surrounded by lakes and exuberant vegetation,
+          and many cool bars and restaurants.
+        %p
+          Manzanillo’s International Airport is only 15 minutes away from the
+          MagmaConf Venue.
+      .column.large-5
+        = image_tag 'new/location/manzanillo.png'
+
+%section#venue
+  .row
+    .column.large-2
+      = image_tag 'new/location/venue.png'
+    .column.large-4
+      %h3
+        Venue
+      = link_to 'http://goo.gl/maps/46s8I' do
+        Centro de Tecnología Educativa
+        %br
+        Universidad de Colima
+        %br
+        Campus El Naranjo
+      %p.address Address
+      %ul.vcard
+        %li.fn Universidad de Colima Campus El Naranjo,
+        %li.street Carretera Manzanillo-Cihuatlán kilómetro 20,
+        %li.locality
+          Manzanillo,
+          %span Colimaa
+        %li
+          %span.country México,
+          %span.zip 28860
+      %p
+        Located in the University of Colima’s El Naranjo campus,
+        the Center of Educational Technology is a first-class teaching-
+        turned-conference facility, featuring comfortable seating, wireless
+        internet, and air conditioning.
+    .column.large-2.large-offset-1
+      = image_tag 'new/location/magma-vilage.png'
+    .column.large-3
+      %h3 Magma village
+      %p
+        Magma VIllage is our official housing option. Located in the
+        exclusive Santiago Beach Club, it has the best beaches in Manzanillo.
+        There you can enjoy the fun under the sun, and the lovely starry skyes at
+        night.
+      %p
+        Close to the beach, Magma Village will give you the opportunity of mixing
+        the serious stuff with the pleasure of enjoying the ocean that lies
+        just a few steps from your accommodation.
+      = link_to 'more information', 'http://magmazine.magmaconf.com/en/faq'
 
 
-#slider.spotlight.mask
-
-
-
-  = link_to 'http://magmazine.magmaconf.com/en/faq', class: 'magmazine-footer hidden-desktop hidden-tablet' do
-    = image_tag 'mobile/magmazine.png'
-  = render 'partials/footer'
-
-.seo-friendly
-  %h2 Magmaconf 2013
-  %p more matches, more luchadores!
-  %p no including ruby, rails, frontend and more...
-  %p Manzanillo june 5 - 7 2013
-
-  %h2 keynotes
-  %p Santiago pastorino
-  %p gregg pollack
-  %p bryan liles
-
-  %h2 Call for papers
-  %p we want you for magmaconf
-  %p send your proposal to our call for papers app
-
-  %h2 A beach you must in mexico
-  %p
-    Mexico, a natural beaty in the pacific, with its sunny and warm beaches
-    is hard-to-beat location for our grand event!
-  %h2 A great fun and relaxing place
-  %p
-    you could go on exciting snorkeling or scuba diving andventures on your
-    spare time!
-  %h2 Put simply: the best location for magmaconf!
-  %p with cool bars and cafes, there's something for everyone in manzanillo.
-  %p
-    And it's also conveniently near to an international airpot that connects with
-    los angeles, vancouvr, houston and mexico city.
-  %h3
-    see you there in june 5 - 7 2013
-
-  %h2 Sponsorship
-  %p would you like sponsoring magma cong?
-  %p then show me the money!
-  %p for more information, please tell us how to contact you.
-
-  %h3 Pricing
-  %p Early bird opens from march 1st to 31th 2013
-  %p Only ticket - $1000.00 MXN normal price $1200.00 mxn
-  %p Ticket with 2 meals - $1300.00 mxn normal price $1500.00 mxn
-  %p For more information about hosting at  the magma village, please contact us
+%section#sponsorship
+  .row
+    .column.large-12.large-centered
+      = link_to '#' do
+        = image_tag 'new/sponsors/sponsorship.png'

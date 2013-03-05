@@ -6,9 +6,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.color-2.1.0.min
+//= require foundation
 //= require modernizr.custom
 //= require underscore-min
-//= require backbone-min
 //= require core-1.0.4
 //= require_tree .
+
+$(document).foundation();
