@@ -21,6 +21,7 @@ footer, #push {
   background: #9bc2b2;
 }
 footer {
+  font-family: 'Oswald';
   background: white;
   padding: 5px 5px;
   color: gray;
@@ -42,6 +43,7 @@ p {
 }
 
 .top-bar {
+  font-family: 'Oswald';
   height: 55px;
   .title-area {
     padding-top: 5px;
@@ -167,7 +169,8 @@ section#speakers {
         list-style: none;
         position: relative;
         p.name {
-          font-size: 11px;
+          font-family: 'Oswald';
+          font-size: 13px;
           width: 167px;
           text-align: center;
           border: 5px solid black;
@@ -220,6 +223,15 @@ section#speakers {
       }
       .solo {
         margin-top: 40px;
+       .info {
+          left: -253px;
+          right: 200px;
+          &:before {
+            left: 252px;
+            border-width: 22px 0px 0 23px;
+          }
+        }
+
       }
       a.help {
         position: relative;
