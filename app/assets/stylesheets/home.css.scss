@@ -168,6 +168,9 @@ section#speakers {
       li {
         list-style: none;
         position: relative;
+        -webkit-perspective: 600px;
+        -moz-perspective: 600px;
+        height: 250px;
         p.name {
           font-family: 'Oswald';
           font-size: 13px;
@@ -180,56 +183,67 @@ section#speakers {
           font-weight: 700;
 
         }
-        &:hover {
-          .info {
-            display: block;
-          }
+        &.flip .front {
+          z-index: 900;
+          border-color: #eee;
+          background: #333;
+          -webkit-transform: rotateY(180deg);
+          -moz-transform: rotateY(180deg);
         }
-        &:nth-child(4n+4) {
-          .info {
-            left: -253px;
-            right: 200px;
-            &:before {
-              left: 287px;
-              border-width: 22px 0px 0 23px;
-            }
-          }
-        }
-        .info {
-          display: none;
-          position: absolute;
+        &.flip .back {
+          z-index: 1000;
           background: white;
-          border: 4px solid black;
-          font-size: 14px;
-          padding: 5px;
-          z-index: 2;
-          top: 0px;
-          left: 138px;
-          right: -179px;
-          box-shadow: 1px 0px 1px #000,0px 1px 1px #000,2px 1px 1px #000,1px 2px 1px #000,3px 2px 1px #000,2px 3px 1px #000,4px 3px 1px #000,3px 4px 1px #000,5px 4px 1px #000,4px 5px 1px #000,6px 5px 1px #000;
-
-          &:before {
-              content: '';
-              position: absolute;
-              top: 100%;
-              left: -4px;
-              border-color: black transparent transparent transparent;
-              border-style: solid;
-              border-width: 26px 20px 0 1px;
-              width: 0;
-              height: 0;
-          }
+          -webkit-transform: rotateX(0deg) rotateY(0deg);
+          -moz-transform: rotateX(0deg) rotateY(0deg);
+        }
+        .front {
+          float: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 900;
+          width: 100%;
+          // height: 100%;
+          -webkit-transform: rotateX(0deg) rotateY(0deg);
+          -webkit-transform-style: preserve-3d;
+          -webkit-backface-visibility: hidden;
+          -moz-transform: rotateX(0deg) rotateY(0deg);
+          -moz-transform-style: preserve-3d;
+          -moz-backface-visibility: hidden;
+          -o-transition: all .4s ease-in-out;
+          -ms-transition: all .4s ease-in-out;
+          -moz-transition: all .4s ease-in-out;
+          -webkit-transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out;
+          background: #9ec6b6;
+        }
+        .back {
+          background: white;
+          float: none;
+          position: absolute;
+          padding: 10px;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 200px;
+          z-index: 900;
+          -webkit-transform: rotateY(-180deg);
+          -webkit-transform-style: preserve-3d;
+          -webkit-backface-visibility: hidden;
+          -moz-transform: rotateY(-180deg);
+          -moz-transform-style: preserve-3d;
+          -moz-backface-visibility: hidden;
+          -o-transition: all .4s ease-in-out;
+          -ms-transition: all .4s ease-in-out;
+          -moz-transition: all .4s ease-in-out;
+          -webkit-transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out;
+          p { float: none;}
         }
       }
       .solo {
         margin-top: 40px;
        .info {
-          left: -253px;
-          right: 200px;
-          &:before {
-            left: 252px;
-            border-width: 22px 0px 0 23px;
-          }
         }
 
       }

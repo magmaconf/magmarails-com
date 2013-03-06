@@ -41,4 +41,12 @@
       #push
       = render 'partials/footer'
     = javascript_include_tag "application"
+    :javascript
+      $(document).ready(function(){
+        $('#speakers-list li').hover(function(){
+          $(this).addClass('flip');
+        },function(){
+          $(this).removeClass('flip');
+        });
+      })
 
