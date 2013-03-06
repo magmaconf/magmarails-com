@@ -232,7 +232,7 @@ section#speakers {
           left: 0;
           width: 100%;
           height: 200px;
-          z-index: 900;
+          z-index: 800;
           -webkit-transform: rotateY(-180deg);
           -webkit-transform-style: preserve-3d;
           -webkit-backface-visibility: hidden;
@@ -288,8 +288,8 @@ section#location {
   .location-title {
     position: relative;
     z-index: 2;
-    margin-top: -185px;
-    margin-bottom: 27px;
+    top: -185px;
+    margin-bottom: -185px;
   }
 }
 
@@ -321,4 +321,6 @@ section#sponsorship {
   background: #9bc2b2;
   padding-top: 40px;
 }
-
+.fixed {
+  z-index: 9999;
+}
