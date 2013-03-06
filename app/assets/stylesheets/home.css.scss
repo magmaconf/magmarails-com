@@ -238,7 +238,19 @@ section#speakers {
           -moz-transition: all .4s ease-in-out;
           -webkit-transition: all .4s ease-in-out;
           transition: all .4s ease-in-out;
-          p { float: none;}
+          h4 {
+            text-align: center;
+            color: black;
+            font-family: oswald;
+            text-transform: uppercase;
+            font-size: 17px;
+          }
+          p {
+            color: #8d8d8d;
+            float: none;
+            font-size: 14px;
+            line-height: 17px;
+          }
         }
       }
       .solo {
