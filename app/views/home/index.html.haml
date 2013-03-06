@@ -37,171 +37,16 @@
           .column.large-4.large-centered
             %h2 the speakers
         %ul#speakers-list.large-block-grid-4
-          %li
-            .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                tommy rochette
-            .back
-              .info
-                %h4 Tommy rochette
-                %p
-                  Tommy Rochette is a Senior Consultant for Universal Mind specializing in HTML5 and Javascript development. He is an expert at building rich Internet applications, using technologies like, Bootstrap, Foundation, jQuery and Angular.js bridging the gap with enterprise application back-ends.
-                  %br
-                  A skilled linguist, he is a French speaker but can also talk ergonomics, usability and, at the same time, RESTful service integration or real time messaging. Beside HTML and Javascript, he is addicted to Actionscript and Objective-C.
-                  %br
-                  On days off, you can find Tommy on a mountain bike around Sainte-Anne Mountain or riding some local trails.
-          %li
-            .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                johnny winn
-            .back
-              .info
-                %h4 Johnny winn
-                %p
-                  I'm a rugby player with a Ruby problem and a Hashrocket Rocketeer. After a decade in the .Net world, Ruby has reignited passion for software craftsmanship.
-          %li
-            .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                Konstantin Gredeskoul
-            .back
-              .info
-                %h4 Konstantin Gre
-                %p
-                  this some info about this guy just some mombo jumble just for fun.
-          %li
-            .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                Ron evans
-            .back
-              .info
-                %h4 Ron evans
-                %p
-                  this some info about this guy just some mombo jumble just for fun.
-          %li
-            .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                Nick Sutterer
-            .back
-              .info
-                %h4 Nick Sutterer
-                %p
-                  this some info about this guy just some mombo jumble just for fun.
-          %li
-            .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                Javier Cervantes
-            .back
-              .info
-                %h4 Javier Cervantes
-                %p
-                  this some info about this guy just some mombo jumble just for fun.
-          %li
-            .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                Ivan Acosta-Rubio
-            .back
-              .info
-                %h4 Ivan Acosta-Rubio
-                %p
-                  this some info about this guy just some mombo jumble just for fun.
-          %li
-            .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                Mario A Chavez
-            .back
-              .info
-                %h4 Mario A Chavez
-                %p
-                  this some info about this guy just some mombo jumble just for fun.
-          %li
-            .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                Francisco Viramontes
-            .back
-              .info
-                %h4
-                  Francisco Viramontes
-                %p
-                  this some info about this guy just some mombo jumble just for fun.
-          %li
-            .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                Norberto Hernández
-            .back
-              .info
-                %h4 Norberto Hernández
-                %p
-                  this some info about this guy just some mombo jumble just for fun.
-          %li
-            .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                Edwin Cruz
-            .back
-              .info
-                %h4 Edwin Cruz
-                %p
-                  this some info about this guy just some mombo jumble just for fun.
-          %li
-            .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                Herman Eleazar Moreno
-            .back
-              .info
-                %h4 Herman Eleazar Moreno
-                %p
-                  this some info about this guy just some mombo jumble just for fun.
-          %li
-            .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                Jon Dean
-            .back
-              .info
-                %h4 Jon Dean
-                %p
-                  this some info about this guy just some mombo jumble just for fun.
-          %li
-            .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                Eric Saxby
-            .back
-              .info
-                %h4 Eric Saxby
-                %p
-                  this some info about this guy just some mombo jumble just for fun.
-          %li
-            .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                Manuel Enrique Vidaurre Arenas
-            .back
-              .info
-                %h4 Manuel Enrique Vidaurre Arenas
-                %p
-                  this some info about this guy just some mombo jumble just for fun.
-          %li
-            .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                Blake Mizerany
-            .back
-              .info
-                %h4 Blake Mizerany
-                %p
-                  this some info about this guy just some mombo jumble just for fun.
+          - @speakers.each do |speaker|
+            %li
+              .front
+                = image_tag 'new/speakers/mask.png'
+                %p.name
+                  = speaker.first[:name]
+              .back
+                .info
+                  %h4= speaker.first[:twitter]
+                  %p=raw speaker.first[:bio]
         %ul#speakers-list.column.large-3.large-centered
           %li.solo
             = image_tag 'new/speakers/mask.png'
@@ -209,8 +54,6 @@
               Konstantin Haase
             = link_to 'http://bring-konstantin-to.magmaconf.com', class: 'help', target: '_blank' do
               = image_tag 'new/speakers/help.png'
-            .info
-              this some info about this guy just some mombo jumble just for fun.
 
 
 
