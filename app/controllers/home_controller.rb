@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   def index
     @speakers = [
                    [ name: "Tommy Rochette",
-                           twitter: "@trochette",
+                           twitter: "trochette",
                            bio: "Sr. Consultant at Universal Mind, focused on building rich Internet applications with HTML5 and Javascript. "],
                  [ name: "Johnny Winn",
                           twitter: "johnny_rugger",
@@ -35,7 +35,7 @@ class HomeController < ApplicationController
                   [ name: "edwin cruz",
                           twitter: "softr8",
                           bio: "Crazy dude obsesed with high performance web applications, specialized in Ruby on Rails, scalable solutions and team work."],
-                 [ name: "Herman moreno eleazar",
+                 [ name: "Herman Moreno",
                           twitter: "supherman",
                           bio: "Software engineer, passionate programmer, Rubyst and DIY guy, also a best code practices enthusiast."],
                     [ name: "jon dean",
