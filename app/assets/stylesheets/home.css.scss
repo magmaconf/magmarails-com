@@ -297,6 +297,7 @@ section#venue {
   background: #9cc3b4;
   padding-top: 40px;
   border-bottom: 1px solid #c6ded5;
+  padding-bottom: 220px;
   a {
     color: white;
     text-decoration: underline;
@@ -316,10 +317,66 @@ section#venue {
     border: none;
   }
 }
-
+section#pricing {
+  background: white;
+  padding-top: 40px;
+  min-height: 400px;
+  .title {
+    top: -250px;
+    margin-bottom: -187px;
+    position: relative;
+  }
+  .large-block-grid-3{
+    li {
+      padding: 0 !important;
+      border-right: 1px dotted black;
+      text-transform: uppercase;
+      p.first {
+        padding-top: 34px;
+      }
+      p, strong {
+        padding: 10px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      strong {
+        font-family: 'oswald';
+        padding-top: 0;
+        font-size: 22px;
+      }
+      &.last {
+        border: none;
+      }
+      .hosting {
+        margin: 0 auto;
+      }
+      .magma-village {
+        padding: 0 39px;
+        text-align: center;
+        strong {
+          font-size: 31px;
+        }
+        a {
+          color: #d60a00;
+        }
+      }
+    }
+  }
+  .ticket-title {
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: black;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    width: 100%;
+    margin: 0;
+  }
+}
 section#sponsorship {
   background: #9bc2b2;
   padding-top: 40px;
+
 }
 .fixed {
   z-index: 9999;
