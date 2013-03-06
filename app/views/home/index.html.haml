@@ -17,7 +17,7 @@
           from all around the world, chat with our speakers and have the chance to
           swim in the warmest waters of Mexico.
 
-%section#speakers
+%section#speakers{"data-magellan-destination"=>"keynotes"}
   .row
     .column.large-6.large-centered
       %h2= image_tag 'new/speakers/keynotes.png'
@@ -45,7 +45,7 @@
                   = speaker.first[:name]
               .back
                 .info
-                  %h4= link_to speaker.first[:twitter], "http://twitter.com/#{speaker.first[:twitter]}", target: "_blank"
+                  %h4= link_to "@#{speaker.first[:twitter]}", "http://twitter.com/#{speaker.first[:twitter]}", target: "_blank"
                   %p=raw speaker.first[:bio]
         %ul#speakers-list.column.large-3.large-centered
           %li.solo
@@ -104,7 +104,7 @@
         %li.street Carretera Manzanillo-Cihuatlán kilómetro 20,
         %li.locality
           Manzanillo,
-          %span Colimaa
+          %span Colima
         %li
           %span.country México,
           %span.zip 28860
