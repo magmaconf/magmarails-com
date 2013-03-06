@@ -49,7 +49,7 @@ class HomeController < ApplicationController
                           bio: "Mexican developer, writer and salesman; self taught, eager for knowelge."],
                  [ name: "blake mizerany",
                           twitter: "@bmizerany",
-                          bio: "Sinatra's creator who currently builds systems in Go language for Heroku. Also Tequila drinker and Esteban's BFF"]
+                          bio: "Sinatra's creator who currently builds systems in Go language for Heroku."]
 
     ]
     response.headers['Cache-Control'] = 'public, max-age=3000'

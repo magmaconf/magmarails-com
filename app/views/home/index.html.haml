@@ -45,13 +45,14 @@
                   = speaker.first[:name]
               .back
                 .info
-                  %h4= speaker.first[:twitter]
+                  %h4= link_to speaker.first[:twitter], "http://twitter.com/#{speaker.first[:twitter]}", target: "_blank"
                   %p=raw speaker.first[:bio]
         %ul#speakers-list.column.large-3.large-centered
           %li.solo
-            = image_tag 'new/speakers/mask.png'
-            %p.name
-              Konstantin Haase
+            = link_to 'http://bring-konstantin-to.magmaconf.com', target: '_blank' do
+              = image_tag 'new/speakers/mask.png', class: 'mask'
+              %p.name
+                Konstantin Haase
             = link_to 'http://bring-konstantin-to.magmaconf.com', class: 'help', target: '_blank' do
               = image_tag 'new/speakers/help.png'
 

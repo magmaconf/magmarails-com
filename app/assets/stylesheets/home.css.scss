@@ -252,6 +252,9 @@ section#speakers {
             font-size: 17px;
             letter-spacing: 1px;
             margin-bottom: 20px;
+            a {
+              color: black;
+            }
           }
           p {
             color: black;
@@ -263,14 +266,18 @@ section#speakers {
       }
       .solo {
         margin-top: 40px;
-       .info {
+        .mask, p.name {
+          margin: 0 auto;
+        }
+        p.name {
+          color: black;
         }
 
       }
       a.help {
         position: relative;
         top: -225px;
-        right: -147px;
+        right: -179px;
         z-index: 2;
       }
     }
