@@ -34,7 +34,7 @@ class HomeController < ApplicationController
                            bio: "Web designer and front-end developer, passionate about HTML5 and CSS3, proud vegetarian."],
                   [ name: "edwin cruz",
                           twitter: "softr8",
-                          bio: "Crazy dude obsesed with high performance web applications, specialized in Ruby on Rails, scalable solutions and team work."],
+                          bio: "Crazy dude obsessed with high performance web applications, specialized in Ruby on Rails, scalable solutions and team work."],
                  [ name: "Herman Moreno",
                           twitter: "supherman",
                           bio: "Software engineer, passionate programmer, Rubyst and DIY guy, also a best code practices enthusiast."],
@@ -46,7 +46,7 @@ class HomeController < ApplicationController
                           bio: "Software engineer at Wanelo.com, uses Chef to manage their growing infraestructure. Worked on a circus once."],
                  [ name: "manuel vidaurre",
                           twitter: "mvidaurre",
-                          bio: "Mexican developer, writer and salesman; self taught, eager for knowelge."],
+                          bio: "Mexican developer, writer and salesman; self taught, eager for knowledge."],
                  [ name: "blake mizerany",
                           twitter: "bmizerany",
                           bio: "Sinatra's creator who currently builds systems in Go language for Heroku."]
