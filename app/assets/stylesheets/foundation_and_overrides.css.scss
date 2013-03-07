@@ -1011,7 +1011,7 @@ $topbar-menu-icon-color: #111;
   /* line 127, ../../../../.rvm/gems/ruby-1.9.3-p194@magma/gems/zurb-foundation-4.0.3/scss/foundation/components/_grid.scss */
   .small-8 {
     position: relative;
-    width: 66.66667%;
+    width: 66.66667% !important;
   }
 
   /* line 127, ../../../../.rvm/gems/ruby-1.9.3-p194@magma/gems/zurb-foundation-4.0.3/scss/foundation/components/_grid.scss */
@@ -1055,7 +1055,7 @@ $topbar-menu-icon-color: #111;
     font-size: 16px !important;
   }
   #keynotes .column {
-    @extend .small-7;
+    @extend .small-9;
     @extend .small-centered;
   }
 
