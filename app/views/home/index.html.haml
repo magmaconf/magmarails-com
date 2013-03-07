@@ -1,10 +1,10 @@
 %section#home.row
   .column.large-12.large-centered
     .row
-      .column.large-5
+      .column.large-5.main-image
         = link_to 'http://magmaconf.boletia.com/new-booking', target: '_blank'  do
           = image_tag 'new/buy-tickets.png'
-      .column.large-6.large-offset-1
+      .column.large-6.large-offset-1.info
         %p
           MagmaRails is now
           %strong MagmaConf!
@@ -19,8 +19,13 @@
 
 %section#speakers{"data-magellan-destination"=>"keynotes"}
   .row
-    .column.large-6.large-centered
+    .column.large-6.large-centered.hide-for-small
       %h2= image_tag 'new/speakers/keynotes.png'
+    .row.hide-for-medium-up
+      .column.large-12
+        .row
+          .column.large-4.large-centered
+            %h2.black-h2 Keynotes
     #keynotes.row
       .column.large-4
         = link_to "http://magmazine.magmaconf.com/en/keynotes", target: '_blank' do
@@ -35,7 +40,7 @@
       #speaker-wrap.column.large-12
         .row
           .column.large-4.large-centered
-            %h2 the speakers
+            %h2.black-h2 the speakers
         %ul#speakers-list.large-block-grid-4
           - @speakers.each do |speaker|
             %li
@@ -64,10 +69,16 @@
 
 %section#location
   .row
-    .column.large-6.large-centered
+    .column.large-6.hide-for-small
       %h2= image_tag 'new/location/location.png', class: 'location-title'
+    .row.hide-for-medium-up
+      .column.large-12
+        .row
+          .column.large-4.large-centered
+            %h2.black-h2 Location
     .row
-      .column.large-7
+      .column.large-7.info
+
         %p
           Manzanillo is known as the World's Sailfish Capital.  Since 1957,
           it has hosted important national and international fishing competitions,
@@ -87,7 +98,7 @@
 
 %section#venue
   .row
-    .column.large-2
+    .column.large-2.hide-for-small
       = image_tag 'new/location/venue.png'
     .column.large-4
       %h3
@@ -113,7 +124,7 @@
         the Center of Educational Technology is a first-class teaching-
         turned-conference facility, featuring comfortable seating, wireless
         internet, and air conditioning.
-    .column.large-2.large-offset-1
+    .column.large-2.large-offset-1.hide-for-small
       = image_tag 'new/location/magma-vilage.png'
     .column.large-3
       %h3 Magma Village

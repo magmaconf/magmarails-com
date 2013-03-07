@@ -41,7 +41,20 @@ footer {
 p {
   font-size: 18px;
 }
-
+.black-h2 {
+  font-family: oswald;
+  display: inline-block;
+  color: white;
+  background: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 25px;
+  width: 100%;
+  margin-bottom: 60px;
+  margin-top: 0;
+}
 .top-bar {
   font-family: 'Oswald';
   height: 55px;
@@ -151,18 +164,7 @@ section#speakers {
     // height: 500px;
     margin-bottom: 250px;
     h2 {
-      font-family: oswald;
-      display: inline-block;
-      color: white;
-      background: black;
-      padding: 10px 15px;
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 25px;
-      width: 100%;
-      margin-bottom: 60px;
-      margin-top: 0;
+      @extend .black_h2;
     }
     #speakers-list {
       // margin-top: 40px;
@@ -383,3 +385,5 @@ section#sponsorship {
 .fixed {
   z-index: 9999;
 }
+
+
