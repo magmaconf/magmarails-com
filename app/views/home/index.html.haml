@@ -21,12 +21,11 @@
   .row
     .column.large-6.large-centered.hide-for-small
       %h2= image_tag 'new/speakers/keynotes.png'
-    .row.hide-for-medium-up
-      .column.large-12
-        .row
-          .column.large-4.large-centered
-            %h2.black-h2 Keynotes
-    #keynotes.row
+  .row.hide-for-medium-up
+    .column.large-1.title-black
+      %h2.black-h2 Keynotes
+  .row
+    #keynotes
       .column.large-4
         = link_to "http://magmazine.magmaconf.com/en/keynotes", target: '_blank' do
           = image_tag 'new/speakers/santiago-pastorino.png'
@@ -36,30 +35,34 @@
       .column.large-4
         = link_to "http://magmazine.magmaconf.com/en/keynotes", target: '_blank' do
           = image_tag 'new/speakers/bryan-liles.png'
-    .row
-      #speaker-wrap.column.large-12
-        .row
-          .column.large-4.large-centered
-            %h2.black-h2 the speakers
-        %ul#speakers-list.large-block-grid-4
-          - @speakers.each do |speaker|
-            %li
-              .front
-                = image_tag 'new/speakers/mask.png'
-                %p.name
-                  = speaker.first[:name]
-              .back
-                .info
-                  %h4= link_to "@#{speaker.first[:twitter]}", "http://twitter.com/#{speaker.first[:twitter]}", target: "_blank"
-                  %p=raw speaker.first[:bio]
-        %ul#speakers-list.column.large-3.large-centered
-          %li.solo
-            = link_to 'http://bring-konstantin-to.magmaconf.com', target: '_blank' do
-              = image_tag 'new/speakers/mask.png', class: 'mask'
+  .row.hide-for-medium-up
+    .column.large-1.title-black
+      %h2.black-h2 the speakers
+
+  .row
+    #speaker-wrap.column.large-12
+      .row.hide-for-small
+        .column.large-4.large-centered
+          %h2.black-h2 the speakers
+      %ul#speakers-list.large-block-grid-4
+        - @speakers.each do |speaker|
+          %li
+            .front
+              = image_tag 'new/speakers/mask.png'
               %p.name
-                Konstantin Haase
-            = link_to 'http://bring-konstantin-to.magmaconf.com', class: 'help', target: '_blank' do
-              = image_tag 'new/speakers/help.png'
+                = speaker.first[:name]
+            .back
+              .info
+                %h4= link_to "@#{speaker.first[:twitter]}", "http://twitter.com/#{speaker.first[:twitter]}", target: "_blank"
+                %p=raw speaker.first[:bio]
+      %ul#speakers-list.column.large-3.large-centered
+        %li.solo
+          = link_to 'http://bring-konstantin-to.magmaconf.com', target: '_blank' do
+            = image_tag 'new/speakers/mask.png', class: 'mask'
+            %p.name
+              Konstantin Haase
+          = link_to 'http://bring-konstantin-to.magmaconf.com', class: 'help', target: '_blank' do
+            = image_tag 'new/speakers/help.png'
 
 
 
@@ -71,30 +74,28 @@
   .row
     .column.large-6.hide-for-small
       %h2= image_tag 'new/location/location.png', class: 'location-title'
-    .row.hide-for-medium-up
-      .column.large-12
-        .row
-          .column.large-4.large-centered
-            %h2.black-h2 Location
-    .row
-      .column.large-7.info
+  .row.hide-for-medium-up
+    .column.large-1.title-black
+      %h2.black-h2 Location
+  .row
+    .column.large-7.info
 
-        %p
-          Manzanillo is known as the World's Sailfish Capital.  Since 1957,
-          it has hosted important national and international fishing competitions,
-          making it a very attractive fishing destination.
-        %p
-          Located in the Pacific Ocean, Manzanillo is the populous city of
-          the State of Colima, México. It has a highly developed
-          infrastructure for all kinds of tourism, including luxury hotels in
-          which you can have business meetings or just get away from the routine,
-          three excellent golf courts surrounded by lakes and exuberant vegetation,
-          and many cool bars and restaurants.
-        %p
-          Manzanillo’s International Airport is only 15 minutes away from the
-          MagmaConf Venue.
-      .column.large-5
-        = image_tag 'new/location/manzanillo.png'
+      %p
+        Manzanillo is known as the World's Sailfish Capital.  Since 1957,
+        it has hosted important national and international fishing competitions,
+        making it a very attractive fishing destination.
+      %p
+        Located in the Pacific Ocean, Manzanillo is the populous city of
+        the State of Colima, México. It has a highly developed
+        infrastructure for all kinds of tourism, including luxury hotels in
+        which you can have business meetings or just get away from the routine,
+        three excellent golf courts surrounded by lakes and exuberant vegetation,
+        and many cool bars and restaurants.
+      %p
+        Manzanillo’s International Airport is only 15 minutes away from the
+        MagmaConf Venue.
+    .column.large-5
+      = image_tag 'new/location/manzanillo.png'
 
 %section#venue
   .row
@@ -142,11 +143,9 @@
   .row
     .column.large-6.large-centered.hide-for-small
       = image_tag 'new/pricing/pricing.png', class: 'title'
-    .row.hide-for-medium-up
-      .column.large-12
-        .row
-          .column.large-4.large-centered
-            %h2.black-h2 el pricing
+  .row.hide-for-medium-up
+    .column.large-1.title-black
+      %h2.black-h2 el pricing
   .row
     %ul.large-block-grid-3
       %li
