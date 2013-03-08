@@ -1025,6 +1025,11 @@ $topbar-menu-icon-color: #111;
     position: relative;
     width: 83.33333% !important;
   }
+
+  .small-11 {
+    position: relative;
+    width: 91.66667% !important;
+  }
   .small-centered {
     position: relative;
     margin-left: auto;
@@ -1050,9 +1055,8 @@ $topbar-menu-icon-color: #111;
 
   }
   .info {
-    @extend .small-10;
     @extend .small-centered;
-    font-size: 16px !important;
+    p {font-size: 14px !important;}
   }
   #keynotes .column {
     @extend .small-9;
