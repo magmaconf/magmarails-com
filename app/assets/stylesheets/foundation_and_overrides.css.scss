@@ -1076,7 +1076,7 @@ $topbar-menu-icon-color: #111;
   }
 
   section#speakers #speaker-wrap #speakers-list li .back {
-    padding: 3px;
+    padding: 3px !important;
   }
   #speakers-list a.help {
     display: block;
@@ -1088,18 +1088,25 @@ $topbar-menu-icon-color: #111;
     padding-right: 0 !important;
   }
 
-  section#pricing .large-block-grid-3 {
-    margin: 0;
-    li {
-      border: none !important;
-      img {
-        width: 330px !important;
-        &.hosting {
-          width: auto !important;
+  section#pricing {
+    padding-top: 0 !important;
+    .large-block-grid-3 {
+      margin: 0;
+      li {
+        border: none !important;
+        margin-bottom: 35px;
+        img {
+          width: 330px !important;
+          &.hosting {
+            width: auto !important;
+          }
         }
-      }
-      .magma-village {
-        width: 100%;
+        p {
+          text-align: center;
+        }
+        .magma-village {
+          width: 100%;
+        }
       }
     }
   }
