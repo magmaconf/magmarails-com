@@ -301,8 +301,6 @@ section#location {
 section#venue {
   background-image: url('/assets/bkg.jpg');
   padding-top: 40px;
-  border-bottom: 1px solid #c6ded5;
-  padding-bottom: 220px;
   a {
     color: white;
     text-decoration: underline;
@@ -324,12 +322,11 @@ section#venue {
 }
 section#pricing {
   background: white;
-  padding-top: 40px;
   min-height: 400px;
   .title {
-    top: -250px;
-    margin-bottom: -187px;
+    margin-bottom: 30px;
     position: relative;
+    padding-top: 80px;
   }
   .large-block-grid-3{
     li {
@@ -392,3 +389,5 @@ section#sponsorship {
 h3 { font-family: 'Oswald'; }
 .back_blue { background-image: url('/assets/bkg.jpg'); }
 .margin_add { margin-top: 40px; }
+.margin_add_pricing { margin: 30px auto; }
+.around { padding-top: 0 !important; font-size: 0.8em; }

@@ -63,7 +63,7 @@
               Konstantin Haase
           .back
             .info
-              %h4= link_to '@konstantinhaase', 'http://twitter.com/konstantinhaase'
+              %h4= link_to '@konstantinhaase', 'http://twitter.com/konstantinhaase', target: '_blank'
               %p
                 A german working at TravisCI, who works in so many OSS projects, like: Sinatra, Puma, Rubinius 
 
@@ -144,28 +144,31 @@
         just a few steps from your accommodation.
       = link_to 'more information', 'http://magmazine.magmaconf.com/en/faq', target: '_blank'
 %section#pricing
-  .row
-    .column.large-6.large-centered.hide-for-small
-      = image_tag 'new/pricing/pricing.png', class: 'title'
+  .back_blue
+    .row
+      .column.large-6.large-centered.hide-for-small
+        = image_tag 'new/pricing/pricing.png', class: 'title'
   .row.hide-for-medium-up
     .column.large-1.title-black
       %h2.black-h2 el pricing
-  .row
+  .row.margin_add_pricing
     %ul.large-block-grid-3
       %li
         = image_tag 'new/pricing/ticket-only.png', class: 'ticket-title'
         %p.first early bird
         = link_to 'http://magmaconf.boletia.com/new-booking', onclick: "_gaq.push(['_trackEvent', 'tickets', 'only'])",  target: '_blank' do
-          = image_tag 'new/pricing/ticket-only-price.png'
+          = image_tag 'new/pricing/new-booking-2.png'
         %p regular
         %strong $1,200.00 mxn
+        %p.around around $100.00 usd
       %li
         = image_tag 'new/pricing/ticket-meals.png', class: 'ticket-title'
         %p.first early bird
         = link_to 'http://magmaconf.boletia.com/new-booking', onclick: "_gaq.push(['_trackEvent', 'tickets', 'meal'])",  target: '_blank' do
-          = image_tag 'new/pricing/ticket-meals-price.png'
+          = image_tag 'new/pricing/new-booking.png'
         %p regular
         %strong $1,500.00 mxn
+        %p.around around $125.00 usd
       %li.last
         = image_tag 'new/pricing/ticket-meals.png', class: 'ticket-title'
         = image_tag 'new/pricing/hosting.png', class: 'hosting'
