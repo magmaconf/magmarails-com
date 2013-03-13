@@ -154,15 +154,16 @@ section#home {
 }
 
 section#speakers {
-  background: #9ec6b6;
-  padding-top: 40px;
+  background-image: url('/assets/bkg.jpg');
+  padding-top: 60px;
   #keynotes {
     padding-bottom: 20px;
-    border-bottom: 1px solid #c6ded5;
   }
   #speaker-wrap {
     // height: 500px;
-    margin-bottom: 250px;
+    border-top: 1px solid #c6ded5;
+    margin-top: 20px;
+    margin-bottom: 50px;    /*-----------------------------------*/
     h2 {
       @extend .black_h2;
     }
@@ -220,7 +221,6 @@ section#speakers {
           -moz-transition: all .4s ease-in-out;
           -webkit-transition: all .4s ease-in-out;
           transition: all .4s ease-in-out;
-          background: #9ec6b6;
           img {
             margin: 0 auto;
             margin-bottom: 5px;
@@ -291,13 +291,15 @@ section#location {
   .location-title {
     position: relative;
     z-index: 2;
-    top: -185px;
-    margin-bottom: -185px;
+    /*top: -185px;*/ /*------------------------------------*/
+    margin-bottom: 30px;
+    top: 50px;
+    padding-top: 20px;
   }
 }
 
 section#venue {
-  background: #9cc3b4;
+  background-image: url('/assets/bkg.jpg');
   padding-top: 40px;
   border-bottom: 1px solid #c6ded5;
   padding-bottom: 220px;
@@ -378,7 +380,7 @@ section#pricing {
   }
 }
 section#sponsorship {
-  background: #9bc2b2;
+  background-image: url('/assets/bkg.jpg');
   padding-top: 40px;
 
 }
@@ -386,4 +388,7 @@ section#sponsorship {
   z-index: 9999;
 }
 
-
+.center { text-align: center; }
+h3 { font-family: 'Oswald'; }
+.back_blue { background-image: url('/assets/bkg.jpg'); }
+.margin_add { margin-top: 40px; }

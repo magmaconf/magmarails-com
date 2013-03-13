@@ -57,12 +57,15 @@
                 %p=raw speaker.first[:bio]
       %ul#speakers-list.column.large-3.large-centered
         %li.solo
-          = link_to 'http://bring-konstantin-to.magmaconf.com', target: '_blank' do
-            = image_tag 'new/speakers/mask.png', class: 'mask'
+          .front
+            = image_tag 'new/speakers/mask.png'
             %p.name
               Konstantin Haase
-          = link_to 'http://bring-konstantin-to.magmaconf.com', class: 'help', target: '_blank' do
-            = image_tag 'new/speakers/help.png'
+          .back
+            .info
+              %h4= link_to '@konstantinhaase', 'http://twitter.com/konstantinhaase'
+              %p
+                A german working at TravisCI, who works in so many OSS projects, like: Sinatra, Puma, Rubinius 
 
 
 
@@ -71,13 +74,14 @@
 
 
 %section#location
-  .row
-    .column.large-6.large-centered.hide-for-small
-      %h2= image_tag 'new/location/location.png', class: 'location-title'
+  .back_blue
+    .row
+      .column.large-6.large-centered.hide-for-small
+        %h2= image_tag 'new/location/location.png', class: 'location-title'
   .row.hide-for-medium-up
     .column.large-1.title-black
       %h2.black-h2 Location
-  .row
+  .row.margin_add
     .column.large-7.info
 
       %p

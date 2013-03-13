@@ -4,15 +4,15 @@
       / Title Area
       %li.name
         %h1
-          %a{:href => "#"}= image_tag 'logo.svg'
+          %a.center_logo{:href => "#"}= image_tag 'logo.svg'
       / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
       %li.toggle-topbar.menu-icon
         %a{:href => "#"}
           %span Menu
     .row
-      .center.columns.large-6.large-offset-1
+      .center.columns.large-8
         %ul
           = render 'partials/menu_links'
-      .social.columns.large-3
+      .social.columns.large-2
         %ul
           = render 'partials/social_links'

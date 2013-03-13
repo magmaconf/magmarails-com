@@ -1,5 +1,9 @@
 
 @media only screen and (min-width : 768px) and (max-width: 979px) {
+  .center_logo {
+    margin: 0 auto;
+    img { margin: 0 auto; }
+  }
   .navbar-fixed-top {
     position: fixed;
     margin-left: 0;
@@ -72,6 +76,10 @@
   body {
     padding: 0;
   }
+  .center_logo {
+    margin: 0 auto;
+    img { margin: 0 auto; }
+  }
   .navbar-fixed-top {
     position: fixed;
     margin-left: 0;
@@ -114,7 +122,7 @@
   }
 
   #slider .slide#spotlight.mask, #slider .slide#spotlight  {
-    .img-gray{
+    .img-gray {
       opacity: 0;
       filter: alpha(opacity=0);
       z-index: 0;
