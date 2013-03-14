@@ -379,7 +379,15 @@ section#pricing {
 section#sponsorship {
   background-image: url('/assets/bkg.jpg');
   padding-top: 40px;
-
+  .row {
+    .column.large-12.large-centered {
+      a {
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
 }
 .fixed {
   z-index: 9999;
@@ -390,4 +398,11 @@ h3 { font-family: 'Oswald'; }
 .back_blue { background-image: url('/assets/bkg.jpg'); }
 .margin_add { margin-top: 40px; }
 .margin_add_pricing { margin: 30px auto; }
-.around { padding-top: 0 !important; font-size: 0.8em; }
+.around {
+  padding-top: 0 !important;
+  font-size: 0.8em;
+  line-height: 10px;
+}
+.sponsor {
+  margin: 30px auto 0 auto;
+}
