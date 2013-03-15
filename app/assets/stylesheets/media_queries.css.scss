@@ -1,8 +1,54 @@
+// ----------- Mixins ---------------
+@mixin encapsule {
+  border: thick 1px solid transparent;
+  overflow: hidden;
+}
+
+@mixin menu_expand {
+  .center.columns.large-7 {
+    width: 100%;
+    ul {
+      @include encapsule;
+      li {
+        width: 100%;
+        a { width: 100%; }
+      }
+      li + li:before{
+        content: "";
+      }
+    }
+  }
+  .social.columns.large-2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@mixin socialite {
+  .top-bar .social ul li {
+    &.fb a {
+      background-position: 0 -45px;
+    }
+    &.twt a {
+      background-position: -50px -45px;
+    }
+    &.gplus a {
+      background-position: -97px -45px;
+    }
+  }
+}
+//-----------------------------------
 
 @media only screen and (min-width : 768px) and (max-width: 979px) {
   .center_logo {
-    margin: 0 auto;
-    img { margin: 0 auto; }
+    margin: 0 auto !important;
+    background-image: url('logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    img { margin: 0 auto; opacity: 0; }
+  }
+  .center ul {
+    text-align: left;
   }
   .navbar-fixed-top {
     position: fixed;
@@ -73,6 +119,9 @@
 
 
 @media (max-width: 480px) {
+  @include menu_expand;
+  @include socialite;
+  
   body {
     padding: 0;
   }
@@ -192,6 +241,7 @@
 }
  // iPad (portrait)
 @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+  @include socialite;
   .navbar-fixed-top {
     position: fixed;
     margin-left: 0;
@@ -256,6 +306,11 @@
 }
 
 @media (max-width: 650px) and (orientation: portrait)  {
+  .center_logo {
+    margin: 0 auto;
+    img { margin: 0 auto; }
+  }
+  section#sponsorship { padding-top: 0; }
   body {
     padding: 0;
   }
@@ -333,6 +388,10 @@
 
 //Andriod HTC desire like
 @media (max-width : 360px) and (orientation: portrait)  {
+  .center_logo {
+    margin: 0 auto;
+    img { margin: 0 auto; }
+  }
   #slider .slide#venue {
     img {
       margin-top: 90px;
@@ -345,7 +404,6 @@
       }
     }
   }
-
 }
 
 //Damm iphone super only

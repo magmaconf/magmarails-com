@@ -182,7 +182,12 @@
 
 %section#sponsorship
   .row
-    .column.large-12.large-centered
+    .column.large-12.large-centered.hide-for-small
       = image_tag 'new/sponsors/el_sponsoring.png', class: 'sponsor'
+  .row.hide-for-medium-up
+    .column.large-1.title-black
+      %h2.black-h2 el sponsorship
+  .row
+    .column.large-12.large-centered
       = link_to 'http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf', target: '_blank' do
         = image_tag 'new/sponsors/prospectus-magmaconf.svg'
