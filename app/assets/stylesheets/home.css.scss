@@ -24,6 +24,14 @@ html, body {
     z-index: 1000;
   }
 }
+.menu-icon{
+  cursor:pointer;
+  position:relative;
+  a{
+    position:relative;
+    z-index:20;
+  }
+}
 .social ul { float: right; }
 #wrapper {
   min-height: 100%;
@@ -35,7 +43,7 @@ footer, #push {
   height: 42px; /* .push must be the same height as .footer */
 }
 #push {
-  background: #9bc2b2;
+  background-image: url('/assets/bkg.jpg');
 }
 footer {
   font-family: 'Oswald';
@@ -399,6 +407,7 @@ section#pricing {
 }
 section#sponsorship {
   background-image: url('/assets/bkg.jpg');
+  padding-bottom: 10%;
   .row {
     .column.large-12.large-centered {
       a {

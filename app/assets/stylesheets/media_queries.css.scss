@@ -5,7 +5,7 @@
 }
 
 @mixin menu_expand {
-  .center.columns.large-7 {
+  .center.columns {
     width: 100%;
     ul {
       @include encapsule;
@@ -18,7 +18,7 @@
       }
     }
   }
-  .social.columns.large-2 {
+  .social ul {
     width: 100%;
     text-align: center;
   }
@@ -40,6 +40,7 @@
 //-----------------------------------
 
 @media only screen and (min-width : 768px) and (max-width: 979px) {
+  @include socialite;
   .center_logo {
     margin: 0 auto !important;
     background-image: url('logo.svg');
@@ -119,8 +120,11 @@
 
 
 @media (max-width: 480px) {
-  @include menu_expand;
   @include socialite;
+  .social ul {
+    width: 100%;
+    text-align: center;
+  }
   
   body {
     padding: 0;
@@ -228,8 +232,8 @@
       font-size: 22px;
       margin: 0 10%;
     }
-
   }
+  .margin_add { margin-top: -10%; }
 }
 
 
@@ -278,9 +282,8 @@
   }
 
   footer  {
-    display: none;
+    display: block;
     font-size: 9px;
-
   }
   .magmazine {
   //   display: none;
@@ -306,6 +309,7 @@
 }
 
 @media (max-width: 650px) and (orientation: portrait)  {
+  @include socialite;
   .center_logo {
     margin: 0 auto;
     img { margin: 0 auto; }
@@ -408,6 +412,7 @@
 
 //Damm iphone super only
 @media (max-width : 320px) and (orientation: portrait)  {
+  @include menu_expand;
   #slider .slide#venue {
     img {
       margin-top: 70px;
