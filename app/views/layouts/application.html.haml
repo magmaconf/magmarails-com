@@ -51,5 +51,12 @@
         $('.columns ul li a').click(function() {
           $('.top-bar').removeClass('expanded');
         });
+        $('a.scrollto').click(function() {
+          event.preventDefault();
+          var link = this;
+          $.smoothScroll({
+            scrollTarget: link.hash
+          }); 
+        });
       })
 

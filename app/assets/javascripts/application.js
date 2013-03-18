@@ -7,6 +7,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
+//= require jquery.smooth-scroll.min
 //= require modernizr.custom
 //= require underscore-min
 //= require core-1.0.4
