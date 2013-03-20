@@ -37,10 +37,8 @@
     }
   }
 }
-//-----------------------------------
 
-@media only screen and (min-width : 768px) and (max-width: 979px) {
-  @include socialite;
+@mixin logo_center {
   .center_logo {
     margin: 0 auto !important;
     background-image: url('logo.svg');
@@ -48,6 +46,12 @@
     background-position: center;
     img { margin: 0 auto; opacity: 0; }
   }
+}
+//-----------------------------------
+
+@media only screen and (min-width : 768px) and (max-width: 979px) {
+  @include socialite;
+  @include logo_center;
   .center ul {
     text-align: left;
   }
@@ -121,6 +125,9 @@
 
 @media (max-width: 480px) {
   @include socialite;
+  @include logo_center;
+  .center_logo { background-image: url('/assets/mobile/logo.svg'); }
+  .center_logo:hover { background-image: url('/assets/mobile/logo.svg'); }
   .social ul {
     width: 100%;
     text-align: center;
@@ -234,6 +241,14 @@
     }
   }
   .margin_add { margin-top: -10%; }
+  /*.center.columns ul {
+    line-height: 0.5;
+  }
+  .mo a {
+    display: block;
+    border-top: 1px solid #e0e2e5;
+    padding: 10px 0;
+  }*/
 }
 
 
