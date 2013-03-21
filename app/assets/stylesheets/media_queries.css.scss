@@ -1,8 +1,58 @@
+// ----------- Mixins ---------------
+@mixin encapsule {
+  border: thick 1px solid transparent;
+  overflow: hidden;
+}
+
+@mixin menu_expand {
+  .center.columns {
+    width: 100%;
+    ul {
+      @include encapsule;
+      li {
+        a { width: 100%; }
+      }
+      li + li:before{
+        content: "";
+      }
+    }
+  }
+  .social ul {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@mixin socialite {
+  .top-bar .social ul li {
+    &.fb a {
+      background-position: 0 -45px;
+    }
+    &.twt a {
+      background-position: -50px -45px;
+    }
+    &.gplus a {
+      background-position: -97px -45px;
+    }
+  }
+}
+
+@mixin logo_center {
+  .center_logo {
+    margin: 0 auto !important;
+    background-image: url('logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    img { margin: 0 auto; opacity: 0; }
+  }
+}
+//-----------------------------------
 
 @media only screen and (min-width : 768px) and (max-width: 979px) {
-  .center_logo {
-    margin: 0 auto;
-    img { margin: 0 auto; }
+  @include socialite;
+  @include logo_center;
+  .center ul {
+    text-align: left;
   }
   .navbar-fixed-top {
     position: fixed;
@@ -73,6 +123,16 @@
 
 
 @media (max-width: 480px) {
+  @include socialite;
+  @include logo_center;
+  .expanded { height: 100%; }
+  .center_logo { background-image: url('/assets/mobile/logo.svg'); }
+  .center_logo:hover { background-image: url('/assets/mobile/logo.svg'); }
+  .social ul {
+    width: 100%;
+    text-align: center;
+  }
+  
   body {
     padding: 0;
   }
@@ -179,8 +239,8 @@
       font-size: 22px;
       margin: 0 10%;
     }
-
   }
+  .margin_add { margin-top: -10%; }
 }
 
 
@@ -190,8 +250,10 @@
     width: 1170px;
   }
 }
+
  // iPad (portrait)
 @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+  @include socialite;
   .navbar-fixed-top {
     position: fixed;
     margin-left: 0;
@@ -228,9 +290,8 @@
   }
 
   footer  {
-    display: none;
+    display: block;
     font-size: 9px;
-
   }
   .magmazine {
   //   display: none;
@@ -254,8 +315,30 @@
     }
   }
 }
+@media (max-width: 650px) {
+  @include socialite;
+  @include logo_center;
+  .center_logo { background-image: url('/assets/mobile/logo.svg'); }
+  .center_logo:hover { background-image: url('/assets/mobile/logo.svg'); }
+  .social ul {
+    width: 100%;
+    text-align: center;
+  }
+  .large-block-grid-3 li {
+    width: 100%;
+    text-align: center;
+    img { margin: 0 auto; }
+  }
+  section#pricing .large-block-grid-3 li img { margin: 0 auto; }
+}
 
 @media (max-width: 650px) and (orientation: portrait)  {
+  @include socialite;
+  .center_logo {
+    margin: 0 auto;
+    img { margin: 0 auto; }
+  }
+  section#sponsorship { padding-top: 0; }
   body {
     padding: 0;
   }
@@ -333,6 +416,10 @@
 
 //Andriod HTC desire like
 @media (max-width : 360px) and (orientation: portrait)  {
+  .center_logo {
+    margin: 0 auto;
+    img { margin: 0 auto; }
+  }
   #slider .slide#venue {
     img {
       margin-top: 90px;
@@ -345,11 +432,11 @@
       }
     }
   }
-
 }
 
 //Damm iphone super only
 @media (max-width : 320px) and (orientation: portrait)  {
+  @include menu_expand;
   #slider .slide#venue {
     img {
       margin-top: 70px;
@@ -361,5 +448,13 @@
         margin:10px 0;
       }
     }
+  }
+  .center.columns ul {
+    line-height: 0.5;
+  }
+  .mo a {
+    display: block;
+    height: 20px;
+    border-bottom: 1px solid #e0e2e5;
   }
 }

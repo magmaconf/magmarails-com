@@ -1,3 +1,10 @@
+// ------------ Mixins ---------------- 
+@mixin encapsule {
+  border: thick 1px solid transparent;
+  overflow: hidden;
+}
+//-----------------------------------
+
 body, html {
   font-family: 'Asap';
 }
@@ -8,6 +15,24 @@ body, html {
 html, body {
   height: 100%;
 }
+.center_logo {
+  img { z-index: -1000; }
+  &:hover {
+    background-image: url('logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1000;
+  }
+}
+.menu-icon{
+  cursor:pointer;
+  position:relative;
+  a{
+    position:relative;
+    z-index:20;
+  }
+}
+.social ul { float: right; }
 #wrapper {
   min-height: 100%;
   height: auto !important;
@@ -18,7 +43,7 @@ footer, #push {
   height: 42px; /* .push must be the same height as .footer */
 }
 #push {
-  background: #9bc2b2;
+  background-image: url('/assets/bkg.jpg');
 }
 footer {
   font-family: 'Oswald';
@@ -64,7 +89,7 @@ p {
   .center {
     ul {
       margin-top: 10px;
-      // text-align: center;
+      text-align: center;
       // margin-left: 280px;
       li {
         display: inline;
@@ -87,11 +112,11 @@ p {
       }
 
       li + li:before{
-          content: " | ";
-          padding: 0 5px !important;
-          color: #666;
-        }
+        content: " | ";
+        padding: 0 5px !important;
+        color: #666;
       }
+    }
   }
   .social ul {
     text-transform: uppercase;
@@ -155,7 +180,11 @@ section#home {
 
 section#speakers {
   background-image: url('/assets/bkg.jpg');
-  padding-top: 60px;
+  .row {
+    .column.large-6.large-centered.hide-for-small {
+      padding-top: 60px;
+    }
+  }
   #keynotes {
     padding-bottom: 20px;
   }
@@ -378,7 +407,7 @@ section#pricing {
 }
 section#sponsorship {
   background-image: url('/assets/bkg.jpg');
-  padding-top: 40px;
+  padding-bottom: 10%;
   .row {
     .column.large-12.large-centered {
       a {
@@ -393,7 +422,6 @@ section#sponsorship {
   z-index: 9999;
 }
 
-.center { text-align: center; }
 h3 { font-family: 'Oswald'; }
 .back_blue { background-image: url('/assets/bkg.jpg'); }
 .margin_add { margin-top: 40px; }
@@ -404,5 +432,19 @@ h3 { font-family: 'Oswald'; }
   line-height: 10px;
 }
 .sponsor {
-  margin: 30px auto 0 auto;
+  margin: 70px auto 0 auto;
+}
+.img_mobile {
+  background-image: url('/assets/mobile/bkg.jpg');
+  height: 80px;
+  float: left;
+  border: thick 1px solid;
+  overflow: hidden;
+  img {
+    width: 200%;
+    height: 200%;
+    margin: 0 auto;
+    margin-top: -30px;
+    background-repeat: no-repeat;
+  }
 }

@@ -46,7 +46,21 @@
         $('#speakers-list li').hover(function(){
           $(this).addClass('flip');
         },function(){
-          $(this).removeClass('flip');
+          $(this).removeClass('flip');  
         });
+        $('.columns ul li a').click(function() {
+          $('.top-bar').removeClass('expanded');
+        });
+        $('.center_logo').click(function() {
+          $('.top-bar').removeClass('expanded');
+        });
+        $('a.scrollto').click(function() {
+          event.preventDefault();
+          var link = this;
+          $.smoothScroll({
+            scrollTarget: link.hash
+          });
+        });
+
       })
 
