@@ -10,7 +10,6 @@
     ul {
       @include encapsule;
       li {
-        width: 100%;
         a { width: 100%; }
       }
       li + li:before{
@@ -126,6 +125,7 @@
 @media (max-width: 480px) {
   @include socialite;
   @include logo_center;
+  .expanded { height: 100%; }
   .center_logo { background-image: url('/assets/mobile/logo.svg'); }
   .center_logo:hover { background-image: url('/assets/mobile/logo.svg'); }
   .social ul {
@@ -241,14 +241,6 @@
     }
   }
   .margin_add { margin-top: -10%; }
-  /*.center.columns ul {
-    line-height: 0.5;
-  }
-  .mo a {
-    display: block;
-    border-top: 1px solid #e0e2e5;
-    padding: 10px 0;
-  }*/
 }
 
 
@@ -258,6 +250,7 @@
     width: 1170px;
   }
 }
+
  // iPad (portrait)
 @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
   @include socialite;
@@ -321,6 +314,22 @@
       }
     }
   }
+}
+@media (max-width: 650px) {
+  @include socialite;
+  @include logo_center;
+  .center_logo { background-image: url('/assets/mobile/logo.svg'); }
+  .center_logo:hover { background-image: url('/assets/mobile/logo.svg'); }
+  .social ul {
+    width: 100%;
+    text-align: center;
+  }
+  .large-block-grid-3 li {
+    width: 100%;
+    text-align: center;
+    img { margin: 0 auto; }
+  }
+  section#pricing .large-block-grid-3 li img { margin: 0 auto; }
 }
 
 @media (max-width: 650px) and (orientation: portrait)  {
@@ -439,5 +448,13 @@
         margin:10px 0;
       }
     }
+  }
+  .center.columns ul {
+    line-height: 0.5;
+  }
+  .mo a {
+    display: block;
+    height: 20px;
+    border-bottom: 1px solid #e0e2e5;
   }
 }
