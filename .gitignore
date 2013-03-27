@@ -13,5 +13,10 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+.DS_Store
+*.un~
+*.swp
+
 /app/assets/images/Logo.png
 /app/assets/images/Logo.svg
