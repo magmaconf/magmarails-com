@@ -18,6 +18,7 @@ html, body {
 .center_logo {
   img { z-index: -1000; }
   &:hover {
+    img { opacity: 0; }
     background-image: url('logo.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -198,13 +199,13 @@ section#speakers {
     }
     #speakers-list {
       // margin-top: 40px;
+      // margin: 0 auto;
       li {
         list-style: none;
         position: relative;
         -webkit-perspective: 600px;
         -moz-perspective: 600px;
         margin-bottom: 45px;
-        height: 200px;
         p.name {
           font-family: 'Oswald';
           font-size: 13px;
@@ -216,7 +217,6 @@ section#speakers {
           padding: 5px;
           font-weight: 700;
           margin: 0 auto;
-
         }
         &.flip .front {
           z-index: 900;
@@ -293,6 +293,64 @@ section#speakers {
             float: none;
             font-size: 14px;
             line-height: 18px;
+          }
+        }
+        .mobi {
+          @include encapsule;
+          float: left;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 800;
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          -moz-transform: rotateY(-180deg);
+          -webkit-transform: rotateY(-180deg);
+          
+          .person_name {
+            width: 100%;
+            @include encapsule;
+            [class*="icon-"] {
+              width: 14px;
+              height: 14px;
+              background-image: url('/assets/glyphicons-halflings.png');
+              line-height: 14px;
+              display: inline-block;
+            }
+            .icon-search {
+              background-position: -120px 0;
+              background-repeat: no-repeat;
+              top: 10px;
+              float: left;
+              margin: 7px 0 0 15px;
+            }
+            .icon-chevron-down {
+              background-position: -313px -119px;
+              background-repeat: no-repeat;
+              top: 10px;
+              float: right;
+              margin: 7px 15px 0 0;
+            }
+          }
+          .person_info {
+            width: 100%;
+            @include encapsule;
+            a {
+              width: 100%;
+              float: left;
+              margin-left: 30px;
+            }
+            img {
+              margin: 0 auto;
+            }
+            p {
+              text-align: center;
+              margin: 0 auto;
+              padding: 10px 15px;
+              text-transform: lowercase;
+              font-family: 'Arial';
+            }
           }
         }
       }
@@ -434,6 +492,7 @@ h3 { font-family: 'Oswald'; }
 .sponsor {
   margin: 70px auto 0 auto;
 }
+.spon_mobi { display: none; }
 .img_mobile {
   background-image: url('/assets/mobile/bkg.jpg');
   height: 80px;
@@ -447,4 +506,7 @@ h3 { font-family: 'Oswald'; }
     margin-top: -30px;
     background-repeat: no-repeat;
   }
+}
+.cli {
+  a { top: 0 !important; }
 }

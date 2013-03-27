@@ -16,8 +16,11 @@
           Join us at Manzanillo and live the MagmaConf experience, meet engineers
           from all around the world, chat with our speakers and have the chance to
           swim in the warmest waters of Mexico.
+        %p.cli
+          To know more about Magma 2012, 
+          = link_to 'click here.', 'http://magmazine.magmaconf.com/2012/en', target: '_blank'
 
-%section#speakers{"data-magellan-destination"=>"keynotes"}
+%section#speakers
   .row
     .column.large-6.large-centered.hide-for-small
       %h2= image_tag 'new/speakers/keynotes.png'
@@ -55,7 +58,7 @@
               .info
                 %h4= link_to "@#{speaker.first[:twitter]}", "http://twitter.com/#{speaker.first[:twitter]}", target: "_blank"
                 %p=raw speaker.first[:bio]
-      %ul#speakers-list.column.large-3.large-centered
+      %ul.column.large-3.large-centered#speakers-list
         %li.solo
           .front
             = image_tag 'new/speakers/mask.png'
@@ -63,9 +66,8 @@
               Konstantin Haase
           .back
             .info
-              %h4= link_to '@konstantinhaase', 'http://twitter.com/konstantinhaase', target: '_blank'
-              %p
-                A german working at TravisCI, who works in so many OSS projects, like: Sinatra, Puma, Rubinius 
+              %h4= link_to "@konstantinhaase", "http://twitter.com/konstantinhaase", target: "_blank"
+              %p A german working at TravisCI, who works in so many OSS projects, like: Sinatra, Puma, Rubinius.
 
 %section#location
   .back_blue
@@ -183,4 +185,5 @@
   .row
     .column.large-12.large-centered
       = link_to 'http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf', target: '_blank' do
-        = image_tag 'new/sponsors/prospectus-magmaconf.svg'
+        = image_tag 'new/sponsors/prospectus-magmaconf.svg', class: 'spon_desk'
+        = image_tag 'mobile/mobile-sponsorship-01.svg', class: 'spon_mobi'

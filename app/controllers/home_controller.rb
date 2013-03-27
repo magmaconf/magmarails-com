@@ -19,8 +19,8 @@ class HomeController < ApplicationController
                           bio: "Ruby OSS contributor and speaker. His projects Cells and Apotomo brings view modularity and event-driven programming to Rails."],
                  [ name: "javier cervantes",
                           twitter: "solojavier",
-                          bio: "Apprentice of artesanal software development, who works at Wowzer and runs the Ruby GDL user group."],
-                  [ name: "ivan acosta-rubio",
+                          bio: "Apprentice of artesanal software development, who works at Hybrid Group and runs the Ruby GDL user group."],
+                  [ name: "ivan acosta rubio",
                           twitter: "ivanacostarubio",
                           bio: "Venezuelan in Mexico, co-founder of SoftwareCriollo.com, building Meals.mx"],
                  [ name: "mario a chavez",
@@ -49,7 +49,10 @@ class HomeController < ApplicationController
                           bio: "Mexican developer, writer and salesman; self taught, eager for knowledge."],
                  [ name: "blake mizerany",
                           twitter: "bmizerany",
-                          bio: "Sinatra's creator who currently builds systems in Go language for Heroku."]
+                          bio: "Sinatra's creator who currently builds systems in Go language for Heroku."],
+                  #[ name: "Konstantin Haase",
+                          #twitter: "konstantinhaase",
+                          #bio: "A german working at TravisCI, who works in so many OSS projects, like: Sinatra, Puma, Rubinius."]
 
     ]
     response.headers['Cache-Control'] = 'public, max-age=3000'
