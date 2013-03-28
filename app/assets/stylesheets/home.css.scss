@@ -15,16 +15,23 @@ body, html {
 html, body {
   height: 100%;
 }
-.center_logo {
-  img { z-index: -1000; }
-  &:hover {
-    img { opacity: 0; }
-    background-image: url('logo-magma-rojo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1000;
+.name {
+  h1 {
+    width: 127px;
+    height: 46px;
+    .center_logo {
+      background-image: url('logo-magma-sprite.svg');
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      display: inline-block;
+      text-indent: -9999px;
+      &:hover {
+        background-position: 0 -52px;
+      }
+    }
   }
 }
+
 .menu-icon{
   cursor:pointer;
   position:relative;
