@@ -19,7 +19,7 @@ html, body {
   img { z-index: -1000; }
   &:hover {
     img { opacity: 0; }
-    background-image: url('logo.svg');
+    background-image: url('logo-magma-rojo.svg');
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1000;
@@ -410,6 +410,10 @@ section#venue {
 section#pricing {
   background: white;
   min-height: 400px;
+  background: url('bkg.jpg');
+  .row {
+    margin-bottom: 0;
+  }
   .title {
     margin-bottom: 30px;
     position: relative;
@@ -482,6 +486,7 @@ section#sponsorship {
 
 h3 { font-family: 'Oswald'; }
 .back_blue { background-image: url('/assets/bkg.jpg'); }
+.back_g { background-image: url('/assets/new/pricing/separator_02.png'); padding: 5px 0 20px 0; }
 .margin_add { margin-top: 40px; }
 .margin_add_pricing { margin: 30px auto; }
 .around {
