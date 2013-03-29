@@ -38,12 +38,22 @@
 }
 
 @mixin logo_center {
-  .center_logo {
-    margin: 0 auto !important;
-    background-image: url('logo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    img { margin: 0 auto; opacity: 0; }
+  .name {
+    h1 {
+      width: 127px;
+      margin: 0 auto !important;
+      .center_logo {
+        width: 127px !important;
+        margin: 0 auto !important;
+        background-image: url('mobile/logo.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover {
+          background-image: url('/assets/mobile/logo.svg');
+          background-position: center;
+        }
+      }
+    }
   }
 }
 //-----------------------------------
@@ -126,8 +136,6 @@
   @include socialite;
   @include logo_center;
   .expanded { height: 100%; }
-  .center_logo { background-image: url('/assets/mobile/logo.svg'); }
-  .center_logo:hover { background-image: url('/assets/mobile/logo.svg'); }
   .social ul {
     width: 100%;
     text-align: center;
@@ -135,10 +143,6 @@
   
   body {
     padding: 0;
-  }
-  .center_logo {
-    margin: 0 auto;
-    img { margin: 0 auto; }
   }
   .navbar-fixed-top {
     position: fixed;
@@ -301,7 +305,21 @@
       }
     }
   }*/
-
+  .black-h2 { margin-bottom: 0; }
+  .back_g {
+    .row {
+      margin-top: 0;
+      ul {
+        li {
+          width: 100% !important;
+          .first_img { margin-bottom: 0 !important; }
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -379,8 +397,6 @@
 @media (max-width: 650px) {
   @include socialite;
   @include logo_center;
-  .center_logo { background-image: url('/assets/mobile/logo.svg'); }
-  .center_logo:hover { background-image: url('/assets/mobile/logo.svg'); }
   .social ul {
     width: 100%;
     text-align: center;
@@ -395,10 +411,6 @@
 
 @media (max-width: 650px) and (orientation: portrait)  {
   @include socialite;
-  .center_logo {
-    margin: 0 auto;
-    img { margin: 0 auto; }
-  }
   section#sponsorship { padding-top: 0; }
   body {
     padding: 0;
@@ -477,10 +489,6 @@
 
 //Andriod HTC desire like
 @media (max-width : 360px) and (orientation: portrait)  {
-  .center_logo {
-    margin: 0 auto;
-    img { margin: 0 auto; }
-  }
   #slider .slide#venue {
     img {
       margin-top: 90px;

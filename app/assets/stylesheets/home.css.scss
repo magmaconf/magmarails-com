@@ -414,6 +414,7 @@ section#venue {
     border: none;
   }
 }
+$what: 0.098039215686275%;
 section#pricing {
   background: white;
   min-height: 400px;
@@ -421,57 +422,89 @@ section#pricing {
   .row {
     margin-bottom: 0;
   }
-  .title {
-    margin-bottom: 30px;
-    position: relative;
-    padding-top: 80px;
-  }
-  .large-block-grid-3{
-    li {
-      padding: 0 !important;
-      border-right: 1px dotted black;
-      text-transform: uppercase;
-      p.first {
-        padding-top: 34px;
-      }
-      p, strong {
-        padding: 10px;
-        margin-bottom: 0;
-        padding-bottom: 0;
-      }
-      strong {
-        font-family: 'oswald';
-        padding-top: 0;
-        font-size: 22px;
-      }
-      &.last {
-        border: none;
-      }
-      .hosting {
-        margin: 0 auto;
-      }
-      .magma-village {
-        margin-top: 20px;
-        padding: 0 39px;
-        text-align: center;
-        strong {
-          font-size: 31px;
+  .back_g {
+    background-image: url('/assets/new/pricing/separator_02.png');
+    padding: 0;
+    .row {
+      ul {
+        @include encapsule;
+        .lin {
+          height: 100%;
+          width: $what * 7.5;
+          float: left;
         }
-        a {
-          color: #d60a00;
+        li {
+          padding: 0 !important;
+          text-transform: uppercase;
+          text-align: center;
+          width: 32%;
+          .ticket-title {
+            width: 100%;
+          }
+          .first_img { margin-bottom: 43px; }
+          p.first {
+            padding-top: 24px;
+          }
+          p {
+            padding: 10px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
+          a {
+            display: block;
+            background: #f6b540;
+            border: 5px solid #000;
+            padding: 5px 10px;
+            font-family: 'oswald';
+            font-size: 22px;
+            color: #000;
+            letter-spacing: 2px;
+            text-align: center;
+            margin: 0 15px 15px 15px;
+          }
+          .money_reg, .mag {
+            font-family: 'oswald';
+            padding-top: 0;
+            font-size: 28px;
+          }
+          .mail {
+            border: 0;
+            padding: 0;
+            color: #d92817;
+            background: transparent;
+            font-size: 18px;
+          }
+          .around {
+            padding-top: 0 !important;
+            padding-bottom: 30px;
+            font-size: 0.8em;
+            line-height: 10px;
+          }
+          &.last {
+            border: none;
+          }
+          .hosting {
+            margin: 0 auto;
+          }
+          .magma-village {
+            margin-top: 20px;
+            padding: 0 39px;
+            text-align: center;
+            strong {
+              font-size: 31px;
+            }
+            a {
+              color: #d60a00;
+            }
+          }
         }
       }
     }
   }
-  .ticket-title {
-    border-top-width: 5px;
-    border-top-style: solid;
-    border-top-color: black;
-    border-bottom-width: 5px;
-    border-bottom-style: solid;
-    border-bottom-color: black;
-    width: 100%;
-    margin: 0;
+  .title {
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 80px;
   }
 }
 section#sponsorship {
@@ -493,14 +526,8 @@ section#sponsorship {
 
 h3 { font-family: 'Oswald'; }
 .back_blue { background-image: url('/assets/bkg.jpg'); }
-.back_g { background-image: url('/assets/new/pricing/separator_02.png'); padding: 5px 0 20px 0; }
 .margin_add { margin-top: 40px; }
 .margin_add_pricing { margin: 30px auto; }
-.around {
-  padding-top: 0 !important;
-  font-size: 0.8em;
-  line-height: 10px;
-}
 .sponsor {
   margin: 70px auto 0 auto;
 }

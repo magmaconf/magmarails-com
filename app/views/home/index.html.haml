@@ -150,30 +150,35 @@
   .back_g
     .row.margin_add_pricing
       %ul.large-block-grid-3
+        .lin
+          = image_tag 'new/pricing/bkg_dotted.png'
         %li
-          = image_tag 'new/pricing/ticket-only.png', class: 'ticket-title'
+          = image_tag 'new/pricing/title_ticket-only.svg', class: 'ticket-title first_img'
           %p.first early bird
-          = link_to 'http://magmaconf.boletia.com/new-booking', onclick: "_gaq.push(['_trackEvent', 'tickets', 'only'])",  target: '_blank' do
-            = image_tag 'new/pricing/new-booking-2.png'
+          = link_to '$1,000.00 mx buy  now', 'http://magmaconf.boletia.com/new-booking', target: '_blank'
           %p regular
-          %strong $1,200.00 mxn
+          %p.money_reg $1,200.00 mxn
           %p.around around $100.00 usd
+        .lin
+          = image_tag 'new/pricing/bkg_dotted.png'
         %li
-          = image_tag 'new/pricing/ticket-meals.png', class: 'ticket-title'
+          = image_tag 'new/pricing/title_ticket-meals.svg', class: 'ticket-title'
           %p.first early bird
-          = link_to 'http://magmaconf.boletia.com/new-booking', onclick: "_gaq.push(['_trackEvent', 'tickets', 'meal'])",  target: '_blank' do
-            = image_tag 'new/pricing/new-booking.png'
+          = link_to '$1,300.00 mx buy  now', 'http://magmaconf.boletia.com/new-booking', target: '_blank'
           %p regular
-          %strong $1,500.00 mxn
+          %p.money_reg $1,500.00 mxn
           %p.around around $125.00 usd
+        .lin
+          = image_tag 'new/pricing/bkg_dotted.png'
         %li.last
-          = image_tag 'new/pricing/ticket-meals.png', class: 'ticket-title'
-          = image_tag 'new/pricing/hosting.png', class: 'hosting'
+          = image_tag 'new/pricing/title_ticket-meals-host.svg', class: 'ticket-title'
           %p.magma-village
             for more information about hosting at the
-            %strong  magma village
+            %p.mag magma village,
             please contact us at
-            = mail_to 'info@magmaconf.com'
+            = mail_to 'info@magmaconf.com', 'info@magmaconf.com', class: 'mail'
+        .lin
+          = image_tag 'new/pricing/bkg_dotted.png'
 
 %section#sponsorship
   .row
