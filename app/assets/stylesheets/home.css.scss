@@ -429,17 +429,20 @@ section#pricing {
       ul {
         @include encapsule;
         .lin {
-          height: 100%;
-          width: $what * 7.5;
+          height: 369px;
+          width: $what * 7;
           float: left;
+          display: block;
+          background-image: url('/assets/new/pricing/bkg_dotted.png')
         }
         li {
           padding: 0 !important;
           text-transform: uppercase;
           text-align: center;
-          width: 32%;
+          width: 32.2%;
           .ticket-title {
             width: 100%;
+            margin-top: 20px; 
           }
           .first_img { margin-bottom: 43px; }
           p.first {
