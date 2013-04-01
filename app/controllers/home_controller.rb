@@ -19,8 +19,8 @@ class HomeController < ApplicationController
                           bio: "Ruby OSS contributor and speaker. His projects Cells and Apotomo brings view modularity and event-driven programming to Rails."],
                  [ name: "javier cervantes",
                           twitter: "solojavier",
-                          bio: "Apprentice of artesanal software development, who works at Wowzer and runs the Ruby GDL user group."],
-                  [ name: "ivan acosta-rubio",
+                          bio: "Apprentice of artesanal software development, who works at Hybrid Group and runs the Ruby GDL user group."],
+                  [ name: "ivan acosta rubio",
                           twitter: "ivanacostarubio",
                           bio: "Venezuelan in Mexico, co-founder of SoftwareCriollo.com, building Meals.mx"],
                  [ name: "mario a chavez",
@@ -49,9 +49,93 @@ class HomeController < ApplicationController
                           bio: "Mexican developer, writer and salesman; self taught, eager for knowledge."],
                  [ name: "blake mizerany",
                           twitter: "bmizerany",
-                          bio: "Sinatra's creator who currently builds systems in Go language for Heroku."]
+                          bio: "Sinatra's creator who currently builds systems in Go language for Heroku."],
+                  #[ name: "Konstantin Haase",
+                          #twitter: "konstantinhaase",
+                          #bio: "A german working at TravisCI, who works in so many OSS projects, like: Sinatra, Puma, Rubinius."]
 
     ]
     response.headers['Cache-Control'] = 'public, max-age=3000'
+
+    @wednesday = [
+      [hour: "10:00",
+       name: "Greg Pollak",
+       img_key: "new/schedule/icon_keynote.svg",
+       name_presentation: "Keynote",
+       img: "new/schedule/icon_english.svg"
+      ],
+      [hour: "11:00",
+       name: "Mario A. Chavez",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Ruby Internals",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "11:40",
+       name: "break",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "12:00",
+       name: "Eric Saxby",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "When Rails hits the fan",
+       img: "new/schedule/icon_english.svg"
+      ],
+      [hour: "12:40",
+       name: "Javier Cervantes",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Creando API's con Hypermedia",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "13:20",
+       name: "announcements",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "13:30",
+       name: "lunch",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "15:00",
+       name: "Norberto Hernández",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "UI & UX eficiente en apps móviles",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "15:40",
+       name: "lighting talks",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "16:00",
+       name: "break",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "16:20",
+       name: "Manuel E. Vidaurre",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Irracionalidad Predecible",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "17:00",
+       name: "Blake Mizerany",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Go - The why",
+       img: "new/schedule/icon_english.svg"
+      ],
+      [hour: "17:40",
+       name: "last words of the day",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ]
+    ]
   end
 end

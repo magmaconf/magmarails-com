@@ -46,13 +46,18 @@
         $('#speakers-list li').hover(function(){
           $(this).addClass('flip');
         },function(){
-          $(this).removeClass('flip');  
+          $(this).removeClass('flip');
         });
         $('.columns ul li a').click(function() {
           $('.top-bar').removeClass('expanded');
         });
         $('.center_logo').click(function() {
           $('.top-bar').removeClass('expanded');
+          event.preventDefault();
+          var link = this;
+          $.smoothScroll({
+            scrollTarget: link.hash
+          });
         });
         $('a.scrollto').click(function() {
           event.preventDefault();
@@ -61,6 +66,10 @@
             scrollTarget: link.hash
           });
         });
-
+        $('.person_name').click(function() {
+          var section = $(this).parent();
+          section.find('.person_info').slideToggle('slow');
+          section.find('')
+        });
       })
 

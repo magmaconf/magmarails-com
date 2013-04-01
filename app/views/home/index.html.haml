@@ -16,8 +16,11 @@
           Join us at Manzanillo and live the MagmaConf experience, meet engineers
           from all around the world, chat with our speakers and have the chance to
           swim in the warmest waters of Mexico.
+        %p.cli
+          To know more about Magma 2012, 
+          = link_to 'click here.', 'http://magmazine.magmaconf.com/2012/en', target: '_blank'
 
-%section#speakers{"data-magellan-destination"=>"keynotes"}
+%section#speakers
   .row
     .column.large-6.large-centered.hide-for-small
       %h2= image_tag 'new/speakers/keynotes.png'
@@ -55,7 +58,7 @@
               .info
                 %h4= link_to "@#{speaker.first[:twitter]}", "http://twitter.com/#{speaker.first[:twitter]}", target: "_blank"
                 %p=raw speaker.first[:bio]
-      %ul#speakers-list.column.large-3.large-centered
+      %ul.column.large-3.large-centered#speakers-list
         %li.solo
           .front
             = image_tag 'new/speakers/mask.png'
@@ -63,9 +66,8 @@
               Konstantin Haase
           .back
             .info
-              %h4= link_to '@konstantinhaase', 'http://twitter.com/konstantinhaase', target: '_blank'
-              %p
-                A german working at TravisCI, who works in so many OSS projects, like: Sinatra, Puma, Rubinius 
+              %h4= link_to "@konstantinhaase", "http://twitter.com/konstantinhaase", target: "_blank"
+              %p A german working at TravisCI, who works in so many OSS projects, like: Sinatra, Puma, Rubinius.
 
 %section#location
   .back_blue
@@ -139,39 +141,38 @@
       = link_to 'more information', 'http://magmazine.magmaconf.com/en/faq', target: '_blank'
 
 %section#pricing
-  .back_blue
-    .row
-      .column.large-6.large-centered.hide-for-small
-        = image_tag 'new/pricing/pricing.png', class: 'title'
+  .row
+    .column.large-6.large-centered.hide-for-small
+      = image_tag 'new/pricing/pricing.png', class: 'title'
   .row.hide-for-medium-up
     .column.large-1.title-black
       %h2.black-h2 el pricing
-  .row.margin_add_pricing
-    %ul.large-block-grid-3
-      %li
-        = image_tag 'new/pricing/ticket-only.png', class: 'ticket-title'
-        %p.first early bird
-        = link_to 'http://magmaconf.boletia.com/new-booking', onclick: "_gaq.push(['_trackEvent', 'tickets', 'only'])",  target: '_blank' do
-          = image_tag 'new/pricing/new-booking-2.png'
-        %p regular
-        %strong $1,200.00 mxn
-        %p.around around $100.00 usd
-      %li
-        = image_tag 'new/pricing/ticket-meals.png', class: 'ticket-title'
-        %p.first early bird
-        = link_to 'http://magmaconf.boletia.com/new-booking', onclick: "_gaq.push(['_trackEvent', 'tickets', 'meal'])",  target: '_blank' do
-          = image_tag 'new/pricing/new-booking.png'
-        %p regular
-        %strong $1,500.00 mxn
-        %p.around around $125.00 usd
-      %li.last
-        = image_tag 'new/pricing/ticket-meals.png', class: 'ticket-title'
-        = image_tag 'new/pricing/hosting.png', class: 'hosting'
-        %p.magma-village
-          for more information about hosting at the
-          %strong  magma village
-          please contact us at
-          = mail_to 'info@magmaconf.com'
+  .back_g
+    .row.margin_add_pricing
+      %ul.large-block-grid-3
+        .lin.fir
+        %li
+          = image_tag 'new/pricing/title_ticket-only.svg', class: 'ticket-title first_img'
+          %p.first price
+          = link_to '$1,200.00 mx buy  now', 'http://magmaconf.boletia.com/new-booking', target: '_blank'
+          %p.around around $100.00 usd
+        .lin
+        %li
+          = image_tag 'new/pricing/title_ticket-meals.svg', class: 'ticket-title'
+          %p.first price
+          = link_to '$1,500.00 mx buy  now', 'http://magmaconf.boletia.com/new-booking', target: '_blank'
+          %p.around around $125.00 usd
+        .lin
+        %li.last
+          = image_tag 'new/pricing/title_ticket-meals-host.svg', class: 'ticket-title'
+          %p.magma-village
+            for more information about hosting at the
+            %p.mag magma village,
+            please contact us at
+            = mail_to 'info@magmaconf.com', 'info@magmaconf.com', class: 'mail'
+        .lin.las
+
+
 
 %section#sponsorship
   .row
@@ -183,4 +184,5 @@
   .row
     .column.large-12.large-centered
       = link_to 'http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf', target: '_blank' do
-        = image_tag 'new/sponsors/prospectus-magmaconf.svg'
+        = image_tag 'new/sponsors/prospectus-magmaconf.svg', class: 'spon_desk'
+        = image_tag 'mobile/mobile-sponsorship-01.svg', class: 'spon_mobi'

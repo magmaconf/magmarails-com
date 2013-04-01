@@ -15,15 +15,23 @@ body, html {
 html, body {
   height: 100%;
 }
-.center_logo {
-  img { z-index: -1000; }
-  &:hover {
-    background-image: url('logo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1000;
+.name {
+  h1 {
+    width: 127px;
+    height: 46px;
+    .center_logo {
+      background-image: url('logo-magma-sprite.svg');
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      display: inline-block;
+      text-indent: -9999px;
+      &:hover {
+        background-position: 0 -52px;
+      }
+    }
   }
 }
+
 .menu-icon{
   cursor:pointer;
   position:relative;
@@ -198,13 +206,13 @@ section#speakers {
     }
     #speakers-list {
       // margin-top: 40px;
+      // margin: 0 auto;
       li {
         list-style: none;
         position: relative;
         -webkit-perspective: 600px;
         -moz-perspective: 600px;
         margin-bottom: 45px;
-        height: 200px;
         p.name {
           font-family: 'Oswald';
           font-size: 13px;
@@ -216,7 +224,6 @@ section#speakers {
           padding: 5px;
           font-weight: 700;
           margin: 0 auto;
-
         }
         &.flip .front {
           z-index: 900;
@@ -295,6 +302,64 @@ section#speakers {
             line-height: 18px;
           }
         }
+        .mobi {
+          @include encapsule;
+          float: left;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 800;
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          -moz-transform: rotateY(-180deg);
+          -webkit-transform: rotateY(-180deg);
+          
+          .person_name {
+            width: 100%;
+            @include encapsule;
+            [class*="icon-"] {
+              width: 14px;
+              height: 14px;
+              background-image: url('/assets/glyphicons-halflings.png');
+              line-height: 14px;
+              display: inline-block;
+            }
+            .icon-search {
+              background-position: -120px 0;
+              background-repeat: no-repeat;
+              top: 10px;
+              float: left;
+              margin: 7px 0 0 15px;
+            }
+            .icon-chevron-down {
+              background-position: -313px -119px;
+              background-repeat: no-repeat;
+              top: 10px;
+              float: right;
+              margin: 7px 15px 0 0;
+            }
+          }
+          .person_info {
+            width: 100%;
+            @include encapsule;
+            a {
+              width: 100%;
+              float: left;
+              margin-left: 30px;
+            }
+            img {
+              margin: 0 auto;
+            }
+            p {
+              text-align: center;
+              margin: 0 auto;
+              padding: 10px 15px;
+              text-transform: lowercase;
+              font-family: 'Arial';
+            }
+          }
+        }
       }
       .solo {
         margin-top: 40px;
@@ -349,62 +414,158 @@ section#venue {
     border: none;
   }
 }
+$what: 0.098039215686275%;
 section#pricing {
   background: white;
   min-height: 400px;
+  background: url('bkg.jpg');
+  .row {
+    margin-bottom: 0;
+  }
+  .back_g {
+    background-image: url('/assets/new/pricing/separator_02.png');
+    padding: 0;
+    .row {
+      ul {
+        @include encapsule;
+        .lin {
+          height: 323px;
+          width: $what * 7;
+          float: left;
+          display: block;
+          background-image: url('/assets/new/pricing/bkg_dotted.png')
+        }
+        li {
+          padding: 0 !important;
+          text-transform: uppercase;
+          text-align: center;
+          width: 32.2%;
+          .ticket-title {
+            width: 100%;
+            margin-top: 20px; 
+          }
+          .first_img { margin-bottom: 43px; }
+          p.first {
+            padding-top: 24px;
+          }
+          p {
+            padding: 10px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
+          a {
+            display: block;
+            background: #f6b540;
+            border: 5px solid #000;
+            padding: 5px 10px;
+            font-family: 'oswald';
+            font-size: 22px;
+            color: #000;
+            letter-spacing: 2px;
+            text-align: center;
+            margin: 0 15px 15px 15px;
+          }
+          .money_reg, .mag {
+            font-family: 'oswald';
+            padding-top: 0;
+            font-size: 28px;
+          }
+          .mail {
+            border: 0;
+            padding: 0;
+            color: #d92817;
+            background: transparent;
+            font-size: 18px;
+          }
+          .around {
+            padding-top: 0 !important;
+            padding-bottom: 30px;
+            font-size: 0.8em;
+            line-height: 10px;
+          }
+          &.last {
+            border: none;
+          }
+          .hosting {
+            margin: 0 auto;
+          }
+          .magma-village {
+            margin-top: 20px;
+            padding: 0 39px;
+            text-align: center;
+            strong {
+              font-size: 31px;
+            }
+            a {
+              color: #d60a00;
+            }
+          }
+        }
+      }
+    }
+  }
   .title {
     margin-bottom: 30px;
     position: relative;
     padding-top: 80px;
   }
-  .large-block-grid-3{
-    li {
-      padding: 0 !important;
-      border-right: 1px dotted black;
-      text-transform: uppercase;
-      p.first {
-        padding-top: 34px;
+}
+
+section#schedule {
+  background-image: url('/assets/new/schedule/schedule_bkg.png');
+  padding-bottom: 60px;
+  .row {
+    font-family: 'oswald';
+    padding-top: 50px;
+    .column {
+      .title {
+        padding-top: 70px;
       }
-      p, strong {
-        padding: 10px;
-        margin-bottom: 0;
-        padding-bottom: 0;
+    }
+    .large-4 {
+      padding: 0;
+      .day {
+        margin: 0 auto 30px auto;
       }
-      strong {
-        font-family: 'oswald';
-        padding-top: 0;
-        font-size: 22px;
-      }
-      &.last {
-        border: none;
-      }
-      .hosting {
-        margin: 0 auto;
-      }
-      .magma-village {
-        margin-top: 20px;
-        padding: 0 39px;
-        text-align: center;
-        strong {
-          font-size: 31px;
+      .row-schedule {
+        @include encapsule;
+        width: 100%;
+        border-bottom: 1px solid #000;
+        padding: 0.5375em 0.9375em;
+        .hour {
+          float: left;
+          width: 20%;
+          font-size: 20px;
         }
-        a {
-          color: #d60a00;
+        .name { width: 70%; }
+        .name2 { width: 90%; }
+        .name, .name2 {
+          float: left;
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+        .img-key {
+          float: left;
+          width: 10%;
+        }
+        .name-presentation {
+          float: left;
+          width: 70%;
+          margin-left: 20%;
+        }
+        .name-presentation2 {
+          float: left;
+          width: 90%;
+        }
+        .img {
+          float: left;
+          width: 10%;
         }
       }
     }
   }
-  .ticket-title {
-    border-top-width: 5px;
-    border-top-style: solid;
-    border-top-color: black;
-    border-bottom-width: 5px;
-    border-bottom-style: solid;
-    border-bottom-color: black;
-    width: 100%;
-    margin: 0;
-  }
 }
+
 section#sponsorship {
   background-image: url('/assets/bkg.jpg');
   padding-bottom: 10%;
@@ -426,14 +587,10 @@ h3 { font-family: 'Oswald'; }
 .back_blue { background-image: url('/assets/bkg.jpg'); }
 .margin_add { margin-top: 40px; }
 .margin_add_pricing { margin: 30px auto; }
-.around {
-  padding-top: 0 !important;
-  font-size: 0.8em;
-  line-height: 10px;
-}
 .sponsor {
   margin: 70px auto 0 auto;
 }
+.spon_mobi { display: none; }
 .img_mobile {
   background-image: url('/assets/mobile/bkg.jpg');
   height: 80px;
@@ -447,4 +604,7 @@ h3 { font-family: 'Oswald'; }
     margin-top: -30px;
     background-repeat: no-repeat;
   }
+}
+.cli {
+  a { top: 0 !important; }
 }
