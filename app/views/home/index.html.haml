@@ -150,21 +150,17 @@
   .back_g
     .row.margin_add_pricing
       %ul.large-block-grid-3
-        .lin
+        .lin.fir
         %li
           = image_tag 'new/pricing/title_ticket-only.svg', class: 'ticket-title first_img'
-          %p.first early bird
-          = link_to '$1,000.00 mx buy  now', 'http://magmaconf.boletia.com/new-booking', target: '_blank'
-          %p regular
-          %p.money_reg $1,200.00 mxn
+          %p.first price
+          = link_to '$1,200.00 mx buy  now', 'http://magmaconf.boletia.com/new-booking', target: '_blank'
           %p.around around $100.00 usd
         .lin
         %li
           = image_tag 'new/pricing/title_ticket-meals.svg', class: 'ticket-title'
-          %p.first early bird
-          = link_to '$1,300.00 mx buy  now', 'http://magmaconf.boletia.com/new-booking', target: '_blank'
-          %p regular
-          %p.money_reg $1,500.00 mxn
+          %p.first price
+          = link_to '$1,500.00 mx buy  now', 'http://magmaconf.boletia.com/new-booking', target: '_blank'
           %p.around around $125.00 usd
         .lin
         %li.last
@@ -174,7 +170,9 @@
             %p.mag magma village,
             please contact us at
             = mail_to 'info@magmaconf.com', 'info@magmaconf.com', class: 'mail'
-        .lin
+        .lin.las
+
+
 
 %section#sponsorship
   .row

@@ -128,7 +128,8 @@
     position: absolute;
     bottom: 0;
   }
-  .lin { height: 392px !important; }
+  .lin { height: 337px !important; }
+  .fir, .las { display: none !important; }
 }
 
 
@@ -315,6 +316,7 @@
           height: 7px !important;
           width: 100% !important;
           background-position: 0 -6px;
+          .fir, .las { display: none !important; }
         }
         li {
           width: 100% !important;
@@ -413,6 +415,7 @@
     img { margin: 0 auto; }
   }
   section#pricing .large-block-grid-3 li img { margin: 0 auto; }
+  .fir, .las { display: none !important; }
 }
 
 @media (max-width: 650px) and (orientation: portrait)  {
@@ -491,6 +494,7 @@
       }
     }
   }
+  .fir, .las { display: none !important; }
 }
 
 //Andriod HTC desire like

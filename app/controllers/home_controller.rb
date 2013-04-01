@@ -56,5 +56,86 @@ class HomeController < ApplicationController
 
     ]
     response.headers['Cache-Control'] = 'public, max-age=3000'
+
+    @wednesday = [
+      [hour: "10:00",
+       name: "Greg Pollak",
+       img_key: "new/schedule/icon_keynote.svg",
+       name_presentation: "Keynote",
+       img: "new/schedule/icon_english.svg"
+      ],
+      [hour: "11:00",
+       name: "Mario A. Chavez",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Ruby Internals",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "11:40",
+       name: "break",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "12:00",
+       name: "Eric Saxby",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "When Rails hits the fan",
+       img: "new/schedule/icon_english.svg"
+      ],
+      [hour: "12:40",
+       name: "Javier Cervantes",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Creando API's con Hypermedia",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "13:20",
+       name: "announcements",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "13:30",
+       name: "lunch",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "15:00",
+       name: "Norberto Hernández",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "UI & UX eficiente en apps móviles",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "15:40",
+       name: "lighting talks",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "16:00",
+       name: "break",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "16:20",
+       name: "Manuel E. Vidaurre",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Irracionalidad Predecible",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "17:00",
+       name: "Blake Mizerany",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Go - The why",
+       img: "new/schedule/icon_english.svg"
+      ],
+      [hour: "17:40",
+       name: "last words of the day",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ]
+    ]
   end
 end

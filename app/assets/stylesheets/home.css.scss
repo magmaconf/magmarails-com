@@ -429,7 +429,7 @@ section#pricing {
       ul {
         @include encapsule;
         .lin {
-          height: 369px;
+          height: 323px;
           width: $what * 7;
           float: left;
           display: block;
@@ -510,6 +510,62 @@ section#pricing {
     padding-top: 80px;
   }
 }
+
+section#schedule {
+  background-image: url('/assets/new/schedule/schedule_bkg.png');
+  padding-bottom: 60px;
+  .row {
+    font-family: 'oswald';
+    padding-top: 50px;
+    .column {
+      .title {
+        padding-top: 70px;
+      }
+    }
+    .large-4 {
+      padding: 0;
+      .day {
+        margin: 0 auto 30px auto;
+      }
+      .row-schedule {
+        @include encapsule;
+        width: 100%;
+        border-bottom: 1px solid #000;
+        padding: 0.5375em 0.9375em;
+        .hour {
+          float: left;
+          width: 20%;
+          font-size: 20px;
+        }
+        .name { width: 70%; }
+        .name2 { width: 90%; }
+        .name, .name2 {
+          float: left;
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+        .img-key {
+          float: left;
+          width: 10%;
+        }
+        .name-presentation {
+          float: left;
+          width: 70%;
+          margin-left: 20%;
+        }
+        .name-presentation2 {
+          float: left;
+          width: 90%;
+        }
+        .img {
+          float: left;
+          width: 10%;
+        }
+      }
+    }
+  }
+}
+
 section#sponsorship {
   background-image: url('/assets/bkg.jpg');
   padding-bottom: 10%;
