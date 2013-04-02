@@ -72,6 +72,8 @@
       height: 28px;
     }
   }
+  .las { display: none !important; }
+  .lin { height: 409px !important; width: 7px !important; }
 }
 
 @media only screen and (min-width : 768px) and (max-width: 979px) {
@@ -103,8 +105,12 @@
     img.mobile {display: block}
     img.desktop {display: none}
   }
-  .row {
-    .large-7 { width: 70%; }
+  .sticky {
+    nav {
+      .row {
+        .large-7 { width: 70%; }
+      }
+    }
   }
   .menu-mobile-handler {
     display: block;
@@ -147,7 +153,22 @@
     position: absolute;
     bottom: 0;
   }
-  .lin { height: 337px !important; }
+  .back_g {
+    .row {
+      ul {
+        li {
+          a { margin: 0 40px 15px 40px !important; }
+        }
+      }
+    }
+  }
+  #venue {
+    .row {
+      .large-2 { display: none !important; }
+      .large-4, .large-3 { width: 50% !important; }
+    }
+  }
+  .lin { height: 356px !important; width: 7px !important; }
   .fir, .las { display: none !important; }
   #schedule {
     .row {
