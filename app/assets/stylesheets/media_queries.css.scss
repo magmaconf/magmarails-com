@@ -58,6 +58,16 @@
 }
 //-----------------------------------
 
+@media (max-width: 768px) {
+  @include logo_center;
+  @include socialite;
+  expanded { height: 100%; }
+  .social ul {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 @media only screen and (min-width : 768px) and (max-width: 979px) {
   @include socialite;
   @include logo_center;
@@ -86,6 +96,9 @@
     margin-top: -32px;
     img.mobile {display: block}
     img.desktop {display: none}
+  }
+  .row {
+    .large-7 { width: 70%; }
   }
   .menu-mobile-handler {
     display: block;

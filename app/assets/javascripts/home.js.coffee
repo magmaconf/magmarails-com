@@ -1,4 +1,7 @@
 $(document).ready ->
+  $('.row-schedule:contains("Greg Pollak")').css("height", "70px")
+  $('.row-schedule:contains("Santiago Pastorino")').css("height", "70px")
+  $('.row-schedule:contains("Brian Liles")').css("height", "70px")
   $('.row-schedule:contains("break")').css("height", "40px")
   $('.row-schedule:contains("announcements")').css("height", "40px")
   $('.row-schedule:contains("lunch")').css("height", "40px")
