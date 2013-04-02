@@ -66,6 +66,12 @@
     width: 100%;
     text-align: center;
   }
+  .row-schedule {
+    img {
+      width: 35px;
+      height: 28px;
+    }
+  }
 }
 
 @media only screen and (min-width : 768px) and (max-width: 979px) {
@@ -146,13 +152,7 @@
   #schedule {
     .row {
       .large-4 {
-        &:first-child { padding-top: 0;}
-        .row-schedule {
-          img {
-            width: 35px;
-            height: 28px;
-          }
-        }
+        float: left;
       }
     }
   }
@@ -359,10 +359,7 @@
     .row {
       .large-4 {
         .row-schedule {
-          img {
-            width: 35px;
-            height: 30px;
-          }
+          /**/
         }
       }
     }

@@ -516,16 +516,15 @@ section#schedule {
   padding-bottom: 60px;
   .row {
     font-family: 'oswald';
-    padding-top: 30px;
     .column {
       .title {
-        padding-top: 40px;
+        padding: 70px 0 10px 0;
       }
     }
     .large-4 {
       padding: 0;
       .day {
-        margin: 0 auto 30px auto;
+        margin: 30px auto 30px auto;
       }
       .row-schedule {
         @include encapsule;
@@ -553,11 +552,13 @@ section#schedule {
           float: left;
           width: 70%;
           margin-left: 20%;
+          line-height: 20px;
         }
         .name-presentation2 {
           float: left;
           width: 90%;
           padding-left: 1.75em;
+          line-height: 20px;
         }
         .img {
           float: left;
