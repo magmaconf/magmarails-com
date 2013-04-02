@@ -59,7 +59,7 @@ class HomeController < ApplicationController
 
     @wednesday = [
       [hour: "10:00",
-       name: "Greg Pollak",
+       name: "Gregg Pollack",
        img_key: "new/schedule/icon_keynote.svg",
        name_presentation: "Keynote",
        img: "new/schedule/icon_english.svg"
@@ -207,7 +207,7 @@ class HomeController < ApplicationController
     ]
 
     @friday = [
-      [name: "Brian Liles",
+      [name: "Bryan Liles",
        img_key: "new/schedule/icon_keynote.svg",
        name_presentation: "Keynote",
        img: "new/schedule/icon_english.svg"
@@ -267,7 +267,7 @@ class HomeController < ApplicationController
        name_presentation: "Secret Talk",
        img: "new/schedule/spacer.png"
       ],
-      [name: "good byes!",
+      [name: "goodbyes!",
        img_key: "new/schedule/spacer.png",
        name_presentation: "",
        img: "new/schedule/spacer.png"

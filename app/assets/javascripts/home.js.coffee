@@ -1,7 +1,7 @@
 $(document).ready ->
-  $('.row-schedule:contains("Greg Pollak")').css("height", "80px")
+  $('.row-schedule:contains("Gregg Pollack")').css("height", "80px")
   $('.row-schedule:contains("Santiago Pastorino")').css("height", "80px")
-  $('.row-schedule:contains("Brian Liles")').css("height", "80px")
+  $('.row-schedule:contains("Bryan Liles")').css("height", "80px")
   $('.row-schedule:contains("break")').css("height", "40px")
   $('.row-schedule:contains("announcements")').css("height", "40px")
   $('.row-schedule:contains("lunch")').css("height", "40px")
@@ -10,7 +10,7 @@ $(document).ready ->
   $('.row-schedule:contains("Konstantin Gredeskoul")').css("height", "115px")
   $('.row-schedule:contains("lighting talks")').css("height", "40px")
   $('.row-schedule:contains("last words of the day")').css("height", "55px")
-  $('.row-schedule:contains("good byes!")').css("height", "55px")
+  $('.row-schedule:contains("goodbyes!")').css("height", "55px")
   setMenuHeight()
   put_img()
   window.addEventListener "orientationchange", (->    
