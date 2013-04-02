@@ -1,4 +1,10 @@
 $(document).ready ->
+  $('.row-schedule:contains("break")').css("height", "40px")
+  $('.row-schedule:contains("announcements")').css("height", "40px")
+  $('.row-schedule:contains("lunch")').css("height", "40px")
+  $('.row-schedule:contains("lighting talks")').css("height", "40px")
+  $('.row-schedule:contains("last words of the day")').css("height", "40px")
+  $('.row-schedule:contains("good byes!")').css("height", "40px")
   setMenuHeight()
   put_img()
   window.addEventListener "orientationchange", (->    

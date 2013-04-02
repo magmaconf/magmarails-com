@@ -172,6 +172,39 @@
             = mail_to 'info@magmaconf.com', 'info@magmaconf.com', class: 'mail'
         .lin.las
 
+%section#schedule
+  .row
+    .column.large-6.large-centered.hide-for-small
+      = image_tag 'new/schedule/schedule.svg', class: 'title'
+  .row.hide-for-medium-up
+    .column.large-1.title-black
+      %h2.black-h2 schedule
+  .row
+    .column.large-4
+      = image_tag "new/schedule/title_wednesday.svg", class: 'day'
+      - @wednesday.each do |wednesday|
+        .row-schedule
+          .hour= wednesday.first[:hour]
+          .name= wednesday.first[:name]
+          .img-key= image_tag "#{wednesday.first[:img_key]}"
+          .name-presentation= wednesday.first[:name_presentation]
+          .img= image_tag "#{wednesday.first[:img]}"
+    .column.large-4
+      = image_tag "new/schedule/title_thursday.svg", class: 'day'
+      - @thursday.each do |thursday|
+        .row-schedule
+          .name2= thursday.first[:name]
+          .img-key= image_tag "#{thursday.first[:img_key]}"
+          .name-presentation2= thursday.first[:name_presentation]
+          .img= image_tag "#{thursday.first[:img]}"
+    .column.large-4
+      = image_tag "new/schedule/title_friday.svg", class: 'day'
+      - @friday.each do |friday|
+        .row-schedule
+          .name2= friday.first[:name]
+          .img-key= image_tag "#{friday.first[:img_key]}"
+          .name-presentation2= friday.first[:name_presentation]
+          .img= image_tag "#{friday.first[:img]}"
 
 
 %section#sponsorship
