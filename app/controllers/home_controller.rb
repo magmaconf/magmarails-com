@@ -107,7 +107,7 @@ class HomeController < ApplicationController
        img: "new/schedule/spacer.png"
       ],
       [hour: "15:40",
-       name: "lighting talks",
+       name: "lightning talks",
        img_key: "new/schedule/spacer.png",
        name_presentation: "",
        img: "new/schedule/spacer.png"
@@ -179,7 +179,7 @@ class HomeController < ApplicationController
        name_presentation: "Object Orient Design, The Arduino Way",
        img: "new/schedule/spacer.png"
       ],
-      [name: "lighting talks",
+      [name: "lightning talks",
        img_key: "new/schedule/spacer.png",
        name_presentation: "",
        img: "new/schedule/spacer.png"
@@ -247,7 +247,7 @@ class HomeController < ApplicationController
        name_presentation: "Acelerating Wanelo.com from 5k to 200k RMP in months flat",
        img: "new/schedule/icon_english.svg"
       ],
-      [name: "lighting talks",
+      [name: "lightning talks",
        img_key: "new/schedule/spacer.png",
        name_presentation: "",
        img: "new/schedule/spacer.png"
@@ -265,7 +265,7 @@ class HomeController < ApplicationController
       [name: "Ron Evans",
        img_key: "new/schedule/spacer.png",
        name_presentation: "Secret Talk",
-       img: "new/schedule/spacer.png"
+       img: "new/schedule/icon_english.svg"
       ],
       [name: "goodbyes!",
        img_key: "new/schedule/spacer.png",
