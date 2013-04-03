@@ -264,7 +264,7 @@ class HomeController < ApplicationController
       ],
       [name: "Ron Evans",
        img_key: "new/schedule/spacer.png",
-       name_presentation: "Secret Talk",
+       name_presentation: "Ruby and robots. Lots of robots",
        img: "new/schedule/icon_english.svg"
       ],
       [name: "goodbyes!",
