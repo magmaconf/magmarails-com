@@ -59,13 +59,13 @@ class HomeController < ApplicationController
 
     @wednesday = [
       [hour: "10:00",
-       name: "Greg Pollak",
+       name: "Gregg Pollack",
        img_key: "new/schedule/icon_keynote.svg",
        name_presentation: "Keynote",
        img: "new/schedule/icon_english.svg"
       ],
       [hour: "11:00",
-       name: "Mario A. Chavez",
+       name: "Mario A. Chávez",
        img_key: "new/schedule/spacer.png",
        name_presentation: "Ruby Internals",
        img: "new/schedule/spacer.png"
@@ -107,7 +107,7 @@ class HomeController < ApplicationController
        img: "new/schedule/spacer.png"
       ],
       [hour: "15:40",
-       name: "lighting talks",
+       name: "lightning talks",
        img_key: "new/schedule/spacer.png",
        name_presentation: "",
        img: "new/schedule/spacer.png"
@@ -132,6 +132,142 @@ class HomeController < ApplicationController
       ],
       [hour: "17:40",
        name: "last words of the day",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ]
+    ]
+
+    @thursday = [
+      [name: "Santiago Pastorino",
+       img_key: "new/schedule/icon_keynote.svg",
+       name_presentation: "Keynote",
+       img: "new/schedule/spacer.png"
+      ],
+      [name: "Edwin Cruz",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Applicaciones web 2.0, API's con RoR y frontend con EmberJS",
+       img: "new/schedule/spacer.png"
+      ],
+      [name: "break",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [name: "Tommy Rochette",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Angular JS: Advance Design Patterns and Best Practices",
+       img: "new/schedule/icon_english.svg"
+      ],
+      [name: "Ivan Acosta Rubio",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "RubyMotion",
+       img: "new/schedule/spacer.png"
+      ],
+      [name: "announcements",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [name: "lunch",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [name: "Herman Moreno",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Object Orient Design, The Arduino Way",
+       img: "new/schedule/spacer.png"
+      ],
+      [name: "lightning talks",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [name: "break",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [name: "Jon Dean",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Inter-application comunication using secure API's",
+       img: "new/schedule/icon_english.svg"
+      ],
+      [name: "Konstantin Haase",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Sinatra in 6 lines, or How to do crazy stuff with Ruby",
+       img: "new/schedule/icon_english.svg"
+      ],
+      [name: "last words of the day",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ]
+    ]
+
+    @friday = [
+      [name: "Bryan Liles",
+       img_key: "new/schedule/icon_keynote.svg",
+       name_presentation: "Keynote",
+       img: "new/schedule/icon_english.svg"
+      ],
+      [name: "Francisco Viramontes",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Chronicle of a SOA Foretold",
+       img: "new/schedule/spacer.png"
+      ],
+      [name: "break",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [name: "sponsor conference",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [name: "Johnny Winn",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Building an Organic API: Experiment in Meta Programming",
+       img: "new/schedule/icon_english.svg"
+      ],
+      [name: "announcements",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [name: "lunch",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [name: "Konstantin Gredeskoul",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Acelerating Wanelo.com from 5k to 200k RMP in months flat",
+       img: "new/schedule/icon_english.svg"
+      ],
+      [name: "lightning talks",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [name: "break",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "",
+       img: "new/schedule/spacer.png"
+      ],
+      [name: "Nick Sutterer",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Off the tracks - Challenging the Rails Mindset",
+       img: "new/schedule/icon_english.svg"
+      ],
+      [name: "Ron Evans",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Ruby and robots. Lots of robots",
+       img: "new/schedule/icon_english.svg"
+      ],
+      [name: "goodbyes!",
        img_key: "new/schedule/spacer.png",
        name_presentation: "",
        img: "new/schedule/spacer.png"

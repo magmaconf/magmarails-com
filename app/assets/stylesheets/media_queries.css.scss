@@ -58,6 +58,24 @@
 }
 //-----------------------------------
 
+@media (max-width: 768px) {
+  @include logo_center;
+  @include socialite;
+  expanded { height: 100%; }
+  .social ul {
+    width: 100%;
+    text-align: center;
+  }
+  .row-schedule {
+    img {
+      width: 35px;
+      height: 28px;
+    }
+  }
+  .las { display: none !important; }
+  .lin { height: 409px !important; width: 7px !important; }
+}
+
 @media only screen and (min-width : 768px) and (max-width: 979px) {
   @include socialite;
   @include logo_center;
@@ -86,6 +104,13 @@
     margin-top: -32px;
     img.mobile {display: block}
     img.desktop {display: none}
+  }
+  .sticky {
+    nav {
+      .row {
+        .large-7 { width: 70%; }
+      }
+    }
   }
   .menu-mobile-handler {
     display: block;
@@ -128,8 +153,30 @@
     position: absolute;
     bottom: 0;
   }
-  .lin { height: 337px !important; }
+  .back_g {
+    .row {
+      ul {
+        li {
+          a { margin: 0 40px 15px 40px !important; }
+        }
+      }
+    }
+  }
+  #venue {
+    .row {
+      .large-2 { display: none !important; }
+      .large-4, .large-3 { width: 50% !important; }
+    }
+  }
+  .lin { height: 356px !important; width: 7px !important; }
   .fir, .las { display: none !important; }
+  #schedule {
+    .row {
+      .large-4 {
+        float: left;
+      }
+    }
+  }
 }
 
 
@@ -248,7 +295,7 @@
   }
   .margin_add { margin-top: -10%; }
   .spon_desk { display: none; }
-  .spon_mobi { display: block; }
+  .spon_mobi { display: block; padding-top: 30px; }
 
   /*section#speakers {
     .row {
@@ -324,6 +371,16 @@
           a {
             font-size: 12px;
           }
+        }
+      }
+    }
+  }
+  .day { padding-top: 30px; }
+  #schedule {
+    .row {
+      .large-4 {
+        .row-schedule {
+          /**/
         }
       }
     }

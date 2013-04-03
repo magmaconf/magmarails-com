@@ -516,29 +516,29 @@ section#schedule {
   padding-bottom: 60px;
   .row {
     font-family: 'oswald';
-    padding-top: 50px;
     .column {
       .title {
-        padding-top: 70px;
+        padding: 70px 0 10px 0;
       }
     }
     .large-4 {
       padding: 0;
       .day {
-        margin: 0 auto 30px auto;
+        margin: 30px auto 30px auto;
       }
       .row-schedule {
         @include encapsule;
         width: 100%;
         border-bottom: 1px solid #000;
         padding: 0.5375em 0.9375em;
+        height: 100px;
         .hour {
           float: left;
           width: 20%;
           font-size: 20px;
         }
         .name { width: 70%; }
-        .name2 { width: 90%; }
+        .name2 { width: 90%; padding-left: 1.4em; }
         .name, .name2 {
           float: left;
           font-size: 20px;
@@ -552,10 +552,13 @@ section#schedule {
           float: left;
           width: 70%;
           margin-left: 20%;
+          line-height: 20px;
         }
         .name-presentation2 {
           float: left;
           width: 90%;
+          padding-left: 1.75em;
+          line-height: 20px;
         }
         .img {
           float: left;
