@@ -65,7 +65,7 @@ class HomeController < ApplicationController
        img: "new/schedule/icon_english.svg"
       ],
       [hour: "11:00",
-       name: "Mario A. Chavez",
+       name: "Mario A. Chávez",
        img_key: "new/schedule/spacer.png",
        name_presentation: "Ruby Internals",
        img: "new/schedule/spacer.png"
@@ -214,7 +214,7 @@ class HomeController < ApplicationController
       ],
       [name: "Francisco Viramontes",
        img_key: "new/schedule/spacer.png",
-       name_presentation: "Conicle of a SOA Foretold",
+       name_presentation: "Chronicle of a SOA Foretold",
        img: "new/schedule/spacer.png"
       ],
       [name: "break",
@@ -222,7 +222,7 @@ class HomeController < ApplicationController
        name_presentation: "",
        img: "new/schedule/spacer.png"
       ],
-      [name: "conference",
+      [name: "sponsor conference",
        img_key: "new/schedule/spacer.png",
        name_presentation: "",
        img: "new/schedule/spacer.png"
