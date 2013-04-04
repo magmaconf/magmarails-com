@@ -67,7 +67,7 @@ footer {
   p {
     padding-top: 9px;
     font-size: 12px;
-    margin-left: 5px;
+    margin-left: 98px;
   }
 }
 
@@ -184,10 +184,12 @@ section#home {
   p:first-child {
     padding-top: 115px;
   }
+  .main-image { margin-top: 25px; }
 }
 
 section#speakers {
   background-image: url('/assets/bkg.jpg');
+  border-top: 10px solid #c7e1d7;
   .row {
     .column.large-6.large-centered.hide-for-small {
       padding-top: 60px;
@@ -382,6 +384,8 @@ section#speakers {
 }
 section#location {
   background: #cee1d9;
+  .back_blue { background-image: url('/assets/bkg.jpg'); }
+  .margin_add { margin-top: 40px; }
   .location-title {
     position: relative;
     z-index: 2;
@@ -587,8 +591,6 @@ section#sponsorship {
 }
 
 h3 { font-family: 'Oswald'; }
-.back_blue { background-image: url('/assets/bkg.jpg'); }
-.margin_add { margin-top: 40px; }
 .margin_add_pricing { margin: 30px auto; }
 .sponsor {
   margin: 70px auto 0 auto;
