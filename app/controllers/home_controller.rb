@@ -159,7 +159,7 @@ class HomeController < ApplicationController
        name_presentation: "Angular JS: Advance Design Patterns and Best Practices",
        img: "new/schedule/icon_english.svg"
       ],
-      [name: "Ivan Acosta Rubio",
+      [name: "Iván Acosta Rubio",
        img_key: "new/schedule/spacer.png",
        name_presentation: "RubyMotion",
        img: "new/schedule/spacer.png"
