@@ -42,6 +42,9 @@
       = render 'partials/footer'
     = javascript_include_tag "application"
     :javascript
+      $(function() {
+        $( "#accordion" ).accordion();
+      });
       $(document).ready(function(){
         $('#speakers-list li').hover(function(){
           $(this).addClass('flip');

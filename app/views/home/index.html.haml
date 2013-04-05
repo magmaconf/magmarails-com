@@ -47,6 +47,14 @@
       .row.hide-for-small
         .column.large-4.large-centered
           %h2.black-h2 the speakers
+      #accordion
+        - @speakers.each do |speaker|
+          .accordion-group
+            .accordion-heading
+              %h4= link_to "Collapsible Group Item 1", "#collapse#{speaker.first[:id]}", class: "accordion-toggle", data_toggle: "collapse", data_parent: "#accordion"
+            %div{id: "collapse#{speaker.first[:id]}", class: "accordion-body collapse"}
+              .accordion-inner
+                %p Anim pariatur cliche...
       %ul#speakers-list.large-block-grid-4
         - @speakers.each do |speaker|
           %li

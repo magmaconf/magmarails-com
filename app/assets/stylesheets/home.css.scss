@@ -207,10 +207,13 @@ section#speakers {
     }
     #speakers-list {
       // margin-top: 40px;
-      // margin: 0 auto;
+      //margin: 0 auto;
+      text-align: center;
       li {
+        @include encapsule;
         list-style: none;
-        position: relative;
+        display: inline;
+        /*position: relative;*/
         -webkit-perspective: 600px;
         -moz-perspective: 600px;
         margin-bottom: 45px;
@@ -611,4 +614,23 @@ h3 { font-family: 'Oswald'; }
 }
 .cli {
   a { top: 0 !important; }
+}
+
+
+/*---------------------------------------------------------*/
+
+.collapse { /*para esconder o mostrar lo colapzado */
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+     -moz-transition: height 0.35s ease;
+       -o-transition: height 0.35s ease;
+          transition: height 0.35s ease;
+}
+.collapse.in {
+  height: auto;
+}
+.hide {
+  display: none;
 }
