@@ -201,22 +201,21 @@ section#speakers {
     // height: 500px;
     border-top: 1px solid #c6ded5;
     margin-top: 20px;
-    margin-bottom: 50px;    /*-----------------------------------*/
+    margin-bottom: 50px;
     h2 {
       @extend .black_h2;
     }
     #speakers-list {
-      // margin-top: 40px;
-      //margin: 0 auto;
-      text-align: center;
-      li {
+      @include encapsule;
+      .globes {
+        width: 25%;
+        margin: 0 auto 45px auto;
+        padding: 0 2.06185567%;
+        float: left;
         @include encapsule;
-        list-style: none;
-        display: inline;
-        /*position: relative;*/
+        position: relative;
         -webkit-perspective: 600px;
         -moz-perspective: 600px;
-        margin-bottom: 45px;
         p.name {
           font-family: 'Oswald';
           font-size: 13px;
@@ -270,12 +269,11 @@ section#speakers {
           background: white;
           float: none;
           position: absolute;
-          padding: 22px;
+          padding: 17px;
           top: 0;
           left: 0;
           width: 100%;
           height: 200px;
-          z-index: 800;
           -webkit-transform: rotateY(-180deg);
           -webkit-transform-style: preserve-3d;
           -webkit-backface-visibility: hidden;
@@ -306,74 +304,79 @@ section#speakers {
             line-height: 18px;
           }
         }
-        .mobi {
+        .accordion-group {
+          display: none;
           @include encapsule;
           float: left;
-          position: absolute;
-          top: 0;
           left: 0;
           width: 100%;
-          z-index: 800;
-          -webkit-backface-visibility: hidden;
-          -moz-backface-visibility: hidden;
-          -moz-transform: rotateY(-180deg);
-          -webkit-transform: rotateY(-180deg);
-          
-          .person_name {
-            width: 100%;
+          .accordion-heading {
             @include encapsule;
-            [class*="icon-"] {
+            .person_name {
+              font-family: 'Oswald';
+              text-transform: uppercase;
+              color: black;
+              display: block;
+              padding: 7px 0;
+              float: left;
+              width: 100%;
+            }
+            [class*="icon_"] {
               width: 14px;
               height: 14px;
               background-image: url('/assets/glyphicons-halflings.png');
               line-height: 14px;
               display: inline-block;
             }
-            .icon-search {
+            .icon_search {
               background-position: -120px 0;
               background-repeat: no-repeat;
               top: 10px;
               float: left;
-              margin: 7px 0 0 15px;
+              margin: 0 10px 0 15px;
             }
-            .icon-chevron-down {
+            .icon_chevron_down {
               background-position: -313px -119px;
               background-repeat: no-repeat;
               top: 10px;
               float: right;
-              margin: 7px 15px 0 0;
+              margin: 0 15px 0 0;
             }
           }
-          .person_info {
-            width: 100%;
-            @include encapsule;
+          .collapse { /*para esconder o mostrar lo colapzado */
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            -webkit-transition: height 0.35s ease;
+               -moz-transition: height 0.35s ease;
+                 -o-transition: height 0.35s ease;
+                    transition: height 0.35s ease;
             a {
               width: 100%;
+              display: block;
               float: left;
-              margin-left: 30px;
+              margin-left: 36px;
+              color: #333;
+              text-transform: uppercase;
             }
             img {
               margin: 0 auto;
+              padding-top: 10px;
             }
             p {
               text-align: center;
-              margin: 0 auto;
-              padding: 10px 15px;
-              text-transform: lowercase;
-              font-family: 'Arial';
+              margin: 20px 20px 0 20px;
+              padding-top: 10px;
+              border-top: 1px solid #333;
             }
           }
+          .collapse.in {
+            height: auto;
+          }
         }
-      }
-      .solo {
-        margin-top: 40px;
-        .mask, p.name {
-          margin: 0 auto;
+        &:last-child {
+          margin: 0 37.5% 45px 37.5%;
         }
-        p.name {
-          color: black;
-        }
-
       }
       a.help {
         position: relative;
@@ -619,18 +622,6 @@ h3 { font-family: 'Oswald'; }
 
 /*---------------------------------------------------------*/
 
-.collapse { /*para esconder o mostrar lo colapzado */
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: height 0.35s ease;
-     -moz-transition: height 0.35s ease;
-       -o-transition: height 0.35s ease;
-          transition: height 0.35s ease;
-}
-.collapse.in {
-  height: auto;
-}
 .hide {
   display: none;
 }

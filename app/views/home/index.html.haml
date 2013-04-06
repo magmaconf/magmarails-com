@@ -47,17 +47,9 @@
       .row.hide-for-small
         .column.large-4.large-centered
           %h2.black-h2 the speakers
-      #accordion
+      #speakers-list
         - @speakers.each do |speaker|
-          .accordion-group
-            .accordion-heading
-              %h4= link_to "Collapsible Group Item 1", "#collapse#{speaker.first[:id]}", class: "accordion-toggle", data_toggle: "collapse", data_parent: "#accordion"
-            %div{id: "collapse#{speaker.first[:id]}", class: "accordion-body collapse"}
-              .accordion-inner
-                %p Anim pariatur cliche...
-      %ul#speakers-list.large-block-grid-4
-        - @speakers.each do |speaker|
-          %li
+          .globes
             .front
               = image_tag 'new/speakers/mask.png'
               %p.name
@@ -66,16 +58,16 @@
               .info
                 %h4= link_to "@#{speaker.first[:twitter]}", "http://twitter.com/#{speaker.first[:twitter]}", target: "_blank"
                 %p=raw speaker.first[:bio]
-      %ul.column.large-3.large-centered#speakers-list
-        %li.solo
-          .front
-            = image_tag 'new/speakers/mask.png'
-            %p.name
-              Konstantin Haase
-          .back
-            .info
-              %h4= link_to "@konstantinhaase", "http://twitter.com/konstantinhaase", target: "_blank"
-              %p A german working at TravisCI, who works in so many OSS projects, like: Sinatra, Puma, Rubinius.
+            .accordion-group
+              .accordion-heading
+                %a{:href => "#collapse#{speaker.first[:id]}", :class  => "accordion-toggle person_name", :data_toggle => "collapse", :data_parent => "#speakers-list"}
+                  %i.icon_search
+                  = speaker.first[:name]
+                  %i.icon_chevron_down
+              %div{id: "collapse#{speaker.first[:id]}", class: "accordion-body collapse"}
+                = link_to "@#{speaker.first[:twitter]}", "http://twitter.com/#{speaker.first[:twitter]}", target: "_blank"
+                = image_tag 'new/speakers/mask.png'
+                %p=raw speaker.first[:bio]
 
 %section#location
   .back_blue
