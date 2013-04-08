@@ -588,23 +588,42 @@ section#sponsorship {
   padding-bottom: 10%;
   .row {
     .column.large-12.large-centered {
+      @include encapsule;
       .gold {
         @include encapsule;
-        .sponsor, .image {
+        margin-top: 40px;
+        a {
           float: left;
-        }
-        .sponsor {
-          background-image: url('/assets/new/sponsors/gold.svg'); 
-        }
-        .image {
-          .spon_desk {
-            width: 40%;
-            height: 40%;
+          display: block;
+          width: 33.33333%;
+          &:first-child, &:last-child {
+            margin-top: 100px !important;
           }
         }
       }
       .silver {
         @include encapsule;
+        margin-top: 40px;
+        a {
+          float: left;
+          display: block;
+          width: 25%;
+        }
+      }
+      .spon_mobi {
+        @include encapsule;
+        display: none;
+        a {
+          display: block;
+          float: left;
+          &:first-child {
+            width: 100%;
+          }
+          &:nth-child(2), &:last-child {
+            width: 50%;
+            margin-top: 30px;
+          }
+        }
       }
       a {
         img {

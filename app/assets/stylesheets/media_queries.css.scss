@@ -126,6 +126,18 @@
       }
     }
   }
+  section#sponsorship {
+    .row {
+      .column.large-12.large-centered {
+        .gold {
+          display: none;
+        }
+        .spon_mobi {
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width : 768px) and (max-width: 979px) {
@@ -226,6 +238,19 @@
     .row {
       .large-4 {
         float: left;
+      }
+    }
+  }
+  section#sponsorship {
+    .row {
+      .column.large-12.large-centered {
+        .gold {
+          a {
+            &:first-child, &:last-child {
+              margin-top: 35px !important;
+            }
+          }
+        }
       }
     }
   }
