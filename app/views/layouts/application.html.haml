@@ -65,10 +65,10 @@
             scrollTarget: link.hash
           });
         });
-        $('.person_name').click(function() {
+        $('.accordion-heading').click(function() {
           var section = $(this).parent();
-          section.find('.person_info').slideToggle('slow');
-          section.find('')
+          section.find('.accordion-body').slideToggle('slow');
+          section.find('.accordion-heading').toggleClass("collapsed");
         });
       })
 

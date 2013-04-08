@@ -210,7 +210,7 @@ class HomeController < ApplicationController
       ],
       [name: "Herman Moreno",
        img_key: "new/schedule/spacer.png",
-       name_presentation: "Object Orient Design, The Arduino Way",
+       name_presentation: "Object Oriented Design, The Arduino Way",
        img: "new/schedule/spacer.png"
       ],
       [name: "lightning talks",

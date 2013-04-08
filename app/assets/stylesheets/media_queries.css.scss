@@ -76,6 +76,16 @@
   .lin { height: 409px !important; width: 7px !important; }
   section#speakers {
     .row {
+      #keynotes {
+        @include encapsule;
+        .large-4 {
+          a {
+            img {
+              margin: 0 auto !important;
+            }
+          }
+        }
+      }
       #speaker-wrap {
         top: -70px;
         border-top: 0;
@@ -105,7 +115,7 @@
             .accordion-group {
               display: block;
               border-bottom: 1px solid #cee1d9;
-              padding: 10px 0;
+              padding: 0;
               float: left;
             }
             &:last-child {

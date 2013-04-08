@@ -10,8 +10,6 @@
 //= require jquery.smooth-scroll.min
 //= require modernizr.custom
 //= require underscore-min
-//= require collapse
-//= require transitions
 //= require core-1.0.4
 //= require_tree .
 

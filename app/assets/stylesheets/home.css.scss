@@ -312,6 +312,8 @@ section#speakers {
           width: 100%;
           .accordion-heading {
             @include encapsule;
+            cursor: pointer;
+            padding: 10px 0;
             .person_name {
               font-family: 'Oswald';
               text-transform: uppercase;
@@ -320,6 +322,7 @@ section#speakers {
               padding: 7px 0;
               float: left;
               width: 100%;
+              margin-bottom: 0;
             }
             [class*="icon_"] {
               width: 14px;
@@ -333,24 +336,21 @@ section#speakers {
               background-repeat: no-repeat;
               top: 10px;
               float: left;
-              margin: 0 10px 0 15px;
+              margin: 7px 10px 0 15px;
             }
             .icon_chevron_down {
               background-position: -313px -119px;
               background-repeat: no-repeat;
               top: 10px;
               float: right;
-              margin: 0 15px 0 0;
+              margin: 7px 15px 0 0;
             }
           }
-          .collapse { /*para esconder o mostrar lo colapzado */
+          .accordion-body { /*para esconder o mostrar lo colapzado */
             position: relative;
-            height: 0;
-            overflow: hidden;
-            -webkit-transition: height 0.35s ease;
-               -moz-transition: height 0.35s ease;
-                 -o-transition: height 0.35s ease;
-                    transition: height 0.35s ease;
+            display: none;
+            background: #cadfd5;
+            padding-bottom: 10px;
             a {
               width: 100%;
               display: block;
@@ -367,11 +367,16 @@ section#speakers {
               text-align: center;
               margin: 20px 20px 0 20px;
               padding-top: 10px;
-              border-top: 1px solid #333;
+              border-top: 1px solid #999e9d;
             }
           }
-          .collapse.in {
-            height: auto;
+          .collapsed {
+            background: #cadfd5;
+            p {
+              .icon_chevron_down {
+                background-position: -288px -120px;
+              }
+            }
           }
         }
         &:last-child {
@@ -583,6 +588,24 @@ section#sponsorship {
   padding-bottom: 10%;
   .row {
     .column.large-12.large-centered {
+      .gold {
+        @include encapsule;
+        .sponsor, .image {
+          float: left;
+        }
+        .sponsor {
+          background-image: url('/assets/new/sponsors/gold.svg'); 
+        }
+        .image {
+          .spon_desk {
+            width: 40%;
+            height: 40%;
+          }
+        }
+      }
+      .silver {
+        @include encapsule;
+      }
       a {
         img {
           margin: 0 auto;
