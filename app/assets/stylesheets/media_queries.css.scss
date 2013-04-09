@@ -58,7 +58,7 @@
 }
 //-----------------------------------
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   @include logo_center;
   @include socialite;
   expanded { height: 100%; }
@@ -405,6 +405,13 @@
           /**/
         }
       }
+    }
+  }
+  .media_sponsor {
+    img, a {
+      width: 200px;
+      margin: 0 auto;
+      float: none !important;
     }
   }
 }

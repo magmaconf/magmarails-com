@@ -632,6 +632,13 @@ section#sponsorship {
       }
     }
   }
+  .media_sponsor {
+    margin-top: 2.500em;
+    padding: 0.625em 0;
+    border-top: 1px solid #8bab9d;
+    border-bottom: 1px solid #8bab9d;
+    a, img { float: left; }
+  }
 }
 .fixed {
   z-index: 9999;
