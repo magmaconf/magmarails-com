@@ -58,7 +58,7 @@
 }
 //-----------------------------------
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   @include logo_center;
   @include socialite;
   expanded { height: 100%; }
@@ -74,6 +74,70 @@
   }
   .las { display: none !important; }
   .lin { height: 409px !important; width: 7px !important; }
+  section#speakers {
+    .row {
+      #keynotes {
+        @include encapsule;
+        .large-4 {
+          a {
+            img {
+              margin: 0 auto !important;
+            }
+          }
+        }
+      }
+      #speaker-wrap {
+        top: -70px;
+        border-top: 0;
+        padding: 0;
+        #speakers-list {
+          width: 100%;
+          margin: 0 auto;
+          .globes {
+            width: 100%;
+            margin-bottom: 0;
+            padding: 0 !important;
+            display: block;
+            &:hover { display: none; }
+            &.flip .front {
+              z-index: 0;
+              -webkit-transform: rotateY(0deg);
+              -moz-transform: rotateY(0deg);
+            }
+            &.flip .back {
+              z-index: 0;
+              -webkit-transform: rotateX(0deg) rotateY(180deg);
+              -moz-transform: rotateX(0deg) rotateY(180deg);
+            }
+            .front, .back {
+              display: none;
+            }
+            .accordion-group {
+              display: block;
+              border-bottom: 1px solid #cee1d9;
+              padding: 0;
+              float: left;
+            }
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  section#sponsorship {
+    .row {
+      .column.large-12.large-centered {
+        .gold {
+          display: none;
+        }
+        .spon_mobi {
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width : 768px) and (max-width: 979px) {
@@ -177,6 +241,19 @@
       }
     }
   }
+  section#sponsorship {
+    .row {
+      .column.large-12.large-centered {
+        .gold {
+          a {
+            &:first-child, &:last-child {
+              margin-top: 35px !important;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -219,6 +296,8 @@
   .menu-mobile-handler {
     display: block;
   }
+
+  #speaker-wrap { top: -10px !important; }
 
   #slider {
     margin-top: 16px;
@@ -297,63 +376,6 @@
   .spon_desk { display: none; }
   .spon_mobi { display: block; padding-top: 30px; }
 
-  /*section#speakers {
-    .row {
-      #speaker-wrap {
-        top: -80px;
-        border-top: 0;
-        padding: 0;
-        #speakers-list {
-          width: 100%;
-          margin: 0 auto;
-          li {
-            @include encapsule;
-            float: left;
-            width: 100%;
-            height: 53px;
-            margin-bottom: 0;
-            padding-bottom: 0 !important;
-            display: block;
-            &:hover { display: none; }
-            &.flip .front {
-              z-index: 0;
-              -webkit-transform: rotateY(0deg);
-              -moz-transform: rotateY(0deg);
-            }
-            &.flip .back {
-              z-index: 0;
-              -webkit-transform: rotateX(0deg) rotateY(180deg);
-              -moz-transform: rotateX(0deg) rotateY(180deg);
-            }
-            .front, .back {
-              padding: 0;
-              margin: 0;
-              -webkit-backface-visibility: hidden;
-              -moz-backface-visibility: hidden;
-              display: none;
-            }
-            .mobi {
-              -webkit-backface-visibility: visible;
-              -moz-backface-visibility: visible;
-              -moz-transform: rotateY(0deg);
-              -webkit-transform: rotateY(0deg);
-              border-bottom: 1px solid #cee1d9;
-              padding: 10px 0;
-              float: left;
-              p {
-                font-family: 'Oswald';
-                margin-bottom: 0;
-                padding: 0 15px 0 10px;
-                text-transform: uppercase;
-                color: black;
-                float: left; 
-              }
-            }
-          }
-        }
-      }
-    }
-  }*/
   .black-h2 { margin-bottom: 0; }
   .back_g {
     .row {
@@ -383,6 +405,13 @@
           /**/
         }
       }
+    }
+  }
+  .media_sponsor {
+    img, a {
+      width: 200px;
+      margin: 0 auto;
+      float: none !important;
     }
   }
 }

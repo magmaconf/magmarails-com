@@ -182,9 +182,8 @@ section#home {
     z-index: 2;
   }
   p:first-child {
-    padding-top: 115px;
+    padding-top: 70px;
   }
-  .main-image { margin-top: 25px; }
 }
 
 section#speakers {
@@ -202,19 +201,21 @@ section#speakers {
     // height: 500px;
     border-top: 1px solid #c6ded5;
     margin-top: 20px;
-    margin-bottom: 50px;    /*-----------------------------------*/
+    margin-bottom: 50px;
     h2 {
       @extend .black_h2;
     }
     #speakers-list {
-      // margin-top: 40px;
-      // margin: 0 auto;
-      li {
-        list-style: none;
+      @include encapsule;
+      .globes {
+        width: 25%;
+        margin: 0 auto 45px auto;
+        padding: 0 2.06185567%;
+        float: left;
+        @include encapsule;
         position: relative;
         -webkit-perspective: 600px;
         -moz-perspective: 600px;
-        margin-bottom: 45px;
         p.name {
           font-family: 'Oswald';
           font-size: 13px;
@@ -268,12 +269,11 @@ section#speakers {
           background: white;
           float: none;
           position: absolute;
-          padding: 22px;
+          padding: 17px;
           top: 0;
           left: 0;
           width: 100%;
           height: 200px;
-          z-index: 800;
           -webkit-transform: rotateY(-180deg);
           -webkit-transform-style: preserve-3d;
           -webkit-backface-visibility: hidden;
@@ -304,37 +304,41 @@ section#speakers {
             line-height: 18px;
           }
         }
-        .mobi {
+        .accordion-group {
+          display: none;
           @include encapsule;
           float: left;
-          position: absolute;
-          top: 0;
           left: 0;
           width: 100%;
-          z-index: 800;
-          -webkit-backface-visibility: hidden;
-          -moz-backface-visibility: hidden;
-          -moz-transform: rotateY(-180deg);
-          -webkit-transform: rotateY(-180deg);
-          
-          .person_name {
-            width: 100%;
+          .accordion-heading {
             @include encapsule;
-            [class*="icon-"] {
+            cursor: pointer;
+            padding: 10px 0;
+            .person_name {
+              font-family: 'Oswald';
+              text-transform: uppercase;
+              color: black;
+              display: block;
+              padding: 7px 0;
+              float: left;
+              width: 100%;
+              margin-bottom: 0;
+            }
+            [class*="icon_"] {
               width: 14px;
               height: 14px;
               background-image: url('/assets/glyphicons-halflings.png');
               line-height: 14px;
               display: inline-block;
             }
-            .icon-search {
+            .icon_search {
               background-position: -120px 0;
               background-repeat: no-repeat;
               top: 10px;
               float: left;
-              margin: 7px 0 0 15px;
+              margin: 7px 10px 0 15px;
             }
-            .icon-chevron-down {
+            .icon_chevron_down {
               background-position: -313px -119px;
               background-repeat: no-repeat;
               top: 10px;
@@ -342,36 +346,42 @@ section#speakers {
               margin: 7px 15px 0 0;
             }
           }
-          .person_info {
-            width: 100%;
-            @include encapsule;
+          .accordion-body { /*para esconder o mostrar lo colapzado */
+            position: relative;
+            display: none;
+            background: #cadfd5;
+            padding-bottom: 10px;
             a {
               width: 100%;
+              display: block;
               float: left;
-              margin-left: 30px;
+              margin-left: 36px;
+              color: #333;
+              text-transform: uppercase;
             }
             img {
               margin: 0 auto;
+              padding-top: 10px;
             }
             p {
               text-align: center;
-              margin: 0 auto;
-              padding: 10px 15px;
-              text-transform: lowercase;
-              font-family: 'Arial';
+              margin: 20px 20px 0 20px;
+              padding-top: 10px;
+              border-top: 1px solid #999e9d;
+            }
+          }
+          .collapsed {
+            background: #cadfd5;
+            p {
+              .icon_chevron_down {
+                background-position: -288px -120px;
+              }
             }
           }
         }
-      }
-      .solo {
-        margin-top: 40px;
-        .mask, p.name {
-          margin: 0 auto;
+        &:last-child {
+          margin: 0 37.5% 45px 37.5%;
         }
-        p.name {
-          color: black;
-        }
-
       }
       a.help {
         position: relative;
@@ -578,12 +588,56 @@ section#sponsorship {
   padding-bottom: 10%;
   .row {
     .column.large-12.large-centered {
+      @include encapsule;
+      .gold {
+        @include encapsule;
+        margin-top: 40px;
+        a {
+          float: left;
+          display: block;
+          width: 33.33333%;
+          &:first-child, &:last-child {
+            margin-top: 100px !important;
+          }
+        }
+      }
+      .silver {
+        @include encapsule;
+        margin-top: 40px;
+        a {
+          float: left;
+          display: block;
+          width: 25%;
+        }
+      }
+      .spon_mobi {
+        @include encapsule;
+        display: none;
+        a {
+          display: block;
+          float: left;
+          &:first-child {
+            width: 100%;
+          }
+          &:nth-child(2), &:last-child {
+            width: 50%;
+            margin-top: 30px;
+          }
+        }
+      }
       a {
         img {
           margin: 0 auto;
         }
       }
     }
+  }
+  .media_sponsor {
+    margin-top: 2.500em;
+    padding: 0.625em 0;
+    border-top: 1px solid #8bab9d;
+    border-bottom: 1px solid #8bab9d;
+    a, img { float: left; }
   }
 }
 .fixed {
@@ -612,4 +666,11 @@ h3 { font-family: 'Oswald'; }
 }
 .cli {
   a { top: 0 !important; }
+}
+
+
+/*---------------------------------------------------------*/
+
+.hide {
+  display: none;
 }

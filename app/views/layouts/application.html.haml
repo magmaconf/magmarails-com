@@ -43,7 +43,7 @@
     = javascript_include_tag "application"
     :javascript
       $(document).ready(function(){
-        $('#speakers-list li').hover(function(){
+        $('.globes').hover(function(){
           $(this).addClass('flip');
         },function(){
           $(this).removeClass('flip');
@@ -65,10 +65,13 @@
             scrollTarget: link.hash
           });
         });
-        $('.person_name').click(function() {
+        $('.accordion-heading').click(function() {
           var section = $(this).parent();
-          section.find('.person_info').slideToggle('slow');
-          section.find('')
+          $('.accordion-body:visible').slideToggle();
+          section.find('.accordion-body').slideToggle();
+          
+          $('.accordion-body:visible').siblings('.accordion-heading').removeClass('collapsed');
+          section.find('.accordion-heading').addClass('collapsed');
         });
       })
 
