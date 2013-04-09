@@ -67,8 +67,11 @@
         });
         $('.accordion-heading').click(function() {
           var section = $(this).parent();
-          section.find('.accordion-body').slideToggle('slow');
-          section.find('.accordion-heading').toggleClass("collapsed");
+          $('.accordion-body:visible').slideToggle();
+          section.find('.accordion-body').slideToggle();
+          
+          $('.accordion-body:visible').siblings('.accordion-heading').removeClass('collapsed');
+          section.find('.accordion-heading').addClass('collapsed');
         });
       })
 
