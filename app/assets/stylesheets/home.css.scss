@@ -368,6 +368,7 @@ section#speakers {
               margin: 20px 20px 0 20px;
               padding-top: 10px;
               border-top: 1px solid #999e9d;
+              line-height: 20px;
             }
           }
           .collapsed {
@@ -378,6 +379,18 @@ section#speakers {
               }
             }
           }
+          /*.collapse {
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            -webkit-transition: height 0.35s ease;
+            -moz-transition: height 0.35s ease;
+            -o-transition: height 0.35s ease;
+            transition: height 0.35s ease;
+          }
+          .collapse.in {
+            height: auto;
+          }*/
         }
         &:last-child {
           margin: 0 37.5% 45px 37.5%;
