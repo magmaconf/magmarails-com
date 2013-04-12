@@ -67,11 +67,21 @@
         });
         $('.accordion-heading').click(function() {
           var section = $(this).parent();
-          $('.accordion-body:visible').slideToggle();
-          section.find('.accordion-body').slideToggle();
+          $('.accordion-body:visible').hide(500);
+          section.find('.accordion-body').show();
+          //section.find('.accordion-body:visible').hidde();
+
+
+          //section.find('.accordion-body').slideToggle().siblings('.accordion-body:visible').slideUp();
+          //section.find('.accordion-heading').addClass('collapsed').siblings('.accordion-heading').hasClass('collapsed').removeClass('collapsed');
+          //section.find('.accordion-heading').addClass('collapsed').child(".accordion-body:visible").siblings(".accordion-heading").removeClass("collapsed");
           
           $('.accordion-body:visible').siblings('.accordion-heading').removeClass('collapsed');
-          section.find('.accordion-heading').addClass('collapsed');
+          //section.find('.accordion-heading').addClass('collapsed');
+          section.find('.accordion-body').css("display", "block").parent().children('.accordion-heading').addClass('collapsed');
+          //section.find('.accordion-body:hidden').parent().children('.accordion-heading').removeClass('collapsed');
+          //section.find('.accordion-body:visible').closets().children('.accordion-heading').addClass('collapsed');
+          //section.find('.accordion-body').css("display", "block").siblings('.accordion-heading').removeClass('collapsed');
         });
       })
 
