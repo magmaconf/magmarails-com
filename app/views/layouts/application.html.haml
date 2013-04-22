@@ -67,21 +67,30 @@
         });
         $('.accordion-heading').click(function() {
           var section = $(this).parent();
-          $('.accordion-body:visible').hide(500);
-          section.find('.accordion-body').show();
-          //section.find('.accordion-body:visible').hidde();
+          function nothing_show() {
+            section.find('.accordion-body').slideToggle();
+            section.find('.accordion-heading').toggleClass('collapsed');
+          }
 
+          function show_one_speaker() {
+            $('.accordion-body:visible').slideToggle();
+            $('.accordion-heading').removeClass('collapsed');
 
-          //section.find('.accordion-body').slideToggle().siblings('.accordion-body:visible').slideUp();
-          //section.find('.accordion-heading').addClass('collapsed').siblings('.accordion-heading').hasClass('collapsed').removeClass('collapsed');
-          //section.find('.accordion-heading').addClass('collapsed').child(".accordion-body:visible").siblings(".accordion-heading").removeClass("collapsed");
-          
-          $('.accordion-body:visible').siblings('.accordion-heading').removeClass('collapsed');
-          //section.find('.accordion-heading').addClass('collapsed');
-          section.find('.accordion-body').css("display", "block").parent().children('.accordion-heading').addClass('collapsed');
-          //section.find('.accordion-body:hidden').parent().children('.accordion-heading').removeClass('collapsed');
-          //section.find('.accordion-body:visible').closets().children('.accordion-heading').addClass('collapsed');
-          //section.find('.accordion-body').css("display", "block").siblings('.accordion-heading').removeClass('collapsed');
+            return nothing_show();
+          }
+
+          function show_speaker_click_again() {
+            section.find('.accordion-body').slideToggle();
+            section.find('.accordion-heading').toggleClass('collapsed');
+          }
+
+          if(section.find('.accordion-heading').hasClass('collapsed')) {
+            show_speaker_click_again();
+          } else if($('.accordion-body:visible').siblings('.accordion-heading').hasClass('collapsed')) {
+            show_one_speaker();
+          } else {
+            nothing_show();
+          }
         });
       })
 
