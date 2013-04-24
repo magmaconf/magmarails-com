@@ -1,4 +1,33 @@
 $(document).ready ->
+
+  # To collapse the speakers area (mobile version)
+  $('.accordion-heading').click ->
+    section = $(this).parent()
+    nothing_show = () ->
+      section.find('.accordion-body').slideToggle()
+      section.find('.accordion-heading').toggleClass('collapsed')
+
+    show_one_speaker = () ->
+      $('.accordion-body:visible').slideToggle()
+      $('.accordion-heading').removeClass('collapsed')
+      nothing_show()
+
+    show_speaker_click_again = () ->
+      section.find('.accordion-body').slideToggle()
+      section.find('.accordion-heading').toggleClass('collapsed')
+
+    if section.find('.accordion-heading').hasClass('collapsed')
+      show_speaker_click_again()
+    else if $('.accordion-body:visible').siblings('.accordion-heading').hasClass('collapsed')
+      show_one_speaker()
+    else
+      nothing_show()
+
+  # Hide the menu when click an option
+  $('.columns ul li a').click ->
+    $('.top-bar').removeClass('expanded')
+
+  # Change the height necesary to each line
   $('.row-schedule:contains("Gregg Pollack")').css("height", "80px")
   $('.row-schedule:contains("Santiago Pastorino")').css("height", "80px")
   $('.row-schedule:contains("Bryan Liles")').css("height", "80px")
@@ -11,6 +40,8 @@ $(document).ready ->
   $('.row-schedule:contains("lightning talks")').css("height", "40px")
   $('.row-schedule:contains("last words of the day")').css("height", "55px")
   $('.row-schedule:contains("goodbyes!")').css("height", "55px")
+  
+  # Make height size to 100% (mobile verion - Portrait)
   setMenuHeight()
   put_img()
   window.addEventListener "orientationchange", (->    
