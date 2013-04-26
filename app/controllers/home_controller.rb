@@ -86,6 +86,11 @@ class HomeController < ApplicationController
         name: "Konstantin Haase",
         twitter: "konstantinhaase",
         bio: "A german working at TravisCI, who works in so many OSS projects, like: Sinatra, Puma, Rubinius."
+      ],
+      [ id: "18",
+        name: "Sonya Green",
+        twitter: "sundaykofax",
+        bio: "Sonya has been dubbed the Chief Empathy Officer of GitHub. She works with the supportocats to answer the ever-increasing volume of support requests from developers."
       ]
 
     ]
@@ -256,10 +261,10 @@ class HomeController < ApplicationController
        name_presentation: "",
        img: "new/schedule/spacer.png"
       ],
-      [name: "sponsor conference",
+      [name: "Sonya Green",
        img_key: "new/schedule/spacer.png",
-       name_presentation: "",
-       img: "new/schedule/spacer.png"
+       name_presentation: "Supporting continuous deployment with aplomb",
+       img: "new/schedule/icon_english.svg"
       ],
       [name: "Johnny Winn",
        img_key: "new/schedule/spacer.png",
