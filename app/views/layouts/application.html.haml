@@ -13,7 +13,7 @@
     %meta{:content => "Crowd Interactive - http://crowdint.com", :name => "author"}
     %meta{:content => "Get ready for Magma Conf 2013", :property => "og:title"}
     %meta{:content => "http://www.magmaconf.com/assets/facebook.jpeg", :property => "og:image"}
-    %meta{:content => "Magma Conf is a conferences event where people share their knowlede in Ruby / Ruby on Rails, Web development, UX and more. Get ready for Magma Conf 2013", :property => "og:description"}
+    %meta{:content => "Magma Conf is a conferences event where people share their knowlede in Ruby / Ruby on Rails, Web development, UX and more. Get ready for Magma Conf 2013. Manzanillo Colima, June 5, 6 and 7 2013", :property => "og:description"}
     %meta{:content => "http://www.magmaconf.com", :property => "og:url"}
     / icons
     = favicon_link_tag 'favicon.ico'
@@ -48,9 +48,6 @@
         },function(){
           $(this).removeClass('flip');
         });
-        $('.columns ul li a').click(function() {
-          $('.top-bar').removeClass('expanded');
-        });
         $('.center_logo').click(function() {
           $('.top-bar').removeClass('expanded');
           event.preventDefault();
@@ -64,24 +61,6 @@
           $.smoothScroll({
             scrollTarget: link.hash
           });
-        });
-        $('.accordion-heading').click(function() {
-          var section = $(this).parent();
-          $('.accordion-body:visible').hide(500);
-          section.find('.accordion-body').show();
-          //section.find('.accordion-body:visible').hidde();
-
-
-          //section.find('.accordion-body').slideToggle().siblings('.accordion-body:visible').slideUp();
-          //section.find('.accordion-heading').addClass('collapsed').siblings('.accordion-heading').hasClass('collapsed').removeClass('collapsed');
-          //section.find('.accordion-heading').addClass('collapsed').child(".accordion-body:visible").siblings(".accordion-heading").removeClass("collapsed");
-          
-          $('.accordion-body:visible').siblings('.accordion-heading').removeClass('collapsed');
-          //section.find('.accordion-heading').addClass('collapsed');
-          section.find('.accordion-body').css("display", "block").parent().children('.accordion-heading').addClass('collapsed');
-          //section.find('.accordion-body:hidden').parent().children('.accordion-heading').removeClass('collapsed');
-          //section.find('.accordion-body:visible').closets().children('.accordion-heading').addClass('collapsed');
-          //section.find('.accordion-body').css("display", "block").siblings('.accordion-heading').removeClass('collapsed');
         });
       })
 
