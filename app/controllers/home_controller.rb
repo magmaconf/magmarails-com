@@ -86,6 +86,11 @@ class HomeController < ApplicationController
         name: "Konstantin Haase",
         twitter: "konstantinhaase",
         bio: "A german working at TravisCI, who works in so many OSS projects, like: Sinatra, Puma, Rubinius."
+      ],
+      [ id: "18",
+        name: "Sonya Green",
+        twitter: "sundaykofax",
+        bio: "Sonya has been dubbed the Chief Empathy Officer of GitHub. She works with the supportocats to answer the ever-increasing volume of support requests from developers. She nerds out on books like \"How to Win Friends and Influence People\", which is not as creepy of a book as it sounds. Sonya's previous jobs include being a forum moderator, firefighter, bike mechanic, and an editor. Guess which one required the most fires be put out."
       ]
 
     ]
