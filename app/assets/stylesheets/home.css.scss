@@ -216,6 +216,7 @@ section#speakers {
         position: relative;
         -webkit-perspective: 600px;
         -moz-perspective: 600px;
+        -o-perspective: 600px;
         p.name {
           font-family: 'Oswald';
           font-size: 13px;
@@ -234,6 +235,7 @@ section#speakers {
           background: #333;
           -webkit-transform: rotateY(180deg);
           -moz-transform: rotateY(180deg);
+          -o-transform: rotateY(180deg);
         }
         &.flip .back {
           opacity: 1;
@@ -241,6 +243,7 @@ section#speakers {
           background: white;
           -webkit-transform: rotateX(0deg) rotateY(0deg);
           -moz-transform: rotateX(0deg) rotateY(0deg);
+          -o-transform: rotateX(0deg) rotateY(0deg);
         }
         .front {
           float: none;
@@ -252,10 +255,13 @@ section#speakers {
           // height: 100%;
           -webkit-transform: rotateX(0deg) rotateY(0deg);
           -webkit-transform-style: preserve-3d;
-          -webkit-backface-visibility: hidden;
           -moz-transform: rotateX(0deg) rotateY(0deg);
           -moz-transform-style: preserve-3d;
+          -o-transform: rotateX(0deg) rotateY(0deg);
+          -o-transform-style: preserve-3d;
+          -webkit-backface-visibility: hidden;
           -moz-backface-visibility: hidden;
+          -o-backface-visibility: hidden;
           -o-transition: all .4s ease-in-out;
           -ms-transition: all .4s ease-in-out;
           -moz-transition: all .4s ease-in-out;
@@ -275,13 +281,16 @@ section#speakers {
           top: 0;
           left: 0;
           width: 100%;
-          height: 200px;
+          height: 230px;
           -webkit-transform: rotateY(-180deg);
           -webkit-transform-style: preserve-3d;
-          -webkit-backface-visibility: hidden;
           -moz-transform: rotateY(-180deg);
           -moz-transform-style: preserve-3d;
+          -o-transform: rotateY(-180deg);
+          -o-transform-style: preserve-3d;
+          -webkit-backface-visibility: hidden;
           -moz-backface-visibility: hidden;
+          -o-backface-visibility: hidden;
           -o-transition: all .4s ease-in-out;
           -ms-transition: all .4s ease-in-out;
           -moz-transition: all .4s ease-in-out;

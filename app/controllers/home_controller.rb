@@ -261,10 +261,10 @@ class HomeController < ApplicationController
        name_presentation: "",
        img: "new/schedule/spacer.png"
       ],
-      [name: "sponsor conference",
+      [name: "Sonya Green",
        img_key: "new/schedule/spacer.png",
-       name_presentation: "",
-       img: "new/schedule/spacer.png"
+       name_presentation: "Supporting continuous deployment with aplomb",
+       img: "new/schedule/icon_english.svg"
       ],
       [name: "Johnny Winn",
        img_key: "new/schedule/spacer.png",
