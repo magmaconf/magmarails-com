@@ -266,7 +266,7 @@ section#speakers {
           -ms-transition: all .4s ease-in-out;
           -moz-transition: all .4s ease-in-out;
           -webkit-transition: all .4s ease-in-out;
-          transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out, opacity 0;
           img {
             margin: 0 auto;
             margin-bottom: 5px;
@@ -295,7 +295,7 @@ section#speakers {
           -ms-transition: all .4s ease-in-out;
           -moz-transition: all .4s ease-in-out;
           -webkit-transition: all .4s ease-in-out;
-          transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out, opacity 0;
           h4 {
             text-align: center;
             color: black;
