@@ -206,13 +206,11 @@ section#speakers {
       @extend .black_h2;
     }
     #speakers-list {
-      @include encapsule;
       .globes {
         width: 25%;
         margin: 0 auto 45px auto;
         padding: 0 2.06185567%;
         float: left;
-        @include encapsule;
         position: relative;
         -webkit-perspective: 600px;
         -moz-perspective: 600px;
@@ -265,8 +263,8 @@ section#speakers {
           -o-transition: all .4s ease-in-out;
           -ms-transition: all .4s ease-in-out;
           -moz-transition: all .4s ease-in-out;
-          -webkit-transition: all .4s ease-in-out;
-          transition: all .4s ease-in-out, opacity 0;
+          -webkit-transition: all .4s ease-in-out, opacity 0;
+          transition: all .4s ease-in-out;
           img {
             margin: 0 auto;
             margin-bottom: 5px;
@@ -294,8 +292,8 @@ section#speakers {
           -o-transition: all .4s ease-in-out;
           -ms-transition: all .4s ease-in-out;
           -moz-transition: all .4s ease-in-out;
-          -webkit-transition: all .4s ease-in-out;
-          transition: all .4s ease-in-out, opacity 0;
+          -webkit-transition: all .4s ease-in-out, opacity 0;
+          transition: all .4s ease-in-out;
           h4 {
             text-align: center;
             color: black;
