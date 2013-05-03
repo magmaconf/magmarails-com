@@ -263,7 +263,7 @@ section#speakers {
           -o-transition: all .4s ease-in-out;
           -ms-transition: all .4s ease-in-out;
           -moz-transition: all .4s ease-in-out;
-          -webkit-transition: all .4s ease-in-out, opacity 0;
+          -webkit-transition: all .4s ease-in-out;
           transition: all .4s ease-in-out;
           img {
             margin: 0 auto;
@@ -292,7 +292,7 @@ section#speakers {
           -o-transition: all .4s ease-in-out;
           -ms-transition: all .4s ease-in-out;
           -moz-transition: all .4s ease-in-out;
-          -webkit-transition: all .4s ease-in-out, opacity 0;
+          -webkit-transition: all .4s ease-in-out;
           transition: all .4s ease-in-out;
           h4 {
             text-align: center;
@@ -623,6 +623,12 @@ section#sponsorship {
           width: 33.33333%;
           &:first-child, &:last-child {
             margin-top: 100px !important;
+          }
+          &:nth-child(2) {
+            height: 346px;
+            img {
+              height: 346px;
+            }
           }
         }
       }
