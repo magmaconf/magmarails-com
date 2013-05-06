@@ -614,21 +614,27 @@ section#sponsorship {
   .row {
     .column.large-12.large-centered {
       @include encapsule;
+      .spons {
+        height: 346px;
+        margin-top: 40px;
+        img {
+          height: 346px;
+        }
+      }
       .gold {
         @include encapsule;
-        margin-top: 40px;
+        margin-top: -346px;
         a {
           float: left;
           display: block;
-          width: 33.33333%;
-          &:first-child, &:last-child {
-            margin-top: 100px !important;
-          }
-          &:nth-child(2) {
-            height: 346px;
+          width: 50%;
+          &:nth-child(even) {
             img {
-              height: 346px;
+              margin-left: 40%;
             }
+          }
+          img {
+            margin-left: 10%;
           }
         }
       }
