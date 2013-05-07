@@ -335,27 +335,15 @@ class HomeController < ApplicationController
       ]
     ]
 
-    @sponsors_mobile = [
-      [ link: "http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf",
-        image: "mobile/mobile-sponsorship-01.svg"
-      ],
-      [ link: "http://www.crowdint.com/",
-        image: "new/sponsors/crowd-gold-01.svg"
-      ],
-      [ link: "http://github.com/",
-        image: "new/sponsors/github-gold-01.svg"
-      ]
-    ]
-
     @sponsors_silver = [
       [ link: "http://heroku.com/",
         image: "new/sponsors/heroku-silver-01.svg"
       ],
-      [ link: "http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf",
-        image: "new/sponsors/your-logo-here-silver-01.svg"
+      [ link: "https://www.engineyard.com/",
+        image: "new/sponsors/silver_engine.svg"
       ],
       [ link: "http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf",
-        image: "new/sponsors/or-here-silver.svg"
+        image: "new/sponsors/your-logo-here-silver-01.svg"
       ],
       [ link: "http://www.wanelo.com",
         image: "new/sponsors/wanelo-silver.svg"
