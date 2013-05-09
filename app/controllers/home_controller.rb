@@ -342,11 +342,23 @@ class HomeController < ApplicationController
       [ link: "https://www.engineyard.com/",
         image: "new/sponsors/silver_engine.svg"
       ],
-      [ link: "http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf",
-        image: "new/sponsors/your-logo-here-silver-01.svg"
+      [ link: "http://www.modcloth.com/",
+        image: "new/sponsors/modcloth-silver.svg"
       ],
       [ link: "http://www.wanelo.com",
         image: "new/sponsors/wanelo-silver.svg"
+      ],
+      [ link: "http://www.tangosource.com/",
+        image: "new/sponsors/tangosource-silver.svg"
+      ],
+      [ link: "http://envylabs.com/",
+        image: "new/sponsors/envylabs-silver.svg"
+      ],
+      [ link: "http://hashrocket.com/",
+        image: "new/sponsors/hashrocket-silver.svg"
+      ],
+      [ link: "http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf",
+        image: "new/sponsors/your-logo-here-silver-01.svg"
       ]
     ]
   end
