@@ -633,6 +633,10 @@ section#sponsorship {
               margin-left: 40%;
             }
           }
+          &:nth-child(5), &:nth-child(6), &:nth-child(7) {
+            width: 33.333333333%;
+            img { margin: 0 auto; }
+          }
           img {
             margin-left: 10%;
           }
@@ -645,6 +649,15 @@ section#sponsorship {
           float: left;
           display: block;
           width: 25%;
+          &:nth-child(9), &:nth-child(10) {
+            width: 50%;
+          }
+          &:nth-child(9) {
+            img { margin-left: 280px; }
+          }
+          &:nth-child(10) {
+            img { margin-right: 280px; }
+          }
         }
       }
       .spon_mobi {

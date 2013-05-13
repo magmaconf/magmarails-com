@@ -332,6 +332,15 @@ class HomeController < ApplicationController
       ],
       [ link: "http://rubycentral.org/",
         image: "new/sponsors/gold-rubycentral.svg"
+      ],
+      [ link: "http://www.modcloth.com/",
+        image: "new/sponsors/gold-Modcloth.svg"
+      ],
+      [ link: "https://www.billfloat.com/",
+        image: "new/sponsors/gold-Billfloat.svg"
+      ],
+      [ link: "http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf",
+        image: "new/sponsors/yourlogohere-gold-01.svg"
       ]
     ]
 
@@ -342,8 +351,8 @@ class HomeController < ApplicationController
       [ link: "https://www.engineyard.com/",
         image: "new/sponsors/silver_engine.svg"
       ],
-      [ link: "http://www.modcloth.com/",
-        image: "new/sponsors/modcloth-silver.svg"
+      [ link: "http://sg.com.mx/",
+        image: "new/sponsors/SG-silver.svg"
       ],
       [ link: "http://www.wanelo.com",
         image: "new/sponsors/wanelo-silver.svg"
@@ -356,6 +365,12 @@ class HomeController < ApplicationController
       ],
       [ link: "http://hashrocket.com/",
         image: "new/sponsors/hashrocket-silver.svg"
+      ],
+      [ link: "hhttp://ruby5.envylabs.com/",
+        image: "new/sponsors/Ruby5-silver.svg"
+      ],
+      [ link: "http://hybridgroup.com/",
+        image: "new/sponsors/hybridgroup-silver.svg"
       ],
       [ link: "http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf",
         image: "new/sponsors/your-logo-here-silver-01.svg"
