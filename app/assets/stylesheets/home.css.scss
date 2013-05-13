@@ -206,13 +206,11 @@ section#speakers {
       @extend .black_h2;
     }
     #speakers-list {
-      @include encapsule;
       .globes {
         width: 25%;
         margin: 0 auto 45px auto;
         padding: 0 2.06185567%;
         float: left;
-        @include encapsule;
         position: relative;
         -webkit-perspective: 600px;
         -moz-perspective: 600px;
@@ -612,19 +610,31 @@ section#schedule {
 
 section#sponsorship {
   background-image: url('/assets/bkg.jpg');
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   .row {
     .column.large-12.large-centered {
       @include encapsule;
+      .spons {
+        height: 346px;
+        margin-top: 90px;
+        img {
+          height: 346px;
+        }
+      }
       .gold {
         @include encapsule;
-        margin-top: 40px;
+        margin-top: -396px;
         a {
           float: left;
           display: block;
-          width: 33.33333%;
-          &:first-child, &:last-child {
-            margin-top: 100px !important;
+          width: 50%;
+          &:nth-child(even) {
+            img {
+              margin-left: 40%;
+            }
+          }
+          img {
+            margin-left: 10%;
           }
         }
       }
@@ -643,13 +653,6 @@ section#sponsorship {
         a {
           display: block;
           float: left;
-          &:first-child {
-            width: 100%;
-          }
-          &:nth-child(2), &:last-child {
-            width: 50%;
-            margin-top: 30px;
-          }
         }
       }
       a {
