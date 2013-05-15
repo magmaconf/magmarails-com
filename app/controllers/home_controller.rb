@@ -185,7 +185,7 @@ class HomeController < ApplicationController
       ],
       [name: "Edwin Cruz",
        img_key: "new/schedule/spacer.png",
-       name_presentation: "Applicaciones web 2.0, API's con RoR y frontend con EmberJS",
+       name_presentation: "Aplicaciones web 2.0, API's con RoR y frontend con EmberJS",
        img: "new/schedule/spacer.png"
       ],
       [name: "break",
