@@ -339,8 +339,8 @@ class HomeController < ApplicationController
       [ link: "https://www.billfloat.com/",
         image: "new/sponsors/gold-Billfloat.svg"
       ],
-      [ link: "http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf",
-        image: "new/sponsors/yourlogohere-gold-01.svg"
+      [ link: "http://www.thoughtbot.com/",
+        image: "new/sponsors/gold-thoughtbot.svg"
       ]
     ]
 
