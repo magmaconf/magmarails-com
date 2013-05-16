@@ -53,9 +53,7 @@
         - @speakers.each do |speaker|
           .globes
             .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                = speaker.first[:name]
+              = image_tag "#{speaker.first[:image]}"
             .back
               .info
                 %h4= link_to "@#{speaker.first[:twitter]}", "http://twitter.com/#{speaker.first[:twitter]}", target: "_blank"
@@ -228,6 +226,10 @@
             = image_tag "#{sponsor.first[:image]}"
       .spon_mobi
         - @sponsors_gold.each do |sponsor|
+          = link_to "#{sponsor.first[:link]}", target: "_blank" do
+            = image_tag "#{sponsor.first[:image]}"
+      .midium
+        - @sponsors_midium.each do |sponsor|
           = link_to "#{sponsor.first[:link]}", target: "_blank" do
             = image_tag "#{sponsor.first[:image]}"
       .silver

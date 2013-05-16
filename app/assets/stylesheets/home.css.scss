@@ -630,6 +630,15 @@ section#sponsorship {
           }
         }
       }
+      .midium {
+        overflow: hidden;
+        margin-top: 40px;
+        a {
+          float: left;
+          display: block;
+          width: 33.33333333%;
+        }
+      }
       .silver {
         @include encapsule;
         margin-top: 40px;
@@ -637,8 +646,8 @@ section#sponsorship {
           float: left;
           display: block;
           width: 25%;
-          &:nth-child(9) {
-            margin-left: 25%;
+          &:nth-child(5) {
+            margin-left: 12.5%;
           }
         }
       }
