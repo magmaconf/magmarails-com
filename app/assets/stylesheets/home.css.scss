@@ -1,3 +1,8 @@
+// ------------ Variables ---------------- 
+
+$bg_pricing: url('/assets/new/pricing/separator_02.png');
+
+
 // ------------ Mixins ---------------- 
 @mixin encapsule {
   border: thick 1px solid transparent;
@@ -355,7 +360,7 @@ section#speakers {
               margin: 7px 15px 0 0;
             }
           }
-          .accordion-body { /*para esconder o mostrar lo colapzado */
+          .accordion-body { /*  to show or hidde collapsed */
             position: relative;
             display: none;
             background: #cadfd5;
@@ -388,18 +393,6 @@ section#speakers {
               }
             }
           }
-          /*.collapse {
-            position: relative;
-            height: 0;
-            overflow: hidden;
-            -webkit-transition: height 0.35s ease;
-            -moz-transition: height 0.35s ease;
-            -o-transition: height 0.35s ease;
-            transition: height 0.35s ease;
-          }
-          .collapse.in {
-            height: auto;
-          }*/
         }
         &:nth-child(17) {
           margin-left: 25%;
@@ -462,7 +455,7 @@ section#pricing {
     margin-bottom: 0;
   }
   .back_g {
-    background-image: url('/assets/new/pricing/separator_02.png');
+    background-image: $bg_pricing;
     padding: 0;
     .row {
       ul {
@@ -537,6 +530,50 @@ section#pricing {
             }
             a {
               color: #d60a00;
+            }
+          }
+        }
+      }
+    }
+  }
+  .promo {
+    background-image: $bg_pricing;
+    border-top: 10px solid #c7e1d7;
+    .row {
+      .column {
+        overflow: hidden;
+        padding: 0;
+        .prom {
+          float: left;
+          img {
+            padding: 2em 2em 2em 0;
+          }
+          a {
+            display: block;
+            img {
+              padding: 4em 2em 1em 0;
+            }
+            &:nth-child(1) {
+              img {
+                &:hover {
+                  opacity: 0;
+                }
+              }
+              &:hover {
+                background: url('/assets/new/promo/angelhack_on.svg');
+                background-repeat: no-repeat;
+                background-position: 0 4em;
+              }
+            }
+          }
+          a.sg_yellow {
+            img {
+              padding: 3em 0 0;
+            }
+            &:hover {
+              background: url('/assets/new/promo/SG-ON.svg');
+              background-repeat: no-repeat;
+              background-position: 0 3em;
             }
           }
         }
@@ -642,6 +679,15 @@ section#sponsorship {
           }
         }
       }
+      .midium {
+        overflow: hidden;
+        margin-top: 40px;
+        a {
+          float: left;
+          display: block;
+          width: 33.33333333%;
+        }
+      }
       .silver {
         @include encapsule;
         margin-top: 40px;
@@ -649,14 +695,8 @@ section#sponsorship {
           float: left;
           display: block;
           width: 25%;
-          &:nth-child(9), &:nth-child(10) {
-            width: 50%;
-          }
-          &:nth-child(9) {
-            img { margin-left: 280px; }
-          }
-          &:nth-child(10) {
-            img { margin-right: 280px; }
+          &:nth-child(5) {
+            margin-left: 12.5%;
           }
         }
       }
@@ -680,7 +720,12 @@ section#sponsorship {
     padding: 0.625em 0;
     border-top: 1px solid #8bab9d;
     border-bottom: 1px solid #8bab9d;
-    a, img { float: left; }
+    a, img {
+      float: left;
+    }
+    a:nth-child(3) {
+      padding-left: 1em;
+    }
   }
 }
 .fixed {

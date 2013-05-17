@@ -53,9 +53,7 @@
         - @speakers.each do |speaker|
           .globes
             .front
-              = image_tag 'new/speakers/mask.png'
-              %p.name
-                = speaker.first[:name]
+              = image_tag "#{speaker.first[:image]}"
             .back
               .info
                 %h4= link_to "@#{speaker.first[:twitter]}", "http://twitter.com/#{speaker.first[:twitter]}", target: "_blank"
@@ -68,7 +66,7 @@
                   %i.icon_chevron_down
               .accordion-body
                 = link_to "@#{speaker.first[:twitter]}", "http://twitter.com/#{speaker.first[:twitter]}", target: "_blank"
-                = image_tag 'new/speakers/mask.png'
+                = image_tag "#{speaker.first[:image]}"
                 %p=raw speaker.first[:bio]
 
 %section#location
@@ -173,6 +171,19 @@
             please contact us at
             = mail_to 'info@magmaconf.com', 'info@magmaconf.com', class: 'mail'
         .lin.las
+  .promo
+    .row
+      .column.large-12.large-centered
+        .prom
+          = image_tag 'new/promo/promo.svg'
+        .prom
+          = image_tag 'new/promo/reylero_promo.svg'
+        .prom
+          = link_to 'http://magmazine.magmaconf.com/es/promo_angelhack', target: "_blank" do
+            = image_tag 'new/promo/angelhack.svg'
+        .prom
+          = link_to 'http://magmazine.magmaconf.com/es/promo_sg', class: 'sg_yellow', target: "_blank" do
+            = image_tag 'new/promo/SG.svg'
 
 %section#schedule
   .row
@@ -230,6 +241,10 @@
         - @sponsors_gold.each do |sponsor|
           = link_to "#{sponsor.first[:link]}", target: "_blank" do
             = image_tag "#{sponsor.first[:image]}"
+      .midium
+        - @sponsors_midium.each do |sponsor|
+          = link_to "#{sponsor.first[:link]}", target: "_blank" do
+            = image_tag "#{sponsor.first[:image]}"
       .silver
         - @sponsors_silver.each do |sponsor|
           = link_to "#{sponsor.first[:link]}", target: "_blank" do
@@ -238,3 +253,5 @@
     = image_tag "new/sponsors/los-media-sponsors.svg"
     = link_to "http://gadgetsgirls.com/", target: "_blank" do
       = image_tag "new/sponsors/gadget-girls.svg"
+    = link_to "http://angelhack.com/", target: "_blank" do
+      = image_tag "new/sponsors/angelhack.svg"
