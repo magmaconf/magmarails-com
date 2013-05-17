@@ -129,6 +129,28 @@
       }
     }
   }
+  section#pricing {
+    .promo {
+      .row {
+        .column.large-12.large-centered {
+          .prom {
+            width: 100%;
+            img {
+              margin: 0 auto;
+            }
+            &:nth-child(2) {
+              display: none;
+            }
+            a {
+              img {
+                padding: 0 0 2em 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   section#sponsorship {
     .row {
       .column.large-12.large-centered {
@@ -252,6 +274,28 @@
     .row {
       .large-4 {
         float: left;
+      }
+    }
+  }
+  section#pricing {
+    .promo {
+      .row {
+        .column.large-12.large-centered {
+          .prom {
+            width: 100%;
+            img {
+              margin: 0 auto;
+            }
+            &:nth-child(2) {
+              display: none;
+            }
+            a {
+              img {
+                padding: 0 0 2em 0;
+              }
+            }
+          }
+        }
       }
     }
   }

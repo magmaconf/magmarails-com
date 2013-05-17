@@ -12,13 +12,13 @@ class HomeController < ApplicationController
         name: "Johnny Winn",
         twitter: "johnny_rugger",
         bio: "Hashrocket Rocketeer, Ruby developer with a passion for software craftmanship.",
-        image: "new/speakers/johnny.svg"
+        image: "new/speakers/johnn.svg"
       ],
       [ id: "3",
         name: "konstantin gredeskoul",
         twitter: "kig",
         bio: "Narrow specialist in wide generality, who works at wanelo.com and has worked on too many Ruby Applications.",
-        image: "new/speakers/Konstantin-gredeskoul.svg"
+        image: "new/speakers/gredeskoul.svg"
       ],
       [ id: "4",
         name: "Ron Evans",
@@ -102,7 +102,7 @@ class HomeController < ApplicationController
         name: "Konstantin Haase",
         twitter: "konstantinhaase",
         bio: "A german working at TravisCI, who works in so many OSS projects, like: Sinatra, Puma, Rubinius.",
-        image: "new/speakers/konstantin-haase.svg"
+        image: "new/speakers/haase.svg"
       ],
       [ id: "18",
         name: "Sonya Green",
