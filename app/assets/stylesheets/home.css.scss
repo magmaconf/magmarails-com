@@ -1,6 +1,7 @@
 // ------------ Variables ---------------- 
 
 $bg_pricing: url('/assets/new/pricing/separator_02.png');
+$bg_promo: url('/assets/new/pricing/separator_03.png');
 
 
 // ------------ Mixins ---------------- 
@@ -537,8 +538,9 @@ section#pricing {
     }
   }
   .promo {
-    background-image: $bg_pricing;
+    background-image: $bg_promo;
     border-top: 10px solid #c7e1d7;
+    border-bottom: 10px solid #e7b25f;
     .row {
       .column {
         overflow: hidden;
