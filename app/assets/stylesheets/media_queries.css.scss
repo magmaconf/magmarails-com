@@ -144,6 +144,12 @@
             a {
               img {
                 padding: 0 0 2em 0;
+                &:hover {
+                  opacity: 1;
+                }
+              }
+              &:hover {
+                background: none;
               }
             }
           }
@@ -292,6 +298,12 @@
             a {
               img {
                 padding: 0 0 2em 0;
+                &:hover {
+                  opacity: 1;
+                }
+              }
+              &:hover {
+                background: none;
               }
             }
           }

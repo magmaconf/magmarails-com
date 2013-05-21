@@ -553,7 +553,7 @@ section#pricing {
           a {
             display: block;
             img {
-              padding: 4em 2em 1em 0;
+              padding: 4em 4em 1em 0;
             }
             &:nth-child(1) {
               img {
@@ -570,12 +570,12 @@ section#pricing {
           }
           a.sg_yellow {
             img {
-              padding: 3em 0 0;
+              padding: 4em 0 0;
             }
             &:hover {
               background: url('/assets/new/promo/SG-ON.svg');
               background-repeat: no-repeat;
-              background-position: 0 3em;
+              background-position: 0 4em;
             }
           }
         }
