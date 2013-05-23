@@ -387,7 +387,7 @@ class HomeController < ApplicationController
       [ link: "http://hashrocket.com/",
         image: "new/sponsors/hashrocket-silver.svg"
       ],
-      [ link: "hhttp://ruby5.envylabs.com/",
+      [ link: "http://ruby5.envylabs.com/",
         image: "new/sponsors/Ruby5-silver.svg"
       ],
       [ link: "http://hybridgroup.com/",
