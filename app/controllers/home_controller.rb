@@ -387,15 +387,18 @@ class HomeController < ApplicationController
       [ link: "http://hashrocket.com/",
         image: "new/sponsors/hashrocket-silver.svg"
       ],
-      [ link: "hhttp://ruby5.envylabs.com/",
+      [ link: "http://ruby5.envylabs.com/",
         image: "new/sponsors/Ruby5-silver.svg"
       ],
       [ link: "http://hybridgroup.com/",
         image: "new/sponsors/hybridgroup-silver.svg"
       ],
-      [ link: "http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf",
-        image: "new/sponsors/your-logo-here-silver-01.svg"
+      [ link: "http://www.softwareallies.com/",
+        image: "new/sponsors/softwareallies.svg"
       ]
+      #[ link: "http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf",
+      #  image: "new/sponsors/your-logo-here-silver-01.svg"
+      #]
     ]
   end
 end
