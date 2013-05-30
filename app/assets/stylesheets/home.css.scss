@@ -697,9 +697,6 @@ section#sponsorship {
           float: left;
           display: block;
           width: 25%;
-          &:nth-child(5) {
-            margin-left: 12.5%;
-          }
         }
       }
       .spon_mobi {
@@ -725,7 +722,7 @@ section#sponsorship {
     a, img {
       float: left;
     }
-    a:nth-child(3) {
+    a:nth-child(3), a:nth-child(4) {
       padding-left: 1em;
     }
   }
