@@ -395,6 +395,9 @@ class HomeController < ApplicationController
       ],
       [ link: "http://www.softwareallies.com/",
         image: "new/sponsors/softwareallies.svg"
+      ],
+      [ link: "http://www.ucol.mx",
+        image: "new/sponsors/udec.svg"
       ]
       #[ link: "http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf",
       #  image: "new/sponsors/your-logo-here-silver-01.svg"
