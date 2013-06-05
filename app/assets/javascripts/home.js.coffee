@@ -34,7 +34,7 @@ $(document).ready ->
   $('.row-schedule:contains("break")').css("height", "40px")
   $('.row-schedule:contains("announcements")').css("height", "40px")
   $('.row-schedule:contains("lunch")').css("height", "40px")
-  $('.row-schedule:contains("Norberto Hernández")').css("height", "115px")
+  $('.row-schedule:contains("Javier Cervantes")').css("height", "115px")
   $('.row-schedule:contains("Herman Moreno")').css("height", "115px")
   $('.row-schedule:contains("Konstantin Gredeskoul")').css("height", "115px")
   $('.row-schedule:contains("lightning talks")').css("height", "40px")
