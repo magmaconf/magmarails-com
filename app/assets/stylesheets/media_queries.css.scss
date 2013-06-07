@@ -74,6 +74,26 @@
   }
   .las { display: none !important; }
   .lin { height: 409px !important; width: 7px !important; }
+  
+  section#home {
+    .row {
+      .column {
+        .img_top {
+          border: 0;
+          box-shadow: 0 0 0 transparent;
+          img {
+            width: 90%;
+            border: 5px solid #fff;
+            box-shadow: 0 0 3px 3px #b6b19f;
+          }
+        }
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+
   section#speakers {
     .row {
       #keynotes {
@@ -157,6 +177,14 @@
       }
     }
   }
+  section#location {
+    .row {
+      .large-9 {
+        width: auto;
+        height: auto;
+      }
+    }
+  }
   section#sponsorship {
     .row {
       .column.large-12.large-centered {
@@ -229,6 +257,7 @@
   .row {
     margin-left: 0px;
   }
+
 
   footer  {
     display: none;

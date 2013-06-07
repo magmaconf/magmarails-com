@@ -122,9 +122,9 @@ class HomeController < ApplicationController
        img: "new/schedule/icon_english.svg"
       ],
       [hour: "11:00",
-       name: "Mario A. Chávez",
+       name: "",
        img_key: "new/schedule/spacer.png",
-       name_presentation: "Ruby Internals",
+       name_presentation: "",
        img: "new/schedule/spacer.png"
       ],
       [hour: "11:40",
@@ -134,16 +134,16 @@ class HomeController < ApplicationController
        img: "new/schedule/spacer.png"
       ],
       [hour: "12:00",
+       name: "Mario A. Chávez",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "Ruby Internals",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "12:40",
        name: "Eric Saxby",
        img_key: "new/schedule/spacer.png",
        name_presentation: "When Rails hits the fan",
        img: "new/schedule/icon_english.svg"
-      ],
-      [hour: "12:40",
-       name: "Javier Cervantes",
-       img_key: "new/schedule/spacer.png",
-       name_presentation: "Creando API's con Hypermedia",
-       img: "new/schedule/spacer.png"
       ],
       [hour: "13:20",
        name: "announcements",
@@ -158,9 +158,9 @@ class HomeController < ApplicationController
        img: "new/schedule/spacer.png"
       ],
       [hour: "15:00",
-       name: "Norberto Hernández",
+       name: "Javier Cervantes",
        img_key: "new/schedule/spacer.png",
-       name_presentation: "UI & UX eficiente en apps móviles",
+       name_presentation: "Creando API's con Hypermedia",
        img: "new/schedule/spacer.png"
       ],
       [hour: "15:40",
@@ -176,16 +176,16 @@ class HomeController < ApplicationController
        img: "new/schedule/spacer.png"
       ],
       [hour: "16:20",
+       name: "Norberto Hernández",
+       img_key: "new/schedule/spacer.png",
+       name_presentation: "UI & UX eficiente en apps móviles",
+       img: "new/schedule/spacer.png"
+      ],
+      [hour: "17:00",
        name: "Manuel E. Vidaurre",
        img_key: "new/schedule/spacer.png",
        name_presentation: "Irracionalidad Predecible",
        img: "new/schedule/spacer.png"
-      ],
-      [hour: "17:00",
-       name: "Blake Mizerany",
-       img_key: "new/schedule/spacer.png",
-       name_presentation: "Go - The why",
-       img: "new/schedule/icon_english.svg"
       ],
       [hour: "17:40",
        name: "last words of the day",
@@ -335,7 +335,7 @@ class HomeController < ApplicationController
     ############ Sponsors #############
     @sponsor = [
       link: "http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf",
-      image: "mobile/mobile-sponsorship-01.svg"
+      image: "mobile/thanksporsponsoring.svg"
     ]
 
     @sponsors_gold = [
