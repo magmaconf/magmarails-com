@@ -335,7 +335,7 @@ class HomeController < ApplicationController
     ############ Sponsors #############
     @sponsor = [
       link: "http://magmaconf.s3.amazonaws.com/sponsorship/prospectus-magmaconf.pdf",
-      image: "mobile/mobile-sponsorship-01.svg"
+      image: "mobile/thanksporsponsoring.svg"
     ]
 
     @sponsors_gold = [
