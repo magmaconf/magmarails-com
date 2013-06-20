@@ -78,113 +78,21 @@
   section#home {
     .row {
       .column {
-        .img_top {
-          border: 0;
-          box-shadow: 0 0 0 transparent;
-          img {
-            width: 90%;
-            border: 5px solid #fff;
-            box-shadow: 0 0 3px 3px #b6b19f;
-          }
+        .staff {
+          width: 40%;
         }
-        img {
-          width: 50%;
+        #slider {
+          ul {
+            li {
+              width: 350px;
+              height: 150px;
+            }
+          }
         }
       }
     }
   }
 
-  section#speakers {
-    .row {
-      #keynotes {
-        @include encapsule;
-        .large-4 {
-          a {
-            img {
-              margin: 0 auto !important;
-            }
-          }
-        }
-      }
-      #speaker-wrap {
-        top: -70px;
-        border-top: 0;
-        padding: 0;
-        #speakers-list {
-          width: 100%;
-          margin: 0 auto;
-          .globes {
-            width: 100%;
-            margin-bottom: 0;
-            padding: 0 !important;
-            display: block;
-            &:hover { display: none; }
-            &.flip .front {
-              z-index: 0;
-              -webkit-transform: rotateY(0deg);
-              -moz-transform: rotateY(0deg);
-            }
-            &.flip .back {
-              z-index: 0;
-              -webkit-transform: rotateX(0deg) rotateY(180deg);
-              -moz-transform: rotateX(0deg) rotateY(180deg);
-            }
-            .front, .back {
-              display: none;
-            }
-            .accordion-group {
-              display: block;
-              border-bottom: 1px solid #cee1d9;
-              padding: 0;
-              float: left;
-            }
-            &:nth-child(17) {
-              margin-left: 0;
-            }
-            &:last-child {
-              margin: 0;
-            }
-          }
-        }
-      }
-    }
-  }
-  section#pricing {
-    .promo {
-      .row {
-        .column.large-12.large-centered {
-          .prom {
-            width: 100%;
-            img {
-              margin: 0 auto;
-            }
-            &:nth-child(2) {
-              display: none;
-            }
-            a {
-              img {
-                padding: 0 0 2em 0;
-                &:hover {
-                  opacity: 1;
-                }
-              }
-              &:hover {
-                background: none;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  section#location {
-    .row {
-      .large-9 {
-        width: auto;
-        height: auto;
-      }
-    }
-  }
   section#sponsorship {
     .row {
       .column.large-12.large-centered {
@@ -250,10 +158,6 @@
     display: block;
   }
 
-  #slider {
-    margin-top: 16px;
-    top: 33px;
-  }
   .row {
     margin-left: 0px;
   }
@@ -297,49 +201,8 @@
       }
     }
   }
-  #venue {
-    .row {
-      .large-2 { display: none !important; }
-      .large-4, .large-3 { width: 50% !important; }
-    }
-  }
   .lin { height: 356px !important; width: 7px !important; }
   .fir, .las { display: none !important; }
-  #schedule {
-    .row {
-      .large-4 {
-        float: left;
-      }
-    }
-  }
-  section#pricing {
-    .promo {
-      .row {
-        .column.large-12.large-centered {
-          .prom {
-            width: 100%;
-            img {
-              margin: 0 auto;
-            }
-            &:nth-child(2) {
-              display: none;
-            }
-            a {
-              img {
-                padding: 0 0 2em 0;
-                &:hover {
-                  opacity: 1;
-                }
-              }
-              &:hover {
-                background: none;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
   section#sponsorship {
     .row {
       .column.large-12.large-centered {

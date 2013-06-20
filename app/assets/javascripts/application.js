@@ -6,7 +6,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require foundation
+//= require jquery.nivo.slider
 //= require jquery.smooth-scroll.min
 //= require modernizr.custom
 //= require underscore-min
