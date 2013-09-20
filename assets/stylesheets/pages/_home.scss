@@ -9,6 +9,10 @@
       padding-left: 26px;
     }
 
+    .magma-logo {
+      margin-top: 15px;
+    }
+
     p {
       color: #fff;
       text-transform: uppercase;
@@ -19,10 +23,8 @@
 
     .social {
       overflow: hidden;
-      border-bottom: 4px solid $social-bkg;
-      padding: 1% 0;
+      padding: 1% 0 20px 0;
       margin: 4% 16.5% 0 16.5%;
-      padding-bottom: 3%;
 
       a {
         width: 50px;
@@ -56,19 +58,18 @@
     }
 
     .arrow {
-      display: none;
-      margin: 2px 16.5% 13% 16.5%;
-      border-top: 1px solid $social-bkg;
-      padding-top: 10%;
+      display: block;
+    }
 
-      &:hover i {
-        background-position: 0 0;
-      }
+    .arrow-top {
+      display: none;
+      margin: 10px 0 20px 0;
     }
   }
 
   .sponsors {
     width: 370px;
+    height: 67px;
     margin: 4% auto 5% auto;
     overflow: hidden;
 
@@ -82,6 +83,23 @@
 
       &:nth-child(2) {
         margin-top: 3%;
+      }
+
+      a {
+        .over {
+          display: none;
+        }
+
+        &:hover {
+          .over {
+            display: block;
+            margin: auto;
+          }
+
+          .im {
+            display: none;
+          }
+        }
       }
     }
   }
