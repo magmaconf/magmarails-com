@@ -16,6 +16,7 @@ class Crowdsite < Sinatra::Base
     sprockets.append_path File.join(root, 'assets', 'javascripts')
     sprockets.append_path File.join(root, 'assets', 'images')
     sprockets.append_path File.join(root, 'assets', 'fonts')
+    sprockets.append_path File.join(root, 'vendor', 'javascripts')
   end
 
   configure :production do
