@@ -165,9 +165,9 @@
     }
 
     p {
-      font-family: 'Block';
-      position: relative;
-      //top: 52px;
+      display: block;
+      word-spacing: 0px;
+      line-height: 25px;
     }
 
     .six-columns {
@@ -233,13 +233,6 @@
         font: 100 1.6em/1.7 'Oswald';
         padding-right: 10px;
         margin-top: 3%;
-      }
-    }
-
-    .we {
-      margin-top: -185px;
-
-      img {
       }
     }
 
