@@ -1,20 +1,20 @@
 en:
   title: 'MagmaConf 2014'
   home:
-    stay: 'stay tuned...'
+    stay: 'stay tuned'
   daily:
-    copy-right: 'Crowd Interactive &copy; 2013. This site is protected by copyright. Under US and international law. All rights reserved'
+    copy-right: 'Crowd Interactive &copy; 2013. This site is protected by copyright under US and international law. All rights reserved'
     five: 'NO. 5'
     page: 'PAGE 1'
     date: 'SEP | 20 | 2013'
     manzanillo: 'Manzanillo'
-    cooking: 'is getting ready for the new MagmaConf:'
+    cooking: 'is getting ready for the next MagmaConf:'
     happen: 'it will happen from'
-    happen-for: 'June 4th to the 6th.'
+    happen-for: 'June 4th to the 6th, 2014.'
     manzanillo-text:
-      one: 'MagmaConf is an annual Web Development Conference hosted in the beautiful coastline city: Manzanillo, Colima.'
-      two: 'MagmaConf gathers designers, developers and entrepreneurs from México and the rest of the world with one objective: to create a solid network of people with similar interests, regardless of their different tech backgrounds.'
-      three: '250 Attendees, 18 Conferences speakers, 3 Keynotes and a series of beach-front houses assemble in one of the best web development conferences in México.'
+      one: 'MagmaConf is an annual Web Development Conference hosted in the beautiful coastal city: Manzanillo, Colima.'
+      two: 'MagmaConf gathers designers, developers and entrepreneurs from Mexico and the rest of the world with one objective: to create a solid network of people with similar interests, regardless of their different tech backgrounds.'
+      three: '250 Attendees, 18 Conferences speakers, 3 Keynotes and a series of beach-front houses assembled in one of the best web development conferences in Mexico.'
       four: 'Call for Papers will be open from November 1 to December 30, 2013. Prepare your proposal and stay tuned!'
     keynotes: 'Keynotes'
     these: 'These two extraordinary ladies'
