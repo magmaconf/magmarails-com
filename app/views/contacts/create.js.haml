@@ -1,6 +1,0 @@
-- if @message[:alert]
-  $('.alert').text("#{escape_javascript @message[:alert]}");
-  $('.alert').show()
-- else
-  $('.notice p').html("<p>#{escape_javascript @message[:notice]}</p>");
-  $('form').remove();
