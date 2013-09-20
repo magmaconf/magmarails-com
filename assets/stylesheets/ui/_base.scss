@@ -1,0 +1,68 @@
+html, body {
+  background: $main-bkg;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: 100 8em/1.1 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-weight: bold;
+  margin-left: -4px;
+}
+
+h2 {
+  font-size: 3.15em;
+}
+
+h3 {
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 3.1em;
+  font-weight: 500;
+  padding-bottom: 5%;
+}
+
+h5 {
+  font-size: 5.1em;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.4em;
+  word-spacing: -20px;
+  line-height: 15px;
+  padding-bottom: 3.5%;
+}
+
+.a {
+  &:hover {
+    font-family: Arial;
+    letter-spacing: 5px;
+    word-spacing: 9px;
+    background: black;
+    color: #fff;
+    font-size: 1em;
+  }
+}
+
+@include font_face('Block', 'BLOKKNeue-Regular');

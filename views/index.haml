@@ -1,0 +1,84 @@
+%section#home.container
+  .row
+    .centered-three.comingsoon
+      %img{src: "#{image_path 'image.svg'}"}
+      %p= t('home.stay')
+      .social
+        %a.facebook{href: 'http://www.facebook.com/magmaconf', target: '_blank'}
+          %i.icon-facebook
+        %a.twitter{href: 'http://twitter.com/magmaconf', target: '_blank'}
+          %i.icon-twitter
+        %a.google{href: 'https://plus.google.com/108479926406306482358/posts', target: '_blank'}
+          %i.icon-google
+      %a.arrow{href: "#"}
+        %i.icon-arrow
+
+    .centered-four.sponsors
+      .spons
+        %a{href: 'http://github.com', target: '_blank'}
+          %img{src: "#{image_path 'logo-github.svg'}"}
+      .spons
+        %a{href: 'http://www.crowdint.com/', target: '_blank'}
+          %img{src: "#{image_path 'logo-crowd.svg'}"}
+      .spons
+        %a{href: 'http://rubycentral.org/', target: '_blank'}
+          %img{src: "#{image_path 'logo-rubycentral.svg'}"}
+
+
+%section#daily.container
+  .separator
+  #news
+    .row
+      .twelve-columns.top
+        %p.copy-right= t('daily.copy-right')
+    .row
+      .two-columns.logo
+        %img{src: "#{image_path 'crowd.svg'}"}
+      .eight-columns.title
+        %img.tit{src: "#{image_path 'title-news.svg'}"}
+        %img.tit-mob{src: "#{image_path 'dayli.svg'}"}
+      .two-columns.mask
+        %img{src: "#{image_path 'mask.svg'}"}
+      .twelve-columns.line
+    .row.stars
+      .two-columns
+        %span= t('daily.five')
+        %span= t('daily.page')
+      .eight-columns
+        %img{src: "#{image_path 'stars.svg'}"}
+      .two-columns.date
+        %span= t('daily.date')
+      .twelve-columns.line
+      .twelve-columns.line-bold
+    .row
+      .six-columns
+        %img.stb{src: "#{image_path 'stbn.jpg'}"}
+        %h1= t('daily.manzanillo')
+        %h3= t('daily.cooking')
+        %h5= t('daily.happen')
+        %h5.last-h5= t('daily.happen-for')
+        %p.hov= t('daily.manzanillo-text.one')
+        %p.hov= t('daily.manzanillo-text.two')
+        %p.hov= t('daily.manzanillo-text.three')
+        %p.hov.last= t('daily.manzanillo-text.four')
+        %img#text{src: "#{image_path 'text.jpg'}", width: "570", height: "270"}
+      .six-columns
+        %h1.keynotes= t('daily.keynotes')
+        %h2= t('daily.these')
+        %h2.accepted= t('daily.accepted')
+      .three-columns
+        %img.des-san{src: "#{image_path 'desi.jpg'}"}
+        %h4= t('daily.desi')
+        %p= t('daily.desi-bio')
+        %img#desi{src: "#{image_path 'desi-bio.jpg'}", width: "270", height: "210"}
+      .three-columns
+        %img.des-san{src: "#{image_path 'sandi.jpg'}"}
+        %h4= t('daily.sandi')
+        %p= t('daily.sandi-bio')
+        %img#sandi{src: "#{image_path 'sandi-bio.jpg'}", width: "270", height: "175"}
+      .six-columns.we
+        %h2.yes-we= t('daily.yes-we')
+        %h1.sponsr= t('daily.for')
+        %p.hov.text-sponsor= t('daily.organize')
+        %span.email= t('daily.email')
+

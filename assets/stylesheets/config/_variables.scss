@@ -1,0 +1,18 @@
+// GRID -------------
+$max-cols: 12;
+
+//Grid Large
+$gl-column: 70px;
+$gl-gutter: 30px;
+
+//grid Medium
+$gm-column: 60px;
+$gm-gutter: 20px;
+
+//Colors -----------
+$bkg: #312926;
+$main-bkg: asset-url('bkg.jpg') no-repeat top center fixed $bkg;
+$social-bkg: #514640;
+$social-hover: #b5a898;
+$dark-brownn: #51463e;
+$fonts: #39322b;
