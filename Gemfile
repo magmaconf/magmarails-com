@@ -1,37 +1,14 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem 'rails', '~> 3.2.9'
+ruby '2.0.0'
 
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
+gem 'sinatra'
+gem 'haml'
+gem 'i18n'
 
-gem 'jquery-rails'
-gem 'haml-rails'
+gem 'sinatra-asset-pipeline', require: 'sinatra/asset_pipeline'
+gem 'sinatra-i18n', require: 'sinatra/i18n'
 
-gem 'mandrill_mailer'
-gem 'gibbon'
-gem 'pry'
+gem 'shotgun'
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
-  gem 'uglifier'
-  gem 'zurb-foundation', '~> 4.0.0'
-end
-
-group :test do
-  # Pretty printed test output
-  gem 'turn', '~> 0.8.3', :require => false
-end
-
-group :development do
-  gem 'sqlite3'
-end
-
-group :production do
-  gem 'thin'
-  gem 'pg'
-end
-gem 'rb-readline'
+gem 'cactu'
