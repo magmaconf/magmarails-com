@@ -95,7 +95,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 617px) {
   #home .sponsors {
     width: 280px;
   }
@@ -107,4 +107,21 @@
   .bottom-copy-right {
     display: block !important;
   }
+
+  .arrow-top {
+    display: block !important;
+  }
+
+  .arrow {
+    display: none !important;
+  }
+
+  .social {
+    border-bottom: 1px solid #483e39;
+  }
+
+  .june {
+    width: 72% !important;
+  }
+
 }
