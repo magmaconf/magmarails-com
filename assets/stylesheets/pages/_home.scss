@@ -1,9 +1,14 @@
 //HOME
 
 #home {
+  background: $main-bkg;
+
+  .row {
+    padding: 38px 0;
+  }
+
   .comingsoon {
     width: 270px;
-    margin: 8% auto 0 auto;
 
     img {
       padding-left: 26px;
@@ -70,7 +75,7 @@
   .sponsors {
     width: 370px;
     height: 67px;
-    margin: 4% auto 5% auto;
+    margin-top: 50px;
     overflow: hidden;
 
     .spons {
