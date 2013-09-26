@@ -53,7 +53,7 @@
       .eight-columns
         %img{src: "#{image_path 'stars.svg'}"}
       .two-columns.date
-        %span= t('daily.date')
+        %span= "#{@month} | #{@day} | #{@year}"
       .twelve-columns.line
       .twelve-columns.line-bold
     .row
