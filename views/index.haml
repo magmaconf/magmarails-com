@@ -5,7 +5,7 @@
       %span.arrow-top
         %i.icon-arrow
       %img.magma-logo{src: "#{image_path 'magma.svg'}"}
-      %p= t('home.stay')
+      %p.stay= t('home.stay')
       .social
         %a.facebook{href: 'http://www.facebook.com/magmaconf', target: '_blank'}
           %i.icon-facebook
@@ -13,7 +13,7 @@
           %i.icon-twitter
         %a.google{href: 'https://plus.google.com/108479926406306482358/posts', target: '_blank'}
           %i.icon-google
-      %span.arrow
+      %a.arrow{href: "#"}
         %i.icon-arrow
 
     .centered-four.sponsors
@@ -53,7 +53,7 @@
       .eight-columns
         %img{src: "#{image_path 'stars.svg'}"}
       .two-columns.date
-        %span= t('daily.date')
+        %span= "#{@month} | #{@day} | #{@year}"
       .twelve-columns.line
       .twelve-columns.line-bold
     .row
@@ -87,4 +87,6 @@
     .row.bottom-copy-right
       .twelve-columns.top
         %p.copy-right= t('daily.copy-right')
+      .centered-two.mask-bottom
+        %img{src: "#{image_path 'mask.svg'}"}
 

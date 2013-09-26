@@ -26,6 +26,13 @@ class Crowdsite < Sinatra::Base
   end
 
   get '/' do
+    time = Time.now
+    mon = ["jun", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+
+    @day = time.day
+    @month = mon[time.month - 1]
+    @year = time.year
+
     haml :index
   end
 end

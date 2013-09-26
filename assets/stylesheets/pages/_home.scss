@@ -1,9 +1,15 @@
 //HOME
 
 #home {
+  background: $main-bkg;
+
+  .row {
+    padding: 38px 0;
+  }
+
   .comingsoon {
     width: 270px;
-    margin: 8% auto 0 auto;
+    margin: 0 auto;
 
     img {
       padding-left: 26px;
@@ -70,7 +76,7 @@
   .sponsors {
     width: 370px;
     height: 67px;
-    margin: 4% auto 5% auto;
+    margin: 50px auto 0 auto;
     overflow: hidden;
 
     .spons {
@@ -106,6 +112,15 @@
 }
 
 #daily {
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+       -o-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(2px);
+     -moz-transform: translateZ(2px);
+       -o-transform: translateZ(2px);
+          transform: translateZ(2px);
+
   .separator {
     height: 5px;
     background: asset-url('top-news.png');
@@ -146,6 +161,10 @@
 
     .stars {
       margin-top: 0.2%;
+
+      .date {
+        text-transform: uppercase;
+      }
 
       div {
         padding: 0.5% 0;
@@ -270,5 +289,9 @@
         top: -185px;
       }
     }
+  }
+
+  .mask-bottom {
+    display: none;
   }
 }

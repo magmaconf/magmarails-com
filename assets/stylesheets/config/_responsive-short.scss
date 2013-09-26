@@ -30,6 +30,10 @@
     font-size: 2.67em !important;
   }
 
+  .stb, .six-columns p, .three-columns p {
+    display: none !important;
+  }
+
   .accepted {
     font-size: 2.2em !important;
   }
@@ -68,19 +72,20 @@
   }
 
   .title {
-    padding-top: 4% !important;
+    width: 80% !important;
+    margin: 15% 10% 4% 10%;
   }
 
   .two-columns {
     width: 30% !important;
   }
 
-  .eight-columns {
+  .stars .eight-columns {
     width: 40% !important;
   }
 
   .logo, .mask {
-    padding-top: 5% !important;
+    display: none;
   }
 
   .mask {
@@ -90,8 +95,19 @@
   .tit { display: none; }
   .tit-mob {
     display: block !important;
-    width: 70% !important;
     margin: auto ;
+  }
+
+  .copy-right {
+    text-align: center !important;
+  }
+
+  .mask-bottom {
+    display: block !important;
+
+    img {
+      margin-top: 5%;
+    }
   }
 }
 
@@ -124,4 +140,31 @@
     width: 72% !important;
   }
 
+  .accepted {
+    font-size: 1.7em !important;
+  }
+
+  h2 {
+    font-size: 1.6em !important;
+  }
+
+  h3 {
+    font-size: 1.1em !important;
+  }
+
+  h5 {
+    font-size: 2.6em !important;
+  }
+
+  .last-h5 {
+    font-size: 2.1em !important;
+  }
+
+  .yes-we {
+    font-size: 1.9em !important;
+  }
+
+  .sponsr {
+    font-size: 3.4em !important;
+  }
 }
