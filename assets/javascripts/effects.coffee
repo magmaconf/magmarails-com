@@ -26,8 +26,9 @@ $(document).ready ->
     $('.sponsors:hidden').slideToggle('slow')
     $('#home .row').css('padding-bottom', "#{padding}px")
 
-  $(window).scroll ->
-    st = $(@).scrollTop()
+  if $(window).height() > 617
+    $(window).scroll ->
+      st = $(@).scrollTop()
 
-    if st > lst then down(st) else top(st)
-    lst = st
+      if st > lst then down(st) else top(st)
+      lst = st
