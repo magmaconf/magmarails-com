@@ -1,5 +1,7 @@
 $(document).ready ->
   height = $(window).height()
+  padding = 0
+  lst = 0
 
   $('.arrow').click ->
     $('#home .row').css('padding-bottom', '0')
@@ -11,3 +13,21 @@ $(document).ready ->
   if height > 815
     padding = (height - 739) / 2
     $('#home .row').css('padding', "#{padding}px 0")
+
+  down = (s) ->
+    $('#daily').css('margin-top', "-#{s}px")
+
+  top = (s) ->
+    $('#daily').css('margin-top', "-#{s}px")
+
+    $('.stay:hidden').slideToggle('slow')
+    $('.social:hidden').slideToggle('slow')
+    $('.arrow:hidden').slideToggle('sow')
+    $('.sponsors:hidden').slideToggle('slow')
+    $('#home .row').css('padding-bottom', "#{padding}px")
+
+  $(window).scroll ->
+    st = $(@).scrollTop()
+
+    if st > lst then down(st) else top(st)
+    lst = st
