@@ -27,7 +27,7 @@ class Crowdsite < Sinatra::Base
 
   get '/' do
     time = Time.now
-    mon = ["jun", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+    mon = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
 
     @day = time.day
     @month = mon[time.month - 1]
