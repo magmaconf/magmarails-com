@@ -25,7 +25,14 @@ class Crowdsite < Sinatra::Base
     #expires 86400, :public, :must_revalidate
   end
 
-  get '/' do
+  def set_locale
+    I18n.load_path += Dir[File.join(File.dirname(__FILE__), 'config', 'locales', '*.yml').to_s]
+    @locale = params[:locale] if params[:locale]
+    I18n.locale = @locale
+  end
+
+  get '/?:locale?' do
+    set_locale
     time = Time.now
     mon = ["jun", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
 
