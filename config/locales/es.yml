@@ -1,0 +1,28 @@
+es:
+  title: 'MagmaConf 2014'
+  home:
+    stay: 'Manténte al tanto'
+  daily:
+    copy-right: 'Crowd Interactive &copy; 2013. This site is protected by copyright under US and international law. All rights reserved'
+    five: 'NO. 5'
+    page: 'PÁGINA 1'
+    manzanillo: 'Manzanillo'
+    cooking: 'preparándose para el MagmaConf que'
+    happen: 'se llevará a cabo'
+    happen-for: 'del 4 al 6 de Junio, 2014'
+    manzanillo-text:
+      one: 'MagmaConf es una conferencia anual de desarrollo web que se lleva a cabo en la hermosa ciudad de Manzanillo, Colima.'
+      two: 'MagmaConf reúne diseñadores, programadores y emprendedores de México y el resto del mundo con un solo objetivo: Crear una red solida de fente con intereses similares, sin importar su profesión.'
+      three: '250 asistentes, 18 conferencisistas, 3 keynotes y un puño de casas en la playa, todo mezclado para formar la mejor conferencia de desarrollo en México.'
+      four: 'La Convocatoria de Propuestas se abrirá del 1 de Noviembre al 30 de Diciembre, 2013. ¡Prepara tu propuesta y mantente al tanto!'
+    keynotes: 'Keynotes'
+    these: '¡Este par de extraordinarias'
+    accepted: 'mujeres aceptaron el reto!'
+    desi: 'DESI McADAM'
+    desi-bio: 'Una de las fundadoras de DevChix, una organización internacional de programadoras, y adora Ruby. También es parte activa de la comunidad de Rails Bridge y gusta de promover la diversidad. Durante el último MagmaConf ella coordinó el primer taller de @RailsBridgeMx.'
+    sandi: 'Sandi Metz'
+    sandi-bio: "Sandi Metz tiene 30 años de experiencia trabajando en proyectos que han sobrevivido, crecido y cambiado. Se auto describe como una programadora obsesiva, Rubyista, cilcista y escritora recalcitrante. Autora del libro 'Practical Object-Oriented Design in Ruby'."
+    yes-we: 'buscamos'
+    for: 'patrocinio'
+    organize: 'Si tu patrocinas MagmaConf tendrás la oportunidad de mostrar tu marca un un evento único en su especie. Un evento tan increible solo puede tener patrocinadores increibles. ¿Eres uno de ellos?'
+    email: 'info@magmaconf.com'
