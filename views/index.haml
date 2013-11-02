@@ -1,10 +1,13 @@
 %section#home.container
   .row
     .centered-three.comingsoon
-      %img.june{src: "#{image_path 'june.svg'}"}
+      %img.magma-logo{src: "#{image_path 'magma.svg'}"}
+      %img.june{src: "#{image_path 'for-en.svg'}"}
+      %a.btn-cfp{href: "http://cfp.magmaconf.com", target: "_blank"}
+        %img{src: "#{image_path 'cfp-en.svg'}"}
       %span.arrow-top
         %i.icon-arrow
-      %img.magma-logo{src: "#{image_path 'magma.svg'}"}
+      %p.span-time= t('home.span-time')
       %p.stay= t('home.stay')
       .social
         %a.facebook{href: 'http://www.facebook.com/magmaconf', target: '_blank'}
@@ -16,19 +19,13 @@
       %a.arrow{href: "#"}
         %i.icon-arrow
 
-    .centered-four.sponsors
-      .spons
-        %a{href: 'http://github.com', target: '_blank'}
-          %img.im{src: "#{image_path 'logo-github.svg'}"}
-          %img.over{src: "#{image_path 'logo-github-over.svg'}"}
-      .spons
-        %a{href: 'http://www.crowdint.com/', target: '_blank'}
-          %img.im{src: "#{image_path 'logo-crowd.svg'}"}
-          %img.over{src: "#{image_path 'logo-crowd-over.svg'}"}
-      .spons
-        %a{href: 'http://rubycentral.org/', target: '_blank'}
-          %img.im{src: "#{image_path 'logo-rubycentral.svg'}"}
-          %img.over{src: "#{image_path 'logo-rubycentral-over.svg'}"}
+      .spo
+        .spons
+          %a.git{href: 'http://github.com', target: '_blank'}
+        .spons
+          %a.cro{href: 'http://www.crowdint.com/', target: '_blank'}
+        .spons
+          %a.rub{href: 'http://rubycentral.org/', target: '_blank'}
 
 
 %section#daily.container
