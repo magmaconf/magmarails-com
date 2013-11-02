@@ -22,7 +22,6 @@ class Crowdsite < Sinatra::Base
   configure :production do
     set :raise_errors, false
     set :show_exceptions, false
-    expires 86400, :public, :must_revalidate
   end
 
   get '/' do
