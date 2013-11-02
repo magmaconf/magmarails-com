@@ -1,0 +1,21 @@
+// Buttons
+.btn-cfp {
+  width: 150px;
+  height: 150px;
+  background: $white;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 37px;
+  margin-bottom: 30px;
+  border: 1px solid #000;
+  box-shadow: 0 0 0 10px $white;
+  transition: 0.5s background, border;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+
+  &:hover {
+    background: $btn-hover;
+    border: 1px solid $btn-hover;
+  }
+}

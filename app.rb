@@ -22,7 +22,6 @@ class Crowdsite < Sinatra::Base
   configure :production do
     set :raise_errors, false
     set :show_exceptions, false
-    #expires 86400, :public, :must_revalidate
   end
 
   def set_locale
@@ -36,7 +35,7 @@ class Crowdsite < Sinatra::Base
   get '/?:locale?' do
     set_locale
     time = Time.now
-    mon = ["jun", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+    mon = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
 
     @day = time.day
     @month = mon[time.month - 1]

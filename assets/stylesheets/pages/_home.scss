@@ -11,10 +11,6 @@
     width: 270px;
     margin: 0 auto;
 
-    img {
-      padding-left: 26px;
-    }
-
     .magma-logo {
       margin-top: 15px;
     }
@@ -25,6 +21,12 @@
       padding: 2% 0;
       font: 100 1em/1.1 'Oswald';
       word-spacing: 2px;
+    }
+
+    .span-time {
+      padding-bottom: 10px;
+      border-bottom: 1px solid $social-hover;
+      margin: 0 16% 10px;
     }
 
     .social {
@@ -73,7 +75,7 @@
     }
   }
 
-  .sponsors {
+  /*.sponsors {
     width: 370px;
     height: 67px;
     margin: 50px auto 0 auto;
@@ -105,6 +107,56 @@
           .im {
             display: none;
           }
+        }
+      }
+    }
+  }*/
+
+  .spo {
+    overflow: hidden;
+    position: relative;
+    width: 200%;
+    margin-left: -50%;
+    margin-top: 40px;
+    margin-bottom: 250px;
+
+    .spons {
+      width: 33.333333%;
+      float: left;
+
+      a {
+        display: inline-block;
+        margin: auto;
+      }
+
+      .git {
+        width: 58px;
+        height: 51px;
+        background: asset-url('logo-github.svg') no-repeat;
+
+        &:hover {
+          background: asset-url('logo-github-over.svg') no-repeat;
+        }
+      }
+
+      .cro {
+        width: 90px;
+        height: 38px;
+        margin-top: 6px;
+        background: asset-url('logo-crowd.svg') no-repeat;
+
+        &:hover {
+          background: asset-url('logo-crowd-over.svg') no-repeat;
+        }
+      }
+
+      .rub {
+        width: 73px;
+        height: 62px;
+        background: asset-url('logo-rubycentral.svg') no-repeat;
+
+        &:hover {
+          background: asset-url('logo-rubycentral-over.svg') no-repeat;
         }
       }
     }
