@@ -1,6 +1,9 @@
 es:
   title: 'MagmaConf 2014'
   home:
+    for: 'for-es.svg'
+    cfp: 'cfp-es.svg'
+    span-time: 'Del 1 de Nov. al 30 de Dic. 2013'
     stay: 'Manténte al tanto'
   daily:
     copy-right: 'Crowd Interactive &copy; 2013. This site is protected by copyright under US and international law. All rights reserved'
