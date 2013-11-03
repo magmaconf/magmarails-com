@@ -1,6 +1,8 @@
 en:
   title: 'MagmaConf 2014'
   home:
+    for: 'for-en.svg'
+    cfp: 'cfp-en.svg'
     span-time: 'From Nov. 1st to Dec. 30th 2013'
     stay: 'stay tuned'
   daily:
