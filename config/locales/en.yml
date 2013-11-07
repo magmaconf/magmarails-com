@@ -5,6 +5,11 @@ en:
     cfp: 'cfp-en.svg'
     span-time: 'From Nov. 1st to Dec. 30th 2013'
     stay: 'stay tuned'
+    policy:
+      magma: 'Magma Conf 2014'
+      title: 'Anti-Harassment Policy'
+      description: 'Magma Conf is dedicates to a harassment-free conference experience for everyone. We basically ask all participats (Speakers, Staff, Attendees) to respect one another. Our anti-harassment policy can be found'
+      here: 'here >>'
   daily:
     copy-right: 'Crowd Interactive &copy; 2013. This site is protected by copyright under US and international law. All rights reserved'
     five: 'NO. 5'

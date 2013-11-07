@@ -75,43 +75,6 @@
     }
   }
 
-  /*.sponsors {
-    width: 370px;
-    height: 67px;
-    margin: 50px auto 0 auto;
-    overflow: hidden;
-
-    .spons {
-      width: 33.333333%;
-      float: left;
-
-      &:nth-child(1) {
-        margin-top: 2%;
-      }
-
-      &:nth-child(2) {
-        margin-top: 3%;
-      }
-
-      a {
-        .over {
-          display: none;
-        }
-
-        &:hover {
-          .over {
-            display: block;
-            margin: auto;
-          }
-
-          .im {
-            display: none;
-          }
-        }
-      }
-    }
-  }*/
-
   .spo {
     overflow: hidden;
     position: relative;
@@ -345,5 +308,40 @@
 
   .mask-bottom {
     display: none;
+  }
+}
+
+.anti {
+  padding: 20px 0;
+
+  h3 {
+    font-weight: 400;
+    padding-top: 6px;
+  }
+
+  p {
+    text-align: left;
+
+    a {
+      text-decoration: underline;
+      color: $fonts;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.anti-harassment {
+  h1 {
+    font-size: 9em;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 6.5em;
+    text-align: center;
+    font-weight: 400;
   }
 }

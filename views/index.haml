@@ -86,4 +86,16 @@
         %p.copy-right= t('daily.copy-right')
       .centered-two.mask-bottom
         %img{src: "#{image_path 'mask.svg'}"}
+    .row.anti
+      .four-columns
+        %h3= t('home.policy.title')
+      .eight-columns
+        %p
+          = t('home.policy.description')
+          %a.my_modal_open{href: '#'}= t('home.policy.here')
+      .twelve-columns.line
+    .row.anti-harassment
+      .twelve-columns
+        %h1= t('home.policy.magma')
+        %h2= t('home.policy.title')
 
