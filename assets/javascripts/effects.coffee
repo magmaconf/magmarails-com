@@ -32,3 +32,21 @@ $(document).ready ->
 
       if st > lst then down(st) else top(st)
       lst = st
+
+  # Popup
+  $('.open_popup').click (e) ->
+    e.preventDefault()
+    $('#popup').fadeIn()
+    $('#policy').slideToggle()
+
+  close_popup = ->
+    $('#popup').fadeOut()
+    $('#policy').slideToggle()
+
+  $('.close_popup').click (e) ->
+    e.preventDefault()
+    close_popup()
+
+  $(@).keyup (e) ->
+    if (event.which == 27) and ($('#policy').is(':visible'))
+	    close_popup()

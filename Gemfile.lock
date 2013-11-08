@@ -34,6 +34,8 @@ GEM
       sprockets-helpers
       sprockets-sass
     sinatra-i18n (0.1.0)
+    sinatra-partial (0.4.0)
+      sinatra
     sprockets (2.10.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -58,3 +60,4 @@ DEPENDENCIES
   sinatra
   sinatra-asset-pipeline
   sinatra-i18n
+  sinatra-partial

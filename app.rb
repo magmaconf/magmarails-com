@@ -3,6 +3,7 @@ require 'bundler'
 Bundler.require
 
 require 'sinatra/i18n'
+require 'sinatra/partial'
 
 class Crowdsite < Sinatra::Base
   register Sinatra::AssetPipeline
@@ -17,6 +18,8 @@ class Crowdsite < Sinatra::Base
     sprockets.append_path File.join(root, 'assets', 'images')
     sprockets.append_path File.join(root, 'assets', 'fonts')
     sprockets.append_path File.join(root, 'vendor', 'javascripts')
+
+    I18n.default_locale = :en
   end
 
   configure :production do
