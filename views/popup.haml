@@ -1,0 +1,35 @@
+.separator
+#news
+  .row.top-copy-right
+    .twelve-columns.top
+      %p.copy-right= t('daily.copy-right')
+  .row
+    .two-columns.logo
+      %img{src: "#{image_path 'crowd.svg'}"}
+    .eight-columns.title
+      %img.tit{src: "#{image_path 'title-news.svg'}"}
+      %img.tit-mob{src: "#{image_path 'dayli.svg'}"}
+    .two-columns.mask
+      %img{src: "#{image_path 'mask.svg'}"}
+    .twelve-columns.line
+  .row.stars
+    .two-columns
+      %span= t('daily.five')
+      %span= t('daily.page')
+    .eight-columns
+      %img{src: "#{image_path 'stars.svg'}"}
+    .two-columns.date
+      %span= "#{@month} | #{@day} | #{@year}"
+    .twelve-columns.line
+    .twelve-columns.line-bold
+
+#harassment
+  .row.anti-harassment
+    .twelve-columns
+      %h1= t('home.policy.magma')
+      %h2= t('home.policy.title')
+    .twelve-columns.line
+    .eight-columns
+      %p= t('home.policy.s_one')
+    .four-columns
+      %p= t('home.policy.adapted')

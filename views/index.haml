@@ -87,15 +87,14 @@
       .centered-two.mask-bottom
         %img{src: "#{image_path 'mask.svg'}"}
     .row.anti
-      .four-columns
+      .three-columns
         %h3= t('home.policy.title')
-      .eight-columns
+      .nine-columns
         %p
           = t('home.policy.description')
-          %a.my_modal_open{href: '#'}= t('home.policy.here')
+          %a.open_popup{href: '#'}= t('home.policy.here')
       .twelve-columns.line
-    .row.anti-harassment
-      .twelve-columns
-        %h1= t('home.policy.magma')
-        %h2= t('home.policy.title')
 
+#popup
+#policy.container
+  = haml :popup
