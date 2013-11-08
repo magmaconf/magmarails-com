@@ -6,7 +6,7 @@
   opacity: 0.8;
   position: fixed;
   display: block;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   display: none;
 }
@@ -15,7 +15,7 @@
   width: 100%;
   background: none repeat scroll 0 0 transparent;
   position: fixed;
-  z-index: 5;
+  z-index: 4;
   bottom: 0;
   display: none;
 
@@ -107,10 +107,50 @@
   }
 
   #harassment {
+    z-index: 6;
     background: $white;
 
     p {
       word-spacing: 1px;
+
+      &.linep {
+        border-bottom: 1px solid $fonts;
+      }
+    }
+
+    h3 {
+      font-weight: 400;
+
+      &.lineh {
+        border-bottom: 1px solid $fonts;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+      }
+    }
+
+    .mail {
+      text-decoration: underline;
+      color: $fonts;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .phones {
+      padding: 15px 0;
+    }
+
+    .close_popup {
+      display: block;
+      margin-top: 25px;
+      background: $fonts;
+      padding: 15px;
+      text-align: right;
+      color: $white;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      font-family: 'Oswald';
     }
 
     .line {
@@ -120,27 +160,4 @@
       margin: 20px 0 30px;
     }
   }
-}
-
-.popup_background {
-  z-index: 2000; /* any number */
-}
-
-.popup_wrapper {
-  z-index: 2001; /* any number + 1 */
-}
-
-/* Add inline-block support for IE7 */
-.popup_align,
-.popup_content {
-  *display: inline;
-  *zoom: 1;
-}
-
-#my_modal {
-  width: 38%;
-  padding: 30px 50px 10px;
-  background: red;
-  border: 0;
-  outline: 0;
 }

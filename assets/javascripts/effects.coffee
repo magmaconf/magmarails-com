@@ -43,10 +43,10 @@ $(document).ready ->
     $('#popup').fadeOut()
     $('#policy').slideToggle()
 
-  $('#popup').click (e) ->
+  $('.close_popup').click (e) ->
     e.preventDefault()
     close_popup()
 
   $(@).keyup (e) ->
-    if (event.which == 27)
+    if (event.which == 27) and ($('#policy').is(':visible'))
 	    close_popup()
