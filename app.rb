@@ -3,6 +3,7 @@ require 'bundler'
 Bundler.require
 
 require 'sinatra/i18n'
+require 'sinatra/partial'
 
 class Crowdsite < Sinatra::Base
   register Sinatra::AssetPipeline

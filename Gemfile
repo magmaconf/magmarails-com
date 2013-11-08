@@ -12,3 +12,5 @@ gem 'sinatra-i18n', require: 'sinatra/i18n'
 gem 'shotgun'
 
 gem 'cactu'
+
+gem 'sinatra-partial'
