@@ -3,11 +3,12 @@
     .centered-three.comingsoon
       %img.magma-logo{src: "#{image_path 'magma.svg'}"}
       %img.june{src: "#{image_path t('home.for')}"}
-      %a.btn-cfp{href: "http://cfp.magmaconf.com", target: "_blank"}
-        %img{src: "#{image_path t('home.cfp')}"}
+      %p.span-no-bor= t('home.work')
+      %a.btn-cfp{href: "http://blog.magmaconf.com", target: "_blank"}
+        %img{src: "#{image_path 'blog.svg'}"}
       %span.arrow-top
         %i.icon-arrow
-      %p.span-time= t('home.span-time')
+      %p.span-time
       %p.stay= t('home.stay')
       .social
         %a.facebook{href: 'http://www.facebook.com/magmaconf', target: '_blank'}
