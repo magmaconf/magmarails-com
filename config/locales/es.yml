@@ -9,7 +9,7 @@ es:
     policy:
       magma: 'Magma Conf 2014'
       title: 'Política de Anti-acoso'
-      description: 'Magma Conf esta diseñado para ser una conferencia libre de acoso para todos los involucrados. Nosotros basicamente les comentamos a los participantes (Speakers, Staff, Asistentes) sobre el respeto entre todos. Nuestra política de Anti-acoso las puedes encontrar'
+      description: 'Magma Conf está diseñado para ser una conferencia libre de acoso para todos los involucrados. Nosotros basicamente les comentamos a los participantes (Speakers, Staff, Asistentes) sobre el respeto entre todos. Nuestra política de Anti-acoso las puedes encontrar'
       here: 'aquí'
       s_one: 'Magma Conf está diseñada para ser una conferencia con una experiencia libre de acoso para todos los participantes. Todos son bienvenidos sin importar su género, orientacion sexual, discapacidad, apariencia física, tamaño del cuerpo, raza, religión, lengua materna, sistema operativo de tu dispositivo, lenguaje o framework de programación preferido, o cualquier otra cosa. Nosotros aceptamos la diversidad.'
       s_two: 'Pedimos a todos los participantes respeto mutuo, y no toleraremos cualquier tipo de acoso a los participantes en la conferencia. El acoso incluye ofensa verbal, comentarios relacionados a género, identidad o expresión de género, orientación sexual, discapacidad, apariencia física, tamaño del cuerpo, raza, religión, imágenes con contenido sexual en espacios públicos, intimidación de manera deliberada, acoso, seguimiento, fotografías o videograbaciones con motivos de acoso, interrupción continua en charlas u otros eventos, contacto físico inapropiado o atención sexual no permitida. Se espera que los participantes a los que les sea requerido detener alguno de estos comportamientos cumplan de manera inmediata.'
@@ -36,8 +36,8 @@ es:
     happen-for: 'del 4 al 6 de Junio, 2014'
     manzanillo-text:
       one: 'MagmaConf es una conferencia anual de desarrollo web que se lleva a cabo en la hermosa ciudad de Manzanillo, Colima.'
-      two: 'MagmaConf reúne diseñadores, programadores y emprendedores de México y el resto del mundo con un solo objetivo: Crear una red solida de fente con intereses similares, sin importar su profesión.'
-      three: '250 asistentes, 18 conferencisistas, 3 keynotes y un puño de casas en la playa, todo mezclado para formar la mejor conferencia de desarrollo en México.'
+      two: 'MagmaConf reúne diseñadores, programadores y emprendedores de México y el resto del mundo con un solo objetivo: Crear una sólida red de gente con intereses similares, sin importar su profesión.'
+      three: '250 asistentes, 18 conferencistas, 3 keynotes y un puño de casas en la playa, todo mezclado para formar la mejor conferencia de desarrollo en México.'
       four: 'La Convocatoria de Propuestas se abrirá del 1 de Noviembre al 30 de Diciembre, 2013. ¡Prepara tu propuesta y mantente al tanto!'
     keynotes: 'Keynotes'
     these: '¡Este par de extraordinarias'
@@ -48,5 +48,5 @@ es:
     sandi-bio: "Sandi Metz tiene 30 años de experiencia trabajando en proyectos que han sobrevivido, crecido y cambiado. Se auto describe como una programadora obsesiva, Rubyista, cilcista y escritora recalcitrante. Autora del libro 'Practical Object-Oriented Design in Ruby'."
     yes-we: 'buscamos'
     for: 'patrocinio'
-    organize: 'Si tu patrocinas MagmaConf tendrás la oportunidad de mostrar tu marca un un evento único en su especie. Un evento tan increible solo puede tener patrocinadores increibles. ¿Eres uno de ellos?'
+    organize: 'Si tú patrocinas MagmaConf, tendrás la oportunidad de mostrar tu marca en un evento único en su especie. Un evento tan increíble sólo puede tener patrocinadores increíbles. ¿Eres uno de ellos?'
     email: 'info@magmaconf.com'
