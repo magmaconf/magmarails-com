@@ -3,9 +3,11 @@ es:
   home:
     for: 'for-es.svg'
     cfp: 'cfp-es.svg'
+    ticket: 'comprar-boleto.svg'
     span-time: 'Del 1 de Nov. al 30 de Dic. 2013'
     stay: 'Manténte al tanto'
     work: 'Tenemos mucho trabajo por hacer. Mientras tanto, checa esto'
+    limit_ticket: 'limitado a <span>50 boletos</span>'
     policy:
       magma: 'Magma Conf 2014'
       title: 'Política de Anti-acoso'

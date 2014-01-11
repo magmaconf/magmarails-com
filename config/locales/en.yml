@@ -3,9 +3,11 @@ en:
   home:
     for: 'for-en.svg'
     cfp: 'cfp-en.svg'
+    ticket: 'buy-ticket.svg'
     span-time: 'From Nov. 1st to Dec. 30th 2013'
     stay: 'stay tuned'
     work: 'We have a lot of work to do. Meanwhile please chechout'
+    limit_ticket: 'limited to <span>50 tickets</span>'
     policy:
       magma: 'Magma Conf 2014'
       title: 'Anti-Harassment Policy'
