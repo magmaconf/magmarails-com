@@ -12,7 +12,7 @@
     margin: 0 auto;
 
     .magma-logo {
-      margin-top: 15px;
+      margin-bottom: 20px;
     }
 
     p {
@@ -31,7 +31,9 @@
 
     .span-no-bor {
       padding-bottom: 10px;
-      margin: 0 16% 10px;
+      margin: 0 16% 30px;
+
+      span { font-weight: 500; }
     }
 
     .social {
