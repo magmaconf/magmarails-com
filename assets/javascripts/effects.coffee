@@ -14,8 +14,8 @@ $(document).ready ->
     padding = (height - 739) / 2
     $('#home .row').css('padding', "#{padding}px 0")
 
-  down = (s) ->
-    $('#daily').css('margin-top', "-#{s}px")
+  down = (s, max_scroll) ->
+    $('#daily').css('margin-top', "-#{s}px") if s < max_scroll
 
   top = (s) ->
     $('#daily').css('margin-top', "-#{s}px")
@@ -26,11 +26,12 @@ $(document).ready ->
     $('.sponsors:hidden').slideToggle('slow')
     $('#home .row').css('padding-bottom', "#{padding}px")
 
-  if $(window).height() > 617
+  if $(window).height() > 617 and $(window).width() > 800
     $(window).scroll ->
+      max = ($('#daily').height() * 0.05) + $(window).height()
       st = $(@).scrollTop()
 
-      if st > lst then down(st) else top(st)
+      if st > lst then down(st, max) else top(st)
       lst = st
 
   # Popup
