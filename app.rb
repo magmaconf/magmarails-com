@@ -6,6 +6,7 @@ require 'sinatra/i18n'
 require 'sinatra/partial'
 
 class Crowdsite < Sinatra::Base
+  register Sinatra::Partial
   register Sinatra::AssetPipeline
   register Sinatra::I18n
 
