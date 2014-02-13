@@ -1,0 +1,20 @@
+#footer.container
+  .row#copy-right
+    %span#logo-crowd
+    %p
+      EVENT ORGANISED BY CROWD INTERACTIVE © 2014
+    %p
+      THIS SITE IS PROTECTED BY COPYRIGHT.UNDER U.S. AND INTERNATIONAL LAW. ALL RIGHTS RESERVED.
+  .row.anti
+    .three-columns
+      %h3= t('home.policy.title')
+    .nine-columns
+      %p
+        Magma Conf is a harassment-free conference experience for everyone involved. We ask all participants (Speakers,
+        Staff, Attendees) to respect one another. Our anti-harassment policy can be found
+        %a.open_popup{href: '#'} here >>
+  .twelve-columns.line
+
+#popup
+#policy.container
+  = haml :popup

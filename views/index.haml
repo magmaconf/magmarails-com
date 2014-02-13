@@ -1,17 +1,3 @@
-%section#home.container
-  = partial(:speakers)
-%section#daily.container
-  .separator
-  #news
-    .row.anti
-      .three-columns
-        %h3= t('home.policy.title')
-      .nine-columns
-        %p
-          = t('home.policy.description')
-          %a.open_popup{href: '#'}= t('home.policy.here')
-      .twelve-columns.line
-
-#popup
-#policy.container
-  = haml :popup
+= partial :main_menu
+= partial(:speakers)
+= partial :footer
