@@ -1,0 +1,39 @@
+#speakers {
+  background-color:#413531;
+  .top-speaker-box {
+    margin: 20px auto;
+    max-width: 265px;
+  }
+
+  .speaker-box {
+    margin: 20px auto;
+    max-width: 170px;
+  }
+
+  .speaker-name {
+    color: #fff;
+    display: block;
+    text-align: center;
+  }
+
+  .awesome {
+    color: #fff;
+    border-bottom: 3px solid #b4a898;
+    font-family: oswald;
+    font-weight: 700;
+    font-size: 355%;
+    line-height: 52px;
+    margin: 0 auto 50px auto;
+    max-width: 210px;
+    padding-bottom: 10px;
+  }
+
+  .check {
+    color: #ADA193;
+    font-size: 230%;
+    font-family: oswald;
+    font-weight: 300;
+    height: 32px;
+    margin-top: 50px;
+  }
+}
