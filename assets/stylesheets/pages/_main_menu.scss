@@ -1,0 +1,35 @@
+#main-menu {
+  background: #221B1B;
+  margin: 0 auto;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  span {
+    background: image_url('magma.svg') no-repeat;
+    display: block;
+    height: 37px;
+    margin: 0 auto;
+    width: 105px;
+  }
+  ul {
+    margin: 0 auto;
+    width: 870px;
+    padding-top: 5px;
+    border-top: 1px solid #584E46;
+    margin-top: 20px;
+    li {
+      display: inline-block;
+      color: #584E46;
+      font-size: 14px;
+      text-transform: uppercase;
+      padding-right: 18px;
+      padding-left: 18px;
+      border-right: 1px solid #584E46;
+      cursor: pointer;
+      &:last-child {
+        border: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
