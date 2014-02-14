@@ -1,6 +1,7 @@
 html, body {
 
   background: $bkg;
+  font-family: oswald;
 
   &::-webkit-scrollbar {
     display: none;
@@ -60,8 +61,6 @@ h6 {
   }
 }
 
-.center {
-  text-align: center;
-}
-
 @include font_face('Block', 'BLOKKNeue-Regular');
+
+

@@ -12,11 +12,14 @@
 @import 'ui/buttons';
 @import 'ui/popup';
 
+@import 'site';
+
 @import 'pages/layout';
 @import 'pages/footer';
 @import 'pages/_main_menu.scss';
 @import 'pages/_main_section.scss';
 @import 'pages/speakers';
+@import 'pages/what_is_magma';
 
 @import 'config/responsive-large';
 @import 'config/responsive-medium';

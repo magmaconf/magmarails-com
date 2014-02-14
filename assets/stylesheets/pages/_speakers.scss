@@ -1,10 +1,5 @@
 #speakers {
   background-color:#413531;
-  .top-speaker-box {
-    margin: 20px auto;
-    max-width: 265px;
-  }
-
   .speaker-box {
     margin: 20px auto;
     max-width: 170px;
@@ -28,10 +23,14 @@
     padding-bottom: 10px;
   }
 
+  .bottom {
+    position: relative;
+    bottom: -82px;
+  }
+
   .check {
-    color: #ADA193;
+    color: $light-brown;
     font-size: 230%;
-    font-family: oswald;
     font-weight: 300;
     height: 32px;
     margin-top: 50px;
