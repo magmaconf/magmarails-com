@@ -1,0 +1,129 @@
+#main-section {
+  padding: 113px 0 28px;
+  min-height: 800px;
+  background: image-url('bkg.jpg');
+  background-size: 1376px 1140px;
+  .center {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 208px;
+    .social {
+      border-bottom: 5px solid #423732;
+      margin-top: 12px;
+      overflow: hidden;
+      padding: 1% 0 20px 0;
+      a {
+        width: 50px;
+        height: 35px;
+        padding-top: 15px;
+        float: left;
+        background: $social-bkg;
+        margin-left: 8%;
+        border-radius: 50%;
+
+        &:first-child {
+          margin-left: 6%;
+        }
+
+        &:hover {
+          background: $social-hover;
+        }
+      }
+
+      .facebook:hover i {
+        background-position: -68px -50px;
+      }
+
+      .twitter:hover i {
+        background-position: -132px -50px;
+      }
+
+      .google:hover i {
+        background-position: -198px -50px;
+      }
+    }
+    #date {
+      margin-left: 0;
+    }
+    p {
+      border-bottom: 5px solid #423732;
+      color: #6F6354;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: -1px;
+      margin: 26px 0;
+      word-spacing: 0;
+    }
+    #info {
+      display: none;
+      float: left;
+      margin-left: -390px;
+      margin-top: -130px;
+      p {
+        border: 0;
+        color: #9D8D79;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 25px;
+        margin: 26px 0;
+        text-align: right;
+        word-spacing: 0;
+        width: 208px;
+      }
+    }
+    #ticket {
+      margin-top: -80px;
+      margin-left: -76px;
+    }
+    #door {
+      float: left;
+      margin-left: -273px;
+      margin-top: -231px;
+    }
+  }
+  .first {
+    #reylero {
+      display: none ;
+      margin-left: 400px;
+    }
+  }
+  .second {
+    #ticket {
+      margin-top: -6px;
+    }
+    #date {
+      -webkit-transition: 2s;
+      -moz-transition: 2s;
+      -ms-transition: 3s;
+      -o-transition: 3s;
+      transition: 3s;
+      margin-top: 63px;
+      margin-left: -745px !important;
+    }
+    #door {
+      display: none;
+    }
+    #reylero {
+      margin-left: 83px;
+      margin-top: -420px;
+    }
+  }
+  .third {
+    #ticket {
+      display: none;
+    }
+    #reylero {
+      content: image-url('reylero-standup.png');
+      margin-left: -160px;
+    }
+    #info {
+      margin-top: -37px;
+    }
+  }
+  .fourth {
+    #reylero {
+      content: image-url('reylero_running.png');
+      margin-left: -130px;
+    }
+  }
+}

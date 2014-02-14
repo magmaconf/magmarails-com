@@ -3,6 +3,12 @@ $(document).ready ->
   padding = 0
   lst = 0
 
+  setTimeout (->
+    $('.center.first').addClass('second')
+    $('#reylero').fadeIn(4000).css('display', 'block')
+    $('#info').fadeIn(3000)
+  ), 4000
+
   $('.arrow').click ->
     $('#home .row').css('padding-bottom', '0')
     $('.sponsors').slideToggle()
