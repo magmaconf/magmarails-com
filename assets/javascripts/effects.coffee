@@ -9,6 +9,13 @@ $(document).ready ->
     $('#info').fadeIn(3000)
   ), 4000
 
+  $(window).scroll ->
+    scrollPosition = $(@).scrollTop()
+    if scrollPosition >= 5581 and scrollPosition <= 7065
+      $('#schedule #days').addClass('fixed')
+    else
+      $('#schedule #days').removeClass('fixed')
+
   $('.arrow').click ->
     $('#home .row').css('padding-bottom', '0')
     $('.sponsors').slideToggle()
