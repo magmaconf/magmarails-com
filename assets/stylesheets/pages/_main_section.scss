@@ -3,6 +3,9 @@
   min-height: 800px;
   background: image-url('bkg.jpg');
   background-size: 1376px 1140px;
+  p {
+    font-family: Roboto;
+  }
   .center {
     margin: 0 auto;
     margin-top: 60px;
@@ -48,9 +51,8 @@
     p {
       border-bottom: 5px solid #423732;
       color: #6F6354;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 400;
-      letter-spacing: -1px;
       margin: 26px 0;
       word-spacing: 0;
     }
@@ -62,8 +64,8 @@
       p {
         border: 0;
         color: #9D8D79;
-        font-size: 16px;
-        font-weight: 300;
+        font-size: 15px;
+        font-weight: 200;
         line-height: 25px;
         letter-spacing: 0;
         margin: 26px 0;
@@ -105,8 +107,12 @@
       display: none;
     }
     #reylero {
+      display: block;
       margin-left: 83px;
       margin-top: -420px;
+    }
+    #info {
+      display: block;
     }
   }
   .third {
