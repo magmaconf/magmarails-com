@@ -1,0 +1,81 @@
+#sponsoring {
+  max-width: 1200px;
+  margin: 0 auto;
+  .big-sponsor-box, .normal-box {
+    @include rounded(135px);
+    background-color: #50433d;
+    border: 3px solid #695b52;
+    margin: 30px auto;
+
+    span {
+      display: block;
+      color: #e2e1d5;
+      font-size: 150%;
+      text-align: center;
+      position: relative;
+    }
+  }
+
+  .big-sponsor-box {
+    @include box-shadow(0, 0, 0, 10px, #50433d);
+    height: 238px;
+    width: 238px;
+
+    span {
+      left: 30px;
+      top: 102px;
+      width: 180px;
+    }
+  }
+
+  .normal-box {
+    @include box-shadow(0, 0, 0, 7px, #50433d);
+    height: 148px;
+    width: 148px;
+
+    span {
+      top: 70px;
+      width: 149px;
+    }
+  }
+
+  #crowdint {
+    background: image-url('logo-crowd-sponsors.svg');
+    display: block;
+    height: 68px;
+    left: 28px;
+    position: relative;
+    top: 78px;
+    width: 176px;
+  }
+
+  #sponsoring-advice {
+    span {
+      display: block;
+      font-family: oswald;
+      font-weight: 700;
+      text-align: center;
+      color: #fff;
+      line-height: 108px;
+    }
+
+    .big {
+      font-size: 10em;
+    }
+
+    .medium {
+      font-size: 6em;
+    }
+
+    .small {
+      line-height: 38px;
+      color: #ada193;
+      font-weight: 300;
+      font-size: 192.5%;
+      height: 48px;
+      width: 156px;
+      margin: 0 auto 25px auto;
+      border-bottom: 3px solid #675851;
+    }
+  }
+}
