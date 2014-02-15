@@ -15,6 +15,10 @@
     margin-left: 138px;
     margin-top: -219px;
     z-index: 99;
+    
+    img {
+      width: 100%;
+    }
   }
   .map-legend {
     width: 360px;
@@ -36,7 +40,7 @@
   }
   #village-image {
     width: 266px;
-    margin: 180px auto 70px;
+    margin: 130px auto 70px;
   }
   #accommadtions-legend {
     width: 200px;
@@ -84,6 +88,8 @@
         background: #21AEAC;
         border: 2px solid #fff;
       }
+      
+      img { width: 100%;}
     }
   }
   #village-info {
@@ -97,6 +103,7 @@
     margin-top: -114px;
     img {
       padding-left: 104px;
+      width: 100%;
     }
   }
 }
