@@ -3,15 +3,9 @@ $(document).ready ->
   padding = 0
   lst = 0
 
-  setTimeout (->
-    $('.center.first').addClass('second')
-    $('#reylero').fadeIn(4000).css('display', 'block')
-    $('#info').fadeIn(3000)
-  ), 4000
-
   $(window).scroll ->
     scrollPosition = $(@).scrollTop()
-    if scrollPosition >= 7500 and scrollPosition <= 8981
+    if scrollPosition >= 7500 and scrollPosition <= 8886
       $('#schedule #days').addClass('fixed')
     else
       $('#schedule #days').removeClass('fixed')
