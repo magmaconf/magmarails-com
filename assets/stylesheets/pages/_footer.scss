@@ -1,14 +1,7 @@
 #footer {
   background: #1F1817;
-  p {
-    display: block;
-    font-weight: 300;
-    line-height: 21px;
-    padding: 0px;
-    word-spacing: 0px;
-  }
   #copy-right {
-    background: #2B2221;
+    background: #392f2c;
     margin: 0 auto;
     padding: 20px 0;
     padding-left: 5%;
@@ -17,13 +10,14 @@
       background: image_url('crowd.svg') no-repeat;
       height: 33px;
       margin-bottom: -6px;
-      margin-right: 15px;
       width: 78px;
     }
     p {
-      color: #4E3F39;
-      font-size: 14px;
+      color: #5f514c;
+      font-size: 12px;
+      letter-spacing: 1px;
       padding: 0 12px;
+      font-family: roboto;
     }
     p, span {
       display: inline-block;
@@ -35,40 +29,39 @@
   }
 }
 
-.anti {
-  color: $white;
-  padding: 20px 0;
-  width: 100%;
-  h3 {
-    color: $white;
-    font-weight: 300;
-    padding-top: 6px;
-    font-size: 1.7em;
-  }
-
+.footer-legend {
+  margin: 15px 40px 10px;
   p {
+    color: #fff;
+    display: block;
+    font-weight: 200;
+    font-family: roboto;
+    line-height: 21px;
+    max-width: 850px;
     padding: 0px;
-    text-align: left;
-    a {
-      text-decoration: underline;
-      color: #9B8E76;
+    word-spacing: 0px;
+  }
+  a {
+    text-decoration: underline;
+    color: #9B8E76;
 
-      &:hover {
-        text-decoration: none;
-      }
+    &:hover {
+      text-decoration: none;
     }
   }
 }
 
-.anti-harassment {
-  h1 {
-    font-size: 9em;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 6.5em;
-    text-align: center;
-    font-weight: 400;
+.anti {
+  color: $white;
+  text-align: right;
+  padding: 20px 0;
+  width: 100%;
+  h3 {
+    color: white;
+    font-weight: 200;
+    padding-top: 6px;
+    font-size: 20px;
+    letter-spacing: 1px;
   }
 }
+
