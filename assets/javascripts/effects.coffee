@@ -11,7 +11,7 @@ $(document).ready ->
 
   $(window).scroll ->
     scrollPosition = $(@).scrollTop()
-    if scrollPosition >= 5581 and scrollPosition <= 7065
+    if scrollPosition >= 7500 and scrollPosition <= 8981
       $('#schedule #days').addClass('fixed')
     else
       $('#schedule #days').removeClass('fixed')
