@@ -1,0 +1,32 @@
+#buy-ticket {
+  background-color: #fff;
+  font-family: oswald;
+  line-height: 25px;
+
+  p {
+    color: #000;
+    font-size: 150%;
+    margin: 50px auto;
+    text-align: center;
+    width: 290px;
+  }
+
+  .box-office {
+    text-align: center;
+    height: 398px;
+    img {
+      position: relative;
+      left: -18px;
+      bottom: 21px;
+    }
+  }
+
+  .register {
+    text-align: center;
+    background-color: #413632;
+
+    a {
+      margin: 141px 0
+    }
+  }
+}
