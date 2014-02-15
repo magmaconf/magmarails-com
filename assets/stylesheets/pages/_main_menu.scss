@@ -11,6 +11,7 @@
     height: 37px;
     margin: 0 auto;
     width: 105px;
+    cursor: pointer;
   }
   ul {
     margin: 0 auto;
@@ -18,18 +19,21 @@
     padding-top: 5px;
     border-top: 1px solid #584E46;
     margin-top: 20px;
+    text-align: center;
     li {
       display: inline-block;
-      color: #584E46;
-      font-size: 14px;
-      text-transform: uppercase;
       padding-right: 18px;
       padding-left: 18px;
       border-right: 1px solid #584E46;
-      cursor: pointer;
       &:last-child {
         border: 0;
         padding-right: 0;
+      }
+      
+      a {
+        color: #584E46;
+        font-size: 14px;
+        text-transform: uppercase;
       }
     }
   }

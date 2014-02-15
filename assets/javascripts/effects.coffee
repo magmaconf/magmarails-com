@@ -1,4 +1,12 @@
 $(document).ready ->
+  $('#main-menu a').smoothScroll({offset: -111});
+
+  $('span#magma-logo').click ->
+    $.smoothScroll ->
+      scrollElement: $('body'),
+      scrollTarget: '#main-section'
+    return false;
+
   height = $(window).height()
   padding = 0
   lst = 0
