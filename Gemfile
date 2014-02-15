@@ -14,3 +14,4 @@ gem 'shotgun'
 gem 'cactu'
 
 gem 'sinatra-partial'
+gem 'heroku-deflater', :group => :production
