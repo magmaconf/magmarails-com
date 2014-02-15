@@ -1,5 +1,6 @@
 $(document).ready ->
-  $('#main-menu a').smoothScroll({offset: -111});
+  $('#main-menu a').smoothScroll({offset: -111, exclude: ['a.schedule-link']});
+  $('a.schedule-link').smoothScroll({offset: 120});
 
   $('span#magma-logo').click ->
     $.smoothScroll ->
