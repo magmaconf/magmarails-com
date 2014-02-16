@@ -4,5 +4,34 @@
   @include grid_offset($gm-column, $gm-gutter);
 
   @include grid_centered($gm-column, $gm-gutter);
+  
+  .content {
+    width: 1024px;
+  }
+  
+  #location {
+    #beach-image {
+      img {
+        padding-left: 0;
+      }
+    }
+    
+    #description {
+      .btn-cfp {
+        top: 178px;
+        left: 260px;
+      }
+    }
+  }
+  
+  #blog {
+    .btn-cfp {
+      margin-right: 80px;
+    }
+    
+    p {
+      right: 280px;
+    }
+  }
 
 }
