@@ -9,6 +9,8 @@ $(document).ready ->
       mapTypeId: google.maps.MapTypeId.ROADMAP
       scrollwheel: false
       disableDefaultUI: true
+      draggable: false
+      disableDoubleClickZoom: true
 
     map = new google.maps.Map(map_canvas, map_options)
 
