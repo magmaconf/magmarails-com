@@ -36,10 +36,6 @@ class Crowdsite < Sinatra::Base
     I18n.locale = locale || browser_locale
   end
 
-  get '/google06ae2c244c007126.html' do
-    haml :google06ae2c244c007126, layout: false
-  end
-
   get '/?:locale?' do
     set_locale
     time = Time.now
