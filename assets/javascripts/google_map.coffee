@@ -7,6 +7,10 @@ $(document).ready ->
       center: new google.maps.LatLng(19.051085, -104.382133)
       zoom: 11
       mapTypeId: google.maps.MapTypeId.ROADMAP
+      scrollwheel: false
+      disableDefaultUI: true
+      draggable: false
+      disableDoubleClickZoom: true
 
     map = new google.maps.Map(map_canvas, map_options)
 

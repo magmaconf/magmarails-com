@@ -11,7 +11,7 @@ en:
     policy:
       magma: 'Magma Conf 2014'
       title: 'Anti-Harassment Policy'
-      description: 'Magma Conf is designed to be a harassment-free conference experience for everyone involved. We basically ask all participats (Speakers, Staff, Attendees) to respect one another. Our anti-harassment policy can be found'
+      description: 'Magma Conf is designed to be a harassment-free conference experience for everyone involved. We basically ask all participants (Speakers, Staff, Attendees) to respect one another. Our anti-harassment policy can be found'
       here: 'here >>'
       s_one: 'Magma Conf is designed to be a harassment-free conference experience for all participants. We welcome everyone regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, mother tongue, operational system of your devices, preferred programming language/framework, or anything else.  We embrace diversity.'
       s_two: 'We ask all participants to respect one another, and we will not tolerate harassment of conference participants in any form. Harassment includes offensive verbal comments related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention. Participants asked to stop any harassing behavior are expected to comply immediately.'
@@ -44,7 +44,7 @@ en:
     keynotes: 'Keynotes'
     these: 'These two extraordinary ladies'
     accepted: 'have accepted the challenge!'
-    desi: 'Desi Macadam'
+    desi: 'DESI McADAM'
     desi-bio: 'She is one of the cofounders of DevChix, an international organization of female software developers, and she loves Ruby. She is also active in the RailsBridge community and spreads the word of diversity.  During the last MagmaConf  she coordinated the first @RailsBridgeMx workshop.'
     sandi: 'Sandi Metz'
     sandi-bio: "Sandi Metz has 30 years of experience working on projects that survived to grow and change. She describes herself as an obsessive programmer, Rubyist, cyclist and recalcitrant blogger. Author of 'Practical Object-Oriented Design in Ruby'."
