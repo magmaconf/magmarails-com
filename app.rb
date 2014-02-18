@@ -29,7 +29,10 @@ class Crowdsite < Sinatra::Base
   end
 
   def set_locale
-    browser_locale = request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
+    browser_locale = "es"
+    if request.env['HTTP_ACCEPT_LANGUAGE']
+      browser_locale = request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
+    end
 
     I18n.load_path += Dir[File.join(File.dirname(__FILE__), 'config', 'locales', '*.yml').to_s]
     locale = params[:locale] if params[:locale]
