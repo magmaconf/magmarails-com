@@ -1,5 +1,5 @@
 $(document).ready ->
-  $('#main-menu a').smoothScroll({offset: -111, exclude: ['a.schedule-link']});
+  $('#main-menu a').smoothScroll({offset: -110, exclude: ['a.schedule-link']});
   $('a.schedule-link').smoothScroll({offset: 120});
 
   $('span#magma-logo').click ->
@@ -14,6 +14,7 @@ $(document).ready ->
 
   $(window).scroll ->
     scrollPosition = $(@).scrollTop()
+
     if scrollPosition >= 7500 and scrollPosition <= 8886
       $('#schedule #days').addClass('fixed')
     else

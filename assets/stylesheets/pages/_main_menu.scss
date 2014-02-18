@@ -5,6 +5,48 @@
   position: fixed;
   width: 100%;
   z-index: 1000;
+  transition: all .5s ease-in;
+  
+  &.speakers {
+    background: #413531;
+  }
+  
+  &.what-is-magma {
+    background: #312926;
+  }
+  
+  &.location {
+    background: #e3e1d5;
+  }
+  
+  &.venue {
+    background: #b5a898;
+  }
+  
+  &.culture {
+    background: #8e8075;
+  }
+  
+  &.map {
+    background: #EDEEE6;
+  }
+
+  &.schedule {
+    background: #D8D6C5;
+  }
+  
+  &.sponsoring {
+    background: #312926;
+  }
+  
+  &.blog {
+    background: #dedbd4;
+  }
+  
+  &.buy-ticket {
+    background: #fff;
+  }
+  
   span {
     background: image_url('magma.svg') no-repeat;
     display: block;
