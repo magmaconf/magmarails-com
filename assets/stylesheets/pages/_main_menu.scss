@@ -1,10 +1,51 @@
 #main-menu {
   background: image-url('bkg.jpg');
   margin: 0 auto;
-  padding: 15px 0;
   position: fixed;
   width: 100%;
   z-index: 1000;
+  transition: all .5s ease-in;
+  
+  &.speakers {
+    background: #413531;
+  }
+  
+  &.what-is-magma {
+    background: #312926;
+  }
+  
+  &.location {
+    background: #e3e1d5;
+  }
+  
+  &.venue {
+    background: #b5a898;
+  }
+  
+  &.culture {
+    background: #8e8075;
+  }
+  
+  &.map {
+    background: #EDEEE6;
+  }
+
+  &.schedule {
+    background: #D8D6C5;
+  }
+  
+  &.sponsoring {
+    background: #312926;
+  }
+  
+  &.blog {
+    background: #dedbd4;
+  }
+  
+  &.buy-ticket {
+    background: #fff;
+  }
+  
   span {
     background: image_url('magma.svg') no-repeat;
     display: block;
@@ -15,11 +56,15 @@
   }
   ul {
     margin: 0 auto;
-    width: 870px;
-    padding-top: 5px;
-    border-top: 1px solid #584E46;
-    margin-top: 20px;
+    padding: 15px 0 20px;
     text-align: center;
+    #main-section-link, #accommodations {
+      border-right: 0;
+    }
+    #main-section-link {
+      margin-bottom: -15px;
+      padding: 0;
+    }
     li {
       display: inline-block;
       padding-right: 18px;
