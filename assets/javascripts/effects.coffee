@@ -1,24 +1,8 @@
 $(document).ready ->
-  $('#main-menu a').smoothScroll({offset: -110, exclude: ['a.schedule-link']});
-  $('a.schedule-link').smoothScroll({offset: 120});
-
-  $('span#magma-logo').click ->
-    $.smoothScroll ->
-      scrollElement: $('body'),
-      scrollTarget: '#main-section'
-    return false;
 
   height = $(window).height()
   padding = 0
   lst = 0
-
-  $(window).scroll ->
-    scrollPosition = $(@).scrollTop()
-
-    if scrollPosition >= 7500 and scrollPosition <= 8886
-      $('#schedule #days').addClass('fixed')
-    else
-      $('#schedule #days').removeClass('fixed')
 
   $('.arrow').click ->
     $('#home .row').css('padding-bottom', '0')
