@@ -98,16 +98,16 @@
     border-bottom: 1px solid #53433D;
     padding: 30px 0;
     .speaker-name {
-      font-size: 26px;
+      font-size: 150%;
       margin: 0px 0px 10px 30px;
     }
     .time {
-      color: #53433D;
-      font-size: 20px;
+      color: #716059;
+      font-size: 150%;
     }
     .talk-name {
       font-weight: 300;
-      font-size: 18px;
+      font-size: 112.5%%;
       margin-left: 30px;
       margin-top: 18px;
       &.en {
@@ -151,7 +151,7 @@
       }
     }
     &.break .legend {
-      font-size: 30px;
+      font-size: 150%;
     }
     &.announcements .legend {
       font-size: 20px;
