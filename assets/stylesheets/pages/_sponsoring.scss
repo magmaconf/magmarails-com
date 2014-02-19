@@ -107,4 +107,32 @@
     width: 200px;
     margin: 40px auto;
   }
+
+  #contact-form {
+    background: #fff;
+    height: 330px;
+    .title {
+      border-bottom: 1px solid #B7B3AF;
+      height: 24px;
+      margin: 0 auto;
+      margin-top: 46px;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      width: 1170px;
+      span {
+        font-family: oswald;
+        font-size: 24px;
+        font-weight: 400;
+      }
+     }
+    .close-button {
+      color: #2eb5b3;
+      float: right;
+      font-size: 16px;
+      width: 64px;
+      img {
+        margin-left: 6px;
+      }
+    }
+  }
 }
