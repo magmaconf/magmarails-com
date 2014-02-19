@@ -1,6 +1,7 @@
 #sponsoring {
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 70px;
   .big-sponsor-box, .normal-box {
     @include rounded(135px);
     background-color: #50433d;
@@ -83,8 +84,6 @@
     width: 367px;
     height: 275px;
     margin: 0 auto;
-    margin-top: -35px;
-    margin-bottom: 130px;
   }
 
   #sponsors-legend {
