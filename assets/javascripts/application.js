@@ -3,3 +3,4 @@
 //= require effects
 //= require google_map
 //= require main_menu
+//= require schedule

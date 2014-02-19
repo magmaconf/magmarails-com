@@ -1,44 +1,47 @@
 $(document).ready ->
+  $('#main-menu a').smoothScroll({offset: -58, exclude: ['#schedule-link', '#accommodations-link']});
+  $('#schedule-link').smoothScroll({offset: 125});
+  $('#accommodations-link').smoothScroll({offset: 10})
+
+  $('span#magma-logo').click ->
+    $.smoothScroll ->
+      scrollElement: $('body'),
+      scrollTarget: '#main-section'
+    return false;
+
   $(window).scroll ->
     scrollPosition = $(@).scrollTop() + 111
     speakersPosition = $('#speakers').position()['top']
     whatIsMagmaPosition = $('#what-is-magma').position()['top']
-    locationPosition = $('.location').position()['top']
-    venuePosition = $('#venue').position()['top']
-    culturePosition = $('#culture').position()['top']
-    mapPosition = $('#location').position()['top']
+    accommodationsPosition = $('#accommodations').position()['top']
     schedulePosition = $('#schedule').position()['top'] - 144
     sponsoringPosition = $('#sponsoring').position()['top']
 
     if 0 <= scrollPosition && scrollPosition <= speakersPosition
-      console.log "main"
       $('#main-menu').removeClass()
+      $('#main-menu a').removeClass('active')
 
     else if speakersPosition <= scrollPosition <= whatIsMagmaPosition
-      console.log "speakers"
       $('#main-menu').removeClass().addClass('speakers')
-      
-    else if whatIsMagmaPosition <= scrollPosition <= locationPosition
-      console.log "magma"
-      $('#main-menu').removeClass().addClass('what-is-magma')
-    
-    else if scrollPosition >= locationPosition && scrollPosition <= venuePosition
-      console.log "location #{locationPosition}"
-      $('#main-menu').removeClass().addClass('location')
-      
-    else if venuePosition <= scrollPosition <= culturePosition
-      console.log "venue"
-      $('#main-menu').removeClass().addClass('venue')
-    
-    else if culturePosition <= scrollPosition <= mapPosition
-      console.log "culture"
-      $('#main-menu').removeClass().addClass('culture')
+      addActiveClass('#speakers-link')
 
-    else if mapPosition <= scrollPosition <= schedulePosition
-      $('#main-menu').removeClass().addClass('map')
+    else if whatIsMagmaPosition <= scrollPosition <= accommodationsPosition
+      $('#main-menu').removeClass().addClass('what-is-magma')
+      addActiveClass('#what-is-magma-link')
+
+    else if accommodationsPosition <= scrollPosition <= schedulePosition
+      $('#main-menu').removeClass().addClass('accommodations')
+      addActiveClass('#accommodations-link')
 
     else if schedulePosition <= scrollPosition <= sponsoringPosition
       $('#main-menu').removeClass().addClass('schedule')
-    
+      addActiveClass('#schedule-link')
+
     else if sponsoringPosition <= scrollPosition
       $('#main-menu').removeClass().addClass('sponsoring')
+      addActiveClass('#sponsors-link')
+
+
+  addActiveClass = (element) ->
+    $('#main-menu a').removeClass('active')
+    $(element).addClass('active')

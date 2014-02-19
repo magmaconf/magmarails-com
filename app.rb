@@ -29,11 +29,34 @@ class Crowdsite < Sinatra::Base
   end
 
   def set_locale
-    browser_locale = request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
+    browser_locale = "es"
+    if request.env['HTTP_ACCEPT_LANGUAGE']
+      browser_locale = request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
+    end
 
     I18n.load_path += Dir[File.join(File.dirname(__FILE__), 'config', 'locales', '*.yml').to_s]
     locale = params[:locale] if params[:locale]
     I18n.locale = locale || browser_locale
+  end
+  
+  get '/what-is-magma' do
+    haml :what_is_magma
+  end
+  
+  get '/accommodations' do
+    haml :accommodations
+  end
+  
+  get '/speakers' do
+    haml :speakers
+  end
+  
+  get '/schedule' do
+    haml :schedule
+  end
+  
+  get '/sponsors' do
+    haml :sponsors
   end
 
   get '/?:locale?' do

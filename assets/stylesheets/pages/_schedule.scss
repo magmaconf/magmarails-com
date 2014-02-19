@@ -82,12 +82,18 @@
     margin: 20px 0 10px;
     border-bottom: 2px solid #53433D;
     &.fixed {
+      border-top: 2px solid #53433D;
       position: fixed;
-      top: 93px;
+      top: 39px;
       background: #D8D6C5;
       width: 95%;
       max-width: 1200px;
+      padding-top: 20px;
+      transition: .2s ;
     }
+  }
+  #opening.fixed {
+    margin-top: 85px;
   }
   .row {
     border-bottom: 1px solid #53433D;
