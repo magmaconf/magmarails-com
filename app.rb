@@ -38,6 +38,26 @@ class Crowdsite < Sinatra::Base
     locale = params[:locale] if params[:locale]
     I18n.locale = locale || browser_locale
   end
+  
+  get '/what-is-magma' do
+    haml :what_is_magma
+  end
+  
+  get '/accommodations' do
+    haml :accommodations
+  end
+  
+  get '/speakers' do
+    haml :speakers
+  end
+  
+  get '/schedule' do
+    haml :schedule
+  end
+  
+  get '/sponsors' do
+    haml :sponsors
+  end
 
   get '/?:locale?' do
     set_locale
