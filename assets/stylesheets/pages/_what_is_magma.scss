@@ -1,11 +1,7 @@
 #what-is-magma {
   padding-top: 50px;
-  p {
-    font-size: 100%;
-  }
   .top-box {
     color: #fff;
-    font-family: Oswald;
     font-weight: 700;
 
     .small {
@@ -16,25 +12,31 @@
 
     .medium {
       font-size: 270%;
-      height: 32px;
+      height: 36px;
     }
 
     .big {
       font-size: 420%;
-      line-height: 130px;
+      line-height: 115px;
       height: 106px;
     }
   }
 
-  .title {
-    color: #514642;
-    font-size: 150%;
-    font-weight: 300;
-    margin-bottom: 6px;
-  }
 
   .left-info, .right-info {
+    color: #514640;
+    font-weight: 300;
     margin-top: 40px;
+    .title {
+      color: #514642;
+      font-size: 150%;
+      font-weight: 300;
+      font-family: oswald;
+      margin-bottom: 6px;
+    }
+    p {
+      font-family: roboto;
+    }
   }
 
   .left-info {
@@ -47,12 +49,12 @@
     padding-left: 20px;
   }
 
-  .location, #venue, #culture {
+  #location, #venue, #c#514640ulture {
     border-top: 3px solid #514642;
     max-height: 344px;
   }
 
-  .location {
+  #location {
     background-color: #e3e1d5;
   }
 
