@@ -9,11 +9,13 @@
     margin: 30px auto;
 
     span {
-      display: block;
       color: #e2e1d5;
+      display: block;
+      font-family: oswald;
       font-size: 150%;
-      text-align: center;
+      line-height: 25px;
       position: relative;
+      text-align: center;
     }
   }
 
@@ -57,7 +59,7 @@
       font-weight: 700;
       text-align: center;
       color: #fff;
-      line-height: 108px;
+      line-height: 120px;
     }
 
     .big {
@@ -72,9 +74,9 @@
       line-height: 38px;
       color: #ada193;
       font-weight: 300;
-      font-size: 192.5%;
-      height: 48px;
-      width: 156px;
+      font-size: 187.5%;
+      height: 40px;
+      width: 174px;
       margin: 0 auto 25px auto;
       border-bottom: 3px solid #675851;
     }
