@@ -1,5 +1,6 @@
-#location{
+#accommodations{
   background: #EDEEE6;
+  padding-top: 70px;
   .container {
     max-width: 1200px;
     width: 95%;
@@ -15,7 +16,7 @@
     margin-left: 138px;
     margin-top: -219px;
     z-index: 99;
-    
+
     img {
       width: 100%;
     }
@@ -27,15 +28,13 @@
     text-align: right;
     left: 95px;
     span {
-      font-size: 22px;
-      letter-spacing: -1px;
+      font-family: oswald;
+      font-size: 150%;
+      font-weight: 300;
     }
     p {
-      letter-spacing: 0;
-      font-weight: 300;
-      font-size: 16px;
       color: #1F1818;
-      line-height: 25px;
+      font-family:  roboto;
     }
   }
   #village-image {
@@ -64,7 +63,7 @@
     margin-right: 20px;
     padding-top: 40px;
     .title {
-      font-size: 20px;
+      font-size: 150%;
       margin-bottom: 5px;
     }
     .description-text {
@@ -88,7 +87,7 @@
         background: #21AEAC;
         border: 2px solid #fff;
       }
-      
+
       img { width: 100%;}
     }
   }

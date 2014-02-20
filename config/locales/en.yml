@@ -27,6 +27,14 @@ en:
       emergency: 'Emergencies: 066'
       taxi: 'Taxi: 33 6 90 40'
       back_to: 'Back to MagmaConf'
+  contact-form:
+    title: 'Contact information'
+    cancel-button: 'Cancel'
+    fields:
+      name: 'Name'
+      company: 'Company'
+      email: 'E-mail'
+      submit: 'Contact us'
   daily:
     copy-right: 'Crowd Interactive &copy; 2013. This site is protected by copyright under US and international law. All rights reserved'
     five: 'NO. 5'

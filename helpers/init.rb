@@ -1,0 +1,2 @@
+require_relative 'sponsors_helper'
+Crowdsite.helpers SponsorsHelper

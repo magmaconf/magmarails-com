@@ -40,6 +40,37 @@
           MAGMA CONF?
     .pure-u-1-1
       #mail-button
-        %a.btn-cfp{href: "mailto:anna.tifft@crowdint.com"}
+        %a.btn-cfp
           %img{src: "#{image_path 'contact-sponsor.png'}"}
+  #contact-form
+    .pure-g-r
+      .pure-u-1-1
+        .title
+          %span
+            = t('contact-form.title')
+          %a.cancel-button
+            = t('contact-form.cancel-button')
+            %img{src: "#{image_path 'close.png'}"}
+    .pure-g-r
+      .pure-u-1-1
+        .form-container
+          #message-box
+            %button.close
+              x
+            %span
+          %form#contact
+            %fieldset
+              .field
+                %label{for: 'name'}= t('contact-form.fields.name')
+                %span *
+                %input{name: 'name', type: 'text'}
+              .field
+                %label{for: 'company'}= t('contact-form.fields.company')
+                %span *
+                %input{name: 'company', type: 'text'}
+              .field
+                %label{for: 'email'}= t('contact-form.fields.email')
+                %span *
+                %input{name: 'email', type: 'email'}
+              %input.submit{type: 'submit', value: t('contact-form.fields.submit')}
 

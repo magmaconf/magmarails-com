@@ -71,30 +71,30 @@
   }
 
   background-color:#413531;
+  padding-top: 50px;
   .speaker-name {
     color: #fff;
     display: block;
     text-align: center;
   }
 
-  .awesome {
+  .title {
     color: #fff;
     border-bottom: 3px solid #b4a898;
     font-family: oswald;
     font-weight: 700;
     font-size: 355%;
-    line-height: 52px;
+    line-height: 60px;
     margin: 0 auto 50px auto;
-    max-width: 210px;
+    max-width: 230px;
     padding-bottom: 10px;
   }
 
-  .bottom {
-    position: relative;
-    bottom: -82px;
+  .small-title {
+    font-size: 345%;
   }
 
-  .check {
+  .advice {
     color: $light-brown;
     font-size: 230%;
     font-weight: 300;

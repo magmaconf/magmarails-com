@@ -9,6 +9,8 @@ gem 'i18n'
 gem 'sinatra-asset-pipeline', require: 'sinatra/asset_pipeline'
 gem 'sinatra-i18n', require: 'sinatra/i18n'
 
+gem 'mandrill-api'
+
 gem 'shotgun'
 
 gem 'cactu'
