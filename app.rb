@@ -37,37 +37,37 @@ class Crowdsite < Sinatra::Base
     I18n.load_path += Dir[File.join(File.dirname(__FILE__), 'config', 'locales', '*.yml').to_s]
     locale = params[:locale] if params[:locale]
     I18n.locale = locale || browser_locale
+
+    @date = Time.now.strftime "%b|%d|%Y"
   end
-  
+
   get '/what-is-magma' do
+    set_locale
     haml :what_is_magma
   end
-  
+
   get '/accommodations' do
+    set_locale
     haml :accommodations
   end
-  
+
   get '/speakers' do
+    set_locale
     haml :speakers
   end
-  
+
   get '/schedule' do
+    set_locale
     haml :schedule
   end
-  
+
   get '/sponsors' do
+    set_locale
     haml :sponsors
   end
 
   get '/?:locale?' do
     set_locale
-    time = Time.now
-    mon = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
-
-    @day = time.day
-    @month = mon[time.month - 1]
-    @year = time.year
-
     haml :index
   end
 end
