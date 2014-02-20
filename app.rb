@@ -4,6 +4,7 @@ Bundler.require
 
 require 'sinatra/i18n'
 require 'sinatra/partial'
+require 'mandrill'
 
 class Crowdsite < Sinatra::Base
   register Sinatra::Partial
@@ -70,4 +71,11 @@ class Crowdsite < Sinatra::Base
 
     haml :index
   end
+
+  post '/send_email' do
+    email_status = send_email(params)
+    response.status = email_status[:sent] ? 200 : 500
+  end
 end
+
+require_relative 'helpers/init'
