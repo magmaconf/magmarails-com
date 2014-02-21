@@ -14,12 +14,16 @@ class Crowdsite < Sinatra::Base
   set :root, File.dirname(__FILE__)
   set :assets_precompile, %w(application.js application.css *.png *.jpg *.svg *.ico *.otf *.eot *ttf)
 
+
   configure do
     sprockets.append_path File.join(root, 'assets', 'stylesheets')
     sprockets.append_path File.join(root, 'assets', 'javascripts')
     sprockets.append_path File.join(root, 'assets', 'images')
     sprockets.append_path File.join(root, 'assets', 'fonts')
     sprockets.append_path File.join(root, 'vendor', 'javascripts')
+    
+    sprockets.css_compressor = YUI::CssCompressor.new
+    sprockets.js_compressor = YUI::JavaScriptCompressor.new
 
     I18n.default_locale = :en
   end
