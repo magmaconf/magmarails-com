@@ -1,6 +1,7 @@
 %section#speakers
   #presentation.pure-g-r.content
-    .pure-u-1-4
+    .pure-u-1-4.illustration
+      %img{src: "#{image_path 'speakers-illustration.png'}"}
     .pure-u-1-2
       .invitation
         %p.advice CHECK OUT OUR
@@ -9,6 +10,9 @@
         %span.star
         %p.location JUNE 4TH-6TH | MANZANILLO
         %span.star
+    .pure-u-1-4
+      %a.btn-register.small{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}
+        %img{src: "#{image_path 'register-now.png'}"}
 %section#keynotes
   .pure-g-r.content
     .pure-u-1.center
@@ -27,6 +31,9 @@
         %img{src: "#{image_path 'sandy.png'}"}
         %span.speaker-name Sandi Metz
 %section#speaker-cards
+  .pure-g-r.content.speakers-title
+    .pure-u-1.center
+      %img{src: "#{image_path 'speakers-title.png'}"}
   .pure-g-r.content
     .pure-u-1-6.speaker-box
       .flipper
@@ -116,7 +123,7 @@
           %span.speaker-name Johnny Winn
         .info-box
           %span @johnny_rugger
-          %p The renaissance man from Jacksonville, Johnny embarked on his computing curiosity during the eighties on a Commodore 64. However the road leading toward software craftsmanship has diverged down many paths. From musician to electrical engineer, chef to software developer, rugby player to local politician, the twist and turns have provided a wide range of experiences that have helped to shape him.
+          %p Johnny embarked on his computing curiosity during the 80's on a Commodore 64. The road leading toward software craftsmanship has diverged down many paths, taking him from musician to electrical engineer, chef to software developer, rugby player to local politician, twists and turns have provided lots of experiences that have shaped him.
     .pure-u-1-6.speaker-box
       .flipper
         .normal-box
@@ -169,5 +176,14 @@
           %p A RoR developer for the last 5 years, PJ currently works at Engine Yard as the Community Engineer. Additionally, he organizes the Western New York Ruby Brigade. Traveling to conferences and Ruby meet ups around the US and Canada, PJ likes to spread the word on the importance of community and coding, stressing the importance of outreach and focusing on the human side of being a coder.
 %section#registration
   .top-box
+    %img.shadow{src: "#{image_path 'shadow.png'}"}
     %a.btn-register{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}
       %img{src: "#{image_path 'register-now.png'}"}
+    .social
+      %a.facebook{href: 'http://www.facebook.com/magmaconf', target: '_blank'}
+        %i.icon-facebook
+      %a.twitter{href: 'http://twitter.com/magmaconf', target: '_blank'}
+        %i.icon-twitter
+      %a.google{href: 'https://plus.google.com/+Magmaconf/posts', target: '_blank'}
+        %i.icon-google
+
