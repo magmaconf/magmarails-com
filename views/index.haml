@@ -1,3 +1,38 @@
-= partial :main_section
-= partial :blog
-= partial :buy_ticket
+#main-section
+  .container
+    .pure-g-r
+      .pure-u-1-3.left
+        %img#reylero{src: "#{image_path 'reylero.png'}"}
+      .pure-u-1-3.center
+        %img#date{src: "#{image_path 'date-place.png'}"}
+        %p
+          MEXICO'S PREMIER AND MODERN WEB DEVELOPMENT CONFERENCE
+        %img.shadow{src: "#{image_path 'shadow.png'}"}
+        %a.btn-register{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}
+          %img{src: "#{image_path 'register-now.png'}"}
+      .pure-u-1-3.right
+        #info
+          %p
+            %span MAGMACONF!
+            %br
+            One of the most important web development conferences in Mexico, MagmaConf features talks and discussions
+            about Ruby, Rails, Front-end and more.
+          %p
+            MagmaConf welcomes developers, engineers and designers from all over the world.
+            Come and learn from our speakers and participants about the hottest tools and techniques out there!
+        .social
+          %a.facebook{href: 'http://www.facebook.com/magmaconf', target: '_blank'}
+            %i.icon-facebook
+          %a.twitter{href: 'http://twitter.com/magmaconf', target: '_blank'}
+            %i.icon-twitter
+          %a.google{href: 'https://plus.google.com/+Magmaconf/posts', target: '_blank'}
+            %i.icon-google
+#blog
+  %section.pure-g-r
+    .pure-u-1-1.content
+      %img.banner{src: "#{image_path 'banner-immage.png'}"}
+      %img.shadow{src: "#{image_path 'shadow.png'}"}
+      %a.btn-register{href: 'http://blog.magmaconf.com/', target: '_blank'}
+        %img{src: "#{image_path 'el-blog-del-luchador.png'}"}
+      %p STAY UP-TO-DATE ON ALL
+      %p THINGS MAGMA CONF WITH...
