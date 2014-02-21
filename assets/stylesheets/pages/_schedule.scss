@@ -1,113 +1,153 @@
 #schedule {
   background: #D8D6C5;
-  padding-top: 70px;
+  padding-top: 107px;
   .container {
     margin: 0 auto;
     max-width: 1200px;
-    width: 95%;
     .bottom {
       border-bottom: 5px solid #53433D;
       .images {
-        margin-top: 24px;
-        margin-bottom: 9px;
+        background-color: #D8D6C5;
+        height: 43px;
+        margin: 24px auto -26px;
+        width: 375px;
+        img {
+          display: block;
+          margin: 0 auto;
+        }
       }
     }
-    .tunnel-image {
-      width: 350px;
-      height: 176px;;
-      margin: 0 auto;
-      margin-top: 80px;
+    .register {
+      width: 173px;
+      margin: 100px auto 0px;
+      .btn-register {
+        margin-top: -196px;
+        margin-left: 11px;
+      }
+    }
+    .social {
+      a {
+        background: #796D60;
+        height: 16px;
+        margin: 0 10px;
+        width: 30px;
+        &:first-child {
+          margin-left: 25px;
+        }
+        &:hover {
+          background: $social-hover;
+        }
+      }
+      .facebook {
+        i {
+          background-position: -76px 0
+        }
+        &:hover i {
+          background-position: -76px -50px;
+        }
+      }
+      .twitter {
+        i {
+          background-position: -139px 0;
+        }
+        &:hover i {
+          background-position: -139px -50px;
+        }
+      }
+      .google {
+        i {
+          background-position: -206px 0;
+        }
+        &:hover i{
+          background-position: -206px -50px;
+        }
+      }
+      .facebook, .google, .twitter {
+        i {
+          margin-top: -9px;
+        }
+      }
     }
   }
-  .top-image {
-    border-bottom: 2px solid #53433D;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-  }
-  #versus {
-    border-bottom: 5px solid #53433D;
-  }
-  .stars {
-    margin-left: 30px;
-    li {
-      height: 30px;
-      width: 30px;
+  .header {
+    margin: 0 auto;
+    width: 455px;
+    .arena, .star {
+      display: block;
+      float: left;
+    }
+    .arena {
+      margin: 0 14px;
     }
   }
-  .stars li, .small-stars li {
-    display: inline-block;
+  #right-mask {
+    margin-top: 3px;
   }
-  .stars, .small-stars{
-    list-style: none;
-    margin-top: 10px;
+  .right-stars li {
+      margin-left: 12px;
+  }
+  .left-stars li {
+    margin-right: 12px;
   }
   .small-stars {
-    margin-left: -5px;
-    margin-top: 50px;
+    list-style: none;
+    margin-top: 30px;
     li {
-      width: 20px;
-      height: 18px;
-      margin-left: 13px;
+      display: inline-block;
+      height: 11px;
+      width: 12px;
     }
   }
   #magma-legend {
     background: #241D1D;
-    margin-top: 15px;
+    height: 35px;
+    margin: 15px 27px 15px 16px;
     p {
       color: #D8D6C5;
-      font-size: 24px;
+      font-size: 16px;
       font-weight: 400;
       letter-spacing: 4px;
-      margin: 10px auto;
-      width: 370px;
+      margin: 7px auto;
+      width: 430px;
+      text-align: center;
     }
   }
   #wednesday-image {
-    width: 281px;
+    width: 168px;
   }
   #thursday-image {
-    width: 264px;
+    width: 158px;
   }
   #friday-image{
-    width: 216px;
+    width: 129px;
   }
   #thursday-image, #friday-image, #wednesday-image {
     margin: 0 auto;
     img {
-      height: 36px;
+      height: 17px;
     }
   }
   #days {
-    margin: 20px 0 10px;
-    border-bottom: 2px solid #53433D;
-    &.fixed {
-      border-top: 2px solid #53433D;
-      position: fixed;
-      top: 39px;
-      background: #D8D6C5;
-      width: 95%;
-      max-width: 1200px;
-      padding-top: 20px;
-      transition: .2s ;
-    }
-  }
-  #opening.fixed {
-    margin-top: 85px;
+    border-bottom: 3px solid #53433D;
+    border-top: 1px solid #53433D;
+    margin: 10px 0;
+    padding: 10px 0 5px;
   }
   .row {
     border-bottom: 1px solid #53433D;
-    padding: 30px 0;
+    padding: 14px 0;
     .speaker-name {
-      font-size: 150%;
+      font-size: 140%;
       margin: 0px 0px 10px 30px;
     }
     .time {
       color: #716059;
-      font-size: 150%;
+      font-size: 100%;
     }
     .talk-name {
-      font-weight: 300;
-      font-size: 112.5%%;
+      font-family: roboto;
+      font-weight: 400;
+      font-size: 100%;
       margin-left: 30px;
       margin-top: 18px;
       &.en {
@@ -151,7 +191,7 @@
       }
     }
     &.break .legend {
-      font-size: 150%;
+      font-size: 140%;
     }
     &.announcements .legend {
       font-size: 20px;

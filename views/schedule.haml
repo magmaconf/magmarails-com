@@ -2,24 +2,22 @@
   .container
     .pure-g-r
       .pure-u-1-1
-        #versus.top-image
-          %img{src: "#{image_path 'mascaravsmascara.svg'}"}
+        .header
+          %img.star{src: "#{image_path 'star.png'}"}
+          %img.arena{src: "#{image_path 'arenamagma.png'}"}
+          %img.star{src: "#{image_path 'star.png'}"}
     .pure-g-r
-      .pure-u-1-1
-        .top-image
-          %img{src: "#{image_path 'lucha-espectacular.svg'}"}
-    .pure-g-r
-      .pure-u-1-4
-        = partial :stars_list
-      .pure-u-1-2
-        .images
-          %img{src: "#{image_path 'arena-magma.svg'}"}
-      .pure-u-1-4
-        = partial :stars_list
-    .pure-g-r#magma-legend
-      .pure-u-1-1
+      .pure-u-2-12.left-stars
+        = partial :small_stars_list
+      .pure-u-2-12
+        %img{src: "#{image_path 'left-mask.png'}"}
+      .pure-u-4-12#magma-legend
         %p
           MAGMACONF 2014 SCHEDULE
+      .pure-u-2-12#right-mask
+        %img{src: "#{image_path 'right-mask.png'}"}
+      .pure-u-2-12.right-stars
+        = partial :small_stars_list
     .pure-g-r#days
       .pure-u-1-3
         #wednesday-image
@@ -30,6 +28,7 @@
       .pure-u-1-3
         #friday-image
           %img{src: "#{image_path 'friday.svg'}"}
+
     .pure-g-r.row#opening.break
       .pure-u-1-24
         %p.time
@@ -168,16 +167,12 @@
       .pure-u-1-4
         %p.legend EOD Announcements
     .pure-g-r.bottom
-      .pure-u-1-4
-        = partial :small_stars_list
-      .pure-u-1-2
+      .pure-u-1-1
         .images
-          %img{src: "#{image_path 'manzanillo-schedule.svg'}"}
-      .pure-u-1-4
-        = partial :small_stars_list
-    .pure-g-r.bottom-image
-      .tunnel-image
-        %img{src: "#{image_path 'tunnel.svg'}"}
+          %img{src: "#{image_path 'manzanillo-schedule.png'}"}
+    .pure-g-r.register
+      = partial :register_button, locals: {img: 'register-now.png' }
+      = partial :social_buttons
 
 
 
