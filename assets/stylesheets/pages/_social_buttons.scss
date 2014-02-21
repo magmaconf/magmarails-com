@@ -1,0 +1,31 @@
+.social {
+  margin-top: 18px;
+  overflow: hidden;
+  padding: 1% 0 20px 0;
+  width: 170px;
+  a {
+    width: 47px;
+    height: 32px;
+    padding-top: 15px;
+    float: left;
+    background: $social-bkg;
+    border-radius: 50%;
+    &.twitter {
+      margin: 0 8% 0;
+    }
+    &:hover {
+      background: $social-hover;
+    }
+  }
+  .facebook:hover i {
+    background-position: -68px -50px;
+  }
+
+  .twitter:hover i {
+    background-position: -132px -50px;
+  }
+
+  .google:hover i {
+    background-position: -198px -50px;
+  }
+}
