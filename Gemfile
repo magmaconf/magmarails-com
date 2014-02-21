@@ -17,3 +17,4 @@ gem 'cactu'
 
 gem 'sinatra-partial'
 gem 'heroku-deflater', :group => :production
+gem 'yui-compressor'
