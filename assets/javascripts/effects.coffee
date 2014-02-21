@@ -51,4 +51,7 @@ $(document).ready ->
 
   $(@).keyup (e) ->
     if (event.which == 27) and ($('#policy').is(':visible'))
-	    close_popup()
+      close_popup()
+
+  $('.speaker-box').bind 'touchstart', (ev) ->
+    this.classList.toggle('hover')
