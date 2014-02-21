@@ -1,0 +1,154 @@
+#speakers {
+<<<<<<< Updated upstream
+  /* flip cards logic */
+  .speaker-box {
+    perspective: 1000;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+  }
+
+  .speaker-box:hover .flipper, .speaker-box.hover .flipper {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+  }
+
+  .flipper {
+    margin: 0 auto;
+    transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    position: relative;
+    .normal-box, .info-box {
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .normal-box {
+    margin-left: 10px;
+    z-index: 2;
+  }
+
+  .info-box {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    background-color: #6b5a53;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    height: 195px;
+    padding: 3px 10px;
+    text-align: center;
+    span {
+      color: #9d9185;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: oswald;
+      border-bottom: 1px solid;
+      width: 100%;
+      height: 22px;
+      display: block;
+      margin: 0 auto 5px;
+    }
+    p {
+      display: block;
+      line-height: 16px;
+      min-width: 170px;
+    }
+  }
+  /* end of flip cards */
+
+  .pure-g-r {
+    min-height: 230px;
+  }
+
+  background-color:#413531;
+=======
+  background-color: #40352f;
+>>>>>>> Stashed changes
+  padding-top: 50px;
+  height: 150px;
+
+  #presentation {
+    font-size: 150%;
+    margin-bottom: 5px;
+    .invitation {
+      border-bottom: 2px solid #b4a898;
+      margin: 0 auto;
+      max-width: 350px;
+    }
+  }
+
+  .title {
+    color: #fff;
+    display: inline-block;
+    font-family: oswald;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  .advice {
+    display: inline-block;
+    color: $light-brown;
+    font-weight: 300;
+    height: 28px;
+    margin-top: 50px;
+  }
+
+  .date {
+    text-align: center
+  }
+
+  .location {
+    display: inline-block;
+    font-size: 70%;
+    font-weight: 300;
+    text-align: center;
+    max-width: 230px;
+    margin: 0 auto;
+    color: #ada193;
+  }
+
+  .star {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: url("/assets/star.svg") 0px -1px;
+  }
+}
+
+#keynotes, #speaker-cards {
+  .speaker-name {
+    color: #fff;
+    display: block;
+    text-align: center;
+  }
+  .center img {
+    margin-top: 20px;
+  }
+}
+
+#keynotes {
+  background-color: #382e2c;
+}
+
+#speaker-cards {
+  background-color: #40352f;
+}
+
+#registration {
+  background-color: #312926;
+
+  .top-box {
+    text-align: center;
+  }
+}

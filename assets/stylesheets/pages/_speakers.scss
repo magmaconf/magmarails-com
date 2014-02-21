@@ -1,4 +1,78 @@
 #speakers {
+  background-color:#413531;
+  padding-top: 50px;
+  height: 150px;
+
+  #presentation {
+    font-size: 150%;
+    margin-bottom: 5px;
+    .invitation {
+      border-bottom: 2px solid #b4a898;
+      margin: 0 auto;
+      max-width: 350px;
+    }
+  }
+
+  .title {
+    color: #fff;
+    display: inline-block;
+    font-family: oswald;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  .advice {
+    display: inline-block;
+    color: $light-brown;
+    font-weight: 300;
+    height: 28px;
+    margin-top: 50px;
+  }
+
+  .date {
+    text-align: center
+  }
+
+  .location {
+    display: inline-block;
+    font-size: 70%;
+    font-weight: 300;
+    text-align: center;
+    max-width: 230px;
+    margin: 0 auto;
+    color: #ada193;
+  }
+
+  .star {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: url("/assets/star.svg") 0px -1px;
+  }
+}
+
+#keynotes, #speaker-cards {
+  .speaker-name {
+    color: #fff;
+    display: block;
+    text-align: center;
+  }
+  .center img {
+    margin-top: 20px;
+  }
+}
+
+#keynotes {
+  background-color: #382e2c;
+}
+
+#speaker-cards {
+  .pure-g-r {
+    min-height: 230px;
+  }
+
+  padding-top: 50px;
+  background-color: #40352f;
   /* flip cards logic */
   .speaker-box {
     perspective: 1000;
@@ -66,39 +140,11 @@
   }
   /* end of flip cards */
 
-  .pure-g-r {
-    min-height: 230px;
-  }
+}
 
-  background-color:#413531;
-  padding-top: 50px;
-  .speaker-name {
-    color: #fff;
-    display: block;
+#registration {
+  background-color: #312926;
+  .top-box {
     text-align: center;
-  }
-
-  .title {
-    color: #fff;
-    border-bottom: 3px solid #b4a898;
-    font-family: oswald;
-    font-weight: 700;
-    font-size: 355%;
-    line-height: 60px;
-    margin: 0 auto 50px auto;
-    max-width: 230px;
-    padding-bottom: 10px;
-  }
-
-  .small-title {
-    font-size: 345%;
-  }
-
-  .advice {
-    color: $light-brown;
-    font-size: 230%;
-    font-weight: 300;
-    height: 32px;
-    margin-top: 50px;
   }
 }
