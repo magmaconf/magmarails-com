@@ -12,9 +12,9 @@ $(document).ready ->
     $('#main-menu').addClass('speakers')
     addActiveClass('#speakers-link')
 
-  else if pathname == '/what-is-magma'
-    $('#main-menu').addClass('what-is-magma')
-    addActiveClass('#what-is-magma-link')
+  else if pathname == '/about-magma'
+    $('#main-menu').addClass('about-magma')
+    addActiveClass('#about-magma-link')
 
   else if pathname == '/accommodations'
     $('#main-menu').addClass('accommodations')

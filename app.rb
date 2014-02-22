@@ -46,9 +46,9 @@ class Crowdsite < Sinatra::Base
     @date = Time.now.strftime "%b|%d|%Y"
   end
 
-  get '/what-is-magma' do
+  get '/about-magma' do
     set_locale
-    haml :what_is_magma
+    haml :about_magma
   end
 
   get '/accommodations' do

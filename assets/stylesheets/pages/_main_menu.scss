@@ -13,8 +13,8 @@
     background: #413531;
   }
 
-  &.what-is-magma {
-    background: #312926;
+  &.about-magma {
+    background: #f2f3ed;
   }
 
   &.accommodations {
@@ -87,7 +87,7 @@
   }
 
 
-  &.accommodations, &.schedule {
+  &.accommodations, &.schedule, &.about-magma {
     #magma-logo {
       content: image_url('logo-magma.png') no-repeat;
     }
