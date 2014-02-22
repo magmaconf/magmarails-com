@@ -6,7 +6,7 @@ $(document).ready ->
     $(element).addClass('active')
 
   if pathname == '/'
-    $('#main-menu').removeClass()
+    $('#main-menu').addClass('index')
 
   else if pathname == '/speakers'
     $('#main-menu').addClass('speakers')
