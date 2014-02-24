@@ -38,7 +38,7 @@
   }
 
   #magma-logo {
-    content: image_url('logo-magma-brown.svg') no-repeat;
+    background: image-url('logo-magma-brown.svg') no-repeat;
     cursor: pointer;
     display: block;
     height: 37px;
@@ -89,7 +89,7 @@
 
   &.accommodations, &.schedule, &.about-magma {
     #magma-logo {
-      content: image_url('logo-magma.png') no-repeat;
+      background: image-url('logo-magma.png') no-repeat;
     }
     ul li {
       border-right: 1px solid #6c5a53;
