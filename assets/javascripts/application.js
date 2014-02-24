@@ -3,7 +3,6 @@
 //= require jquery.validate
 //= require effects
 //= require google_map
-//= require main_menu
-//= require footer
+//= require switch_background
 //= require schedule
 //= require sponsors
