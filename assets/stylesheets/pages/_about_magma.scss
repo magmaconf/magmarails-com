@@ -61,9 +61,10 @@
 
     .star {
       display: inline-block;
-      height: 15px;
-      width: 15px;
-      background: url("/assets/star.svg") 0px -1px;
+      height: 14px;
+      width: 14px;
+      background: url("/assets/star.png");
+      background-size: 15px;
     }
   }
 
