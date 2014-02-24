@@ -1,16 +1,94 @@
 #footer {
-  background: #1F1817;
   padding-top: 20px;
   .container {
     max-width: 1200px;
     margin: 0 auto;
   }
 
+  &.index {
+    .social {
+      display: none;
+    }
+    #copy-right {
+      padding-top: 20px;
+    }
+  }
+
+  &.brown {
+    background: #1F1817;
+  }
+  &.schedule {
+    background: #D8D6C5;
+  }
+  &.about-magma {
+    background: #f2f3ed;
+  }
+
+  &.accommodations {
+    background: #EDEEE6;
+  }
+
+  &.schedule, &.about-magma, &.accommodations {
+    .anti  h3, .footer-legend p {
+      color: #5f514c
+    }
+    .footer-legend a {
+      color: #000;
+    }
+    .social a {
+      background: #796D60;
+    }
+  }
+
+  .social {
+    margin: 0 auto;
+    a {
+      background: $social-bkg;
+      height: 16px;
+      margin: 0 10px;
+      width: 30px;
+      &:first-child {
+        margin-left: 25px;
+      }
+      &:hover {
+        background: $social-hover;
+      }
+    }
+    .facebook {
+      i {
+        background-position: -76px 0
+      }
+      &:hover i {
+        background-position: -76px -50px;
+      }
+    }
+    .twitter {
+      i {
+        background-position: -139px 0;
+      }
+      &:hover i {
+        background-position: -139px -50px;
+      }
+    }
+    .google {
+      i {
+        background-position: -206px 0;
+      }
+      &:hover i{
+        background-position: -206px -50px;
+      }
+    }
+    .facebook, .google, .twitter {
+      i {
+        margin-top: -9px;
+      }
+    }
+  }
+
   #copy-right {
     border-bottom: 1px solid #5f514c;
     margin: 0 auto;
     max-width: 1127px;
-    padding: 20px 0 0;
     padding-bottom: 7px;
     span {
       background: image_url('crowd.svg') no-repeat;
