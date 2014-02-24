@@ -7,12 +7,11 @@ $(document).ready ->
 
   if pathname is '/'
     $('#main-menu').addClass('index')
-    $('#footer').addClass('index brown')
+    $('#footer').addClass('index')
 
   else if pathname is '/speakers'
     $('#main-menu').addClass('speakers')
     addActiveClass('#speakers-link')
-    $('#footer').addClass('brown')
 
   else if pathname is '/about-magma'
     $('#main-menu').addClass('about-magma')
@@ -32,6 +31,5 @@ $(document).ready ->
   else if pathname is '/sponsors'
     $('#main-menu').addClass('sponsoring')
     addActiveClass('#sponsors-link')
-    $('#footer').addClass('brown')
 
 
