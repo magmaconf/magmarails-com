@@ -1,33 +1,25 @@
 #accommodations
-  .container
-    .pure-g-r
-      .pure-u-1-1
-        #map_canvas
-        .map-legend
-          %span
-            THE AIRPORT IS NEAR
-          %p
-            %br
-            Manzanillo's International Airport is only 15 minutes away from the MagmaConf Venue.
-            This airport connects Manzanillo with Los Angeles, Vancouver, Huston and Mexico City.
-    .pure-g-r
-      #airplane
-        %img{src: "#{image_path 'airplane.svg'}"}
-    .pure-g-r#accommodation-section
-      .pure-u-1-1
-        #village-image
-          %img{src: "#{image_path 'magma-village.svg'}"}
-      .pure-u-1-1
-        #accommadtions-legend
-          %p
-            A MEXICAN
-          %P
-            PARADISE
-          %P
-            IS WAITING FOR YOU!
-    .pure-g-r
-      #village-info
+  #heading
+    .container
+      .pure-g-r
+        .pure-u-1-4
+          #beach-image
+            %img.illustration{src: "#{image_path 'beach-image.svg'}"}
         .pure-u-1-2
+          .invitation
+            %p.advice A MEXICAN PARADISE
+            %p.title IS WAITING FOR YOU!
+          .date
+            %span.star
+            %p.location JUNE 4TH-6TH | MANZANILLO
+            %span.star
+        .pure-u-1-6
+          %a.btn-register.small{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}
+            %img{src: "#{image_path 'register-now.png'}"}
+  #village-info
+    .container
+      .pure-g-r
+        .pure-u-2-5
           #description
             %p.title
               WELCOME TO
@@ -41,9 +33,6 @@
               on the sand after a long day of talks, or dip your toes in the balmy Mexican ocean.
             %a.btn-register{href: "http://store.magmaconf.com/", target: "_blank"}
               %img{src: "#{image_path 'book-now.svg'}"}
-        .pure-u-1-2
-          #village
+        .pure-u-3-5
+          #village-image
             %img{src: "#{image_path 'village-description.jpg'}"}
-        .pure-u-1-1
-          #beach-image
-            %img{src: "#{image_path 'beach-image.svg'}"}
