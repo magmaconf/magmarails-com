@@ -81,8 +81,9 @@
   .register {
     width: 173px;
     margin: 0 auto;
+    height: 180px;
     .btn-register {
-      margin-top: -196px;
+      top: -196px;
       margin-left: 11px;
       z-index: 2;
     }

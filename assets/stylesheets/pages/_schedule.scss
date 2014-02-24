@@ -18,10 +18,12 @@
       }
     }
     .register {
-      width: 173px;
+      max-height: 180px;
       margin: 100px auto 0px;
+      width: 173px;
       .btn-register {
-        margin-top: -196px;
+        position: relative;
+        top: -196px;
         margin-left: 11px;
       }
     }
@@ -39,6 +41,7 @@
   }
   #right-mask {
     margin-top: 3px;
+    text-align: right;
   }
   .right-stars li {
       margin-left: 12px;
@@ -58,14 +61,14 @@
   #magma-legend {
     background: #241D1D;
     height: 35px;
-    margin: 15px 27px 15px 16px;
+    margin: 15px 0;
     p {
       color: #D8D6C5;
       font-size: 16px;
       font-weight: 400;
       letter-spacing: 4px;
       margin: 7px auto;
-      width: 430px;
+      width: 400px;
       text-align: center;
     }
   }
