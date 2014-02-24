@@ -2,6 +2,14 @@
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 70px;
+
+  .illustration {
+    max-width: none;
+    position: relative;
+    left: -90px;
+    bottom: 45px;
+  }
+
   .big-sponsor-box, .normal-box {
     @include rounded(135px);
     background-color: #50433d;
@@ -12,7 +20,7 @@
       color: #e2e1d5;
       display: block;
       font-family: oswald;
-      font-size: 150%;
+      font-size: 155%;
       line-height: 25px;
       position: relative;
       text-align: center;
@@ -82,31 +90,14 @@
     }
   }
 
-  #car-image {
-    width: 367px;
-    height: 275px;
-    margin: 0 auto;
-  }
-
-  #sponsors-legend {
-    width: 293px;
-    margin: 30px auto;
-    p {
-      color: #fff;
-      font-weight: 300;
-      font-size: 24px;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-  }
-
   #sponsors {
     padding-top: 30px;
   }
 
   #mail-button {
-    width: 200px;
     margin: 40px auto;
+    text-align: center;
+    width: 200px;
   }
 
   #contact-form {
@@ -248,6 +239,62 @@
       margin-right: 10px;
       background: transparent;
       cursor: pointer;
+    }
+  }
+
+  .btn-register.small {
+    height: 100px;
+    width: 100px;
+    margin-top: 42px;
+    padding: 12px 16px;
+  }
+
+  .heading {
+    font-size: 28px;
+    height: 190px;
+    text-align: center;
+    .invitation {
+      border-bottom: 2px solid #b4a898;
+      margin: 25px auto 0 auto;
+      max-width: 264px;
+    }
+
+    .title {
+      color: #706159;
+      display: inline-block;
+      font-family: oswald;
+      font-weight: 300;
+      line-height: 36px;
+    }
+
+    .advice {
+      display: inline-block;
+      color: #fff;
+      font-weight: 400;
+      height: 28px;
+      margin-top: 50px;
+    }
+
+    .date {
+      text-align: center
+    }
+
+    .location {
+      color: #706159;
+      display: inline-block;
+      font-size: 60%;
+      font-weight: 300;
+      text-align: center;
+      max-width: 230px;
+      margin: 0 auto;
+    }
+
+    .star {
+      display: inline-block;
+      height: 14px;
+      width: 14px;
+      background: url("/assets/star.png");
+      background-size: 15px;
     }
   }
 }
