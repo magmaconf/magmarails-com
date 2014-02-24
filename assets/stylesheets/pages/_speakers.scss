@@ -92,6 +92,7 @@
   padding-bottom: 30px;
   padding-top: 30px;
   margin-bottom: 40px;
+
   /* flip cards logic */
   .speaker-box {
     perspective: 1000;
@@ -142,6 +143,7 @@
     text-align: center;
     span {
       color: #9d9185;
+      font-family: oswald;
       font-size: 16px;
       font-weight: 700;
       border-bottom: 1px solid;
