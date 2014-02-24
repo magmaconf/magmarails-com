@@ -32,13 +32,13 @@ $(document).ready ->
 
   $('#mail-button a').click ->
     toggleContactForm()
+    $("input[name='name']").focus()
 
   $('.cancel-button').click ->
     toggleContactForm()
 
   toggleContactForm = ->
-    $('#mail-button').toggle()
-    $('#contact-form').toggle()
+    $('#contact-form').slideToggle()
 
   clearFormFields = ->
     $('.field input').val('')
