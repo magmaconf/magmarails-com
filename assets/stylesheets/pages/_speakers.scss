@@ -76,18 +76,6 @@
   }
 }
 
-#keynotes {
-  background-color: #382e2c;
-
-  .top-box {
-    text-align: center;
-
-    img {
-      width: 75%;
-    }
-  }
-}
-
 #speaker-cards {
   .pure-g-r {
     height: 230px;
@@ -100,7 +88,9 @@
   padding-bottom: 30px;
   padding-top: 30px;
   margin-bottom: 40px;
+}
 
+#speaker-cards, #keynotes {
   /* flip cards logic */
   .speaker-box {
     perspective: 1000;
@@ -168,8 +158,22 @@
     }
   }
   /* end of flip cards */
-
 }
+
+#keynotes {
+  background-color: #382e2c;
+  height: 340px;
+
+  .flipper {
+    .normal-box {
+      margin-left: 30px;
+    }
+    .info-box {
+      left: 25px;
+    }
+  }
+}
+
 
 #registration {
   background-color: #312926;

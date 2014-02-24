@@ -19,18 +19,30 @@
       %img{src: "#{image_path 'keynotes-title.png'}"}
   .pure-g-r.content
     .pure-u-1-5
-    .pure-u-1-5
-      .top-box
-        %img{src: "#{image_path 'desi-mcadam.png'}"}
-        %span.speaker-name Desi McAdam
-    .pure-u-1-5
-      .top-box
-        %img{src: "#{image_path 'fred-george.png'}"}
-        %span.speaker-name Fred George
-    .pure-u-1-5
-      .top-box
-        %img{src: "#{image_path 'sandy.png'}"}
-        %span.speaker-name Sandi Metz
+    .pure-u-1-5.speaker-box
+      .flipper
+        .normal-box
+          %img{src: "#{image_path 'desi-mcadam.png'}"}
+          %span.speaker-name Desi McAdam
+        .info-box
+          %span
+          %p
+    .pure-u-1-5.speaker-box
+      .flipper
+        .normal-box
+          %img{src: "#{image_path 'fred-george.png'}"}
+          %span.speaker-name Fred George
+        .info-box
+          %span
+          %p
+    .pure-u-1-5.speaker-box
+      .flipper
+        .normal-box
+          %img{src: "#{image_path 'sandy.png'}"}
+          %span.speaker-name Sandi Metz
+        .info-box
+          %span
+          %p
 %section#speaker-cards
   .pure-g-r.content.speakers-title
     .pure-u-1.center
