@@ -46,4 +46,19 @@
       max-width: 310px !important;
     }
   }
+
+  #about-magma {
+
+    .heading {
+      font-size: 22px;
+
+      img {
+        left: -120px !important;
+      }
+    }
+
+    .invitation {
+      width: 412px;
+    }
+  }
 }
