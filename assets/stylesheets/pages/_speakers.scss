@@ -77,8 +77,13 @@
 }
 
 #speaker-cards {
+
   .pure-g-r {
     height: 230px;
+
+    .content {
+      max-width: 1201px !important;
+    }
   }
 
   .speakers-title {
@@ -154,7 +159,6 @@
       display: block;
       font-family: roboto;
       line-height: 16px;
-      min-width: 170px;
     }
   }
   /* end of flip cards */

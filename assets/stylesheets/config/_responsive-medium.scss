@@ -5,10 +5,6 @@
 
   @include grid_centered($gm-column, $gm-gutter);
   
-  .content {
-    width: 1024px;
-  }
-  
   #accommodations {
     #beach-image {
       img {
