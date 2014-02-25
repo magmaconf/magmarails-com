@@ -1,18 +1,22 @@
 #main-menu.pure-g-r
   .pure-u-1-1
-    %ul
-      %li
+    %ul.hidden
+      %li.toggle.hidden
         %a#speakers-link{href: '/speakers'} speakers
-      %li
+      %li.toggle.hidden
         %a#schedule-link{href: '/schedule'} schedule
-      %li
+      %li.toggle.hidden
         %a#about-magma-link{href: '/about-magma'} about magma
       %li#main-section-link
         %a{href: '/'}
           #magma-logo
-      %li
+      %li.toggle.hidden
         %a#accommodations-link{href: '/accommodations'}  accommodations
-      %li
+      %li.toggle.hidden
         %a#sponsors-link{href: '/sponsors'} sponsors
-      %li
+      %li.toggle.hidden
         %a.blog-link{href: 'http://blog.magmaconf.com/', target: '_blank'} blog
+    %div#btn-menu
+      %span
+      %span
+      %span
