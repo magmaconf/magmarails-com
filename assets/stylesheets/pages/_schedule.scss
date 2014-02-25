@@ -64,11 +64,10 @@
     margin: 15px 0;
     p {
       color: #D8D6C5;
-      font-size: 16px;
+      font-size: 115%;;
       font-weight: 400;
       letter-spacing: 4px;
       margin: 7px auto;
-      width: 400px;
       text-align: center;
     }
   }
@@ -103,6 +102,7 @@
     .time {
       color: #716059;
       font-size: 100%;
+      margin-left: 5px;
     }
     .talk-name {
       font-family: roboto;
@@ -129,7 +129,7 @@
       }
     }
     div:last-child {
-      p, .keynotes-image {
+      .speaker-name, .talk-name, .keynotes-image {
         margin-left: 60px;
       }
       .language-image.en {

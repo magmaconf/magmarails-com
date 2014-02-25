@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   @include grid_generator($gm-column, $gm-gutter);
 
   @include grid_offset($gm-column, $gm-gutter);
@@ -47,9 +47,7 @@
       font-size: 95%;
     }
   }
-}
 
-@media screen and (max-device-width: 768px) {
   #main-menu {
     ul {
       height: 30px;
@@ -77,9 +75,10 @@
       }
 
       #main-section-link {
-        left: 338px;
+        left: 0;
         position: absolute;
         top: 15px;
+        width: 100%;
       }
     }
     #btn-menu{
@@ -148,6 +147,86 @@
       span {
         top: 40px;
         width: 100px;
+      }
+    }
+  }
+
+  #schedule {
+    .container {
+      width: 95%;
+    }
+    #magma-legend p {
+      font-size: 85%;
+    }
+    .small-stars {
+      margin-top: 28px;
+    }
+    #right-mask{
+      margin-left: 3px;
+      margin-right: -9px;
+    }
+    #left-mask, #right-mask {
+      margin-top: 10px;
+    }
+    .row {
+      .language-image.en {
+        width: 26px;
+        height: 26px;
+        margin-right: 0;
+        margin-left: 21px
+      }
+      .speaker-name {
+        margin-left: 25px;
+      }
+      .talk-name.en {
+        margin-left: 53px;
+        max-width: 175px;
+      }
+      &#keynote {
+        div:last-child {
+          .speaker-name, .keynotes-image {
+            margin-left: 27px;
+          }
+        }
+        .keynotes-image {
+          width: 26px;
+          height: 26px;
+        }
+      }
+      div:last-child {
+        .talk-name {
+          margin-left: 27px;
+          &.en {
+            margin-left: 63px;
+          }
+        }
+        .speaker-name {
+          margin-left: 27px;
+        }
+        .language-image.en {
+          margin-left: 24px;
+        }
+        .talk-name.en {
+          margin-left: 59px;
+        }
+      }
+
+      &.break {
+        .legend {
+          margin-left: 25px;
+        }
+        div:last-child .legend {
+          margin-left: 27px;
+        }
+      }
+      &.announcements {
+        div:last-child .legend {
+          margin-left: 26px;
+          width: 180px;
+        }
+        .legend {
+          margin-left: 25px;
+        }
       }
     }
   }
