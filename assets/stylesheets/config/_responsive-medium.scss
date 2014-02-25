@@ -67,4 +67,17 @@
       margin-left: 0px !important;
     }
   }
+
+  #sponsoring {
+    .normal-box {
+      top: 40px;
+      width: 105px;
+      height: 105px;
+
+      span {
+        top: 40px;
+        width: 100px;
+      }
+    }
+  }
 }
