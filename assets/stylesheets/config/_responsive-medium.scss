@@ -4,14 +4,14 @@
   @include grid_offset($gm-column, $gm-gutter);
 
   @include grid_centered($gm-column, $gm-gutter);
-  
+
   #accommodations {
     #beach-image {
       img {
         padding-left: 0;
       }
     }
-    
+
     #description {
       .btn-cfp {
         top: 178px;
@@ -19,12 +19,12 @@
       }
     }
   }
-  
+
   #blog {
     .btn-cfp {
       margin-right: 80px;
     }
-    
+
     p {
       right: 280px;
     }
@@ -98,6 +98,56 @@
     &.about-magma, &.accommodations, &.schedule {
       #btn-menu span {
         background-color: #6c5a53;
+      }
+    }
+  }
+  #speakers {
+    .illustration img {
+      left: -60px;
+      top: 0px;
+      width: 398px;
+    }
+
+    #presentation {
+      font-size: 150%;
+    }
+
+    .invitation {
+      text-align: center;
+      max-width: 310px !important;
+    }
+  }
+
+  #about-magma {
+
+    .heading {
+      font-size: 20px;
+
+      img {
+        bottom: -60px !important;
+        left: -132px !important;
+        width: 350px;
+      }
+    }
+
+    .invitation {
+      width: 412px;
+    }
+
+    .btn-register.small {
+      margin-left: 0px !important;
+    }
+  }
+
+  #sponsoring {
+    .normal-box {
+      top: 40px;
+      width: 105px;
+      height: 105px;
+
+      span {
+        top: 40px;
+        width: 100px;
       }
     }
   }
