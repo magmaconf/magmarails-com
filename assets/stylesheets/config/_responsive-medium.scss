@@ -4,14 +4,14 @@
   @include grid_offset($gm-column, $gm-gutter);
 
   @include grid_centered($gm-column, $gm-gutter);
-  
+
   #accommodations {
     #beach-image {
       img {
         padding-left: 0;
       }
     }
-    
+
     #description {
       .btn-cfp {
         top: 178px;
@@ -19,15 +19,31 @@
       }
     }
   }
-  
+
   #blog {
     .btn-cfp {
       margin-right: 80px;
     }
-    
+
     p {
       right: 280px;
     }
   }
 
+  #speakers {
+    .illustration img {
+      left: -60px;
+      top: 0px;
+      width: 398px;
+    }
+
+    #presentation {
+      font-size: 150%;
+    }
+
+    .invitation {
+      text-align: center;
+      max-width: 310px !important;
+    }
+  }
 }
