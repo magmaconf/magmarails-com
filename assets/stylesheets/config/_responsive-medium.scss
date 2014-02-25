@@ -50,15 +50,21 @@
   #about-magma {
 
     .heading {
-      font-size: 22px;
+      font-size: 20px;
 
       img {
-        left: -120px !important;
+        bottom: -60px !important;
+        left: -132px !important;
+        width: 350px;
       }
     }
 
     .invitation {
       width: 412px;
+    }
+
+    .btn-register.small {
+      margin-left: 0px !important;
     }
   }
 }
