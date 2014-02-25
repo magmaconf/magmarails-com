@@ -23,6 +23,8 @@
   %section.pure-g-r
     .pure-u-1-1.content
       %img.banner{src: "#{image_path 'banner-immage.png'}"}
-      = partial :register_button, locals: {img: 'el-blog-del-luchador.png' }
+      %img.shadow{src: "#{image_path 'shadow.png'}"}
+      %a.btn-register{href: 'http://blog.magmaconf.com/', target: '_blank'}
+        %img{src: "#{image_path 'el-blog-del-luchador.png'}"}
       %p STAY UP-TO-DATE ON ALL
       %p THINGS MAGMACONF WITH...
