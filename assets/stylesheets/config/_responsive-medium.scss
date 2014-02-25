@@ -29,6 +29,24 @@
       right: 280px;
     }
   }
+
+  #footer {
+    padding: 20px 0 10px;
+    #copy-right {
+      a {
+        margin-bottom: -5px;
+      }
+      .title {
+        margin-left: 90px;
+        p:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+    .anti h3 {
+      font-size: 95%;
+    }
+  }
 }
 
 @media screen and (max-device-width: 768px) {

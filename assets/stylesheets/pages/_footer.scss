@@ -3,6 +3,7 @@
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    width: 95%;
   }
 
   &.index {
@@ -87,28 +88,36 @@
     margin: 0 auto;
     max-width: 1127px;
     padding-bottom: 7px;
-    span {
-      background: image_url('crowd.svg') no-repeat;
+    a {
+      display: inline-block;
       height: 33px;
-      margin-bottom: -6px;
-      width: 78px;
-    }
-    p {
-      color: #5f514c;
-      font-size: 12px;
-      letter-spacing: 1px;
-      padding: 0 12px;
-      font-family: roboto;
-      &:last-child {
-        padding-right: 0px;
+      margin-bottom: -13px;
+      #logo-crowd {
+        background: image_url('crowd.svg') no-repeat;
+        display: inline-block;
+        height: 33px;
+        margin-bottom: -25px;
+        width: 78px;
       }
     }
-    p, span {
+    .title {
       display: inline-block;
-    }
-    p:nth-of-type(1) {
-      border-right: 1px solid #4E3F39;
-      height: 16px;
+      margin-left: 80px;
+      margin-top: -38px;
+      p {
+        color: #5f514c;
+        display: inline;
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 0 12px;
+        font-family: roboto;
+        &:first-child {
+          border-right: 1px solid #4E3F39;
+        }
+        &:last-child {
+          padding-right: 0px;
+        }
+      }
     }
   }
 }
