@@ -1,21 +1,30 @@
 //ICONS
 [class *='icon-'] {
-  background: asset-url("sprite.svg") no-repeat;
+  background: url('sprite.svg') no-repeat;
+  background-size: 174px 180px;
   display: inline-block;
 }
 
-.icon-arrow {
-  @include icons(47px, 27px, 0, -49px)
-}
-
 .icon-facebook {
-  @include icons(47px, 27px, -68px, 0)
+  @include icons(1px, -100px);
+
+  &:hover {
+    @include icons(1px, -150px);
+  }
 }
 
 .icon-twitter {
-  @include icons(47px, 27px, -132px, 0)
+  @include icons(-63px, -100px);
+
+  &:hover {
+    @include icons(-63px, -150px);
+  }
 }
 
 .icon-google {
-  @include icons(47px, 27px, -198px, 0)
+  @include icons(-129px, -100px);
+
+  &:hover {
+    @include icons(-129px, -150px);
+  }
 }

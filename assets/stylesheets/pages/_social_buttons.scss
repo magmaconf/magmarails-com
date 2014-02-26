@@ -1,7 +1,7 @@
 .social {
   margin-top: 18px;
   overflow: hidden;
-  padding: 1% 0 20px 0;
+  padding: 1% 0 0;
   width: 170px;
   a {
     width: 47px;
@@ -16,16 +16,5 @@
     &:hover {
       background: $social-hover;
     }
-  }
-  .facebook:hover i {
-    background-position: -68px -50px;
-  }
-
-  .twitter:hover i {
-    background-position: -132px -50px;
-  }
-
-  .google:hover i {
-    background-position: -198px -50px;
   }
 }
