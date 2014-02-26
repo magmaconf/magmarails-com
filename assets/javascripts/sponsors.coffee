@@ -38,7 +38,7 @@ $(document).ready ->
     toggleContactForm()
 
   toggleContactForm = ->
-    $('#contact-form').slideToggle()
+    $('#contact-form').toggle()
 
   clearFormFields = ->
     $('.field input').val('')
