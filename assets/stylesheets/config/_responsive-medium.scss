@@ -87,9 +87,6 @@
         }
       }
     }
-    .anti h3 {
-      font-size: 95%;
-    }
   }
 
   #main-menu {
@@ -307,6 +304,12 @@
 
     .shadow {
       right: 36px;
+    }
+  }
+
+  #footer {
+    .anti h3 {
+      font-size: 95%;
     }
   }
 }
