@@ -30,7 +30,7 @@ $(document).ready ->
     $('#message-box').addClass('error')
     $('#message-box span').text('Your request could not be sent')
 
-  $('#mail-button a').click ->
+  $('.mail-button a').click ->
     toggleContactForm()
     $("input[name='name']").focus()
 
