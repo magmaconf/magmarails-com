@@ -21,10 +21,6 @@
   max-width: 170px;
 }
 
-#mobile-contact-button {
-  display: none;
-}
-
 @mixin rounded($radius: 0.5em) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
