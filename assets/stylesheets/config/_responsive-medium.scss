@@ -290,6 +290,26 @@
       }
     }
   }
+
+  #accommodations{
+    padding-top: 80px;
+    #heading .container {
+      font-size: 200%;
+      width: 100%
+    }
+    #village-info {
+      height: 614px;
+
+      #village-image {
+        height: 614px;
+        width: 614px;
+      }
+
+      .description-text {
+        width: 355px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 915px) {
@@ -310,6 +330,48 @@
   #footer {
     .anti h3 {
       font-size: 95%;
+    }
+  }
+
+  #accommodations{
+    #heading{
+      .container {
+        font-size: 165%;
+        .btn-register.small {
+          margin-left: 35px;
+        }
+      }
+      #beach-image {
+        margin-top: 115px;
+      }
+    }
+    #village-info {
+      height: 461px;
+
+      #village-image {
+        height: 461px;
+        width: 461px;
+      }
+
+      #description {
+        .btn-register {
+          height: 105px;
+          margin-top: 23px;
+          margin-right: 88px;
+          padding: 12px 13px;
+          width: 105px;
+
+          img {
+            max-width: 72px;
+            width: 72px;
+          }
+        }
+        .description-text {
+          margin-top: 12px;
+          width: 265px;
+        }
+      }
+
     }
   }
 }
