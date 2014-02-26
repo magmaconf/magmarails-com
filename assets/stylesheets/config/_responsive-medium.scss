@@ -183,6 +183,25 @@
   }
 
   #sponsoring {
+
+    .heading {
+      font-size: 26px;
+    }
+
+    .big-sponsor-box {
+      height: 220px;
+      width: 220px;
+
+      #crowdint {
+        left: 22px;
+        top: 70px;
+      }
+
+      span {
+        left: 20px;
+        top: 90px;
+      }
+    }
     .normal-box {
       top: 40px;
       width: 105px;
