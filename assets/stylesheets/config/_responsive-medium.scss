@@ -128,7 +128,7 @@
   }
 
   #sponsoring {
-
+    padding-top: 90px;
     .heading {
       font-size: 26px;
     }
@@ -324,6 +324,12 @@
   #main-menu {
     ul li {
       padding: 0 10px;
+    }
+  }
+  #sponsoring {
+    padding-top: 100px;
+    .illustration {
+      left: -130px;
     }
   }
 }
