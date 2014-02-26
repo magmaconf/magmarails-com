@@ -4,12 +4,14 @@ Bundler.require
 
 require 'sinatra/i18n'
 require 'sinatra/partial'
+require 'sinatra/content_for'
 require 'mandrill'
 
 class Crowdsite < Sinatra::Base
   register Sinatra::Partial
   register Sinatra::AssetPipeline
   register Sinatra::I18n
+  helpers Sinatra::ContentFor
 
   set :root, File.dirname(__FILE__)
   set :assets_precompile, %w(application.js application.css *.png *.jpg *.svg *.ico *.otf *.eot *ttf)

@@ -16,5 +16,6 @@ gem 'shotgun'
 gem 'cactu'
 
 gem 'sinatra-partial'
+gem 'sinatra-contrib'
 gem 'heroku-deflater', :group => :production
 gem 'yui-compressor'

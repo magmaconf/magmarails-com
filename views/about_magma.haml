@@ -72,3 +72,6 @@
   .pure-g-r.register
     = partial :register_button, locals: {img: 'register-now.png' }
 
+- content_for :javascript do
+  %script{src:"https://maps.googleapis.com/maps/api/js?sensor=false"}
+  %script{src:"#{javascript_path 'google_map'}"}
