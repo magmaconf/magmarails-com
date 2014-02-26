@@ -33,9 +33,9 @@ class Crowdsite < Sinatra::Base
     set :raise_errors, false
     set :show_exceptions, false
     
-    # Sprockets::Helpers.configure do |config|
-    #   config.asset_host = "assets%d.magmaconf.com.global.prod.fastly.net"
-    # end
+    Sprockets::Helpers.configure do |config|
+      config.asset_host = "assets%d.magmaconf.com.global.prod.fastly.net"
+    end
   end
 
   def set_locale
