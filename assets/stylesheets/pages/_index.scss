@@ -51,17 +51,15 @@
         word-spacing: 0;
         padding-bottom: 5px;
       }
-      .btn-register {
-        margin-bottom: 0px;
-        position: relative;
-        top: -71px;
-      }
-      .shadow {
-        display: block;
-        left: 114px;
-        margin-bottom: -69px;
-        position: relative;
-        top: 64px;
+      .register {
+        max-height: 180px;
+        margin: 69px auto;
+        width: 173px;
+        .btn-register {
+          position: relative;
+          top: -205px;
+          margin-left: -3px;
+        }
       }
     }
     .left {
@@ -76,11 +74,11 @@
   background-color: #dedbd4;
 
   section {
-    width: 1200px;
+    max-width: 1200px;
     height: 230px;
     margin: 0 auto;
 
-    img.banner {
+    .banner {
       position: relative;
       top: -39px;
     }
@@ -111,8 +109,9 @@
     border: 2px solid #fff;
     box-shadow: 0 0 0 10px #1F9D9B;
     float: right;
-    margin-top: 19px;
-    margin-right: -38px;
+    left: 38px;
+    position: relative;
+    top: 19px;
     &:hover {
       background: #21AEAC;
       border: 2px solid #fff;
