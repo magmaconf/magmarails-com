@@ -1,0 +1,37 @@
+//Galaxy S3, S4, Nexus
+@media screen and (max-width: 640px) {
+  @include grid_generator;
+
+  #about-magma, #accommodations{
+    .btn-register.small{
+      display: none;
+    }
+  }
+
+  #footer{
+    text-align: center;
+    #copy-right{
+      .title{
+        margin: 0;
+        padding-top: 25px;
+      }
+    }
+
+    .anti{
+      padding: 0 10px;
+      div{
+        float: none;
+        width: 100%;
+      }
+
+      h3{
+        text-align: center;
+      }
+
+      .footer-legend{
+        margin: 20px 0;
+        text-align: center;
+      }
+    }
+  }
+}

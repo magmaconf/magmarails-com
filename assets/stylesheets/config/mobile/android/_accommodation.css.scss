@@ -1,0 +1,98 @@
+//Galaxy S3, S4, Nexus
+@media screen and (max-width: 640px) {
+  @include grid_generator;
+
+  #accommodations{
+    #heading{
+      #beach-image{
+        display: none;
+      }
+      .container{
+        height: 150px;
+        padding: 0;
+
+        .advice{
+          margin: 0;
+        }
+      }
+    }
+
+    #village-info{
+      .container{
+        position: relative;
+
+        #description{
+          padding: 2% 0 15px 0;
+          text-align: center;
+
+          .title{
+            float: left;
+            &:first-child{
+              margin-left: 25%;
+              padding: 0 5px;
+            }
+          }
+
+          .description-text{
+            float: none;
+            padding-top: 93%;
+            width: 100%;
+          }
+
+          .btn-register{
+            margin: 5% 0 0 0;
+          }
+        }
+
+        #village-image{
+          position: absolute;
+          top: 5%;
+          height: 550px;
+          img{
+            height: 550px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  #footer.accommodations{
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #accommodations{
+    #heading{
+      height: 200px;
+      .invitation{
+        margin-top: 55px;
+      }
+    }
+
+    #village-info{
+      .container{
+        #description{
+          .title{
+            font-size: 18px;
+            &:first-child{
+              margin-left: 15%;
+            }
+          }
+
+          .description-text{
+            padding-top: 370px;
+          }
+        }
+
+        #village-image{
+          height: 350px;
+          img{
+            height: 350px;
+          }
+        }
+      }
+    }
+  }
+}
