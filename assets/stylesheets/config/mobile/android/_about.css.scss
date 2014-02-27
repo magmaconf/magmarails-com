@@ -1,0 +1,105 @@
+//Galaxy S3, S4, Nexus
+@media screen and (max-width: 360px) {
+  @include grid_generator;
+
+  #about-magma{
+    height: 2140px;
+    padding: 15% 0 0 0;
+
+    .info-image, .btn-register.small{
+      display: none;
+  }
+
+    .section{
+      display: inline-block;
+      max-height: 500px !important;
+      width: 100%;
+  }
+
+    .content{
+      position: relative;
+  }
+
+    .content-information{
+      text-align: left;
+      float: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      .title{
+        text-align: center;
+    }
+      .description{
+        margin-top: 55%;
+        padding: 0 10px;
+    }
+  }
+
+    .content-image{
+      float: none;
+      left: 0;
+      position: absolute;
+      width: 100%;
+  }
+
+    #location, #culture{
+      .content-image{
+        top: 75px;
+    }
+  }
+
+    #venue{
+      .content-image{
+        top: 50px;
+    }
+  }
+
+    #map-container{
+      height: 400px;
+      .map-legend{
+        left: 0px;
+        position: absolute;
+        padding: 0 10px;
+        text-align: left;
+        top: 60%;
+        width: 305px;
+    }
+  }
+
+    .register.section{
+      text-align: center;
+      img.shadow{
+        margin-top: 10%;
+        padding: 0% 10%;
+        width: 171px;
+    }
+      a{
+        margin: 0;
+    }
+  }
+}
+
+  #footer{
+    text-align: center;
+    #copy-right{
+      .title{
+        margin: 0;
+        padding-top: 25px;
+      }
+    }
+    .anti{
+      padding: 0 10px;
+      div{
+        float: none;
+        width: 100%;
+    }
+      h3{
+        text-align: center;
+    }
+      .footer-legend{
+        margin: 20px 0;
+        text-align: center;
+      }
+    }
+  }
+}

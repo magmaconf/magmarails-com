@@ -13,50 +13,53 @@
     .pure-u-1-4
       %a.btn-register.small{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}
         %img{src: "#{image_path 'register-now.png'}"}
-  .pure-g-r#location
+  .pure-g-r.section#location
     .content
       .pure-u-1-12
-      .pure-u-1-3.left-info
+      .pure-u-1-3.left-info.content-information
         %p.title HOSTED IN BEAUTIFUL
         %p.title MANZANILLO, MEXICO.
         %br
-        %p MagmaConf is a Mexico's Premier modern web development conference.
-        %br
-        %p
+        %p.description
+          MagmaConf is a Mexico's Premier modern web development conference.
+          %br
+          %br
           Conference sessions revolve around Ruby, Rails, Front-end design, and more.
           Attendees include developers, designers and engineers with experience, or hopping to
           gain experience, building cutting-edge web apps. Come and learn not only from our
           awesome speakers, but also from our diverse audience.
-      .pure-u-1-2
+      .pure-u-1-2.content-image
         %img{src: "#{image_path 'manzanillo.jpg'}"}
       .pure-u-1-12
-  .pure-g-r#venue
+  .pure-g-r.section#venue
     .content
       .pure-u-1-12
-      .pure-u-1-2.right
+      .pure-u-1-2.right.content-image
         %img{src: "#{image_path 'venue.jpg'}"}
-      .pure-u-1-3.right-info
+      .pure-u-1-3.right-info.content-information
         %p.title MAGMACONF VENUE
         %br
-        %p Talks and workshop take place at the center of educational technology.
-        %br
-        %p
+        %p.description
+          Talks and workshop take place at the center of educational technology.
+          %br
+          %br
           Located in the University of Colima's El Naranjo campus, the centre is a first-class teaching
           facility, featuring comfortable seating, wi-fi, and air conditioning.
       .pure-u-1-12
-  .pure-g-r#culture
+  .pure-g-r.section#culture
     .content
       .pure-u-1-12
-      .pure-u-1-3.left-info
+      .pure-u-1-3.left-info.content-information
         %p.title OFF CONFERENCE
         %p.title EXPERIENCE
         %br
-        %p MagmaConf offers an amazing opportunity to experience Mexico as never before.
-        %br
-        %p
+        %p.description
+          MagmaConf offers an amazing opportunity to experience ¡Mexico as never before!.
+          %br
+          %br
           Evening activities include engaging group dinners followed by traditional dance performances, thrilling
           wrestling matches and the occasional drink-a-thon. It is sure to be an unforgettable experience.
-      .pure-u-1-2
+      .pure-u-1-2.content-image
         %img{src: "#{image_path 'cultural.jpg'}"}
       .pure-u-1-12
   #map-container.pure-g-r.content
@@ -69,7 +72,7 @@
           %br
           Manzanillo's International Airport is only 15 minutes away from the MagmaConf Venue.
           This airport connects Manzanillo with Los Angeles, Vancouver, Huston and Mexico City.
-  .pure-g-r.register
+  .pure-g-r.register.section
     = partial :register_button, locals: {img: 'register-now.png' }
 
 - content_for :javascript do

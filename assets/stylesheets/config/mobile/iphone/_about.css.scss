@@ -1,0 +1,14 @@
+//Iphone 5, 4
+@media screen and (max-width: 320px) {
+  #about-magma{
+    height: 2110px;
+  }
+
+  #footer{
+    #copy-right{
+      p:nth-child(2){
+        height: auto;
+      }
+    }
+  }
+}
