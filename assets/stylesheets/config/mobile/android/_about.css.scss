@@ -1,24 +1,33 @@
 //Galaxy S3, S4, Nexus
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 640px) {
   @include grid_generator;
 
   #about-magma{
-    height: 2140px;
-    padding: 15% 0 0 0;
+    height: 2485px;
 
-    .info-image, .btn-register.small{
-      display: none;
-  }
+    .heading{
+      .info-image, .btn-register.small{
+        display: none;
+      }
+
+      .invitation{
+        margin: 5% 8% 0;
+      }
+
+      .advice{
+        margin: 0;
+      }
+    }
 
     .section{
       display: inline-block;
-      max-height: 500px !important;
+      max-height: 600px !important;
       width: 100%;
-  }
+    }
 
     .content{
       position: relative;
-  }
+    }
 
     .content-information{
       text-align: left;
@@ -28,31 +37,31 @@
       width: 100%;
       .title{
         text-align: center;
-    }
+      }
       .description{
-        margin-top: 55%;
+        margin-top: 57%;
         padding: 0 10px;
+      }
     }
-  }
 
     .content-image{
       float: none;
       left: 0;
       position: absolute;
       width: 100%;
-  }
+    }
 
     #location, #culture{
       .content-image{
         top: 75px;
+      }
     }
-  }
 
     #venue{
       .content-image{
         top: 50px;
+      }
     }
-  }
 
     #map-container{
       height: 400px;
@@ -62,22 +71,23 @@
         padding: 0 10px;
         text-align: left;
         top: 60%;
-        width: 305px;
+        width: 57%;
+      }
     }
-  }
 
     .register.section{
       text-align: center;
       img.shadow{
-        margin-top: 10%;
-        padding: 0% 10%;
+        margin-top: 7%;
+        padding: 0% 25%;
         width: 171px;
-    }
+      }
+
       a{
         margin: 0;
+      }
     }
   }
-}
 
   #footer{
     text-align: center;
@@ -87,18 +97,55 @@
         padding-top: 25px;
       }
     }
+
     .anti{
       padding: 0 10px;
       div{
         float: none;
         width: 100%;
-    }
+      }
+
       h3{
         text-align: center;
-    }
+      }
+
       .footer-legend{
         margin: 20px 0;
         text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  @include grid_generator;
+
+  #about-magma{
+    height: 2140px !important;
+    padding: 15% 0 0 0;
+
+    .heading{
+      .invitation{
+        margin: 15% 10% 0;
+      }
+    }
+
+    .content-information{
+      .description{
+        margin-top: 55%;
+      }
+    }
+
+    #map-container{
+      .map-legend{
+        width: 305px;
+      }
+    }
+
+    .register.section{
+      img.shadow{
+        margin-top: 10%;
+        padding: 0% 10%;
       }
     }
   }
