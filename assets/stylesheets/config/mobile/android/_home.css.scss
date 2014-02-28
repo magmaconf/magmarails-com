@@ -3,7 +3,9 @@
   @include grid_generator;
 
   #main-section{
-    background: none;
+    background-repeat: no-repeat;
+    background-size: 1043px;
+    padding-bottom: 0;
     .container{
       background: none;
       .left{
