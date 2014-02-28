@@ -3,47 +3,46 @@
   @include grid_generator;
 
   #main-section{
+    background: none;
     padding-bottom: 0;
     .container{
+      background: none;
       .left{
         #reylero{
           height: 200px;
-          margin: 0 0 0 35%;
+          margin: 0 0 0 30%;
         }
       }
 
       .right{
         #info{
-          margin: 0;
-          p{
-            text-align: center;
-            width: 100%;
-          }
+          display: none;
         }
 
         .social{
-          margin: 4% 0 4% 37%;
+          border-top: 4px solid #423732;
+          margin: 0 0 0 28%;
+          padding-top: 25px;
+          width: 44%;
+
+          .twitter{
+            margin: 0 24% 0;
+          }
         }
       }
     }
   }
 
   #blog{
-    .banner{
-      display: none;
-    }
+    display: none;
+  }
 
-    p{
-      margin: 10% 0 0 3%;
-      position: static;
-    }
-
-    .btn-register{
-      left: 90px;
-    }
-
-    .shadow{
-      right: 70px;
+  #footer{
+    .container{
+      #copy-right{
+        margin: 0;
+        padding: 0;
+      }
     }
   }
 }
@@ -52,43 +51,21 @@
   @include grid_generator;
 
   #main-section{
-    padding-bottom: 0;
     .container{
       .left{
         #reylero{
-          margin: 0 0 0 20%;
+          margin: 0 0 0 16%;
         }
       }
 
       .right{
         .social{
-          margin: 4% 0 4% 25%;
+          width: 50%;
+          .twitter{
+            margin: 0 10% 0;
+          }
         }
       }
-    }
-  }
-
-  #blog{
-    height: 350px;
-
-    .shadow{
-      float: none;
-      left: 96px;
-      right: 0px;
-      top: 75px;
-    }
-
-    .btn-register{
-      float: none;
-      left: -68px;
-      top: 0;
-      right: 0px;
-    }
-
-    p{
-      float: none;
-      text-align: center;
-      width: 94%;
     }
   }
 }
