@@ -60,3 +60,41 @@ es:
     for: 'patrocinio'
     organize: 'Si tú patrocinas MagmaConf, tendrás la oportunidad de mostrar tu marca en un evento único en su especie. Un evento tan increíble sólo puede tener patrocinadores increíbles. ¿Eres uno de ellos?'
     email: 'info@magmaconf.com'
+  keynotes:
+    desi:
+      bio: 'She is one of the cofounders of DevChix, an international organization of female software developers, and she loves Ruby. She is also active in the RailsBridge community and spreads the word of diversity.  During the last MagmaConf  she coordinated the first @RailsBridgeMx workshop.'
+    fred:
+      bio: 'Fred George has been writing code for over 45 years in (by his count) over 70 languages. An early adopter of OO and Agile, Fred continues to impact the industry with his leading­edge ideas.'
+    sandi:
+      bio: "Sandi Metz has 30 years of experience working on projects that survived to grow and change. She describes herself as an obsessive programmer, Rubyist, cyclist and recalcitrant blogger. Author of “Practical Object-Oriented Design in Ruby”  http://www.poodr.com/"
+  speakers:
+    manuel:
+      bio: ':passions = {:software, :people, :value} :skills = {:agile_bdd, :patterns} :pl = {:ruby, :js} :new = {:scala, :clojure, :fancy} :web = {:rails, :sinatra}'
+    jesse:
+      bio: "Jesse is an engineer at GitHub, where she spends most of her time doing backend ruby and rails work. When she's not opening pull requests, she enjoys doing yoga, hiking, and traveling."
+    joe:
+      bio: "I help people deliver software that's well designed, fully tested and released early. I coach teams to adopt agile engineering practices with a focus on XP, clean code and continuous delivery. I change roles between coach, developer, architect or tester to demonstrate where the challenges are and work with teams to solve them."
+    david:
+      bio: 'David works at GitHub, in the Enterprise team.'
+    emmanuel:
+      bio: 'He has been a software development professional since 2004. He has a degree in Systems Engineering, and is passionate about learning, teaching and progressively improving things. He is a team player that applies best design patterns and practices in order to build scalable and maintainable software.'
+    richard:
+      bio: "Richard writes Ruby at Heroku at maintains codetriage.com. When he isn't obsessively compulsively playing Starcraft 2 he writes such gems as Wicked, Sextant, and oPRO. Richard is a proud graduate of Space Camp and enjoys the fine art of weiner-dog walking."
+    matthew:
+      bio: 'Matthew Kirk is a partner at Modulus 7, specializing in software development and strategy. The basis of his career has been around utilizing science to improve businesses. In his spare time, he enjoys traveling and adding to his 2000+ vinyl record collection.'
+    blake:
+      bio: 'Sinatra, Doozer, Heroku.'
+    daniel:
+      bio: 'At first, I was a mexican kid that used to play on the computer too much. I liked it, so I became a scientist in France doing research in graphics and computer vision. I got bored, so I tried to do my own financial startup. I failed, so now I am a happy software engineer at a video company.'
+    andre:
+      bio: 'Andr&eacute; thinks Ruby is pretty cool. He designs and builds web applications at Cloud City Development by day, and works on Bundler and Rubygems by night… and also some days.'
+    johnny:
+      bio: "Johnny embarked on his computing curiosity during the 80's on a Commodore 64. The road leading toward software craftsmanship has diverged down many paths, taking him from musician to electrical engineer, chef to software developer, rugby player to local politician, twists and turns that have provided lots of experiences that have shaped him."
+    adam:
+      bio: "I'm a professional yack-shaver at Mint. I'm supposed to be a Rails developer. From dotfiles to development tools, there is nothing that diverts my attention more than fixing something that wasn't really broken in the fist place."
+    leo:
+      bio: 'A Mexican software tester living in Australia, who loves challenging the status quo and pushing herself and others out of their comfort zones. Her passions include (and are not limited to): traveling, learning and teaching, software development, playing football, scuba diving, running, and above all asking questions.'
+    nick:
+      bio: "I'm a software engineer at ModCloth; Amateur juggler; and home automation geek"
+    zachary:
+      bio: 'CRuby committer, contributor to sinatra, rails, rdoc, etc.'
