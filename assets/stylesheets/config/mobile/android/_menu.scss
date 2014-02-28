@@ -2,6 +2,9 @@
   #mobile-header .link {
     font-size: 110% !important;
   }
+  #menu {
+    margin-top: -6px !important;
+  }
 }
 
 @media screen and (max-width: 640px)  {
@@ -14,7 +17,7 @@
       display: block;
       height: 3px;
       margin-bottom: 4px;
-      width: 25px;
+      width: 20px;
     }
   }
 
@@ -37,6 +40,9 @@
     .link {
       color: #ada193;
       font-size: 130%;
+      font-family: oswald;
+      letter-spacing: 1px;
+      font-weight: 300;
     }
 
     #btn-mobile-header {
@@ -49,13 +55,13 @@
 
     #menu {
       display: inline-table;
-      margin-top: -6px;
+      margin-top: -5px;
     }
     #register {
       display: block;
       position: absolute;
       right: 15px;
-      top: 15px;
+      top: 14px;
     }
     #magma-logo {
       background: image-url('logo-magma-brown.svg') no-repeat;
