@@ -1,4 +1,6 @@
-%p.speaker-name= locals[:speaker]
-%img.keynotes-image{src: "#{image_path 'keynote-icon.svg'}"}
-%img.language-image{src: "#{image_path 'english-icon.svg'}", class: "#{locals[:language]}"}
-%span Keynote
+.pure-g-r.keynote.line
+  .pure-u-1-1
+    %p.speaker-name= locals[:speaker]
+    %img.keynotes-image{src: "#{image_path 'keynote-icon.svg'}"}
+    %img.language-image{src: "#{image_path 'english-icon.svg'}", class: "#{locals[:language]}"}
+    %span Keynote

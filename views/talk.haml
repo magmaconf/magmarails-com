@@ -1,5 +1,7 @@
-%p.speaker-name
-  = locals[:speaker]
-%img.language-image{src: "#{image_path 'english-icon.svg'}", class: "#{locals[:language]}"}
-%p.talk-name{class: "#{locals[:language]}" }
-  = locals[:talk_name]
+.pure-g-r.line.talk
+  .pure-u-1-1
+    %p.speaker-name
+      = locals[:speaker]
+    %img.language-image{src: "#{image_path 'english-icon.svg'}", class: "#{locals[:language]}"}
+    %p.talk-name{class: "#{locals[:language]}" }
+      = locals[:talk_name]

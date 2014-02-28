@@ -4,6 +4,7 @@
   .container {
     margin: 0 auto;
     max-width: 1200px;
+    width: 95%;
     .bottom {
       border-bottom: 5px solid #53433D;
       .images {
@@ -22,9 +23,9 @@
       margin: 100px auto 0px;
       width: 173px;
       .btn-register {
+        margin-left: 11px;
         position: relative;
         top: -196px;
-        margin-left: 11px;
       }
     }
   }
@@ -37,6 +38,11 @@
     }
     .arena {
       margin: 0 14px;
+    }
+    .star {
+      background: image_url('star.png');
+      height: 20px;
+      width: 21px;
     }
   }
   #right-mask {
@@ -81,37 +87,39 @@
     width: 129px;
   }
   #thursday-image, #friday-image, #wednesday-image {
-    margin: 0 auto;
+    margin-left: 80px;
     img {
       height: 17px;
     }
   }
-  #days {
+  .head {
     border-bottom: 3px solid #53433D;
     border-top: 1px solid #53433D;
     margin: 10px 0;
+    min-height: 23px;
     padding: 10px 0 5px;
   }
-  .row {
+  .line {
     border-bottom: 1px solid #53433D;
     padding: 14px 0;
     .speaker-name {
       font-size: 140%;
-      margin: 0px 0px 10px 30px;
+      margin: 0px 0px 10px 60px;
     }
     .time {
       color: #716059;
       font-size: 100%;
       margin-left: 5px;
+      text-align: center;
     }
     .talk-name {
       font-family: roboto;
       font-weight: 400;
       font-size: 100%;
-      margin-left: 30px;
+      margin-left: 60px;
       margin-top: 18px;
       &.en {
-        margin-left: 70px;
+        margin-left: 100px;
       }
     }
     img {
@@ -123,43 +131,33 @@
       &.en {
         display: block;
         float: left;
-        margin-left: 30px;
+        margin-left: 60px;
         margin-top: 5px;
         margin-right: 10px;
       }
     }
-    div:last-child {
-      .speaker-name, .talk-name, .keynotes-image {
-        margin-left: 60px;
-      }
-      .language-image.en {
-        margin-left: 60px;
-      }
-      .talk-name.en {
-        margin-left: 100px;
-      }
+    .legend {
+      letter-spacing: 1px;
+      margin-left: 60px;
     }
-    &.break, &.announcements {
+    &.break, &.opening {
       .legend {
-        letter-spacing: 1px;
-        margin-left: 30px;
+        font-size: 140%;
       }
-      div:last-child {
-        .legend {
-          margin-left: 60px;
-        }
-      }
-    }
-    &.break .legend {
-      font-size: 140%;
     }
     &.announcements .legend {
       font-size: 20px;
     }
+    &.talk, &.keynote {
+      min-height: 78px;
+    }
+    &.opening {
+      min-height: 20px;
+    }
   }
-  #keynote {
+  .keynote {
     .keynotes-image {
-      margin-left: 30px;
+      margin-left: 60px;
       margin-right: 8px;
     }
     span {
@@ -179,10 +177,9 @@
       margin-left: 0;
       margin-top: 0;
     }
-    div:last-child {
-      p, .keynotes-image {
-        margin-left: 60px;
-      }
+
+    p {
+      margin-left: 60px;
     }
   }
 }
