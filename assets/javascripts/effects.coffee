@@ -1,5 +1,16 @@
 $(document).ready ->
 
+  Offset = window.screen.width
+  $('#main-menu').css('right', Offset)
+
+  $(window).bind "orientationchange", ->
+    Offset = window.screen.height + 8
+    deactivateTransitions()
+    if isMainMenuOpen()
+      $('body').css('left', Offset)
+    else
+      $('#main-menu').css('right', Offset)
+
   $('#btn-mobile-header').click ->
     showMobileMenu()
 
@@ -9,17 +20,30 @@ $(document).ready ->
   $('#btn-menu').click ->
     hideMobileMenu()
 
+  isMainMenuOpen = ->
+    $('#main-menu').css('right') is '0px'
+
   hideMobileMenu = ->
+    activateTransitions()
     $('body').css
       'left': '0'
       'overflow': 'visible'
-    $('#main-menu').css('right', '700px')
+    $('#main-menu').css('right', Offset)
 
   showMobileMenu = ->
+    activateTransitions()
     $('#main-menu').css('right', '0')
     $('body').css
-      'left': '700px'
+      'left': Offset
       'overflow': 'hidden'
+
+  deactivateTransitions = ->
+    $('body').css('transition-duration', '0s')
+    $('#main-menu').css('transition-duration', '0s')
+
+  activateTransitions = ->
+    $('body').css('transition-duration', '0.3s')
+    $('#main-menu').css('transition-duration', '0.3s')
 
   # Popup
   $('.open_popup').click (e) ->
