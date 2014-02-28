@@ -1,10 +1,4 @@
-#main-menu {
-  margin: 0 auto;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  transition: all .3s ease-in;
-
+#main-menu, #mobile-header {
   &.index {
     background: image-url('bkg.jpg');
   }
@@ -29,13 +23,23 @@
     background: #312926;
   }
 
-  &.blog {
-    background: #dedbd4;
+  &.accommodations, &.schedule, &.about-magma {
+    #magma-logo {
+      background: image-url('logo-magma.png') no-repeat;
+    }
   }
+}
 
-  &.buy-ticket {
-    background: #fff;
-  }
+#mobile-header {
+  display: none;
+}
+
+#main-menu {
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: all .3s ease-in;
 
   #magma-logo {
     background: image-url('logo-magma-brown.svg') no-repeat;
@@ -86,19 +90,15 @@
     }
   }
 
-
   &.accommodations, &.schedule, &.about-magma {
-    #magma-logo {
-      background: image-url('logo-magma.png') no-repeat;
-    }
-    ul li {
+    .link {
       border-right: 1px solid #6c5a53;
       &:last-child, &:nth-of-type(3) {
         border-right: 0;
       }
       a {
         color:  #6c5a53;
-        &:hover, &.active, &.register-now-link {
+        &:hover, &.active {
           color: #000;
         }
         &.active {
@@ -107,5 +107,4 @@
       }
     }
   }
-
 }

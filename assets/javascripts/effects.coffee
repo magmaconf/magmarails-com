@@ -1,8 +1,25 @@
 $(document).ready ->
 
+  $('#btn-mobile-header').click ->
+    showMobileMenu()
+
+  $('#menu').click ->
+    showMobileMenu()
+
   $('#btn-menu').click ->
-    $('#main-menu .toggle').toggleClass('hidden')
-    $('#main-menu ul').toggleClass('hidden')
+    hideMobileMenu()
+
+  hideMobileMenu = ->
+    $('body').css
+      'left': '0'
+      'overflow': 'visible'
+    $('#main-menu').css('right', '700px')
+
+  showMobileMenu = ->
+    $('#main-menu').css('right', '0')
+    $('body').css
+      'left': '700px'
+      'overflow': 'hidden'
 
   # Popup
   $('.open_popup').click (e) ->
