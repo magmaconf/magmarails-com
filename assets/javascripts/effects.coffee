@@ -1,7 +1,7 @@
 $(document).ready ->
 
   Offset = window.screen.width
-  $('#main-menu').css('right', Offset)
+  $('#main-menu').css('right', Offset) if Offset < 641
 
   $(window).bind "orientationchange", ->
     Offset = window.screen.height + 8
