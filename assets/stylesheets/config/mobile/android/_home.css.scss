@@ -1,0 +1,94 @@
+//Galaxy S3, S4, Nexus
+@media screen and (max-width: 640px) {
+  @include grid_generator;
+
+  #main-section{
+    padding-bottom: 0;
+    .container{
+      .left{
+        #reylero{
+          height: 200px;
+          margin: 0 0 0 35%;
+        }
+      }
+
+      .right{
+        #info{
+          margin: 0;
+          p{
+            text-align: center;
+            width: 100%;
+          }
+        }
+
+        .social{
+          margin: 4% 0 4% 37%;
+        }
+      }
+    }
+  }
+
+  #blog{
+    .banner{
+      display: none;
+    }
+
+    p{
+      margin: 10% 0 0 3%;
+      position: static;
+    }
+
+    .btn-register{
+      left: 90px;
+    }
+
+    .shadow{
+      right: 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  @include grid_generator;
+
+  #main-section{
+    padding-bottom: 0;
+    .container{
+      .left{
+        #reylero{
+          margin: 0 0 0 20%;
+        }
+      }
+
+      .right{
+        .social{
+          margin: 4% 0 4% 25%;
+        }
+      }
+    }
+  }
+
+  #blog{
+    height: 350px;
+
+    .shadow{
+      float: none;
+      left: 96px;
+      right: 0px;
+      top: 75px;
+    }
+
+    .btn-register{
+      float: none;
+      left: -68px;
+      top: 0;
+      right: 0px;
+    }
+
+    p{
+      float: none;
+      text-align: center;
+      width: 94%;
+    }
+  }
+}
