@@ -1,0 +1,132 @@
+@media screen and (max-width: 767px) {
+
+  .star {
+    background: image-url("star.png");
+    background-size: 15px;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+  }
+
+  #speakers {
+
+    #presentation {
+      font-size: 145%;
+      text-align: center;
+
+      .illustration img {
+        display: none;
+      }
+
+      .invitation {
+        max-width: 290px;
+      }
+
+      .btn-register.small {
+        display: none;
+      }
+    }
+  }
+
+  #keynotes, #speaker-cards {
+    color: #fff;
+
+    .flipper {
+      display: none;
+    }
+
+    .accordion-group {
+      border-bottom: 1px solid #ada193;
+      display: block;
+
+      .bullet {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .accordion-heading {
+        padding: 15px;
+
+        p {
+          font-family: roboto;
+          font-size: 140%;
+          font-weight: 300;
+        }
+      }
+
+      .accordion-body {
+        display: none;
+        text-align: center;
+        padding: 20px;
+
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+
+        .name {
+          border-bottom: 1px solid #ada193;
+          padding: 5px;
+          font-weight: 300;
+        }
+
+        p {
+          margin-top: 20px;
+          font-family: roboto;
+          font-weight: 300;
+        }
+
+        span {
+          display: inline;
+        }
+      }
+    }
+  }
+
+  #keynotes {
+    height: initial;
+
+    .accordion-heading {
+      background: rgba(65,53,49,0.6);
+
+      .bullet {
+        background: image-url("keynote-icon.svg");
+        background-size: 100%;
+        height: 18px;
+        width: 18px;
+      }
+    }
+
+    .content:first-child {
+      border-bottom: 1px solid #ada193;
+    }
+  }
+
+  #speaker-cards {
+    background-color: #51473f;
+    padding: 0;
+
+    .speakers-title {
+      border-bottom: 1px solid #ada193;
+    }
+    .pure-g-r {
+      height: initial;
+    }
+
+    .accordion-group {
+
+      .bullet {
+        background: image-url("star.png");
+        background-size: 100%;
+        height: 14px;
+        width: 15px;
+      }
+
+      .accordion-body {
+        span {
+          font-size: 140%;
+        }
+      }
+    }
+  }
+}
