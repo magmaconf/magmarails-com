@@ -1,0 +1,37 @@
+//Iphone 5, 4
+@media screen and (max-width: 568px) and (min-width: 361px){
+  @include grid_generator;
+
+  #accommodations{
+    #village-info{
+      .container{
+        #description{
+          .description-text{
+            padding-top: 100%;
+          }
+        }
+
+        #village-image{
+          height: 525px;
+          img{
+            height: 525px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  @include grid_generator;
+
+  #village-info{
+    #description{
+      .title{
+        &:first-child{
+          margin-left: 12% !important;
+        }
+      }
+    }
+  }
+}

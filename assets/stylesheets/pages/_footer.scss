@@ -57,26 +57,26 @@
     }
 
     .icon-facebook {
-      @include footer-icons(-7px, -19px);
+      @include footer-icons(1px, -28px);
 
       &:hover {
-        @include footer-icons(-7px, -59px);
+        @include footer-icons(1px, -62px);
       }
     }
 
     .icon-twitter {
-      @include footer-icons(-71px, -19px);
+      @include footer-icons(-54px, -28px);
 
       &:hover {
-        @include footer-icons(-71px, -59px);
+        @include footer-icons(-54px, -62px);
       }
     }
 
     .icon-google {
-      @include footer-icons(-137px, -19px);
+      @include footer-icons(-110px, -28px);
 
       &:hover {
-        @include footer-icons(-137px, -59px);
+        @include footer-icons(-110px, -62px);
       }
     }
   }
