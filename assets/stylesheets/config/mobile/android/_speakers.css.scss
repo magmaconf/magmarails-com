@@ -9,10 +9,11 @@
   }
 
   #speakers {
-
+    height: 70px;
     #presentation {
       font-size: 145%;
       text-align: center;
+      margin: 0;
 
       .illustration img {
         display: none;
@@ -20,6 +21,11 @@
 
       .invitation {
         max-width: 290px;
+        margin: 0 auto;
+
+        .advice {
+          margin-top: 0;
+        }
       }
 
       .btn-register.small {
