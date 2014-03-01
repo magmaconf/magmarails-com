@@ -27,6 +27,7 @@
         .info-box
           %span @desi
           %p= t('keynotes.desi.bio')
+      = partial :accordion_mobile, locals: {name: 'Desi McAdam', img: 'desi-mcadam.png', bio: t('keynotes.desi.bio')}
     .pure-u-1-5.speaker-box
       .flipper
         .normal-box
@@ -35,6 +36,7 @@
         .info-box
           %span @fgeorge52
           %p= t('keynotes.fred.bio')
+      = partial :accordion_mobile, locals: {name: 'Fred George', img: 'fred-george.png', bio: t('keynotes.fred.bio')}
     .pure-u-1-5.speaker-box
       .flipper
         .normal-box
@@ -43,6 +45,7 @@
         .info-box
           %span @sandimetz
           %p= t('keynotes.sandi.bio')
+      = partial :accordion_mobile, locals: {name: 'Sandi Metz', img: 'sandy.png', bio: t('keynotes.sandi.bio')}
 %section#speaker-cards
   .pure-g-r.content.speakers-title
     .pure-u-1.center
@@ -50,41 +53,58 @@
   .pure-g-r.content
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'manuel-vidaurre.png', name: 'Manuel Vidaurre', social: '@mvidaurre', bio: t('speakers.manuel.bio')}
+      = partial :accordion_mobile, locals: {img: 'manuel-vidaurre.png', name: 'Manuel Vidaurre', bio: t('speakers.manuel.bio')}
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'jesse-thoth.png', name: 'Jesse Toth', social: '@jesseplusplus', bio: t('speakers.jesse.bio')}
+      = partial :accordion_mobile, locals: {img: 'jesse-thoth.png', name: 'Jesse Toth', bio: t('speakers.jesse.bio')}
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'joe-wright.png', name: 'Joe Wright', social: '@joe_jag', bio: t('speakers.joe.bio')}
+      = partial :accordion_mobile, locals: {img: 'joe-wright.png', name: 'Joe Wright', bio: t('speakers.joe.bio')}
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'david-calavera.png', name: 'David Calavera', social: '@calavera', bio: t('speakers.david.bio')}
+      = partial :accordion_mobile, locals: {img: 'david-calavera.png', name: 'David Calavera', bio: t('speakers.david.bio')}
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'emmanuel-delgado.png', name: 'Emmanuel Delgado', social: '@chischaschos', bio: t('speakers.emmanuel.bio')}
+      = partial :accordion_mobile, locals: {img: 'emmanuel-delgado.png', name: 'Emmanuel Delgado', bio: t('speakers.emmanuel.bio')}
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'richard-schneeman.png', name: 'Richard Schneeman', social: '@schneems', bio: t('speakers.richard.bio')}
+      = partial :accordion_mobile, locals: {img: 'richard-schneeman.png', name: 'Richard Schneeman', bio: t('speakers.richard.bio')}
   .pure-g-r.content
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'mark-kirk.png', name: 'Mark Kirk', social: '@mjkirk', bio: t('speakers.matthew.bio')}
+      = partial :accordion_mobile, locals: {img: 'mark-kirk.png', name: 'Mark Kirk', bio: t('speakers.matthew.bio')}
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'blake.png', name: 'Blake Mizerany', social: '@bmizerany', bio: t('speakers.blake.bio')}
+      = partial :accordion_mobile, locals: {img: 'blake.png', name: 'Blake Mizerany', bio: t('speakers.blake.bio')}
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'daniel-rios.png', name: 'Daniel R&iacute;os', social: '@ieldanr', bio: t('speakers.daniel.bio')}
+      = partial :accordion_mobile, locals: {img: 'daniel-rios.png', name: 'Daniel R&iacute;os', bio: t('speakers.daniel.bio')}
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'andre-arko.png', name: 'Andr&eacute;', social: '@indirect', bio: t('speakers.andre.bio')}
+      = partial :accordion_mobile, locals: {img: 'andre-arko.png', name: 'Andr&eacute;', bio: t('speakers.andre.bio')}
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'johnny-winn.png', name: 'Johnny Winn', social: '@johnny_rugger', bio: t('speakers.johnny.bio')}
+      = partial :accordion_mobile, locals: {img: 'johnny-winn.png', name: 'Johnny Winn', bio: t('speakers.johnny.bio')}
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'adam-rogers.png', name: 'Adam Rogers', social: '@rodreegez', bio: t('speakers.adam.bio')}
+      = partial :accordion_mobile, locals: {img: 'adam-rogers.png', name: 'Adam Rogers', bio: t('speakers.adam.bio')}
   .pure-g-r.content
     .pure-u-1-12
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'leo-salazar.png', name: 'Leo Salazar', social: '@leonor_salazar', bio: t('speakers.leo.bio')}
+      = partial :accordion_mobile, locals: {img: 'leo-salazar.png', name: 'Leo Salazar', bio: t('speakers.leo.bio')}
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'nick.png', name: 'Nick Rowe', social: '@nixterrimus', bio: t('speakers.nick.bio')}
+      = partial :accordion_mobile, locals: {img: 'nick.png', name: 'Nick Rowe', bio: t('speakers.nick.bio')}
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'konstantin.png', name: 'Knonstantin Haase', social: '@konstantinhaase', bio: t('speakers.konstantin.bio')}
+      = partial :accordion_mobile, locals: {img: 'konstantin.png', name: 'Konstantin Haase', bio: t('speakers.konstantin.bio')}
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'zachary-scott.png', name: 'Zachary Scott', social: '@_zzak', bio: t('speakers.zachary.bio')}
+      = partial :accordion_mobile, locals: {img: 'zachary-scott.png', name: 'zachary scott', bio: t('speakers.zachary.bio')}
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'pj.png', name: 'PJ Hagerty', social: '@aspleenic', bio: t('speakers.pj.bio')}
+      = partial :accordion_mobile, locals: {img: 'pj.png', name: 'PJ Hagerty', bio: t('speakers.pj.bio')}
 %section#registration
   .top-box
     %img.shadow{src: "#{image_path 'shadow.png'}"}
