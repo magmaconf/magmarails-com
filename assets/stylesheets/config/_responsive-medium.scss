@@ -332,4 +332,33 @@
       left: -130px;
     }
   }
+
+  #schedule .line{
+    &.talk, &.keynote {
+      min-height: 98px;
+    }
+    .talk-name.en {
+      margin-left: 90px;
+    }
+    &.announcements .legend {
+      margin-left: 34px;
+    }
+    .legend {
+      margin-left: 50px;
+    }
+    &.keynote {
+      .keynotes-image {
+        margin-left: 50px;
+      }
+      .language-image.en {
+        margin-left: 0px;
+      }
+    }
+    .speaker-name, .talk-name {
+      margin-left: 50px;
+    }
+    .language-image.en {
+      margin-left: 50px;
+    }
+  }
 }
