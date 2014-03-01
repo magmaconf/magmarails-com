@@ -18,8 +18,10 @@
         %img{src: "#{image_path 'right-mask.png'}"}
       .pure-u-4-24.right-stars
         = partial :small_stars_list
+    %span#left-arrow
+    %span#right-arrow
     .pure-g-r
-      .pure-u-1-24.time
+      .pure-u-1-24#time
         .pure-g-r.head
           .pure-u-1-1
         = partial :hour, locals: { hour: '9:00', class_name: 'opening' }
@@ -34,10 +36,10 @@
         = partial :hour, locals: { hour: '15:20', class_name: 'break' }
         = partial :hour, locals: { hour: '15:40', class_name: 'break' }
         = partial :hour, locals: { hour: '16:00', class_name: 'talk' }
-        = partial :hour, locals: { hour: '16:40', class_name: 'talk' }
+        = partial :hour, locals: { hour: '16:40', class_name: 'keynote' }
         = partial :hour, locals: { hour: '15:40', class_name: 'break' }
 
-      .pure-u-7-24#wednesday
+      .pure-u-7-24#wednesday.active
         .pure-g-r.head
           .pure-u-1-1
             #wednesday-image
