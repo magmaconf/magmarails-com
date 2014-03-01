@@ -5,8 +5,7 @@
         %img#reylero{src: "#{image_path 'reylero-running-nobg.png'}"}
       .pure-u-1-3.center
         %img#date{src: "#{image_path 'date-place.png'}"}
-        %p
-          MEXICO'S PREMIER MODERN WEB DEVELOPMENT CONFERENCE
+        %p= t('home.mexico_primer_dev_conf')
         .register
           = partial :register_button, locals: {img: 'register-now.png' }
       .pure-u-1-3.right
@@ -14,11 +13,8 @@
           %p
             %span MAGMACONF!
             %br
-            One of the most important web development conferences in Mexico, MagmaConf features talks and discussions
-            about Ruby, Rails, Front-end and more.
-          %p
-            MagmaConf welcomes developers, engineers and designers from all over the world.
-            Come and learn from our speakers and participants about the hottest tools and techniques out there!
+            = t('home.one_of_the_most_important')
+          %p= t('home.magma_welcome_dev')
         = partial :social_buttons
 #blog
   %section

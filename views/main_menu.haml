@@ -2,20 +2,20 @@
   .pure-u-1-1
     %ul
       %li.link
-        %a#speakers-link{href: '/speakers'} speakers
+        %a#speakers-link{href: '/speakers'}= t('menu.speakers')
       %li.link
-        %a#schedule-link{href: '/schedule'} schedule
+        %a#schedule-link{href: '/schedule'}= t('menu.schedule')
       %li.link
-        %a#about-magma-link{href: '/about-magma'} about magma
+        %a#about-magma-link{href: '/about-magma'}= t('menu.about')
       %li#main-section-link
         %a{href: '/'}
           #magma-logo
       %li.link
-        %a#accommodations-link{href: '/accommodations'}  accommodations
+        %a#accommodations-link{href: '/accommodations'}= t('menu.accommodations')
       %li.link
-        %a#sponsors-link{href: '/sponsors'} sponsors
+        %a#sponsors-link{href: '/sponsors'}= t('menu.sponsors')
       %li.link
-        %a.blog-link{href: 'http://blog.magmaconf.com/', target: '_blank'} blog
+        %a.blog-link{href: 'http://blog.magmaconf.com/', target: '_blank'}= t('menu.blog')
     %a#btn-menu
       %span
       %span
@@ -27,8 +27,8 @@
       %span
       %span
       %span
-    %span#menu.link MENU
+    %span#menu.link= t('menu.menu')
     %a{href: '/'}
       #magma-logo
     %a#register.link{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}
-      REGISTER
+      = t('menu.register')

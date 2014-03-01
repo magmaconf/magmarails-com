@@ -22,7 +22,7 @@ class Crowdsite < Sinatra::Base
     sprockets.append_path File.join(root, 'assets', 'images')
     sprockets.append_path File.join(root, 'assets', 'fonts')
     sprockets.append_path File.join(root, 'vendor', 'javascripts')
-    
+
     sprockets.css_compressor = YUI::CssCompressor.new
     sprockets.js_compressor = YUI::JavaScriptCompressor.new
 
@@ -32,7 +32,7 @@ class Crowdsite < Sinatra::Base
   configure :production do
     set :raise_errors, false
     set :show_exceptions, false
-    
+
     Sprockets::Helpers.configure do |config|
       config.asset_host = "assets%d.magmaconf.com.global.prod.fastly.net"
     end
@@ -52,6 +52,11 @@ class Crowdsite < Sinatra::Base
   end
 
   get '/about-magma' do
+    set_locale
+    haml :about_magma
+  end
+
+  get '/about-magma/?:locale?' do
     set_locale
     haml :about_magma
   end
