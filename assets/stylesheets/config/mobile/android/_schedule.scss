@@ -1,0 +1,123 @@
+@media screen and (max-width: 640px)  {
+
+  #schedule{
+    padding-top: 80px;
+    .header {
+      width: 288px;
+      .star, .arena {
+        display: inline-block;
+      }
+      .star {
+        background: image_url('sprite_tmp.svg');
+        background-size: 174px 180px;
+        background-position: -155px -142px;
+        width: 15px;
+        height: 15px;
+      }
+      .arena {
+        width: 230px;
+      }
+    }
+    .left-stars, #left-mask, #right-mask, .right-stars {
+      display: none;
+    }
+    #magma-legend {
+      margin: 15px auto -15px;
+      width: 292px;
+    }
+
+    .head {
+      border-top: 0;
+    }
+    .bottom {
+      display: none;
+    }
+
+    #time {
+      width: 15%;
+    }
+
+    #wednesday-image, #thursday-image, #friday-image {
+      margin-left: 20px;
+    }
+
+    #wednesday, #thursday, #friday {
+      width: 85%;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+
+    .line {
+      .legend, .speaker-name, .language-image.en, .talk-name  {
+        margin-left: 20px;
+      }
+      .speaker-name {
+        margin-bottom: 5px;
+      }
+      .talk-name {
+        margin-top: 0px;
+        &.en {
+          margin-left: 20px;
+        }
+      }
+      &.talk .language-image.en {
+        display: none;
+      }
+      &.talk {
+        min-height: 65px;
+        padding-bottom: 0;
+      }
+      .speaker-name {
+        color: #2f2c25;
+      }
+
+      &.keynote {
+        min-height: 55px;
+        padding-bottom: 0;
+        .keynotes-image {
+          margin-left: 20px;
+          right: 26px;
+        }
+        .language-image.en {
+          left: 52px;
+          margin-left: 0px;
+        }
+        .keynotes-image, .language-image.en {
+          float: right;
+          position: relative;
+          top: -29px;
+          width: 22px;
+        }
+        span {
+          float: none;
+          font-size: 120%;
+          margin-left: 20px;
+        }
+      }
+    }
+    #left-arrow, #right-arrow {
+      background: image_url('sprite.svg');
+      background-size: 174px 180px;
+      background-repeat: no-repeat;
+      display: block;
+      height: 25px;
+      position: relative;
+      width: 25px;
+    }
+    #right-arrow {
+      background-position: -151px -62px;
+      float: right;
+      right: 14px;
+      top: 18px;
+    }
+    #left-arrow {
+      background-position: -150px -32px;
+      top: 37px;
+    }
+  }
+
+
+}

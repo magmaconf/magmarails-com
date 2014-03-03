@@ -1,12 +1,55 @@
 en:
+  about:
+    conference_sessions_revolve: Conference sessions revolve around Ruby, Rails,
+      Front-end design, and more.Attendees include developers, designers and
+      engineers with experience, or hopping to gain experience, building
+      cutting-edge web apps. Come and learn not only from our awesome speakers,
+      but also from our diverse audience.
+    culture_description: MagmaConf offers an amazing opportunity to experience
+      ¡Mexico as never before! <br/><br/> Evening activities include engaging
+      group dinners followed by traditional dance performances, thrilling
+      wrestling matches and the occasional drink-a-thon. It is sure to be an
+      unforgettable experience.
+    deserves_beauty: Deserves Beautiful Place
+    experience: Experience
+    great_conf: A great Conference
+    hosted_in: Hosted in Beautiful
+    june: June 4th-6th | Manzanillo
+    manzanillo: Manzanillo, Mexico
+    manzanillo_inter_airport: Manzanillo's International Airport is only 15
+      minutes away from the MagmaConf Venue. This airport connects Manzanillo
+      with Los Angeles, Vancouver, Huston and Mexico City.
+    off_conf: Off Conference
+    the_airport_is_near: The Airport is Near
+    venue: MagmaConf Venue
+    venue_description: Talks and workshop take place at the center of
+      educational technology. <br/><br/> Located in the University of
+      Colima&#96;s El Naranjo campus, the centre is a first-class teaching
+      facility, featuring comfortable seating, wi-fi, and air conditioning.
+  menu:
+    about: About Magma
+    accommodations: Accommodations
+    blog: Blog
+    menu: Menu
+    register: Register
+    schedule: Schedule
+    speakers: Speakers
+    sponsors: Sponsors
   title: 'MagmaConf 2014'
   home:
     for: 'for-en.svg'
     cfp: 'cfp-en.svg'
+    magma_welcome_dev: MagmaConf welcomes developers, engineers and designers
+      from all over the world. Come and learn from our speakers and participants
+      about the hottest tools and techniques out there!
+    mexico_primer_dev_conf: Mexico's Premier modern web development conference
+    one_of_the_most_important: One of the most important web development
+      conferences in Mexico, MagmaConf features talks and discussions about
+      Ruby, Rails, Front-end and more.
     ticket: 'buy-ticket.svg'
     span-time: 'From Nov. 1st to Dec. 30th 2013'
     stay: 'stay tuned'
-    work: 'We have a lot of work to do. Meanwhile please chechout'
+    work: 'We have a lot of work to do. Meanwhile please checkout'
     limit_ticket: 'limited to <span>50 tickets</span>'
     policy:
       magma: 'Magma Conf 2014'
