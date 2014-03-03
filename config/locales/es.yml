@@ -51,19 +51,32 @@ es:
   home:
     for: 'for-es.svg'
     cfp: 'cfp-es.svg'
-    magma_welcome_dev: MagmaConf welcomes developers, engineers and designers from all over the world. Come and learn from our speakers and participants about the hottest tools and techniques out there!
-    mexico_primer_dev_conf: MagmaConf es una moderna conferencia premier de desarrollo web en México
-    one_of_the_most_important: One of the most important web development conferences in Mexico, MagmaConf features talks and discussions about Ruby, Rails, Front-end and more.
+    magma_welcome_dev: MagmaConf recibe desarrolladores, ingenieros y
+      diseñadores de todas las partes del mundo. Ven y aprende de nuestros
+      ponentes y asistentes sobre los herramientas y técnicas más recientes.
+    mexico_primer_dev_conf: MagmaConf es una moderna conferencia premier de
+      desarrollo web en México
+    one_of_the_most_important: Una de las conferencias más importantes en México
+      sobre desarrollo web, MagmaConf contiene pláticas y discusiones sobre
+      Ruby, Rails, Fron-end y más.
     ticket: 'comprar-boleto.svg'
     span-time: 'Del 1 de Nov. al 30 de Dic. 2013'
     stay: 'Manténte al tanto'
+    stay_up_to_day: Mantente al día con<br/>las noticias de MagmaConf
     work: 'Tenemos mucho trabajo por hacer. Mientras tanto, checa esto'
     limit_ticket: 'limitado a <span>50 boletos</span>'
+    footer:
+      organised_by: Evento organizado por Crowd Interactive © 2014
+      copyright: Este sitio está protegido por Derechos Reservados
+        bajo la ley de los EE.UU. e Internacional. Todos los derechos reservados.
     policy:
       magma: 'Magma Conf 2014'
       title: 'Política de Anti-acoso'
-      description: 'Magma Conf está diseñado para ser una conferencia libre de acoso para todos los involucrados. Nosotros basicamente les comentamos a los participantes (Speakers, Staff, Asistentes) sobre el respeto entre todos. Nuestra política de Anti-acoso las puedes encontrar'
-      here: 'aquí'
+      description: 'Magma Conf está diseñado para ser una conferencia libre de
+        acoso para todos los involucrados. Nosotros basicamente les comentamos
+        a los participantes (Speakers, Staff, Asistentes) sobre el respeto
+        entre todos. Nuestra política de Anti-acoso las puedes encontrar'
+      here: 'aquí >>'
       s_one: 'Magma Conf está diseñada para ser una conferencia con una experiencia libre de acoso para todos los participantes. Todos son bienvenidos sin importar su género, orientacion sexual, discapacidad, apariencia física, tamaño del cuerpo, raza, religión, lengua materna, sistema operativo de tu dispositivo, lenguaje o framework de programación preferido, o cualquier otra cosa. Nosotros aceptamos la diversidad.'
       s_two: 'Pedimos a todos los participantes respeto mutuo, y no toleraremos cualquier tipo de acoso a los participantes en la conferencia. El acoso incluye ofensa verbal, comentarios relacionados a género, identidad o expresión de género, orientación sexual, discapacidad, apariencia física, tamaño del cuerpo, raza, religión, imágenes con contenido sexual en espacios públicos, intimidación de manera deliberada, acoso, seguimiento, fotografías o videograbaciones con motivos de acoso, interrupción continua en charlas u otros eventos, contacto físico inapropiado o atención sexual no permitida. Se espera que los participantes a los que les sea requerido detener alguno de estos comportamientos cumplan de manera inmediata.'
       s_three: 'Nos reservamos el derecho de advertir o incluso expulsar del evento a los agresores sin derecho a reemboloso, y no serán capaces de asistir a futuras ediciones de Magma Conf o eventos relacionados.'

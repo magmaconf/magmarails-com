@@ -59,12 +59,20 @@ en:
     ticket: 'buy-ticket.svg'
     span-time: 'From Nov. 1st to Dec. 30th 2013'
     stay: 'stay tuned'
+    stay_up_to_day: Stay up-to-date on all<br/>things MagmaConf with...
     work: 'We have a lot of work to do. Meanwhile please checkout'
     limit_ticket: 'limited to <span>50 tickets</span>'
+    footer:
+      organised_by: Event organized by Crowd Interactive © 2014
+      copyright: This site is protected by Copyright under U.S. and International
+        law. All rights reserved.
     policy:
       magma: 'Magma Conf 2014'
       title: 'Anti-Harassment Policy'
-      description: 'Magma Conf is designed to be a harassment-free conference experience for everyone involved. We basically ask all participants (Speakers, Staff, Attendees) to respect one another. Our anti-harassment policy can be found'
+      description: 'Magma Conf is designed to be a harassment-free conference
+        experience for everyone involved. We basically ask all participants
+        (Speakers, Staff, Attendees) to respect one another. Our anti-harassment
+        policy can be found'
       here: 'here >>'
       s_one: 'Magma Conf is designed to be a harassment-free conference experience for all participants. We welcome everyone regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, mother tongue, operational system of your devices, preferred programming language/framework, or anything else.  We embrace diversity.'
       s_two: 'We ask all participants to respect one another, and we will not tolerate harassment of conference participants in any form. Harassment includes offensive verbal comments related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention. Participants asked to stop any harassing behavior are expected to comply immediately.'

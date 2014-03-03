@@ -9,10 +9,8 @@
           %a{href: 'www.crowdint.com'}
             #logo-crowd
           .title
-            %p
-              EVENT ORGANISED BY CROWD INTERACTIVE © 2014
-            %p
-              THIS SITE IS PROTECTED BY COPYRIGHT.UNDER U.S. AND INTERNATIONAL LAW. ALL RIGHTS RESERVED.
+            %p= t('home.footer.organised_by')
+            %p= t('home.footer.copyright')
     .pure-g-r
       .anti
         .pure-u-1-4
@@ -20,9 +18,8 @@
         .pure-u-3-4
           .footer-legend
             %p
-              MagmaConf is a harassment-free conference experience for everyone involved. We ask all participants (Speakers,
-              Staff, Attendees) to respect one another. Our anti-harassment policy can be found
-              %a.open_popup{href: '#'} here >>
+              = t('home.policy.description')
+              %a.open_popup{href: '#'}= t('home.policy.here')
 
 #popup
 #policy.container
