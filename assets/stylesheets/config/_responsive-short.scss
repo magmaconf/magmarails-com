@@ -65,9 +65,9 @@
         width: 33.33%;
 
         .normal-box {
-          height: 90px;
+          height: 85px;
           margin: 10px auto;
-          width: 90px;
+          width: 85px;
           @include box-shadow(0, 0, 0, 5px, #50433d);
 
           span {
