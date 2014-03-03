@@ -50,6 +50,16 @@
         margin-right: 10px;
       }
 
+      .arrow {
+        background: url("sprite.svg");
+        display: inline-block;
+        background-size: 445px 188px;
+        width: 30px;
+        height: 18px;
+        background-position: -330px -105px;
+        float: right;
+      }
+
       .accordion-heading {
         padding: 15px;
 
