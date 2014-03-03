@@ -1,4 +1,10 @@
 $(document).ready ->
 
   $('.accordion-group').click ->
-    $(this).find('.accordion-body').slideToggle()
+    $('.accordion-group.active').removeClass('active')
+    $(this).addClass('active')
+
+    $('.accordion-body').slideUp()
+
+    if !$(this).find('.accordion-body').is(':visible')
+      $(this).find('.accordion-body').slideDown()
