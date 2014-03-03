@@ -41,6 +41,11 @@
       display: none;
     }
 
+    .accordion-group.active {
+      .accordion-heading .arrow {
+        background-position: -330px -165px;
+      }
+    }
     .accordion-group {
       border-bottom: 1px solid #ada193;
       display: block;
@@ -60,6 +65,7 @@
         float: right;
       }
 
+
       .accordion-heading {
         padding: 15px;
 
@@ -69,6 +75,7 @@
           font-weight: 300;
         }
       }
+
 
       .accordion-body {
         display: none;
