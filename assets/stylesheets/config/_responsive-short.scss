@@ -106,6 +106,12 @@
 
       #contact {
         margin-left: 15px;
+
+        input {
+          margin-top: 0;
+          margin-bottom: 15px;
+        }
+
         .submit {
           display: block;
           float: none;
