@@ -61,6 +61,11 @@ class Crowdsite < Sinatra::Base
     haml :about_magma
   end
 
+  get '/accommodations/?:locale?' do
+    set_locale
+    haml :accommodations
+  end
+
   get '/accommodations' do
     set_locale
     haml :accommodations

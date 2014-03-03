@@ -9,6 +9,9 @@
           .description-text{
             padding-top: 100%;
           }
+          .title:first-child{
+            margin-left: 25%;
+          }
         }
 
         #village-image{
@@ -29,7 +32,7 @@
     #description{
       .title{
         &:first-child{
-          margin-left: 12% !important;
+          margin-left: 16% !important;
         }
       }
     }

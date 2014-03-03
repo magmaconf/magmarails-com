@@ -28,6 +28,16 @@ es:
       Tecnología Educativa. <br/><br/> Localizado en la Universidad de
       Colima Campus El Naranjo, este centro es un edificio de primera
       clase con sillas cómodas, wi-fi y aire acondicionado.
+  accommodations:
+    a_mexican_paradise: Un paraiso Mexicano
+    description: Una alternativa única al hotel tradicional, La Villa Magma
+      ofrece a los asistentes la oportunidad de continuar con el aprendizaje
+      aún cuando las pláticas ya hayan terminado por el día.<br/><br/> Como
+      parte del exclusivo Club de Playa Santiago, Villa Magma está ubicada
+      en la mejor playa de Manzanillo. Relájate en la arena después de un
+      día largo de conferencias o hunde tus pies en el suave oceano mexicano.
+    is_waiting_for_you: te esta esperando
+    title: <span>Bienvenido a</span><br/><span>la Villa Magma</span>
   menu:
     about: Sobre Magma
     accommodations: Alojamiento

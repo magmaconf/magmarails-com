@@ -26,6 +26,16 @@ en:
       educational technology. <br/><br/> Located in the University of
       Colima&#96;s El Naranjo campus, the centre is a first-class teaching
       facility, featuring comfortable seating, wi-fi, and air conditioning.
+  accommodations:
+    a_mexican_paradise: A mexican paradise
+    description: An unique alternative to a traditional hotel, Magma Village
+      offers attendees the opportunity to continue learning from each other
+      even after talks have finished for the day.<br/><br/> Part of the
+      exclusive Santiago Beach Club, Magma Village is located on the best
+      beach in Manzanillo. Relax on the sand after a long day of talks, or
+      dip your toes in the balmy Mexican ocean.
+    is_waiting_for_you: Is waiting for you
+    title: <span>Welcome to</span><br/><span>the magma village</span>
   menu:
     about: About Magma
     accommodations: Accommodations

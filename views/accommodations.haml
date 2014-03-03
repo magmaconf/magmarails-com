@@ -6,11 +6,11 @@
           %img#beach-image{src: "#{image_path 'beach-image.svg'}"}
         .pure-u-1-2
           .invitation
-            %p.advice A MEXICAN PARADISE
-            %p.title IS WAITING FOR YOU!
+            %p.advice= t('accommodations.a_mexican_paradise')
+            %p.title= t('accommodations.is_waiting_for_you')
           .date
             %span.star
-            %p.location JUNE 4TH-6TH | MANZANILLO
+            %p.location= t('about.june')
             %span.star
         .pure-u-1-6
           %a.btn-register.small{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}
@@ -20,17 +20,8 @@
       .pure-g-r
         .pure-u-2-5
           #description
-            %p.title
-              WELCOME TO
-            %p.title
-              THE MAGMA VILLAGE
-            %p.description-text
-              An unique alternative to a traditional hotel, Magma Village offers attendees the opportunity to continue
-              learning from each other even after talks have finished for the day.
-              %br
-              %br
-              Part of the exclusive Santiago Beach Club, Magma Village is located on the best beach in Manzanillo. Relax
-              on the sand after a long day of talks, or dip your toes in the balmy Mexican ocean.
+            %p.title= t('accommodations.title')
+            %p.description-text= t('accommodations.description')
             %a.btn-register{href: "http://store.magmaconf.com/", target: "_blank"}
               %img{src: "#{image_path 'book-now.svg'}"}
         .pure-u-3-5
