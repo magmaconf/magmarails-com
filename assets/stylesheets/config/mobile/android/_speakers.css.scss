@@ -68,8 +68,10 @@
 
       .accordion-heading {
         padding: 15px;
+        height: 23px;
 
         p {
+          display: inline-block;
           font-family: roboto;
           font-size: 140%;
           font-weight: 300;
@@ -114,8 +116,6 @@
     height: initial;
 
     .accordion-heading {
-      background: rgba(65,53,49,0.6);
-
       .bullet {
         background: image-url("keynote-icon.svg");
         background-size: 100%;
