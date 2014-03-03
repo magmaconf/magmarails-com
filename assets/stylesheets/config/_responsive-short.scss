@@ -34,21 +34,21 @@
       }
 
       .big-sponsor-box {
-        height: 140px;
+        height: 135px;
         margin: 10px auto;
-        width: 140px;margin: 10px auto;
+        width: 135px;
         @include box-shadow(0, 0, 0, 5px, #50433d);
 
         span {
           font-size: 130%;
-          left: 9px;
-          top: 42px;
+          left: 6px;
+          top: 45px;
           width: 120px;
         }
 
         span#crowdint {
           height: 43px;
-          left: 13px;
+          left: 10px;
           top: 48px;
           width: 110px;
         }
