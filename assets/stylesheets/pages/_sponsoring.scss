@@ -32,6 +32,11 @@
     height: 238px;
     width: 238px;
 
+    .sponsor-link {
+      display: block;
+      height: 238px;
+    }
+
     span {
       left: 30px;
       top: 102px;
@@ -45,19 +50,32 @@
     width: 148px;
 
     span {
-      top: 70px;
+      top: 60px;
       width: 149px;
     }
   }
 
   #crowdint {
-    background: image-url('logo-crowd-sponsors.svg');
-    display: block;
-    height: 68px;
     left: 28px;
     position: relative;
     top: 78px;
     width: 176px;
+  }
+
+  #github {
+    padding: 56px 48px;
+    position: relative;
+    width: 60%;
+  }
+
+  #honey-badger {
+    padding: 53px 19px;
+    width: 75%;
+  }
+
+  #engine {
+    padding: 61px 15px;
+    width: 80%;
   }
 
   #sponsoring-advice {

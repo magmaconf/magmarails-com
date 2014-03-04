@@ -137,9 +137,17 @@
       height: 220px;
       width: 220px;
 
+      .sponsor-link {
+        height: 220px;
+      }
+
       #crowdint {
-        left: 22px;
+        left: 19px;
         top: 70px;
+      }
+
+      #github{
+        padding: 52px 44px;
       }
 
       span {
@@ -151,6 +159,15 @@
       top: 40px;
       width: 105px;
       height: 105px;
+
+      #honey-badger {
+        padding: 37px 13px;
+      }
+
+      #engine {
+        padding: 44px 11px;
+        width: 80%;
+      }
 
       span {
         top: 40px;

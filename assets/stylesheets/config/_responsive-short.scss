@@ -26,7 +26,7 @@
 
     #sponsors {
       margin-top: 60px;
-      & .pure-u-1-3:last-child {
+      .hide {
         display: none;
       }
       div {
@@ -39,6 +39,10 @@
         width: 135px;
         @include box-shadow(0, 0, 0, 5px, #50433d);
 
+        .sponsor-link {
+          height: 135px;
+        }
+
         span {
           font-size: 130%;
           left: 6px;
@@ -46,11 +50,15 @@
           width: 120px;
         }
 
-        span#crowdint {
+        #crowdint {
           height: 43px;
           left: 10px;
-          top: 48px;
+          top: 41px;
           width: 110px;
+        }
+
+        #github {
+          padding: 32px 27px;;
         }
       }
     }
@@ -74,6 +82,15 @@
             font-size: 130%;
             top: 35px;
             width: 86px;
+          }
+
+          #honey-badger {
+            padding: 30px 11px;
+          }
+
+          #engine {
+            padding: 35px 9px;
+            width: 80%;
           }
         }
       }
