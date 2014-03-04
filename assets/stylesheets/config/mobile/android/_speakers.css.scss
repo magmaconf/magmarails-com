@@ -1,0 +1,163 @@
+@media screen and (max-width: 767px) {
+
+  .star {
+    background: image-url("star.png");
+    background-size: 15px;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+  }
+
+  #speakers {
+    height: 70px;
+    #presentation {
+      font-size: 145%;
+      text-align: center;
+      margin: 0;
+
+      .illustration img {
+        display: none;
+      }
+
+      .invitation {
+        max-width: 290px;
+        margin: 0 auto;
+
+        .advice {
+          margin-top: 0;
+        }
+      }
+
+      .btn-register.small {
+        display: none;
+      }
+    }
+  }
+
+  #keynotes, #speaker-cards {
+    color: #fff;
+
+    .flipper {
+      display: none;
+    }
+
+    .accordion-group.active {
+      .accordion-heading .arrow {
+        background-position: -330px -165px;
+      }
+    }
+    .accordion-group {
+      border-bottom: 1px solid #ada193;
+      display: block;
+
+      .bullet {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .arrow {
+        background: url("sprite.svg");
+        display: inline-block;
+        background-size: 445px 188px;
+        width: 30px;
+        height: 18px;
+        background-position: -330px -105px;
+        float: right;
+      }
+
+
+      .accordion-heading {
+        padding: 15px;
+        height: 23px;
+
+        p {
+          display: inline-block;
+          font-family: roboto;
+          font-size: 140%;
+          font-weight: 300;
+        }
+      }
+
+
+      .accordion-body {
+        display: none;
+        text-align: center;
+        padding: 20px;
+
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+
+        .name {
+          border-bottom: 1px solid #ada193;
+          padding: 5px;
+          font-weight: 300;
+        }
+
+        p {
+          margin-top: 20px;
+          font-family: roboto;
+          font-weight: 300;
+        }
+
+        span {
+          display: inline;
+        }
+      }
+
+      &:hover {
+        cursor: pointer
+      }
+    }
+  }
+
+  #keynotes {
+    height: initial;
+
+    .accordion-heading {
+      .bullet {
+        @include rounded(15px);
+        background: image-url('sprite_tmp.svg') no-repeat;
+        background-color: #fff;
+        background-position: -151px -140px;
+        background-size: 174px 180px;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    .content:first-child {
+      border-bottom: 1px solid #ada193;
+    }
+  }
+
+  #speaker-cards {
+    background-color: #51473f;
+    padding: 0;
+
+    .speakers-title {
+      border-bottom: 1px solid #ada193;
+    }
+    .pure-g-r {
+      height: initial;
+    }
+
+    .accordion-group {
+
+      .bullet {
+        background: image-url("star.png");
+        background-size: 100%;
+        height: 14px;
+        width: 15px;
+      }
+
+      .accordion-body {
+        span {
+          font-size: 140%;
+        }
+      }
+    }
+  }
+}

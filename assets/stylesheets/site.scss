@@ -21,6 +21,12 @@
   max-width: 170px;
 }
 
+#keynotes, #speaker-cards {
+  .accordion-group {
+    display: none;
+  }
+}
+
 @mixin rounded($radius: 0.5em) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
