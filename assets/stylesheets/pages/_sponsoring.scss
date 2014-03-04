@@ -116,6 +116,12 @@
     margin: 40px auto;
     text-align: center;
     width: 200px;
+    .shadow {
+      position: absolute;
+      left: 50%;
+      margin-left: -86px;
+      margin-top: 20px;
+    }
   }
 
   #contact-form {
