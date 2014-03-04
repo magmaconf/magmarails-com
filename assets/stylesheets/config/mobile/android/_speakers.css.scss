@@ -43,7 +43,7 @@
 
     .accordion-group.active {
       .accordion-heading .arrow {
-        background-position: -330px -165px;
+        background-position: -208px 18px;
       }
     }
     .accordion-group {
@@ -56,12 +56,12 @@
       }
 
       .arrow {
-        background: url("sprite.svg");
+        background: image_url('arrows-sprite.svg');
         display: inline-block;
         background-size: 445px 188px;
         width: 30px;
         height: 18px;
-        background-position: -330px -105px;
+        background-position: -208px 81px;
         float: right;
       }
 
@@ -118,7 +118,7 @@
     .accordion-heading {
       .bullet {
         @include rounded(15px);
-        background: image-url('sprite_tmp.svg') no-repeat;
+        background: image-url('sprite.svg') no-repeat;
         background-color: #fff;
         background-position: -151px -140px;
         background-size: 174px 180px;

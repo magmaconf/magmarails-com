@@ -8,7 +8,7 @@
         display: inline-block;
       }
       .star {
-        background: image_url('sprite_tmp.svg');
+        background: image_url('sprite.svg');
         background-size: 174px 180px;
         background-position: -155px -142px;
         width: 15px;
@@ -28,6 +28,7 @@
 
     .head {
       border-top: 0;
+      padding: 8px 0 12px;
     }
     .bottom {
       display: none;
@@ -99,23 +100,24 @@
       }
     }
     #left-arrow, #right-arrow {
-      background: image_url('sprite.svg');
-      background-size: 174px 180px;
-      background-repeat: no-repeat;
+      background: image_url('arrows-sprite.svg') no-repeat;
+      background-size: 35px 175px;
       display: block;
-      height: 25px;
+      height: 30px;
       position: relative;
-      width: 25px;
+      width: 20px;
     }
+
     #right-arrow {
-      background-position: -151px -62px;
+      background-position: -7px -41px;
       float: right;
-      right: 14px;
-      top: 18px;
+      top: 11px;
+      right: 18px;
     }
+
     #left-arrow {
-      background-position: -150px -32px;
-      top: 37px;
+      background-position: -7px 1px;
+      top: 41px;
     }
   }
 
