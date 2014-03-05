@@ -14,7 +14,6 @@ en:
     experience: Experience
     great_conf: A great Conference
     hosted_in: Hosted in Beautiful
-    june: June 4th-6th | Manzanillo
     manzanillo: Manzanillo, Mexico
     manzanillo_inter_airport: Manzanillo's International Airport is only 15
       minutes away from the MagmaConf Venue. This airport connects Manzanillo
@@ -131,7 +130,6 @@ en:
   speakers:
     advice: 'check out our'
     title: 'awesome speakers'
-    date: 'june 4th-6th | manzanillo'
     manuel:
       bio: ':passions = {:software, :people, :value} :skills = {:agile_bdd, :patterns} :pl = {:ruby, :js} :new = {:scala, :clojure, :fancy} :web = {:rails, :sinatra}'
     jesse:
@@ -166,3 +164,7 @@ en:
       bio: 'CRuby committer, contributor to sinatra, rails, rdoc, etc.'
     pj:
       bio: 'A RoR developer for the last 5 years, PJ currently works at Engine Yard as the Community Engineer. Additionally, he organizes the Western New York Ruby Brigade. Traveling to conferences and Ruby meet ups around the US and Canada, PJ likes to spread the word on the importance of community and coding, stressing the importance of outreach and focusing on the human side of being a coder.'
+  sponsors:
+    advice: 'we need'
+    title: 'your support'
+  date: 'june 4th-6th | manzanillo'
