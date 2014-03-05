@@ -111,25 +111,4 @@
       padding: 6px 0;
     }
   }
-
-  .btn-register {
-    background: #1F9D9B;
-    border: 2px solid #fff;
-    box-shadow: 0 0 0 10px #1F9D9B;
-    float: right;
-    left: 38px;
-    position: relative;
-    top: 19px;
-    &:hover {
-      background: #21AEAC;
-      border: 2px solid #fff;
-    }
-  }
-
-  .shadow {
-    float: right;
-    position: relative;
-    top: 51px;
-    right: 123px;
-  }
 }
