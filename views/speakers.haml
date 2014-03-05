@@ -4,11 +4,11 @@
       %img{src: "#{image_path 'speakers-illustration.png'}"}
     .pure-u-1-2
       .invitation
-        %p.advice CHECK OUT OUR
-        %p.title AWESOME SPEAKERS
+        %p.advice= t('speakers.advice')
+        %p.title= t('speakers.title')
       .date
         %span.star
-        %p.location JUNE 4TH-6TH | MANZANILLO
+        %p.location= t('speakers.date')
         %span.star
     .pure-u-1-4
       %a.btn-register.small{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}

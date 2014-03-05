@@ -132,6 +132,9 @@ es:
     sandi:
       bio: "Sandi Metz has 30 years of experience working on projects that survived to grow and change. She describes herself as an obsessive programmer, Rubyist, cyclist and recalcitrant blogger. Author of “Practical Object-Oriented Design in Ruby”  http://www.poodr.com/"
   speakers:
+    advice: 'conoce a nuestros'
+    title: 'asombrosos luchadores'
+    date: '4 - 6 junio | manzanillo'
     manuel:
       bio: ':passions = {:software, :people, :value} :skills = {:agile_bdd, :patterns} :pl = {:ruby, :js} :new = {:scala, :clojure, :fancy} :web = {:rails, :sinatra}'
     jesse:
