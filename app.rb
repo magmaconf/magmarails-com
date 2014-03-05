@@ -56,16 +56,6 @@ class Crowdsite < Sinatra::Base
     haml :about_magma
   end
 
-  get '/about-magma/?:locale?' do
-    set_locale
-    haml :about_magma
-  end
-
-  get '/accommodations/?:locale?' do
-    set_locale
-    haml :accommodations
-  end
-
   get '/accommodations' do
     set_locale
     haml :accommodations
@@ -86,10 +76,16 @@ class Crowdsite < Sinatra::Base
     haml :sponsors
   end
 
+  get '/policies' do
+    set_locale
+    haml :popup
+  end
+
   get '/?:locale?' do
     set_locale
     haml :index
   end
+
 
   post '/send_email' do
     email_status = send_email(params)
