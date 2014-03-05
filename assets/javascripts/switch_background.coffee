@@ -38,4 +38,6 @@ $(document).ready ->
     $('#mobile-header').addClass('sponsoring')
     addActiveClass('#sponsors-link')
 
-
+  else if pathname is '/policies'
+    $('#main-menu').addClass('policies')
+    $('#mobile-header').addClass('policies')
