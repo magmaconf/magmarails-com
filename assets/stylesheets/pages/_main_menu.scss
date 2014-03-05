@@ -23,7 +23,11 @@
     background: #312926;
   }
 
-  &.accommodations, &.schedule, &.about-magma {
+  &.policies {
+    background: #fff;
+  }
+
+  &.accommodations, &.schedule, &.about-magma, &.policies {
     #magma-logo {
       background: image-url('logo-magma.png') no-repeat;
     }
@@ -90,7 +94,7 @@
     }
   }
 
-  &.accommodations, &.schedule, &.about-magma {
+  &.accommodations, &.schedule, &.about-magma, &.policies {
     .link {
       border-right: 1px solid #6c5a53;
       &:last-child, &:nth-of-type(3) {
