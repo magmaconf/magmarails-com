@@ -309,6 +309,10 @@
         margin-top: 115px;
       }
     }
+
+    .shadow.small {
+      right: -18px;
+    }
     #village-info {
       height: 461px;
 
@@ -319,16 +323,21 @@
 
       #description {
         .btn-register {
-          height: 105px;
-          margin-top: 23px;
-          margin-right: 88px;
+          height: 100px;
+          left: 46px;
           padding: 12px 13px;
+          top: 25px;
           width: 105px;
-
           img {
             max-width: 72px;
             width: 72px;
           }
+        }
+        .shadow {
+          margin-bottom: 70px;
+          right: 63px;
+          top: 39px;
+          width: 120px;
         }
         .description-text {
           margin-top: 12px;
