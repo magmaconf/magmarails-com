@@ -4,11 +4,11 @@
       %img.illustration{src: "#{image_path 'sponsors-illustration.png'}"}
     .pure-u-1-3
       .invitation
-        %p.advice WE NEED
-        %p.title YOUR SUPPORT
+        %p.advice= t('sponsors.advice')
+        %p.title= t('sponsors.title')
       .date
         %span.star
-        %p.location JUNE 4TH-6TH | MANZANILLO
+        %p.location= t('date')
         %span.star
     .pure-u-1-3
       %a.btn-register.small{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}
