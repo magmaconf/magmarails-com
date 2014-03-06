@@ -156,7 +156,6 @@
       }
     }
     .form-container {
-      border-top: 5px solid #B7B3AF;
       margin: 0 auto;
       max-width: 1170px;
       min-height: 90px;
@@ -165,60 +164,23 @@
         max-width: 1088px;
         margin: 0 auto;
       }
-      label {
-        font-family: oswald;
-        font-size: 112.5%;
-        font-weight: 300;
-        text-transform: uppercase;
-        &.error {
-          font-size: 75%;
-          font-family: sans-serif;
-          color: #a94442;
-        }
-      }
       .field {
         display: inline-table;
         margin-right: 30px;
         input {
-          background-color: #E4E1D5;
-          border: 1px solid #A49283;
-          display: block;
           height: 50px;
           margin-top: 16px;
           padding-left: 10px;
           width: 260px;
-          &.error {
-            outline-color: #a94442;
-            outline-offset: -2px;
-            outline-style: auto;
-            outline-width: 5px;
-          }
-        }
-        span {
-          display: inline-table;
-          color: #a94442;
-          margin-top: -3px;
         }
       }
       .submit {
-        background-color: #2eb5b3;
-        color: #fff;
-        float: right;
         font-size: 150%;
-        font-weight: 300;
         height: 50px;
         letter-spacing: 1px;
         margin-top: 41px;
-        text-transform: uppercase;
         width: 170px;
-        &:hover {
-          background-color: #29A8A3;
-        }
       }
-    }
-    .submit, .cancel-button {
-      cursor: pointer;
-      font-family: oswald;
     }
   }
   #message-box {

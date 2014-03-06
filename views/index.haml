@@ -20,5 +20,18 @@
   %section
     .pure-g-r
       .pure-u-1-1.content
-        %img.banner{src: "#{image_path 'banner-immage.png'}"}
-        %p= t('home.stay_up_to_day')
+        %img.banner{src: "#{image_path 'banner-image.svg'}"}
+        %p#stay-up= t('home.stay_up_to_day')
+        %p#subscribe= t('home.subscribe')
+        .form-container
+          %form#newsletter
+            %fieldset
+              .field.name
+                %label{for: 'name'}= t('newsletter-form.fields.name')
+                %span *
+                %input{name: 'name', type: 'text'}
+              .field
+                %label{for: 'email'}= t('newsletter-form.fields.email')
+                %span *
+                %input{name: 'email', type: 'email'}
+              %input.submit{type: 'submit', value: t('newsletter-form.fields.submit')}

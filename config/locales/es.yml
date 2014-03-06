@@ -61,7 +61,8 @@ es:
     ticket: 'comprar-boleto.svg'
     span-time: 'Del 1 de Nov. al 30 de Dic. 2013'
     stay: 'Manténte al tanto'
-    stay_up_to_day: Mantente al día con<br/>las noticias de MagmaConf
+    stay_up_to_day: 'Mantente al día con las noticias de Magma Conf.'
+    subscribe: 'Suscríbete a nuestras noticias'
     work: 'Tenemos mucho trabajo por hacer. Mientras tanto, checa esto'
     limit_ticket: 'limitado a <span>50 boletos</span>'
     footer:
@@ -98,6 +99,11 @@ es:
       company: 'Empresa'
       email: 'Correo'
       submit: 'Contactanos'
+  newsletter-form:
+    fields:
+      name: 'Nombre'
+      email: 'Correo'
+      submit: 'Suscribirse'
   daily:
     copy-right: 'Crowd Interactive &copy; 2013. This site is protected by copyright under US and international law. All rights reserved'
     five: 'NO. 5'

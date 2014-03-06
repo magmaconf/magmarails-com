@@ -58,7 +58,8 @@ en:
     ticket: 'buy-ticket.svg'
     span-time: 'From Nov. 1st to Dec. 30th 2013'
     stay: 'stay tuned'
-    stay_up_to_day: Stay up-to-date on all<br/>things MagmaConf with...
+    stay_up_to_day: 'Stay up-to-date on all things Magma Conf.'
+    subscribe: 'Subscribe to our newsletter.'
     work: 'We have a lot of work to do. Meanwhile please checkout'
     limit_ticket: 'limited to <span>50 tickets</span>'
     footer:
@@ -95,6 +96,11 @@ en:
       company: 'Company'
       email: 'E-mail'
       submit: 'Contact us'
+  newsletter-form:
+    fields:
+      name: 'Name'
+      email: 'E-mail'
+      submit: 'Subscribe'
   daily:
     copy-right: 'Crowd Interactive &copy; 2013. This site is protected by copyright under US and international law. All rights reserved'
     five: 'NO. 5'
