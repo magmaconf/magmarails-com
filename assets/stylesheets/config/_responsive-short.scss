@@ -1,6 +1,14 @@
 @media screen and (max-width: 767px) {
   @include grid_generator;
 
+  .footer-legend a.open_popup {
+    display: none;
+  }
+
+  .footer-legend a.policy_page {
+    display: inline-block;
+  }
+
   #sponsoring {
     .illustration {
       display: none;
