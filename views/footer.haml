@@ -19,4 +19,7 @@
           .footer-legend
             %p
               = t('home.policy.description')
-              %a.open_popup{href: '/policies'}= t('home.policy.here')
+              %a.open_popup{href: '#'}= t('home.policy.here')
+#popup
+#policy.container
+  = haml :popup
