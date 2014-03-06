@@ -46,22 +46,22 @@ $(document).ready ->
     $('#main-menu').css('transition-duration', '0.3s')
 
   # Popup
-  $('.open_popup').click (e) ->
+  $('.open-popup').click (e) ->
     e.preventDefault()
     $('#popup').fadeIn()
     $('#policy').slideToggle()
 
-  close_popup = ->
+  closePopup = ->
     $('#popup').fadeOut()
     $('#policy').slideToggle()
 
-  $('.close_popup').click (e) ->
+  $('.close-popup').click (e) ->
     e.preventDefault()
-    close_popup()
+    closePopup()
 
   $(@).keyup (e) ->
     if (event.which == 27) and ($('#policy').is(':visible'))
-      close_popup()
+      closePopup()
 
   $('.speaker-box').bind 'touchstart', (ev) ->
     this.classList.toggle('hover')

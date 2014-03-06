@@ -1,18 +1,6 @@
 @media screen and (max-width: 767px) {
   @include grid_generator;
 
-  .footer-legend a.open_popup {
-    display: none;
-  }
-
-  #harassment .close_popup {
-    display: none;
-  }
-
-  .footer-legend a.policy_page {
-    display: inline-block;
-  }
-
   #sponsoring {
     .illustration {
       display: none;
@@ -154,4 +142,23 @@
       }
     }
   }
+
+  #footer {
+
+    .footer-legend {
+
+      .open-popup {
+        display: none;
+      }
+
+      .policy-page {
+        display: inline-block;
+      }
+    }
+  }
+
+  #harassment .close-popup {
+    display: none;
+  }
+
 }
