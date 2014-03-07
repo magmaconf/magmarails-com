@@ -20,13 +20,15 @@ es:
       a sólo 15 minutos de distancia del Recinto de MagmaConf. Este aeropuerto
       conecta Manzanillo con Los Ángeles, Vancouver, Houston y
       la Ciudad de México.
-    off_conf: Experiencia alternas a las conferencias.
     the_airport_is_near:  El aeropuerto está muy cerca.
     venue: Recinto de MagmaConf
     venue_description: Las pláticas toman lugar en el Centro de
       Tecnología Educativa. <br/><br/> Localizado en la Universidad de
       Colima Campus El Naranjo, este centro es un edificio de primera
       clase con sillas cómodas, wi-fi y aire acondicionado.
+    culture:
+      title_one: experiencias alternas
+      title_two: a las conferencias
   accommodations:
     a_mexican_paradise: Un paraiso Mexicano
     description: Una alternativa única al hotel tradicional, La Villa Magma
