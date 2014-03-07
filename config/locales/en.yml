@@ -18,13 +18,15 @@ en:
     manzanillo_inter_airport: Manzanillo's International Airport is only 15
       minutes away from the MagmaConf Venue. This airport connects Manzanillo
       with Los Angeles, Vancouver, Huston and Mexico City.
-    off_conf: Off Conference
     the_airport_is_near: The Airport is Near
     venue: MagmaConf Venue
     venue_description: Talks and workshop take place at the center of
       educational technology. <br/><br/> Located in the University of
       Colima&#96;s El Naranjo campus, the centre is a first-class teaching
       facility, featuring comfortable seating, wi-fi, and air conditioning.
+    culture:
+      title_one: Off Conference
+      title_two: Experience
   accommodations:
     a_mexican_paradise: A mexican paradise
     description: An unique alternative to a traditional hotel, Magma Village
