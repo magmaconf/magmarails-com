@@ -198,4 +198,25 @@
   #culture {
     background-color: #8e8075;
   }
+
+  .jcarousel {
+    position: relative;
+    overflow: hidden;
+    height: 344px;
+  }
+
+  .jcarousel ul {
+      width: 20000em;
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  .jcarousel li {
+      float: left;
+      img,li {
+        width: 600px;
+      }
+  }
 }

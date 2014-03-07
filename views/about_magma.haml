@@ -23,21 +23,40 @@
         %p.description
           = t('home.mexico_primer_dev_conf')
           %br
-          %br
           = t('about.conference_sessions_revolve')
-      .pure-u-1-2.content-image
-        %img{src: "#{image_path 'manzanillo.jpg'}"}
+          %span{ data: { target: '-=1' } } <
+          %span{ data: { target: '+=1' } } >
+      .pure-u-1-2.content-image.jcarousel
+        %ul
+          %li
+            %img{ src: "#{ image_path 'manzanillo.jpg' }" }
+          %li
+            %img{ src: "#{ image_path 'manzanillo.jpg' }" }
+          %li
+            %img{ src: "#{ image_path 'manzanillo.jpg' }" }
+          %li
+            %img{ src: "#{ image_path 'manzanillo.jpg' }" }
       .pure-u-1-12
   .pure-g-r.section#venue
     .content
       .pure-u-1-12
-      .pure-u-1-2.right.content-image
-        %img{src: "#{image_path 'venue.jpg'}"}
-      .pure-u-1-3.right-info.content-information
+      .pure-u-1-2.right.content-image.jcarousel
+        %ul
+          %li
+            %img{src: "#{image_path 'venue.jpg'}"}
+          %li
+            %img{src: "#{image_path 'venue.jpg'}"}
+          %li
+            %img{src: "#{image_path 'venue.jpg'}"}
+          %li
+            %img{src: "#{image_path 'venue.jpg'}"}
+      .pure-u-1-3.right-info.content-information.jcarousel
         %p.title= t('about.venue')
         %br
         %p.description
           = t('about.venue_description')
+          %span{ data: { target: '-=1' } } <
+          %span{ data: { target: '+=1' } } >
       .pure-u-1-12
   .pure-g-r.section#culture
     .content
