@@ -58,8 +58,11 @@ en:
     ticket: 'buy-ticket.svg'
     span-time: 'From Nov. 1st to Dec. 30th 2013'
     stay: 'stay tuned'
-    stay_up_to_day: 'Stay up-to-date on all things Magma Conf.'
-    subscribe: 'Subscribe to our newsletter.'
+    newsletter:
+      stay_up_to_day: 'Stay up-to-date on all things Magma Conf.'
+      subscribe: 'Subscribe to our newsletter.'
+      thanks: 'Thanks for subscribing to our newsletter'
+      keep: "We'll keep in touch!"
     work: 'We have a lot of work to do. Meanwhile please checkout'
     limit_ticket: 'limited to <span>50 tickets</span>'
     footer:

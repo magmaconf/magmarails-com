@@ -86,9 +86,8 @@ class Crowdsite < Sinatra::Base
     haml :index
   end
 
-
   post '/send_email' do
-    email_status = send_email(params)
+    email_status = send_email
     response.status = email_status[:sent] ? 200 : 500
   end
 end

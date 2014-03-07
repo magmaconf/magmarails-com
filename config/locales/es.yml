@@ -61,8 +61,11 @@ es:
     ticket: 'comprar-boleto.svg'
     span-time: 'Del 1 de Nov. al 30 de Dic. 2013'
     stay: 'Manténte al tanto'
-    stay_up_to_day: 'Mantente al día con las noticias de Magma Conf.'
-    subscribe: 'Suscríbete a nuestras noticias'
+    newsletter:
+      stay_up_to_day: 'Mantente al día con las noticias de Magma Conf.'
+      subscribe: 'Suscríbete a nuestras noticias'
+      thanks: 'Gracias por suscribirte a nuestras noticias'
+      keep: 'Estaremos en contacto!'
     work: 'Tenemos mucho trabajo por hacer. Mientras tanto, checa esto'
     limit_ticket: 'limitado a <span>50 boletos</span>'
     footer:
