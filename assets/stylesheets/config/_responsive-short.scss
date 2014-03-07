@@ -142,4 +142,23 @@
       }
     }
   }
+
+  #footer {
+
+    .footer-legend {
+
+      .open-popup {
+        display: none;
+      }
+
+      .policy-page {
+        display: inline-block;
+      }
+    }
+  }
+
+  #harassment .close-popup {
+    display: none;
+  }
+
 }

@@ -1,3 +1,4 @@
+.separator
 #news
   .row.top-copy-right
     .twelve-columns.top
@@ -44,3 +45,6 @@
         = t('home.policy.mail')
       %h3.phones= t('home.policy.phones')
       %span= t('home.policy.emergency')
+      %br
+      %a.close-popup{ href: '#' }
+        = t('home.policy.back_to')
