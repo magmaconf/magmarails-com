@@ -222,11 +222,21 @@
     }
   }
 
-  .btn-register.small {
-    height: 100px;
-    width: 100px;
-    margin-top: 42px;
-    padding: 12px 16px;
+  .btn-register {
+    &.small {
+      height: 100px;
+      width: 100px;
+      margin-top: 42px;
+      padding: 12px 16px;
+
+      img {
+        height: 71px;
+      }
+    }
+
+    img {
+      height: 99px;
+    }
   }
 
   .heading {

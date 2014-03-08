@@ -12,7 +12,7 @@
         %span.star
     .pure-u-1-4
       %a.btn-register.small{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}
-        %img{src: "#{image_path 'register-now.png'}"}
+        %img{src: "#{image_path t('images.register')}"}
   .pure-g-r.section#location
     .content
       .pure-u-1-12
@@ -61,7 +61,7 @@
           %br
           = t('about.manzanillo_inter_airport')
   .pure-g-r.register.section
-    = partial :register_button, locals: {img: 'register-now.png' }
+    = partial :register_button, locals: {img:  t('images.register') }
 
 - content_for :javascript do
   %script{src:"https://maps.googleapis.com/maps/api/js?sensor=false"}

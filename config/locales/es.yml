@@ -96,6 +96,15 @@ es:
       emergency: 'Emergencias: 066'
       taxi: 'Taxi: 33 6 90 40'
       back_to: 'Regresar a MagmaConf'
+  images:
+    date: 'fecha-lugar.svg'
+    register: 'registrarse-ahora.svg'
+    speakers-title: 'expositores-title.png'
+    wednesday: 'miercoles.svg'
+    thursday:  'jueves.svg'
+    friday: 'viernes.svg'
+    book-now: 'reserva-ahora.svg'
+    contact-sponsor: 'informacion.svg'
   contact-form:
     title: 'Información de contacto'
     cancel-button: 'Cancelar'
