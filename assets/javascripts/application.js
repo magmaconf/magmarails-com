@@ -2,6 +2,7 @@
 //= require scroll
 //= require jquery.validate
 //= require jquery.jcarousel-core.min
+//= require jquery.jcarousel-pagination.min
 //= require effects
 //= require switch_background
 //= require schedule

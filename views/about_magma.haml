@@ -24,39 +24,33 @@
           = t('home.mexico_primer_dev_conf')
           %br
           = t('about.conference_sessions_revolve')
-          %span{ data: { target: '-=1' } } <
-          %span{ data: { target: '+=1' } } >
-      .pure-u-1-2.content-image.jcarousel
+          .controls
+      #location-carousel.pure-u-1-2.content-image
         %ul
           %li
             %img{ src: "#{ image_path 'manzanillo.jpg' }" }
           %li
-            %img{ src: "#{ image_path 'manzanillo.jpg' }" }
+            %img{ src: "#{ image_path 'manzanillo-2.jpg' }" }
           %li
-            %img{ src: "#{ image_path 'manzanillo.jpg' }" }
-          %li
-            %img{ src: "#{ image_path 'manzanillo.jpg' }" }
+            %img{ src: "#{ image_path 'manzanillo-3.jpg' }" }
       .pure-u-1-12
   .pure-g-r.section#venue
     .content
       .pure-u-1-12
-      .pure-u-1-2.right.content-image.jcarousel
+      #venue-carousel.pure-u-1-2.right.content-image
         %ul
           %li
-            %img{src: "#{image_path 'venue.jpg'}"}
+            %img{ src: "#{image_path 'venue.jpg'}"}
           %li
-            %img{src: "#{image_path 'venue.jpg'}"}
+            %img{ src: "#{image_path 'venue-2.jpg'}"}
           %li
-            %img{src: "#{image_path 'venue.jpg'}"}
-          %li
-            %img{src: "#{image_path 'venue.jpg'}"}
-      .pure-u-1-3.right-info.content-information.jcarousel
+            %img{ src: "#{image_path 'venue-3.jpg'}"}
+      .pure-u-1-3.right-info.content-information
         %p.title= t('about.venue')
         %br
         %p.description
           = t('about.venue_description')
-          %span{ data: { target: '-=1' } } <
-          %span{ data: { target: '+=1' } } >
+          .controls
       .pure-u-1-12
   .pure-g-r.section#culture
     .content
@@ -67,8 +61,15 @@
         %br
         %p.description
           = t('about.culture_description')
-      .pure-u-1-2.content-image
-        %img{src: "#{image_path 'cultural.jpg'}"}
+          .controls
+      #culture-carousel.pure-u-1-2.content-image
+        %ul
+          %li
+            %img{ src: "#{image_path 'cultural.jpg'}"}
+          %li
+            %img{ src: "#{image_path 'culture-2.jpg'}"}
+          %li
+            %img{ src: "#{image_path 'culture-3.jpg'}"}
       .pure-u-1-12
   #map-container.pure-g-r.content
     .pure-u-1-1
