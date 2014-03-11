@@ -28,6 +28,11 @@
       margin-top: 42px;
       margin-left: -100px;
       padding: 12px 16px;
+
+      img {
+        height: 71px;
+        width: 64px;
+      }
     }
 
     .title {
@@ -88,6 +93,10 @@
       top: -196px;
       margin-left: 11px;
       z-index: 2;
+
+      img {
+        height: 95px;
+      }
     }
   }
 
@@ -185,6 +194,24 @@
   #location, #venue, #culture {
     border-bottom: 3px solid #514642;
     max-height: 344px;
+
+    span {
+      background-color: #7f7467;
+      display: inline-block;
+      height: 10px;
+      margin: 20px 3px 0 3px;
+      width: 10px;
+      @include rounded(5px);
+
+      &:hover {
+        cursor: pointer;
+        background-color: #000;
+      }
+    }
+
+    .active {
+      background-color: #000;
+    }
   }
 
   #location {
@@ -197,5 +224,27 @@
 
   #culture {
     background-color: #8e8075;
+  }
+
+  .content-image {
+    position: relative;
+    overflow: hidden;
+    height: 344px;
+
+    ul {
+      width: 20000em;
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      float: left;
+
+      img, li {
+        width: 600px;
+      }
+    }
   }
 }

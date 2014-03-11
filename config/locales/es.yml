@@ -20,13 +20,15 @@ es:
       a sólo 15 minutos de distancia del Recinto de MagmaConf. Este aeropuerto
       conecta Manzanillo con Los Ángeles, Vancouver, Houston y
       la Ciudad de México.
-    off_conf: Experiencia alternas a las conferencias.
     the_airport_is_near:  El aeropuerto está muy cerca.
     venue: Recinto de MagmaConf
     venue_description: Las pláticas toman lugar en el Centro de
       Tecnología Educativa. <br/><br/> Localizado en la Universidad de
       Colima Campus El Naranjo, este centro es un edificio de primera
       clase con sillas cómodas, wi-fi y aire acondicionado.
+    culture:
+      title_one: experiencias alternas
+      title_two: a las conferencias
   accommodations:
     a_mexican_paradise: Un paraiso Mexicano
     description: Una alternativa única al hotel tradicional, La Villa Magma
@@ -41,8 +43,8 @@ es:
     about: Sobre Magma
     accommodations: Alojamiento
     blog: Blog
-    menu: Men&uacute;
-    register: Registro
+    menu: MEN&Uacute;
+    register: REGISTRO
     schedule: Agenda
     speakers: Ponentes
     sponsors: Patrocinadores
@@ -61,7 +63,11 @@ es:
     ticket: 'comprar-boleto.svg'
     span-time: 'Del 1 de Nov. al 30 de Dic. 2013'
     stay: 'Manténte al tanto'
-    stay_up_to_day: Mantente al día con<br/>las noticias de MagmaConf
+    newsletter:
+      stay_up_to_day: 'Mantente al día con las noticias de Magma Conf.'
+      subscribe: 'Suscríbete a nuestras noticias'
+      thanks: 'Gracias por suscribirte a nuestras noticias'
+      keep: 'Estaremos en contacto!'
     work: 'Tenemos mucho trabajo por hacer. Mientras tanto, checa esto'
     limit_ticket: 'limitado a <span>50 boletos</span>'
     footer:
@@ -90,6 +96,15 @@ es:
       emergency: 'Emergencias: 066'
       taxi: 'Taxi: 33 6 90 40'
       back_to: 'Regresar a MagmaConf'
+  images:
+    date: 'fecha-lugar.svg'
+    register: 'registrarse-ahora.svg'
+    speakers-title: 'expositores-title.png'
+    wednesday: 'miercoles.svg'
+    thursday:  'jueves.svg'
+    friday: 'viernes.svg'
+    book-now: 'reserva-ahora.svg'
+    contact-sponsor: 'informacion.svg'
   contact-form:
     title: 'Información de contacto'
     cancel-button: 'Cancelar'
@@ -98,6 +113,11 @@ es:
       company: 'Empresa'
       email: 'Correo'
       submit: 'Contactanos'
+  newsletter-form:
+    fields:
+      name: 'Nombre'
+      email: 'Correo'
+      submit: 'Suscribirse'
   daily:
     copy-right: 'Crowd Interactive &copy; 2013. This site is protected by copyright under US and international law. All rights reserved'
     five: 'NO. 5'

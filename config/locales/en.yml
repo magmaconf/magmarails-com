@@ -18,13 +18,15 @@ en:
     manzanillo_inter_airport: Manzanillo's International Airport is only 15
       minutes away from the MagmaConf Venue. This airport connects Manzanillo
       with Los Angeles, Vancouver, Huston and Mexico City.
-    off_conf: Off Conference
     the_airport_is_near: The Airport is Near
     venue: MagmaConf Venue
     venue_description: Talks and workshop take place at the center of
       educational technology. <br/><br/> Located in the University of
       Colima&#96;s El Naranjo campus, the centre is a first-class teaching
       facility, featuring comfortable seating, wi-fi, and air conditioning.
+    culture:
+      title_one: Off Conference
+      title_two: Experience
   accommodations:
     a_mexican_paradise: A mexican paradise
     description: An unique alternative to a traditional hotel, Magma Village
@@ -39,8 +41,8 @@ en:
     about: About Magma
     accommodations: Accommodations
     blog: Blog
-    menu: Menu
-    register: Register
+    menu: MENU
+    register: REGISTER
     schedule: Schedule
     speakers: Speakers
     sponsors: Sponsors
@@ -58,7 +60,11 @@ en:
     ticket: 'buy-ticket.svg'
     span-time: 'From Nov. 1st to Dec. 30th 2013'
     stay: 'stay tuned'
-    stay_up_to_day: Stay up-to-date on all<br/>things MagmaConf with...
+    newsletter:
+      stay_up_to_day: 'Stay up-to-date on all things Magma Conf.'
+      subscribe: 'Subscribe to our newsletter.'
+      thanks: 'Thanks for subscribing to our newsletter'
+      keep: "We'll keep in touch!"
     work: 'We have a lot of work to do. Meanwhile please checkout'
     limit_ticket: 'limited to <span>50 tickets</span>'
     footer:
@@ -87,6 +93,15 @@ en:
       emergency: 'Emergencies: 066'
       taxi: 'Taxi: 33 6 90 40'
       back_to: 'Back to MagmaConf'
+  images:
+    date: 'date-place.svg'
+    register: 'register-now.svg'
+    speakers-title: 'speakers-title.png'
+    wednesday: 'wednesday.svg'
+    thursday:  'thursday.svg'
+    friday: 'friday.svg'
+    book-now: 'book-now.svg'
+    contact-sponsor: 'contact-sponsor.svg'
   contact-form:
     title: 'Contact information'
     cancel-button: 'Cancel'
@@ -95,6 +110,11 @@ en:
       company: 'Company'
       email: 'E-mail'
       submit: 'Contact us'
+  newsletter-form:
+    fields:
+      name: 'Name'
+      email: 'E-mail'
+      submit: 'Subscribe'
   daily:
     copy-right: 'Crowd Interactive &copy; 2013. This site is protected by copyright under US and international law. All rights reserved'
     five: 'NO. 5'

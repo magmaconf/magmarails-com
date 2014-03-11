@@ -14,17 +14,7 @@
 
 @import 'site';
 
-@import 'pages/layout';
-@import 'pages/index';
-@import 'pages/footer';
-@import 'pages/_main_menu.scss';
-@import 'pages/speakers';
-@import 'pages/about_magma';
-@import 'pages/sponsoring';
-@import 'pages/buy_ticket';
-@import 'pages/schedule';
-@import 'pages/accommodations';
-@import 'pages/social_buttons';
+@import 'pages/*';
 
 @import 'config/responsive-large';
 @import 'config/responsive-medium';
