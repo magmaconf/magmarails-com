@@ -21,7 +21,7 @@
 
     .section{
       display: inline-block;
-      max-height: 600px !important;
+      max-height: 700px !important;
       width: 100%;
     }
 
@@ -39,7 +39,7 @@
         text-align: center;
       }
       .description{
-        margin-top: 57%;
+        margin-top: 88%;
         padding: 0 10px;
       }
     }
@@ -88,6 +88,15 @@
         margin: 0;
       }
     }
+
+    .controls {
+      margin: 0 auto;
+      width: 50px;
+    }
+  }
+
+  #footer {
+    padding-top: 280px;
   }
 }
 
@@ -106,7 +115,7 @@
 
     .content-information{
       .description{
-        margin-top: 55%;
+        margin-top: 105%;
       }
     }
 
@@ -122,5 +131,9 @@
         padding: 0% 10%;
       }
     }
+  }
+
+  #footer {
+    padding-top: 620px;
   }
 }
