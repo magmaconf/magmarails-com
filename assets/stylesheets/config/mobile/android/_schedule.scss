@@ -2,6 +2,33 @@
 
   #schedule{
     padding-top: 80px;
+    .container.fixed {
+      padding-top: 67px;
+
+      .head {
+        top: 40px;
+        width: 81%;
+      }
+
+      .arrow {
+        position: fixed;
+        z-index: 100;
+      }
+
+      #right {
+        margin: 0;
+        right: 10px;
+        top: 52px;
+      }
+
+      #left {
+        top: 50px;
+      }
+
+      .line.opening {
+        padding-top: 45px;
+      }
+    }
     .header {
       width: 288px;
       .star, .arena {
@@ -99,25 +126,26 @@
         }
       }
     }
-    #left-arrow, #right-arrow {
+    .arrow {
       background: image_url('arrows-sprite.svg') no-repeat;
       background-size: 35px 175px;
-      display: block;
       height: 30px;
       position: relative;
       width: 20px;
     }
 
-    #right-arrow {
+    #right {
       background-position: -7px -41px;
+      display: inline-block;
       float: right;
-      top: 11px;
-      right: 18px;
+      margin-bottom: -45px;
+      margin-top: 44px;
     }
 
-    #left-arrow {
+    #left {
       background-position: -7px 1px;
-      top: 41px;
+      display: inline-block;
+      top: 44px;
     }
   }
 

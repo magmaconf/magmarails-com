@@ -28,6 +28,18 @@
         top: -196px;
       }
     }
+
+    &.fixed {
+      padding-top: 59px;
+
+      .head {
+        position: fixed;
+        top: 50px;
+        width: 31.6%;
+        max-width: 400px;
+        z-index: 99;
+      }
+    }
   }
   .header {
     margin: 0 auto;
@@ -94,10 +106,12 @@
     }
   }
   .head {
+    background-color: #d8d6c5;
     border-bottom: 3px solid #53433D;
     margin: 10px 0;
     min-height: 23px;
     padding: 10px 0 5px;
+    width: 100%;
   }
   .line {
     border-bottom: 1px solid #53433D;
