@@ -49,6 +49,8 @@ class Crowdsite < Sinatra::Base
     I18n.locale = locale || browser_locale
 
     @date = Time.now.strftime "%b|%d|%Y"
+
+    browser_locale
   end
 
   get '/about-magma' do
@@ -67,8 +69,8 @@ class Crowdsite < Sinatra::Base
   end
 
   get '/schedule' do
-    set_locale
-    haml :schedule
+    browser_locale = set_locale
+    haml :schedule, locals: { language: browser_locale }
   end
 
   get '/sponsors' do
