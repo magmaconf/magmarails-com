@@ -6,16 +6,17 @@ $(document).ready ->
     scrollPosition = $(@).scrollTop()
     screenWidth = window.screen.width
 
-    if screenWidth > 640
-      if scrollPosition >= 164
-        $('#schedule .container').addClass('fixed')
-      else
-        $('#schedule .container').removeClass('fixed')
+    minScroll = 163
+    maxScroll = 1372
+
+    if screenWidth <= 640
+      scrollPosition+= 31
+      maxScroll = 1065
+
+    if minScroll <= scrollPosition <= maxScroll
+      $('#schedule .container').addClass('fixed')
     else
-      if scrollPosition >= 129
-        $('#schedule .container').addClass('fixed')
-      else
-        $('#schedule .container').removeClass('fixed')
+      $('#schedule .container').removeClass('fixed')
 
 
   $('#left.arrow').css('background-image', 'none')

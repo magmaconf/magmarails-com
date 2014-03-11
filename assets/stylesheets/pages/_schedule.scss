@@ -23,25 +23,28 @@
       margin: 100px auto 0px;
       width: 173px;
       .btn-register {
-        margin-left: 11px;
+        margin-left: 12px;
         position: relative;
         top: -196px;
 
         img {
           height: 96px;
-          width: 86px;
+          width: 82px;
         }
       }
     }
 
     &.fixed {
-      padding-top: 59px;
+
+      .line.opening {
+        padding-top: 76px;
+      }
 
       .head {
+        max-width: 400px;
         position: fixed;
         top: 50px;
-        width: 31.6%;
-        max-width: 400px;
+        width: 31.7%;
         z-index: 99;
       }
     }
@@ -97,6 +100,7 @@
   }
   #wednesday .day-image {
     width: 168px;
+    margin-left: 45px;
   }
   #thursday .day-image {
     width: 158px;
@@ -118,9 +122,9 @@
     padding: 10px 0 5px;
     width: 100%;
     &.es {
-      padding-top: 6px;
+      padding-top: 8px;
       img {
-        height: 22px;
+        height: 20px;
       }
     }
   }

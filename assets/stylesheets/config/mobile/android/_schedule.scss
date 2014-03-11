@@ -3,11 +3,15 @@
   #schedule{
     padding-top: 80px;
     .container.fixed {
-      padding-top: 67px;
+
+      .line.opening {
+        padding-top: 113px;
+      }
 
       .head {
+        max-width: none;
         top: 40px;
-        width: 81%;
+        width: 80.7%;
       }
 
       .arrow {
@@ -16,17 +20,13 @@
       }
 
       #right {
-        margin: 0;
-        right: 10px;
-        top: 52px;
+        margin-bottom: 0;
+        right: 2.5%;
+        top: 6px;
       }
 
       #left {
         top: 50px;
-      }
-
-      .line.opening {
-        padding-top: 45px;
       }
     }
     .header {
@@ -79,6 +79,10 @@
       &.active {
         display: block;
       }
+    }
+
+    #wednesday .day-image {
+      margin-left: 20px;
     }
 
     .line {
@@ -141,8 +145,8 @@
       background-position: -7px -41px;
       display: inline-block;
       float: right;
-      margin-bottom: -45px;
       margin-top: 44px;
+      margin-left: -7%;
     }
 
     #left {
