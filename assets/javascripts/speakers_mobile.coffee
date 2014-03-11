@@ -1,12 +1,11 @@
-$(document).ready ->
+$ ->
 
-  $('.accordion-group').click ->
-    $('.accordion-group.active').removeClass('active')
+  $('.accordion-heading').on 'touchend', ->
+    $('.accordion-heading').removeClass('active')
     $('.accordion-body').slideUp()
-    $(this).find('.accordion-heading p').show()
     $('.accordion-heading p').show()
 
-    if !$(this).find('.accordion-body').is(':visible')
+    if !$(this).next().is(':visible')
       $(this).addClass('active')
-      $(this).find('.accordion-body').slideDown()
-      $(this).find('.accordion-heading p').hide()
+      $(this).next().slideDown()
+      $(this).find('p').hide()

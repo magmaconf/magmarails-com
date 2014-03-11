@@ -45,6 +45,7 @@
       #date {
         margin-left: 0;
         margin-bottom: 11px;
+        width: 178px;
       }
       p {
         max-width: 170px;
@@ -66,6 +67,9 @@
           position: relative;
           top: -205px;
           margin-left: -3px;
+          img {
+            height: 96px;
+          }
         }
       }
     }

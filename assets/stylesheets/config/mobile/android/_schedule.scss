@@ -56,6 +56,9 @@
     .head {
       border-top: 0;
       padding: 8px 0 12px;
+      &.es {
+        padding-bottom: 10px;
+      }
     }
     .bottom {
       display: none;
@@ -65,7 +68,7 @@
       width: 15%;
     }
 
-    #wednesday-image, #thursday-image, #friday-image {
+    .day-image {
       margin-left: 20px;
     }
 

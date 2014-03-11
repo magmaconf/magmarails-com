@@ -26,6 +26,11 @@
         margin-left: 11px;
         position: relative;
         top: -196px;
+
+        img {
+          height: 96px;
+          width: 86px;
+        }
       }
     }
 
@@ -90,16 +95,16 @@
       text-transform: uppercase;
     }
   }
-  #wednesday-image {
+  #wednesday .day-image {
     width: 168px;
   }
-  #thursday-image {
+  #thursday .day-image {
     width: 158px;
   }
-  #friday-image{
+  #friday .day-image {
     width: 129px;
   }
-  #thursday-image, #friday-image, #wednesday-image {
+  .day-image {
     margin-left: 80px;
     img {
       height: 17px;
@@ -112,6 +117,12 @@
     min-height: 23px;
     padding: 10px 0 5px;
     width: 100%;
+    &.es {
+      padding-top: 6px;
+      img {
+        height: 22px;
+      }
+    }
   }
   .line {
     border-bottom: 1px solid #53433D;
@@ -119,6 +130,7 @@
     .speaker-name {
       font-size: 140%;
       margin: 0px 0px 10px 60px;
+      text-transform: uppercase;
     }
     .time {
       color: #716059;
@@ -157,6 +169,7 @@
     &.break, &.opening {
       .legend {
         font-size: 140%;
+        text-transform: uppercase;
       }
     }
     &.announcements .legend {

@@ -40,10 +40,10 @@
 
       .pure-u-7-24#wednesday.active
         .pure-g-r
-          .head
+          .head{ class: "#{ locals[:language] }" }
             .pure-u-1-1
-              #wednesday-image
-                %img{src: "#{image_path 'wednesday.svg'}"}
+              .day-image
+                %img{src: "#{image_path t('images.wednesday')}"}
         .pure-g-r.line.opening
           .pure-u-1-1
             %p.legend OPENING
@@ -79,8 +79,8 @@
         .pure-g-r
           .head
             .pure-u-1-1
-              #thursday-image
-                %img{src: "#{image_path 'thursday.svg'}"}
+              .day-image
+                %img{src: "#{image_path t('images.thursday')}"}
         .pure-g-r.line.opening
           .pure-u-1-1
         = partial :talk, locals: { speaker: 'David Calavera', talk_name: "GitHub Enterprise' toolchain", language: 'en'}
@@ -113,8 +113,8 @@
         .pure-g-r
           .head
             .pure-u-1-1
-              #friday-image
-                %img{src: "#{image_path 'friday.svg'}"}
+              .day-image
+                %img{src: "#{image_path t('images.friday')}"}
         .pure-g-r.line.opening
           .pure-u-1-1
         = partial :talk, locals: { speaker: 'PJ', talk_name: 'Urban Legends: What You Code Makes You Who You Are', language: 'en'}
@@ -148,4 +148,4 @@
           %img{src: "#{image_path 'manzanillo-schedule.png'}"}
     .pure-g-r.register
       .pure-u-1-1
-        = partial :register_button, locals: {img: 'register-now.png' }
+        = partial :register_button, locals: {img: t('images.register') }

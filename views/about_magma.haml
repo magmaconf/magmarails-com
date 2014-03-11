@@ -12,7 +12,7 @@
         %span.star
     .pure-u-1-4
       %a.btn-register.small{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}
-        %img{src: "#{image_path 'register-now.png'}"}
+        %img{src: "#{image_path t('images.register')}"}
   .pure-g-r.section#location
     .content
       .pure-u-1-12
@@ -23,21 +23,22 @@
         %p.description
           = t('home.mexico_primer_dev_conf')
           %br
-          %br
           = t('about.conference_sessions_revolve')
-      .pure-u-1-2.content-image
-        %img{src: "#{image_path 'manzanillo.jpg'}"}
+          .controls
+      #location-carousel.pure-u-1-2.content-image
+        = partial :slider, locals: { img1: 'manzanillo.jpg', img2: 'manzanillo-2.jpg', img3: 'manzanillo-3.jpg' }
       .pure-u-1-12
   .pure-g-r.section#venue
     .content
       .pure-u-1-12
-      .pure-u-1-2.right.content-image
-        %img{src: "#{image_path 'venue.jpg'}"}
+      #venue-carousel.pure-u-1-2.right.content-image
+        = partial :slider, locals: { img1: 'venue.jpg', img2: 'venue-2.jpg', img3: 'venue-3.jpg' }
       .pure-u-1-3.right-info.content-information
         %p.title= t('about.venue')
         %br
         %p.description
           = t('about.venue_description')
+          .controls
       .pure-u-1-12
   .pure-g-r.section#culture
     .content
@@ -48,8 +49,9 @@
         %br
         %p.description
           = t('about.culture_description')
-      .pure-u-1-2.content-image
-        %img{src: "#{image_path 'cultural.jpg'}"}
+          .controls
+      #culture-carousel.pure-u-1-2.content-image
+        = partial :slider, locals: { img1: 'cultural.jpg', img2: 'culture-2.jpg', img3: 'culture-3.jpg' }
       .pure-u-1-12
   #map-container.pure-g-r.content
     .pure-u-1-1
@@ -61,7 +63,7 @@
           %br
           = t('about.manzanillo_inter_airport')
   .pure-g-r.register.section
-    = partial :register_button, locals: {img: 'register-now.png' }
+    = partial :register_button, locals: {img:  t('images.register') }
 
 - content_for :javascript do
   %script{src:"https://maps.googleapis.com/maps/api/js?sensor=false"}
