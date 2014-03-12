@@ -1,30 +1,20 @@
 $ ->
 
-  $('#location-carousel, #venue-carousel, #culture-carousel').jcarousel()
+  $('#location-carousel, #venue-carousel, #culture-carousel, #village-image').jcarousel()
 
-  setControls = (carousel) ->
-    $("#{carousel} .controls").jcarouselPagination({
-      item: (page) ->
-        "<span href='##{page}'></span>"
-      carousel: $("#{carousel} .content")
-    })
-
-  carousels = ['#location', '#venue', '#culture']
-
-  for carousel in carousels
-    setControls(carousel)
+  $(".controls").jcarouselPagination({
+    item: (page) ->
+      "<span href='##{page}'></span>"
+  })
 
   $('.controls :first-child').addClass('active')
 
-  $('#location span').on 'click', ->
-    $('#location span').removeClass('active')
-    $(this).addClass('active')
+  setActive = (selector)->
+    $("#{selector} span").on 'click', ->
+      $("#{selector} span").removeClass('active')
+      $(this).addClass('active')
 
-  $('#venue span').on 'click', ->
-    $('#venue span').removeClass('active')
-    $(this).addClass('active')
+  controls = ['#location', '#venue', '#culture', '#village-info']
 
-  $('#culture span').on 'click', ->
-    $('#culture span').removeClass('active')
-    $(this).addClass('active')
-
+  for control in controls
+    setActive(control)
