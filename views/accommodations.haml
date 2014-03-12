@@ -23,9 +23,10 @@
           #description
             %p.title= t('accommodations.title')
             %p.description-text= t('accommodations.description')
+            .controls
             %img.shadow{src: "#{image_path 'shadow.png'}"}
             %a.btn-register{href: "http://store.magmaconf.com/", target: "_blank"}
               %img{src: "#{image_path t('images.book-now')}"}
-        .pure-u-3-5
-          #village-image
-            %img{src: "#{image_path 'village-description.jpg'}"}
+        .pure-u-3-5.content
+          #village-image.content-image
+            = partial :slider, locals: { img1: 'village.jpg', img2: 'village2.jpg', img3: 'village3.jpg' }
