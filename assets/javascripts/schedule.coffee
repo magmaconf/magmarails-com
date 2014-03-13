@@ -32,7 +32,6 @@ $(document).ready ->
       $('#thursday').removeClass('active')
 
   $('#right.arrow').click ->
-    $('#left.arrow').css('background-image', '')
     if $('#wednesday').hasClass('active')
       $('#thursday').addClass('active')
       $('#wednesday').removeClass('active')
@@ -40,3 +39,57 @@ $(document).ready ->
       $('#right.arrow').css('background-image', 'none')
       $('#friday').addClass('active')
       $('#thursday').removeClass('active')
+
+  $('#wednesday').swiperight ->
+    $('#right.arrow').css('z-index', '1000')
+    $(@).animate
+      top: '0px'
+      left: '100%'
+    ,
+      duration: 500
+    $('#thursday').animate
+      left: '14.5%'
+    ,
+      duration: 500
+
+
+  $('#thursday').swiperight ->
+    $('#right.arrow').css('z-index', '0')
+    $(@).animate
+      left: '100%'
+    ,
+      duration: 500
+    $('#friday').animate
+      left: '14.5%'
+    ,
+      duration: 500
+
+  $('#friday').swipeleft ->
+    $(@).animate
+      left: '-66.3%'
+    ,
+      duration: 500
+    $('#thursday').animate
+      left: '14.5%'
+    ,
+      duration: 500
+
+  $('#thursday').swipeleft ->
+    $(@).animate
+      left: '-66.3%'
+    ,
+      duration: 500
+    $('#wednesday').animate
+      left: '0'
+    ,
+      duration: 500
+
+#  $('#schedule .container').swipeleft ->
+#    $('#left.arrow').css('background-image', '')
+#    if $('#wednesday').hasClass('active')
+#      $('#thursday').addClass('active')
+#      $('#wednesday').removeClass('active')
+#    else
+#      $('#right.arrow').css('background-image', 'none')
+#      $('#friday').addClass('active')
+#      $('#thursday').removeClass('active')

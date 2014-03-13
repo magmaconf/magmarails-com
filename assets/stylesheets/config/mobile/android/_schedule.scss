@@ -66,6 +66,8 @@
 
     #time {
       width: 15%;
+      z-index: 1040;
+      background: #d8d6c5;
     }
 
     .day-image {
@@ -75,14 +77,35 @@
     #wednesday, #thursday, #friday {
       width: 85%;
       display: none;
+      background: #d8d6c5;
 
       &.active {
         display: block;
       }
     }
 
-    #wednesday .day-image {
-      margin-left: 20px;
+    #wednesday {
+      position: relative;
+      z-index: 1001;
+      .day-image {
+        margin-left: 20px;
+      }
+    }
+
+    #thursday {
+      display: block;
+      position: relative;
+      top: -959px;
+      left: -66.3%;
+      z-index: 999;
+    }
+
+    #friday {
+      display: block;
+      position: relative;
+      top: -1918px;
+      left: -66.3%;
+
     }
 
     .line {
@@ -139,6 +162,7 @@
       height: 30px;
       position: relative;
       width: 20px;
+      z-index: 1002;
     }
 
     #right {
