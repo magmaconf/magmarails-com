@@ -2,31 +2,37 @@
 
   #schedule{
     padding-top: 80px;
-    .container.fixed {
+    .container {
+      width: 100%;
+      &.fixed {
 
-      .line.opening {
-        padding-top: 113px;
-      }
+        .line.opening {
+          padding-top: 113px;
+        }
 
-      .head {
-        max-width: none;
-        top: 40px;
-        width: 80.7%;
-      }
+        #time .head {
+          width: 15%;
+        }
 
-      .arrow {
-        position: fixed;
-        z-index: 100;
-      }
+        .head {
+          max-width: none;
+          top: 40px;
+          width: 83%;
+        }
 
-      #right {
-        margin-bottom: 0;
-        right: 2.5%;
-        top: 6px;
-      }
+        .arrow {
+          position: fixed;
+        }
 
-      #left {
-        top: 50px;
+        #right {
+          margin-bottom: 0;
+          right: 0;
+          top: 6px;
+        }
+
+        #left {
+          top: 50px;
+        }
       }
     }
     .header {
@@ -38,8 +44,8 @@
         background: image_url('sprite.svg');
         background-size: 174px 180px;
         background-position: -155px -142px;
-        width: 15px;
         height: 15px;
+        width: 15px;
       }
       .arena {
         width: 230px;
@@ -65,7 +71,10 @@
     }
 
     #time {
-      width: 15%;
+      background: #d8d6c5;
+      padding-left: 2%;
+      width: 13%;
+      z-index: 1001;
     }
 
     .day-image {
@@ -73,16 +82,22 @@
     }
 
     #wednesday, #thursday, #friday {
-      width: 85%;
-      display: none;
+      background: #d8d6c5;
+      top: auto;
+      width: 83%;
+      z-index: 999;
+    }
 
-      &.active {
-        display: block;
+    #wednesday {
+      position: relative;
+      .day-image {
+        margin-left: 20px;
       }
     }
 
-    #wednesday .day-image {
-      margin-left: 20px;
+    #thursday, #friday {
+      left: -100%;
+      position: absolute;
     }
 
     .line {
@@ -135,10 +150,12 @@
     }
     .arrow {
       background: image_url('arrows-sprite.svg') no-repeat;
+      background-color: #d8d6c5;
       background-size: 35px 175px;
       height: 30px;
       position: relative;
       width: 20px;
+      z-index: 1002;
     }
 
     #right {
@@ -146,12 +163,14 @@
       display: inline-block;
       float: right;
       margin-top: 44px;
-      margin-left: -7%;
+      margin-left: -8%;
+      padding-right: 2%;
     }
 
     #left {
       background-position: -7px 1px;
       display: inline-block;
+      left: 2%;
       top: 44px;
     }
   }
