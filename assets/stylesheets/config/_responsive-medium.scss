@@ -195,6 +195,14 @@
   #schedule {
     .container {
       width: 95%;
+
+      &.fixed .head {
+        padding-top: 17px;
+
+        &.es {
+          padding-top: 15px;
+        }
+      }
     }
     #magma-legend p {
       font-size: 85%;

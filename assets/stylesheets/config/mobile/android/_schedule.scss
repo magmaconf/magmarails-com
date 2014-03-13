@@ -2,6 +2,33 @@
 
   #schedule{
     padding-top: 80px;
+    .container.fixed {
+
+      .line.opening {
+        padding-top: 113px;
+      }
+
+      .head {
+        max-width: none;
+        top: 40px;
+        width: 80.7%;
+      }
+
+      .arrow {
+        position: fixed;
+        z-index: 100;
+      }
+
+      #right {
+        margin-bottom: 0;
+        right: 2.5%;
+        top: 6px;
+      }
+
+      #left {
+        top: 50px;
+      }
+    }
     .header {
       width: 288px;
       .star, .arena {
@@ -39,6 +66,8 @@
 
     #time {
       width: 15%;
+      z-index: 1040;
+      background: #d8d6c5;
     }
 
     .day-image {
@@ -48,10 +77,35 @@
     #wednesday, #thursday, #friday {
       width: 85%;
       display: none;
+      background: #d8d6c5;
 
       &.active {
         display: block;
       }
+    }
+
+    #wednesday {
+      position: relative;
+      z-index: 1001;
+      .day-image {
+        margin-left: 20px;
+      }
+    }
+
+    #thursday {
+      display: block;
+      position: relative;
+      top: -959px;
+      left: -66.3%;
+      z-index: 999;
+    }
+
+    #friday {
+      display: block;
+      position: relative;
+      top: -1918px;
+      left: -66.3%;
+
     }
 
     .line {
@@ -102,25 +156,27 @@
         }
       }
     }
-    #left-arrow, #right-arrow {
+    .arrow {
       background: image_url('arrows-sprite.svg') no-repeat;
       background-size: 35px 175px;
-      display: block;
       height: 30px;
       position: relative;
       width: 20px;
+      z-index: 1002;
     }
 
-    #right-arrow {
+    #right {
       background-position: -7px -41px;
+      display: inline-block;
       float: right;
-      top: 11px;
-      right: 18px;
+      margin-top: 44px;
+      margin-left: -7%;
     }
 
-    #left-arrow {
+    #left {
       background-position: -7px 1px;
-      top: 41px;
+      display: inline-block;
+      top: 44px;
     }
   }
 

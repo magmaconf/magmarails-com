@@ -17,8 +17,8 @@
         %img{src: "#{image_path 'right-mask.png'}"}
       .pure-u-4-24.right-stars
         = partial :small_stars_list
-    %span#left-arrow
-    %span#right-arrow
+    %span#left.arrow
+    %span#right.arrow
     .pure-g-r
       .pure-u-1-24#time
         .pure-g-r.head
@@ -39,10 +39,11 @@
         = partial :hour, locals: { hour: '15:40', class_name: 'break' }
 
       .pure-u-7-24#wednesday.active
-        .pure-g-r.head{ class: "#{ locals[:language] }" }
-          .pure-u-1-1
-            .day-image
-              %img{src: "#{image_path t('images.wednesday')}"}
+        .pure-g-r
+          .head{ class: "#{ locals[:language] }" }
+            .pure-u-1-1
+              .day-image
+                %img{src: "#{image_path t('images.wednesday')}"}
         .pure-g-r.line.opening
           .pure-u-1-1
             %p.legend OPENING
@@ -75,10 +76,11 @@
 
 
       .pure-u-1-3#thursday
-        .pure-g-r.head
-          .pure-u-1-1
-            .day-image
-              %img{src: "#{image_path t('images.thursday')}"}
+        .pure-g-r
+          .head
+            .pure-u-1-1
+              .day-image
+                %img{src: "#{image_path t('images.thursday')}"}
         .pure-g-r.line.opening
           .pure-u-1-1
         = partial :talk, locals: { speaker: 'David Calavera', talk_name: "GitHub Enterprise' toolchain", language: 'en'}
@@ -108,10 +110,11 @@
             %p.legend EOD Announcements
 
       .pure-u-1-3#friday
-        .pure-g-r.head
-          .pure-u-1-1
-            .day-image
-              %img{src: "#{image_path t('images.friday')}"}
+        .pure-g-r
+          .head
+            .pure-u-1-1
+              .day-image
+                %img{src: "#{image_path t('images.friday')}"}
         .pure-g-r.line.opening
           .pure-u-1-1
         = partial :talk, locals: { speaker: 'PJ', talk_name: 'Urban Legends: What You Code Makes You Who You Are', language: 'en'}
