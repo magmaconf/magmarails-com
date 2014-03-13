@@ -2,6 +2,33 @@
 
   #schedule{
     padding-top: 80px;
+    .container.fixed {
+
+      .line.opening {
+        padding-top: 113px;
+      }
+
+      .head {
+        max-width: none;
+        top: 40px;
+        width: 80.7%;
+      }
+
+      .arrow {
+        position: fixed;
+        z-index: 100;
+      }
+
+      #right {
+        margin-bottom: 0;
+        right: 2.5%;
+        top: 6px;
+      }
+
+      #left {
+        top: 50px;
+      }
+    }
     .header {
       width: 288px;
       .star, .arena {
@@ -54,6 +81,10 @@
       }
     }
 
+    #wednesday .day-image {
+      margin-left: 20px;
+    }
+
     .line {
       .legend, .speaker-name, .language-image.en, .talk-name  {
         margin-left: 20px;
@@ -102,25 +133,26 @@
         }
       }
     }
-    #left-arrow, #right-arrow {
+    .arrow {
       background: image_url('arrows-sprite.svg') no-repeat;
       background-size: 35px 175px;
-      display: block;
       height: 30px;
       position: relative;
       width: 20px;
     }
 
-    #right-arrow {
+    #right {
       background-position: -7px -41px;
+      display: inline-block;
       float: right;
-      top: 11px;
-      right: 18px;
+      margin-top: 44px;
+      margin-left: -7%;
     }
 
-    #left-arrow {
+    #left {
       background-position: -7px 1px;
-      top: 41px;
+      display: inline-block;
+      top: 44px;
     }
   }
 
