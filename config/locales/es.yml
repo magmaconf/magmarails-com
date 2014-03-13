@@ -1,11 +1,5 @@
 es:
   about:
-    conference_sessions_revolve: Las sesiones de conferencias son sobre Ruby,
-      Rails, Diseño Front-end y m&aacute;s. Los asistentes son desarrolladores de
-      software, diseñadores gr&aacute;ficos e ingenieros con experiencia, o esperando
-      obtenerla, creando aplicaciones web novedosas. Ven y aprende, no solo de
-      nuestros extraordinarios ponentes, si no también de nuestra diversa
-      audiencia.
     culture_description: MagmaConf ofrece la oportunidad de vivir México como
       nunca antes se ha hecho. <br/><br/> Las actividades vespertinas incluyen
       cenas grupales seguidas por danzas, emocionantes luchas libres y el
@@ -14,21 +8,33 @@ es:
     deserves_beauty: Merece un lugar extraordinario
     experience: Experiencia
     great_conf: Una gran conferencia
-    hosted_in: Organizado en el hermoso
+    magmaconf_is_title: MagmaConf es una moderna conferencia premier de
+      desarrollo web en México
+    magmaconf_description: Las sesiones de conferencias son sobre Ruby,
+      Rails, Diseño Front-end y m&aacute;s. Los asistentes son desarrolladores de
+      software, diseñadores gr&aacute;ficos e ingenieros con experiencia, o esperando
+      obtenerla, creando aplicaciones web novedosas. Ven y aprende, no solo de
+      nuestros extraordinarios ponentes, si no también de nuestra diversa
+      audiencia.
+    magma_village:  Villa Magma
+    magma_village_description: Una alternativa única al hotel tradicional, La Villa Magma
+      ofrece a los asistentes la oportunidad de continuar con el aprendizaje
+      aún cuando las pláticas ya hayan terminado por el día.<br/><br/> Como
+      parte del exclusivo Club de Playa Santiago, Villa Magma está ubicada
+      en la mejor playa de Manzanillo. Relájate en la arena después de un
+      día largo de conferencias o hunde tus pies en el suave oceano mexicano.
     manzanillo: Manzanillo, México.
     manzanillo_inter_airport: El aeropuerto internacional de Manzanillo está
       a sólo 15 minutos de distancia del Recinto de MagmaConf. Este aeropuerto
       conecta Manzanillo con Los Ángeles, Vancouver, Houston y
       la Ciudad de México.
     the_airport_is_near:  El aeropuerto está muy cerca.
-    venue: Recinto de MagmaConf
+    venue: El Recinto
     venue_description: Las pláticas toman lugar en el Centro de
       Tecnología Educativa. <br/><br/> Localizado en la Universidad de
       Colima Campus El Naranjo, este centro es un edificio de primera
       clase con sillas cómodas, wi-fi y aire acondicionado.
-    culture:
-      title_one: experiencias alternas
-      title_two: a las conferencias
+    culture_activities: Actividades
   accommodations:
     a_mexican_paradise: Un paraiso Mexicano
     description: Una alternativa única al hotel tradicional, La Villa Magma

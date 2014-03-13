@@ -1,6 +1,6 @@
 $ ->
 
-  $('#location-carousel, #venue-carousel, #culture-carousel, #village-image').jcarousel()
+  $('#location-carousel, #venue-carousel, #culture-carousel, #magma-village-carousel').jcarousel()
 
   $(".controls").jcarouselPagination({
     item: (page) ->
@@ -14,7 +14,7 @@ $ ->
       $("#{selector} span").removeClass('active')
       $(this).addClass('active')
 
-  controls = ['#location', '#venue', '#culture', '#village-info']
+  controls = ['#location', '#venue', '#culture', '#magma-village']
 
   for control in controls
     setActive(control)
