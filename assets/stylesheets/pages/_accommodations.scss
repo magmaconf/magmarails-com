@@ -96,8 +96,22 @@
     max-width: 1200px;
   }
   #village-image {
-    height: 700px;
+    overflow: hidden;
+    position: relative;
+    width: 700px;
+
+    ul {
+      width: 20000em;
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        float: left;
+      }
+    }
   }
+
   #description {
     text-align: right;
     margin-right: 20px;
@@ -109,7 +123,6 @@
       text-transform: uppercase;
     }
     .description-text {
-      float: right;
       font-weight: 300;
       font-family: Roboto;
       font-size: 100%;
@@ -133,6 +146,24 @@
         height: 90px;
         width: 100%;
       }
+    }
+  }
+
+  .controls span {
+    background-color: #7f7467;
+    display: inline-block;
+    height: 10px;
+    margin: 20px 3px 0 3px;
+    width: 10px;
+    @include rounded(5px);
+
+    &:hover {
+      cursor: pointer;
+      background-color: #000;
+    }
+
+    &.active {
+      background-color: #000;
     }
   }
 }
