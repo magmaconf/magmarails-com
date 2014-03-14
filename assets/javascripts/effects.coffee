@@ -1,15 +1,20 @@
 $(document).ready ->
 
-  Offset = window.screen.width
-  $('#main-menu').css('right', Offset) if Offset < 641
 
-  $(window).bind "orientationchange", ->
-    Offset = window.screen.height + 8
-    deactivateTransitions()
-    if isMainMenuOpen()
-      $('body').css('left', Offset)
-    else
-      $('#main-menu').css('right', Offset)
+  isMobileDevice = ->
+    window.screen.width < 641
+
+  offset = window.screen.width
+  $('#main-menu').css('right', offset) if isMobileDevice()
+
+  $(window).on "orientationchange", ->
+    if isMobileDevice()
+      offset += 8
+      deactivateTransitions()
+      if isMainMenuOpen()
+        $('body').css('left', offset)
+      else
+        $('#main-menu').css('right', offset)
 
   $('#btn-mobile-header').click ->
     showMobileMenu()
@@ -28,13 +33,13 @@ $(document).ready ->
     $('body').css
       'left': '0'
       'overflow': 'visible'
-    $('#main-menu').css('right', Offset)
+    $('#main-menu').css('right', offset)
 
   showMobileMenu = ->
     activateTransitions()
     $('#main-menu').css('right', '0')
     $('body').css
-      'left': Offset
+      'left': offset
       'overflow': 'hidden'
 
   deactivateTransitions = ->
