@@ -16,10 +16,10 @@
     }
 
     .info-image {
-      max-width: none;
+      max-width: 270px;
       position: relative;
-      left: -70px;
-      bottom: -32px;
+      left: 70px;
+      bottom: -55px;
     }
 
     .btn-register.small {
@@ -85,14 +85,22 @@
     height: 400px;
     background-color: #CCC;
   }
+
   .register {
     width: 173px;
     margin: 0 auto;
     height: 180px;
     .btn-register {
+      background: #1F9D9B;
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 10px #1F9D9B;
       top: -196px;
       margin-left: 11px;
       z-index: 2;
+      &:hover {
+        background: #21AEAC;
+        border: 2px solid #fff;
+      }
 
       img {
         height: 95px;
@@ -167,7 +175,7 @@
   .left-info, .right-info {
     color: #514640;
     font-weight: 300;
-    margin-top: 40px;
+    margin-top: 75px;
     .title {
       color: #514642;
       font-size: 150%;
@@ -191,7 +199,7 @@
     padding-left: 20px;
   }
 
-  #location, #venue, #culture {
+  #location, #venue, #culture, #magma-village {
     border-bottom: 3px solid #514642;
     max-height: 344px;
 
@@ -224,6 +232,10 @@
 
   #culture {
     background-color: #8e8075;
+  }
+
+  #magma-village {
+    background-color: #fafaf8;
   }
 
   .content-image {

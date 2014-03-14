@@ -1,10 +1,5 @@
 en:
   about:
-    conference_sessions_revolve: Conference sessions revolve around Ruby, Rails,
-      Front-end design, and more.Attendees include developers, designers and
-      engineers with experience, or hopping to gain experience, building
-      cutting-edge web apps. Come and learn not only from our awesome speakers,
-      but also from our diverse audience.
     culture_description: MagmaConf offers an amazing opportunity to experience
       ¡Mexico as never before! <br/><br/> Evening activities include engaging
       group dinners followed by traditional dance performances, thrilling
@@ -13,20 +8,30 @@ en:
     deserves_beauty: Deserves Beautiful Place
     experience: Experience
     great_conf: A great Conference
-    hosted_in: Hosted in Beautiful
+    magmaconf_is_title: MagmaConf is Mexico's Premier modern web development conference
+    magmaconf_description: Conference sessions revolve around Ruby, Rails,
+      Front-end design, and more.Attendees include developers, designers and
+      engineers with experience, or hopping to gain experience, building
+      cutting-edge web apps. Come and learn not only from our awesome speakers,
+      but also from our diverse audience.
+    magma_village: Magma Village
+    magma_village_description: An unique alternative to a traditional hotel, Magma Village
+      offers attendees the opportunity to continue learning from each other
+      even after talks have finished for the day.<br/><br/> Part of the
+      exclusive Santiago Beach Club, Magma Village is located on the best
+      beach in Manzanillo. Relax on the sand after a long day of talks, or
+      dip your toes in the balmy Mexican ocean.
     manzanillo: Manzanillo, Mexico
     manzanillo_inter_airport: Manzanillo's International Airport is only 15
       minutes away from the MagmaConf Venue. This airport connects Manzanillo
       with Los Angeles, Vancouver, Huston and Mexico City.
     the_airport_is_near: The Airport is Near
-    venue: MagmaConf Venue
+    venue: The Venue
     venue_description: Talks and workshop take place at the center of
       educational technology. <br/><br/> Located in the University of
       Colima&#96;s El Naranjo campus, the centre is a first-class teaching
       facility, featuring comfortable seating, wi-fi, and air conditioning.
-    culture:
-      title_one: Off Conference
-      title_two: Experience
+    culture_activities: Activities
   accommodations:
     a_mexican_paradise: A mexican paradise
     description: An unique alternative to a traditional hotel, Magma Village
