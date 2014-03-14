@@ -1,6 +1,5 @@
 $(document).ready ->
 
-
   $(window).scroll ->
 
     scrollPosition = $(@).scrollTop()
@@ -22,21 +21,46 @@ $(document).ready ->
   $('#left.arrow').css('background-image', 'none')
 
   $('#left.arrow').click ->
-    $('#right.arrow').css('background-image', '')
-    if $('#friday').hasClass('active')
-      $('#thursday').addClass('active')
-      $('#friday').removeClass('active')
-    else if $('#thursday').hasClass('active')
-      $('#left.arrow').css('background-image', 'none')
-      $('#wednesday').addClass('active')
-      $('#thursday').removeClass('active')
+    activeDay = $('#schedule [class$=active]')
+    activeDay.swiperight()
 
   $('#right.arrow').click ->
+    activeDay = $('#schedule [class$=active]')
+    activeDay.swipeleft()
+
+  $('#wednesday').swipeleft ->
+    swipeToLeft(@, '#thursday')
     $('#left.arrow').css('background-image', '')
-    if $('#wednesday').hasClass('active')
-      $('#thursday').addClass('active')
-      $('#wednesday').removeClass('active')
-    else
-      $('#right.arrow').css('background-image', 'none')
-      $('#friday').addClass('active')
-      $('#thursday').removeClass('active')
+
+  $('#thursday').swipeleft ->
+    swipeToLeft(@, '#friday'  )
+    $('#right.arrow').css('background-image', 'none')
+
+  $('#friday').swiperight ->
+    swipeToRight(@, '#thursday')
+    $('#right.arrow').css('background-image', '')
+
+  $('#thursday').swiperight ->
+    swipeToRight(@, '#wednesday')
+    $('#left.arrow').css('background-image', 'none')
+
+  swipeToLeft = (hide, show) ->
+    $(show).addClass('active').css('left', '95%')
+    $(hide).removeClass('active')
+    $(hide).animate
+      left: '-70%'
+    ,300
+    $(show).animate
+      left: '14.5%'
+    ,200
+
+  swipeToRight = (hide, show) ->
+    $(show).addClass('active')
+    $(hide).removeClass('active')
+    $(hide).animate
+      left: '100%'
+    ,300, ->
+      $(hide).css('left', '-100%')
+    $(show).animate
+      left: if show is '#wednesday' then '0' else '14.5%'
+    ,250
