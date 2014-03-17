@@ -1,4 +1,4 @@
-#accommodations{
+#getting-manzanillo {
   background: #EDEEE6;
   padding-top: 70px;
   .btn-register.small {
@@ -19,20 +19,15 @@
       font-size: 30px;
       height: 190px;
       margin: 0 auto;
-      padding-bottom: 70px;
       text-align: center;
       width: 90%;
     }
     .invitation {
       border-bottom: 2px solid #b4a898;
       margin: 25px auto 0 auto;
-      max-width: 505px;
+      max-width: 355px;
     }
 
-    #beach-image {
-      margin-top: 100px;
-      width: 220px;
-    }
     .title {
       color: #706159;
       display: inline-block;
@@ -86,85 +81,105 @@
       width: 115px;
     }
   }
-}
 
-#village-info {
-  background-color: #fff;
-  margin-top: -40px;;
-  .container {
-    background-color: #fff;
-    max-width: 1200px;
-  }
-  #village-image {
-    overflow: hidden;
-    position: relative;
-    width: 700px;
-
-    ul {
-      width: 20000em;
-      position: relative;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      li {
-        float: left;
-      }
-    }
+  .section {
+    border-bottom: 3px solid #514642;
   }
 
-  #description {
-    text-align: right;
-    margin-right: 20px;
-    padding-top: 40px;
+  .left-info, .right-info {
+    color: #3c3835;
+    font-weight: 300;
+    margin-top: 40px;
     .title {
-      font-size: 170%;
-      line-height: 25px;
-      margin-bottom: 5px;
+      font-size: 150%;
+      font-weight: 400;
+      font-family: oswald;
+      margin-bottom: 6px;
       text-transform: uppercase;
     }
-    .description-text {
-      font-weight: 300;
-      font-family: Roboto;
-      font-size: 100%;
-      margin-top: 20px;
-      width: 460px;
-    }
-
-    .btn-register {
-      background: #1F9D9B;
-      border: 2px solid #fff;
-      box-shadow: 0 0 0 10px #1F9D9B;
-      float: right;
-      left: 38px;
-      top: 104px;
-      &:hover {
-        background: #21AEAC;
-        border: 2px solid #fff;
-      }
-
-      img {
-        height: 90px;
-        width: 100%;
-      }
+    p {
+      font-family: roboto;
+      font-size: 95%;
+      line-height: 18px;
     }
   }
 
-  .controls span {
-    background-color: #7f7467;
-    display: inline-block;
-    height: 10px;
-    margin: 20px 3px 0 3px;
-    width: 10px;
-    @include rounded(5px);
+  .left-info {
+    text-align: right;
+    padding-right: 20px;
+  }
 
-    &:hover {
-      cursor: pointer;
-      background-color: #000;
-    }
+  .right-info {
+    text-align: left;
+    padding-left: 20px;
+  }
 
-    &.active {
-      background-color: #000;
-    }
+  .content-image {
+    position: relative;
+    overflow: hidden;
+    height: 344px;
   }
 }
 
+#map-container {
+  height: 400px;
+  max-width: 100%;
+
+  .map-legend {
+    width: 310px;
+    position: relative;
+    top: -225px;
+    text-align: right;
+    left: 171px;
+    p {
+      color: #1F1818;
+      font-family:  roboto;
+      font-weight: 400;
+    }
+  }
+
+  #airplane-image {
+    position: absolute;
+    top: 105px;
+    width: 390px;
+  }
+}
+
+#map_canvas{
+  width: 100%;
+  height: 400px;
+  background-color: #CCC;
+}
+
+#planning-trip {
+  background-color: #f8f8f6;
+  .right-info {
+    padding-top: 30px;
+  }
+}
+
+#flying-manzanillo {
+  background-color: #f8f8f6;
+}
+
+#flying-guadalajara {
+  background-color: #f0f1ea;
+}
+
+#bus .left-info{
+  padding-top: 10px;
+}
+
+#bus, #about-manzanillo {
+  background-color: #dcddcc;
+}
+
+#help {
+  background-color: #f0f1ea;
+}
+
+#flying-guadalajara, #help {
+  .right-info{
+    padding-top: 45px;
+  }
+}

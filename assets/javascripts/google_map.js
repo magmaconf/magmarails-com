@@ -6,8 +6,8 @@ $(document).ready(function() {
     airportPosition = new google.maps.LatLng(19.144722, -104.556419);
     map_canvas = document.getElementById("map_canvas");
     map_options = {
-      center: new google.maps.LatLng(19.051085, -104.382133),
-      zoom: 11,
+      center: new google.maps.LatLng(26.051085, -109.382133),
+      zoom: 4,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       scrollwheel: false,
       disableDefaultUI: true,
@@ -19,11 +19,6 @@ $(document).ready(function() {
       position: clubSantiagoPosition,
       map: map,
       title: "Club Santiago"
-    });
-    return airportMarker = new google.maps.Marker({
-      position: airportPosition,
-      map: map,
-      title: "airport"
     });
   };
   return google.maps.event.addDomListener(window, "load", initialize);

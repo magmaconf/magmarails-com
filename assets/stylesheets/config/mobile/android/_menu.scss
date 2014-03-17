@@ -28,7 +28,7 @@
     width: 100%;
     z-index: 1003;
 
-    &.accommodations, &.schedule, &.about-magma {
+    &.getting-manzanillo, &.schedule, &.about-magma {
       .link {
         color: #6c5a53;
       }
@@ -99,12 +99,12 @@
         border-bottom: 1px solid #7c7164;
         border-right: 0 !important;
         display: list-item;
-        padding: 25px 20px;
+        padding: 25px 0px 25px 10px;
         position: relative;
         text-align: left;
         &:first-child {
           background-position: 14px 39px;
-          padding: 40px 20px 20px;
+          padding: 40px 10px 20px;
         }
         a {
           background: image_url('sprite.svg') no-repeat;
@@ -112,7 +112,7 @@
           background-position: -155px -97px;
           color: #847a70;
           font-weight: 400;
-          font-size: 200%;
+          font-size: 180%;
           padding-left: 20px;
 
           &:hover {
@@ -121,7 +121,7 @@
           &.active {
             background-position: -155px -139px;
             border-bottom: 0 !important;
-            color: #433a36;
+            color: #433a36 !important;
             font-weight: 600;
           }
         }

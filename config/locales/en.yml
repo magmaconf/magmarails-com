@@ -22,30 +22,77 @@ en:
       beach in Manzanillo. Relax on the sand after a long day of talks, or
       dip your toes in the balmy Mexican ocean.
     manzanillo: Manzanillo, Mexico
-    manzanillo_inter_airport: Manzanillo's International Airport is only 15
-      minutes away from the MagmaConf Venue. This airport connects Manzanillo
-      with Los Angeles, Vancouver, Huston and Mexico City.
-    the_airport_is_near: The Airport is Near
     venue: The Venue
     venue_description: Talks and workshop take place at the center of
       educational technology. <br/><br/> Located in the University of
       Colima&#96;s El Naranjo campus, the centre is a first-class teaching
       facility, featuring comfortable seating, wi-fi, and air conditioning.
     culture_activities: Activities
-  accommodations:
-    a_mexican_paradise: A mexican paradise
-    description: An unique alternative to a traditional hotel, Magma Village
-      offers attendees the opportunity to continue learning from each other
-      even after talks have finished for the day.<br/><br/> Part of the
-      exclusive Santiago Beach Club, Magma Village is located on the best
-      beach in Manzanillo. Relax on the sand after a long day of talks, or
-      dip your toes in the balmy Mexican ocean.
-    is_waiting_for_you: Is waiting for you
-    title: <span>Welcome to</span><br/><span>the magma village</span>
+  getting_manzanillo:
+    its_really_easy: "it's really easy"
+    manzanillo:
+      title: 'flying to manzanillo'
+      description: 'Just fifteen minutes from the conference venue,
+        the Playa de Oro International Airport connects directly with Los Angeles,
+        Vancouver, Houston, Phoenix, and Mexico City. Major airlines that offer
+        service to the airport include Alaska Airlines, Delta, AeroMexico,
+        Interjet, CanJet, US Airways, United Express, and Volaris. Flights with
+        one or two stops are available from San Francisco, Denver, New York,
+        Chicago, and Washington D.C. <br/><br/> Shuttles from the airport to the
+        Magma Village and nearby hotels will be available on Tuesday, June 3rd
+        and Wednesday, June 4th. <br/><br/> <span>Photo by: </span>'
+    guadalajara:
+      title: 'flying to guadalajara'
+      description: 'Located just over three hours from Manzanillo, the Guadalajara
+        International airport offers direct flights Chicago, Los Angeles, San
+        Francisco, Dallas, Atlanta, Houston, Phoenix, Oakland, and Mexico City.
+        Major airlines that offer service to Guadalajara include American Airlines,
+        AeroMexico, Delta, United, Us Airways, and Volaris.'
+    bus:
+      title: 'getting from guadalajara to manzanillo'
+      description: "Buses are available from Guadalajara center to Manzanillo center.
+        The buses provide food and drink, wi-fi, and large, comfortable seats. Bus
+        lines that offer service to Manzanillo include <a href='http://www.etn.com.mx'>
+        ETN</a> and <a href='http://www.lalinea.com.mx/'>La Linea </a>(our personal
+        favorites). Tickets cost roughly $30 and can be purchased online ahead of time
+        or in person at the bus terminal. We recommend taking a taxi from the airport
+        to the bus terminal when you arrive and buying your ticket directly at the counter.
+        <br/><br/> Shuttles from the Manzanillo bus terminal to the MagmaVillage and nearby
+        hotels will be available on Tuesday, June 3rd and Wednesday, June 4th."
+    help:
+      title: 'We Are Here To Help!'
+      description: "If you have any questions about transportation to and from MagmaConf
+        or would like assistance booking your flights or buses, please don’t hesitate to
+        reach out to <a href='mailto:info@magmaconf.com'>info@magmaconf.com.</a> or call
+        650-762-5819. We will be happy to help you find your ideal itinerary."
+    about_manzanillo:
+      title: 'About Manzanillo'
+      description: "The city of Manzanillo, in the Mexican state of Colima, is known for
+        its large and bustling port and beautiful beaches. Known as the “Sailfish Capital of
+        the World”, the city is popular for its deep-sea fishing and temperate waters. The De
+        Santiago peninsula, where MagmaConf and Magma Village are located, is a well-known
+        tourist destination with excellent swimming, snorkeling and scuba diving available.
+        <br/><br/> Manzanillo is also home to the twin bays, almost identical in length. Bahia
+        de Manzanillo hosts much of the shipping and commercial activities of Manzanillo, while
+        Bahia de Santiago is the more popular tourist destination with beautiful hotels and
+        expansive beaches. Once upon a time, Manzanillo was known as a pirate destination.
+        With the advent of MagmaConf, we hope to develop a new reputation - the city of hackers."
+    planning:
+      title: 'Planning Your Trip'
+      description: "We recommend that conference attendees arrive in Manzanillo on Tuesday,
+        June 3rd, and stay through Saturday, June 7th. Housing at Magma Village will be available
+        between those dates and arriving the day before the conference begins ensures that you
+        will have time to settle in and meet your fellow conference attendees. Shuttles will
+        be available on both days to take attendees to and from the airport and Magma
+        Village/nearby hotels. For more information about Magma Village or recommendations for
+        nearby hotels, please contact <a href='mailto:info@magmaconf.com'>info@magmaconf.com.</a>"
+    map_description: 'A beautiful oasis on the Weast Coast of Mexico, Manzanillo is easy accessible
+      from numerous major hubs across the United States and Canada.'
+    to_get_there: 'to get there'
   menu:
     about: About Magma
-    accommodations: Accommodations
     blog: Blog
+    getting_manzanillo: 'Getting to manzanillo'
     menu: MENU
     register: REGISTER
     schedule: Schedule

@@ -11,7 +11,7 @@
     background: #f2f3ed;
   }
 
-  &.accommodations {
+  &.getting-manzanillo {
     background: #EDEEE6;
   }
 
@@ -27,7 +27,7 @@
     background: #fff;
   }
 
-  &.accommodations, &.schedule, &.about-magma, &.policies {
+  &.getting-manzanillo, &.schedule, &.about-magma, &.policies {
     #magma-logo {
       background: image-url('logo-magma.svg') no-repeat;
     }
@@ -94,7 +94,7 @@
     }
   }
 
-  &.accommodations, &.schedule, &.about-magma, &.policies {
+  &.getting-manzanillo, &.schedule, &.about-magma, &.policies {
     .link {
       border-right: 1px solid #6c5a53;
       &:last-child, &:nth-of-type(3) {

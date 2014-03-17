@@ -61,23 +61,7 @@
           = t('about.magma_village_description')
           .controls
       .pure-u-1-12
-
-  -##map-container.pure-g-r.content
-  -#  .pure-u-1-1
-  -#    #map_canvas
-  -#    .map-legend
-  -#      %span
-  -#        = t('about.the_airport_is_near')
-  -#      %p
-  -#        %br
-  -#        = t('about.manzanillo_inter_airport')
-  -#.pure-g-r.register.section
-  -#  = partial :register_button, locals: {img:  t('images.register') }
   .pure-g-r.register.section
     %img.shadow{src: "#{image_path 'shadow.png'}"}
     %a.btn-register{href: "http://store.magmaconf.com/", target: "_blank"}
       %img{src: "#{image_path t('images.book-now')}"}
-
-- content_for :javascript do
-  %script{src:"https://maps.googleapis.com/maps/api/js?sensor=false"}
-  %script{src:"#{javascript_path 'google_map'}"}

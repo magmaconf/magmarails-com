@@ -21,11 +21,11 @@ $(document).ready ->
     addActiveClass('#about-magma-link')
     $('#footer').addClass('about-magma')
 
-  else if pathname is '/accommodations'
-    $('#main-menu').addClass('accommodations')
-    $('#mobile-header').addClass('accommodations')
-    addActiveClass('#accommodations-link')
-    $('#footer').addClass('accommodations')
+  else if pathname is '/getting-to-manzanillo'
+    $('#main-menu').addClass('getting-manzanillo')
+    $('#mobile-header').addClass('getting-manzanillo')
+    addActiveClass('#getting-manzanillo-link')
+    $('#footer').addClass('getting-manzanillo')
 
   else if pathname is '/schedule'
     $('#main-menu').addClass('schedule')
