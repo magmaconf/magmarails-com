@@ -36,7 +36,7 @@
         = partial :hour, locals: { hour: '15:40', class_name: 'break' }
         = partial :hour, locals: { hour: '16:00', class_name: 'talk' }
         = partial :hour, locals: { hour: '16:40', class_name: 'keynote' }
-        = partial :hour, locals: { hour: '15:40', class_name: 'break' }
+        = partial :hour, locals: { hour: '17:40', class_name: 'break' }
 
       .pure-u-7-24#wednesday.active
         .pure-g-r
@@ -130,7 +130,7 @@
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Lunch
-        = partial :talk, locals: { speaker: 'Manuel Vidaurre', talk_name: 'Lucharan a dos de tres caídas: MV* stack vs rails 4 omakase'}
+        = partial :talk, locals: { speaker: 'Manuel Vidaurre', talk_name: t('schedule.talk_name.manuel_vidaurre') }
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Lighting Talks
