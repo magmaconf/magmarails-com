@@ -3,7 +3,7 @@
   @include grid_generator;
 
   #about-magma{
-    height: 2650px;
+    height: 2560px;
 
     .heading{
       .info-image{
@@ -49,30 +49,21 @@
       left: 0;
       position: absolute;
       width: 100%;
-    }
 
-    #location, #culture{
-      .content-image{
-        top: 75px;
+      ul{
+        display: inline-block;
+        width: inherit;
+        li{
+          img{
+            width: inherit;
+          }
+        }
       }
     }
 
-    #venue{
+    #location, #culture, #venue, #magma-village{
       .content-image{
         top: 50px;
-      }
-    }
-
-    #map-container{
-      height: 400px;
-      max-width: auto;
-      .map-legend{
-        left: 0px;
-        position: absolute;
-        padding: 0 10px;
-        text-align: left;
-        top: 60%;
-        width: 57%;
       }
     }
 
@@ -100,7 +91,7 @@
 @media screen and (max-width: 360px) {
 
   #about-magma{
-    height: 2780px !important;
+    height: 2270px;
     padding-top: 15%;
     padding-bottom: 0% !important;
 
@@ -110,15 +101,21 @@
       }
     }
 
-    .content-information{
-      .description{
-        margin-top: 105%;
+    .content{
+      .content-image{
+        height: 205px;
+      }
+
+      .content-information{
+        .description{
+          margin-top: 56%;
+        }
       }
     }
 
-    #map-container{
-      .map-legend{
-        width: 305px;
+    #location{
+      .content-image{
+        top: 70px;
       }
     }
 
