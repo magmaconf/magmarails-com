@@ -1,0 +1,89 @@
+//Galaxy S3, S4, Nexus
+@media screen and (max-width: 640px) {
+  @include grid_generator;
+
+  #getting-manzanillo {
+    padding-top: 50px;
+
+    #heading {
+
+      .container {
+        height: 95px;
+      }
+
+      .invitation {
+        margin-top: 0;
+      }
+
+      .advice {
+        margin-top: 25px;
+      }
+    }
+
+    .register-button {
+      display: none;
+    }
+
+    #airplane-image {
+      display: none;
+    }
+
+    #map-container .map-legend {
+      left: 15px;
+      top: -174px;
+    }
+
+    #help .content-information .title {
+      margin-bottom: 10px;
+      padding-top: 0;
+      text-align: center;
+    }
+  }
+
+  #footer.getting-manzanillo{
+    padding-top: 30px;
+
+    .social {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #getting-manzanillo {
+    #heading {
+
+      .container {
+        height: 130px;
+      }
+
+      .invitation {
+        max-width: 220px;
+      }
+    }
+
+    #map-container .map-legend {
+      left: -5px;
+      width: 214px
+    }
+
+    .content-information .description {
+      margin-top: 200px;
+    }
+
+    #bus {
+      .content-information .title {
+        line-height: 24px;
+      }
+
+      .content-image {
+        margin-top: 55px;
+      }
+    }
+
+    #map-container .map-legend {
+      left: -10px;
+      top: -160px;
+    }
+  }
+}
