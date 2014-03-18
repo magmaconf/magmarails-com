@@ -128,50 +128,6 @@
     }
   }
 
-  .social {
-    a {
-      background: #796D60;
-      height: 16px;
-      margin: 0 10px;
-      width: 30px;
-      &:first-child {
-        margin-left: 25px;
-      }
-      &:hover {
-        background: $social-hover;
-      }
-    }
-    .facebook {
-      i {
-        background-position: -76px 0
-      }
-      &:hover i {
-        background-position: -76px -50px;
-      }
-    }
-    .twitter {
-      i {
-        background-position: -139px 0;
-      }
-      &:hover i {
-        background-position: -139px -50px;
-      }
-    }
-    .google {
-      i {
-        background-position: -206px 0;
-      }
-      &:hover i{
-        background-position: -206px -50px;
-      }
-    }
-    .facebook, .google, .twitter {
-      i {
-        margin-top: -9px;
-      }
-    }
-  }
-
   .left-info, .right-info {
     color: #514640;
     font-weight: 300;
