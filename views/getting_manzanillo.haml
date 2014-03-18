@@ -12,9 +12,10 @@
             %p.location= t('date')
             %span.star
         .pure-u-1-6
-          %img.shadow.small{src: "#{image_path 'shadow.png'}"}
-          %a.btn-register.small{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}
-            %img{src: "#{image_path t('images.register')}"}
+          .register-button
+            %img.shadow.small{src: "#{image_path 'shadow.png'}"}
+            %a.btn-register.small{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}
+              %img{src: "#{image_path t('images.register')}"}
 
   #map-container.pure-g-r.content
     .pure-u-1-1
@@ -28,17 +29,18 @@
   #planning-trip.pure-g-r.section
     .content
       .pure-u-1-12
-      .pure-u-1-3.right-info
+      .pure-u-1-2.content-image
+        %img{ src: "#{ image_path 'planning-trip.jpg' }" }
+      .pure-u-1-3.right-info.content-information
         %p.title= t('getting_manzanillo.planning.title')
         %br
         %p.description
           = t('getting_manzanillo.planning.description')
-      .pure-u-1-2.content-image
 
   #flying-manzanillo.pure-g-r.section
     .content
       .pure-u-1-12
-      .pure-u-1-3.left-info
+      .pure-u-1-3.left-info.content-information
         %p.title= t('getting_manzanillo.manzanillo.title')
         %br
         %p.description
@@ -51,7 +53,7 @@
       .pure-u-1-12
       .pure-u-1-2.content-image
         %img{ src: "#{ image_path 'airport-gdl.jpg' }" }
-      .pure-u-1-3.right-info
+      .pure-u-1-3.right-info.content-information
         %p.title= t('getting_manzanillo.guadalajara.title')
         %br
         %p.description
@@ -60,7 +62,7 @@
   #bus.pure-g-r.section
     .content
       .pure-u-1-12
-      .pure-u-1-3.left-info
+      .pure-u-1-3.left-info.content-information
         %p.title= t('getting_manzanillo.bus.title')
         %br
         %p.description
@@ -68,21 +70,19 @@
       .pure-u-1-2.content-image
         %img{ src: "#{ image_path 'bus.jpg' }" }
 
-  #help.pure-g-r.section
+  #help.section
     .content
-      .pure-u-1-12
-      .pure-u-1-2.content-image
-        %img{ src: "#{ image_path 'here-to-help.jpg' }" }
-      .pure-u-1-3.right-info
-        %p.title= t('getting_manzanillo.help.title')
-        %br
-        %p.description
-          = t('getting_manzanillo.help.description')
+      .pure-g-r.content-information
+        .pure-u-7-24
+          %p.title= t('getting_manzanillo.help.title')
+        .pure-u-15-24
+          %p.description.right-info
+            = t('getting_manzanillo.help.description')
 
   #about-manzanillo.pure-g-r.section
     .content
       .pure-u-1-12
-      .pure-u-1-3.left-info
+      .pure-u-1-3.left-info.content-information
         %p.title= t('getting_manzanillo.about_manzanillo.title')
         %br
         %p.description
