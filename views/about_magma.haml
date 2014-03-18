@@ -10,9 +10,11 @@
         %span.star
         %p.location= t('date')
         %span.star
-    .pure-u-1-4
-      %a.btn-register.small{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}
-        %img{src: "#{image_path t('images.register')}"}
+    .pure-u-1-8
+      .register
+        %img.shadow.small{src: "#{image_path 'shadow.png'}"}
+        %a.btn-register.small{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}
+          %img{src: "#{image_path t('images.register')}"}
   .pure-g-r.section#location
     .content
       .pure-u-1-12
@@ -23,7 +25,7 @@
           = t('about.magmaconf_description')
           .controls
       #location-carousel.pure-u-1-2.content-image
-        = partial :slider, locals: { img1: 'manzanillo.jpg', img2: 'manzanillo-2.jpg', img3: 'manzanillo-3.jpg' }
+        = partial :slider, locals: { img1: 'magmaconf-1.jpg', img2: 'magmaconf-2.jpg', img3: 'magmaconf-3.jpg' }
       .pure-u-1-12
   .pure-g-r.section#venue
     .content
@@ -63,5 +65,5 @@
       .pure-u-1-12
   .pure-g-r.register.section
     %img.shadow{src: "#{image_path 'shadow.png'}"}
-    %a.btn-register{href: "http://store.magmaconf.com/", target: "_blank"}
+    %a.btn-register.green{href: "http://store.magmaconf.com/", target: "_blank"}
       %img{src: "#{image_path t('images.book-now')}"}
