@@ -1,14 +1,49 @@
 //Iphone 5, 4
+@media screen and (max-width: 568px) {
+  @include grid_generator;
+
+  #about-magma{
+    #location{
+      .title{
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 568px) and (min-width: 361px){
+  @include grid_generator;
+
+  #about-magma{
+    height: 2595px;
+
+    .content{
+      .content-image{
+        height: 325px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 320px) {
   @include grid_generator;
 
   #about-magma{
-    height: 2148px;
+    height: 2195px;
 
     .heading{
-      height: 230px;
+      height: 150px;
       .invitation{
-        margin: 25% 10% 0;
+        margin: 0 10%;
+      }
+      .title{
+        font-size: 25px;
+      }
+    }
+
+    .content{
+      .content-image{
+        height: 183px;
       }
     }
   }

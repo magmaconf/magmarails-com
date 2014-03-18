@@ -128,10 +128,10 @@
     .heading {
       font-size: 20px;
 
-      img {
-        bottom: -60px !important;
-        left: -132px !important;
-        width: 350px;
+      .info-image  {
+        bottom: -80px;
+        left: 70px;
+        max-width: 220px;
       }
     }
 
@@ -440,6 +440,22 @@
     }
     .language-image.en {
       margin-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #about-magma {
+    .heading{
+      .info-image  {
+        bottom: -80px;
+        left: 20px;
+        max-width: 180px;
+      }
+    }
+
+    .left-info, .right-info{
+      margin-top: 30px;
     }
   }
 }
