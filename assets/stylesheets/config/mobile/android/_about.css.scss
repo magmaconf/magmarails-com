@@ -6,6 +6,7 @@
     height: 2560px;
 
     .heading{
+      height: 130px;
       .info-image{
         display: none;
       }
@@ -17,6 +18,14 @@
       .advice{
         margin: 0;
       }
+
+      .register {
+        display: none;
+      }
+    }
+
+    .register .btn-register.green {
+      margin-left: 0px;
     }
 
     .section{
@@ -61,9 +70,15 @@
       }
     }
 
-    #location, #culture, #venue, #magma-village{
+    #location, #culture, #venue{
       .content-image{
         top: 50px;
+      }
+    }
+
+    #magma-village {
+      .content-image {
+        top: 75px;
       }
     }
 
@@ -84,6 +99,19 @@
       margin: 0 auto;
       width: 50px;
     }
+
+    #location{
+      .title{
+        font-size: 19px;
+        margin: 0 auto;
+      }
+    }
+
+    .section {
+      .controls {
+        top: 9px !important;
+      }
+    }
   }
 }
 
@@ -91,15 +119,9 @@
 @media screen and (max-width: 360px) {
 
   #about-magma{
-    height: 2270px;
+    height: 2290px;
     padding-top: 15%;
     padding-bottom: 0% !important;
-
-    .heading{
-      .invitation{
-        margin: 15% 10% 0;
-      }
-    }
 
     .content{
       .content-image{
@@ -124,6 +146,10 @@
         margin-top: 10%;
         padding: 0% 10%;
       }
+    }
+
+    .register.section {
+      padding-top: 15px;
     }
   }
 }

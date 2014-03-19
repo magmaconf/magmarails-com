@@ -15,12 +15,25 @@
   @include grid_generator;
 
   #about-magma{
-    height: 2595px;
+    height: 2600px;
 
     .content{
       .content-image{
         height: 325px;
       }
+    }
+
+    .register.section {
+      padding-top: 10px;
+    }
+
+    #location .content-image {
+      top: 75px;
+    }
+
+    .heading .invitation {
+      margin: 0 auto;
+      width: 296px;
     }
   }
 }
@@ -29,7 +42,7 @@
   @include grid_generator;
 
   #about-magma{
-    height: 2195px;
+    height: 2250px;
 
     .heading{
       height: 150px;
