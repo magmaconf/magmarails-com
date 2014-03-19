@@ -78,6 +78,13 @@
       background: image_url("star.png");
       background-size: 15px;
     }
+
+    .image-container {
+      position: absolute;
+      top: 108px;
+      width: 390px;
+      z-index: 1;
+    }
   }
 
   .section {
@@ -154,7 +161,7 @@
   max-width: 100%;
 
   .map-legend {
-    left: 171px;
+    left: 20%;
     position: relative;
     text-align: right;
     top: -225px;
@@ -164,12 +171,6 @@
       font-family:  roboto;
       font-weight: 400;
     }
-  }
-
-  #airplane-image {
-    position: absolute;
-    top: 105px;
-    width: 390px;
   }
 }
 

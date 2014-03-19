@@ -3,6 +3,8 @@
     .container
       .pure-g-r
         .pure-u-1-4
+          .image-container
+            %img#airplane-image{src: "#{image_path 'airplane.png'}"}
         .pure-u-1-2
           .invitation
             %p.advice= t('getting_manzanillo.its_really_easy')
@@ -20,7 +22,6 @@
   #map-container.pure-g-r.content
     .pure-u-1-1
       #map_canvas
-      %img#airplane-image{src: "#{image_path 'airplane.png'}"}
       .map-legend
         %p
           %br

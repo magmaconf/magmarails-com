@@ -293,11 +293,26 @@
     #map-container .map-legend {
       left: 128px;
     }
+
+    #heading {
+      .image-container {
+        top: 108px;
+        width: 370px;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 915px) {
   #getting-manzanillo {
+
+    #heading {
+      .image-container {
+        left: 0;
+        top: 132px;
+        width: 326px;
+      }
+    }
 
     .section {
       max-height: 1000px;
@@ -465,17 +480,18 @@
       .invitation {
         max-width: 293px;
       }
+
+      .image-conatiner {
+        left: 0;
+        top: 132px;
+        width: 326px;
+      }
     }
 
     #map-container {
       .map-legend {
         left: 55px;
         top: -190px;
-      }
-
-      #airplane-image {
-        top: 126px;
-        width: 326px;
       }
     }
   }
