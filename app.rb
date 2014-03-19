@@ -58,9 +58,9 @@ class Crowdsite < Sinatra::Base
     haml :about_magma
   end
 
-  get '/accommodations' do
+  get '/getting-to-manzanillo' do
     set_locale
-    haml :accommodations
+    haml :getting_manzanillo
   end
 
   get '/speakers' do

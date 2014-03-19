@@ -76,21 +76,6 @@
 
   }
 
-  #accommodations {
-    #beach-image {
-      img {
-        padding-left: 0;
-      }
-    }
-
-    #description {
-      .btn-cfp {
-        top: 178px;
-        left: 260px;
-      }
-    }
-  }
-
   #footer {
     padding: 20px 0 10px;
     #copy-right {
@@ -287,23 +272,116 @@
       }
     }
   }
+}
 
-  #accommodations{
-    padding-top: 80px;
-    #heading .container {
-      font-size: 200%;
-      width: 100%
-    }
-    #village-info {
-      height: 614px;
+@media screen and (min-width: 916px) and (max-width: 1024px) {
 
-      #village-image {
-        height: 614px;
-        width: 614px;
+  #getting-manzanillo {
+    #bus {
+      .left-info {
+        margin-top: 20px;
       }
 
-      .description-text {
-        width: 355px;
+      .title {
+        line-height: 24px;
+      }
+    }
+
+    #about-manzanillo {
+      .left-info {
+        margin-top: 15px;
+      }
+
+      .description {
+        line-height: 17px;
+        margin-top: -15px;
+      }
+    }
+
+    #map-container .map-legend {
+      left: 128px;
+    }
+
+    #heading {
+      .image-container {
+        top: 108px;
+        width: 370px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 915px) {
+  #getting-manzanillo {
+
+    #heading {
+      .image-container {
+        left: 0;
+        top: 132px;
+        width: 326px;
+      }
+    }
+
+    .section {
+      max-height: 1000px;
+
+      .content {
+        padding-bottom: 25px;
+      }
+    }
+
+    .content-information {
+      text-align: left;
+      float: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+
+      .title {
+        text-align: center;
+      }
+
+      .description {
+        margin: 340px auto 0;
+        width: 90%;
+      }
+    }
+
+    .content-image {
+      float: none;
+      left: 0;
+      margin-top: 30px;
+      position: absolute;
+      width: 100%;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    }
+
+    #help {
+      .content-information {
+        margin: 40px 0;
+
+        .description {
+          margin:  0;
+        }
+
+        .title {
+          padding-top: 22px;
+        }
+      }
+
+      .content {
+        padding: 0;
+      }
+    }
+
+    #flying-guadalajara, #help, #planning-trip {
+      .content-image {
+        margin-top: 50px;
       }
     }
   }
@@ -361,55 +439,6 @@
     }
   }
 
-  #accommodations{
-    #heading{
-      .container {
-        font-size: 165%;
-        .btn-register.small {
-          margin-left: 35px;
-        }
-      }
-      #beach-image {
-        margin-top: 115px;
-      }
-    }
-
-    .shadow.small {
-      right: -18px;
-    }
-    #village-info {
-      height: 461px;
-
-      #village-image {
-        height: 461px;
-        width: 461px;
-      }
-
-      #description {
-        .btn-register {
-          height: 100px;
-          left: 46px;
-          padding: 12px 13px;
-          top: 25px;
-          width: 105px;
-          img {
-            max-width: 72px;
-            width: 72px;
-          }
-        }
-        .shadow {
-          margin-bottom: 70px;
-          right: 63px;
-          top: 39px;
-          width: 120px;
-        }
-        .description-text {
-          margin-top: 12px;
-          width: 265px;
-        }
-      }
-    }
-  }
   #main-menu {
     ul li {
       padding: 0 10px;
@@ -448,6 +477,30 @@
     }
     .language-image.en {
       margin-left: 50px;
+    }
+  }
+
+  #getting-manzanillo {
+
+    #heading .container {
+      font-size: 24px;
+
+      .invitation {
+        max-width: 293px;
+      }
+
+      .image-conatiner {
+        left: 0;
+        top: 132px;
+        width: 326px;
+      }
+    }
+
+    #map-container {
+      .map-legend {
+        left: 55px;
+        top: -190px;
+      }
     }
   }
 
