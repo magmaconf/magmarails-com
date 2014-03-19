@@ -54,8 +54,8 @@ class Crowdsite < Sinatra::Base
   end
 
   get '/about-magma' do
-    set_locale
-    haml :about_magma
+    browser_locale = set_locale
+    haml :about_magma, locals: { language: browser_locale }
   end
 
   get '/getting-to-manzanillo' do

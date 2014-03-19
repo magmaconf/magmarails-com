@@ -121,7 +121,7 @@
     }
 
     .invitation {
-      width: 380px;
+      width: 384px;
     }
 
     #location .controls {
@@ -309,6 +309,13 @@
       }
     }
   }
+
+  #about-magma .heading {
+    .invitation.es {
+      font-size: 22px;
+      width: 475px;
+    }
+  }
 }
 
 @media screen and (max-width: 915px) {
@@ -383,6 +390,12 @@
       .content-image {
         margin-top: 50px;
       }
+    }
+  }
+
+  #about-magma .heading {
+    .invitation.es {
+      width: 305px;
     }
   }
 }
