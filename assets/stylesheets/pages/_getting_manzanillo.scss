@@ -109,8 +109,10 @@
       line-height: 18px;
     }
 
-    .description a {
-      color: #2eb5b3;
+    .description {
+      a, span {
+        color: #2eb5b3;
+      }
     }
   }
 
