@@ -113,6 +113,10 @@
       a, span {
         color: #2eb5b3;
       }
+
+      span {
+        font-size: 9px;
+      }
     }
   }
 
@@ -159,14 +163,20 @@
 }
 
 #map-container {
+  background-color: #b3d1ff;
   height: 400px;
   max-width: 100%;
 
+  #map_canvas {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
   .map-legend {
-    left: 20%;
+    left: 25%;
     position: relative;
     text-align: right;
-    top: -225px;
+    top: -174px;
     width: 310px;
     p {
       color: #1F1818;
