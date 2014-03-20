@@ -320,6 +320,12 @@
       width: 475px;
     }
   }
+
+  #schedule .line{
+    &.talk.big {
+      min-height: 98px;
+    }
+  }
 }
 
 @media screen and (max-width: 915px) {
@@ -494,6 +500,10 @@
     }
     .language-image.en {
       margin-left: 50px;
+    }
+
+    &.talk.big {
+      min-height: 118px;
     }
   }
 

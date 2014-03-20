@@ -31,7 +31,7 @@
         = partial :hour, locals: { hour: '12:20', class_name: 'talk' }
         = partial :hour, locals: { hour: '13:00', class_name: 'break' }
         = partial :hour, locals: { hour: '13:10', class_name: 'break' }
-        = partial :hour, locals: { hour: '14:40', class_name: 'talk' }
+        = partial :hour, locals: { hour: '14:40', class_name: 'talk big' }
         = partial :hour, locals: { hour: '15:20', class_name: 'break' }
         = partial :hour, locals: { hour: '15:40', class_name: 'break' }
         = partial :hour, locals: { hour: '16:00', class_name: 'talk' }
@@ -49,27 +49,45 @@
             %p.legend OPENING
         .pure-g-r.line.talk
           .pure-u-1-1
-        = partial :talk, locals: { speaker: 'Joe Wright', talk_name: "Are we really engineers?", language: 'en'}
+        = partial :talk,
+                  locals: { speaker: 'Joe Wright',
+                            talk_name: 'Are we really engineers?',
+                            language: 'en' }
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Break
-        = partial :talk, locals: { speaker: 'Konstantin Haase', talk_name: "Death to Cookies", language: 'en'}
-        = partial :talk, locals: { speaker: 'Blake Mizerany', talk_name: "You should learn Go!", language: 'en'}
+        = partial :talk,
+                  locals: { speaker: 'Konstantin Haase',
+                            talk_name: 'Death to Cookies',
+                            language: 'en' }
+        = partial :talk,
+                  locals: { speaker: 'Blake Mizerany',
+                            talk_name: 'You should learn Go!',
+                            language: 'en' }
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Sponsor time
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Lunch
-        = partial :talk, locals: { speaker: 'Daniel R&iacute;os', talk_name: "Intro to Computer Vision, Machine Learning and Genetic Algorithms"}
+        = partial :talk,
+                  locals: { speaker: 'Daniel R&iacute;os',
+                            talk_name: 'Intro to Computer Vision, Machine Learning and Genetic Algorithms',
+                            language: 'en',
+                            class_name: 'big' }
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Lighting Talks
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Break
-        = partial :talk, locals: { speaker: 'Nick Rowe', talk_name: "Bullet Trains: Performance Tuning Rails", language: 'en'}
-        = partial :keynote, locals: { speaker: 'Fred George', language: 'en'}
+        = partial :talk,
+                  locals: { speaker: 'Nick Rowe',
+                            talk_name: 'Bullet Trains: Performance Tuning Rails',
+                            language: 'en' }
+        = partial :keynote,
+                  locals: { speaker: 'Fred George',
+                            language: 'en' }
         .pure-g-r.line.announcements
           .pure-u-1-1
             %p.legend EOD Announcements
@@ -83,28 +101,49 @@
                 %img{src: "#{image_path t('images.thursday')}"}
         .pure-g-r.line.opening
           .pure-u-1-1
-        = partial :talk, locals: { speaker: 'David Calavera', talk_name: "GitHub Enterprise' toolchain", language: 'en'}
-        = partial :talk, locals: { speaker: 'Matt Kirk', talk_name: "Sentiment Analysis using Support Vector Machines in Ruby", language: 'en'}
+        = partial :talk,
+                  locals: { speaker: 'David Calavera',
+                            talk_name: "GitHub Enterprise' toolchain",
+                            language: 'en' }
+        = partial :talk,
+                  locals: { speaker: 'Matt Kirk',
+                            talk_name: 'Sentiment Analysis using Support Vector Machines in Ruby',
+                            language: 'en' }
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Break
-        = partial :talk, locals: { speaker: 'Johnny Winn', talk_name: "Elixir = Ruby, A Pattern Matching", language: 'en'}
-        = partial :talk, locals: { speaker: 'André Arko', talk_name: "Software Icebergs: Development Was the Easy Part", language: 'en'}
+        = partial :talk,
+                  locals: { speaker: 'Johnny Winn',
+                            talk_name: 'Elixir = Ruby, A Pattern Matching',
+                            language: 'en' }
+        = partial :talk,
+                  locals: { speaker: 'André Arko',
+                            talk_name: 'Software Icebergs: Development Was the Easy Part',
+                            language: 'en' }
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Sponsor time
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Lunch
-        = partial :talk, locals: { speaker: 'Jesse Toth', talk_name: "Rewriting Critical Parts of Your Application Using... Science!", language: 'en'}
+        = partial :talk,
+                  locals: { speaker: 'Jesse Toth',
+                            talk_name: 'Rewriting Critical Parts of Your Application Using... Science!',
+                            language: 'en',
+                            class_name: 'big' }
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Lighting Talks
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Break
-        = partial :talk, locals: { speaker: 'Zachary Scott', talk_name: "standing on the shoulders of giants", language: 'en'}
-        = partial :keynote, locals: { speaker: 'Sandi Metz', language: 'en'}
+        = partial :talk,
+                  locals: { speaker: 'Zachary Scott',
+                            talk_name: 'standing on the shoulders of giants',
+                            language: 'en' }
+        = partial :keynote,
+                  locals: { speaker: 'Sandi Metz',
+                            language: 'en' }
         .pure-g-r.line.announcements
           .pure-u-1-1
             %p.legend EOD Announcements
@@ -117,28 +156,47 @@
                 %img{src: "#{image_path t('images.friday')}"}
         .pure-g-r.line.opening
           .pure-u-1-1
-        = partial :talk, locals: { speaker: 'PJ Hagerty', talk_name: 'Urban Legends: What You Code Makes You Who You Are', language: 'en'}
-        = partial :talk, locals: { speaker: 'Leo Salazar', talk_name: 'Refactoring Education'}
+        = partial :talk,
+                  locals: { speaker: 'PJ Hagerty',
+                            talk_name: 'Urban Legends: What You Code Makes You Who You Are',
+                            language: 'en' }
+        = partial :talk,
+                  locals: { speaker: 'Leo Salazar',
+                            talk_name: 'Refactoring Education',
+                            language: 'en' }
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Break
-        = partial :talk, locals: { speaker: 'Adam Rogers', talk_name: 'How to win designers and influence developers', language: 'en'}
-        = partial :talk, locals: { speaker: 'Emmanuel Delgado', talk_name: '1 Level Up'}
+        = partial :talk,
+                  locals: { speaker: 'Adam Rogers',
+                            talk_name: 'How to win designers and influence developers',
+                            language: 'en' }
+        = partial :talk,
+                  locals: { speaker: 'Emmanuel Delgado',
+                            talk_name: '1 Level Up' }
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Sponsor time
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Lunch
-        = partial :talk, locals: { speaker: 'Manuel Vidaurre', talk_name: t('schedule.talk_name.manuel_vidaurre') }
+        = partial :talk,
+                  locals: { speaker: 'Manuel Vidaurre',
+                            talk_name: t('schedule.talk_name.manuel_vidaurre'),
+                            class_name: 'big' }
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Lighting Talks
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Break
-        = partial :talk, locals: { speaker: 'Richard Schneeman', talk_name: 'The Good Rubyist Challenge', language: 'en'}
-        = partial :keynote, locals: { speaker: 'Desi McAdam', language: 'en'}
+        = partial :talk,
+                  locals: { speaker: 'Richard Schneeman',
+                            talk_name: 'The Good Rubyist Challenge',
+                            language: 'en' }
+        = partial :keynote,
+                  locals: { speaker: 'Desi McAdam',
+                            language: 'en' }
         .pure-g-r.line.announcements
           .pure-u-1-1
             %p.legend EOD Announcements
