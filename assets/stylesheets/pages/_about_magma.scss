@@ -12,7 +12,12 @@
     .invitation {
       border-bottom: 2px solid #b4a898;
       margin: 25px auto 0 auto;
-      max-width: 528px;
+      max-width: 535px;
+
+      &.es {
+        font-size: 25px;
+        max-width: 550px;
+      }
     }
 
     .info-image {

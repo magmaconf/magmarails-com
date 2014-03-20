@@ -3,9 +3,9 @@
     .pure-u-1-4
       %img.info-image{src: "#{image_path 'beach-image.svg'}"}
     .pure-u-1-2
-      .invitation
-        %p.advice= t('about.great_conf')
-        %p.title= t('about.deserves_beauty')
+      .invitation{ class: "#{ locals[:language] }" }
+        %p.advice= t('about.hottest')
+        %p.title= t('about.in_all')
       .date
         %span.star
         %p.location= t('date')

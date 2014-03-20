@@ -28,12 +28,11 @@
     }
 
     #location .content-image {
-      top: 75px;
+      top: 58px;
     }
 
     .heading .invitation {
       margin: 0 auto;
-      width: 296px;
     }
   }
 }
@@ -45,12 +44,18 @@
     height: 2250px;
 
     .heading{
-      height: 150px;
-      .invitation{
-        margin: 0 10%;
-      }
       .title{
         font-size: 25px;
+      }
+
+      .invitation {
+        &.es {
+          width: 92%;
+        }
+
+        &.en {
+          max-width: 220px;
+        }
       }
     }
 
