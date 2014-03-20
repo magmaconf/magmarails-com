@@ -35,20 +35,74 @@ es:
       Colima Campus El Naranjo, este centro es un edificio de primera
       clase con sillas cómodas, wi-fi y aire acondicionado.
     culture_activities: Actividades
-  accommodations:
-    a_mexican_paradise: Un paraiso Mexicano
-    description: Una alternativa única al hotel tradicional, La Villa Magma
-      ofrece a los asistentes la oportunidad de continuar con el aprendizaje
-      aún cuando las pláticas ya hayan terminado por el día.<br/><br/> Como
-      parte del exclusivo Club de Playa Santiago, Villa Magma está ubicada
-      en la mejor playa de Manzanillo. Relájate en la arena después de un
-      día largo de conferencias o hunde tus pies en el suave oceano mexicano.
-    is_waiting_for_you: te esta esperando
-    title: <span>Bienvenido a</span><br/><span>la Villa Magma</span>
+  getting_manzanillo:
+    its_really_easy: 'Es muy fácil'
+    manzanillo:
+      title: 'Volando hacia Manzanillo'
+      description: 'A sólo quince minutos del recinto de la Conferencia, el
+        Aeropuerto Internacional de Playa de Oro conecta con vuelos desde Los Ángeles,
+        Vancouver, Houston, Phoenix y la Ciudad de México. Importantes aerolíneas
+        que ofrecen su servicio al aeropuerto son Alaska Airlines, Delta, AeroMexico,
+        Interjet, CanJet, Us Airways, United Express y Volaris. Vuelos con una o
+        dos escalas están disponibles desde San Francisco, Denver, New York, Chicago y
+        Washington DC. <br/><br/> Taxi Vans desde el aeropuerto al Magma Village y
+        Hoteles cercanos estarán disponibles el Martes 3 de Junio y el Miércoles 4 de Junio.'
+    guadalajara:
+      title: 'Volando a Guadalajara'
+      description: 'Localizado a más de tres horas de Manzanillo, el Aeropuerto
+        Internacional de Guadalajara ofrece vuelos directos desde Chicago, Los Ángeles,
+        San Francisco, Dallas, Atlanta, Houston, Phoenix, Oakland y Ciudad de México.
+        Las importantes aerolíneas que ofrecen sus servicios a Guadalajara son American
+        Airlines, AeroMexico, Delta, United, US Airways y Volaris.<br/><br/>
+        <span>Photo by: TheJesus1599 "Panoramio </span>'
+    bus:
+      title: 'Viajar desde Guadalajara a Manzanillo'
+      description: "Existen autobuses disponibles desde Guadalajara a Manzanillo. Estos
+        ofrecen comida, bebida, Wi-Fi y confortables asientos. Las empresas que ofrecen
+        servicio a Manzanillo son <a href='http://www.etn.com.mx' target='_blank'> ETN</a> y
+        <a href='http://www.lalinea.com.mx/' target='_blank'> La Linea </a> (nuestras favoritas).
+        Los boletos cuestan alrededor de los $300.00 y pueden ser comprados en línea con
+        anticipación o personalmente en la terminal de camiones. Recomendamos tomar un
+        taxi desde el aeropuerto hacia la central de autobuses y al arribar, comprar tu
+        boleto directamente en mostrador. <br/><br/> Taxi Vans estarán disponibles desde
+        la Central de Manzanillo al Magma Village y Hoteles cercanos los días Martes 3 de
+        Junio y Miércoles 4 de Junio."
+    help:
+      title: '¡Estamos para ayudar!'
+      description: "Si tienes alguna pregunta sobre transporte para y desde MagmaConf o
+        requieres asistencia en cómo comprar tus boletos de avión y/o camión, no dudes
+        en contactarnos a <a href='mailto:info@magmaconf.com'>info@magmaconf.com</a>.
+        Estaremos muy contentos de ayudarte a encontrar tu mejor itinerario de viaje."
+    about_manzanillo:
+      title: 'Sobre Manzanillo'
+      description: 'La ciudad de Manzanillo, en el Estado de Colima, es mejor conocido
+        por su gran e importante puerto marítimo así como por sus hermosas playas. Conocida
+        como La Capital Mundial del Pez Vela, esta ciudad es muy popular por su pesca de
+        alta mar y cálidas aguas. La península de Santiago, donde se realizará MagmaConf
+        y localiza el Magma Village, es muy bien conocida por su destino de alto turismo
+        con excelentes clases de nado, snorkel y buceo. <br/><br/> Manzanillo también
+        es hogar de dos bahías, casi idénticas en longitud. Bahía de Manzanillo hospeda
+        gran parte de la actividad comercial y de compras de Manzanillo, mientras la Bahía
+        de Santiago es el destino más popular por sus hermosos hoteles y amplias playas.
+        Hace algo de tiempo, Manzanillo era conocido como un destino pirata. Con la llegada
+        de MagmaConf, esperamos que se desarrolle una nueva reputación: la ciudad de
+        los programadores.'
+    planning:
+      title: 'Planeando tu viaje'
+      description: "Recomendamos que llegues a Manzanillo el Martes 3 de Junio hasta el Sábado
+        7 de Junio. El hospedaje en el Magma Village estará disponible en esas fechas y llegar
+        un día antes a la conferencia asegurará que tengas tiempo de acomodarte y conocer a tus
+        próximos compañeros de conferencia. Taxi Vans estarán disponibles en ambos días para
+        traer y llevar asistentes al aeropuerto y hoteles cercanos al Magma Village. Para más
+        información sobre Magma Village o recomendaciones de hoteles cercanos, por favor
+        contáctanos en <a href='mailto:info@magmaconf.com'>info@magmaconf.com.</a>"
+    map_description: 'Es un hermoso lugar en la costa oeste de México, Manzanillo es accesible
+      por distintas maneras desde Los Estados Unidos y Canadá.'
+    to_get_there: 'llegar ahí'
   menu:
     about: Sobre Magma
-    accommodations: Alojamiento
     blog: Blog
+    getting_manzanillo: Llegar a manzanillo
     menu: MEN&Uacute;
     register: REGISTRO
     schedule: Agenda

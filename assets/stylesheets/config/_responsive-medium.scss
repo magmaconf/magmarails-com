@@ -401,6 +401,10 @@
         margin-top: 50px;
       }
     }
+
+    #about-manzanillo .content-information {
+      margin: 0;
+    }
   }
 
   #about-magma .heading {
@@ -513,7 +517,13 @@
       font-size: 24px;
 
       .invitation {
-        max-width: 293px;
+        &.en {
+          max-width: 293px;
+        }
+
+        &.es {
+         max-width: 243px;
+        }
       }
 
       .image-conatiner {

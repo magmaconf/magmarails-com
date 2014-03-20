@@ -53,13 +53,14 @@ en:
       title: 'getting from guadalajara to manzanillo'
       description: "Buses are available from Guadalajara center to Manzanillo center.
         The buses provide food and drink, wi-fi, and large, comfortable seats. Bus
-        lines that offer service to Manzanillo include <a href='http://www.etn.com.mx'>
-        ETN</a> and <a href='http://www.lalinea.com.mx/'>La Linea </a>(our personal
-        favorites). Tickets cost roughly $30 and can be purchased online ahead of time
-        or in person at the bus terminal. We recommend taking a taxi from the airport
-        to the bus terminal when you arrive and buying your ticket directly at the counter.
-        <br/><br/> Shuttles from the Manzanillo bus terminal to the MagmaVillage and nearby
-        hotels will be available on Tuesday, June 3rd and Wednesday, June 4th."
+        lines that offer service to Manzanillo include <a href='http://www.etn.com.mx'
+        target='_blank'> ETN</a> and <a href='http://www.lalinea.com.mx/' target='_blank'>
+        La Linea </a>(our personal favorites). Tickets cost roughly $30 and can be purchased
+        online ahead of time or in person at the bus terminal. We recommend taking a taxi
+        from the airport to the bus terminal when you arrive and buying your ticket
+        directly at the counter. <br/><br/> Shuttles from the Manzanillo bus terminal to
+        the MagmaVillage and nearby hotels will be available on Tuesday, June 3rd and
+        Wednesday, June 4th."
     help:
       title: 'We Are Here To Help!'
       description: "If you have any questions about transportation to and from MagmaConf
