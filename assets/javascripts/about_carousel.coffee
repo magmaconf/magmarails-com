@@ -1,6 +1,14 @@
 $ ->
 
-  $('#location-carousel, #venue-carousel, #culture-carousel, #magma-village-carousel').jcarousel()
+  $('#location-carousel, #venue-carousel, #culture-carousel, #magma-village-carousel')
+    .jcarousel(wrap: 'circular')
+    .jcarouselAutoscroll()
+
+  $('.controls').on 'jcarouselpagination:active', 'span', ->
+    $(@).addClass('active')
+
+  $('.controls').on 'jcarouselpagination:inactive', 'span', ->
+    $(@).removeClass('active')
 
   $(".controls").jcarouselPagination({
     item: (page) ->
