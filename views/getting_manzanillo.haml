@@ -6,7 +6,7 @@
           .image-container
             %img#airplane-image{src: "#{image_path 'airplane.png'}"}
         .pure-u-1-2
-          .invitation
+          .invitation{ class: locals[:language] }
             %p.advice= t('getting_manzanillo.its_really_easy')
             %p.title= t('getting_manzanillo.to_get_there')
           .date

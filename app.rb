@@ -59,8 +59,8 @@ class Crowdsite < Sinatra::Base
   end
 
   get '/getting-to-manzanillo' do
-    set_locale
-    haml :getting_manzanillo
+    browser_locale = set_locale
+    haml :getting_manzanillo, locals: { language: browser_locale }
   end
 
   get '/speakers' do

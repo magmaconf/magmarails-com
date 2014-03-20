@@ -37,6 +37,10 @@
       border-bottom: 2px solid #b4a898;
       margin: 25px auto 0 auto;
       max-width: 355px;
+
+      &.es {
+        max-width: 283px;
+      }
     }
 
     .title {
@@ -159,6 +163,10 @@
       margin: 0 auto;
       width: 95%;
     }
+  }
+
+  #about-manzanillo .content-information {
+    margin-top: 27px;
   }
 }
 
