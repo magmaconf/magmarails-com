@@ -1,6 +1,8 @@
 @media screen and (max-width: 320px) {
 
-  #main-menu ul .link a {
-    font-size: 170%;
+  #main-menu ul .link {
+    a, span {
+      font-size: 170%;
+    }
   }
 }

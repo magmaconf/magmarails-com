@@ -1,4 +1,4 @@
-#main-menu.pure-g-r
+#main-menu.pure-g-r{ class: I18n.locale.to_s }
   .pure-u-1-1
     %ul
       %li.link
@@ -10,8 +10,8 @@
       %li#main-section-link
         %a{href: '/'}
           #magma-logo
-      %li.link
-        %a#getting-manzanillo-link{href: '/getting-to-manzanillo'}= t('menu.getting_manzanillo')
+      %li#getting-to-manzanillo.link
+        %span#getting-manzanillo-link{href: '/getting-to-manzanillo' }= t('menu.getting_manzanillo')
       %li.link
         %a#sponsors-link{href: '/sponsors'}= t('menu.sponsors')
       %li.link

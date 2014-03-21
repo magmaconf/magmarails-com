@@ -70,3 +70,7 @@ $(document).ready ->
 
   $('.speaker-box').bind 'touchstart', (ev) ->
     this.classList.toggle('hover')
+
+
+  $('#getting-to-manzanillo').click ->
+    window.location.href = '/getting-to-manzanillo'
