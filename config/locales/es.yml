@@ -100,14 +100,14 @@ es:
       por distintas maneras desde Los Estados Unidos y Canadá.'
     to_get_there: 'llegar ahí'
   menu:
-    about: Sobre Magma
+    about: Acerca de Magma
     blog: Blog
-    getting_manzanillo: Llegar a manzanillo
+    getting_manzanillo: Viaje a manzanillo
     menu: MEN&Uacute;
     register: REGISTRO
     schedule: Agenda
     speakers: Ponentes
-    sponsors: Patrocinadores
+    sponsors: Patrocinio
   title: 'MagmaConf 2014'
   home:
     for: 'for-es.svg'

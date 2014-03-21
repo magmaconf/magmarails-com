@@ -25,6 +25,7 @@ $(document).ready ->
     $('#main-menu').addClass('getting-manzanillo')
     $('#mobile-header').addClass('getting-manzanillo')
     addActiveClass('#getting-manzanillo-link')
+    addActiveClass('#getting-to-manzanillo')
     $('#footer').addClass('getting-manzanillo')
 
   else if pathname is '/schedule'
