@@ -1,9 +1,9 @@
-#about-magma
+#about-magma{ class: "#{ locals[:language] }" }
   .pure-g-r.content.heading
     .pure-u-1-4
       %img.info-image{src: "#{image_path 'beach-image.svg'}"}
     .pure-u-1-2
-      .invitation{ class: "#{ locals[:language] }" }
+      .invitation
         %p.advice= t('about.hottest')
         %p.title= t('about.in_all')
       .date

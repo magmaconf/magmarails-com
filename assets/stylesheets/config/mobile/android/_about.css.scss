@@ -5,14 +5,16 @@
   #about-magma{
     height: 2560px;
 
+    &.es {
+      .heading .invitation {
+        width: 100%;
+      }
+    }
+
     .heading{
       height: 130px;
       .info-image{
         display: none;
-      }
-
-      .invitation.es {
-        width: 100%;
       }
 
       .advice{
@@ -153,19 +155,20 @@
       padding-top: 15px;
     }
 
+    &.es {
+      .heading .invitation {
+        width: 84%;
+      }
+    }
+
+    &.en {
+      .heading .invitation {
+        max-width: 352px;
+      }
+    }
+
     .heading {
       height: 160px;
-
-      .invitation {
-        &.es {
-          width: 84%;
-        }
-
-        &.en {
-          max-width: 352px;
-        }
-      }
-
     }
 
     .advice {

@@ -34,6 +34,12 @@
     .heading .invitation {
       margin: 0 auto;
     }
+
+    &.es {
+      #location .content-image {
+        top: 75px;
+      }
+    }
   }
 }
 
@@ -47,25 +53,26 @@
       .title{
         font-size: 25px;
       }
-
-      .invitation {
-        &.es {
-          width: 92%;
-        }
-
-        &.en {
-          max-width: 220px;
-        }
-      }
-
-      .advice {
-        height: 56px;
-      }
     }
 
     .content{
       .content-image{
         height: 183px;
+      }
+    }
+
+    &.es {
+      .heading .invitation {
+        width: 92%;
+      }
+    }
+
+    &.en .heading {
+      .invitation {
+        max-width: 220px;
+      }
+      .advice {
+        height: 56px;
       }
     }
   }

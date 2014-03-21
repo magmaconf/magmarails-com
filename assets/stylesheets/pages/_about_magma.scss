@@ -4,6 +4,13 @@
   color: #fff;
   font-weight: 700;
 
+  &.es {
+    .heading .invitation {
+      font-size: 25px;
+      max-width: 550px;
+    }
+  }
+
   .heading {
     font-size: 28px;
     height: 190px;
@@ -13,11 +20,6 @@
       border-bottom: 2px solid #b4a898;
       margin: 25px auto 0 auto;
       max-width: 535px;
-
-      &.es {
-        font-size: 25px;
-        max-width: 550px;
-      }
     }
 
     .info-image {
