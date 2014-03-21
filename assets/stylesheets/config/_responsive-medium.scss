@@ -128,14 +128,6 @@
       top: 8px;
     }
 
-    #venue .controls {
-      top: 40px;
-    }
-
-    #magma-village .right-info{
-      margin-top: 36px;
-    }
-
     .register .btn-register.small {
       right: 17px;
     }
@@ -314,10 +306,30 @@
     }
   }
 
-  #about-magma .heading {
-    .invitation.es {
-      font-size: 22px;
-      width: 475px;
+  #about-magma {
+    &.es  {
+      .heading .invitation {
+        font-size: 22px;
+        width: 475px;
+      }
+
+      #location .left-info {
+        margin-top: 55px;
+      }
+
+      #magma-village .right-info {
+        margin-top: 15px;
+      }
+    }
+
+    &.en {
+      #magma-village .right-info{
+        margin-top: 36px;
+      }
+
+      #venue .controls {
+        top: 40px;
+      }
     }
   }
 
@@ -407,8 +419,8 @@
     }
   }
 
-  #about-magma .heading {
-    .invitation.es {
+  #about-magma.es {
+    .heading .invitation {
       width: 305px;
     }
   }
@@ -563,7 +575,37 @@
     #culture .controls {
       top: 43px;
     }
+
+    &.es {
+      #magma-village .right-info {
+        margin-top: 5px;
+
+        .description {
+          margin-top: -12px;
+        }
+      }
+
+      #location {
+
+        .title {
+          margin-top: -5px;
+        }
+
+        .description {
+          margin-top: -18px;
+        }
+
+        .controls {
+          top: -10px;
+        }
+      }
+
+      #venue .controls {
+        top: 84px;
+      }
+    }
   }
+
 }
 
 @media (max-width: 768px) {
