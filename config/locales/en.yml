@@ -242,3 +242,6 @@ en:
     advice: 'we need'
     title: 'your support'
   date: 'june 4th-6th | manzanillo'
+  schedule:
+    talk_name:
+      manuel_vidaurre: 'Let’s get ready to rumbleeeeeee: MV* stack VS Rails 4 omakase'
