@@ -66,6 +66,8 @@
       border-bottom: 2px solid #fff;
       color: #fff;
     }
+    &:hover:after {color: #fff;}
+    &:hover {cursor: pointer;}
   }
 
   ul {
@@ -89,7 +91,7 @@
       a , span, &:after {
         color: #ada193;
         display: block;
-        font-size: 100%;
+        font-size: 95%;
         font-family: Oswald;
         font-weight: 300;
         letter-spacing: 2px;
@@ -117,11 +119,12 @@
   }
 
   &.getting-manzanillo, &.schedule, &.about-magma, &.policies {
-    .link {
+    .link, #getting-to-manzanillo.link {
       border-right: 1px solid #6c5a53;
       &:last-child, &:nth-of-type(3) {
         border-right: 0;
       }
+      &:hover:after {color: #000;}
       a, span, &:after {
         color:  #6c5a53;
         &:hover, &.active {
@@ -135,6 +138,7 @@
 
     #getting-to-manzanillo {
       &.active:after {
+
         border-bottom: 2px solid #000;
         color: #000;
       }
