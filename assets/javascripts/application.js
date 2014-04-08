@@ -6,6 +6,7 @@
 //= require jquery.jcarousel-autoscroll.min
 //= require jquery.mobile.custom.min
 //= require effects
+//= require main_menu
 //= require switch_background
 //= require schedule
 //= require sponsors

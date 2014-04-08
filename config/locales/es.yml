@@ -43,7 +43,7 @@ es:
         Aeropuerto Internacional de Playa de Oro conecta con vuelos desde Los Ángeles,
         Vancouver, Houston, Phoenix y la Ciudad de México. Importantes aerolíneas
         que ofrecen su servicio al aeropuerto son Alaska Airlines, Delta, AeroMexico,
-        Interjet, CanJet, Us Airways, United Express y Volaris. Vuelos con una o
+        Interjet, CanJet, US Airways, United Express y Volaris. Vuelos con una o
         dos escalas están disponibles desde San Francisco, Denver, New York, Chicago y
         Washington DC. <br/><br/> Taxi Vans desde el aeropuerto al Magma Village y
         Hoteles cercanos estarán disponibles el Martes 3 de Junio y el Miércoles 4 de Junio.'
@@ -234,7 +234,7 @@ es:
     andre:
       bio: 'Andr&eacute; thinks Ruby is pretty cool. He designs and builds web applications at Cloud City Development by day, and works on Bundler and Rubygems by night… and also some days.'
     johnny:
-      bio: "Johnny embarked on his computing curiosity during the 80's on a Commodore 64. The road leading toward software craftsmanship has diverged down many paths, taking him from musician to electrical engineer, chef to software developer, rugby player to local politician, twists and turns that have provided lots of experiences that have shaped him."
+      bio: "As a Rocketeer & Ruby/Elixir evangelist @ Hashrocket in Jacksonville Beach, Johnny works to deliver quality software and contribute to the development community. So, whether organizing the local user groups, Ancient City Ruby or curating the Elixir Fountain, he shares the message with anyone that listens."
     adam:
       bio: "I'm a professional yack-shaver at Mint. I'm supposed to be a Rails developer. From dotfiles to development tools, there is nothing that diverts my attention more than fixing something that wasn't really broken in the fist place."
     leo:
@@ -251,3 +251,6 @@ es:
     advice: 'necesitamos'
     title: 'de su apoyo'
   date: '4 - 6 junio | manzanillo'
+  schedule:
+    talk_name:
+      manuel_vidaurre: 'Lucharan a dos de tres caídas: MV* stack vs rails 4 omakase'
