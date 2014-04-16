@@ -1,7 +1,7 @@
 en:
   about:
     culture_description: MagmaConf offers an amazing opportunity to experience
-      ¡Mexico as never before! <br/><br/> Evening activities include engaging
+      Mexico as never before! <br/><br/> Evening activities include engaging
       group dinners followed by traditional dance performances, thrilling
       wrestling matches and the occasional drink-a-thon. It is sure to be an
       unforgettable experience.
@@ -10,10 +10,10 @@ en:
     hottest: The Hottest Tech Conference
     magmaconf_is_title: MagmaConf is Mexico's Premier modern web development conference
     magmaconf_description: Conference sessions revolve around Ruby, Rails,
-      Front-end design, and more.Attendees include developers, designers and
-      engineers with experience, or hopping to gain experience, building
+      Front-end design, and more. Attendees include developers, designers and
+      engineers with experience, or hoping to gain experience, building
       cutting-edge web apps. Come and learn not only from our awesome speakers,
-      but also from our diverse audience.
+      but also from our diverse and experienced audience.
     magma_village: <span>Welcome to</span><br/><span>the magma village</span>
     magma_village_description: An unique alternative to a traditional hotel, Magma Village
       offers attendees the opportunity to continue learning from each other
@@ -25,7 +25,7 @@ en:
     venue: The Venue
     venue_description: Talks and workshop take place at the center of
       educational technology. <br/><br/> Located in the University of
-      Colima&#96;s El Naranjo campus, the centre is a first-class teaching
+      Colima&#96;s El Naranjo campus, the center is a first-class teaching
       facility, featuring comfortable seating, wi-fi, and air conditioning.
     culture_activities: Activities
   getting_manzanillo:
