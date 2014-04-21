@@ -34,10 +34,30 @@
       width: 250px;
     }
 
-    #help .content-information .title {
-      margin-bottom: 10px;
-      padding-top: 0;
-      text-align: center;
+    #help {
+      .spacer {
+        width: 0;
+      }
+
+      .content {
+        img {
+          margin-right: 3%;
+          width: 0;
+        }
+        .title {
+          font-size: 120%;
+          text-align: left;
+          width: 144px;
+        }
+        .description {
+          margin-top: 40px;
+          margin-left: 10%;
+        }
+
+        .info:last-child {
+          width: 70%;
+        }
+      }
     }
   }
 
@@ -46,6 +66,34 @@
 
     .social {
       margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #getting-manzanillo #help {
+    .content {
+      .info {
+        width: 100% !important;
+        position: absolute;
+        &:last-child {
+          position: static;
+        }
+      }
+      img {
+        margin: 0;
+        width: 0;
+      }
+      .title {
+        margin: 15px auto;
+      }
+
+      .description {
+        margin: 45px auto 0;
+        padding: 0;
+        position: relative;
+        text-align: center;
+      }
     }
   }
 }

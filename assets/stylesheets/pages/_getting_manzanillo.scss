@@ -145,23 +145,31 @@
   }
 
   #help {
-    background-color: #f0f1ea;
+    background-color: #fff;
 
     .content-information {
-      margin: 50px 0 40px;
+      margin: 0;
 
       .title {
         text-align: right;
+        margin-top: 70px;
       }
 
       .description {
-        margin-top: -10px;
+        font-weight: 400;
+        margin-top: 50px;
       }
     }
 
     .content {
+      height: 150px;
       margin: 0 auto;
-      width: 95%;
+
+      img  {
+        background-color: #514642;
+        height: 100%;
+        width: 14%;
+      }
     }
   }
 
@@ -201,7 +209,7 @@
 }
 
 #planning-trip {
-  background-color: #f8f8f6;
+  background-color: #f0f1eb;
   .right-info {
     padding-top: 30px;
   }

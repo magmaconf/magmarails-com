@@ -318,6 +318,18 @@
         width: 370px;
       }
     }
+
+    #help {
+      .content {
+        max-height: 150px;
+        img {
+          width: 17%;
+        }
+        .title {
+          font-size: 135%;
+        }
+      }
+    }
   }
 
   #about-magma {
@@ -405,27 +417,13 @@
     }
 
     #help {
-      .content-information {
-        margin: 40px 0;
-
-        .description {
-          margin:  0;
-        }
-
-        .title {
-          padding-top: 22px;
-        }
-      }
-
       .content {
         padding: 0;
       }
     }
 
-    #flying-guadalajara, #help, #planning-trip {
-      .content-image {
-        margin-top: 50px;
-      }
+    .content-image.right-img {
+      margin-top: 50px;
     }
 
     #about-manzanillo .content-information {
@@ -573,6 +571,25 @@
       .map-legend {
         left: 55px;
         top: -190px;
+      }
+    }
+
+    #help {
+      .content {
+        img {
+          position: relative;
+          right: 3.8%;
+          width: 17%;
+        }
+        .title {
+          font-size: 130%;
+          position: relative;
+          right: 33%;
+          width: 145%;
+        }
+        .description {
+          margin-top: 35px;
+        }
       }
     }
   }
