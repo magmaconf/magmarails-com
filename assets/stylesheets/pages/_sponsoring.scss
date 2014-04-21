@@ -72,6 +72,11 @@
     width: 80%;
   }
 
+  #rackspace {
+    padding: 52px 7px;
+    width: 90%;
+  }
+
   #sponsoring-advice {
     span {
       display: block;
@@ -115,6 +120,9 @@
       left: 50%;
       margin-left: -86px;
       margin-top: 20px;
+    }
+    .btn-register {
+      cursor: pointer;
     }
   }
 
