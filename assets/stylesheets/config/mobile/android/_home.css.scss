@@ -32,6 +32,31 @@
         }
       }
     }
+    #help-section .container {
+      height: 465px;
+    }
+    #here-to-help {
+      display: none;
+    }
+    #swimmer-image {
+      display: none;
+    }
+    #village-image {
+      display: none;
+    }
+    #check-out-more {
+      height: 218px;
+      .content {
+        margin-top: 38px;
+      }
+    }
+    #contact-us .content {
+      .title:first-child {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+    }
   }
 }
 
