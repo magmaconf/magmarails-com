@@ -32,48 +32,29 @@
         }
       }
     }
-  }
-
-  #newsletter{
-    margin-top: 20px;
-
-    &.sent {
-      height: 130px;
+    #help-section .container {
+      height: 465px;
     }
-
-    section {
-      height: 278px;
-      margin: 0 auto;
-      width: 320px;
-    }
-    .banner {
+    #here-to-help {
       display: none;
     }
-
-    p {
-      line-height: 22px;
-      width: 100%;
-      &.small {
-        font-size: 100%;
-      }
-      &.big {
-        font-size: 155%;
+    #swimmer-image {
+      display: none;
+    }
+    #village-image {
+      display: none;
+    }
+    #check-out-more {
+      height: 218px;
+      .content {
+        margin-top: 38px;
       }
     }
-
-    p, .form-container {
-      bottom: 0;
-      top: 8px;
-      left: 0;
-    }
-
-    .form-container {
-      width: 100%;
-      margin-top: 4px;
-
-      .submit {
-        margin-top: 13px;
-        float: none;
+    #contact-us .content {
+      .title:first-child {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 15px;
       }
     }
   }
@@ -98,13 +79,6 @@
           }
         }
       }
-    }
-  }
-
-  #newsletter {
-    section {
-      height: 298px;
-      width: 300px;
     }
   }
 }

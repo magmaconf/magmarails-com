@@ -6,7 +6,7 @@ $(document).ready ->
       $.ajax
         url: "/send_email"
         type: 'post'
-        data: $(@).serialize() + requestType()
+        data: $(@).serialize()
         success: () ->
           clearFormFields()
           showSuccessMessage()
@@ -23,11 +23,8 @@ $(document).ready ->
         email: true
 
   showSuccessMessage = ->
-    if currentPath() is '/'
-      $('#newsletter').addClass('sent')
-    else
-      $('#message-box').addClass('success')
-      $('#message-box span').text('Your request has been sent')
+    $('#message-box').addClass('success')
+    $('#message-box span').text('Your request has been sent')
 
   showErrorMessage = ->
     $('#message-box').addClass('error')
@@ -51,7 +48,3 @@ $(document).ready ->
 
   currentPath = ->
     $(location).attr('pathname')
-
-  requestType = ->
-    requestName = if currentPath() is '/' then 'newsletter' else 'sponsor'
-    '&type=' + requestName

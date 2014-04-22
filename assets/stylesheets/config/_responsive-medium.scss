@@ -23,59 +23,6 @@
     }
   }
 
-  #newsletter {
-    section {
-      height: 150px;
-      .banner {
-        top: -26px;
-        width: 431px;
-      }
-    }
-
-    p {
-      bottom: 198px;
-      left: 34%;
-      line-height: 22px;
-      &.small {
-        font-size: 100%;
-      }
-      &.big {
-        font-size: 155%;
-      }
-    }
-
-    #thanks, #keep {
-      left: 40%;
-    }
-
-    #subscribe {
-      padding-bottom: 3px;
-    }
-
-    .form-container {
-      bottom: 180px;
-      float: none;
-      left: 34%;
-      margin-right: 0;
-      padding-top: 5px;
-
-      label {
-        font-size: 100%;
-      }
-
-      .field input {
-        height: 25px;
-        margin-top: 2px;
-      }
-
-      .submit {
-        height: 30px;
-        margin-top: 21px;
-      }
-    }
-
-  }
-
   #footer {
     padding: 20px 0 10px;
     #copy-right {
@@ -290,6 +237,22 @@
 
 @media screen and (min-width: 916px) and (max-width: 1024px) {
 
+  #main-section {
+    #village-image .content {
+      position: static;
+      width: initial;
+      img {
+        height: 100%;
+      }
+    }
+
+    #here-to-help {
+      .image:last-child {
+        margin-left: 25px;
+      }
+    }
+  }
+
   #getting-manzanillo {
     #bus {
       .left-info {
@@ -320,6 +283,19 @@
       .image-container {
         top: 108px;
         width: 370px;
+      }
+    }
+
+    #help {
+      .content {
+        max-height: 150px;
+        .help-image {
+          margin-right: 1%;
+          width: 17%;
+        }
+        .title {
+          font-size: 135%;
+        }
       }
     }
   }
@@ -409,27 +385,13 @@
     }
 
     #help {
-      .content-information {
-        margin: 40px 0;
-
-        .description {
-          margin:  0;
-        }
-
-        .title {
-          padding-top: 22px;
-        }
-      }
-
       .content {
         padding: 0;
       }
     }
 
-    #flying-guadalajara, #help, #planning-trip {
-      .content-image {
-        margin-top: 50px;
-      }
+    .content-image.right-img {
+      margin-top: 50px;
     }
 
     #about-manzanillo .content-information {
@@ -445,50 +407,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 915px) {
-  #newsletter {
-    section {
-      height: 165px;
-
-      .banner {
-        top: -28px;
-        width: 472px;
-      }
-    }
-
-    #thanks, #keep {
-      left: 53%;
-    }
-
-    p {
-      bottom: 197px;
-      left: 45%;
-      width: 410px;
-    }
-
-    #stay-up {
-      display: none;
-    }
-
-    .form-container {
-      bottom: 163px;
-      left: 45%;
-      margin-top: -32px;
-      width: 410px;
-
-      .submit {
-        margin-top: 9px;
-      }
-
-      .field {
-        &.name {
-          margin-right: 10px;
-        }
-        input {
-          width: 186px;
-        }
-      }
-    }
-  }
 
   #footer {
     .anti h3 {
@@ -511,6 +429,28 @@
       }
     }
   }
+
+  #main-section {
+    #here-to-help {
+      width: 18%;
+    }
+    #swimmer-image {
+      margin-left: -187px;
+    }
+    #village-image {
+      display: none;
+    }
+    #contact-us {
+      width: 30%;
+    }
+    #check-out-more {
+      width: 52%;
+      .content {
+        margin: 43px 0 0 15px;
+      }
+    }
+  }
+
   #sponsoring {
     padding-top: 100px;
     .illustration {
@@ -577,6 +517,26 @@
       .map-legend {
         left: 55px;
         top: -190px;
+      }
+    }
+
+    #help {
+      .content {
+        .help-image {
+          background-position-x: 10px;
+          position: relative;
+          right: 3.8%;
+          width: 19%;
+        }
+        .title {
+          font-size: 130%;
+          position: relative;
+          right: 33%;
+          width: 145%;
+        }
+        .description {
+          margin-top: 35px;
+        }
       }
     }
   }
