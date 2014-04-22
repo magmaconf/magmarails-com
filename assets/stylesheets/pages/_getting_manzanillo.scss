@@ -165,10 +165,11 @@
       height: 150px;
       margin: 0 auto;
 
-      img  {
-        background-color: #514642;
+      .help-image  {
+        background: #514642 image_url('help-image.png') no-repeat 24px 31px;
+        display: inline-block;
         height: 100%;
-        width: 14%;
+        width: 15%;
       }
     }
   }
