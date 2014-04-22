@@ -63,13 +63,19 @@
   }
 
   #honey-badger {
-    padding: 53px 19px;
-    width: 75%;
+    margin-top: -10px;
+    padding: 0px 6px;
+    width: 90%;
   }
 
   #engine {
     padding: 61px 15px;
     width: 80%;
+  }
+
+  #rackspace {
+    padding: 52px 7px;
+    width: 90%;
   }
 
   #sponsoring-advice {
@@ -115,6 +121,9 @@
       left: 50%;
       margin-left: -86px;
       margin-top: 20px;
+    }
+    .btn-register {
+      cursor: pointer;
     }
   }
 

@@ -1,0 +1,151 @@
+@media screen and (max-width: 767px) {
+
+  #sponsoring {
+    .illustration {
+      display: none;
+    }
+
+    .btn-register.small {
+      display: none !important;
+    }
+
+    .heading {
+      &:first-child {
+        height: 0;
+      }
+    }
+
+    .invitation {
+      margin: -15px auto 0 !important;
+
+      .advice {
+        margin-top: 0;
+      }
+    }
+
+    .btn-register img {
+      height: 84px;
+    }
+
+    #sponsors {
+      margin-top: 60px;
+      .hide {
+        display: none;
+      }
+      div {
+        width: 50%;
+      }
+
+      .big-sponsor-box {
+        height: 135px;
+        margin: 10px auto;
+        width: 135px;
+        @include box-shadow(0, 0, 0, 5px, #50433d);
+
+        .sponsor-link {
+          height: 135px;
+        }
+
+        span {
+          font-size: 130%;
+          left: 6px;
+          top: 45px;
+          width: 120px;
+        }
+
+        #crowdint {
+          height: 43px;
+          padding: 43px 12px;
+          width: 110px;
+        }
+
+        #github {
+          padding: 32px 27px;;
+        }
+      }
+    }
+
+    #silver-sponsors {
+      margin-bottom: 130px;
+      & .pure-u-1-6:last-child, #contact {
+        display: none;
+      }
+
+      .pure-u-1-6 {
+        width: 33.33%;
+
+        .normal-box {
+          height: 85px;
+          margin: 10px auto;
+          width: 85px;
+          @include box-shadow(0, 0, 0, 5px, #50433d);
+
+          span {
+            font-size: 130%;
+            top: 35px;
+            width: 86px;
+          }
+
+          #honey-badger {
+            padding: 5px 4px;
+          }
+
+          #engine {
+            padding: 35px 9px;
+          }
+
+          #rackspace {
+            padding: 31px 4px;
+          }
+        }
+      }
+
+      #btn-contact {
+        display: block;
+        position: absolute;
+        left: 50%;
+        width: 170px;
+        margin: 130px 0 0 -85px;
+
+        .mail-button {
+          margin: 0;
+          width: 170px;
+
+          .shadow {
+            margin-left: -66px;
+            margin-top: 9px;
+            height: 132px;
+          }
+
+          a {
+            height: 110px;
+            padding: 10px 18px;
+            width: 110px;
+          }
+        }
+      }
+    }
+
+    #contact-form {
+      margin-top: 155px;
+      .title span {
+        margin-left: 15px;
+      }
+
+      #contact {
+        margin-left: 15px;
+
+        input {
+          margin-top: 0;
+          margin-bottom: 15px;
+        }
+
+        .submit {
+          display: block;
+          float: none;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+}
