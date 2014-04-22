@@ -33,50 +33,6 @@
       }
     }
   }
-
-  #newsletter{
-    margin-top: 20px;
-
-    &.sent {
-      height: 130px;
-    }
-
-    section {
-      height: 278px;
-      margin: 0 auto;
-      width: 320px;
-    }
-    .banner {
-      display: none;
-    }
-
-    p {
-      line-height: 22px;
-      width: 100%;
-      &.small {
-        font-size: 100%;
-      }
-      &.big {
-        font-size: 155%;
-      }
-    }
-
-    p, .form-container {
-      bottom: 0;
-      top: 8px;
-      left: 0;
-    }
-
-    .form-container {
-      width: 100%;
-      margin-top: 4px;
-
-      .submit {
-        margin-top: 13px;
-        float: none;
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 360px) {
@@ -98,13 +54,6 @@
           }
         }
       }
-    }
-  }
-
-  #newsletter {
-    section {
-      height: 298px;
-      width: 300px;
     }
   }
 }

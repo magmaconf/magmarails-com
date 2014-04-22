@@ -16,24 +16,3 @@
             = t('home.one_of_the_most_important')
           %p= t('home.magma_welcome_dev')
         = partial :social_buttons
-#newsletter
-  %section
-    .pure-g-r
-      .pure-u-1-1.content
-        %img.banner{src: "#{image_path 'banner-image.svg'}"}
-        %p#stay-up.small.before= t('home.newsletter.stay_up_to_day')
-        %p#subscribe.big.before= t('home.newsletter.subscribe')
-        %p#thanks.big.after= t('home.newsletter.thanks')
-        %p#keep.small.after= t('home.newsletter.keep')
-        .form-container.before
-          %form#contact
-            %fieldset
-              .field.name
-                %label{for: 'name'}= t('newsletter-form.fields.name')
-                %span *
-                %input{name: 'name', type: 'text'}
-              .field
-                %label{for: 'email'}= t('newsletter-form.fields.email')
-                %span *
-                %input{name: 'email', type: 'email'}
-              %input.submit{type: 'submit', value: t('newsletter-form.fields.submit')}

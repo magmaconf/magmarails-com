@@ -23,59 +23,6 @@
     }
   }
 
-  #newsletter {
-    section {
-      height: 150px;
-      .banner {
-        top: -26px;
-        width: 431px;
-      }
-    }
-
-    p {
-      bottom: 198px;
-      left: 34%;
-      line-height: 22px;
-      &.small {
-        font-size: 100%;
-      }
-      &.big {
-        font-size: 155%;
-      }
-    }
-
-    #thanks, #keep {
-      left: 40%;
-    }
-
-    #subscribe {
-      padding-bottom: 3px;
-    }
-
-    .form-container {
-      bottom: 180px;
-      float: none;
-      left: 34%;
-      margin-right: 0;
-      padding-top: 5px;
-
-      label {
-        font-size: 100%;
-      }
-
-      .field input {
-        height: 25px;
-        margin-top: 2px;
-      }
-
-      .submit {
-        height: 30px;
-        margin-top: 21px;
-      }
-    }
-
-  }
-
   #footer {
     padding: 20px 0 10px;
     #copy-right {
@@ -444,50 +391,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 915px) {
-  #newsletter {
-    section {
-      height: 165px;
-
-      .banner {
-        top: -28px;
-        width: 472px;
-      }
-    }
-
-    #thanks, #keep {
-      left: 53%;
-    }
-
-    p {
-      bottom: 197px;
-      left: 45%;
-      width: 410px;
-    }
-
-    #stay-up {
-      display: none;
-    }
-
-    .form-container {
-      bottom: 163px;
-      left: 45%;
-      margin-top: -32px;
-      width: 410px;
-
-      .submit {
-        margin-top: 9px;
-      }
-
-      .field {
-        &.name {
-          margin-right: 10px;
-        }
-        input {
-          width: 186px;
-        }
-      }
-    }
-  }
 
   #footer {
     .anti h3 {
