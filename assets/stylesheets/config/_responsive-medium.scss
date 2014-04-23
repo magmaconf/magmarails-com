@@ -251,6 +251,9 @@
         margin-left: 25px;
       }
     }
+    #check-out-more .content {
+      margin: 43px 0 0 30px;
+    }
   }
 
   #getting-manzanillo {
@@ -441,10 +444,13 @@
       display: none;
     }
     #contact-us {
-      width: 30%;
+      width: 28%;
+      .content {
+        width: 190px;
+      }
     }
     #check-out-more {
-      width: 52%;
+      width: 54%;
       .content {
         margin: 43px 0 0 15px;
       }
