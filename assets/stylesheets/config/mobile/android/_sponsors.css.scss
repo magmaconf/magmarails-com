@@ -1,3 +1,19 @@
+@media screen and (min-width: 560px) and (max-width: 767px) {
+  #sponsoring {
+    #medium-sponsors .pure-u-1-4 {
+      width: 25%;
+    }
+  }
+}
+
+@media screen and (max-width: 559px) {
+  #sponsoring {
+    #medium-sponsors .pure-u-1-4 {
+      width: 50%;
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
 
   #sponsoring {
@@ -36,7 +52,7 @@
         width: 50%;
       }
 
-      .big-sponsor-box {
+      .big-sponsor {
         height: 135px;
         margin: 10px auto;
         width: 135px;
@@ -74,7 +90,7 @@
       .pure-u-1-6 {
         width: 33.33%;
 
-        .normal-box {
+        .normal {
           height: 85px;
           margin: 10px auto;
           width: 85px;
@@ -125,7 +141,26 @@
         }
       }
     }
-
+    .medium-sponsor {
+      height: 110px;
+      margin: 15px auto;
+      width: 110px;
+      span {
+        padding: 45px 18px;
+        &.hide {
+          display: none;
+        }
+      }
+      .message {
+        display: block;
+        font-size: 17px;
+        padding: 25px 4px 10px;
+        width: 103px;
+      }
+    }
+    #toptal {
+      padding: 42px 14px;
+    }
     #contact-form {
       margin-top: 155px;
       .title span {

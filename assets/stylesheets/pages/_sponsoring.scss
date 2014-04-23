@@ -10,7 +10,7 @@
     bottom: 45px;
   }
 
-  .big-sponsor-box, .normal-box {
+  .box {
     @include rounded(135px);
     background-color: #50433d;
     border: 3px solid #695b52;
@@ -27,7 +27,20 @@
     }
   }
 
-  .big-sponsor-box {
+  .medium-sponsor {
+    @include box-shadow(0, 0, 0, 7px, #50433d);
+    height: 200px;
+    width: 200px;
+    span {
+      padding: 88px 60px;
+      width: 80px;
+    }
+    .message {
+      display: none;
+    }
+  }
+
+  .big-sponsor {
     @include box-shadow(0, 0, 0, 10px, #50433d);
     height: 238px;
     width: 238px;
@@ -39,7 +52,7 @@
     }
   }
 
-  .normal-box {
+  .normal {
     @include box-shadow(0, 0, 0, 7px, #50433d);
     height: 148px;
     width: 148px;
@@ -76,6 +89,11 @@
   #rackspace {
     padding: 52px 7px;
     width: 90%;
+  }
+
+  #toptal {
+    padding: 76px 25px;
+    width: 75%;
   }
 
   #sponsoring-advice {
