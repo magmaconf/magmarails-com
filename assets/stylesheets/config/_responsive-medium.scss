@@ -141,7 +141,7 @@
       font-size: 26px;
     }
 
-    .big-sponsor-box {
+    .big-sponsor {
       height: 220px;
       width: 220px;
 
@@ -162,7 +162,7 @@
         top: 90px;
       }
     }
-    .normal-box {
+    .normal {
       top: 40px;
       width: 105px;
       height: 105px;
@@ -631,6 +631,20 @@
       #venue .controls {
         top: 84px;
       }
+    }
+  }
+
+  #sponsoring {
+    .medium-sponsor {
+      height: 165px;
+      width: 165px;
+
+      span {
+        padding: 70px 43px;
+      }
+    }
+    #toptal {
+      padding: 62px 21px;
     }
   }
 
