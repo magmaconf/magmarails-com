@@ -21,6 +21,8 @@
       display: block;
       font-family: oswald;
       font-size: 155%;
+      font-weight: 300;
+      letter-spacing: 1px;
       line-height: 25px;
       position: relative;
       text-align: center;
@@ -314,5 +316,22 @@
       background: image_url('star.png');
       background-size: 15px;
     }
+  }
+}
+
+#media-sponsors {
+  background: #3c322e;
+  height: 125px;
+  border-bottom: 5px solid #695b52;
+  border-top: 5px solid #695b52;
+  -webkit-box-shadow: 0 0 0 7px #3c322e;
+  -moz-box-shadow: 0 0 0 7px #50433d;
+  box-shadow: 0 0 0 7px #3c322e;
+  ul {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  span {
+    color: #959288;
   }
 }
