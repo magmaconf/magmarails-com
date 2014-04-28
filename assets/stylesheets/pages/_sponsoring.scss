@@ -21,6 +21,8 @@
       display: block;
       font-family: oswald;
       font-size: 155%;
+      font-weight: 300;
+      letter-spacing: 1px;
       line-height: 25px;
       position: relative;
       text-align: center;
@@ -33,7 +35,7 @@
     width: 200px;
     span {
       padding: 88px 60px;
-      width: 80px;
+      width: 81px;
     }
     .message {
       display: none;
@@ -314,5 +316,34 @@
       background: image_url('star.png');
       background-size: 15px;
     }
+  }
+}
+
+#media-sponsors {
+  background: #3c322e;
+  height: 125px;
+  border-bottom: 5px solid #695b52;
+  border-top: 5px solid #695b52;
+  -webkit-box-shadow: 0 0 0 7px #3c322e;
+  -moz-box-shadow: 0 0 0 7px #50433d;
+  box-shadow: 0 0 0 7px #3c322e;
+  ul {
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+  }
+  .pure-u-1-6 {
+    display: table;
+    height: 100%;
+  }
+  .center {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .title {
+    color: #959288;
+    font-size: 22px;
+    font-family: oswald;
   }
 }
