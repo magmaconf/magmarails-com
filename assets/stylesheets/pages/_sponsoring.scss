@@ -10,7 +10,7 @@
     bottom: 45px;
   }
 
-  .big-sponsor-box, .normal-box {
+  .box {
     @include rounded(135px);
     background-color: #50433d;
     border: 3px solid #695b52;
@@ -21,13 +21,28 @@
       display: block;
       font-family: oswald;
       font-size: 155%;
+      font-weight: 300;
+      letter-spacing: 1px;
       line-height: 25px;
       position: relative;
       text-align: center;
     }
   }
 
-  .big-sponsor-box {
+  .medium-sponsor {
+    @include box-shadow(0, 0, 0, 7px, #50433d);
+    height: 200px;
+    width: 200px;
+    span {
+      padding: 88px 60px;
+      width: 81px;
+    }
+    .message {
+      display: none;
+    }
+  }
+
+  .big-sponsor {
     @include box-shadow(0, 0, 0, 10px, #50433d);
     height: 238px;
     width: 238px;
@@ -39,7 +54,7 @@
     }
   }
 
-  .normal-box {
+  .normal {
     @include box-shadow(0, 0, 0, 7px, #50433d);
     height: 148px;
     width: 148px;
@@ -76,6 +91,16 @@
   #rackspace {
     padding: 52px 7px;
     width: 90%;
+  }
+
+  #toptal {
+    padding: 76px 25px;
+    width: 75%;
+  }
+
+  #travis-ci {
+    width: 65%;
+    padding: 44px 35px;
   }
 
   #sponsoring-advice {
@@ -296,5 +321,34 @@
       background: image_url('star.png');
       background-size: 15px;
     }
+  }
+}
+
+#media-sponsors {
+  background: #3c322e;
+  height: 125px;
+  border-bottom: 5px solid #695b52;
+  border-top: 5px solid #695b52;
+  -webkit-box-shadow: 0 0 0 7px #3c322e;
+  -moz-box-shadow: 0 0 0 7px #50433d;
+  box-shadow: 0 0 0 7px #3c322e;
+  ul {
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+  }
+  .pure-u-1-6 {
+    display: table;
+    height: 100%;
+  }
+  .center {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .title {
+    color: #959288;
+    font-size: 22px;
+    font-family: oswald;
   }
 }
