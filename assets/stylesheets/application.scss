@@ -2,11 +2,7 @@
 
 @import 'config/variables';
 
-@import 'mixins/grid';
-@import 'mixins/pages';
-@import 'mixins/fonts';
-@import 'mixins/icons';
-@import 'mixins/site';
+@import 'mixins/*';
 
 @import 'ui/base';
 @import 'ui/icons';
