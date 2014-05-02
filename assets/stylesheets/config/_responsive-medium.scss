@@ -97,16 +97,15 @@
       }
 
       #crowdint {
-        padding: 68px 22px;
+        padding: 68px 17px;
+      }
+
+      #onelogin {
+        padding: 86px 27px;
       }
 
       #github{
         padding: 52px 44px;
-      }
-
-      span {
-        left: 20px;
-        top: 90px;
       }
     }
     .normal {
@@ -125,7 +124,6 @@
       #rackspace {
         padding: 38px 5px;
       }
-
       span {
         top: 40px;
         width: 100px;
@@ -604,9 +602,12 @@
     .medium-sponsor {
       height: 165px;
       width: 165px;
-
       span {
         padding: 70px 43px;
+      }
+      .message {
+        padding: 57px 11px;
+        width: 143px;
       }
     }
     .illustration {
