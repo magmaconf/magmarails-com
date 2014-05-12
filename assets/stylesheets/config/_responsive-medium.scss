@@ -227,7 +227,8 @@
       }
 
       &:after {
-        display: inline-block;
+        display: block;
+        margin-top: -3px;
       }
     }
   }
@@ -339,6 +340,10 @@
       font-size: 20px;
     }
   }
+  #main-menu {
+    .link { padding: 0 18px; }
+    &.es .link { padding: 0 16px; }
+  }
 }
 
 @media screen and (max-width: 915px) {
@@ -428,13 +433,9 @@
   }
 
   #main-menu {
-    ul li {
-      padding: 0 10px;
-
-      a {
-        font-size: 95%;
-      }
-    }
+    .link { padding: 0 5px; }
+    .link-text { font-size: 85%; }
+    &.es .link-text { font-size: 80%; }
   }
 
   #main-section {

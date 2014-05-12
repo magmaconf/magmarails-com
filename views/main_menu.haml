@@ -2,20 +2,24 @@
   .pure-u-1-1
     %ul
       %li.link
-        %a#speakers-link{href: '/speakers'}= t('menu.speakers')
+        %a.link-text#about-magma-link{ href: '/about-magma' }= t('menu.about')
       %li.link
-        %a#schedule-link{href: '/schedule'}= t('menu.schedule')
+        %a.link-text#speakers-link{ href: '/speakers' }= t('menu.speakers')
       %li.link
-        %a#about-magma-link{href: '/about-magma'}= t('menu.about')
-      %li#main-section-link
+        %a.link-text#schedule-link{ href: '/schedule' }= t('menu.schedule')
+      %li.link.without-border
+        %a.link-text#sponsors-link{ href: '/sponsors' }= t('menu.sponsors')
+      %li#main-section-link.without-border
         %a{href: '/'}
           #magma-logo
       %li#getting-to-manzanillo.link
-        %span#getting-manzanillo-link{href: '/getting-to-manzanillo' }= t('menu.getting_manzanillo')
+        %span.link-text#getting-manzanillo-link{ href: '/getting-to-manzanillo' }= t('menu.getting_manzanillo')
       %li.link
-        %a#sponsors-link{href: '/sponsors'}= t('menu.sponsors')
+        %a.link-text#sponsors-link{ href: 'mailto:info@magmaconf.com', target:'_blank' }= t('menu.contact-us')
       %li.link
-        %a.blog-link{href: 'http://blog.magmaconf.com/', target: '_blank'}= t('menu.blog')
+        %a.link-text.blog-link{ href: 'http://blog.magmaconf.com/', target: '_blank' }= t('menu.blog')
+      %li.link.without-border
+        %a.link-text#sponsors-link{ href: 'http://store.magmaconf.com', target: '_blank' }= t('menu.store')
     %a#btn-menu
       %span
       %span
@@ -30,5 +34,5 @@
     %span#menu.link= t('menu.menu')
     %a{href: '/'}
       #magma-logo
-    %a#register.link{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}
+    %a#register.link{ href: 'http://magmaconf2014.eventbrite.com/', target: '_blank' }
       = t('menu.register')
