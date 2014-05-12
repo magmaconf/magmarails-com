@@ -101,7 +101,7 @@
     }
 
     .line {
-      .legend, .speaker-name, .language-image.en, .talk-name  {
+      .legend, .speaker-name, .talk-name  {
         margin-left: 20px;
       }
       .speaker-name {
@@ -114,7 +114,7 @@
           margin-left: 20px;
         }
       }
-      &.talk .language-image.en {
+      &.talk .language-image {
         display: none;
       }
       &.talk {
@@ -132,11 +132,11 @@
           margin-left: 20px;
           right: 26px;
         }
-        .language-image.en {
+        .language-image {
           left: 52px;
           margin-left: 0px;
         }
-        .keynotes-image, .language-image.en {
+        .keynotes-image, .language-image {
           float: right;
           position: relative;
           top: -29px;
@@ -175,6 +175,4 @@
       top: 44px;
     }
   }
-
-
 }

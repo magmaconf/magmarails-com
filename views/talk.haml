@@ -2,6 +2,6 @@
   .pure-u-1-1
     %p.speaker-name
       = locals[:speaker]
-    %img.language-image{src: "#{image_path 'english-icon.svg'}", class: "#{locals[:language]}"}
-    %p.talk-name{class: "#{locals[:language]}" }
+    %img.language-image{ src: "#{image_path "#{locals[:language]}.svg"}" }
+    %p.talk-name{ class: "#{locals[:language]}" }
       = locals[:talk_name]
