@@ -171,9 +171,10 @@
                   locals: { speaker: 'Adam Rogers',
                             talk_name: 'How to win designers and influence developers',
                             language: 'en' }
-        = partial :talk,
-                  locals: { speaker: 'Emmanuel Delgado',
-                            talk_name: '1 Level Up' }
+        .pure-g-r.line.talk
+          .pure-u-1-1
+            %p.speaker-name TBD
+
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Sponsor time
@@ -185,8 +186,9 @@
             %p.speaker-name
               %a.link{ href: 'http://blog.magmaconf.com/2014/05/02/let-s-get-ready-to-rumble-2-to-3-rounds-mv-stack-vs-rails-4-omakase.html',
                        target: '_blank' } Discussion Panel
-            %img.language-image{src: "#{image_path 'english-icon.svg'}", class: ''}
-            %p.talk-name
+            %img.language-image{ src: "#{image_path 'en.svg'}" }
+            %img.language-image.sp{ src: "#{image_path 'sp.svg'}" }
+            %p.talk-name.en-sp
               %a.link{ href: 'http://blog.magmaconf.com/2014/05/02/let-s-get-ready-to-rumble-2-to-3-rounds-mv-stack-vs-rails-4-omakase.html',
                                      target: '_blank' } Let’s get ready to rumbleeeeeee: MV* stack VS Rails 4 omakase
         .pure-g-r.line.break
