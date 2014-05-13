@@ -9,9 +9,10 @@
     height: 120px;
     .pure-u-1-6 {
       width: 30%;
+      &:last-child { width: 0 }
     }
     .pure-u-1-3 {
-      width: 20%;
+      width: 5%;
     }
   }
 }
@@ -208,9 +209,9 @@
     }
   }
   #media-sponsors {
-    height: 130px;
+    height: 175px;
     .pure-u-1-6 {
-      height: 40%;
+      height: 33%;
       margin: 0 auto;
       text-align: center;
       width: 70%;
