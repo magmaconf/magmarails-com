@@ -38,7 +38,8 @@
       width: 81px;
     }
     .message {
-      display: none;
+      padding: 74px 16px;
+      width: 168px;
     }
   }
 
@@ -46,12 +47,6 @@
     @include box-shadow(0, 0, 0, 10px, #50433d);
     height: 238px;
     width: 238px;
-
-    span {
-      left: 30px;
-      top: 102px;
-      width: 180px;
-    }
   }
 
   .normal {
@@ -64,40 +59,31 @@
       width: 149px;
     }
   }
-
   #crowdint {
-    position: relative;
-    width: 176px;
-    padding: 82px 31px;
+    @include sponsor-image(85%, 76px, 18px);
   }
-
+  #onelogin {
+    @include sponsor-image(75%, 96px, 35px);
+  }
   #github {
-    padding: 56px 48px;
-    position: relative;
-    width: 60%;
+    @include sponsor-image(60%, 56px, 48px);
   }
-
   #honey-badger {
+    @include sponsor-image(90%, 0px, 6px);
     margin-top: -10px;
-    padding: 0px 6px;
-    width: 90%;
   }
-
   #engine {
-    padding: 61px 15px;
-    width: 80%;
+    @include sponsor-image(80%, 61px, 15px);
   }
-
   #rackspace {
-    padding: 52px 7px;
-    width: 90%;
+    @include sponsor-image(90%, 52px, 7px);
   }
-
   #toptal {
-    padding: 76px 25px;
-    width: 75%;
+    @include sponsor-image(75%, 76px, 25px);
   }
-
+  #travis-ci {
+    @include sponsor-image(65%, 44px, 35px);
+  }
   #sponsoring-advice {
     span {
       display: block;

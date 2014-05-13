@@ -1,0 +1,4 @@
+@mixin sponsor-image($width, $top-bottom, $left-right) {
+  padding: $top-bottom $left-right;
+  width: $width;
+}
