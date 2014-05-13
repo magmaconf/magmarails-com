@@ -35,7 +35,7 @@
     width: 200px;
     span {
       padding: 88px 60px;
-      width: 80px;
+      width: 81px;
     }
     .message {
       display: none;
@@ -328,10 +328,22 @@
   -moz-box-shadow: 0 0 0 7px #50433d;
   box-shadow: 0 0 0 7px #3c322e;
   ul {
+    height: 100%;
     max-width: 1200px;
     margin: 0 auto;
+
   }
-  span {
+  .pure-u-1-6 {
+    display: table;
+    height: 100%;
+  }
+  .center {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .title {
     color: #959288;
+    font-size: 22px;
+    font-family: oswald;
   }
 }

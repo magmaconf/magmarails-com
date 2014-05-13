@@ -335,6 +335,12 @@
       min-height: 98px;
     }
   }
+
+  #media-sponsors {
+    .title {
+      font-size: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 915px) {
@@ -454,13 +460,6 @@
       .content {
         margin: 43px 0 0 15px;
       }
-    }
-  }
-
-  #sponsoring {
-    padding-top: 100px;
-    .illustration {
-      left: -130px;
     }
   }
 
@@ -601,6 +600,7 @@
   }
 
   #sponsoring {
+    padding-top: 100px;
     .medium-sponsor {
       height: 165px;
       width: 165px;
@@ -609,8 +609,18 @@
         padding: 70px 43px;
       }
     }
+    .illustration {
+      left: -130px;
+    }
     #toptal {
       padding: 62px 21px;
+    }
+  }
+
+  #media-sponsors {
+    height: 110px;
+    .title {
+      font-size: 16px;
     }
   }
 
