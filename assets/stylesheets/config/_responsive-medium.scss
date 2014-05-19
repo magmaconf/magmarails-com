@@ -631,10 +631,10 @@
   }
 
   #media-sponsors {
-    height: 110px;
-    .title {
-      font-size: 16px;
-    }
+    height: 95px;
+    .title { font-size: 16px; }
+    ul, .title { height: 95px; }
+    #code-climate { top: 3px; }
   }
 
 }
