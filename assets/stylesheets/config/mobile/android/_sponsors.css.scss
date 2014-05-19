@@ -4,17 +4,7 @@
       width: 25%;
     }
   }
-
-  #media-sponsors {
-    height: 120px;
-    .pure-u-1-6 {
-      width: 30%;
-      &:last-child { width: 0 }
-    }
-    .pure-u-1-3 {
-      width: 5%;
-    }
-  }
+  #media-sponsors .center img { width: 20%; }
 }
 
 @media screen and (max-width: 767px) {
@@ -188,6 +178,28 @@
       }
     }
   }
+  #media-sponsors {
+    height: auto;
+    .media-sponsor {
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+    }
+    .spacer, .media-sponsor { padding: 10px 0; }
+    .center {
+      width: 26%;
+      img { display: inline; }
+    }
+    #software-guru { width: 12%; }
+    ul { height: auto; }
+    .title {
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      padding-bottom: 10px;
+      width: 160px;
+    }
+  }
 }
 
 @media screen and (max-width: 559px) {
@@ -209,15 +221,11 @@
     }
   }
   #media-sponsors {
-    height: 175px;
-    .pure-u-1-6 {
-      height: 33%;
-      margin: 0 auto;
-      text-align: center;
-      width: 70%;
-      img {
-        width: 70%;
-      }
+    .center {
+      width: 40%;
+      img { width: 35%; }
     }
+    #software-guru { width: 18%; }
+    #women-who-code { width: 23%; }
   }
 }

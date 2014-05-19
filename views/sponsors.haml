@@ -95,15 +95,28 @@
               %input.submit{type: 'submit', value: t('contact-form.fields.submit')}
 
 #media-sponsors
-  %ul.pure-g-r
-    %li.pure-u-1-3
-    %li.pure-u-1-6
-      %span.center.title
+  .container.pure-g-r
+    .pure-u-1-12.spacer
+    .pure-u-1-6
+      .title
         MEDIA SPONSORS:
-    %li.pure-u-1-6
-      %a.center{ href: 'http://www.empleosti.com.mx', target: '_blank' }
-        %img#empleos-ti{ src: "#{ image_path 'empleos-ti.svg' }" }
-    %li.pure-u-1-6
-      %a.center{ href: 'https://www.codeclimate.com', target: '_blank' }
-        %img{ src: "#{ image_path 'codeclimate.svg' }" }
-    %li.pure-u-1-6
+    .pure-u-3-4
+      %ul.pure-g-r
+        %li.pure-u-1-6.media-sponsor
+          %a.center{ href: 'http://www.empleosti.com.mx', target: '_blank' }
+            %img#empleos-ti{ src: "#{ image_path 'empleos-ti.svg' }" }
+        %li.pure-u-1-6.media-sponsor
+          %a.center{ href: 'https://www.codeclimate.com', target: '_blank' }
+            %img#code-climate{ src: "#{ image_path 'codeclimate.svg' }" }
+        %li.pure-u-1-6.media-sponsor
+          %a.center{ href: 'http://www.socialpoint.mx', target: '_blank' }
+            %img#social-point{ src: "#{ image_path 'socia-point.svg' }" }
+        %li.pure-u-1-12.media-sponsor
+          %a.center{ href: 'http://www.sg.com.mx', target: '_blank' }
+            %img#software-guru{ src: "#{ image_path 'software-guru.svg' }" }
+        %li.pure-u-1-6.media-sponsor
+          %a.center{ href: 'http://www.sydemex.com', target: '_blank' }
+            %img#sydemex{ src: "#{ image_path 'sidemex.svg' }" }
+        %li.pure-u-1-12.media-sponsor
+          %a.center{ href: 'http://www.womenwhocode.com', target: '_blank' }
+            %img#women-who-code{ src: "#{ image_path 'women-who-code.svg' }" }

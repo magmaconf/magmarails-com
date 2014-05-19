@@ -307,30 +307,43 @@
 
 #media-sponsors {
   background: #3c322e;
-  height: 125px;
   border-bottom: 5px solid #695b52;
   border-top: 5px solid #695b52;
   -webkit-box-shadow: 0 0 0 7px #3c322e;
   -moz-box-shadow: 0 0 0 7px #50433d;
   box-shadow: 0 0 0 7px #3c322e;
-  ul {
-    height: 100%;
+  .container {
     max-width: 1200px;
     margin: 0 auto;
-
   }
-  .pure-u-1-6 {
+  ul { height: 105px; }
+  .media-sponsor {
     display: table;
     height: 100%;
   }
   .center {
     display: table-cell;
     vertical-align: middle;
-    width: 90%;
+    width: 85%;
+    img {
+      position: relative;
+      vertical-align: middle;
+    }
   }
+  #code-climate { top: 5px; }
   .title {
     color: #959288;
+    display: table-cell;
     font-size: 22px;
     font-family: oswald;
+    height: 105px;
+    text-align: right;
+    vertical-align: middle;
+    width: 200px;
   }
+  #software-guru {
+    top: 3px;
+    width: 70%;
+  }
+  #sydemex { top: 4px; }
 }
