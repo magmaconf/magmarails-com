@@ -32,7 +32,7 @@
         = partial :hour, locals: { hour: '13:00', class_name: 'break' }
         = partial :hour, locals: { hour: '13:10', class_name: 'break' }
         = partial :hour, locals: { hour: '14:40', class_name: 'talk big' }
-        = partial :hour, locals: { hour: '15:20', class_name: 'break' }
+        = partial :hour, locals: { hour: '15:20', class_name: 'talk' }
         = partial :hour, locals: { hour: '15:40', class_name: 'break' }
         = partial :hour, locals: { hour: '16:00', class_name: 'talk' }
         = partial :hour, locals: { hour: '16:40', class_name: 'keynote' }
@@ -75,9 +75,10 @@
                             talk_name: 'Intro to Computer Vision, Machine Learning and Genetic Algorithms',
                             language: 'en',
                             class_name: 'big' }
-        .pure-g-r.line.break
+        .pure-g-r.line.talk
           .pure-u-1-1
-            %p.legend Lightning Talks
+            %p.speaker-name Lightning Talks
+
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Break
@@ -131,9 +132,11 @@
                             talk_name: 'Rewriting Critical Parts of Your Application Using... Science!',
                             language: 'en',
                             class_name: 'big' }
-        .pure-g-r.line.break
+        .pure-g-r.line.talk
           .pure-u-1-1
-            %p.legend Lightning Talks
+            %p.speaker-name Melissa Pegus
+            %p.talk-name TBD
+
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Break
@@ -191,9 +194,9 @@
             %p.talk-name.en-sp
               %a.link{ href: 'http://blog.magmaconf.com/2014/05/02/let-s-get-ready-to-rumble-2-to-3-rounds-mv-stack-vs-rails-4-omakase.html',
                                      target: '_blank' } Let’s get ready to rumbleeeeeee: MV* stack VS Rails 4 omakase
-        .pure-g-r.line.break
+        .pure-g-r.line.talk
           .pure-u-1-1
-            %p.legend Lightning Talks
+            %p.speaker-name Lightning Talks
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Break
