@@ -89,7 +89,6 @@
       = partial :speaker_cards, locals: {img: 'adam-rogers.png', name: 'Adam Rogers', social: '@rodreegez', bio: t('speakers.adam.bio')}
       = partial :accordion_mobile, locals: {img: 'adam-rogers.png', name: 'Adam Rogers', bio: t('speakers.adam.bio')}
   .pure-g-r.content
-    .pure-u-1-12
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'leo-salazar.png', name: 'Leo Salazar', social: '@leonor_salazar', bio: t('speakers.leo.bio')}
       = partial :accordion_mobile, locals: {img: 'leo-salazar.png', name: 'Leo Salazar', bio: t('speakers.leo.bio')}
@@ -105,6 +104,9 @@
     .pure-u-1-6.speaker-box
       = partial :speaker_cards, locals: {img: 'pj.png', name: 'PJ Hagerty', social: '@aspleenic', bio: t('speakers.pj.bio')}
       = partial :accordion_mobile, locals: {img: 'pj.png', name: 'PJ Hagerty', bio: t('speakers.pj.bio')}
+    .pure-u-1-6.speaker-box
+      = partial :speaker_cards, locals: { img: 'david-mayer.png', name: 'David Meyer', social: '@meyerwork', bio: t('speakers.david-mayer.bio') }
+      = partial :accordion_mobile, locals: { img: 'david-mayer.png', name: 'David Meyer', bio: t('speakers.david-mayer.bio') }
 %section#registration
   .top-box
     %img.shadow{src: "#{image_path 'shadow.png'}"}
