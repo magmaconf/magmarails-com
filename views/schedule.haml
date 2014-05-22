@@ -24,7 +24,7 @@
         .pure-g-r.head
           .pure-u-1-1
         = partial :hour, locals: { hour: '9:00', class_name: 'opening' }
-        = partial :hour, locals: { hour: '10:00', class_name: 'talk' }
+        = partial :hour, locals: { hour: '10:00', class_name: 'talk big' }
         = partial :hour, locals: { hour: '10:40', class_name: 'talk' }
         = partial :hour, locals: { hour: '11:20', class_name: 'break' }
         = partial :hour, locals: { hour: '11:40', class_name: 'talk' }
@@ -47,8 +47,11 @@
         .pure-g-r.line.opening
           .pure-u-1-1
             %p.legend OPENING
-        .pure-g-r.line.talk
-          .pure-u-1-1
+        = partial :talk,
+                  locals: { speaker: 'David Meyer',
+                            talk_name: 'Beyond pushing code: How to optimize your career',
+                            language: 'en',
+                            class_name: 'big' }
         = partial :talk,
                   locals: { speaker: 'Joe Wright',
                             talk_name: 'Are we really engineers?',
@@ -105,7 +108,8 @@
         = partial :talk,
                   locals: { speaker: 'David Calavera',
                             talk_name: "GitHub Enterprise' toolchain",
-                            language: 'en' }
+                            language: 'en',
+                            class_name: 'big' }
         = partial :talk,
                   locals: { speaker: 'Matt Kirk',
                             talk_name: 'Sentiment Analysis using Support Vector Machines in Ruby',
@@ -162,7 +166,8 @@
         = partial :talk,
                   locals: { speaker: 'PJ Hagerty',
                             talk_name: 'Urban Legends: What You Code Makes You Who You Are',
-                            language: 'en' }
+                            language: 'en',
+                            class_name: 'big' }
         = partial :talk,
                   locals: { speaker: 'Leo Salazar',
                             talk_name: 'Refactoring Education',
