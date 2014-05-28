@@ -218,7 +218,7 @@ es:
     manuel:
       bio: ':passions = {:software, :people, :value} :skills = {:agile_bdd, :patterns} :pl = {:ruby, :js} :new = {:scala, :clojure, :fancy} :web = {:rails, :sinatra}'
     jesse:
-      bio: "Jesse is an engineer at GitHub, where she spends most of her time doing backend ruby and rails work. When she's not opening pull requests, she enjoys doing yoga, hiking, and traveling."
+      bio: "Jesse is an engineer at GitHub, where she spends most of her time doing backend Ruby and Rails work. When she's not opening pull requests, she enjoys doing yoga, hiking, and traveling."
     joe:
       bio: "I help people deliver software that's well designed, fully tested and released early. I coach teams to adopt agile engineering practices with a focus on XP, clean code and continuous delivery. I change roles between coach, developer, architect or tester to demonstrate where the challenges are and work with teams to solve them."
     david:
