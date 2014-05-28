@@ -23,10 +23,9 @@
       margin: 100px auto 0px;
       width: 173px;
       .btn-register {
-        margin-left: 12px;
+        bottom: 208px;
+        margin-left: 11px;
         position: relative;
-        top: -196px;
-
         img {
           height: 96px;
           width: 82px;
@@ -188,6 +187,9 @@
     }
     &.opening {
       min-height: 20px;
+    }
+    &.double {
+      min-height: 98px;
     }
   }
   .keynote {

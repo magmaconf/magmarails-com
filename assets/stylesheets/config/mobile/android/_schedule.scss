@@ -1,6 +1,6 @@
 @media screen and (max-width: 640px)  {
 
-  #schedule{
+  #schedule {
     padding-top: 80px;
     .container {
       width: 100%;
@@ -174,5 +174,11 @@
       left: 2%;
       top: 44px;
     }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #schedule .line.double {
+    min-height: 85px;
   }
 }
