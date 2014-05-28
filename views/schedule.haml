@@ -28,7 +28,7 @@
         = partial :hour, locals: { hour: '10:40', class_name: 'talk' }
         = partial :hour, locals: { hour: '11:20', class_name: 'break' }
         = partial :hour, locals: { hour: '11:40', class_name: 'talk' }
-        = partial :hour, locals: { hour: '12:20', class_name: 'talk' }
+        = partial :hour, locals: { hour: '12:20', class_name: 'talk double' }
         = partial :hour, locals: { hour: '13:00', class_name: 'break' }
         = partial :hour, locals: { hour: '13:10', class_name: 'break' }
         = partial :hour, locals: { hour: '14:40', class_name: 'talk big' }
@@ -66,7 +66,8 @@
         = partial :talk,
                   locals: { speaker: 'Blake Mizerany',
                             talk_name: 'You should learn Go!',
-                            language: 'en' }
+                            language: 'en',
+                            class_name: 'double' }
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Sponsor time
@@ -124,7 +125,8 @@
         = partial :talk,
                   locals: { speaker: 'André Arko',
                             talk_name: 'Software Icebergs: Development Was the Easy Part',
-                            language: 'en' }
+                            language: 'en',
+                            class_name: 'double' }
         .pure-g-r.line.break
           .pure-u-1-1
             %p.legend Sponsor time
@@ -179,9 +181,11 @@
                   locals: { speaker: 'Adam Rogers',
                             talk_name: 'How to win designers and influence developers',
                             language: 'en' }
-        .pure-g-r.line.talk
-          .pure-u-1-1
-            %p.speaker-name TBD
+        = partial :talk,
+                  locals: { speaker: 'Alex Pyatetsky',
+                            talk_name: "Why MVP Isn't Enough. Minimum Viable Organization - The Best Predictor of Startup Success.",
+                            language: 'en' ,
+                            class_name: 'double' }
 
         .pure-g-r.line.break
           .pure-u-1-1
