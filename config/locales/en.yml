@@ -38,9 +38,10 @@ en:
         service to the airport include Alaska Airlines, Delta, AeroMexico,
         Interjet, CanJet, US Airways, United Express, and Volaris. Flights with
         one or two stops are available from San Francisco, Denver, New York,
-        Chicago, and Washington D.C. <br/><br/> Shuttles from the airport to the
-        Magma Village and nearby hotels will be available on Tuesday, June 3rd
-        and Wednesday, June 4th.'
+        Chicago, and Washington D.C. <br/><br/> Free shuttles from the Manzanillo airport to
+        Magma Village will be available on Tuesday, June 3rd and Wednesday, June 4th.
+        <br/><br/>Free shuttles from Magma Village to the Manzanillo airport will be
+        available on Friday, June 6th, Saturday, June 7th and Sunday, June 8th.'
     guadalajara:
       title: 'flying to guadalajara'
       description: 'Located just over three hours from Manzanillo, the Guadalajara
@@ -51,16 +52,13 @@ en:
         TheJesus1599 "Panoramio </span>'
     bus:
       title: 'getting from guadalajara to manzanillo'
-      description: "Buses are available from Guadalajara center to Manzanillo center.
-        The buses provide food and drink, wi-fi, and large, comfortable seats. Bus
-        lines that offer service to Manzanillo include <a href='http://www.etn.com.mx'
-        target='_blank'> ETN</a> and <a href='http://www.lalinea.com.mx/' target='_blank'>
-        La Linea </a>(our personal favorites). Tickets cost roughly $30 and can be purchased
-        online ahead of time or in person at the bus terminal. We recommend taking a taxi
-        from the airport to the bus terminal when you arrive and buying your ticket
-        directly at the counter. <br/><br/> Shuttles from the Manzanillo bus terminal to
-        the MagmaVillage and nearby hotels will be available on Tuesday, June 3rd and
-        Wednesday, June 4th."
+      description: "
+        Shuttles from the Guadalajara airport to Magma Village will be available
+        on Tuesday, June 3rd. Tickets are $25 and can be purchased in the
+        <a href='https://store.magmaconf.com/products/guadalajara-airport-shuttle'
+        target='_blank'>Magma Store</a>.<br/><br/> If you will be taking a bus to
+        Guadalajara after the conference, free shuttles to the Manzanillo bus station
+        will be available on Saturday, June 7th and Sunday, June 8th."
     help:
       title: 'We Are Here To Help!'
       description: "If you have any questions about transportation to and from MagmaConf

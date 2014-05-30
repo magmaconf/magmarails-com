@@ -45,8 +45,10 @@ es:
         que ofrecen su servicio al aeropuerto son Alaska Airlines, Delta, AeroMexico,
         Interjet, CanJet, US Airways, United Express y Volaris. Vuelos con una o
         dos escalas están disponibles desde San Francisco, Denver, New York, Chicago y
-        Washington DC. <br/><br/> Taxi Vans desde el aeropuerto al Magma Village y
-        Hoteles cercanos estarán disponibles el Martes 3 de Junio y el Miércoles 4 de Junio.'
+        Washington DC. <br/><br/> Taxis Van gratuitos desde el aeropuerto de Manzanillo
+        al Magma Village estarán disponibles el Martes 3 de Junio y el Miércoles 4 de Junio.
+        <br/><br/> Taxis Van gratuitos desde Magma Village al aeropuerto de Manzanillo
+        estarán disponibles el Viernes 6 de Junio, el Sábado 7 de Junio y el Domingo 8 de Junio.'
     guadalajara:
       title: 'Volando a Guadalajara'
       description: 'Localizado a más de tres horas de Manzanillo, el Aeropuerto
@@ -57,16 +59,12 @@ es:
         <span>Photo by: TheJesus1599 "Panoramio </span>'
     bus:
       title: 'Viajar desde Guadalajara a Manzanillo'
-      description: "Existen autobuses disponibles desde Guadalajara a Manzanillo. Estos
-        ofrecen comida, bebida, Wi-Fi y confortables asientos. Las empresas que ofrecen
-        servicio a Manzanillo son <a href='http://www.etn.com.mx' target='_blank'> ETN</a> y
-        <a href='http://www.lalinea.com.mx/' target='_blank'> La Linea </a> (nuestras favoritas).
-        Los boletos cuestan alrededor de los $300.00 y pueden ser comprados en línea con
-        anticipación o personalmente en la terminal de camiones. Recomendamos tomar un
-        taxi desde el aeropuerto hacia la central de autobuses y al arribar, comprar tu
-        boleto directamente en mostrador. <br/><br/> Taxi Vans estarán disponibles desde
-        la Central de Manzanillo al Magma Village y Hoteles cercanos los días Martes 3 de
-        Junio y Miércoles 4 de Junio."
+      description: "Taxis Van desde el aeropuerto de Guadalajara al Magma Village estarán disponibles
+        el Martes 3 de Junio. Los boletos cuestan al rededor de 300 pesos y se pueden comprar en
+        <a href='https://store.magmaconf.com/products/guadalajara-airport-shuttle' target='_blank'>
+        Magma Store</a>. <br/><br/> Si vas a tomar un autobús a Guadalajara después de la conferencia,
+        estarán disponibles Taxi Vans gratuitas a la estación de autobuses de Manzanillo el Sábado,
+        07 de Junio y el Domingo, 8 de Junio."
     help:
       title: '¡Estamos para ayudar!'
       description: "Si tienes alguna pregunta sobre transporte para y desde MagmaConf o
