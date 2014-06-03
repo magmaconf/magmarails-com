@@ -1,6 +1,6 @@
 $ ->
 
-  $('#location-carousel, #venue-carousel, #culture-carousel, #magma-village-carousel')
+  $('#location-carousel, #venue-carousel, #culture-carousel, #magma-village-carousel, #main-carousel')
     .jcarousel(wrap: 'circular')
     .jcarouselAutoscroll()
 
