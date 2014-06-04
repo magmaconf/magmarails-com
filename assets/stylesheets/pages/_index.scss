@@ -2,12 +2,12 @@
   padding: 44px 0 0;
   background: image-url('bkg.jpg');
   .container {
-    background: image-url('background-image.png');
-    background-position: -105px -105px;
     margin: 0 auto;
     margin-top: 60px;
     max-width: 1200px;
-    .right{
+    .right {
+      background: image-url('shine.png') no-repeat;
+      background-position: -40px -20px;
     }
     .center {
       .social {
@@ -24,9 +24,12 @@
       }
     }
     .left {
+      background: image-url('shine.png') no-repeat;
+      background-position: 30px 0;
+      background-size: 100%;
       #reylero {
-        margin-top: 140px;
-        margin-left: 37px;
+        margin-top: 80px;
+        margin-left: 67px;
       }
     }
   }
@@ -150,7 +153,7 @@
 }
 
 #carousel-container {
-  margin: 33px auto 0 0;
+  margin: 90px auto 0;
   width: 348px;
   .content-image {
     height: 385px;
@@ -170,23 +173,27 @@
     }
   }
   #left-arrow {
-    background: image-url('back_btn_up.png');
-    background-repeat: no-repeat;
+    background: image-url('back_btn_up.png') no-repeat;
     display: block;
     height: 55px;
     width: 25px;
     position: relative;
     bottom: 290px;
     right: 25px;
+    &:hover {
+      background: image-url('back_btn_over.png') no-repeat;
+    }
   }
   #right-arrow {
-    background: image-url('next_btn_up.png');
-    background-repeat: no-repeat;
+    background: image-url('next_btn_up.png') no-repeat;
     display: block;
     height: 55px;
     width: 25px;
     position: relative;
     bottom: 345px;
     left: 347px;
+    &:hover {
+      background: image-url('next_btn_down.png') no-repeat;
+    }
   }
 }
