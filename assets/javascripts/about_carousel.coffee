@@ -26,3 +26,10 @@ $ ->
 
   for control in controls
     setActive(control)
+
+  $('#left-arrow').click ->
+    $('#main-carousel').jcarousel 'scroll', '-=1'
+
+  $('#right-arrow').click ->
+    $('#main-carousel').jcarousel 'scroll', '+=1'
+
