@@ -44,6 +44,8 @@ class Crowdsite < Sinatra::Base
       browser_locale = request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
     end
 
+    browser_locale = 'en' unless browser_locale.match('es')
+
     I18n.load_path += Dir[File.join(File.dirname(__FILE__), 'config', 'locales', '*.yml').to_s]
     locale = params[:locale] if params[:locale]
     I18n.locale = locale || browser_locale
