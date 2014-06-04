@@ -167,10 +167,26 @@
 
     li {
       float: left;
-
-      //img, li {
-      //  width: 90%;
-      //}
     }
+  }
+  #left-arrow {
+    background: image-url('back_btn_up.png');
+    background-repeat: no-repeat;
+    display: block;
+    height: 55px;
+    width: 25px;
+    position: relative;
+    bottom: 290px;
+    right: 25px;
+  }
+  #right-arrow {
+    background: image-url('next_btn_up.png');
+    background-repeat: no-repeat;
+    display: block;
+    height: 55px;
+    width: 25px;
+    position: relative;
+    bottom: 345px;
+    left: 347px;
   }
 }
