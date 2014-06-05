@@ -10,21 +10,20 @@
       background: none;
       .left{
         #reylero{
-          height: 200px;
-          margin: 0 0 0 30%;
+          display: none;
         }
       }
-
-      .right{
-        .social{
-          border-top: 4px solid #423732;
-          margin: 0 0 0 28%;
-          padding-top: 25px;
-          width: 44%;
-
-          .twitter{
-            margin: 0 24% 0;
-          }
+      .right {
+        background-position: 93px 15px;
+        max-height: 730px
+      }
+      .mobile-date {
+        display: block;
+        margin: 0 auto;
+        &.last {
+          bottom: 45px;
+          margin: 0 auto;
+          position: relative;
         }
       }
     }
@@ -53,28 +52,25 @@
         margin-bottom: 15px;
       }
     }
+    #date,#left-arrow,#right-arrow, .social { display: none; }
   }
+  #carousel-container { margin-top: 10px; }
+  #carousel-shadow { bottom: 75px; }
 }
 
 @media screen and (max-width: 360px) {
   @include grid_generator;
 
-  #main-section{
-    .container{
-      .left{
-        #reylero{
+  #main-section {
+    .container {
+      .left {
+        #reylero {
           margin: 0 0 0 16%;
         }
       }
-
-      .right{
-        .social{
-          width: 50%;
-          .twitter{
-            margin: 0 10% 0;
-          }
-        }
-      }
+    }
+    .right {
+      background-position: -40px 15px;
     }
   }
 }

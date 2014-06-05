@@ -7,6 +7,7 @@
         %img#date{src: "#{image_path 'date_03.png'}"}
         = partial :social_buttons
       .pure-u-3-8.right
+        %img.mobile-date{ src: "#{ image_path 'date_03a.png' }" }
         #carousel-container
           #main-carousel.content-image
             = partial :main_slider,
@@ -23,6 +24,7 @@
           %span#left-arrow
           %span#right-arrow
           #carousel-shadow
+        %img.mobile-date.last{ src: "#{ image_path 'date_03b.png' }" }
   #help-section
     .container
       .pure-g-r
