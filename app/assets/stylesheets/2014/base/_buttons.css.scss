@@ -1,0 +1,25 @@
+@import 'variables';
+
+.btn-register {
+  width: 150px;
+  height: 150px;
+  background: white;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: inline-block;
+  padding: 21px 30px;
+  margin-bottom: 30px;
+  border: 2px solid #D1CCC4;
+  box-shadow: 0 0 0 10px white;
+  transition: 0.5s background, border;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+
+  &:hover {
+    background: $btn-hover;
+    border: 2px solid $btn-hover;
+  }
+}
