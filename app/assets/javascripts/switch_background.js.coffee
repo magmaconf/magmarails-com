@@ -21,11 +21,12 @@ $(document).ready ->
     addActiveClass('#about-magma-link')
     $('#footer').addClass('about-magma')
 
-  else if pathname is '/2014/accommodations'
-    $('#main-menu').addClass('accommodations')
-    $('#mobile-header').addClass('accommodations')
-    addActiveClass('#accommodations-link')
-    $('#footer').addClass('accommodations')
+  else if pathname is '/2014/getting'
+    $('#main-menu').addClass('getting-manzanillo')
+    $('#mobile-header').addClass('getting-manzanillo')
+    addActiveClass('#getting-manzanillo-link')
+    addActiveClass('#getting-to-manzanillo')
+    $('#footer').addClass('getting-manzanillo')
 
   else if pathname is '/2014/schedule'
     $('#main-menu').addClass('schedule')
@@ -37,3 +38,7 @@ $(document).ready ->
     $('#main-menu').addClass('sponsoring')
     $('#mobile-header').addClass('sponsoring')
     addActiveClass('#sponsors-link')
+
+  else if pathname is '/2014/policies'
+    $('#main-menu').addClass('policies')
+    $('#mobile-header').addClass('policies')
