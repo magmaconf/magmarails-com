@@ -19,5 +19,4 @@
 //= require jquery.jcarousel-core.min
 //= require jquery.jcarousel-autoscroll.min
 //= require jquery.jcarousel-pagination.min
-//= require turbolinks
 //= require_tree .
