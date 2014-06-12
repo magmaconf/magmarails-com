@@ -13,7 +13,7 @@
     bottom: 45px;
   }
 
-  .big-sponsor-box, .normal-box {
+  .box {
     @include rounded(135px);
     background-color: #50433d;
     border: 3px solid #695b52;
@@ -24,25 +24,35 @@
       display: block;
       font-family: oswald;
       font-size: 155%;
+      font-weight: 300;
+      letter-spacing: 1px;
       line-height: 25px;
       position: relative;
       text-align: center;
     }
   }
 
-  .big-sponsor-box {
-    @include box-shadow(0, 0, 0, 10px, #50433d);
-    height: 238px;
-    width: 238px;
-
+  .medium-sponsor {
+    @include box-shadow(0, 0, 0, 7px, #50433d);
+    height: 200px;
+    width: 200px;
     span {
-      left: 30px;
-      top: 102px;
-      width: 180px;
+      padding: 88px 60px;
+      width: 81px;
+    }
+    .message {
+      padding: 74px 16px;
+      width: 168px;
     }
   }
 
-  .normal-box {
+  .big-sponsor {
+    @include box-shadow(0, 0, 0, 10px, #50433d);
+    height: 238px;
+    width: 238px;
+  }
+
+  .normal {
     @include box-shadow(0, 0, 0, 7px, #50433d);
     height: 148px;
     width: 148px;
@@ -52,29 +62,31 @@
       width: 149px;
     }
   }
-
   #crowdint {
-    position: relative;
-    width: 176px;
-    padding: 82px 31px;
+    @include sponsor-image(85%, 76px, 18px);
   }
-
+  #onelogin {
+    @include sponsor-image(75%, 96px, 35px);
+  }
   #github {
-    padding: 56px 48px;
-    position: relative;
-    width: 60%;
+    @include sponsor-image(60%, 56px, 48px);
   }
-
   #honey-badger {
-    padding: 53px 19px;
-    width: 75%;
+    @include sponsor-image(90%, 0px, 6px);
+    margin-top: -10px;
   }
-
   #engine {
-    padding: 61px 15px;
-    width: 80%;
+    @include sponsor-image(80%, 61px, 15px);
   }
-
+  #rackspace {
+    @include sponsor-image(90%, 52px, 7px);
+  }
+  #toptal {
+    @include sponsor-image(75%, 76px, 25px);
+  }
+  #travis-ci {
+    @include sponsor-image(65%, 44px, 35px);
+  }
   #sponsoring-advice {
     span {
       display: block;
@@ -119,6 +131,9 @@
       margin-left: -86px;
       margin-top: 20px;
     }
+    .btn-register {
+      cursor: pointer;
+    }
   }
 
   #contact-form {
@@ -159,7 +174,6 @@
       }
     }
     .form-container {
-      border-top: 5px solid #B7B3AF;
       margin: 0 auto;
       max-width: 1170px;
       min-height: 90px;
@@ -168,60 +182,23 @@
         max-width: 1088px;
         margin: 0 auto;
       }
-      label {
-        font-family: oswald;
-        font-size: 112.5%;
-        font-weight: 300;
-        text-transform: uppercase;
-        &.error {
-          font-size: 75%;
-          font-family: sans-serif;
-          color: #a94442;
-        }
-      }
       .field {
         display: inline-table;
         margin-right: 30px;
         input {
-          background-color: #E4E1D5;
-          border: 1px solid #A49283;
-          display: block;
           height: 50px;
           margin-top: 16px;
           padding-left: 10px;
           width: 260px;
-          &.error {
-            outline-color: #a94442;
-            outline-offset: -2px;
-            outline-style: auto;
-            outline-width: 5px;
-          }
-        }
-        span {
-          display: inline-table;
-          color: #a94442;
-          margin-top: -3px;
         }
       }
       .submit {
-        background-color: #2eb5b3;
-        color: #fff;
-        float: right;
         font-size: 150%;
-        font-weight: 300;
         height: 50px;
         letter-spacing: 1px;
         margin-top: 41px;
-        text-transform: uppercase;
         width: 170px;
-        &:hover {
-          background-color: #29A8A3;
-        }
       }
-    }
-    .submit, .cancel-button {
-      cursor: pointer;
-      font-family: oswald;
     }
   }
   #message-box {
@@ -263,11 +240,21 @@
     }
   }
 
-  .btn-register.small {
-    height: 100px;
-    width: 100px;
-    margin-top: 42px;
-    padding: 12px 16px;
+  .btn-register {
+    &.small {
+      height: 100px;
+      margin-top: 42px;
+      padding: 12px 16px;
+      width: 100px;
+
+      img {
+        height: 71px;
+      }
+    }
+
+    img {
+      height: 99px;
+    }
   }
 
   .heading {
@@ -318,5 +305,52 @@
       background: image_url('star.png');
       background-size: 15px;
     }
+  }
+}
+
+#media-sponsors {
+  background: #3c322e;
+  border-bottom: 5px solid #695b52;
+  border-top: 5px solid #695b52;
+  -webkit-box-shadow: 0 0 0 7px #3c322e;
+  -moz-box-shadow: 0 0 0 7px #50433d;
+  box-shadow: 0 0 0 7px #3c322e;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  ul { height: 105px; }
+  .media-sponsor {
+    display: table;
+    height: 100%;
+  }
+  .center {
+    display: table-cell;
+    vertical-align: middle;
+    width: 85%;
+    img {
+      position: relative;
+      vertical-align: middle;
+    }
+  }
+  #code-climate { top: 5px; }
+  .title {
+    color: #959288;
+    display: table-cell;
+    font-size: 22px;
+    font-family: oswald;
+    height: 105px;
+    text-align: center;
+    vertical-align: middle;
+    width: 200px;
+  }
+  #software-guru {
+    top: 3px;
+    width: 70%;
+  }
+  #sydemex { top: 4px; }
+  #jet-brains {
+    top: 5px;
+    width: 65%;
   }
 }
