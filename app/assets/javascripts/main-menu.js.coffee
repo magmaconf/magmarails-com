@@ -31,3 +31,6 @@ $(document).ready ->
 
   showMobileMenu = ->
     $('#main-menu').animate right: '0'
+
+  $('#getting-to-manzanillo').click ->
+    window.location.href = '/2014/getting'
