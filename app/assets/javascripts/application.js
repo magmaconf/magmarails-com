@@ -12,5 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require scroll
+//= require parallax-scroll
+//= require jquery.validate
+//= require jquery.mobile.custom.min
+//= require jquery.jcarousel-core.min
+//= require jquery.jcarousel-autoscroll.min
+//= require jquery.jcarousel-pagination.min
 //= require turbolinks
 //= require_tree .

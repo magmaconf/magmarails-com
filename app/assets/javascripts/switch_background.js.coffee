@@ -15,7 +15,7 @@ $(document).ready ->
     $('#mobile-header').addClass('speakers')
     addActiveClass('#speakers-link')
 
-  else if pathname is '/2014/about-magma'
+  else if pathname is '/2014/about'
     $('#main-menu').addClass('about-magma')
     $('#mobile-header').addClass('about-magma')
     addActiveClass('#about-magma-link')
