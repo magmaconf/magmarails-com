@@ -38,6 +38,7 @@ GEM
       execjs
     coffee-script-source (1.7.0)
     erubis (2.7.0)
+    excon (0.37.0)
     execjs (2.2.0)
     haml (4.0.5)
       tilt
@@ -61,6 +62,13 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mandrill-api (1.0.51)
+      excon (>= 0.16.0, < 1.0)
+      json (>= 1.7.7, < 2.0)
+    mandrill_mailer (0.4.6)
+      actionpack
+      activesupport
+      mandrill-api (~> 1.0.9)
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.10.1)
@@ -121,6 +129,7 @@ DEPENDENCIES
   high_voltage (~> 2.1.0)
   jbuilder (~> 1.2)
   jquery-rails
+  mandrill_mailer
   pg
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
