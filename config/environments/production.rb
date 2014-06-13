@@ -78,7 +78,7 @@ MagmarailsCom::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-  config.mandrill_mailer.default_url_options = { host: 'www.yourcompany.com' }
+  config.mandrill_mailer.default_url_options = { host: ENV['APP_HOST'] }
 
   # ActionMailer Config
   # Setup for production - deliveries, no errors raised
