@@ -42,3 +42,4 @@ $(document).ready ->
   else if pathname is '/2014/policies'
     $('#main-menu').addClass('policies')
     $('#mobile-header').addClass('policies')
+    $('.close-popup').css('display', 'none')
