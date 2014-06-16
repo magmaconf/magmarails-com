@@ -133,7 +133,6 @@
     .speaker-name {
       font-size: 140%;
       margin: 0px 0px 10px 60px;
-      min-height: 20px;
       text-transform: uppercase;
     }
     .link {
@@ -192,7 +191,7 @@
       min-height: 105px;
     }
     &.break {
-      min-height: 30px;
+      min-height: 20px;
     }
   }
   .keynote {
