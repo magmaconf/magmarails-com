@@ -1,0 +1,28 @@
+@media screen and (min-width: 1200px) {
+  @include grid_generator($gl-column, $gl-gutter);
+
+  @include grid_offset($gl-column, $gl-gutter);
+
+  @include grid_centered($gl-column, $gl-gutter);
+}
+
+@media screen and (min-width: 1025px) {
+
+  #about-magma.es {
+    #location .controls {
+      top: 8px;
+    }
+
+    #venue .controls {
+      top: 80px;
+    }
+
+    #culture .controls {
+      top: 60px;
+    }
+
+    #magma-village .right-info {
+      margin-top: 55px;
+    }
+  }
+}

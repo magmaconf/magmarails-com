@@ -1,0 +1,76 @@
+//Galaxy S3, S4, Nexus
+@media screen and (max-width: 640px) {
+  @include grid_generator;
+
+  #main-section{
+    background-repeat: no-repeat;
+    background-size: 1043px;
+    padding-bottom: 0;
+    .container{
+      background: none;
+      .left{
+        #reylero{
+          display: none;
+        }
+      }
+      .right {
+        background-position: 93px 15px;
+        max-height: 730px
+      }
+      .mobile-date {
+        display: block;
+        margin: 0 auto;
+        &.last {
+          bottom: 45px;
+          margin: 0 auto;
+          position: relative;
+        }
+      }
+    }
+    #help-section .container {
+      height: 465px;
+    }
+    #here-to-help {
+      display: none;
+    }
+    #swimmer-image {
+      display: none;
+    }
+    #village-image {
+      display: none;
+    }
+    #check-out-more {
+      height: 218px;
+      .content {
+        margin-top: 38px;
+      }
+    }
+    #contact-us .content {
+      .title:first-child {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+    }
+    #date,#left-arrow,#right-arrow, .social { display: none; }
+  }
+  #carousel-container { margin-top: 10px; }
+  #carousel-shadow { bottom: 75px; }
+}
+
+@media screen and (max-width: 360px) {
+  @include grid_generator;
+
+  #main-section {
+    .container {
+      .left {
+        #reylero {
+          margin: 0 0 0 16%;
+        }
+      }
+    }
+    .right {
+      background-position: -40px 15px;
+    }
+  }
+}

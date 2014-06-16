@@ -1,0 +1,16 @@
+//Galaxy S3, S4, Nexus
+@media screen and (max-width: 640px) {
+  @include grid_generator;
+
+  body {
+    position: absolute;
+    left: 0;
+    transition: all .3s ease-in;
+  }
+
+  #about-magma, #accommodations{
+    .btn-register.small{
+      display: none;
+    }
+  }
+}
