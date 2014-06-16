@@ -18,3 +18,7 @@ gem 'heroku-deflater', :group => :production
 gem 'high_voltage', '~> 2.1.0'
 
 gem 'mandrill_mailer'
+
+group :production do
+  gem 'rails_12factor'
+end
