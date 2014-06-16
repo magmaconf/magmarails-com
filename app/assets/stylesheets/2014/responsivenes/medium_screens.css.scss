@@ -15,6 +15,9 @@
           left: 43px;
         }
       }
+      .left {
+        #reylero { margin-top: 87px; }
+      }
     }
   }
 
@@ -465,11 +468,9 @@
         margin: 43px 0 0 15px;
       }
     }
-    .left {
-      display: none;
-    }
-    .center {
-      width: 50%;
+    .container {
+      .left #reylero { margin: 141px 0 0 5px; }
+      .right #info { margin-top: 96px; }
     }
   }
 
