@@ -24,17 +24,9 @@
   #footer {
     padding: 20px 0 10px;
     #copy-right {
-      a {
-        margin-bottom: -5px;
-      }
-
-      .title {
-        max-width: 87%;
-      }
-
-      &.en .title {
-        margin-top: -18px;
-      }
+      a { top: 5px; }
+      .title { max-width: 87%; }
+      &.en .title { margin-top: -18px; }
     }
   }
 
