@@ -1,7 +1,3 @@
-@import 'cactu';
-@import '../base/variables';
-@import '../base/mixins';
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   @include grid_generator($gm-column, $gm-gutter);
 
