@@ -1,0 +1,182 @@
+@import 'cactu';
+@import '../../../base/variables';
+@import '../../../base/mixins';
+
+//Galaxy S3, S4, Nexus
+@media screen and (max-width: 640px) {
+  @include grid_generator;
+
+  #about-magma{
+    height: 2560px;
+
+    &.es {
+      .heading .invitation {
+        width: 100%;
+      }
+    }
+
+    .heading{
+      height: 130px;
+      .info-image{
+        display: none;
+      }
+
+      .advice{
+        margin: 0;
+      }
+
+      .register {
+        display: none;
+      }
+    }
+
+    .register .btn-register.green {
+      margin-left: 0px;
+    }
+
+    .section{
+      display: inline-block;
+      max-height: 700px !important;
+      width: 100%;
+    }
+
+    .content{
+      position: relative;
+    }
+
+    .content-information{
+      text-align: left;
+      float: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      .title{
+        text-align: center;
+      }
+      .description{
+        margin-top: 333px;
+        padding: 0 10px;
+      }
+    }
+
+    .content-image{
+      float: none;
+      left: 0;
+      position: absolute;
+      width: 100%;
+
+      ul{
+        display: inline-block;
+        width: inherit;
+        li{
+          img{
+            width: inherit;
+          }
+        }
+      }
+    }
+
+    #location, #culture, #venue{
+      .content-image{
+        top: 50px;
+      }
+    }
+
+    #magma-village {
+      .content-image {
+        top: 75px;
+      }
+    }
+
+    .register.section{
+      text-align: center;
+      img.shadow{
+        margin-top: 7%;
+        padding: 0% 25%;
+        width: 171px;
+      }
+
+      a{
+        margin: 0;
+      }
+    }
+
+    .controls {
+      margin: 0 auto;
+      width: 50px;
+    }
+
+    #location{
+      .title{
+        font-size: 19px;
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+
+    .section {
+      .controls {
+        top: 9px !important;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 360px) {
+
+  #about-magma{
+    height: 2290px;
+    padding-top: 15%;
+    padding-bottom: 0% !important;
+
+    .content{
+      .content-image{
+        height: 205px;
+      }
+
+      .content-information{
+        .description{
+          margin-top: 56%;
+        }
+      }
+    }
+
+    #location{
+      .content-image{
+        top: 75px;
+      }
+    }
+
+    .register.section{
+      img.shadow{
+        margin-top: 10%;
+        padding: 0% 10%;
+      }
+    }
+
+    .register.section {
+      padding-top: 15px;
+    }
+
+    &.es {
+      .heading .invitation {
+        width: 84%;
+      }
+    }
+
+    &.en {
+      .heading .invitation {
+        max-width: 352px;
+      }
+    }
+
+    .heading {
+      height: 160px;
+    }
+
+    .advice {
+      line-height: 30px;
+    }
+  }
+}

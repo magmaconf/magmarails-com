@@ -1,0 +1,39 @@
+@import 'cactu';
+//Iphone 5, 4
+@media screen and (max-width: 568px) and (min-width: 361px) {
+  @include grid_generator;
+
+  #main-section{
+    .container{
+      .right{
+        .social{
+          .twitter{
+            margin: 0 21% 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  @include grid_generator;
+
+  #main-section{
+    .container{
+      .left{
+        #reylero{
+          margin: 0 0 0 11%;
+        }
+      }
+
+      .right{
+        .social{
+          .twitter{
+            margin: 0 5% 0;
+          }
+        }
+      }
+    }
+  }
+}

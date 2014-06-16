@@ -1,0 +1,88 @@
+@import 'cactu';
+//Iphone 5, 4
+@media screen and (max-width: 568px) {
+  @include grid_generator;
+
+  #about-magma{
+    #location{
+      .title{
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 568px) and (min-width: 361px){
+  @include grid_generator;
+
+  #about-magma{
+    height: 2600px;
+
+    .content{
+      .content-image{
+        height: 325px;
+      }
+    }
+
+    .register.section {
+      padding-top: 10px;
+    }
+
+    #location .content-image {
+      top: 58px;
+    }
+
+    .heading .invitation {
+      margin: 0 auto;
+    }
+
+    &.es {
+      #location .content-image {
+        top: 75px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  @include grid_generator;
+
+  #about-magma{
+    height: 2250px;
+
+    .heading{
+      .title{
+        font-size: 25px;
+      }
+    }
+
+    .content{
+      .content-image{
+        height: 183px;
+      }
+    }
+
+    &.es {
+      .heading .invitation {
+        width: 92%;
+      }
+    }
+
+    &.en .heading {
+      .invitation {
+        max-width: 220px;
+      }
+      .advice {
+        height: 56px;
+      }
+    }
+  }
+
+  #footer{
+    #copy-right{
+      p:nth-child(2){
+        height: auto;
+      }
+    }
+  }
+}

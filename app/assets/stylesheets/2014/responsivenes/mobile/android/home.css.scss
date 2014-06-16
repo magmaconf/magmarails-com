@@ -1,0 +1,87 @@
+@import 'cactu';
+//Galaxy S3, S4, Nexus
+//Galaxy S3, S4, Nexus
+@media screen and (max-width: 640px) {
+  @include grid_generator;
+
+  #main-section{
+    background-repeat: no-repeat;
+    background-size: 1043px;
+    padding-bottom: 0;
+    .container{
+      background: none;
+      .left{
+        #reylero{
+          height: 200px;
+          margin: 0 0 0 30%;
+        }
+      }
+
+      .right{
+        #info{
+          display: none;
+        }
+
+        .social{
+          border-top: 4px solid #423732;
+          margin: 0 0 0 28%;
+          padding-top: 25px;
+          width: 44%;
+
+          .twitter{
+            margin: 0 24% 0;
+          }
+        }
+      }
+    }
+    #help-section .container {
+      height: 465px;
+    }
+    #here-to-help {
+      display: none;
+    }
+    #swimmer-image {
+      display: none;
+    }
+    #village-image {
+      display: none;
+    }
+    #check-out-more {
+      height: 218px;
+      .content {
+        margin-top: 23px;
+        .title { padding-bottom: 10px; }
+      }
+    }
+    #contact-us .content {
+      .title:first-child {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  @include grid_generator;
+
+  #main-section{
+    .container{
+      .left{
+        #reylero{
+          margin: 0 0 0 16%;
+        }
+      }
+
+      .right{
+        .social{
+          width: 50%;
+          .twitter{
+            margin: 0 10% 0;
+          }
+        }
+      }
+    }
+  }
+}
