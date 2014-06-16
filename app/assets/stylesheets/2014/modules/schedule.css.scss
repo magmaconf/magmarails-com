@@ -183,13 +183,16 @@
       font-size: 20px;
     }
     &.talk, &.keynote {
-      min-height: 78px;
+      min-height: 86px;
     }
     &.opening {
-      min-height: 20px;
+      min-height: 30px;
     }
     &.double {
-      min-height: 98px;
+      min-height: 105px;
+    }
+    &.break {
+      min-height: 30px;
     }
   }
   .keynote {

@@ -1,0 +1,671 @@
+@import 'cactu';
+@import '../base/variables';
+@import '../base/mixins';
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  @include grid_generator($gm-column, $gm-gutter);
+
+  @include grid_offset($gm-column, $gm-gutter);
+
+  @include grid_centered($gm-column, $gm-gutter);
+
+
+  #main-section {
+    padding-top: 40px;
+    .container {
+      background-position: -199px -107px;
+      .center {
+        .shadow {
+          left: 43px;
+        }
+      }
+    }
+  }
+
+  #footer {
+    padding: 20px 0 10px;
+    #copy-right {
+      a {
+        margin-bottom: -5px;
+      }
+
+      .title {
+        max-width: 87%;
+      }
+
+      &.en .title {
+        margin-top: -18px;
+      }
+    }
+  }
+
+  #speakers {
+    .illustration img {
+      left: -60px;
+      top: 0px;
+      width: 398px;
+    }
+
+    #presentation {
+      font-size: 150%;
+    }
+
+    .invitation {
+      text-align: center;
+      max-width: 310px !important;
+    }
+  }
+
+  #about-magma {
+
+    .heading {
+      font-size: 20px;
+
+      .info-image  {
+        bottom: -80px;
+        left: 70px;
+        max-width: 220px;
+      }
+    }
+
+    .invitation {
+      width: 384px;
+    }
+
+    #location .controls {
+      top: 8px;
+    }
+
+    .register .btn-register.small {
+      right: 17px;
+    }
+  }
+
+  #sponsoring {
+    padding-top: 90px;
+    .heading {
+      font-size: 26px;
+    }
+
+    .big-sponsor {
+      height: 220px;
+      width: 220px;
+
+      .sponsor-link {
+        height: 220px;
+      }
+
+      #crowdint {
+        padding: 68px 17px;
+      }
+
+      #onelogin {
+        padding: 86px 27px;
+      }
+
+      #github{
+        padding: 52px 44px;
+      }
+    }
+    .normal {
+      top: 40px;
+      width: 105px;
+      height: 105px;
+
+      #honey-badger {
+        padding: 5px;
+      }
+
+      #engine {
+        padding: 43px 10px;
+      }
+
+      #rackspace {
+        padding: 38px 5px;
+      }
+      span {
+        top: 40px;
+        width: 100px;
+      }
+    }
+  }
+
+  #schedule {
+    .container {
+      width: 95%;
+
+      &.fixed .head {
+        margin: 0;
+        padding-top: 17px;
+        &.es {
+          padding-top: 15px;
+        }
+      }
+    }
+    #magma-legend p {
+      font-size: 85%;
+    }
+    .small-stars {
+      margin-top: 28px;
+    }
+    #right-mask{
+      margin-left: 3px;
+      margin-right: -9px;
+    }
+    #left-mask, #right-mask {
+      margin-top: 10px;
+    }
+    .row {
+      .language-image {
+        width: 26px;
+        height: 26px;
+        margin-right: 0;
+        margin-left: 21px
+      }
+      .speaker-name {
+        margin-left: 25px;
+      }
+      .talk-name.en {
+        margin-left: 53px;
+        max-width: 175px;
+      }
+      &#keynote {
+        div:last-child {
+          .speaker-name, .keynotes-image {
+            margin-left: 27px;
+          }
+        }
+        .keynotes-image {
+          width: 26px;
+          height: 26px;
+        }
+      }
+      div:last-child {
+        .talk-name {
+          margin-left: 27px;
+          &.en {
+            margin-left: 63px;
+          }
+        }
+        .speaker-name {
+          margin-left: 27px;
+        }
+        .language-image {
+          margin-left: 24px;
+        }
+        .talk-name.en {
+          margin-left: 59px;
+        }
+      }
+
+      &.break {
+        .legend {
+          margin-left: 25px;
+        }
+        div:last-child .legend {
+          margin-left: 27px;
+        }
+      }
+      &.announcements {
+        div:last-child .legend {
+          margin-left: 26px;
+          width: 180px;
+        }
+        .legend {
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+
+  #main-menu.en {
+    #getting-to-manzanillo {
+
+      span {
+        display: none;
+      }
+
+      &:after {
+        display: block;
+        margin-top: -3px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 916px) and (max-width: 1024px) {
+
+  #main-section {
+    #village-image .content {
+      position: static;
+      width: initial;
+      img {
+        height: 100%;
+      }
+    }
+
+    #here-to-help {
+      .image:last-child {
+        margin-left: 25px;
+      }
+    }
+    #check-out-more .content {
+      margin: 43px 0 0 30px;
+    }
+  }
+
+  #getting-manzanillo {
+    #bus {
+      .left-info {
+        margin-top: 20px;
+      }
+
+      .title {
+        line-height: 24px;
+      }
+    }
+
+    #about-manzanillo {
+      .left-info {
+        margin-top: 15px;
+      }
+
+      .description {
+        line-height: 17px;
+        margin-top: -15px;
+      }
+    }
+
+    #map-container .map-legend {
+      left: 128px;
+    }
+
+    #heading {
+      .image-container {
+        top: 108px;
+        width: 370px;
+      }
+    }
+
+    #help {
+      .content {
+        max-height: 150px;
+        .help-image {
+          margin-right: 1%;
+          width: 17%;
+        }
+        .title {
+          font-size: 135%;
+        }
+      }
+    }
+
+    #flying-manzanillo .description { margin-top: -10px; }
+
+    .content-information {
+      margin-top: 25px;
+      .title { margin: 0; }
+    }
+  }
+
+  #about-magma {
+    &.es  {
+      .heading .invitation {
+        font-size: 22px;
+        width: 475px;
+      }
+
+      #location .left-info {
+        margin-top: 55px;
+      }
+
+      #magma-village .right-info {
+        margin-top: 15px;
+      }
+    }
+
+    &.en {
+      #magma-village .right-info{
+        margin-top: 36px;
+      }
+
+      #venue .controls {
+        top: 40px;
+      }
+    }
+  }
+
+  #schedule .line {
+    &.talk.big {
+      min-height: 105px;
+    }
+    .talk-name.en-sp {
+      margin-left: 140px;
+    }
+  }
+
+  #media-sponsors {
+    .title {
+      font-size: 20px;
+    }
+  }
+  #main-menu {
+    .link { padding: 0 18px; }
+    &.es .link { padding: 0 16px; }
+  }
+}
+
+@media screen and (max-width: 915px) {
+  #getting-manzanillo {
+
+    #heading {
+      .image-container {
+        left: 0;
+        top: 132px;
+        width: 326px;
+      }
+    }
+
+    .section {
+      max-height: 1000px;
+
+      .content {
+        padding-bottom: 25px;
+      }
+    }
+
+    .content-information {
+      text-align: left;
+      float: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+
+      .title {
+        text-align: center;
+      }
+
+      .description {
+        margin: 340px auto 0;
+        width: 90%;
+      }
+    }
+
+    .content-image {
+      float: none;
+      left: 0;
+      margin-top: 30px;
+      position: absolute;
+      width: 100%;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    }
+
+    #help {
+      .content {
+        padding: 0;
+      }
+    }
+
+    .content-image.right-img {
+      margin-top: 50px;
+    }
+
+    #about-manzanillo .content-information {
+      margin: 0;
+    }
+  }
+
+  #about-magma.es {
+    .heading .invitation {
+      width: 305px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 915px) {
+
+  #footer {
+    .anti h3 {
+      font-size: 95%;
+    }
+
+    #copy-right.es {
+      .title {
+        max-width: 85%;
+      }
+    }
+  }
+
+  #main-menu {
+    .link { padding: 0 5px; }
+    .link-text { font-size: 85%; }
+    &.es .link-text { font-size: 80%; }
+  }
+
+  #main-section {
+    #here-to-help {
+      width: 18%;
+    }
+    #swimmer-image {
+      margin-left: -187px;
+    }
+    #village-image {
+      display: none;
+    }
+    #contact-us {
+      width: 28%;
+      .content {
+        width: 190px;
+      }
+    }
+    #check-out-more {
+      width: 54%;
+      .content {
+        margin: 43px 0 0 15px;
+      }
+    }
+    .left {
+      display: none;
+    }
+    .center {
+      width: 50%;
+    }
+  }
+
+  #schedule .line{
+    &.talk, &.keynote {
+      min-height: 105px;
+    }
+    .talk-name {
+      &.en {
+        margin-left: 90px;
+      }
+      &.en-sp {
+        margin-left: 130px;
+      }
+    }
+    &.double {
+      min-height: 143px;
+    }
+    &.announcements .legend {
+      margin-left: 34px;
+    }
+    .legend {
+      margin-left: 50px;
+    }
+    &.keynote {
+      .keynotes-image {
+        margin-left: 50px;
+      }
+      .language-image {
+        margin-left: 0px;
+      }
+    }
+    .speaker-name, .talk-name {
+      margin-left: 50px;
+    }
+    .language-image {
+      margin-left: 50px;
+    }
+
+    &.talk.big {
+      min-height: 124px;
+    }
+  }
+
+  #getting-manzanillo {
+
+    #heading .container {
+      font-size: 24px;
+
+      .invitation {
+        &.en {
+          max-width: 293px;
+        }
+
+        &.es {
+          max-width: 243px;
+        }
+      }
+
+      .image-conatiner {
+        left: 0;
+        top: 132px;
+        width: 326px;
+      }
+    }
+
+    #map-container {
+      .map-legend {
+        left: 55px;
+        top: -190px;
+      }
+    }
+
+    #help {
+      .content {
+        .help-image {
+          background-position-x: 10px;
+          position: relative;
+          right: 3.8%;
+          width: 19%;
+        }
+        .title {
+          font-size: 130%;
+          position: relative;
+          right: 33%;
+          width: 145%;
+        }
+        .description {
+          margin-top: 35px;
+        }
+      }
+    }
+  }
+
+  #about-magma {
+    #location .controls {
+      top: 11px;
+    }
+
+    #venue .controls {
+      top: 62px;
+    }
+
+    #magma-village {
+      .right-info{
+        margin-top: 13px;
+      }
+
+      .controls {
+        top: -10px;
+      }
+    }
+
+    #culture .controls {
+      top: 43px;
+    }
+
+    &.es {
+      #magma-village .right-info {
+        margin-top: 5px;
+
+        .description {
+          margin-top: -12px;
+        }
+      }
+
+      #location {
+
+        .title {
+          margin-top: -5px;
+        }
+
+        .description {
+          margin-top: -18px;
+        }
+
+        .controls {
+          top: -10px;
+        }
+      }
+
+      #venue .controls {
+        top: 84px;
+      }
+    }
+  }
+
+  #sponsoring {
+    padding-top: 100px;
+    .medium-sponsor {
+      height: 165px;
+      width: 165px;
+      span {
+        padding: 70px 43px;
+      }
+      .message {
+        padding: 57px 11px;
+        width: 143px;
+      }
+    }
+    .illustration {
+      left: -130px;
+    }
+    #toptal {
+      padding: 62px 21px;
+    }
+    #travis-ci {
+      padding: 35px 29px;
+    }
+  }
+
+  #media-sponsors {
+    height: 95px;
+    .title { font-size: 16px; }
+    ul, .title { height: 95px; }
+    #code-climate { top: 3px; }
+  }
+
+}
+
+@media (max-width: 768px) {
+  #about-magma {
+    .heading{
+      .info-image  {
+        bottom: -80px;
+        left: 20px;
+        max-width: 180px;
+      }
+    }
+
+    .left-info, .right-info{
+      margin-top: 30px;
+    }
+  }
+}
