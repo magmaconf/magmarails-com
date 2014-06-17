@@ -5,7 +5,7 @@ $(document).ready ->
   addActiveClass = (element) ->
     $(element).addClass('active')
 
-  if pathname is '/'
+  if pathname is '/2014'
     $('#main-menu').addClass('index')
     $('#mobile-header').addClass('index')
     $('#footer').addClass('index')
