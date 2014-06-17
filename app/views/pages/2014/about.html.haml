@@ -1,0 +1,69 @@
+#about-magma{ class: I18n.locale.to_s }
+  .pure-g-r.content.heading
+    .pure-u-1-4
+      %img.info-image{ src: "#{ image_path 'beach-image.svg' }" }
+    .pure-u-1-2
+      .invitation
+        %p.advice= t('about.hottest')
+        %p.title= t('about.in_all')
+      .date
+        %span.star
+        %p.location= t('date')
+        %span.star
+    .pure-u-1-8
+      .register
+        %img.shadow.small{ src: "#{ image_path 'shadow.png' }" }
+        %a.btn-register.small{ href: 'http://magmaconf2014.eventbrite.com/', target: '_blank' }
+          %img{ src: "#{ image_path t('images.register') }" }
+  .pure-g-r.section#location
+    .content
+      .pure-u-1-12
+      .pure-u-1-3.left-info.content-information
+        %p.title= t('about.magmaconf_is_title').html_safe
+        %br
+        %p.description
+          = t('about.magmaconf_description').html_safe
+          .controls
+      #location-carousel.pure-u-1-2.content-image
+        = render 'pages/2014/partials/slider', locals: { img1: 'magmaconf-1.jpg', img2: 'magmaconf-2.jpg', img3: 'magmaconf-3.jpg' }
+      .pure-u-1-12
+  .pure-g-r.section#venue
+    .content
+      .pure-u-1-12
+      #venue-carousel.pure-u-1-2.right.content-image
+        = render 'pages/2014/partials/slider', locals: { img1: 'venue.jpg', img2: 'venue-2.jpg', img3: 'venue-3.jpg' }
+      .pure-u-1-3.right-info.content-information
+        %p.title= t('about.venue').html_safe
+        %br
+        %p.description
+          = t('about.venue_description').html_safe
+          .controls
+      .pure-u-1-12
+  .pure-g-r.section#culture
+    .content
+      .pure-u-1-12
+      .pure-u-1-3.left-info.content-information
+        %p.title= t('about.culture_activities').html_safe
+        %br
+        %p.description
+          = t('about.culture_description').html_safe
+          .controls
+      #culture-carousel.pure-u-1-2.content-image
+        = render 'pages/2014/partials/slider', locals: { img1: 'cultural.jpg', img2: 'culture-2.jpg', img3: 'culture-3.jpg' }
+      .pure-u-1-12
+  .pure-g-r.section#magma-village
+    .content
+      .pure-u-1-12
+      #magma-village-carousel.pure-u-1-2.right.content-image
+        = render 'pages/2014/partials/slider', locals: { img1: 'village.jpg', img2: 'village2.jpg', img3: 'village3.jpg' }
+      .pure-u-1-3.right-info.content-information
+        %p.title= t('about.magma_village').html_safe
+        %br
+        %p.description
+          = t('about.magma_village_description').html_safe
+          .controls
+      .pure-u-1-12
+  .pure-g-r.register.section
+    %img.shadow{ src: "#{ image_path 'shadow.png' }" }
+    %a.btn-register.green{ href: "http://store.magmaconf.com/", target: "_blank" }
+      %img{ src: "#{ image_path t('images.book-now') }" }

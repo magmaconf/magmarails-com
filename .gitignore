@@ -1,6 +1,10 @@
 .sass-cache/
 .DS_Store
-.idea/
 
 *.swp
 *.un~
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+.idea

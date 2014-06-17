@@ -1,0 +1,111 @@
+html, body {
+
+  background: $bkg !important;
+  font-family: oswald;
+  font-size: 14px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  p {
+    font-family: oswald;
+    line-height: 20px;
+    padding: 0;
+  }
+
+  a:hover { text-decoration: none; }
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: 100 8em/1.1 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: $fonts;
+}
+
+h1 {
+  font-weight: bold;
+  margin-left: -4px;
+}
+
+h2 {
+  font-size: 3.15em;
+}
+
+h3 {
+  font-size: 2.17em;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 3.1em;
+  font-weight: 500;
+  padding-bottom: 5%;
+}
+
+h5 {
+  font-size: 5.1em;
+  margin-top: 0.2em;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.a {
+  &:hover {
+    font-family: Arial;
+    letter-spacing: 5px;
+    word-spacing: 9px;
+    background: black;
+    color: #fff;
+    font-size: 1em;
+  }
+}
+
+.top-box {
+  margin: 20px auto;
+  max-width: 265px;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.normal-box {
+  margin: 20px auto;
+  max-width: 170px;
+}
+
+#keynotes, #speaker-cards {
+  .accordion-group {
+    display: none;
+  }
+}
+
+.footer-legend a.policy-page {
+  display: none;
+}
+
+.bottom-copy-right {
+  display: none;
+}
+
+@include font_face('Block', 'BLOKKNeue-Regular');

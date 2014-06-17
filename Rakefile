@@ -1,4 +1,6 @@
-require 'sinatra/asset_pipeline/task.rb'
-require './app'
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
-Sinatra::AssetPipeline::Task.define! Crowdsite
+require File.expand_path('../config/application', __FILE__)
+
+MagmarailsCom::Application.load_tasks

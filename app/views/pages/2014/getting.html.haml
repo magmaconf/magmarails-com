@@ -1,0 +1,94 @@
+#getting-manzanillo
+  #heading
+    .container
+      .pure-g-r
+        .pure-u-1-4
+          .image-container
+            %img#airplane-image{src: "#{image_path 'airplane.png'}"}
+        .pure-u-1-2
+          .invitation{ class: I18n.locale.to_s }
+            %p.advice= t('getting_manzanillo.its_really_easy')
+            %p.title= t('getting_manzanillo.to_get_there')
+          .date
+            %span.star
+            %p.location= t('date')
+            %span.star
+        .pure-u-1-6
+          .register-button
+            %img.shadow.small{src: "#{image_path 'shadow.png'}"}
+            %a.btn-register.small{href: 'http://magmaconf2014.eventbrite.com/', target: '_blank'}
+              %img{src: "#{image_path t('images.register')}"}
+
+  #map-container.pure-g-r.content
+    .pure-u-1-1
+      #map_canvas
+      .map-legend
+        %p
+          %br
+          = t('getting_manzanillo.map_description')
+
+  #help.section
+    .pure-g-r.content-information
+      .content
+        .pure-u-1-12.spacer
+        %span.help-image
+        .pure-u-1-6.info
+          %p.title= t('getting_manzanillo.help.title')
+        .pure-u-13-24.info
+          %p.description.right-info
+            = t('getting_manzanillo.help.description').html_safe
+
+  #planning-trip.pure-g-r.section
+    .content
+      .pure-u-1-12
+      .pure-u-1-2.content-image.right-img
+        %img{ src: "#{ image_path 'planning-trip.jpg' }" }
+      .pure-u-1-3.right-info.content-information
+        %p.title= t('getting_manzanillo.planning.title')
+        %br
+        %p.description
+          = t('getting_manzanillo.planning.description').html_safe
+
+  #flying-manzanillo.pure-g-r.section
+    .content
+      .pure-u-1-12
+      .pure-u-1-3.left-info.content-information
+        %p.title= t('getting_manzanillo.manzanillo.title')
+        %br
+        %p.description
+          = t('getting_manzanillo.manzanillo.description').html_safe
+      .pure-u-1-2.content-image
+        %img{ src: "#{ image_path 'airport-zlo.jpg' }" }
+
+  #flying-guadalajara.pure-g-r.section
+    .content
+      .pure-u-1-12
+      .pure-u-1-2.content-image.right-img
+        %img{ src: "#{ image_path 'airport-gdl.jpg' }" }
+      .pure-u-1-3.right-info.content-information
+        %p.title= t('getting_manzanillo.guadalajara.title')
+        %br
+        %p.description
+          = t('getting_manzanillo.guadalajara.description').html_safe
+
+  #bus.pure-g-r.section
+    .content
+      .pure-u-1-12
+      .pure-u-1-3.left-info.content-information
+        %p.title= t('getting_manzanillo.bus.title')
+        %br
+        %p.description
+          = t('getting_manzanillo.bus.description').html_safe
+      .pure-u-1-2.content-image
+        %img{ src: "#{ image_path 'bus.jpg' }" }
+
+  #about-manzanillo.pure-g-r.section
+    .content
+      .pure-u-1-12
+      .pure-u-1-2.content-image.right-img
+        %img{ src: "#{ image_path 'about-manzanillo.jpg' }" }
+      .pure-u-1-3.right-info.content-information
+        %p.title= t('getting_manzanillo.about_manzanillo.title')
+        %br
+        %p.description
+          = t('getting_manzanillo.about_manzanillo.description').html_safe
