@@ -1,0 +1,35 @@
+#main-section {
+  background: url(/assets/bkg.jpg) no-repeat;
+  background-position: 0 -198px;
+  padding: 44px 0;
+  .container {
+    margin: 0 auto;
+    margin-top: 60px;
+    max-width: 1200px;
+    .center {
+      .social {
+        margin: 10px auto;
+        [class *='icon-'] {
+          padding: 20px 0 0 17px;
+          margin-top: -13px;
+        }
+      }
+      #thanks {
+        margin-left: 0;
+        margin-bottom: 60px;
+        width: 253px;
+      }
+      .over {
+        color: #7d7164;
+        display: block;
+        font-size: 130%;
+        font-family: oswald;
+        font-weight: 300;
+        margin: 0 auto;
+        max-width: 179px;
+        padding-bottom: 5px;
+        &:first-child { border-bottom: 4px solid #423732; }
+      }
+    }
+  }
+}
