@@ -11,14 +11,16 @@
     .center {
       .social {
         margin: 10px auto;
+        overflow: hidden;
+
         [class *='icon-'] {
           padding: 20px 0 0 17px;
           margin-top: -13px;
         }
       }
+
       #thanks {
-        margin-left: 0;
-        margin-bottom: 60px;
+        margin: 60px 0;
         width: 253px;
       }
 
@@ -33,6 +35,8 @@
         padding-bottom: 5px;
 
       }
+
+      .over-small { font-size: 120%; }
     }
   }
 }

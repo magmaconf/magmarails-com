@@ -108,4 +108,21 @@ h6 {
   display: none;
 }
 
+.organized-label {
+  border-top: 1px solid #423732;
+  clear: both;
+  color: #7d7164;
+  font-size: 65%;
+  font-weight: 400;
+  margin: 25px auto;
+  max-width: 165px;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.crowdint-logo {
+  width: 100px;
+}
+
 @include font_face('Block', 'BLOKKNeue-Regular');
