@@ -60,6 +60,14 @@ h6 {
   text-transform: uppercase;
 }
 
+fieldset {
+  border: none;
+}
+
+input[type=submit] {
+  border: none;
+}
+
 .a {
   &:hover {
     font-family: Arial;
