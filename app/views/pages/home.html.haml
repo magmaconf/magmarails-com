@@ -21,7 +21,9 @@
   %section
     .pure-g-r
       .pure-u-1-1.content
-        %img.banner{src: "#{image_path 'banner-image.svg'}"}
+        %ul#scene
+          %li.layer{ data: { depth: '0'} }= image_tag('banner.png', class: 'banner')
+          %li.layer{ data: { depth: '-0.10'} }= image_tag('eyes.png', class: 'banner eyes')
         %p#stay-up.small.before= t('home.newsletter.stay_up_to_day')
         %p#subscribe.big.before= t('home.newsletter.subscribe')
         %p#thanks.big.after= t('home.newsletter.thanks')
@@ -38,3 +40,9 @@
                 %span *
                 %input{name: 'email', type: 'email'}
               %input.submit{type: 'submit', value: t('newsletter-form.fields.submit')}
+
+= javascript_include_tag 'jquery.parallax'
+
+:coffee
+  $(document).ready ->
+    $('#scene').parallax();

@@ -133,4 +133,13 @@ input[type=submit] {
   width: 100px;
 }
 
+#scene {
+  margin: 0;
+}
+
+.eyes {
+  left: 30px;
+}
+
 @include font_face('Block', 'BLOKKNeue-Regular');
+
