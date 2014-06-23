@@ -17,6 +17,7 @@
 
 #policy {
   width: 100%;
+  background-color: white;
   background: none repeat scroll 0 0 transparent;
   position: fixed;
   z-index: 1004;
@@ -26,6 +27,7 @@
 
 #news {
   padding-top: 60px;
+  overflow: hidden;
 
   &:last-child {
     padding-bottom: 5%;
@@ -113,10 +115,15 @@
   p {
     word-spacing: 1px;
     line-height: 1.2;
+    margin: 0;
 
     &.linep {
       border-bottom: 1px solid $fonts;
     }
+  }
+
+  h1, h2, h3 {
+    margin-top: 0;
   }
 
   h3 {
