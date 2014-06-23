@@ -56,6 +56,50 @@
   font-family: oswald;
 }
 
+#message-box {
+  border-radius: 4px;
+  display: none;
+  height: 30px;
+  max-width: 1080px;
+  padding: 10px 0px 0px 10px;
+
+  &.success {
+    background-color: #dff0d8;
+    border: 2px solid #d6e9c6;
+    color: #3c763d;
+
+    .close {
+      color: #BED3B8;
+
+      &:hover {
+        color: #3c763d;
+      }
+    }
+  }
+
+  &.error {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+
+    .close {
+      color: #CCB7B9;
+      &:hover {
+        color: #a94442;
+      }
+    }
+  }
+
+  .close {
+    background: transparent;
+    border: 1px solid;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+  }
+}
+
+
 @media screen and (max-width: 640px) {
   .field {
     width: 100%;

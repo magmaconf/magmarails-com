@@ -29,7 +29,11 @@
         %p#thanks.big.after= t('home.newsletter.thanks')
         %p#keep.small.after= t('home.newsletter.keep')
         .form-container.before
-          %form#contact
+          #message-box
+            %button.close
+              x
+            %span
+          %form#newsletter-form
             %fieldset
               .field.name
                 %label{for: 'name'}= t('newsletter-form.fields.name')
