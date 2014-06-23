@@ -101,7 +101,8 @@ es:
     about: Acerca de Magma
     blog: Blog
     getting_manzanillo: Viaje a manzanillo
-    menu: MEN&Uacute;
+    magma_blog: Magma Blog
+    menu: MENÚ
     register: REGISTRO
     schedule: Agenda
     speakers: Ponentes
@@ -256,3 +257,7 @@ es:
   schedule:
     talk_name:
       manuel_vidaurre: 'Lucharan a dos de tres caídas: MV* stack vs rails 4 omakase'
+  post_magma:
+    show: 'La función ha terminado'
+    next_year: 'Nos veremos el próximo año'
+    organized_by: 'Orgullosamente patrocinado por'

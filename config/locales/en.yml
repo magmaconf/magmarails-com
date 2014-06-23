@@ -248,3 +248,7 @@ en:
   schedule:
     talk_name:
       manuel_vidaurre: 'Let’s get ready to rumbleeeeeee: MV* stack VS Rails 4 omakase'
+  post_magma:
+    show: 'the show is over'
+    next_year: "We'll see you next year"
+    organized_by: 'proudly organized by'

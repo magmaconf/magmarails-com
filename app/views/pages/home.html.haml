@@ -4,16 +4,16 @@
       .pure-u-1-3
       .pure-u-1-3.center
         %img#thanks{src: "#{image_path 'thanks.svg'}"}
-        %p.over= 'THE SHOW IS OVER'
-        %p.over.over-small
-          WE'LL SEE YOU NEXT YEAR!
+        %p{ class: "#{ I18n.locale.to_s } over" }= t('post_magma.show')
+        %p{ class: "#{ I18n.locale.to_s } over over-small" }
+          = t('post_magma.next_year')
           %span.separator.separator-big
           %span.separator
 
         = render 'pages/2014/partials/social_buttons'
 
         %p.organized-label
-          proudly organized by
+          = t('post_magma.organized_by')
 
         = link_to 'http://crowdint.com' do
           = image_tag 'crowdint.svg', class: 'crowdint-logo'
