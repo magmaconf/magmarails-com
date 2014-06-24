@@ -1,0 +1,457 @@
+// TODO Remove cactu styles and add styles for harassment policy
+
+.container, .row {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 42, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .row {
+    width: 1200px;
+  }
+
+  /* line 46, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  [class*="-column"] {
+    overflow: hidden;
+    float: left;
+    margin: 0 1.25%;
+  }
+
+  /* line 56, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .one-column {
+    width: 5.83333%;
+  }
+
+  /* line 58, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .two-columns {
+    width: 14.16667%;
+  }
+
+  /* line 58, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .three-columns {
+    width: 22.5%;
+  }
+
+  /* line 58, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .four-columns {
+    width: 30.83333%;
+  }
+
+  /* line 58, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .five-columns {
+    width: 39.16667%;
+  }
+
+  /* line 58, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .six-columns {
+    width: 47.5%;
+  }
+
+  /* line 58, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .seven-columns {
+    width: 55.83333%;
+  }
+
+  /* line 58, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .eight-columns {
+    width: 64.16667%;
+  }
+
+  /* line 58, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .nine-columns {
+    width: 72.5%;
+  }
+
+  /* line 58, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .ten-columns {
+    width: 80.83333%;
+  }
+
+  /* line 58, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .eleven-columns {
+    width: 89.16667%;
+  }
+
+  /* line 58, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .twelve-columns {
+    width: 97.5%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-one {
+    margin-left: 9.58333%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-two {
+    margin-left: 17.91667%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-three {
+    margin-left: 26.25%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-four {
+    margin-left: 34.58333%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-five {
+    margin-left: 42.91667%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-six {
+    margin-left: 51.25%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-seven {
+    margin-left: 59.58333%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-eight {
+    margin-left: 67.91667%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-nine {
+    margin-left: 76.25%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-ten {
+    margin-left: 84.58333%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-eleven {
+    margin-left: 92.91667%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-one {
+    margin: 0 47.08333%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-two {
+    margin: 0 42.91667%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-three {
+    margin: 0 38.75%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-four {
+    margin: 0 34.58333%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-five {
+    margin: 0 30.41667%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-six {
+    margin: 0 26.25%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-seven {
+    margin: 0 22.08333%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-eight {
+    margin: 0 17.91667%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-nine {
+    margin: 0 13.75%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-ten {
+    margin: 0 9.58333%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-eleven {
+    margin: 0 5.41667%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 24, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .row {
+    width: 100%;
+  }
+
+  /* line 28, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  [class*="-column"] {
+    overflow: hidden;
+    float: left;
+    margin: 0 1.04167%;
+  }
+
+  /* line 37, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .one-columns {
+    width: 6.25%;
+  }
+
+  /* line 37, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .two-columns {
+    width: 14.58333%;
+  }
+
+  /* line 37, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .three-columns {
+    width: 22.91667%;
+  }
+
+  /* line 37, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .four-columns {
+    width: 31.25%;
+  }
+
+  /* line 37, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .five-columns {
+    width: 39.58333%;
+  }
+
+  /* line 37, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .six-columns {
+    width: 47.91667%;
+  }
+
+  /* line 37, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .seven-columns {
+    width: 56.25%;
+  }
+
+  /* line 37, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .eight-columns {
+    width: 64.58333%;
+  }
+
+  /* line 37, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .nine-columns {
+    width: 72.91667%;
+  }
+
+  /* line 37, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .ten-columns {
+    width: 81.25%;
+  }
+
+  /* line 37, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .eleven-columns {
+    width: 89.58333%;
+  }
+
+  /* line 37, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .twelve-columns {
+    width: 97.91667%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-one {
+    margin-left: 9.375%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-two {
+    margin-left: 17.70833%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-three {
+    margin-left: 26.04167%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-four {
+    margin-left: 34.375%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-five {
+    margin-left: 42.70833%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-six {
+    margin-left: 51.04167%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-seven {
+    margin-left: 59.375%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-eight {
+    margin-left: 67.70833%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-nine {
+    margin-left: 76.04167%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-ten {
+    margin-left: 84.375%;
+  }
+
+  /* line 68, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .offset-eleven {
+    margin-left: 92.70833%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-one {
+    margin: 0 46.875%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-two {
+    margin: 0 42.70833%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-three {
+    margin: 0 38.54167%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-four {
+    margin: 0 34.375%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-five {
+    margin: 0 30.20833%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-six {
+    margin: 0 26.04167%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-seven {
+    margin: 0 21.875%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-eight {
+    margin: 0 17.70833%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-nine {
+    margin: 0 13.54167%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-ten {
+    margin: 0 9.375%;
+  }
+
+  /* line 77, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .centered-eleven {
+    margin: 0 5.20833%;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+  /* line 8, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .row {
+    margin: 0 5%;
+    width: 90%;
+  }
+
+  /* line 13, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  [class*="-column"] {
+    overflow: hidden;
+    float: left;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  /* line 8, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .row {
+    margin: 0 5%;
+    width: 90%;
+  }
+
+  /* line 13, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  [class*="-column"] {
+    overflow: hidden;
+    float: left;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) and (min-width: 361px) {
+  /* line 8, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .row {
+    margin: 0 5%;
+    width: 90%;
+  }
+
+  /* line 13, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  [class*="-column"] {
+    overflow: hidden;
+    float: left;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 360px) {
+  /* line 8, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .row {
+    margin: 0 5%;
+    width: 90%;
+  }
+
+  /* line 13, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  [class*="-column"] {
+    overflow: hidden;
+    float: left;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* line 8, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  .row {
+    margin: 0 5%;
+    width: 90%;
+  }
+
+  /* line 13, /Users/ingilniero/.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/cactu-0.1.2/app/assets/stylesheets/mixins/_grid.scss */
+  [class*="-column"] {
+    overflow: hidden;
+    float: left;
+    margin: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    = render 'partials/application_header'
+    = stylesheet_link_tag '2014/application', media: "all"
+    = javascript_include_tag '2014/application'
+  %body
+    = render '/pages/2014/partials/main_menu'
+    = yield
+  %footer
+    = render 'partials/footer'

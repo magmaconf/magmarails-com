@@ -19,6 +19,10 @@ gem 'high_voltage', '~> 2.1.0'
 
 gem 'mandrill_mailer'
 
+group :development do
+  gem 'pry-rails'
+end
+
 group :production do
   gem 'rails_12factor'
 end
