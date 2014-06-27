@@ -1,0 +1,717 @@
+.infographic {
+  background-color: #382E2C;
+}
+
+.wrapper {
+  width: 908px;
+  margin: 0 auto;
+}
+
+.heading {
+  padding-top: 136px;
+  padding-bottom: 110px;
+  margin: 0 auto;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.luchador {
+  height: 308px;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -67px;
+    margin-top: -91px;
+  }
+}
+
+.pattern-separator {
+  background: transparent image_url('infographic/pattern.png') repeat-x;
+  height: 13px;
+  width: 100%;
+}
+
+.attendees-wrapper {
+  width: 100%;
+  background-color: white;
+}
+
+.speaker-wrapper {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.lightning-talks-wrapper {
+  width: 100%;
+  background-color: white;
+}
+
+.academia-wrapper {
+  width: 100%;
+  background: linear-gradient(to left, #f2f2f2 50%, #e4e2d5 50%);
+}
+
+.attendees-map-wrapper {
+  width: 100%;
+  background: white;
+}
+
+.consumables-wrapper {
+  width: 100%;
+  background: #f2f2f2;
+}
+
+.sponsors-wrapper {
+  width: 100%;
+  background: white;
+}
+
+.social-media-wrapper {
+  width: 100%;
+  background: #dddbce;
+}
+
+.separator-wrapper {
+  background: #dddbce;
+  width: 100%;
+}
+
+.trending-topics-wrapper {
+  background: linear-gradient(to left, #726158 50%, #b6a999 50%);
+  width: 100%;
+}
+
+.attendees-container {
+  background-color: white;
+  padding: 82px 30px 62px;
+  margin: 0 auto;
+
+  article {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+
+    ul {
+      &:first-of-type {
+        margin-top: 11px;
+      }
+    }
+  }
+}
+
+.attendees {
+  padding: 0;
+  margin-top: 25px;
+}
+
+.attendee {
+  display: inline-block;
+  width: 31px;
+  height: 70px;
+  margin-right: 11px;
+  background: image_url('infographic/icon_attendees.png') repeat-x;
+}
+
+.staff {
+  background: image_url('infographic/icon_staff.png') repeat-x;
+}
+
+.img-text {
+  padding: 0 15px 15px;
+  display: block;
+  width: 96px;
+  position: absolute;
+  background: white;
+  left: 50%;
+  margin-left: -93px;
+}
+
+.staff-text {
+  width: 54px;
+  padding: 0 35px 20px;
+}
+
+.speakers-container {
+  background-color: #f2f2f2;
+  padding: 82px 138px;
+  position: relative;
+}
+
+.speakers {
+  padding: 0;
+  height: 63px;
+
+  &:nth-of-type(1) {
+    margin-top: 18px;
+  }
+
+  &:nth-of-type(2) {
+    margin-top: 22px;
+    margin-bottom: 10px;
+  }
+}
+
+.speakers-text {
+  width: 243px;
+  left: 138px;
+  background-color: #f2f2f2;
+  margin-left: 0;
+  padding: 0;
+}
+
+.speaker {
+  background: image_url('infographic/icon_speakers.png');
+  display: inline-block;
+  margin-right: 22px;
+  width: 27px;
+  height: 63px;
+
+  &:nth-of-type(5) {
+    margin-right: 30px;
+  }
+
+  &:last-of-type {
+    margin-right: 9px;
+  }
+}
+
+.lightning-talks-container {
+  background-color: white;
+  height: 188px;
+  padding: 52px 0 0 255px;
+  position: relative;
+}
+
+.lightning-talks-text {
+  background: transparent;
+  margin-left: -172px;
+  top: 44px;
+  padding: 0;
+  width: 345px;
+}
+
+.lightning-talks {
+  padding: 0;
+  display: inline-block;
+  margin-top: 0;
+
+  &:first-of-type {
+    margin-right: 65px;
+  }
+}
+
+.lightning-talk {
+  display: inline-block;
+  margin-right: 11px;
+  background: image_url('infographic/icon_lightningtalk.png');
+  width: 31px;
+  height: 71px;
+
+}
+
+.academia-container {
+  height: 340px;
+  position: relative;
+
+  article {
+    &:first-of-type {
+      background-color: #e4e2d5;
+      width: 253px;
+      display: inline-block;
+      height: 340px;
+      vertical-align: top;
+    }
+
+    &:last-of-type {
+      background-color: #f2f2f2;
+      width: 525.5px;
+      display: inline-block;
+      height: 340px;
+      vertical-align: top;
+    }
+  }
+}
+
+.students-container {
+  position: absolute;
+  left: 30px;
+  top: 92px;
+}
+
+.students-text {
+  margin-left: 0;
+  left: 148px;
+  width: 73px;
+  padding: 0 10px 0;
+  background-color: #e4e2d5;
+}
+
+.students {
+  padding: 0;
+  margin: 0;
+
+  &:last-of-type {
+    margin-top: 20px;
+  }
+}
+
+.student {
+  display: inline-block;
+  margin-right: 21px;
+  background: image_url('infographic/icon_student.png');
+  width: 30px;
+  height: 71px;
+}
+
+.academia-separator {
+  border-top: none;
+  border-left: 130px solid #e4e2d5;
+  border-right: none;
+  border-bottom: 340px solid #f2f2f2;
+  display: inline-block;
+}
+
+.professionals-container {
+  position: absolute;
+  top: 98px;
+  right: 55px;
+}
+
+.professionals-text {
+  background-color: #f2f2f2;
+  padding: 0 25px 5px;
+  margin-left: -85px;
+}
+
+.professionals {
+  padding: 0;
+  margin: 0;
+
+  &:last-of-type {
+    margin-top: 12px;
+  }
+}
+
+.professional {
+  background: image_url('infographic/icon_professionals.png');
+  display: inline-block;
+  width: 30px;
+  height: 71px;
+  margin-right: 23px;
+}
+
+.attendees-map {
+  background-color: white;
+  width: 100%;
+  position: relative;
+
+  header h1 {
+    color: #534741;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 0;
+    margin: 12px 0 44px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto 25px;
+  }
+}
+
+.countries {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  list-style: none;
+  color: #534741;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+
+  li {
+    line-height: 27px;
+  }
+}
+
+.america {
+  left: 49px;
+  top: 210px;
+}
+
+.europe {
+  top: 222px;
+  right: 60px;
+}
+
+.states {
+  font-size: 14px;
+  list-style: none;
+  padding: 0 5px;
+
+  li {
+    line-height: 16px;
+  }
+}
+
+.magma-village {
+  background-color: #e2e2d5;
+  padding-top: 37px;
+  width: 100%;
+  position: relative;
+
+  img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .reylero {
+    margin: 0 auto 170px;
+  }
+
+  .beach-houses {
+    z-index: 1;
+    position: absolute;
+    right: 50%;
+    margin-right: -125px;
+    bottom: -54px;
+  }
+}
+
+.consumables {
+  background-color: #f2f2f2;
+  height: 510px;
+  width: 100%;
+}
+
+.consumables {
+  position: relative;
+
+  img {
+    display: block;
+    position: absolute;
+  }
+}
+
+.mexican-hot-dogs {
+  top: 112px;
+  left: 96px;
+}
+
+.club-mate {
+  top: 85px;
+  right: 72px;
+}
+
+.sombreros {
+  top: 232px;
+  left: 350px;
+}
+
+.pinatas {
+  top: 283px;
+  left: 140px;
+}
+
+.mechanical-bull {
+  top: 293px;
+  right: 69px;
+}
+
+.sponsor-fiestas {
+  height: 77px;
+  background-color: white;
+  width: 100%;
+  position: relative;
+}
+
+.sponsor-hosted-fiestas {
+  position: absolute;
+  left: 74px;
+  top: -70px;
+  display: block;
+}
+
+.sponsor {
+  display: inline-block;
+}
+
+.sponsor-onelogin {
+  margin: 22px 32px 0 508px;
+  vertical-align: top;
+}
+
+.sponsor-github {
+  margin: 18px 36px 0 ;
+}
+
+.sponsor-crowdint {
+  margin: 18px 0 0 0;
+  vertical-align: top;
+}
+
+.social-media{
+  background-color: #dddbce;
+}
+
+.social-networks-separator {
+  border-bottom: none;
+  border-top: 238px solid #52453F;
+  border-left: 908px solid #dddbce;
+  border-right: none;
+}
+
+.social-networks-facebook {
+  position: relative;
+
+  &:after {
+    content: '';
+    background: image_url('infographic/icon_facebook.png') no-repeat;
+    width: 35px;
+    height: 73px;
+    position: absolute;
+    top: 120px;
+    right: 38px;
+  }
+}
+
+.fb-followers {
+  position: absolute;
+  top: 31px;
+  right: 222px;
+}
+
+.fb-impressions {
+  position: absolute;
+  top: 31px;
+  right: 32px;
+}
+
+.social-networks-twitter {
+  position: relative;
+  height: 164px;
+
+  &:after {
+    content: '';
+    background: image_url('infographic/icon_twitter.png') no-repeat;
+    width: 57px;
+    height: 47px;
+    position: absolute;
+    top: -187px;
+    left: 33px;
+  }
+}
+
+.twitter-followers {
+  position: absolute;
+  top: -62px;
+  left: 43px;
+}
+
+.twitter-contributors {
+  position: absolute;
+  left: 344px;
+  top: -33px;
+}
+
+.twitter-tweets {
+  position: absolute;
+  left: 106px;
+  top: 60px;
+}
+
+.twitter-timeline {
+  position: absolute;
+  top: 60px;
+  left: 335px;
+}
+
+.twitter-reach {
+  position: absolute;
+  top: 60px;
+  right: 85px;
+}
+
+.trending-topics-separator {
+  height: 38px;
+  width: 100%;
+}
+
+.tecnicos-separator {
+  border-bottom: none;
+  border-left: none;
+  border-top: 38px solid #dddbce;
+  border-right: 37px solid #b6a999;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.rudos-separator {
+  border-bottom: none;
+  border-left: 37px solid #726158;
+  border-top: 38px solid #dddbce;
+  border-right: none;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+
+.mask-separator {
+  border-top: 379px solid #52453F;
+  border-left: 1442px solid #dddbce;
+  position: absolute;
+  right: -536px;
+  top: 0px;
+}
+
+.trending-topics {
+  position: relative;
+
+  header {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    margin-left: -155px;
+  }
+
+  h1 {
+    margin: 0;
+    font-weight: 100;
+    color: #e3e2d5;
+    font-size: 36.69px;
+    letter-spacing: 0;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 5px solid #50453F;
+    padding-bottom: 5px;
+
+    span {
+      font-weight: 400;
+    }
+
+  }
+
+  h2 {
+    text-align: center;
+    color: white;
+    letter-spacing: 0;
+    font-size: 38.05px;
+    margin: 0;
+
+    &:first-of-type {
+      margin-top: 20px;
+      margin-bottom: 45px;
+    }
+
+    &:nth-of-type(2) {
+      margin-top: 30px;
+    }
+  }
+}
+
+.star {
+  background: image_url('infographic/star.png') no-repeat;
+  width: 20px;
+  display: inline-block;
+  height: 18px;
+  vertical-align: middle;
+  margin: -30px 5px 0;
+}
+
+.tecnicos {
+  background-color: #b6a999;
+  height: 373px;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+
+  h2 {
+    font-size: 25.75px;
+
+    &:before {
+      content: '';
+      background: image_url('infographic/icon_tecnicos.png');
+      width: 199px;
+      height: 193px;
+      display: block;
+      margin: 90px auto 21px;
+    }
+
+  }
+}
+
+.rudos {
+  background-color: #726158;
+  height: 373px;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+
+  h2 {
+    font-size: 25.75px;
+
+    &:before {
+      content: '';
+      background: image_url('infographic/icon_rudos.png');
+      width: 217px;
+      height: 218px;
+      display: block;
+      margin: 68px auto 21px;
+    }
+  }
+}
+
+.thunderline {
+  background: image_url('infographic/thunderline.png');
+  display: block;
+  height: 48px;
+  width: 149px;
+  margin-left: 76px;
+}
+
+.organized-by {
+  padding: 41px 0;
+  width: 100%;
+  background-color: #382e2c;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    letter-spacing: 0;
+    color: #726158;
+    margin: 30px 0;
+
+    &:before {
+      background: image_url('infographic/rose.png') no-repeat;
+      content: '';
+      display: block;
+      margin: 0 auto 30px;
+      width: 257px;
+      height: 101px;
+    }
+  }
+
+}
