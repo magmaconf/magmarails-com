@@ -1,0 +1,77 @@
+.academia {
+  width: 100%;
+  background: linear-gradient(to left, #f2f2f2 50%, #e4e2d5 50%);
+}
+
+.academia-wrapper {
+  height: 340px;
+  position: relative;
+
+  article {
+    display: inline-block;
+    height: 340px;
+    vertical-align: top;
+
+    &:first-of-type {
+      background-color: #e4e2d5;
+      width: 253px;
+    }
+
+    &:last-of-type {
+      background-color: #f2f2f2;
+      width: 525.5px;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    &:last-of-type {
+      margin-top: 20px;
+    }
+
+    li {
+      display: inline-block;
+      height: 71px;
+      width: 30px;
+    }
+  }
+}
+
+.students {
+  position: absolute;
+  left: 30px;
+  top: 92px;
+}
+
+.student {
+  background: image_url('infographic/icon_student.png');
+  margin-right: 21px;
+}
+
+.academia-separator {
+  border-top: none;
+  border-left: 130px solid #e4e2d5;
+  border-right: none;
+  border-bottom: 340px solid #f2f2f2;
+  display: inline-block;
+}
+
+.professionals {
+  position: absolute;
+  top: 98px;
+  right: 55px;
+
+  ul {
+
+    &:last-of-type {
+      margin-top: 12px;
+    }
+  }
+}
+
+.professional {
+  background: image_url('infographic/icon_professionals.png');
+  margin-right: 23px;
+}

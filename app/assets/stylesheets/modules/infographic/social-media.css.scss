@@ -1,0 +1,90 @@
+.social-media {
+  background: #dddbce;
+  overflow: hidden;
+  width: 100%;
+}
+
+.social-media-separator {
+  border-top: 238px solid #52453F;
+  border-left: 908px solid #dddbce;
+}
+
+.mask-separator {
+  border-left: 1442px solid #dddbce;
+  border-top: 379px solid #52453F;
+  position: absolute;
+  right: -536px;
+  top: 0px;
+}
+
+.social-media-facebook {
+  position: relative;
+
+  &:after {
+    background: image_url('infographic/icon_facebook.png') no-repeat;
+    content: '';
+    height: 73px;
+    position: absolute;
+    right: 38px;
+    top: 120px;
+    width: 35px;
+  }
+}
+
+.fb-followers {
+  position: absolute;
+  right: 222px;
+  top: 31px;
+}
+
+.fb-impressions {
+  position: absolute;
+  right: 32px;
+  top: 31px;
+}
+
+.social-media-twitter {
+  height: 164px;
+  position: relative;
+
+  &:after {
+    background: image_url('infographic/icon_twitter.png') no-repeat;
+    content: '';
+    height: 47px;
+    left: 33px;
+    position: absolute;
+    top: -187px;
+    width: 57px;
+  }
+}
+
+.twitter-followers {
+  left: 43px;
+  position: absolute;
+  top: -62px;
+}
+
+.twitter-contributors {
+  left: 344px;
+  position: absolute;
+  top: -33px;
+}
+
+.twitter-tweets {
+  left: 106px;
+  position: absolute;
+  top: 60px;
+}
+
+.twitter-timeline {
+  left: 335px;
+  position: absolute;
+  top: 60px;
+}
+
+.twitter-reach {
+  position: absolute;
+  right: 85px;
+  top: 60px;
+}
+

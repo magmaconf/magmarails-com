@@ -1,0 +1,27 @@
+.triangle-wrapper {
+  background: #dddbce;
+  width: 100%;
+}
+
+.triangle-separator {
+  height: 38px;
+  width: 100%;
+}
+
+.left-triangle {
+  border-top: 38px solid #dddbce;
+  border-right: 37px solid #b6a999;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.right-triangle {
+  border-left: 37px solid #726158;
+  border-top: 38px solid #dddbce;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}

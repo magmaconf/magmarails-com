@@ -1,0 +1,30 @@
+.lightning-talks {
+  background-color: white;
+  width: 100%;
+}
+
+.lightning-talks-wrapper {
+  background-color: white;
+  height: 240px;
+  padding: 52px 0 0 255px;
+  position: relative;
+  box-sizing: border-box;
+
+  ul {
+    padding: 0;
+    display: inline-block;
+    margin-top: 0;
+
+    &:first-of-type {
+      margin-right: 65px;
+    }
+  }
+}
+
+.lightning-talk {
+  display: inline-block;
+  margin-right: 11px;
+  background: image_url('infographic/icon_lightningtalk.png');
+  width: 31px;
+  height: 71px;
+}

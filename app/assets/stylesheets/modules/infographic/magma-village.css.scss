@@ -1,0 +1,23 @@
+.magma-village {
+
+  background-color: #e2e2d5;
+  padding-top: 37px;
+  position: relative;
+  width: 100%;
+  img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .reylero {
+    margin: 0 auto 170px;
+  }
+
+  .beach-houses {
+    bottom: -54px;
+    margin-right: -125px;
+    position: absolute;
+    right: 50%;
+    z-index: 1;
+  }
+}

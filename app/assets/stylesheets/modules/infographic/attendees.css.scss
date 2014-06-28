@@ -1,0 +1,39 @@
+.attendees {
+  width: 100%;
+  background-color: white;
+}
+
+.attendees-wrapper {
+  padding: 82px 30px 62px;
+  margin: 0 auto;
+
+  article {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+
+    ul {
+      padding: 0;
+      margin-top: 25px;
+
+      &:first-of-type {
+        margin-top: 11px;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: 11px;
+        width: 31px;
+        height: 70px;
+      }
+    }
+  }
+}
+
+.attendee {
+  background: image_url('infographic/icon_attendees.png') repeat-x;
+}
+
+.staff {
+  background: image_url('infographic/icon_staff.png') repeat-x;
+}

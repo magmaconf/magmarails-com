@@ -1,0 +1,60 @@
+.attendees-map {
+  background: white;
+  width: 100%;
+}
+
+.attendees-map-wrapper {
+  position: relative;
+
+  header h1 {
+    color: #534741;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 0;
+    margin: 12px 0 44px;
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto 25px;
+  }
+}
+
+.countries {
+  color: #534741;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-transform: uppercase;
+
+  li {
+    line-height: 27px;
+  }
+}
+
+.america {
+  left: 49px;
+  top: 210px;
+}
+
+.europe {
+  right: 60px;
+  top: 222px;
+}
+
+.states {
+  font-size: 14px;
+  list-style: none;
+  padding: 0 5px;
+
+  li {
+    line-height: 16px;
+  }
+}
