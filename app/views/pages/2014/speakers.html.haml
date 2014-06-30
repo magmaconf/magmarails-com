@@ -10,9 +10,6 @@
         %span.star
         %p.location= t('date')
         %span.star
-    .pure-u-1-4
-      %a.btn-register.small{ href: 'http://magmaconf2014.eventbrite.com/', target: '_blank' }
-        %img{ src: "#{ image_path t('images.register') }" }
 %section#keynotes
   .pure-g-r.content
     .pure-u-1.center
@@ -107,8 +104,3 @@
     .pure-u-1-6.speaker-box
       = render 'pages/2014/partials/speaker_cards', locals: { img: 'david-mayer.png', name: 'David Meyer', social: '@meyerwork', bio: t('speakers.david-mayer.bio') }
       = render 'pages/2014/partials/accordion_mobile', locals: { img: 'david-mayer.png', name: 'David Meyer', bio: t('speakers.david-mayer.bio') }
-%section#registration
-  .top-box
-    %img.shadow{ src: "#{ image_path 'shadow.png' }" }
-    %a.btn-register{ href: 'http://magmaconf2014.eventbrite.com/', target: '_blank' }
-      %img{ src: "#{ image_path t('images.register') }" }
