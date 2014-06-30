@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require jquery.validate
 //= require_tree .
+
+$(document).ready(function(){
+  var pathname = location.pathname;
+
+  if(pathname == '/') {
+    $('#main-menu, #mobile-header, #footer').addClass('index');
+  } else if (pathname = '/about') {
+    $('#main-menu, #mobile-header, #footer').addClass('about-magma');
+  }
+});
