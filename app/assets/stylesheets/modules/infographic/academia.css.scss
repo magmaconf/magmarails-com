@@ -7,6 +7,10 @@
   height: 340px;
   position: relative;
 
+  @include mq-info {
+    height: auto;
+  }
+
   article {
     display: inline-block;
     height: 340px;
@@ -23,6 +27,7 @@
     }
 
     @include mq-info {
+      height: auto;
 
       &:first-of-type, &:last-of-type {
         box-sizing: border-box;

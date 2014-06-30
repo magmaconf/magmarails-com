@@ -5,6 +5,7 @@
 
 .attendees-map-wrapper {
   position: relative;
+  padding: 12px 0 25px;
 
   header h1 {
     color: #534741;
@@ -12,19 +13,20 @@
     font-size: 20px;
     font-weight: 100;
     letter-spacing: 0;
-    margin: 12px 0 44px;
+    margin: 0 0 44px;
     text-align: center;
 
     @include mq-info {
-      margin: 20px 0;
+      margin: 0 0 10px;
     }
   }
 
   img {
     display: block;
-    margin: 0 auto 25px;
+    margin: 0 auto;
   }
 
+  @include mq-info { padding: 25px; }
 }
 
 .countries {
@@ -53,7 +55,7 @@
 
     li {
       display: inline-block;
-      margin-right: 50px;
+      margin-right: 30px;
     }
   }
 }
