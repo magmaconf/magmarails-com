@@ -6,6 +6,7 @@
 .attendees-wrapper {
   padding: 82px 30px 62px;
   margin: 0 auto;
+  box-sizing: border-box;
 
   @include mq-info {
     padding: 60px 0;
