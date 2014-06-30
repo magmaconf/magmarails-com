@@ -6,6 +6,16 @@
 .sponsors-wrapper {
   height: 77px;
   position: relative;
+
+  @include mq-info {
+    height: auto;
+    padding: 80px 0 20px;
+    text-align: center;
+
+    img {
+      display: inline-block;
+    }
+  }
 }
 
 .sponsor-hosted-fiestas {
@@ -13,18 +23,35 @@
   left: 74px;
   position: absolute;
   top: -70px;
+
+  @include mq-info {
+    left: 50%;
+    margin-left: -196px
+  }
 }
 
 .sponsor-onelogin {
   margin: 22px 32px 0 508px;
   vertical-align: top;
+
+  @include mq-info {
+    margin: 0 10px;
+  }
 }
 
 .sponsor-github {
   margin: 18px 36px 0 0;
+
+  @include mq-info {
+    margin: 0 10px;
+  }
 }
 
 .sponsor-crowdint {
   margin: 18px 0 0 0;
   vertical-align: top;
+
+  @include mq-info {
+    margin: 0 10px;
+  }
 }

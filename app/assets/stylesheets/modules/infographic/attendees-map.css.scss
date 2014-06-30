@@ -14,12 +14,17 @@
     letter-spacing: 0;
     margin: 12px 0 44px;
     text-align: center;
+
+    @include mq-info {
+      margin: 20px 0;
+    }
   }
 
   img {
     display: block;
     margin: 0 auto 25px;
   }
+
 }
 
 .countries {
@@ -37,16 +42,40 @@
   li {
     line-height: 27px;
   }
+
+  @include mq-info {
+    left: 0;
+    margin: 10px 0;
+    position: relative;
+    text-align: center;
+    top: 0;
+    width: 100%;
+
+    li {
+      display: inline-block;
+      margin-right: 50px;
+    }
+  }
 }
 
 .america {
   left: 49px;
   top: 210px;
+
+  @include mq-info {
+    left: 0;
+    top: 0;
+  }
 }
 
 .europe {
   right: 60px;
   top: 222px;
+
+  @include mq-info {
+    left: 0;
+    top: 0;
+  }
 }
 
 .states {
@@ -56,5 +85,9 @@
 
   li {
     line-height: 16px;
+  }
+
+  @include mq-info {
+    display: none;
   }
 }

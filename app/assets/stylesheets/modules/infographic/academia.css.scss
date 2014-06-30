@@ -21,6 +21,15 @@
       background-color: #f2f2f2;
       width: 525.5px;
     }
+
+    @include mq-info {
+
+      &:first-of-type, &:last-of-type {
+        box-sizing: border-box;
+        padding: 30px 10px;
+        width: 50%;
+      }
+    }
   }
 
   ul {
@@ -43,6 +52,17 @@
   position: absolute;
   left: 30px;
   top: 92px;
+
+  @include mq-info {
+    left: 0;
+    position: relative;
+    top: 0;
+
+    ul {
+      margin: 20px auto;
+      text-align: center;
+    }
+  }
 }
 
 .student {
@@ -67,6 +87,17 @@
 
     &:last-of-type {
       margin-top: 12px;
+    }
+  }
+
+  @include mq-info {
+    position: relative;
+    right: 0;
+    top: 0;
+
+    ul {
+      margin: 20px auto;
+      text-align: center;
     }
   }
 }

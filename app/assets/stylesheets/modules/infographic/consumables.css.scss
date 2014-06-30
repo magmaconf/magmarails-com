@@ -12,6 +12,23 @@
     display: block;
     position: absolute;
   }
+
+  @include mq-info {
+    height: auto;
+    padding: 80px 0;
+
+    img {
+      left: 0;
+      margin: 30px auto;
+      position: relative;
+      right: 0;
+      top: 0;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 .mexican-hot-dogs {
