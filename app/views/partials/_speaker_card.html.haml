@@ -1,0 +1,10 @@
+%article.speaker-card
+  .pure-u-1-4
+    .normal-box= image_tag locals[:img]
+  .pure-u-3-4
+    %h1.speaker-name= locals[:name]
+    .info-box
+      %span= locals[:twitter]
+      %p= locals[:bio]
+    %div{ class: "talk-box #{locals[:class]}"}
+      %p= locals[:talk]
