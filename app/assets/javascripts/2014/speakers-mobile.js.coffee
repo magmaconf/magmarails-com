@@ -1,6 +1,5 @@
 $ ->
-
-  $('.accordion-heading').on 'touchend', ->
+  $('.accordion-heading').on 'touchend, click', ->
     $('.accordion-heading').removeClass('active')
     $('.accordion-body').slideUp()
     $('.accordion-heading p').show()
