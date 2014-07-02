@@ -20,7 +20,14 @@ $(document).ready(function(){
 
   if(pathname == '/') {
     $('#main-menu, #mobile-header, #footer').addClass('index');
-  } else if (pathname = '/about') {
+  } else if (pathname == '/about') {
     $('#main-menu, #mobile-header, #footer').addClass('about-magma');
+    $('#about-magma-link').addClass('active');
+  } else if (pathname == '/speakers') {
+    $('#main-menu, #mobile-header, #footer').addClass('speakers');
+    $('#speakers-link').addClass('active');
+  } else if (pathname == '/sponsors') {
+    $('#main-menu, #mobile-header, #footer').addClass('sponsors');
+    $('#sponsors-link').addClass('active');
   }
 });
