@@ -21,7 +21,8 @@
     = render 'partials/speaker_card', locals: { name: 'Sandi Metz', img: 'sandy.png', twitter: '@sandimetz', bio: t('keynotes.sandi.bio'), talk: '100 miles of hill' }
     = render 'partials/speaker_mobile', locals: { name: 'Sandi Metz', img: 'sandy.png', bio: t('keynotes.sandi.bio') }
 
-    = render 'partials/speaker_card', locals: { name: 'Fred George', img: 'fred-george.png', twitter: '@fgeorge52', bio: t('keynotes.fred.bio'), talk: 'Enabling Emergent Technologies', class: 'download' }
+    = render 'partials/speaker_card',
+        locals: { name: 'Fred George', img: 'fred-george.png', twitter: '@fgeorge52', bio: t('keynotes.fred.bio'), talk: 'Enabling Emergent Technologies', class: 'download', link: 'https://drive.google.com/a/crowdint.com/file/d/0B_D9sZv8SMx6eGY2aXRfTlkzS1YtQ0o0bTJFVS1mVHFqYkRn/edit?usp=sharing' }
     = render 'partials/speaker_mobile', locals: { name: 'Fred George', img: 'fred-george.png', bio: t('keynotes.fred.bio') }
 
     = render 'partials/speaker_card', locals: { name: 'Desi McAdam', img: 'desi-mcadam.png', twitter: '@desi', bio: t('keynotes.desi.bio'), talk: 'Influence' }
@@ -59,19 +60,22 @@
     = render 'partials/speaker_card', locals: { img: 'johnny-winn.png', name: 'Johnny Winn', twitter: '@johnny_rugger', bio: t('speakers.johnny.bio'), talk: 'elixir - ruby, a pattern matching' }
     = render 'partials/speaker_mobile', locals: { img: 'johnny-winn.png', name: 'Johnny Winn', bio: t('speakers.johnny.bio') }
 
-    = render 'partials/speaker_card', locals: { img: 'andre-arko.png', name: 'André;', twitter: '@indirect', bio: t('speakers.andre.bio'), talk: 'Software icebergs: development was the easy part', class: 'download' }
-    = render 'partials/speaker_mobile', locals: { img: 'andre-arko.png', name: 'André', bio: t('speakers.andre.bio') }
+    = render 'partials/speaker_card',
+        locals: { img: 'andre-arko.png', name: 'André Arko', twitter: '@indirect', bio: t('speakers.andre.bio'), talk: 'Software icebergs: development was the easy part', class: 'download', link: ' https://speakerdeck.com/indirect/development-was-the-easy-part-magmaconf-2014' }
+    = render 'partials/speaker_mobile', locals: { img: 'andre-arko.png', name: 'André Arko', bio: t('speakers.andre.bio') }
 
     = render 'partials/speaker_card', locals: { img: 'jesse-thoth.png', name: 'Jesse Toth', twitter: '@jesseplusplus', bio: t('speakers.jesse.bio'), talk: 'Rewriting critical parts of your application using... science!' }
     = render 'partials/speaker_mobile', locals: { img: 'jesse-thoth.png', name: 'Jesse Toth', bio: t('speakers.jesse.bio') }
 
-    = render 'partials/speaker_card', locals: { img: 'zachary-scott.png', name: 'Zachary Scott', twitter: '@_zzak', bio: t('speakers.zachary.bio'), class: 'Standing on the shoulders of giants' }
+    = render 'partials/speaker_card', locals: { img: 'zachary-scott.png', name: 'Zachary Scott', twitter: '@_zzak', bio: t('speakers.zachary.bio'), talk: 'Standing on the shoulders of giants' }
     = render 'partials/speaker_mobile', locals: { img: 'zachary-scott.png', name: 'zachary scott', bio: t('speakers.zachary.bio') }
 
-    = render 'partials/speaker_card', locals: { img: 'pj.png', name: 'PJ Hagerty', twitter: '@aspleenic', bio: t('speakers.pj.bio'), talk: 'Urban Legends: What you code makes you who you are', classs: 'download' }
+    = render 'partials/speaker_card',
+      locals: { img: 'pj.png', name: 'PJ Hagerty', twitter: '@aspleenic', bio: t('speakers.pj.bio'), talk: 'Urban Legends: What you code makes you who you are', class: 'download', link: 'https://drive.google.com/a/crowdint.com/file/d/0B_D9sZv8SMx6NU81NjNIallYM2dCZFlra1gtMmE3bGpzM3dV/edit?usp=sharing' }
     = render 'partials/speaker_mobile', locals: { img: 'pj.png', name: 'PJ Hagerty', bio: t('speakers.pj.bio') }
 
-    = render 'partials/speaker_card', locals: { img: 'leo-salazar.png', name: 'Leo Salazar', twitter: '@leonor_salazar', bio: t('speakers.leo.bio'), talk: 'Refactoring Education', class: 'download' }
+    = render 'partials/speaker_card',
+      locals: { img: 'leo-salazar.png', name: 'Leo Salazar', twitter: '@leonor_salazar', bio: t('speakers.leo.bio'), talk: 'Refactoring Education', class: 'download', link: 'https://drive.google.com/a/crowdint.com/file/d/0B_D9sZv8SMx6WnMwMlY4Zkk5RVk/edit?usp=sharing' }
     = render 'partials/speaker_mobile', locals: { img: 'leo-salazar.png', name: 'Leo Salazar', bio: t('speakers.leo.bio') }
 
     = render 'partials/speaker_card', locals: { img: 'adam-rogers.png', name: 'Adam Rogers', twitter: '@rodreegez', bio: t('speakers.adam.bio'), talk: 'How to Win Designers and Influence Developers' }
@@ -83,7 +87,7 @@
     = render 'partials/speaker_card', locals: { img: 'manuel-vidaurre.png', name: 'Manuel Vidaurre', twitter: '@mvidaurre', bio: t('speakers.manuel.bio'), talk: "Let’s get ready to rumbleeeeeee: MV* stack VS Rails 4 omakase" }
     = render 'partials/speaker_mobile', locals: { img: 'manuel-vidaurre.png', name: 'Manuel Vidaurre', bio: t('speakers.manuel.bio') }
 
-    = render 'partials/speaker_card', locals: { img: 'richard-schneeman.png', name: 'Richard Schneeman', twitter: '@schneems', bio: t('speakers.richard.bio'), talk: 'The Good Rubyist Challange', class: 'download'}
+    = render 'partials/speaker_card', locals: { img: 'richard-schneeman.png', name: 'Richard Schneeman', twitter: '@schneems', bio: t('speakers.richard.bio'), talk: 'The Good Rubyist Challange', class: 'download', link: 'https://speakerdeck.com/schneems/the-good-rubyist-challenge'}
     = render 'partials/speaker_mobile', locals: { img: 'richard-schneeman.png', name: 'Richard Schneeman', bio: t('speakers.richard.bio') }
 
   .pure-g-r.content

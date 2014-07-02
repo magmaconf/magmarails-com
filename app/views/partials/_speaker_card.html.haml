@@ -7,4 +7,4 @@
       %span= locals[:twitter]
       %p= locals[:bio]
     %div{ class: "talk-box #{locals[:class]}"}
-      %p= locals[:talk]
+      = talk_link(locals)
