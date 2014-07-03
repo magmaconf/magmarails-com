@@ -11,12 +11,14 @@
         %p.location= t('date')
         %span.star
     .pure-u-1-4
-      %a.btn-register.small{ href: 'http://magmaconf2014.eventbrite.com/', target: '_blank' }
-        %img{ src: "#{ image_path t('images.register') }" }
+      .blog-button
+        %a.btn-register.small{ href: 'http://magmaconf2014.eventbrite.com/', target: '_blank' }
+          =image_tag 'blog.png'
+        =image_tag 'shadow.png', class: 'shadow'
 %section#keynotes
   .pure-g-r.content
     .pure-u-1.center
-      %img{ src: "#{ image_path 'keynotes-title.png' }" }
+      =image_tag 'keynotes-heading.png'
   .pure-g-r.content
     = render 'partials/speaker_card', locals: { name: 'Sandi Metz', img: 'sandy.png', twitter: '@sandimetz', bio: t('keynotes.sandi.bio'), talk: '100 miles of hill' }
     = render 'partials/speaker_mobile', locals: { name: 'Sandi Metz', img: 'sandy.png', bio: t('keynotes.sandi.bio') }
