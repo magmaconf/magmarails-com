@@ -4,7 +4,7 @@
   .pure-u-3-4
     %h1.speaker-name= locals[:name]
     .info-box
-      %span= locals[:twitter]
+      = link_to locals[:twitter], "http://twitter.com/#{locals[:twitter]}"
       %p= locals[:bio]
     %div{ class: "talk-box #{locals[:class]}"}
       = talk_link(locals)
