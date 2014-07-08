@@ -51,16 +51,18 @@
 
   .btn-register.small {
     border-color: #302216;
-    height: 120px;
+    height: 125px;
     margin-top: 35px;
     padding: 12px 16px;
     position: relative;
     text-align: center;
-    width: 120px;
+    width: 125px;
     z-index: 2;
 
     img {
       width: 80px;
+      position: relative;
+      top: 10px;
     }
   }
 
@@ -69,13 +71,13 @@
 
     background: #000;
     display: block;
-    height: 140px;
+    height: 145px;
     left: 50%;
-    margin-left: -70px;
+    margin-left: -72px;
     opacity: 0.1;
     position: absolute;
     top: 80px;
-    width: 140px;
+    width: 145px;
     z-index: 1;
   }
 }
