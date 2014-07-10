@@ -29,5 +29,7 @@ $(document).ready(function(){
   } else if (pathname == '/sponsors') {
     $('#main-menu, #mobile-header, #footer').addClass('sponsors');
     $('#sponsors-link').addClass('active');
+  } else if (pathname == '/gallery') {
+    $('#main-menu, #mobile-header, #footer').addClass('gallery');
   }
 });
