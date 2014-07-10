@@ -1,0 +1,105 @@
+.gallery-heading {
+  padding: 60px 0 30px;
+  background: #dcddcc;
+  text-align: center;
+}
+
+.reylero-container {
+  position: relative;
+}
+
+.gallery-reylero-beach {
+  width: 250px;
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  z-index: 1;
+}
+
+.gallery-title {
+  color: #8C7F71;
+  display: inline-block;
+  font-family: oswald;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 21px;
+  border-bottom: 2px solid #523E43;
+
+  span {
+    color: #000;
+    display: inline-block;
+    font-weight: 300;
+    height: 28px;
+    margin: 50px 0 0 0;
+    text-transform: uppercase;
+    font-size: 21px;
+  }
+}
+
+.gallery-subtitle {
+  color: #ada193;
+  font-size: 14px;
+  font-weight: 300;
+  max-width: 230px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+
+  &:before, &:after {
+    content: '';
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    background: image_url('star.png');
+    background-size: 15px;
+    margin: 0 10px;
+  }
+}
+
+.gallery-container {
+  background: #dcddcc;
+  height: 400px;
+}
+
+#gallery {
+  background: #90c855;
+  overflow:hidden;
+}
+
+#gallery-inner {
+  overflow:hidden;
+  position:relative;
+  margin:0 auto;
+  color:#333;
+  position:relative;
+  padding-top: 8px;
+}
+
+.box {
+  width:280px;
+  min-width:280px;
+  float:left;
+  overflow:visible;
+  -webkit-transition-duration: 1s;-moz-transition-duration: 1s;-ms-transition-duration: 1s;-o-transition-duration: 1s;transition-duration: 1s;
+  -webkit-transition-property: height, width;-moz-transition-property: height, width;-ms-transition-property: height, width;-o-transition-property: height, width;transition-property: height, width;
+  -webkit-transition-property: -webkit-transform, opacity;-moz-transition-property: -moz-transform, opacity;-ms-transition-property: -ms-transform, opacity;-o-transition-property: top, left, opacity;transition-property: transform, opacity;
+}
+
+.inner-box {
+  border-right:1px solid #89BE51;
+  border-bottom:1px solid #89BE51;
+  margin:0;padding:0;
+  position:relative;
+  overflow:hidden;
+  height: 280px;
+  background: red;
+  img {
+    max-width:100%;
+    height:auto;
+    margin:0;
+    width:100%;
+  }
+}
