@@ -18,6 +18,7 @@ gem 'heroku-deflater', :group => :production
 gem 'high_voltage', '~> 2.1.0'
 
 gem 'mandrill_mailer'
+gem 'flickraw'
 
 group :development do
   gem 'pry-rails'
