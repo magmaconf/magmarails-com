@@ -1,4 +1,4 @@
-init_masonry = ->
+initMasonry = ->
   $container = $('#gallery-inner')
   min_width = 280
   $container.imagesLoaded ->
@@ -16,5 +16,14 @@ init_masonry = ->
         $('.x-large').width (if (num_of_boxes > 1) then box_width * 3 else box_width * num_of_boxes)
         box_width
 
+getPhotos = (page = 1, per_page = 30) ->
+  $.ajax
+    url: '/gallery_photos/'
+    data:
+      page: page
+      per_page: per_page
+
 $(document).ready ->
-  init_masonry()
+  initMasonry()
+  photos = getPhotos()
+

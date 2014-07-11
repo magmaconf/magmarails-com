@@ -1,0 +1,13 @@
+$container = $('#gallery-inner');
+
+<% if @photos.any? %>
+  var photos = "<%= j(render(partial: 'photos')) %>"
+  var $boxes = $(photos).css('opacity', '0');
+
+  $container.append($boxes).masonry('appended', $boxes, true, function(){
+    $container.imagesLoaded(function(){
+      $('.box').animate({ opacity: 1 });
+      $container.masonry('reload');
+    });
+  });
+<% end %>
