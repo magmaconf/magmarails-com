@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require jquery.validate
 //= require jquery.masonry.min
+//= require jquery.fancybox
+//= require jquery.fancybox.pack
 //= require_tree .
 
 $(document).ready(function(){

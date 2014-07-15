@@ -24,6 +24,15 @@ getPhotos = (page = 1, per_page = 30) ->
       per_page: per_page
 
 $(document).ready ->
+  $(".fancybox").attr('rel', 'gallery').fancybox
+    closeBtn: false
+    beforeLoad: ->
+      @padding = 0;
+
+    helpers:
+      title:
+        type: 'inside'
+
   initMasonry()
   photos = getPhotos()
 

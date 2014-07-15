@@ -1,7 +1,8 @@
 .box
   .inner-box
-    %img{ src: photo.url }
-    .mask
+    %img{ src: photo.thumbnail }
+    %a.fancybox{ href: photo.url, rel: 'gallery' }
+      .mask
     %h1= photo.title
     = render 'konstantino'
     = render 'share_buttons'
