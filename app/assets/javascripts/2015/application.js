@@ -16,6 +16,7 @@
 //= require jquery.masonry.min
 //= require jquery.fancybox
 //= require jquery.fancybox.pack
+//= require jquery.inview
 //= require_tree .
 
 $(document).ready(function(){

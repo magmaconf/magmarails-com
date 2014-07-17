@@ -3,6 +3,11 @@
     %img{ src: photo.thumbnail }
     %a.fancybox{ href: photo.url, rel: 'gallery' }
       .mask
+    .desc
+      .photo-info
+        %h1= photo.title
+        %p= photo.description
+      = render 'share_buttons', photo: photo
+
     %h1= photo.title
-    = render 'konstantino'
-    = render 'share_buttons'
+    = render 'share_buttons', photo: photo

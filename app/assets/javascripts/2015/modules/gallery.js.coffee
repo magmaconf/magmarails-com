@@ -1,3 +1,5 @@
+page = 1;
+
 initMasonry = ->
   $container = $('#gallery-inner')
   min_width = 280
@@ -16,12 +18,28 @@ initMasonry = ->
         $('.x-large').width (if (num_of_boxes > 1) then box_width * 3 else box_width * num_of_boxes)
         box_width
 
-getPhotos = (page = 1, per_page = 30) ->
+getPhotos = (per_page = 5) ->
+  $('.spinner').show()
+  $('#load-more-items').hide()
+
   $.ajax
     url: '/gallery_photos/'
     data:
       page: page
       per_page: per_page
+
+  page += 1
+
+bindLoadMoreItemEvents = ->
+  $loadMoreItemsButton = $('#load-more-items')
+
+  $loadMoreItemsButton.bind 'click', (e) ->
+    e.preventDefault()
+    getPhotos()
+
+  $loadMoreItemsButton.bind 'inview', (e, visible) ->
+    if visible
+      getPhotos()
 
 $(document).ready ->
   $(".fancybox").attr('rel', 'gallery').fancybox
@@ -35,4 +53,6 @@ $(document).ready ->
 
   initMasonry()
   photos = getPhotos()
+  bindLoadMoreItemEvents()
+
 
