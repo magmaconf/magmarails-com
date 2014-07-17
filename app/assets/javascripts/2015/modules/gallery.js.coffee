@@ -41,16 +41,23 @@ bindLoadMoreItemEvents = ->
     if visible
       getPhotos()
 
-$(document).ready ->
+initFancyBox = ->
   $(".fancybox").attr('rel', 'gallery').fancybox
     closeBtn: false
     beforeLoad: ->
       @padding = 0;
+      @title = $(@element).siblings('.desc').html()
 
     helpers:
       title:
         type: 'inside'
 
+    tpl:
+      next: '<a title="Next" class="fancybox-nav fancybox-next" href="javascript:;"><div class="gallery-next"><div class="nav-arrow arrow-right"></div></a>'
+      prev: '<a title="Previous" class="fancybox-nav fancybox-prev" href="javascript:;"><div class="gallery-prev"><div class="nav-arrow arrow-left"></div></a>'
+
+$(document).ready ->
+  initFancyBox()
   initMasonry()
   photos = getPhotos()
   bindLoadMoreItemEvents()
