@@ -1,13 +1,13 @@
 .box
   .inner-box
-    %img{ src: photo.thumbnail }
-    %a.fancybox{ href: photo.url, rel: 'gallery' }
+    %img{ src: data.thumbnail }
+    %a.fancybox{ href: data.url, rel: 'gallery' }
       .mask
     .desc
       .photo-info
-        %h1= photo.title
-        %p= photo.description
-      = render 'share_buttons', photo: photo
+        %h1= data.title
+        %p= data.description
+      = render 'share_buttons', data: data
 
-    %h1= photo.title
-    = render 'share_buttons', photo: photo
+    %h1= data.title
+    = render 'share_buttons', data: data

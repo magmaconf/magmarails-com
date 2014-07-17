@@ -1,8 +1,8 @@
 $container = $('#gallery-inner');
 
-<% if @photos.any? %>
-  var photos = "<%= j(render(partial: 'photos')) %>"
-  var $boxes = $(photos).css('opacity', '0');
+<% if @boxes.any? %>
+  var boxes = "<%= j(render(partial: 'boxes')) %>"
+  var $boxes = $(boxes).css('opacity', '0');
 
   $container.append($boxes).masonry('appended', $boxes, true, function(){
     $container.imagesLoaded(function(){
