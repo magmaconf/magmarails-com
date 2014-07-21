@@ -58,7 +58,7 @@
   }
 
   h1 {
-    top: 900px;
+    top: 950px;
     left:0;
     position:absolute;
     font-size:20px;
@@ -94,12 +94,14 @@
 
 .mask {
   width: 1123px;
-  height: 1029px;
-  background: image_url('mask.png');
+  height: 1530px;
+  background: #000;
   position: absolute;
   top: 105%;
   left: 105%;
   transition: all 0.3s;
+  opacity: 0.9;
+  border-radius: 50% 0 0 0;
 }
 
 .konstantino {
