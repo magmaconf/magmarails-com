@@ -12,7 +12,7 @@ module GalleryHelper
       end
 
       if link?(word)
-        words[i] = "<a href='#{word}'>#{word}</a>"
+        words[i] = "<a href='#{formatted_link(word)}' target='_blank'>#{word}</a>"
       end
     end
     words.join(" ").html_safe
@@ -22,11 +22,19 @@ module GalleryHelper
     word[0, 1] == '@'
   end
 
+  def formatted_link(word)
+    twitter_pic?(word) ? "http://#{word}" : word.gsub!(/ …/, '')
+  end
+
   def hashtag?(word)
     word[0,1] == '#'
   end
 
   def link?(word)
-    word[0, 4] == 'http' || word[0, 4] == 'pic.'
+    word[0, 4] == 'http' || twitter_pic?(word)
+  end
+
+  def twitter_pic?(word)
+    word[0, 4] == 'pic.'
   end
 end
