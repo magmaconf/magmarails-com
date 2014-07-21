@@ -25,7 +25,7 @@ class TwitterAdapter
   end
 
   def get_tweets(page = 1, per_page = 10)
-    tweets = paginated_tweets(page, per_page)
+    tweets = paginated_tweets(page, 3)
 
     tweets.each_with_object([]) do |tweet, tweets|
       tweets << Tweet.new(

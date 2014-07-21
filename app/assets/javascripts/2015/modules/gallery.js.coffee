@@ -18,7 +18,7 @@ initMasonry = ->
         $('.x-large').width (if (num_of_boxes > 1) then box_width * 3 else box_width * num_of_boxes)
         box_width
 
-getPhotos = (per_page = 5) ->
+getPhotos = (per_page = 8) ->
   $('.spinner').show()
   $('#load-more-items').hide()
 
