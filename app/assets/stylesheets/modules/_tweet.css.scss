@@ -55,6 +55,13 @@
   span {
     color: #23A8A5;
   }
+
+  a {
+    color: #23A8A5;
+    text-decoration: none;
+  }
+
+
 }
 
 .twitter-share-buttons {
@@ -63,3 +70,26 @@
   right: 10px;
 }
 
+.twitter-favorite-button {
+  height: 23px;
+  width: 23px;
+  background: image_url('social-sprite.png') no-repeat -210px -101px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.twitter-retweet-button {
+  height: 23px;
+  width: 23px;
+  background: image_url('social-sprite.png') no-repeat -210px -81px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.twitter-replay-button {
+  height: 23px;
+  width: 23px;
+  display: inline-block;
+  background: image_url('social-sprite.png') no-repeat -187px -56px;
+  margin-bottom: 5px;
+}
