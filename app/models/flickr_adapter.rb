@@ -1,7 +1,8 @@
 class FlickrPhoto
-  attr_reader :title, :description, :url, :thumbnail, :type
+  attr_reader :id, :title, :description, :url, :thumbnail, :type
 
   def initialize(attrs = {})
+    @id = attrs.fetch(:id, 'Unknown');
     @title = attrs.fetch(:title, 'Unknown')
     @description = attrs.fetch(:description, 'Unknown')
     @url = attrs.fetch(:url, '#')

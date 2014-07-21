@@ -41,6 +41,19 @@ bindLoadMoreItemEvents = ->
     if visible
       getPhotos()
 
+bindShareWithFacebookEvents = ->
+
+  $('body').on 'click', '.share-via-facebook', (e) ->
+    e.preventDefault()
+
+    id = $(@).data('photo')
+    url = 'https://www.flickr.com/photos/crowdint/' + id
+
+    FB.ui(
+        method: 'feed',
+        link: url
+      ,(response) -> );
+
 initFancyBox = ->
   $(".fancybox").attr('rel', 'gallery').fancybox
     closeBtn: false
@@ -61,5 +74,6 @@ $(document).ready ->
   initMasonry()
   photos = getPhotos()
   bindLoadMoreItemEvents()
+  bindShareWithFacebookEvents()
 
 
