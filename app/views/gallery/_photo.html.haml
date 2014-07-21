@@ -6,7 +6,7 @@
     .desc
       .photo-info
         %h1= data.title
-        %p= data.description
+        %p= data.description.html_safe
       = render 'share_buttons', data: data
 
     %h1= data.title
