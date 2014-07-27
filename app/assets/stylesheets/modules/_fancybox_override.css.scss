@@ -1,6 +1,10 @@
 .fancybox-title {
   padding: 20px 140px 20px 40px;
 
+  @include mq-mobile() {
+    padding: 20px 20px 40px;
+  }
+
   h1 {
     font-family: Oswald;
     font-size: 18px;
@@ -30,6 +34,15 @@
     top: 50%;
     margin-top: -15px;
     right: 20px;
+
+    @include mq-mobile() {
+      position: relative;
+      width: 100%;
+      top: 25px;
+      text-align: center;
+      right: 0;
+    }
+
   }
 
 }
@@ -59,6 +72,10 @@
   box-shadow: 1px 10px 0px rgba(0, 0, 0, 0.4);
   visibility: hidden;
 
+  @include mq-mobile() {
+    display: none;
+  }
+
 }
 
 .gallery-next {
@@ -72,6 +89,10 @@
   right: -50px;
   box-shadow: 1px 10px 0px rgba(0, 0, 0, 0.4);
   visibility: hidden;
+
+  @include mq-mobile() {
+    display: none;
+  }
 }
 
 .nav-arrow {

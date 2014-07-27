@@ -139,11 +139,16 @@
 }
 
 .konstantin-avatar-container {
-  width: 65px;
-  height: 70px;
   display: inline-block;
-  vertical-align: middle;
+  height: 70px;
   margin-right: 25px;
+  vertical-align: middle;
+  width: 65px;
+
+  @include mq-mobile() {
+    width: 100%;
+    margin: 0 0 10px;
+  }
 }
 
 .konstantino-avatar {
@@ -164,6 +169,10 @@
 .photo-info {
   display: inline-block;
   vertical-align: top;
+
+  @include mq-mobile(){
+    padding: 5px;
+  }
 }
 
 .share-buttons {
