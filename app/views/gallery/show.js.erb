@@ -8,8 +8,7 @@ $container = $('#gallery-inner');
     $container.imagesLoaded(function(){
       $('.box').animate({ opacity: 1 });
       $container.masonry('reload');
-      $('.spinner').hide();
-      $('#load-more-items').show();
+      $('.spinner').addClass('js-spinner-is-expanded');
     });
   });
 <% else %>

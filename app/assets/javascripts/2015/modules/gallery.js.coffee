@@ -19,8 +19,7 @@ initMasonry = ->
         box_width
 
 getPhotos = (per_page = 8) ->
-  $('.spinner').show()
-  $('#load-more-items').hide()
+  $('.spinner').removeClass('js-spinner-is-expanded')
 
   $.ajax
     url: '/gallery_photos/'
