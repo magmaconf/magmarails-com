@@ -82,6 +82,7 @@
   display: inline-block;
   position: absolute;
   right: 10px;
+  top: 10px;
 
   @include mq-mobile(){
     position: relative;
@@ -93,25 +94,70 @@
 }
 
 .twitter-favorite-button {
-  height: 23px;
-  width: 23px;
-  background: image_url('social-sprite.png') no-repeat -210px -101px;
+  width: 30px;
+  height: 20px;
   display: inline-block;
-  margin-bottom: 5px;
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+	  height: 20px;
+    background: image_url('social-sprite.png') no-repeat -8px -8px;
+  }
+
+  &:hover {
+	  &:after {
+      background: image_url('social-sprite.png') no-repeat -8px -38px;
+	  }
+	}
 }
 
 .twitter-retweet-button {
-  height: 23px;
-  width: 23px;
-  background: image_url('social-sprite.png') no-repeat -210px -81px;
+  width: 30px;
+	height: 20px;
   display: inline-block;
-  margin-bottom: 5px;
+  position: relative;
+
+	&:after {
+	  content: '';
+    width: 30px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: image_url('social-sprite.png') no-repeat -43px -9px;
+	}
+
+	&:hover {
+	  &:after {
+      background: image_url('social-sprite.png') no-repeat -43px -40px;
+	  }
+	}
 }
 
 .twitter-replay-button {
-  height: 23px;
-  width: 23px;
+  width: 30px;
+	height: 20px;
   display: inline-block;
-  background: image_url('social-sprite.png') no-repeat -187px -56px;
-  margin-bottom: 5px;
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 25px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: image_url('social-sprite.png') no-repeat -90px -7px;
+  }
+
+  &:hover {
+	  &:after {
+      background: image_url('social-sprite.png') no-repeat -90px -37px;
+	  }
+	}
 }
