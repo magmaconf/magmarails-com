@@ -188,14 +188,49 @@
     background: #23A8A5;
     border-radius: 50%;
     margin-right: 15px;
-    transition: all 1s;
+    transition: position 1s;
 
-    .icon-twitter {
-      @include footer-icons(-52px, -57px);
+    &:hover {
+      background: #fff;
+
+      &.share-via-twitter:after {
+        background: image_url('social-sprite.png') no-repeat -93px -106px;
+      }
+
+      &.share-via-facebook:after {
+        background: image_url('social-sprite.png') no-repeat -55px -103px;
+      }
     }
 
-    .icon-facebook {
-      @include footer-icons(2px, -23px);
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    &.share-via-twitter {
+      position: relative;
+
+      &:after {
+        background: image_url('social-sprite.png') no-repeat -93px -76px;
+        width: 14px;
+        height: 11px;
+        margin-left: -6px;
+        margin-top: -6px;
+      }
+    }
+
+    &.share-via-facebook {
+      position: relative;
+
+      &:after {
+        background: image_url('social-sprite.png') -55px -73px;
+        width: 8px;
+        height: 17px;
+        margin-left: -4px;
+        margin-top: -8px;
+      }
     }
   }
 }
