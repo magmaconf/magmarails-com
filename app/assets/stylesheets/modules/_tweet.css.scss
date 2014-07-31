@@ -105,38 +105,38 @@
     position: absolute;
     top: 0;
     right: 0;
-	  height: 20px;
+    height: 20px;
     background: image_url('social-sprite.png') no-repeat -8px -8px;
   }
 
   &:hover {
-	  &:after {
+    &:after {
       background: image_url('social-sprite.png') no-repeat -8px -38px;
-	  }
-	}
+    }
+  }
 }
 
 .twitter-retweet-button {
   width: 30px;
-	height: 20px;
+  height: 20px;
   display: inline-block;
   position: relative;
 
-	&:after {
-	  content: '';
+  &:after {
+    content: '';
     width: 30px;
     height: 20px;
     top: 0;
     right: 0;
     position: absolute;
     background: image_url('social-sprite.png') no-repeat -43px -9px;
-	}
+  }
 
-	&:hover {
-	  &:after {
+  &:hover {
+    &:after {
       background: image_url('social-sprite.png') no-repeat -43px -40px;
-	  }
-	}
+    }
+  }
 }
 
 .twitter-replay-button {
