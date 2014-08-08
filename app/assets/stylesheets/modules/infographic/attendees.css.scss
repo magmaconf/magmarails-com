@@ -44,6 +44,12 @@
         margin-right: 11px;
         width: 31px;
         height: 70px;
+
+        &:last-of-type {
+          @include mq(320px) {
+            margin-top: 25px;
+          }
+        }
       }
     }
   }

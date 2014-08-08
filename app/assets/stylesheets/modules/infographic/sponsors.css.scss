@@ -28,6 +28,10 @@
     left: 50%;
     margin-left: -196px
   }
+
+  @include mq(320px) {
+    margin-left: -160px;
+  }
 }
 
 .sponsor-onelogin {
