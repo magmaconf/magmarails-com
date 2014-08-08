@@ -8,7 +8,7 @@
   }
 
   &.about-magma {
-    background: #f2f3ed;
+    background: #382e2c;
   }
 
   &.getting-manzanillo {
@@ -29,7 +29,7 @@
 
   &.getting-manzanillo, &.schedule, &.about-magma, &.policies {
     #magma-logo {
-      background: image-url('logo-magma.svg') no-repeat;
+      background: image-url('logo-magma-brown.svg') no-repeat;
     }
   }
 }
@@ -117,15 +117,15 @@
 
   &.getting-manzanillo, &.schedule, &.about-magma, &.policies {
     .link {
-      border-right: 1px solid #6c5a53;
-      &:hover:after {color: #000;}
+      border-right: 1px solid #ada193;
+      &:hover:after {color: #fff;}
       a, span, &:after {
-        color:  #6c5a53;
+        color:  #ada193;
         &:hover, &.active {
-          color: #000;
+          color: #fff;
         }
         &.active {
-          border-bottom: 2px solid #000;
+          border-bottom: 2px solid #fff;
         }
       }
     }

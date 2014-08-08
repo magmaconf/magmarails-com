@@ -1,0 +1,30 @@
+.organized-by {
+  background-color: #382e2c;
+  padding: 41px 0;
+  width: 100%;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  p {
+    color: #726158;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 0;
+    margin: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:before {
+      background: image_url('infographic/rose.png') no-repeat;
+      content: '';
+      display: block;
+      height: 101px;
+      margin: 0 auto 30px;
+      width: 257px;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+.trending-topics {
+  background: linear-gradient(to left, #726158 50%, #b6a999 50%);
+  width: 100%;
+}
+
+.trending-topics-wrapper {
+  position: relative;
+
+  header {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    margin-left: -155px;
+    white-space: nowrap;
+
+    @include mq-info {
+      left: 0;
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+      top: 0;
+    }
+  }
+
+  h1 {
+    margin: 0;
+    font-weight: 100;
+    color: #e3e2d5;
+    font-size: 36.69px;
+    letter-spacing: 0;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 5px solid #50453F;
+    padding-bottom: 5px;
+
+    span {
+      font-weight: 400;
+    }
+
+    @include mq-info {
+      margin-top: 20px;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    color: white;
+    letter-spacing: 0;
+    font-size: 38.05px;
+    margin: 0;
+
+    &:first-of-type {
+      margin-top: 20px;
+      margin-bottom: 45px;
+    }
+
+    &:nth-of-type(2) {
+      margin-top: 30px;
+    }
+
+    @include mq-info {
+      &:first-of-type {
+        margin-bottom: 10px;
+      }
+
+      &:nth-of-type(2) {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.star {
+  background: image_url('infographic/star.png') no-repeat;
+  width: 20px;
+  display: inline-block;
+  height: 18px;
+  vertical-align: middle;
+  margin: -30px 5px 0;
+}
+
+.tecnicos {
+  background-color: #b6a999;
+  height: 373px;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+
+  h2 {
+    font-size: 25.75px;
+
+    &:before {
+      content: '';
+      background: image_url('infographic/icon_tecnicos.png');
+      width: 199px;
+      height: 193px;
+      display: block;
+      margin: 90px auto 21px;
+    }
+
+    @include mq-info {
+      &:before {
+        margin: 44px auto 21px;
+      }
+    }
+  }
+
+  @include mq-info {
+    height: auto;
+  }
+}
+
+.rudos {
+  background-color: #726158;
+  height: 373px;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+
+  h2 {
+    font-size: 25.75px;
+
+    &:before {
+      content: '';
+      background: image_url('infographic/icon_rudos.png');
+      width: 217px;
+      height: 218px;
+      display: block;
+      margin: 68px auto 21px;
+    }
+
+    @include mq-info {
+      &:before {
+        margin: 20px auto 21px;
+      }
+    }
+  }
+
+  @include mq-info {
+    height: auto;
+  }
+}
+
+.thunderline {
+  background: image_url('infographic/thunderline.png');
+  display: block;
+  height: 48px;
+  width: 149px;
+  margin-left: 76px;
+
+  @include mq-info {
+    margin: 0 auto;
+  }
+}

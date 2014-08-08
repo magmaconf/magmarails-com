@@ -1,0 +1,95 @@
+.attendees-map {
+  background: white;
+  width: 100%;
+}
+
+.attendees-map-wrapper {
+  position: relative;
+  padding: 12px 0 25px;
+
+  header h1 {
+    color: #534741;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 0;
+    margin: 0 0 44px;
+    text-align: center;
+
+    @include mq-info {
+      margin: 0 0 10px;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  @include mq-info { padding: 25px; }
+}
+
+.countries {
+  color: #534741;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-transform: uppercase;
+
+  li {
+    line-height: 27px;
+  }
+
+  @include mq-info {
+    left: 0;
+    margin: 10px 0;
+    position: relative;
+    text-align: center;
+    top: 0;
+    width: 100%;
+
+    li {
+      display: inline-block;
+      margin-right: 30px;
+    }
+  }
+}
+
+.america {
+  left: 49px;
+  top: 210px;
+
+  @include mq-info {
+    left: 0;
+    top: 0;
+  }
+}
+
+.europe {
+  right: 60px;
+  top: 222px;
+
+  @include mq-info {
+    left: 0;
+    top: 0;
+  }
+}
+
+.states {
+  font-size: 14px;
+  list-style: none;
+  padding: 0 5px;
+
+  li {
+    line-height: 16px;
+  }
+
+  @include mq-info {
+    display: none;
+  }
+}

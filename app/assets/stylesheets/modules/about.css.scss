@@ -1,0 +1,43 @@
+.infographic {
+  background-color: #382E2C;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 908px;
+
+  @include mq-info {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+.heading {
+  margin: 0 auto;
+  padding: 136px 0 110px;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.luchador {
+  height: 308px;
+  position: relative;
+
+  img {
+    left: 50%;
+    margin-left: -67px;
+    margin-top: -91px;
+    position: absolute;
+    top: 50%;
+  }
+}
+
+.pattern {
+  background: transparent image_url('infographic/pattern.png') repeat-x;
+  height: 13px;
+  width: 100%;
+}
+

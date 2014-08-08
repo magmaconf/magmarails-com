@@ -1,0 +1,143 @@
+.social-media {
+  background: #dddbce;
+  overflow: hidden;
+  width: 100%;
+}
+
+.social-media-separator {
+  border-top: 238px solid #52453F;
+  border-left: 908px solid #dddbce;
+
+  @include mq-info {
+    display: none;
+  }
+}
+
+.mask-separator {
+  border-left: 1442px solid #dddbce;
+  border-top: 379px solid #52453F;
+  position: absolute;
+  right: -536px;
+  top: 0px;
+
+  @include mq-info {
+    display: none;
+  }
+}
+
+.social-media-facebook {
+  position: relative;
+
+  &:after {
+    background: image_url('infographic/icon_facebook.png') no-repeat;
+    content: '';
+    height: 73px;
+    position: absolute;
+    right: 38px;
+    top: 120px;
+    width: 35px;
+  }
+
+  @include mq-info {
+    background-color: #52453F;;
+    height: auto;
+    padding: 110px 0 20px;
+    text-align: center;
+
+    img {
+      display: inline-block;
+      left: 0;
+      margin: 20px;
+      position: relative;
+      right: 0;
+      top: 0;
+    }
+
+    &:after {
+      top: 20px;
+      left: 50%;
+      margin-left: -17px;
+    }
+  }
+}
+
+.fb-followers {
+  position: absolute;
+  right: 222px;
+  top: 31px;
+}
+
+.fb-impressions {
+  position: absolute;
+  right: 32px;
+  top: 31px;
+}
+
+.social-media-twitter {
+  height: 164px;
+  position: relative;
+
+  &:after {
+    background: image_url('infographic/icon_twitter.png') no-repeat;
+    content: '';
+    height: 47px;
+    left: 33px;
+    position: absolute;
+    top: -187px;
+    width: 57px;
+  }
+
+  @include mq-info {
+    height: auto;
+    padding: 30px;
+    text-align: center;
+
+    &:after {
+      top: 20px;
+      left: 50%;
+      margin-left: -28px;
+    }
+
+    img {
+      bottom: 0;
+      display: inline-block;
+      left: 0;
+      margin: 60px 20px 0;
+      position: relative;
+      right: 0;
+      top: 0;
+      vertical-align: middle;
+    }
+  }
+}
+
+.twitter-followers {
+  left: 43px;
+  position: absolute;
+  top: -62px;
+}
+
+.twitter-contributors {
+  left: 344px;
+  position: absolute;
+  top: -33px;
+}
+
+.twitter-tweets {
+  left: 106px;
+  position: absolute;
+  top: 60px;
+}
+
+.twitter-timeline {
+  left: 335px;
+  position: absolute;
+  top: 60px;
+}
+
+.twitter-reach {
+  position: absolute;
+  right: 85px;
+  top: 60px;
+}
+

@@ -1,8 +1,8 @@
-#main-menu.pure-g-r{ class: "#{I18n.locale.to_s} index" }
+#main-menu.pure-g-r{ class: "#{I18n.locale.to_s}" }
   .pure-u-1-1
     %ul
       %li.link
-        %a.link-text#about-magma-link{ href: '/2014/about' }= t('menu.about')
+        %a.link-text#about-magma-link{ href: '/about' }= t('menu.about')
       %li.link.without-border
         %a.link-text#speakers-link{ href: '/2014/speakers' }= t('menu.speakers')
       %li#main-section-link.without-border
@@ -17,7 +17,7 @@
       %span
       %span
 
-#mobile-header.pure-g-r.index
+#mobile-header.pure-g-r
   .pure-u-1-1
     %a#btn-mobile-header
       %span

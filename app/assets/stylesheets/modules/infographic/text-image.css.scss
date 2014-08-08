@@ -1,0 +1,98 @@
+.text-image {
+  display: block;
+  position: absolute;
+}
+
+.attendees-text {
+  background: white;
+  left: 50%;
+  margin-left: -105px;
+  padding: 0 15px 15px;
+  width: 96px;
+
+  @include mq-info {
+    margin-left: -65px;
+    padding: 0 15px 10px;
+  }
+}
+
+.staff-text {
+  background: white;
+  left: 50%;
+  margin-left: -90px;
+  padding: 0 35px 20px;
+  width: 54px;
+
+  @include mq-info {
+    margin-left: -65px;
+    padding: 0 35px 10px;
+  }
+}
+
+.speakers-text {
+  background-color: #f2f2f2;
+  left: 138px;
+  margin-left: 0;
+  padding: 0;
+  width: 243px;
+
+  @include mq-info {
+    left: 50%;
+    margin-left: -120px;
+  }
+
+  @include mq(640px) {
+    top: 25px;
+  }
+}
+
+.lightning-talks-text {
+  background-color: transparent;
+  left: 50%;
+  margin-left: -172px;
+  padding: 0;
+  top: 44px;
+  width: 345px;
+
+  @include mq-info {
+    left: 0;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+  }
+}
+
+.students-text {
+  background-color: #e4e2d5;
+  left: 148px;
+  margin-left: 0;
+  padding: 0 10px 0;
+  width: 73px;
+
+  @include mq-info {
+    left: 0;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+  }
+}
+
+.professionals-text {
+  background-color: #f2f2f2;
+  left: 50%;
+  margin-left: -85px;
+  padding: 0 25px 5px;
+
+  @include mq-info {
+    left: 0;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+  }
+}
+
+.is-only-desktop {
+  @include mq-info {
+    display: none;
+  }
+}
