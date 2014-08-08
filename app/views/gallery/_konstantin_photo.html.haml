@@ -1,0 +1,20 @@
+.gallery-box.large
+  .inner-box
+    %img{ src: data.thumbnail }
+    %a.fancybox{ href: data.url, rel: 'gallery' }
+      .mask
+    .desc
+      .konstantin-avatar-container
+        .konstantino-avatar
+          %img{ src: 'https://pbs.twimg.com/profile_images/483956479331139585/pjPU2HZt_bigger.jpeg' }
+      .photo-info
+        %h1= data.title
+        %h2 , by Konstantin Haase
+        %p= data.description
+      = render 'share_buttons', data: data
+
+    %h1= data.title
+    .konstantin-water-mark
+      = render 'konstantino'
+      %h2 by Konstantin Haase
+    = render 'share_buttons', data: data

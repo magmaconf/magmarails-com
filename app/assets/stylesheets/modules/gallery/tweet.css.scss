@@ -1,0 +1,166 @@
+.tweet {
+  background: white;
+  min-height: 150px;
+  -webkit-box-shadow: inset -1px 1px 0px 0px #eee;
+  -moz-box-shadow: inset -1px 1px 0px 0px #eee;
+  box-shadow: inset -1px 1px 0px 0px #eee;
+}
+
+.tweet-avatar {
+  display: inline-block;
+  width: 20%;
+  box-sizing: border-box;
+  vertical-align: middle;
+
+  img {
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+  }
+
+  @include mq-mobile(){
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+.tweet-content {
+  display: inline-block;
+  width: 79%;
+  box-sizing: border-box;
+  vertical-align: middle;
+  padding-right: 40px;
+
+  @include mq-mobile() {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+.tweet-header {
+  padding: 20px 0 10px;
+  border-bottom: 1px solid #8C7F71;
+
+  @include mq-mobile() {
+    text-align: center;
+  }
+
+  p {
+    margin: 0;
+    display: inline-block;
+  }
+}
+
+.tweet-fullname {
+  font-family: Oswald;
+  font-weight: 400;
+  color: #8C7F71;
+}
+
+.tweet-username {
+  font-family: Roboto;
+  font-weight: 400;
+  color: #23A8A5;
+}
+
+.tweet-body {
+  p {
+    font-family: Roboto;
+    font-weight: 400;
+    white-space: normal;
+  }
+
+  span {
+    color: #23A8A5;
+  }
+
+  a {
+    color: #23A8A5;
+    text-decoration: none;
+  }
+
+}
+
+.twitter-share-buttons {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+
+  @include mq-mobile(){
+    position: relative;
+    display: block;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+.twitter-favorite-button {
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20px;
+    background: image_url('social-sprite.png') no-repeat -8px -8px;
+  }
+
+  &:hover {
+    &:after {
+      background: image_url('social-sprite.png') no-repeat -8px -38px;
+    }
+  }
+}
+
+.twitter-retweet-button {
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 30px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: image_url('social-sprite.png') no-repeat -43px -9px;
+  }
+
+  &:hover {
+    &:after {
+      background: image_url('social-sprite.png') no-repeat -43px -40px;
+    }
+  }
+}
+
+.twitter-replay-button {
+  width: 30px;
+	height: 20px;
+  display: inline-block;
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 25px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: image_url('social-sprite.png') no-repeat -90px -7px;
+  }
+
+  &:hover {
+	  &:after {
+      background: image_url('social-sprite.png') no-repeat -90px -37px;
+	  }
+	}
+}

@@ -12,12 +12,14 @@ gem 'haml-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'sass-rails', '~> 4.0.0'
 gem 'yui-compressor'
+gem 'will_paginate'
 
 gem 'heroku-deflater', :group => :production
 
 gem 'high_voltage', '~> 2.1.0'
 
 gem 'mandrill_mailer'
+gem 'flickraw'
 
 group :development do
   gem 'pry-rails'

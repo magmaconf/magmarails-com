@@ -1,0 +1,240 @@
+.gallery-box {
+  width:280px;
+  min-width:280px;
+  float:left;
+  overflow:visible;
+
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: top, left, opacity;
+  transition-property: transform, opacity;
+
+  &:hover {
+    .inner-box > img {
+      -webkit-transform: scale(1.4) rotate(9deg);
+      -moz-transform:scale(1.4) rotate(9deg);
+      transform: scale(1.4) rotate(9deg);
+
+      -moz-opacity:0.6;
+      -webkit-opacity:0.6;
+      -o-opacity:0.6;opacity:0.6;
+
+      -webkit-transition-duration: 0.5s;
+    }
+
+    h1 {
+      top:30%;
+      transition: all 0.5s;
+    }
+
+    .mask {
+      top:-300px;
+      left:-300px;
+      transition: all 0.5s;
+    }
+
+    .konstantin-water-mark {
+      bottom: 20px;
+      transition: all 0.5s;
+    }
+
+    .share-buttons {
+      right: 20px;
+      transition: all 0.5s;
+    }
+  }
+
+  h1 {
+    top: 950px;
+    left:0;
+    position:absolute;
+    font-size:20px;
+    text-align:center;
+    line-height:28px;
+    font-weight:normal;
+    text-transform:uppercase;
+    color:#fff;
+    padding:0 2%;
+    width:96%;
+    display:block;
+    transition: all 0.3s;
+  }
+
+}
+
+.inner-box {
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+    transition: all 0.5s;
+    vertical-align: middle;
+  }
+}
+
+.mask {
+  width: 1123px;
+  height: 1530px;
+  background: #000;
+  position: absolute;
+  top: 105%;
+  left: 105%;
+  transition: all 0.3s;
+  opacity: 0.9;
+  border-radius: 50% 0 0 0;
+}
+
+.konstantino {
+  background: #fff;
+  width: 80px;
+  height: 80px;
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.konstantin-water-mark {
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  margin-left: -65px;
+  transition: all 0.3s;
+
+  h2 {
+    color: white;
+    font-size: 1em;
+    text-transform: none;
+    font-family: Roboto;
+    font-weight: 400;
+  }
+
+  &:before {
+    display: block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+  }
+}
+
+.konstantin-avatar-container {
+  display: inline-block;
+  height: 70px;
+  margin-right: 25px;
+  vertical-align: middle;
+  width: 65px;
+
+  @include mq-mobile() {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+}
+
+.konstantino-avatar {
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 5px solid white;
+
+  > img {
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.photo-info {
+  display: inline-block;
+  vertical-align: top;
+
+  @include mq-mobile(){
+    padding: 5px;
+  }
+}
+
+.share-buttons {
+  position: absolute;
+  bottom: 20px;
+  right: -100px;
+
+  a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    background: #23A8A5;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: position 1s;
+
+    &:hover {
+      background: #fff;
+
+      &.share-via-twitter:after {
+        background: image_url('social-sprite.png') no-repeat -93px -106px;
+      }
+
+      &.share-via-facebook:after {
+        background: image_url('social-sprite.png') no-repeat -55px -103px;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    &.share-via-twitter {
+      position: relative;
+
+      &:after {
+        background: image_url('social-sprite.png') no-repeat -93px -76px;
+        width: 14px;
+        height: 11px;
+        margin-left: -6px;
+        margin-top: -6px;
+      }
+    }
+
+    &.share-via-facebook {
+      position: relative;
+
+      &:after {
+        background: image_url('social-sprite.png') -55px -73px;
+        width: 8px;
+        height: 17px;
+        margin-left: -4px;
+        margin-top: -8px;
+      }
+    }
+  }
+}
+
+.desc {
+  display: none;
+}

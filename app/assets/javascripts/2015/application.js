@@ -13,6 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.validate
+//= require jquery.masonry.min
+//= require jquery.fancybox
+//= require jquery.fancybox.pack
+//= require jquery.inview
 //= require_tree .
 
 $(document).ready(function(){
@@ -29,5 +33,7 @@ $(document).ready(function(){
   } else if (pathname == '/sponsors') {
     $('#main-menu, #mobile-header, #footer').addClass('sponsors');
     $('#sponsors-link').addClass('active');
+  } else if (pathname == '/gallery') {
+    $('#main-menu, #mobile-header, #footer').addClass('gallery');
   }
 });

@@ -3,8 +3,12 @@
     background: image-url('bkg.jpg');
   }
 
-  &.speakers {
+  &.speakers, &.gallery {
     background: #dcddcc;
+
+    #magma-logo {
+      background: image-url('logo-magma.svg') no-repeat;
+    }
   }
 
   &.about-magma {
@@ -22,12 +26,6 @@
   &.about-magma, &.policies {
     #magma-logo {
       background: image-url('logo-magma-brown.svg') no-repeat;
-    }
-  }
-
-  &.speakers {
-    #magma-logo {
-      background: image-url('logo-magma.svg') no-repeat;
     }
   }
 }
@@ -116,7 +114,7 @@
     }
   }
 
-  &.speakers {
+  &.speakers, &.gallery {
     .link {
       border-right: 1px solid #6c5a53;
 
