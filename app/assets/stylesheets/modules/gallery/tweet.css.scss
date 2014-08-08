@@ -1,6 +1,9 @@
 .tweet {
   background: white;
   min-height: 150px;
+  -webkit-box-shadow: inset -1px 1px 0px 0px #eee;
+  -moz-box-shadow: inset -1px 1px 0px 0px #eee;
+  box-shadow: inset -1px 1px 0px 0px #eee;
 }
 
 .tweet-avatar {
@@ -82,14 +85,14 @@
   display: inline-block;
   position: absolute;
   right: 10px;
-  top: 10px;
+  top: 20px;
 
   @include mq-mobile(){
     position: relative;
     display: block;
     right: 0;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px;
   }
 }
 
