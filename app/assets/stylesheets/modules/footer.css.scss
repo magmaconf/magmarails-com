@@ -15,18 +15,11 @@
     }
   }
 
-  &.schedule {
-    background: #D8D6C5;
-  }
   &.about-magma {
     background: #382e2c;
   }
 
-  &.getting-manzanillo {
-    background: #EDEEE6;
-  }
-
-  &.schedule, &.about-magma, &.getting-manzanillo {
+  &.about-magma {
     .anti  h3, .footer-legend p {
       color: #fff;
     }
@@ -38,6 +31,18 @@
       &:hover {
         background: #90806b;
       }
+    }
+  }
+
+  &.speakers {
+    background: #dcddcc;
+
+    .anti  h3, .footer-legend p {
+      color: #5f514c;
+    }
+
+    .footer-legend a {
+      color: #000;
     }
   }
 

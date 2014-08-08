@@ -1,0 +1,688 @@
+#sponsoring {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 70px;
+
+  .illustration {
+    max-width: none;
+    position: relative;
+    left: -90px;
+    bottom: 45px;
+  }
+
+  .box {
+    @include rounded(135px);
+    background-color: #50433d;
+    border: 3px solid #695b52;
+    margin: 30px auto;
+
+    span {
+      color: #e2e1d5;
+      display: block;
+      font-family: oswald;
+      font-size: 155%;
+      font-weight: 300;
+      letter-spacing: 1px;
+      line-height: 25px;
+      position: relative;
+      text-align: center;
+    }
+  }
+
+  .medium-sponsor {
+    @include box-shadow(0, 0, 0, 7px, #50433d);
+    height: 200px;
+    width: 200px;
+    span {
+      padding: 88px 60px;
+      width: 81px;
+    }
+    .message {
+      padding: 74px 16px;
+      width: 168px;
+    }
+  }
+
+  .big-sponsor {
+    @include box-shadow(0, 0, 0, 10px, #50433d);
+    height: 238px;
+    width: 238px;
+  }
+
+  .normal {
+    @include box-shadow(0, 0, 0, 7px, #50433d);
+    height: 148px;
+    width: 148px;
+
+    span {
+      top: 60px;
+      width: 149px;
+    }
+  }
+  #crowdint {
+    @include sponsor-image(85%, 76px, 18px);
+  }
+  #onelogin {
+    @include sponsor-image(75%, 96px, 35px);
+  }
+  #github {
+    @include sponsor-image(60%, 56px, 48px);
+  }
+  #honey-badger {
+    @include sponsor-image(90%, 0px, 6px);
+    margin-top: -10px;
+  }
+  #engine {
+    @include sponsor-image(80%, 61px, 15px);
+  }
+  #rackspace {
+    @include sponsor-image(90%, 52px, 7px);
+  }
+  #toptal {
+    @include sponsor-image(75%, 76px, 25px);
+  }
+  #travis-ci {
+    @include sponsor-image(65%, 44px, 35px);
+  }
+  #sponsoring-advice {
+    span {
+      display: block;
+      font-family: oswald;
+      font-weight: 700;
+      text-align: center;
+      color: #fff;
+      line-height: 120px;
+    }
+
+    .big {
+      font-size: 10em;
+    }
+
+    .medium {
+      font-size: 6em;
+    }
+
+    .small {
+      line-height: 38px;
+      color: #ada193;
+      font-weight: 300;
+      font-size: 187.5%;
+      height: 40px;
+      width: 174px;
+      margin: 0 auto 25px auto;
+      border-bottom: 3px solid #675851;
+    }
+  }
+
+  #sponsors {
+    margin-top: 30px;
+  }
+
+  .mail-button {
+    margin: 40px auto;
+    text-align: center;
+    width: 200px;
+    .shadow {
+      position: absolute;
+      left: 50%;
+      margin-left: -86px;
+      margin-top: 20px;
+    }
+    .btn-register {
+      cursor: pointer;
+    }
+  }
+
+  #contact-form {
+    background: #fff;
+    min-height: 330px;
+    display: none;
+    &::before{
+      content: '';
+      display: block;
+      height: 0px;
+      border-color: #312926 transparent transparent;
+      border-style: solid;
+      border-width: 16px 16px 0 16px;
+      position: relative;
+      margin: 0 auto;
+      width: 0px;
+    }
+    .title {
+      border-bottom: 1px solid #B7B3AF;
+      height: 24px;
+      margin: 30px auto 5px;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      max-width: 1170px;
+      span {
+        font-family: oswald;
+        font-size: 150%;
+        font-weight: 400;
+      }
+    }
+    .cancel-button {
+      color: #2eb5b3;
+      float: right;
+      font-size: 100%;
+      width: 89px;
+      img {
+        margin-left: 6px;
+      }
+    }
+    .form-container {
+      margin: 0 auto;
+      max-width: 1170px;
+      min-height: 90px;
+      padding-top: 47px;
+      fieldset {
+        border: none;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .field {
+        display: inline-table;
+        margin-right: 30px;
+        input {
+          height: 50px;
+          margin-top: 16px;
+          padding-left: 10px;
+          width: 260px;
+        }
+      }
+      .submit {
+        font-size: 150%;
+        height: 50px;
+        letter-spacing: 1px;
+        margin-top: 41px;
+        width: 170px;
+      }
+    }
+  }
+  #message-box {
+    max-width: 1080px;
+    height: 30px;
+    margin: -30px auto 30px;
+    border-radius: 4px;
+    padding: 10px 0px 0px 10px;
+    display: none;
+    &.success {
+      background-color: #dff0d8;
+      border: 2px solid #d6e9c6;
+      color: #3c763d;
+      display: block;
+      .close {
+        color: #BED3B8;
+        &:hover {
+          color: #3c763d;
+        }
+      }
+    }
+    &.error {
+      background-color: #f2dede;
+      border-color: #ebccd1;
+      color: #a94442;
+      display: block;
+      .close {
+        color: #CCB7B9;
+        &:hover {
+          color: #a94442;
+        }
+      }
+    }
+    .close {
+      float: right;
+      margin-right: 10px;
+      background: transparent;
+      cursor: pointer;
+    }
+  }
+
+  .btn-register {
+    &.small {
+      height: 100px;
+      margin-top: 42px;
+      padding: 12px 16px;
+      width: 100px;
+
+      img {
+        height: 71px;
+      }
+    }
+
+    img {
+      height: 99px;
+    }
+  }
+
+  .heading {
+    font-size: 28px;
+    height: 190px;
+    text-align: center;
+    text-transform: uppercase;
+    .invitation {
+      border-bottom: 2px solid #b4a898;
+      margin: 25px auto 0 auto;
+      display: inline-block;
+    }
+
+    .title {
+      margin: 0;
+      color: #706159;
+      display: inline-block;
+      font-family: oswald;
+      font-weight: 300;
+      line-height: 36px;
+    }
+
+    .advice {
+      display: inline-block;
+      color: #fff;
+      font-weight: 400;
+      height: 28px;
+      margin: 50px 0 0 0;
+    }
+
+    .date {
+      text-align: center
+    }
+
+    .location {
+      color: #706159;
+      display: inline-block;
+      font-size: 60%;
+      font-weight: 300;
+      text-align: center;
+      max-width: 230px;
+      margin: 0 auto;
+    }
+
+    .star {
+      display: inline-block;
+      height: 14px;
+      width: 14px;
+      background: image_url('star.png');
+      background-size: 15px;
+    }
+  }
+}
+
+#media-sponsors {
+  background: #3c322e;
+  border-bottom: 5px solid #695b52;
+  border-top: 5px solid #695b52;
+  -webkit-box-shadow: 0 0 0 7px #3c322e;
+  -moz-box-shadow: 0 0 0 7px #50433d;
+  box-shadow: 0 0 0 7px #3c322e;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  ul { height: 105px; }
+  .media-sponsor {
+    display: table;
+    height: 100%;
+  }
+  .center {
+    display: table-cell;
+    vertical-align: middle;
+    width: 85%;
+    img {
+      position: relative;
+      vertical-align: middle;
+    }
+  }
+  #code-climate { top: 5px; }
+  .title {
+    color: #959288;
+    display: table-cell;
+    font-size: 22px;
+    font-family: oswald;
+    height: 105px;
+    text-align: center;
+    vertical-align: middle;
+    width: 200px;
+  }
+  #software-guru {
+    top: 3px;
+    width: 70%;
+  }
+  #sydemex { top: 4px; }
+  #jet-brains {
+    top: 5px;
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #sponsoring {
+    padding-top: 90px;
+    .heading {
+      font-size: 26px;
+    }
+
+    .big-sponsor {
+      height: 220px;
+      width: 220px;
+
+      .sponsor-link {
+        height: 220px;
+      }
+
+      #crowdint {
+        padding: 68px 17px;
+      }
+
+      #onelogin {
+        padding: 86px 27px;
+      }
+
+      #github{
+        padding: 52px 44px;
+      }
+    }
+    .normal {
+      top: 40px;
+      width: 105px;
+      height: 105px;
+
+      #honey-badger {
+        padding: 5px;
+      }
+
+      #engine {
+        padding: 43px 10px;
+      }
+
+      #rackspace {
+        padding: 38px 5px;
+      }
+      span {
+        top: 40px;
+        width: 100px;
+      }
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 916px) and (max-width: 1024px) {
+  #media-sponsors {
+    .title {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 915px) {
+
+  #sponsoring {
+    padding-top: 100px;
+    .medium-sponsor {
+      height: 165px;
+      width: 165px;
+      span {
+        padding: 70px 43px;
+      }
+      .message {
+        padding: 57px 11px;
+        width: 143px;
+      }
+    }
+    .illustration {
+      left: -130px;
+    }
+    #toptal {
+      padding: 62px 21px;
+    }
+    #travis-ci {
+      padding: 35px 29px;
+    }
+  }
+
+  #media-sponsors {
+    height: 95px;
+    .title { font-size: 16px; }
+    ul, .title { height: 95px; }
+    #code-climate { top: 3px; }
+  }
+}
+
+@media screen and (min-width: 560px) and (max-width: 767px) {
+  #sponsoring {
+    #medium-sponsors .pure-u-1-4 {
+      width: 25%;
+    }
+  }
+  #media-sponsors {
+    .center img { width: 20%; }
+    #jet-brains { width: 18%; }
+    #women-who-code { width: 15%; }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  #sponsoring {
+    .illustration {
+      display: none;
+    }
+
+    .btn-register.small {
+      display: none !important;
+    }
+
+    .heading {
+      &:first-child {
+        height: 0;
+      }
+    }
+
+    .invitation {
+      margin: -15px auto 0 !important;
+
+      .advice {
+        margin: 0;
+      }
+    }
+
+    .btn-register img {
+      height: 84px;
+    }
+
+    #sponsors {
+      margin-top: 60px;
+      div {
+        width: 33.3333%;
+      }
+
+      .big-sponsor {
+        height: 135px;
+        margin: 10px auto;
+        width: 135px;
+        @include box-shadow(0, 0, 0, 5px, #50433d);
+
+        .sponsor-link {
+          height: 135px;
+        }
+
+        span {
+          font-size: 130%;
+          left: 6px;
+          top: 45px;
+          width: 120px;
+        }
+
+        #crowdint {
+          padding: 43px 10px;
+        }
+
+        #github {
+          padding: 32px 27px;;
+        }
+
+        #onelogin {
+          padding: 53px 17px;
+        }
+      }
+    }
+
+    #silver-sponsors {
+      margin-bottom: 175px;
+      & .pure-u-1-6:last-child, #contact {
+        display: none;
+      }
+
+      .pure-u-1-6 {
+        width: 33.33%;
+
+        .normal {
+          height: 85px;
+          margin: 10px auto;
+          width: 85px;
+          @include box-shadow(0, 0, 0, 5px, #50433d);
+
+          span {
+            font-size: 130%;
+            top: 35px;
+            width: 86px;
+          }
+
+          #honey-badger {
+            padding: 5px 4px;
+          }
+
+          #engine {
+            padding: 35px 9px;
+          }
+
+          #rackspace {
+            padding: 31px 4px;
+          }
+        }
+      }
+
+      #btn-contact {
+        display: block;
+        position: absolute;
+        left: 50%;
+        width: 170px;
+        margin: 130px 0 0 -85px;
+
+        .mail-button {
+          margin: 0;
+          width: 170px;
+
+          .shadow {
+            margin-left: -66px;
+            margin-top: 9px;
+            height: 132px;
+          }
+
+          a {
+            height: 110px;
+            padding: 10px 18px;
+            width: 110px;
+          }
+        }
+      }
+    }
+    .medium-sponsor {
+      height: 110px;
+      margin: 15px auto;
+      width: 110px;
+      span {
+        padding: 45px 18px;
+        &.hide {
+          display: none;
+        }
+      }
+      .message {
+        display: block;
+        font-size: 17px;
+        padding: 25px 4px 10px;
+        width: 103px;
+      }
+    }
+    #toptal {
+      padding: 42px 14px;
+    }
+    #travis-ci {
+      padding: 23px 19px;
+    }
+    #contact-form {
+      margin-top: 155px;
+      .title span {
+        margin-left: 15px;
+      }
+
+      #contact {
+        margin-left: 15px;
+
+        input {
+          margin-top: 0;
+          margin-bottom: 15px;
+        }
+
+        .submit {
+          display: block;
+          float: none;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+  #media-sponsors {
+    height: auto;
+    .media-sponsor {
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+    }
+    .spacer, .media-sponsor { padding: 10px 0; }
+    .center {
+      width: 26%;
+      img { display: inline; }
+    }
+    #software-guru { width: 12%; }
+    ul { height: auto; padding: 0; }
+    .title {
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      padding-bottom: 10px;
+      width: 160px;
+    }
+  }
+}
+
+@media screen and (max-width: 559px) {
+  #sponsoring {
+    #medium-sponsors .pure-u-1-4 {
+      width: 50%;
+    }
+    #sponsors {
+      padding-top: 181px;
+      .top-sponsor {
+        position: absolute;
+        top: 151px;
+        width: 100%;
+        left: 0;
+      }
+      div {
+        width: 50%;
+      }
+    }
+  }
+  #media-sponsors {
+    .center {
+      width: 40%;
+      img { width: 35%; }
+    }
+    #software-guru { width: 18%; }
+    #women-who-code { width: 23%; }
+    #jet-brains { width: 30%; }
+  }
+}
+

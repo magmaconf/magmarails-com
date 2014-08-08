@@ -1,0 +1,97 @@
+%section#speakers
+  #presentation.pure-g-r.content
+    .pure-u-1-4.illustration
+      %img{ src: "#{ image_path 'reylero-podium.png' }" }
+    .pure-u-1-2
+      .invitation
+        %p.advice= t('speakers.advice')
+        %p.title= t('speakers.title')
+      .date
+        %span.star
+        %p.location= t('date')
+        %span.star
+    .pure-u-1-4
+      .blog-button
+        %a.btn-register.small{ href: 'http://blog.magmaconf.com/', target: '_blank' }
+          =image_tag 'live-blogging.svg'
+        =image_tag 'shadow.png', class: 'shadow'
+%section#keynotes
+  .pure-g-r.content
+    .pure-u-1.center
+      =image_tag 'keynotes-heading.png'
+  .pure-g-r.content
+    = render 'partials/speaker_card', locals: { name: 'Sandi Metz', img: 'sandy.png', twitter: '@sandimetz', bio: t('keynotes.sandi.bio'), talk: '100 miles of hill' }
+    = render 'partials/speaker_mobile', locals: { name: 'Sandi Metz', img: 'sandy.png', bio: t('keynotes.sandi.bio') }
+
+    = render 'partials/speaker_card',
+        locals: { name: 'Fred George', img: 'fred-george.png', twitter: '@fgeorge52', bio: t('keynotes.fred.bio'), talk: 'Enabling Emergent Technologies', class: 'download', link: 'https://drive.google.com/a/crowdint.com/file/d/0B_D9sZv8SMx6eGY2aXRfTlkzS1YtQ0o0bTJFVS1mVHFqYkRn/edit?usp=sharing' }
+    = render 'partials/speaker_mobile', locals: { name: 'Fred George', img: 'fred-george.png', bio: t('keynotes.fred.bio') }
+
+    = render 'partials/speaker_card', locals: { name: 'Desi McAdam', img: 'desi-mcadam.png', twitter: '@desi', bio: t('keynotes.desi.bio'), talk: 'Influence' }
+    = render 'partials/speaker_mobile', locals: {name: 'Desi McAdam', img: 'desi-mcadam.png', bio: t('keynotes.desi.bio') }
+
+%section#speaker-cards
+  .pure-g-r.content.speakers-title
+    .pure-u-1.center
+      %img{src: "#{image_path t('images.speakers-title')}"}
+  .pure-g-r.content
+    = render 'partials/speaker_card', locals: { img: 'david-mayer.png', name: 'David Meyer', twitter: '@meyerwork', bio: t('speakers.david-mayer.bio'), talk: 'Beyond pushing code: how to optimize your career' }
+    = render 'partials/speaker_mobile', locals: { img: 'david-mayer.png', name: 'David Meyer', bio: t('speakers.david-mayer.bio') }
+
+    = render 'partials/speaker_card', locals: { img: 'joe-wright.png', name: 'Joe Wright', twitter: '@joe_jag', bio: t('speakers.joe.bio'), talk: 'Are we really engineers?' }
+    = render 'partials/speaker_mobile', locals: { img: 'joe-wright.png', name: 'Joe Wright', bio: t('speakers.joe.bio') }
+
+    = render 'partials/speaker_card', locals: { img: 'konstantin.png', name: 'Konstantin Haase', twitter: '@konstantinhaase', bio: t('speakers.konstantin.bio'), talk: 'Death to cookies' }
+    = render 'partials/speaker_mobile', locals: { img: 'konstantin.png', name: 'Konstantin Haase', bio: t('speakers.konstantin.bio') }
+
+    = render 'partials/speaker_card', locals: { img: 'blake.png', name: 'Blake Mizerany', twitter: '@bmizerany', bio: t('speakers.blake.bio'), talk: 'Logfmt - Productive logging through simple formatting' }
+    = render 'partials/speaker_mobile', locals: { img: 'blake.png', name: 'Blake Mizerany', bio: t('speakers.blake.bio') }
+
+    = render 'partials/speaker_card', locals: { img: 'daniel-rios.png', name: 'Daniel Ríos', twitter: '@ieldanr', bio: t('speakers.daniel.bio'), talk: 'Intro to computer vision, machine learning and genetic algorithms', class: 'download' }
+    = render 'partials/speaker_mobile', locals: { img: 'daniel-rios.png', name: 'Daniel Ríos', bio: t('speakers.daniel.bio') }
+
+    = render 'partials/speaker_card', locals: { img: 'nick.png', name: 'Nick Rowe', twitter: '@nixterrimus', bio: t('speakers.nick.bio'), talk: 'Bullet Trains: Performance tunning rails' }
+    = render 'partials/speaker_mobile', locals: { img: 'nick.png', name: 'Nick Rowe', bio: t('speakers.nick.bio') }
+
+    = render 'partials/speaker_card', locals: { img: 'david-calavera.png', name: 'David Calavera', twitter: '@calavera', bio: t('speakers.david.bio'), talk: "Github enterprise' toolchain" }
+    = render 'partials/speaker_mobile', locals: { img: 'david-calavera.png', name: 'David Calavera', bio: t('speakers.david.bio') }
+
+    = render 'partials/speaker_card', locals: { img: 'mark-kirk.png', name: 'Matt Kirk', twitter: '@mjkirk', bio: t('speakers.matthew.bio'), talk: 'Sentiment Analysis using support vector machines in ruby' }
+    = render 'partials/speaker_mobile', locals: { img: 'mark-kirk.png', name: 'Matt Kirk', bio: t('speakers.matthew.bio') }
+
+    = render 'partials/speaker_card', locals: { img: 'johnny-winn.png', name: 'Johnny Winn', twitter: '@johnny_rugger', bio: t('speakers.johnny.bio'), talk: 'elixir - ruby, a pattern matching' }
+    = render 'partials/speaker_mobile', locals: { img: 'johnny-winn.png', name: 'Johnny Winn', bio: t('speakers.johnny.bio') }
+
+    = render 'partials/speaker_card',
+        locals: { img: 'andre-arko.png', name: 'André Arko', twitter: '@indirect', bio: t('speakers.andre.bio'), talk: 'Software icebergs: development was the easy part', class: 'download', link: ' https://speakerdeck.com/indirect/development-was-the-easy-part-magmaconf-2014' }
+    = render 'partials/speaker_mobile', locals: { img: 'andre-arko.png', name: 'André Arko', bio: t('speakers.andre.bio') }
+
+    = render 'partials/speaker_card', locals: { img: 'jesse-thoth.png', name: 'Jesse Toth', twitter: '@jesseplusplus', bio: t('speakers.jesse.bio'), talk: 'Rewriting critical parts of your application using... science!' }
+    = render 'partials/speaker_mobile', locals: { img: 'jesse-thoth.png', name: 'Jesse Toth', bio: t('speakers.jesse.bio') }
+
+    = render 'partials/speaker_card', locals: { img: 'zachary-scott.png', name: 'Zachary Scott', twitter: '@_zzak', bio: t('speakers.zachary.bio'), talk: 'Standing on the shoulders of giants' }
+    = render 'partials/speaker_mobile', locals: { img: 'zachary-scott.png', name: 'zachary scott', bio: t('speakers.zachary.bio') }
+
+    = render 'partials/speaker_card',
+      locals: { img: 'pj.png', name: 'PJ Hagerty', twitter: '@aspleenic', bio: t('speakers.pj.bio'), talk: 'Urban Legends: What you code makes you who you are', class: 'download', link: 'https://drive.google.com/a/crowdint.com/file/d/0B_D9sZv8SMx6NU81NjNIallYM2dCZFlra1gtMmE3bGpzM3dV/edit?usp=sharing' }
+    = render 'partials/speaker_mobile', locals: { img: 'pj.png', name: 'PJ Hagerty', bio: t('speakers.pj.bio') }
+
+    = render 'partials/speaker_card',
+      locals: { img: 'leo-salazar.png', name: 'Leo Salazar', twitter: '@leonor_salazar', bio: t('speakers.leo.bio'), talk: 'Refactoring Education', class: 'download', link: 'https://drive.google.com/a/crowdint.com/file/d/0B_D9sZv8SMx6WnMwMlY4Zkk5RVk/edit?usp=sharing' }
+    = render 'partials/speaker_mobile', locals: { img: 'leo-salazar.png', name: 'Leo Salazar', bio: t('speakers.leo.bio') }
+
+    = render 'partials/speaker_card', locals: { img: 'adam-rogers.png', name: 'Adam Rogers', twitter: '@rodreegez', bio: t('speakers.adam.bio'), talk: 'How to Win Designers and Influence Developers' }
+    = render 'partials/speaker_mobile', locals: { img: 'adam-rogers.png', name: 'Adam Rogers', bio: t('speakers.adam.bio') }
+
+    = render 'partials/speaker_card', locals: { img: 'Alex-Pyatetsky.png', name: 'Alex Pyatetsky', twitter: '@TheXander', bio: t('speakers.alex.bio'), talk: "Why MVP isn't enough. Minimum Viable Organization - The Best Predictor of startup success" }
+    = render 'partials/speaker_mobile', locals: { img: 'Alex-Pyatetsky.png', name: 'Alex Pyatetsky', bio: t('speakers.alex.bio') }
+
+    = render 'partials/speaker_card', locals: { img: 'manuel-vidaurre.png', name: 'Manuel Vidaurre', twitter: '@mvidaurre', bio: t('speakers.manuel.bio'), talk: "Let’s get ready to rumbleeeeeee: MV* stack VS Rails 4 omakase" }
+    = render 'partials/speaker_mobile', locals: { img: 'manuel-vidaurre.png', name: 'Manuel Vidaurre', bio: t('speakers.manuel.bio') }
+
+    = render 'partials/speaker_card', locals: { img: 'richard-schneeman.png', name: 'Richard Schneeman', twitter: '@schneems', bio: t('speakers.richard.bio'), talk: 'The Good Rubyist Challange', class: 'download', link: 'https://speakerdeck.com/schneems/the-good-rubyist-challenge'}
+    = render 'partials/speaker_mobile', locals: { img: 'richard-schneeman.png', name: 'Richard Schneeman', bio: t('speakers.richard.bio') }
+
+  .pure-g-r.content
+    .pure-u-1-1
+      = render 'partials/social_buttons'

@@ -4,22 +4,14 @@
   }
 
   &.speakers {
-    background: #413531;
+    background: #dcddcc;
   }
 
   &.about-magma {
     background: #382e2c;
   }
 
-  &.getting-manzanillo {
-    background: #EDEEE6;
-  }
-
-  &.schedule {
-    background: #D8D6C5;
-  }
-
-  &.sponsoring {
+  &.sponsors {
     background: #312926;
   }
 
@@ -27,9 +19,15 @@
     background: #fff;
   }
 
-  &.getting-manzanillo, &.schedule, &.about-magma, &.policies {
+  &.about-magma, &.policies {
     #magma-logo {
       background: image-url('logo-magma-brown.svg') no-repeat;
+    }
+  }
+
+  &.speakers {
+    #magma-logo {
+      background: image-url('logo-magma.svg') no-repeat;
     }
   }
 }
@@ -52,22 +50,6 @@
     height: 37px;
     margin: 0 auto;
     width: 105px;
-  }
-
-  #getting-to-manzanillo {
-    background: transparent;
-
-    &:after {
-      display: none;
-      content: 'GETTING TO MAGMA';
-    }
-
-    &.active:after {
-      border-bottom: 2px solid #fff;
-      color: #fff;
-    }
-    &:hover:after {color: #fff;}
-    &:hover {cursor: pointer;}
   }
 
   .without-border {
@@ -115,7 +97,7 @@
     }
   }
 
-  &.getting-manzanillo, &.schedule, &.about-magma, &.policies {
+  &.about-magma, &.policies {
     .link {
       border-right: 1px solid #ada193;
       &:hover:after {color: #fff;}
@@ -132,15 +114,33 @@
     .without-border {
       border-right: 0;
     }
+  }
 
-    #getting-to-manzanillo {
-      &.active:after {
+  &.speakers {
+    .link {
+      border-right: 1px solid #6c5a53;
 
-        border-bottom: 2px solid #000;
-        color: #000;
+      &:hover:after { color: #000;}
+
+      a, span, &:after {
+        color:  #6c5a53;
+
+        &:hover, &.active {
+          color: #000;
+        }
+
+        &.active {
+          border-bottom: 2px solid #000;
+        }
       }
     }
+
+    .without-border {
+      border-right: 0;
+    }
   }
+
+
 }
 
 
@@ -149,6 +149,7 @@
   #btn-menu, #btn-mobile-header {
     padding: 14px 28px 5px 15px;
     top: 3px;
+
     span {
       background-color: #6c6259;
       display: block;
@@ -165,7 +166,7 @@
     width: 100%;
     z-index: 1003;
 
-    &.getting-manzanillo, &.schedule, &.about-magma {
+    &.about-magma, &.speakers {
       .link {
         color: #6c5a53;
       }
@@ -185,12 +186,13 @@
     #btn-mobile-header {
       display: inline-table;
       padding: 15px 5px 5px 15px;
+
       span {
         background-color: #ada193;
       }
     }
-
   }
+
   #menu {
     display: block;
     left: 42px;
