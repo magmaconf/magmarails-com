@@ -34,8 +34,8 @@
     height: 200px;
     width: 200px;
     span {
-      padding: 88px 60px;
-      width: 81px;
+      padding: 88px 50px;
+      width: 100px;
     }
     .message {
       padding: 74px 16px;
@@ -423,7 +423,7 @@
       height: 165px;
       width: 165px;
       span {
-        padding: 70px 43px;
+        padding: 70px 33px;
       }
       .message {
         padding: 57px 11px;
@@ -593,7 +593,7 @@
       margin: 15px auto;
       width: 110px;
       span {
-        padding: 45px 18px;
+        padding: 45px 8px;
         &.hide {
           display: none;
         }
