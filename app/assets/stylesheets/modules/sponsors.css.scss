@@ -338,7 +338,7 @@
     display: table-cell;
     font-size: 22px;
     font-family: oswald;
-    height: 105px;
+    height: 133px;
     text-align: center;
     vertical-align: middle;
     width: 200px;
@@ -446,6 +446,7 @@
     .title { font-size: 16px; }
     ul, .title { height: 95px; }
     #code-climate { top: 3px; }
+    ul { margin: 0 }
   }
 }
 

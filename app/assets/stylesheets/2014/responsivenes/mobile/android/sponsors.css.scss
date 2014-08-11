@@ -195,7 +195,10 @@
       img { display: inline; }
     }
     #software-guru { width: 12%; }
-    ul { height: auto; }
+    ul {
+      height: auto;
+      margin: 10px 0;
+    }
     .title {
       display: block;
       height: auto;
