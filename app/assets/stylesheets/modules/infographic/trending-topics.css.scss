@@ -103,6 +103,12 @@
         margin: 44px auto 21px;
       }
     }
+
+    @include mq(320px) {
+      &:before {
+        margin-left: -15px;
+      }
+    }
   }
 
   @include mq-info {
@@ -132,6 +138,13 @@
     @include mq-info {
       &:before {
         margin: 20px auto 21px;
+      }
+    }
+
+    @include mq(320px) {
+      &:before {
+        width: 190px;
+        margin-left: -35px;
       }
     }
   }

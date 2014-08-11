@@ -34,8 +34,8 @@
     height: 200px;
     width: 200px;
     span {
-      padding: 88px 60px;
-      width: 81px;
+      padding: 88px 50px;
+      width: 100px;
     }
     .message {
       padding: 74px 16px;
@@ -338,7 +338,7 @@
     display: table-cell;
     font-size: 22px;
     font-family: oswald;
-    height: 105px;
+    height: 133px;
     text-align: center;
     vertical-align: middle;
     width: 200px;
@@ -423,7 +423,7 @@
       height: 165px;
       width: 165px;
       span {
-        padding: 70px 43px;
+        padding: 70px 33px;
       }
       .message {
         padding: 57px 11px;
@@ -446,6 +446,7 @@
     .title { font-size: 16px; }
     ul, .title { height: 95px; }
     #code-climate { top: 3px; }
+    ul { margin: 0 }
   }
 }
 
@@ -593,7 +594,7 @@
       margin: 15px auto;
       width: 110px;
       span {
-        padding: 45px 18px;
+        padding: 45px 8px;
         &.hide {
           display: none;
         }

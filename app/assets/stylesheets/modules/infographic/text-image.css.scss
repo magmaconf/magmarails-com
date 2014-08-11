@@ -89,6 +89,10 @@
     position: relative;
     top: 0;
   }
+
+  @include mq(320px) {
+    padding: 0;
+  }
 }
 
 .is-only-desktop {

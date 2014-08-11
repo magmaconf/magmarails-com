@@ -114,13 +114,13 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #newsletter {
-
     section {
-      height: 150px;
+      height: 200px;
 
       .banner {
-        top: -26px;
-        width: 431px;
+        top: -19px;
+        width: 320px;
+        display: none;
       }
     }
 
@@ -146,27 +146,43 @@
       padding-bottom: 3px;
     }
 
+    p {
+      width: 700px;
+      bottom: 0;
+      left: 50%;
+      top: 25px;
+      margin-left: -350px;
+    }
+
     .form-container {
-      bottom: 180px;
+      bottom: 0;
       float: none;
-      left: 34%;
+      left: 50%;
       margin-right: 0;
       padding-top: 5px;
+      top: 45px;
+      width: 700px;
+      margin-left: -350px;
 
       label {
         font-size: 100%;
+
+        &.error { font-size: 80%; }
       }
 
-      .field input {
-        height: 25px;
-        margin-top: 2px;
+      .field {
+        input {
+          height: 25px;
+          margin-top: 2px;
+        }
       }
 
       .submit {
         height: 30px;
-        margin-top: 21px;
+        margin-top: 23px;
       }
     }
+
   }
 }
 

@@ -317,7 +317,10 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-  ul { height: 105px; }
+  ul {
+    height: 105px;
+    margin: 0;
+  }
   .media-sponsor {
     display: table;
     height: 100%;
