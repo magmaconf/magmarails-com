@@ -1,5 +1,4 @@
 #main-section {
-  background: url(/assets/bkg.jpg) no-repeat;
   background-position: 0 -198px;
   padding: 44px 0;
 
@@ -24,7 +23,7 @@
       }
 
       .over {
-        color: #7d7164;
+        color: #fff3cc;
         display: block;
         font-size: 165%;
         font-family: oswald;
@@ -38,6 +37,62 @@
           max-width: 230px;
         }
 
+        .hero-text{
+          font-family: 'Teko', sans-serif;
+          font-size: 61px;
+          line-height: 50px;
+          font-weight: 400;
+        }
+
+        .dates-text{
+          font-family: 'Teko', sans-serif;
+          font-size: 28px;
+          line-height: 20px;
+          font-weight: 100;
+        }
+
+        .content-text {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 10px;
+          color: white;
+          display: block;
+          line-height: 13px;
+
+          &.highlight {
+            font-weight: bold;
+          }
+        }
+
+        .keynote-text,
+        .keynote-text2 {
+          font-size: 24px;
+          color: #792323;
+
+          .star {
+            width: 20px;
+          }
+        }
+
+        .keynote-text3 {
+          font-size: 16px;
+          color: #792323;
+        }
+
+        .join-text {
+          font-family: 'Teko', sans-serif;
+          font-size: 20px;
+          color: white;
+        }
+
+        .tuned-text {
+          font-family: 'Open Sans', sans-serif;
+          color: white;
+          font-sie: 12px;
+
+          &.highlight {
+            font-weight: 600;
+          }
+        }
       }
 
       .over-small { font-size: 120%; }

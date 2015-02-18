@@ -1,5 +1,5 @@
 #newsletter {
-  background-color: #dedbd4;
+  background-color: white;
 
   &.sent {
     .before {
@@ -38,7 +38,7 @@
 
   p {
     bottom: 289px;
-    color: #3f3732;;
+    color: #792222;
     left: 45%;
     line-height: 28px;
     margin: 0;
@@ -47,7 +47,6 @@
     width: 650px;
 
     &.big {
-      border-bottom: 2px solid #b5afa8;
       font-size: 185%;
       padding-bottom: 10px;
     }

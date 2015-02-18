@@ -6,26 +6,26 @@
 }
 
 .icon-facebook {
-  @include footer-icons(10px, -86px);
+  @include footer-icons(10px, -16px);
 
   &:hover {
-    @include footer-icons(10px, -128px);
+    @include footer-icons(10px, -50px);
   }
 }
 
 .icon-twitter {
-  @include footer-icons(-45px, -86px);
+  @include footer-icons(-45px, -16px);
 
   &:hover {
-    @include footer-icons(-45px, -128px);
+    @include footer-icons(-45px, -50px);
   }
 }
 
 .icon-google {
-  @include footer-icons(-101px, -86px);
+  @include footer-icons(-101px, -16px);
 
   &:hover {
-    @include footer-icons(-101px, -128px);
+    @include footer-icons(-101px, -50px);
   }
 }
 

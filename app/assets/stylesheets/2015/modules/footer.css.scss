@@ -15,34 +15,29 @@
     }
   }
 
+  &.schedule {
+    background: #D8D6C5;
+  }
   &.about-magma {
-    background: #382e2c;
+    background: #f2f3ed;
   }
 
-  &.about-magma {
+  &.getting-manzanillo {
+    background: #EDEEE6;
+  }
+
+  &.schedule, &.about-magma, &.getting-manzanillo {
     .anti  h3, .footer-legend p {
-      color: #fff;
+      color: #5f514c
     }
     .footer-legend a {
-      color: #9B8E76;
+      color: #000;
     }
     .social a {
       background: #B0A392;
       &:hover {
         background: #90806b;
       }
-    }
-  }
-
-  &.speakers, &.gallery {
-    background: #dcddcc;
-
-    .anti  h3, .footer-legend p {
-      color: #5f514c;
-    }
-
-    .footer-legend a {
-      color: #000;
     }
   }
 
@@ -87,7 +82,7 @@
   }
 
   #copy-right {
-    border-bottom: 1px solid #a63132;
+    border-bottom: 1px solid #5f514c;
     margin: 15px auto 0;
     max-width: 1127px;
     padding-bottom: 7px;
@@ -108,13 +103,13 @@
       display: inline-block;
       text-transform: uppercase;
       p {
-        color: #a63132;
+        color: #5f514c;
         display: inline;
         font-family: roboto;
         font-size: 12px;
         letter-spacing: 1px;
         &:first-child {
-          border-right: 1px solid #a63132;
+          border-right: 1px solid #4E3F39;
           padding-right: 12px;
         }
         &:last-child {
@@ -150,7 +145,7 @@
   }
   a {
     text-decoration: underline;
-    color: #792222;
+    color: #9B8E76;
 
     &:hover {
       text-decoration: none;
@@ -164,7 +159,7 @@
   text-align: right;
   width: 1030px;
   h3 {
-    color: #792222;
+    color: white;
     font-weight: 200;
     padding-top: 6px;
     font-size: 130%;
@@ -172,75 +167,5 @@
     margin-top: 16px;
     text-align: left;
 
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  #footer {
-    padding: 20px 0 10px;
-
-    #copy-right {
-      a { top: 5px; }
-      .title { max-width: 87%; }
-      &.en .title { margin-top: -18px; }
-    }
-  }
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 915px) {
-  #footer {
-    .anti h3 {
-      font-size: 95%;
-    }
-
-    #copy-right.es {
-      .title {
-        max-width: 85%;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 640px)  {
-
-  #footer{
-    text-align: center;
-    padding-top: 35px;
-
-    #copy-right{
-      border: 0;
-
-      .title{
-        border-top: 1px solid #5f514c;
-        padding-top: 10px;
-        margin: 5px 0 0 !important;
-      }
-    }
-
-    .anti{
-      padding: 0 10px;
-
-      div{
-        float: none;
-        width: 100%;
-      }
-
-      h3{
-        font-size: 110%;
-        margin-bottom: -15px;
-        text-align: center;
-      }
-
-      .footer-legend{
-        margin: 20px 0;
-        text-align: center;
-      }
-    }
-
-    &.index #copy-right {
-      margin: 0;
-      padding: 0;
-    }
   }
 }

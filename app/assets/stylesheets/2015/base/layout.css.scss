@@ -60,14 +60,6 @@ h6 {
   text-transform: uppercase;
 }
 
-fieldset {
-  border: none;
-}
-
-input[type=submit] {
-  border: none;
-}
-
 .a {
   &:hover {
     font-family: Arial;
@@ -116,30 +108,4 @@ input[type=submit] {
   display: none;
 }
 
-.organized-label {
-  clear: both;
-  color: #a02d2e;
-  font-family: 'Teko', sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  margin: 20px auto 5px auto;
-  max-width: 165px;
-  padding: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.crowdint-logo {
-  width: 100px;
-}
-
-#scene {
-  margin: 0;
-}
-
-.eyes {
-  left: 30px;
-}
-
 @include font_face('Block', 'BLOKKNeue-Regular');
-

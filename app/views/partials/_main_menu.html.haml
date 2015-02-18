@@ -1,17 +1,13 @@
 #main-menu.pure-g-r{ class: "#{I18n.locale.to_s}" }
   .pure-u-1-1
     %ul
-      %li.link
-        %a.link-text#about-magma-link{ href: '/about' }= t('menu.about')
       %li.link.without-border
-        %a.link-text#speakers-link{ href: '/speakers' }= t('menu.speakers')
+      %li.link.without-border
       %li#main-section-link.without-border
         %a{href: '/'}
           #magma-logo
-      %li.link
-        %a.link-text#sponsors-link{ href: '/sponsors' }= t('menu.sponsors')
       %li.link.without-border
-        %a.link-text.blog-link{ href: 'http://blog.magmaconf.com/', target: '_blank' }= t('menu.magma_blog')
+      %li.link.without-border
     %a#btn-menu
       %span
       %span
