@@ -31,7 +31,8 @@
 
 .social {
   margin-top: 18px;
-  width: 170px;
+  width: 250px;
+
   a {
     width: 47px;
     height: 32px;
@@ -39,6 +40,8 @@
     float: left;
     background: $social-bkg;
     border-radius: 50%;
+    margin: 0 16px;
+
     &.twitter {
       margin: 0 8% 0;
     }
