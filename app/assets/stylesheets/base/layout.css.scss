@@ -1,8 +1,12 @@
 html, body {
-
-  background: $bkg !important;
+  background-color: black !important;
+  transition: background-color 3s ease;
   font-family: oswald;
   font-size: 14px;
+
+  &.hover {
+    background-color: $bkg !important;
+  }
 
   &::-webkit-scrollbar {
     display: none;
@@ -143,4 +147,3 @@ input[type=submit] {
 }
 
 @include font_face('Block', 'BLOKKNeue-Regular');
-
