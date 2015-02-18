@@ -101,8 +101,19 @@ en:
     sponsors: Sponsors
     contact-us: CONTACT US
     store: STORE
-  title: 'MagmaConf 2014'
+  title: 'MagmaConf 2015'
   home:
+    hero_text: "WE'RE BACK!"
+    dates_text: 'JUNE 18, 19 & 20'
+    content_text: 'WEB/MOBILE DEVELOPMENT'
+    content_text_line2: 'RUBY, RAILS, GO, JAVASCRIPT,'
+    content_text_line3: 'AND MORE!'
+    keynote_text: "2 KEYNOTES"
+    keynote_text_line2: "AWESOME TALKS!"
+    keynote_text_line3: "ROUNDTABLE DISCUSSIONS"
+    join_us_text: 'WANT TO JOIN US?'
+    tuned_text: 'STAY TUNED FOR OUR'
+    tuned_text_line2: 'EARLYBIRD SALE.'
     for: 'for-en.svg'
     cfp: 'cfp-en.svg'
     magma_welcome_dev: MagmaConf welcomes developers, engineers and designers
@@ -123,11 +134,11 @@ en:
     work: 'We have a lot of work to do. Meanwhile please checkout'
     limit_ticket: 'limited to <span>50 tickets</span>'
     footer:
-      organised_by: Event organized by Crowd Interactive © 2014
+      organised_by: Event organized by Crowd Interactive © 2015
       copyright: This site is protected by Copyright under U.S. and International
         law. All rights reserved.
     policy:
-      magma: 'Magma Conf 2014'
+      magma: 'Magma Conf 2015'
       title: 'Anti-Harassment Policy'
       description: 'Magma Conf is designed to be a harassment-free conference
         experience for everyone involved. We basically ask all participants
@@ -178,7 +189,7 @@ en:
     manzanillo: 'Manzanillo'
     cooking: 'is getting ready for the next MagmaConf:'
     happen: 'it will happen from'
-    happen-for: 'June 4th to the 6th, 2014.'
+    happen-for: 'June 18th to the 20th, 2015.'
     manzanillo-text:
       one: 'MagmaConf is an annual Web Development Conference hosted in the beautiful coastal city of Manzanillo, Colima.'
       two: 'MagmaConf gathers designers, developers and entrepreneurs from Mexico and the rest of the world with one objective: to create a solid network of people with similar interests, regardless of their different tech backgrounds.'
