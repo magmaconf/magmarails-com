@@ -144,6 +144,10 @@
 
 @media screen and (max-width: 640px)  {
 
+  #main-section {
+    padding-top: 0;
+  }
+
   #btn-menu, #btn-mobile-header {
     padding: 14px 28px 5px 15px;
     top: 3px;
@@ -160,7 +164,6 @@
   #mobile-header {
     display: block;
     height: 50px;
-    position: fixed;
     width: 100%;
     z-index: 1003;
 
