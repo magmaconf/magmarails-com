@@ -10,8 +10,9 @@
     .social {
       display: none;
     }
+
     #copy-right {
-      padding-top: 20px;
+      //padding-top: 20px;
     }
   }
 
@@ -88,9 +89,11 @@
 
   #copy-right {
     border-bottom: 1px solid #a63132;
-    margin: 15px auto 0;
+    margin: 0 auto 0;
     max-width: 1127px;
     padding-bottom: 7px;
+    font-family: 'Open Sans', sans-serif;
+
     a {
       display: inline-block;
       height: 40px;
@@ -110,7 +113,7 @@
       p {
         color: #a63132;
         display: inline;
-        font-family: roboto;
+        font-family: 'Open Sans', sans-serif;
         font-size: 12px;
         letter-spacing: 1px;
         &:first-child {
@@ -137,11 +140,12 @@
 .footer-legend {
   margin: 15px 10px 15px -25px;
   text-align: left;
+
   p {
     color: #fff;
     display: block;
     font-weight: 200;
-    font-family: roboto;
+    font-family: 'Open Sans', sans-serif;
     font-size: 87.5%;
     line-height: 17px;
     max-width: 704px;
