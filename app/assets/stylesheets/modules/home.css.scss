@@ -75,9 +75,9 @@
 
         .keynote-text,
         .keynote-text2 {
-          font-size: 24px;
+          font-size: 27px;
           color: #792323;
-          line-height: 27px;
+          line-height: 25px;
           font-family: 'Teko', sans-serif;
 
           .star {
@@ -87,7 +87,7 @@
 
         .keynote-text3 {
           font-family: 'Teko', sans-serif;
-          font-size: 16px;
+          font-size: 20px;
           color: #792323;
           display: block;
         }
@@ -98,6 +98,7 @@
           color: white;
           margin-top: 16px;
           display: block;
+          letter-spacing: .5px;
         }
 
         .tuned-text {

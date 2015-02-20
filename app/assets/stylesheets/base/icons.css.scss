@@ -6,26 +6,26 @@
 }
 
 .icon-facebook {
-  @include footer-icons(10px, -16px);
+  @include footer-icons(20px, -8px);
 
   &:hover {
-    @include footer-icons(10px, -50px);
+    @include footer-icons(20px, -83px);
   }
 }
 
 .icon-twitter {
-  @include footer-icons(-45px, -16px);
+  @include footer-icons(-40px, -8px);
 
   &:hover {
-    @include footer-icons(-45px, -50px);
+    @include footer-icons(-40px, -83px);
   }
 }
 
 .icon-google {
-  @include footer-icons(-101px, -16px);
+  @include footer-icons(-101px, -8px);
 
   &:hover {
-    @include footer-icons(-101px, -50px);
+    @include footer-icons(-101px, -83px);
   }
 }
 
@@ -38,14 +38,16 @@
     height: 32px;
     padding-top: 15px;
     float: left;
-    background: $social-bkg;
+    background-color: $social-bkg;
     border-radius: 50%;
+    transition: background-color .5s ease;
 
     &.twitter {
       margin: 0 8% 0;
     }
+
     &:hover {
-      //background: $social-hover;
+      background-color: $social-hover;
     }
   }
 }
