@@ -22,6 +22,19 @@
   }
 }
 
+.encore-button {
+  height: 200px;
+  margin-bottom: 25px;
+}
+
 .btn-call-for-papers img{
   width: 200px;
+  opacity: 1;
+  position: absolute;
+  left: 25%;
+  transition: opacity .5s ease-in-out;
+
+  &.original:hover{
+    opacity: 0;
+  }
 }
