@@ -47,7 +47,9 @@
     text-transform: uppercase;
 
     &:hover {
-      background-color: #ffc200;
+      background-color: white;
+      color: #ee5c5d;
+      border: 2px solid #ee5c5d;
     }
   }
 }

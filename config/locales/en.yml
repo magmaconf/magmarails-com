@@ -114,6 +114,7 @@ en:
     join_us_text: 'WANT TO SPEAK AT MAGMACONF?'
     tuned_text: 'STAY TUNED FOR OUR'
     tuned_text_line2: 'EARLYBIRD SALE.'
+    venue_text: 'MANZANILLO, COL. MX'
     for: 'for-en.svg'
     cfp: 'cfp-en.svg'
     magma_welcome_dev: MagmaConf welcomes developers, engineers and designers
