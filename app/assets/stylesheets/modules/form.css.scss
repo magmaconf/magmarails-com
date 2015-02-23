@@ -45,6 +45,7 @@
     float: right;
     font-weight: 300;
     text-transform: uppercase;
+    transition: all .5s ease;
 
     &:hover {
       background-color: white;
