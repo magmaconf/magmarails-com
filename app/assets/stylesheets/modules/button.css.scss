@@ -25,16 +25,39 @@
 .encore-button {
   height: 200px;
   margin-bottom: 25px;
+  width: 200px;
+  margin: 0 auto;
 }
 
-.btn-call-for-papers img{
-  width: 200px;
-  opacity: 1;
-  position: absolute;
-  left: 25%;
-  transition: opacity .5s ease-in-out;
+.btn-call-for-papers {
+  img {
+    width: 200px;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    transition: opacity .5s ease-in-out;
 
-  &.original:hover{
-    opacity: 0;
+    &.original:hover{
+      opacity: 0;
+    }
   }
 }
+
+
+// @media screen and (min-width: 756px) and (max-width: 830px) {
+//   .btn-call-for-papers img {
+//     left: 35%;
+//   }
+// }
+//
+// @media screen and (min-width: 560px) and (max-width: 756px) {
+//   .btn-call-for-papers img {
+//     left: 35%;
+//   }
+// }
+//
+// @media screen and (min-width: 460px) and (max-width: 559px) {
+//   .btn-call-for-papers img {
+//     left: 30%;
+//   }
+// }
