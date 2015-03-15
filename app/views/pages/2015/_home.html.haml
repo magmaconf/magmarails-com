@@ -3,14 +3,18 @@
     .pure-g-r
       .pure-u-1-3
       .pure-u-1-3.center
-        %img#thanks{src: "#{image_path '2015/Wrestler.svg'}"}
+        %img#thanks{src: "#{image_path '2015/cfp-closed-01magmaconf.svg'}"}
         %p{ class: "#{ I18n.locale.to_s } over over-small" }
+
           %span.separator.separator-big
-          %span.hero-text= t('home.hero_text')
+          %span.hero-text.line1= 'THE CALL FOR'
+          %span.hero-text.line2= 'PAPERS'
+          %span.hero-text.line3= 'IS CLOSED'
+          %span.separator.separator-big
+          %span.venues-text.line1= 'THANKS FOR'
+          %span.venues-text.line2= 'PARTICIPATING'
           %span.separator.separator-big
           %span.dates-text= t('home.dates_text')
-          %span.separator.separator-big
-          %span.venues-text= t('home.venue_text')
           %span.separator.separator-big
 
         %p{ class: "#{ I18n.locale.to_s } over over-small" }
@@ -34,11 +38,11 @@
 
         %p
 
-        = render 'partials/social_buttons'
+        %p{ class: "#{ I18n.locale.to_s } over over-small over-sized" }
+          %span.tuned-text= 'STAY TUNNED'
+          %span.tuned-text.highlight= 'EARLY BIRD SALES COMING SOON!'
 
-        %p{ class: "#{ I18n.locale.to_s } over over-small" }
-          %span.tuned-text= t('home.tuned_text')
-          %span.tuned-text.highlight= t('home.tuned_text_line2')
+        = render 'partials/social_buttons'
 
 #newsletter
   %section
