@@ -23,6 +23,7 @@ gem 'flickraw'
 
 group :development do
   gem 'pry-rails'
+  gem 'quiet_assets'
 end
 
 group :production do
