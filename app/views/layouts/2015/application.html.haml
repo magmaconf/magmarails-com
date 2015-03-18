@@ -2,10 +2,10 @@
 %html
   %head
     = render 'partials/application_header'
-    = stylesheet_link_tag '2015/application', media: "all"
+    = stylesheet_link_tag 'application', media: "all"
     = javascript_include_tag '2015/application'
   %body
-    = render '/pages/2015/partials/main_menu'
+    = render 'pages/2015/partials/main_menu'
     = yield
-  %footer
-    = render 'partials/footer'
+    %footer
+      = render 'partials/footer'
