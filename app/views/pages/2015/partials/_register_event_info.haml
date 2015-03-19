@@ -1,0 +1,27 @@
+%p{ class: "#{ I18n.locale.to_s } over over-small" }
+  %a.btn-register.small{ href: '#' }
+    %span.line1= 'REGISTER'
+    %span.line2= 'NOW'
+
+%p{ class: "#{ I18n.locale.to_s } over over-small" }
+  %span.conference-date
+    = image_tag '2015/Star.svg', class: 'star'
+    %span.dates-text= t('home.dates_text')
+    = image_tag '2015/Star.svg', class: 'star'
+  %span.separator.separator-big
+  %span.sub-content-text.expanded= 'MANZANILLO, COL. MX'
+  %span.separator.separator-big
+
+%p{ class: "#{ I18n.locale.to_s } over over-small" }
+  %span.content-text.highlight= t('home.content_text')
+  %span.content-text= t('home.content_text_line2')
+  %span.content-text= t('home.content_text_line3')
+
+%p.organized-label
+  = t('post_magma.organized_by')
+
+= link_to 'http://crowdint.com' do
+  = image_tag '2015/LogoCrowd1.svg', class: 'crowdint-logo'
+
+= render 'partials/social_buttons'
+
