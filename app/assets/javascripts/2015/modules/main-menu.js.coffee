@@ -35,5 +35,3 @@ $(document).ready ->
   $('#getting-to-manzanillo').click ->
     window.location.href = '/2014/getting'
 
-  $('.social > a').click ->
-    $('.social > a').blur()

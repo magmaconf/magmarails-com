@@ -34,13 +34,15 @@
   width: 170px;
 
   a {
-    width: 47px;
-    height: 32px;
-    padding-top: 15px;
-    float: left;
     background-color: $social-bkg;
     border-radius: 50%;
+    float: left;
+    height: 32px;
+    outline: 0;
+    padding-top: 15px;
     transition: background-color .5s ease;
+    width: 47px;
+
 
     &.twitter {
       margin: 0 8% 0;
