@@ -93,6 +93,36 @@
       margin-bottom: 5px;
       padding: 0;
     }
+
+    &#alternate {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        li {
+          padding: 0 15px;
+        }
+
+      #main-section-link {
+        margin-top: 10px;
+      }
+
+      .pages {
+        a, span {
+          &:hover, &.active {
+            color: $active-link-color;
+          }
+          &.active {
+            font-weight: 500;
+          }
+        }
+      }
+
+      .white-background {
+        background-color: $white;
+        padding: 20px 0 12px;
+      }
+    }
   }
 
   &.about-magma, &.policies {
@@ -137,8 +167,6 @@
       border-right: 0;
     }
   }
-
-
 }
 
 
