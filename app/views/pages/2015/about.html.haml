@@ -1,0 +1,64 @@
+#about-magma{ class: I18n.locale.to_s }
+  .container
+    .pure-g-r
+      .pure-u-8-24.side.center
+        %img#thanks{src: "#{image_path '2015/about-magma-illustration.svg'}"}
+          %p{ class: "#{ I18n.locale.to_s } over over-small" }
+
+            %span.separator.separator-big
+            %span.hero-text.line1= 'THE HOTTEST'
+            %span.hero-text.line2= 'TECH'
+            %span.hero-text.line3= 'CONFERENCE'
+            %span.venues-text.line1= 'IN ALL OF MEXICO'
+            %span.separator.separator-big
+            %span.venues-text= 'EARLY BIRD ENDS NEXT APRIL 13TH'
+
+          = render 'pages/2015/partials/register_event_info'
+
+      .pure-u-16-24.about-content
+        .pure-g-r.section#location
+          .pure-u-1-2.right-info
+            .content-information
+              %p.title= t('about.magmaconf_is_title').html_safe
+              %br
+              %p.description
+                = t('about.magmaconf_description').html_safe
+          #location-carousel.pure-u-1-2.content-image
+            %img{src: "#{image_path 'magmaconf-3.jpg'}" }
+        .pure-g-r.section#venue
+          .pure-u-1-2.right-info
+            .content-information
+              %p.title= t('about.venue').html_safe
+              %br
+              %p.description
+                = t('about.venue_description').html_safe
+          #venue-carousel.pure-u-1-2.content-image
+            %img{src: "#{image_path 'venue-3.jpg'}" }
+        .pure-g-r.section#culture
+          .pure-u-1-2.right-info
+            .content-information
+              %p.title= t('about.culture_activities').html_safe
+              %br
+              %p.description
+                = t('about.culture_description').html_safe
+          #culture-carousel.pure-u-1-2.content-image
+            %img{src: "#{image_path 'culture-2.jpg'}"}
+        .pure-g-r.section#magma-village
+          .pure-u-1-2.right-info
+            .content-information
+              %p.title= t('about.magma_village').html_safe
+              %br
+              %p.description
+                = t('about.magma_village_description').html_safe
+          #magma-village-carousel.pure-u-1-2.right.content-image
+            %img{src: "#{image_path 'village3.jpg'}" }
+
+= javascript_include_tag 'jquery.parallax'
+
+:coffee
+  $(document).ready ->
+    $('#scene').parallax();
+    $('body').addClass('hover');
+    setTimeout ( ->
+      $('#main-menu').addClass('hover');
+    ), 2500

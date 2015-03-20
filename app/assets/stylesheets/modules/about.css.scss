@@ -1,43 +1,241 @@
-.infographic {
-  background-color: #382E2C;
-}
+#about-magma {
+  background-position: 0 -198px;
+  padding: 44px 0 24px 0;
 
-.wrapper {
-  margin: 0 auto;
-  width: 908px;
-
-  @include mq-info {
-    box-sizing: border-box;
-    width: 100%;
-  }
-}
-
-.infographic-heading {
-  margin: 0 auto;
-  padding: 136px 0 110px;
-
-  img {
+  #magma-logo {
+    background: image-url('2015/logo-magma.svg') no-repeat;
+    cursor: pointer;
     display: block;
+    height: 37px;
     margin: 0 auto;
+    width: 105px;
   }
-}
 
-.luchador {
-  height: 308px;
-  position: relative;
+  .container {
 
-  img {
-    left: 50%;
-    margin-left: -67px;
-    margin-top: -91px;
-    position: absolute;
-    top: 50%;
+    .center{
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .side {
+      .social {
+        margin: 20px auto 0 auto;
+        overflow: hidden;
+
+        [class *='icon-'] {
+          padding: 20px 0 0 17px;
+          margin-top: -13px;
+        }
+      }
+
+      .over {
+        color: #fff3cc;
+        display: block;
+        font-size: 165%;
+        font-family: oswald;
+        font-weight: 300;
+        margin: 0 auto;
+        max-width: 250px;
+        padding-bottom: 5px;
+        text-align: center;
+        text-transform: uppercase;
+
+        &.es {
+          max-width: 230px;
+        }
+
+        .hero-text {
+          display: block;
+          font-family: 'Teko', sans-serif;
+          font-size: 70px;
+          line-height: 28px;
+          font-weight: 400;
+          margin: 12px 0 0 0;
+
+          &.line1 {
+            font-size: 50px;
+            padding-bottom: 33px;
+          }
+
+          &.line2 {
+            font-size: 130px;
+            padding-bottom: 23px;
+          }
+
+          &.line3 {
+            font-size: 50px;
+          }
+        }
+
+        .venues-text {
+          font-family: 'Teko', sans-serif;
+          font-size: 21px;
+          line-height: 20px;
+          font-weight: 100;
+          display: block;
+          margin: 8px 0 3px 0;
+          color: white;
+          letter-spacing: .3px;
+
+          &.line1 {
+            font-size: 40px;
+            margin-top: 16px;
+          }
+        }
+
+        .dates-text {
+          font-family: 'Teko', sans-serif;
+          font-size: 32px;
+          line-height: 20px;
+          font-weight: 100;
+          display: block;
+          margin: 13px 0 8px 0;
+        }
+
+        .conference-date {
+          font-size: 27px;
+
+          .dates-text {
+            display: inline-block;
+          }
+
+          .star {
+            width: 15px;
+            height: 25px;
+          }
+        }
+
+        .content-text {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 11px;
+          color: white;
+          display: block;
+          line-height: 13px;
+
+          &.highlight {
+            font-weight: bold;
+            margin: 5px 0 0 0;
+          }
+        }
+
+        .sub-content-text {
+          color: white;
+          display: block;
+          font-family: 'Teko', sans-serif;
+          font-size: 21px;
+          line-height: 30px;
+
+          &.expanded {
+            letter-spacing: 1px;
+            margin-top: 5px;
+          }
+        }
+      }
+
+      .over-small {
+        font-size: 120%;
+
+        &.over-sized {
+          margin: 35px auto 15px auto;
+          width: 210px;
+          max-width: 210px;
+        }
+      }
+    }
+
+    .about-content {
+      background-color: $content-background;
+
+      .right-info {
+        color: #514640;
+        font-weight: 300;
+        margin-top: 55px;
+        text-align: left;
+        .title {
+          color: #514642;
+          font-size: 150%;
+          font-weight: 300;
+          font-family: oswald;
+          margin-bottom: 6px;
+          text-transform: uppercase;
+        }
+        p {
+          font-family: roboto;
+        }
+      }
+
+      #location, #venue, #culture, #magma-village {
+        border-bottom: 3px solid #D0D0D0;
+        max-height: 400px;
+
+        .content-information {
+          margin-right: auto;
+          padding-left: 35px;
+          padding-right: 55px;
+
+          .description {
+            font-size: 110%;
+          }
+        }
+
+        .title {
+          color: $bkg;
+          font-size: 129%;
+          font-weight: 400;
+          line-height: 24px;
+          width: 84%;
+        }
+      }
+
+      .content-image {
+        position: relative;
+        overflow: hidden;
+        height: 344px;
+
+        img {
+          height: auto;
+          max-width: none;
+          width: auto;
+        }
+      }
+    }
   }
-}
 
-.pattern {
-  background: transparent image_url('infographic/pattern.png') repeat-x;
-  height: 13px;
-  width: 100%;
+  .btn-register.small {
+    border-color: #e65253;
+    font-family: 'Teko', sans-serif;
+    height: 125px;
+    margin-top: 20px;
+    padding: 12px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 125px;
+    z-index: 2;
+
+    .line1, .line2 { 
+      color: #a02d2e;
+      display: block;
+
+    }
+
+    .line1 {
+      font-size: 30px;
+      margin-top: 23px;
+    }
+    .line2 {
+      font-weight: 400;
+      font-size: 55px;
+      margin-top: 12px;
+    }
+  }
+
+  &.es {
+    .heading .invitation {
+      font-size: 25px;
+      max-width: 550px;
+    }
+  }
 }
 
