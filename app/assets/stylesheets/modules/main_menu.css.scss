@@ -10,24 +10,6 @@
       background: image-url('logo-magma.svg') no-repeat;
     }
   }
-
-  &.about-magma {
-    background: #382e2c;
-  }
-
-  &.sponsors {
-    background: #312926;
-  }
-
-  &.policies {
-    background: #fff;
-  }
-
-  &.about-magma, &.policies {
-    #magma-logo {
-      background: image-url('logo-magma-brown.svg') no-repeat;
-    }
-  }
 }
 
 #mobile-header {
