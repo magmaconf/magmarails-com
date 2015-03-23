@@ -18,9 +18,16 @@ initMasonry = ->
         $('.x-large').width (if (num_of_boxes > 1) then box_width * 3 else box_width * num_of_boxes)
         box_width
 
-getPhotos = (per_page = 8) ->
-  $('.spinner').removeClass('js-spinner-is-expanded')
+setHomeInfoBox = ->
+  $container = $('#gallery-inner')
+  $container.append($homeBox).masonry 'appended', $homeBox, true, ->
+    $container.imagesLoaded ->
+      $('.gallery-box').animate opacity: 1
+      $container.masonry 'reload'
+      $('.spinner').addClass 'js-spinner-is-expanded'
 
+
+setPhotos = (per_page = 8) ->
   $.ajax
     url: '/gallery_photos/'
     data:
@@ -35,11 +42,11 @@ bindLoadMoreItemEvents = ->
 
   $loadMoreItemsButton.bind 'click', (e) ->
     e.preventDefault()
-    getPhotos()
+    setPhotos()
 
   $loadMoreItemsButton.bind 'inview', (e, visible) ->
     if visible
-      getPhotos()
+      setPhotos()
 
 bindShareWithFacebookEvents = ->
 
@@ -72,8 +79,7 @@ initFancyBox = ->
 $(document).ready ->
   initFancyBox()
   initMasonry()
-  photos = getPhotos()
+  setPhotos()
   bindLoadMoreItemEvents()
   bindShareWithFacebookEvents()
-
 

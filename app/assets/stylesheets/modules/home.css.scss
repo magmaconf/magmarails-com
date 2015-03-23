@@ -6,8 +6,33 @@
     height: 970px;
     overflow: overlay;
   }
-  #gallery-inner {
+
+  #gallery-inner { 
+    opacity: 0;
     background-color: white;
+  }
+
+  #home-info { opacity: 0; }
+
+  .content-information {
+    text-align: left;
+    margin-right: auto;
+    padding-left: 35px;
+    padding-right: 55px;
+
+    .description {
+      font-family: roboto;
+      font-size: 110%;
+      font-weight: 100;
+    }
+
+    .title {
+      color: $bkg;
+      font-size: 129%;
+      font-weight: 400;
+      line-height: 24px;
+      width: 84%;
+    }
   }
 
   .container {
