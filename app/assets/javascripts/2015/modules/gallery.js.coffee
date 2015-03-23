@@ -26,6 +26,7 @@ getPhotos = (per_page = 8) ->
     data:
       page: page
       per_page: per_page
+      flickr: true
 
   page += 1
 
