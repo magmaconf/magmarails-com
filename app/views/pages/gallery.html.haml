@@ -13,3 +13,8 @@
   #gallery-inner
   .spinner
     %a#load-more-items{ href: '#' } Load More
+
+:coffee
+  $(document).ready ->
+    gallery = new Gallery('#gallery-inner')
+    gallery.start()

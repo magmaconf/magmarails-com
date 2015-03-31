@@ -88,8 +88,8 @@
       #main-section-link {
         margin-top: 10px;
       }
-
       .pages {
+
         a, span {
           &:hover, &.active {
             color: $active-link-color;
@@ -102,6 +102,7 @@
 
       .white-background {
         background-color: $white;
+        height: 14px;
         padding: 20px 0 12px;
       }
     }
@@ -151,6 +152,7 @@
   }
 }
 
+.transition-width { transition: width 1s; }
 
 @media screen and (max-width: 640px)  {
 

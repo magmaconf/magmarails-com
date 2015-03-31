@@ -1,6 +1,7 @@
 #main-section
   .container
     #home-gallery.pure-g-r
+      .js-hide.pure-u-1-3.center
       .pure-u-1-3.center
         %img#thanks{src: "#{image_path '2015/tickets-illustratio.svg'}"}
         %p{ class: "#{ I18n.locale.to_s } over over-small" }
@@ -13,7 +14,7 @@
 
         = render 'pages/2015/partials/register_event_info'
 
-      #photo-gallery.pure-u-2-3.center
+      #photo-gallery.pure-u-2-3.cero-width
         #gallery-inner
           #home-info.gallery-box.large
             .inner-box
@@ -21,7 +22,7 @@
                 %p.title MAGMACONF
                 %p.description= t('home.one_of_the_most_important')
                 %p.description= t('home.magma_welcome_dev')
-        .spinner
+        .spinner.js-spinner-is-expanded
           %a#load-more-items{ href: '#' } Load More
 
 #newsletter
@@ -55,9 +56,14 @@
 
 :coffee
   $(document).ready ->
-    $('#scene').parallax();
-    $('body').addClass('hover');
+    $('#scene').parallax()
+    $('body').addClass('hover')
 
     setTimeout ( ->
-      $('#main-menu.index').addClass('hover');
+      $('#main-menu.index').addClass('hover')
     ), 2500
+
+    gallery = new Gallery('#gallery-inner')
+    $('.pages').addClass('cero-width')
+    $('.white-background li').hide()
+    gallery.start()

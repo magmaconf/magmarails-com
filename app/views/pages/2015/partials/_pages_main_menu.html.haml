@@ -7,21 +7,21 @@
     .pure-u-16-24.pages
       .white-background
         %li.link
-          %a.link-text#about-magma-link{ href: '/2015/about' }= t('menu.about')
-        %li.link
-          %a.link-text#speakers-link{ href: '#' }= t('menu.speakers')
-        %li.link
-          %a.link-text#schedule-link{ href: '#' }= t('menu.schedule')
-        %li.link
-          %a.link-text#sponsors-link{ href: '#' }= t('menu.sponsors')
-        %li.link#getting-to-manzanillo
-          %a.link-text#getting-manzanillo-link{ href: '#' }= t('menu.getting_manzanillo')
-        %li.link
-          %a.link-text#sponsors-link{ href: 'mailto:info@magmaconf.com', target:'_blank' }= t('menu.contact-us')
-        %li.link
-          %a.link-text.blog-link{ href: 'http://blog.magmaconf.com/', target: '_blank' }= t('menu.blog')
+          %a.link-text#about-magma-link{ href: '/about' }= t('menu.about')
+        -#%li.link
+          -#%a.link-text#speakers-link{ href: '#' }= t('menu.speakers')
+        -#%li.link
+          -#%a.link-text#schedule-link{ href: '#' }= t('menu.schedule')
+        -#%li.link
+          -#%a.link-text#sponsors-link{ href: '#' }= t('menu.sponsors')
+        -#%li.link#getting-to-manzanillo
+          -#%a.link-text#getting-manzanillo-link{ href: '#' }= t('menu.getting_manzanillo')
         %li.link.without-border
-          %a.link-text#sponsors-link{ href: 'http://store.magmaconf.com', target: '_blank' }= t('menu.store')
+          %a.link-text#sponsors-link{ href: 'mailto:info@magmaconf.com', target:'_blank' }= t('menu.contact-us')
+        -#%li.link
+          -#%a.link-text.blog-link{ href: 'http://blog.magmaconf.com/', target: '_blank' }= t('menu.blog')
+        -#%li.link.without-border
+          -#%a.link-text#sponsors-link{ href: 'http://store.magmaconf.com', target: '_blank' }= t('menu.store')
 
     %a#btn-menu
       %span

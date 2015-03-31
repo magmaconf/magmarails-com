@@ -5,17 +5,17 @@
   #photo-gallery {
     height: 970px;
     overflow: overlay;
+    transition: width 1s;
   }
 
-  #gallery-inner { 
+  #gallery-inner {
     opacity: 0;
-    background-color: white;
+    background-color: #ebebeb;
   }
 
   #home-info { opacity: 0; }
 
   .content-information {
-    background-color: #ebebeb;
     margin-right: auto;
     padding: 50px 40px;
     text-align: left;
@@ -35,6 +35,10 @@
     }
   }
 
+  .js-hide {
+    transition: width 1s;
+  }
+
   .container {
     .center {
       .social {
@@ -48,7 +52,7 @@
       }
 
       #thanks {
-        margin: 20px 0 -8px;
+        margin: 30px 0 -8px;
         width: 253px;
       }
 
