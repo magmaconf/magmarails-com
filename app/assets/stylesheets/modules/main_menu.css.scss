@@ -101,9 +101,12 @@
       }
 
       .white-background {
+        text-align: left;
         background-color: $white;
         height: 14px;
         padding: 20px 0 12px;
+
+        .link { margin-left: 25px }
       }
     }
   }
