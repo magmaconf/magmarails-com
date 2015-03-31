@@ -35,9 +35,27 @@
     }
   }
 
-  .js-hide {
-    transition: width 1s;
+  .share-buttons a {
+    background-color: #e65253;
+
+    &:hover {
+      background-color: white;
+
+      &.share-via-twitter:after {
+        background: image_url('sprite.svg') no-repeat -60px -80px;
+        width: 20px;
+        height: 12px;
+        background-size: 180px;
+      }
+
+      &.share-via-facebook:after {
+        background: image_url('sprite.svg') no-repeat 0 -72px;
+        background-size: 168px;
+      }
+    }
   }
+
+  .js-hide { transition: width 1s; }
 
   .container {
     .center {
