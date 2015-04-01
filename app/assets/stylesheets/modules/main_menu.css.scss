@@ -23,6 +23,11 @@
   z-index: 1003;
   transition: all .3s ease-in;
 
+  .pages {
+    .link-text { color: $fonts; }
+    .link { border-right: 1px solid $bkg; }
+  }
+
   #magma-logo {
     background: image-url('2015/logo-magma.svg') no-repeat;
     cursor: pointer;
@@ -106,7 +111,7 @@
         height: 14px;
         padding: 20px 0 12px;
 
-        .link { margin-left: 25px }
+        .link:first-child { margin-left: 25px }
       }
     }
   }
