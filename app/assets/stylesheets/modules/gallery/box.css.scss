@@ -185,7 +185,7 @@
     height: 30px;
     display: inline-block;
     text-align: center;
-    background: #23A8A5;
+    background: #e65253;
     border-radius: 50%;
     margin-right: 15px;
     transition: position 1s;
@@ -194,11 +194,15 @@
       background: #fff;
 
       &.share-via-twitter:after {
-        background: image_url('social-sprite.png') no-repeat -93px -106px;
+        background: image_url('sprite.svg') no-repeat -60px -80px;
+        width: 20px;
+        height: 12px;
+        background-size: 180px;
       }
 
       &.share-via-facebook:after {
-        background: image_url('social-sprite.png') no-repeat -55px -103px;
+        background: image_url('sprite.svg') no-repeat 0 -72px;
+        background-size: 168px;
       }
     }
 
