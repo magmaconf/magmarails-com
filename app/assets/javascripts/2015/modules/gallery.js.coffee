@@ -35,7 +35,8 @@ class @Gallery
       $('.pages').removeClass('cero-width')
       setTimeout( ->
         $('.white-background li').fadeIn()
-      , 500)
+        $('#photo-gallery, .pages').removeClass('opacity-hidden')
+      , 1500)
     @page += 1
 
   bindLoadMoreItemEvents: ->

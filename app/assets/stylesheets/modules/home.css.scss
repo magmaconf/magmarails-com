@@ -15,6 +15,12 @@
 
   #home-info { opacity: 0; }
 
+  .spinner, .js-spinner-is-expanded a {
+    background-color: #ebebeb;
+    height: 10px;
+    padding: 0;
+  }
+
   .content-information {
     margin-right: auto;
     padding: 50px 40px;

@@ -14,7 +14,7 @@
 
         = render 'pages/2015/partials/register_event_info'
 
-      #photo-gallery.pure-u-2-3.cero-width
+      #photo-gallery.pure-u-2-3.cero-width.opacity-hidden
         #gallery-inner
           #home-info.gallery-box.large
             .inner-box
@@ -23,7 +23,7 @@
                 %p.description= t('home.one_of_the_most_important')
                 %p.description= t('home.magma_welcome_dev')
         .spinner.js-spinner-is-expanded
-          %a#load-more-items{ href: '#' } Load More
+          %a#load-more-items{ href: '#' }
 
 #newsletter
   %section
@@ -64,6 +64,6 @@
     ), 2500
 
     gallery = new Gallery('#gallery-inner')
-    $('.pages').addClass('cero-width')
+    $('.pages').addClass('cero-width opacity-hidden')
     $('.white-background li').hide()
     gallery.start()
