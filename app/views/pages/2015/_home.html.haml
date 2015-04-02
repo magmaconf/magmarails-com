@@ -14,7 +14,7 @@
 
         = render 'pages/2015/partials/register_event_info'
 
-      #photo-gallery.pure-u-2-3.cero-width.opacity-hidden
+      #photo-gallery.pure-u-2-3.cero-width
         #gallery-inner
           #home-info.gallery-box.large
             .inner-box
@@ -64,6 +64,6 @@
     ), 2500
 
     gallery = new Gallery('#gallery-inner')
-    $('.pages').addClass('cero-width opacity-hidden')
+    $('.pages').addClass('cero-width')
     $('.white-background li').hide()
     gallery.start()

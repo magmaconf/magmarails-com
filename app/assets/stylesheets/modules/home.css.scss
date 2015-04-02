@@ -6,14 +6,10 @@
     height: 970px;
     overflow: overlay;
     transition: width 1s;
-  }
-
-  #gallery-inner {
-    opacity: 0;
     background-color: #ebebeb;
   }
 
-  #home-info { opacity: 0; }
+  #gallery-inner, #home-info { opacity: 0; }
 
   .spinner, .js-spinner-is-expanded a {
     background-color: #ebebeb;

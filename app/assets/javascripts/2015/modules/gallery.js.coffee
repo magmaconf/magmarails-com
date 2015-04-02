@@ -21,22 +21,23 @@ class @Gallery
           $('.x-large').width (if (num_of_boxes > 1) then box_width * 3 else box_width * num_of_boxes)
           box_width
 
-  setPhotos: (per_page = 8) ->
+  setPhotos: (per_page = 16) ->
     $.ajax(
       url: '/gallery_photos/'
       data:
         page: @page
         per_page: per_page
         flickr: true
-    ).done ->
+    ).done =>
       $('.js-hide').css('width', 0)
-      $('#photo-gallery').removeClass('cero-width')
+      $('#photo-gallery, .pages').removeClass('cero-width')
       $('.pages').addClass('transition-width')
-      $('.pages').removeClass('cero-width')
-      setTimeout( ->
-        $('.white-background li').fadeIn()
-        $('#photo-gallery, .pages').removeClass('opacity-hidden')
-      , 1800)
+      setTimeout( =>
+        $('.white-background li, #gallery-inner').fadeIn()
+        @container.masonry({ isAnimated: false })
+        $('#gallery-inner').animate({ opacity: 1 })
+        $('#gallery-inner, .pages').removeClass('opacity-hidden')
+      , 1000)
     @page += 1
 
   bindLoadMoreItemEvents: ->
