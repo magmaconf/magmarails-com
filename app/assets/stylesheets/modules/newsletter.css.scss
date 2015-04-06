@@ -35,10 +35,10 @@
     height: 230px;
   }
 
-
   p {
     bottom: 289px;
     color: #792222;
+    font-family: 'Teko', sans-serif;
     left: 45%;
     line-height: 28px;
     margin: 0;
@@ -47,13 +47,12 @@
     width: 650px;
 
     &.big {
-      font-size: 185%;
-      padding-bottom: 10px;
+      font-size: 200%;
     }
 
     &.small {
       font-weight: 300;
-      font-size: 120%;
+      font-size: 140%;
     }
   }
 
@@ -93,7 +92,7 @@
     }
 
     .submit {
-      font-size: 120%;
+      font-size: 160%;
       height: 37px;
       margin-top: 30px;
       text-transform: uppercase;
@@ -127,14 +126,6 @@
       bottom: 198px;
       left: 34%;
       line-height: 22px;
-
-      &.small {
-        font-size: 100%;
-      }
-
-      &.big {
-        font-size: 155%;
-      }
     }
 
     #thanks, #keep {
@@ -207,14 +198,6 @@
       line-height: 22px;
       text-align: center;
       width: 100%;
-
-      &.small {
-        font-size: 100%;
-      }
-
-      &.big {
-        font-size: 155%;
-      }
     }
 
     p, .form-container {
