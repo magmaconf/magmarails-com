@@ -50,7 +50,7 @@ class @Gallery
         @setPhotos()
 
   bindShareWithFacebookEvents: ->
-    $('body').on 'click', '.share-via-facebook', (e) =>
+    $('body').on 'click', '.share-via-facebook', (e) ->
       e.preventDefault()
       id = $(@).data('photo')
       url = 'https://www.flickr.com/photos/crowdint/' + id
