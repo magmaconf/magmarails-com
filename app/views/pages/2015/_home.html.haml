@@ -52,11 +52,8 @@
                 %input{name: 'email', type: 'email'}
               %input.submit{type: 'submit', value: t('newsletter-form.fields.submit')}
 
-= javascript_include_tag 'jquery.parallax'
-
 :coffee
   $(document).ready ->
-    $('#scene').parallax()
     $('body').addClass('hover')
 
     setTimeout ( ->

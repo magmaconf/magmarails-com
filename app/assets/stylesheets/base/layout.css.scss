@@ -72,6 +72,8 @@ input[type=submit] {
   border: none;
 }
 
+.layer { list-style: none }
+
 .a {
   &:hover {
     font-family: Arial;
