@@ -11,7 +11,9 @@
 %link{rel: 'stylesheet', href: "//fonts.googleapis.com/css?family=Teko:300,400,500,600,700&subset=latin"}
 %link{rel: 'stylesheet', href: "//fonts.googleapis.com/css?family=Open+Sans:400,300,700"}
 %link{rel: "shortcut icon", type: "image/vnd.microsoft.icon", href: "#{image_path 'favicon.ico?v=2.0'}"}
-%script{ type: "text/javascript", charset: "utf-8", src: "https://maps.googleapis.com/maps/api/js?sensor=false" }
+
+= javascript_include_tag '2014/google-map'
+
 = csrf_meta_tags
 :javascript
       var _gaq = _gaq || [];
