@@ -23,7 +23,7 @@ $(document).ready ->
         email: true
 
   showSuccessMessage = ->
-    $('#message-box span').text('Your request has been sent')
+    $('#message-box span').text('Your Request Has Been Sent Successfully')
     $('#message-box').addClass('success').slideDown()
 
   showErrorMessage = ->
