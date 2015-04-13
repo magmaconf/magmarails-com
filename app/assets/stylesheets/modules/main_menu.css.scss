@@ -1,8 +1,4 @@
 #main-menu, #mobile-header {
-  &.index.hover {
-    background-color: #e65253;
-  }
-
   &.speakers, &.gallery {
     background: #dcddcc;
 
@@ -12,20 +8,25 @@
   }
 }
 
-#mobile-header {
-  display: none;
-}
+#mobile-header { display: none; }
 
 #main-menu {
   margin: 0 auto;
-  position: fixed;
   width: 100%;
   z-index: 1003;
   transition: all .3s ease-in;
 
-  .pages {
+  .nav-menu {
+    background-color: $white;
+    width: 100%;
+
     .link-text { color: $fonts; }
     .link { border-right: 1px solid $bkg; }
+
+    a, span {
+      &:hover, &.active { color: $active-link-color; }
+      &.active { font-weight: 500; }
+    }
   }
 
   #magma-logo {
@@ -43,8 +44,8 @@
 
   ul {
     margin: 0 auto;
-    padding: 20px 0 15px;
-    text-align: center;
+    padding: 20px 0 10px;
+    text-align: left;
 
     li {
       border-right: 1px solid #ada193;
@@ -76,44 +77,6 @@
       }
     }
 
-    #main-section-link {
-      margin-bottom: 5px;
-      padding: 0;
-    }
-
-    &#alternate {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-
-        li {
-          padding: 0 15px;
-        }
-
-      #main-section-link {
-        margin-top: 10px;
-      }
-      .pages {
-
-        a, span {
-          &:hover, &.active {
-            color: $active-link-color;
-          }
-          &.active {
-            font-weight: 500;
-          }
-        }
-      }
-
-      .white-background {
-        text-align: left;
-        background-color: $white;
-        height: 14px;
-        padding: 20px 0 12px;
-
-        .link:first-child { margin-left: 25px }
-      }
-    }
   }
 
   &.about-magma, &.policies {
@@ -290,13 +253,6 @@
             font-weight: 600;
           }
         }
-      }
-
-      #main-section-link {
-        left: 0;
-        position: absolute;
-        top: 15px;
-        width: 100%;
       }
     }
   }

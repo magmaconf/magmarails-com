@@ -10,7 +10,6 @@ class @Gallery
       @container.masonry
         itemSelector: '.gallery-box'
         gutter: 0
-        isAnimated: true
         columnWidth: (containerWidth) ->
           num_of_boxes = (containerWidth / min_width | 0)
           box_width = ((containerWidth  / num_of_boxes) | 0)
@@ -30,14 +29,7 @@ class @Gallery
         flickr: true
     ).done =>
       $('.js-hide').css('width', 0)
-      $('#photo-gallery, .pages').removeClass('cero-width')
-      $('.pages').addClass('transition-width')
-      setTimeout( =>
-        $('.white-background li, #gallery-inner').fadeIn()
-        @container.masonry({ isAnimated: false })
-        $('#gallery-inner').animate({ opacity: 1 })
-        $('#gallery-inner, .pages').removeClass('opacity-hidden')
-      , 1000)
+      $('#main-section').css('right', '0%')
     @page += 1
 
   bindLoadMoreItemEvents: ->

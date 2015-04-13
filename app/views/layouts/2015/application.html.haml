@@ -5,7 +5,9 @@
     = stylesheet_link_tag 'application', media: "all"
     = javascript_include_tag '2015/application'
   %body
-    = render 'pages/2015/partials/pages_main_menu'
-    = yield
+    .pure-g-r
+      = render 'pages/2015/partials/aside_info'
+      = yield
+    = render 'partials/newsletter' if @id == 'home'
     %footer
       = render 'partials/footer'
