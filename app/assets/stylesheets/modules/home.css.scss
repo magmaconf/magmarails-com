@@ -3,9 +3,9 @@
   position: absolute;
   right: -70%;
   transition: all 1s;
+  @include mq(768px) { position: inherit }
 
   #photo-gallery {
-    @include mq(768px) { position: inherit }
     background-color: #ebebeb;
     height: 970px;
     overflow: overlay;

@@ -24,6 +24,13 @@
     &.line2 { font-size: 99px; }
 
     &.line3 { font-size: 62px; }
+
+    &.line1.about { font-size: 40px; }
+    &.line2.about { font-size: 102px; }
+    &.line3.about {
+      font-size: 38px;
+      margin-top: 2px;
+    }
   }
 
   .social {
@@ -73,6 +80,11 @@
       &.line1 {
         font-size: 40px;
         margin-top: 16px;
+      }
+
+      &.line1.about {
+        font-size: 32px;
+        margin-top: 0;
       }
 
       &.line2 {
@@ -178,6 +190,10 @@
       width: 210px;
       max-width: 210px;
     }
+  }
+
+  .over.over-small.about {
+    max-width: 200px;
   }
 }
 
