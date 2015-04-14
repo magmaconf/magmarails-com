@@ -25,6 +25,9 @@
         font-weight: 300;
         margin-top: 55px;
         text-align: left;
+        @include mq(768px) {
+          margin: 55px 0;
+        }
         .title {
           color: #514642;
           font-size: 150%;
@@ -40,7 +43,6 @@
 
       #location, #venue, #culture, #magma-village {
         border-bottom: 3px solid #D0D0D0;
-        max-height: 400px;
 
         .content-information {
           margin-right: auto;
