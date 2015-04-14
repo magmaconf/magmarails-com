@@ -28,8 +28,10 @@ class @Gallery
         per_page: per_page
         flickr: true
     ).done =>
-      $('.js-hide').css('width', 0)
       $('#main-section').css('right', '0%')
+      $('.magma-info').addClass('js-width-transition')
+      $('.magma-info').removeClass('js-full-width')
+
     @page += 1
 
   bindLoadMoreItemEvents: ->

@@ -1,7 +1,8 @@
 .magma-info {
   margin-bottom: 83px;
 
-  .js-hide { transition: width 1s; }
+  &.js-full-width { width: 100%; }
+  &.js-width-transition { transition: width 1s }
 
   .thanks {
     margin: 30px 0 -8px;
