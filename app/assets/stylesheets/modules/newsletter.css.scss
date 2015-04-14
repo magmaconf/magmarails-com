@@ -53,6 +53,7 @@
     &.small {
       font-weight: 300;
       font-size: 140%;
+      margin-top: 20px;
     }
   }
 
@@ -198,6 +199,8 @@
       line-height: 22px;
       text-align: center;
       width: 100%;
+
+      &.small { margin-top: 0 }
     }
 
     p, .form-container {
