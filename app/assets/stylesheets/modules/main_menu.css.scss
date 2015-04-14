@@ -1,8 +1,4 @@
 #main-menu, #mobile-header {
-  &.index.hover {
-    background-color: #e65253;
-  }
-
   &.speakers, &.gallery {
     background: #dcddcc;
 
@@ -12,20 +8,25 @@
   }
 }
 
-#mobile-header {
-  display: none;
-}
+#mobile-header { display: none; }
 
 #main-menu {
   margin: 0 auto;
-  position: fixed;
   width: 100%;
   z-index: 1003;
   transition: all .3s ease-in;
 
-  .pages {
+  .nav-menu {
+    background-color: $white;
+    width: 100%;
+
     .link-text { color: $fonts; }
     .link { border-right: 1px solid $bkg; }
+
+    a, span {
+      &:hover, &.active { color: $active-link-color; }
+      &.active { font-weight: 500; }
+    }
   }
 
   #magma-logo {
@@ -43,8 +44,8 @@
 
   ul {
     margin: 0 auto;
-    padding: 20px 0 15px;
-    text-align: center;
+    padding: 20px 0 10px;
+    text-align: left;
 
     li {
       border-right: 1px solid #ada193;
@@ -76,44 +77,6 @@
       }
     }
 
-    #main-section-link {
-      margin-bottom: 5px;
-      padding: 0;
-    }
-
-    &#alternate {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-
-        li {
-          padding: 0 15px;
-        }
-
-      #main-section-link {
-        margin-top: 10px;
-      }
-      .pages {
-
-        a, span {
-          &:hover, &.active {
-            color: $active-link-color;
-          }
-          &.active {
-            font-weight: 500;
-          }
-        }
-      }
-
-      .white-background {
-        text-align: left;
-        background-color: $white;
-        height: 14px;
-        padding: 20px 0 12px;
-
-        .link:first-child { margin-left: 25px }
-      }
-    }
   }
 
   &.about-magma, &.policies {
@@ -166,6 +129,7 @@
 
   #main-section {
     padding-top: 0;
+    position: initial;
   }
 
   #btn-menu, #btn-mobile-header {
@@ -173,7 +137,7 @@
     top: 3px;
 
     span {
-      background-color: #6c6259;
+      background-color: white;
       display: block;
       height: 3px;
       margin-bottom: 4px;
@@ -241,7 +205,9 @@
     background: #f2f3ed !important;
     height: 100%;
     min-height: 465px;
+    position: absolute;
     right: 640px;
+    top: 0;
     transition: 0;
     z-index: 1004;
 
@@ -249,15 +215,21 @@
       background: image-url('logo-magma.svg') no-repeat;
     }
 
-    #btn-menu{
+    #btn-menu {
       padding: 15px 28px 5px 15px;
-      position: absolute;
-      right: 0;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+
     }
+    #btn-menu.active {
+      span { background-color: #e65253; }
+    }
+
     ul {
       height: 0px;
       margin: 0 auto;
-      padding: 50px 0px 5px;
       text-align: center;
 
       .link {
@@ -274,7 +246,7 @@
         a, span {
           background: image_url('sprite.svg') no-repeat;
           background-size: 174px 180px;
-          background-position: -155px -97px;
+          background-position: -158px -93px;
           color: #847a70;
           font-weight: 400;
           font-size: 120%;
@@ -290,13 +262,6 @@
             font-weight: 600;
           }
         }
-      }
-
-      #main-section-link {
-        left: 0;
-        position: absolute;
-        top: 15px;
-        width: 100%;
       }
     }
   }

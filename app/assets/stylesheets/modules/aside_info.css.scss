@@ -1,0 +1,205 @@
+.magma-info {
+  margin-bottom: 83px;
+
+  .js-hide { transition: width 1s; }
+
+  .thanks {
+    margin: 30px 0 -8px;
+    width: 253px;
+  }
+
+  .hero-text {
+    font-family: 'Teko', sans-serif;
+    font-size: 70px;
+    line-height: 45px;
+    font-weight: 400;
+    margin: 12px 0 0 0;
+    display: block;
+
+    &.line1 {
+      font-size: 43px;
+      margin-top: 0;
+    }
+
+    &.line2 { font-size: 99px; }
+
+    &.line3 { font-size: 62px; }
+
+    &.line1.about { font-size: 40px; }
+    &.line2.about { font-size: 102px; }
+    &.line3.about {
+      font-size: 38px;
+      margin-top: 2px;
+    }
+  }
+
+  .social {
+    margin: 20px auto 0 auto;
+    overflow: hidden;
+
+    [class *='icon-'] {
+      padding: 20px 0 0 17px;
+      margin-top: -13px;
+    }
+  }
+
+  .over {
+    color: #fff3cc;
+    display: block;
+    font-size: 165%;
+    font-family: oswald;
+    font-weight: 300;
+    margin: 0 auto;
+    max-width: 178px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+
+    &.es {
+      max-width: 230px;
+    }
+
+    .dates-text {
+      font-family: 'Teko', sans-serif;
+      font-size: 32px;
+      line-height: 20px;
+      font-weight: 100;
+      display: block;
+      margin: 13px 0 8px 0;
+    }
+
+    .venues-text {
+      font-family: 'Teko', sans-serif;
+      font-size: 21px;
+      line-height: 20px;
+      font-weight: 100;
+      display: block;
+      margin: 8px 0 3px 0;
+      color: white;
+      letter-spacing: .3px;
+
+      &.line1 {
+        font-size: 40px;
+        margin-top: 16px;
+      }
+
+      &.line1.about {
+        font-size: 32px;
+        margin-top: 0;
+      }
+
+      &.line2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .content-text {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 11px;
+      color: white;
+      display: block;
+      line-height: 13px;
+
+      &.highlight {
+        font-weight: bold;
+        margin: 5px 0 0 0;
+      }
+    }
+
+    .sub-content-text {
+      color: white;
+      display: block;
+      font-family: 'Teko', sans-serif;
+      font-size: 21px;
+      line-height: 30px;
+
+      &.expanded {
+        letter-spacing: 1px;
+        margin-top: 5px;
+      }
+    }
+
+    .keynote-text {
+      margin: 7px 0 0 0;
+      display: block;
+    }
+
+    .keynote-text,
+    .keynote-text2 {
+      font-size: 27px;
+      color: #792323;
+      line-height: 25px;
+      font-family: 'Teko', sans-serif;
+
+      .star {
+        width: 15px;
+      }
+    }
+
+    .keynote-text3 {
+      font-family: 'Teko', sans-serif;
+      font-size: 20px;
+      color: #792323;
+      display: block;
+    }
+
+    .conference-date {
+      font-size: 27px;
+
+      .dates-text {
+        display: inline-block;
+      }
+
+      .star {
+        width: 15px;
+        margin-bottom: 5px;
+      }
+    }
+
+    .join-text {
+      font-family: 'Teko', sans-serif;
+      font-size: 25px;
+      color: white;
+      margin-top: 16px;
+      display: block;
+      letter-spacing: .5px;
+    }
+
+    .tuned-text {
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      font-size: 12px;
+      line-height: 8px;
+
+      &:first-child{
+        margin: 18px 0 0 0;
+        display: block;
+      }
+
+      &.highlight {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .over-small {
+    font-size: 120%;
+
+    &.over-sized {
+      margin: 35px auto 15px auto;
+      width: 210px;
+      max-width: 210px;
+    }
+  }
+
+  .over.over-small.about {
+    max-width: 200px;
+  }
+}
+
+.magma-logo {
+  display: block;
+  height: 37px;
+  margin: 20px auto 0;
+  width: 105px;
+}

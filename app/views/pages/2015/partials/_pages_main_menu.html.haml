@@ -1,40 +1,25 @@
 #main-menu.index.pure-g-r{ class: "#{I18n.locale.to_s}" }
-  %ul#alternate
-    .pure-u-8-24
-      %li#main-section-link.without-border
-        %a{href: '/'}
-          #magma-logo
-    .pure-u-16-24.pages
-      .white-background
-        %li.link
-          %a.link-text#about-magma-link{ href: '/about' }= t('menu.about')
-        -#%li.link
-          -#%a.link-text#speakers-link{ href: '#' }= t('menu.speakers')
-        -#%li.link
-          -#%a.link-text#schedule-link{ href: '#' }= t('menu.schedule')
-        -#%li.link
-          -#%a.link-text#sponsors-link{ href: '#' }= t('menu.sponsors')
-        -#%li.link#getting-to-manzanillo
-          -#%a.link-text#getting-manzanillo-link{ href: '#' }= t('menu.getting_manzanillo')
-        %li.link.without-border
-          %a.link-text#sponsors-link{ href: 'mailto:info@magmaconf.com', target:'_blank' }= t('menu.contact-us')
-        -#%li.link
-          -#%a.link-text.blog-link{ href: 'http://blog.magmaconf.com/', target: '_blank' }= t('menu.blog')
-        -#%li.link.without-border
-          -#%a.link-text#sponsors-link{ href: 'http://store.magmaconf.com', target: '_blank' }= t('menu.store')
+  .nav-menu
+    %ul
+      %li.link
+        %a.link-text#about-magma-link{ href: '/about' }= t('menu.about')
+      -#%li.link
+        -#%a.link-text#speakers-link{ href: '#' }= t('menu.speakers')
+      -#%li.link
+        -#%a.link-text#schedule-link{ href: '#' }= t('menu.schedule')
+      -#%li.link
+        -#%a.link-text#sponsors-link{ href: '#' }= t('menu.sponsors')
+      -#%li.link#getting-to-manzanillo
+        -#%a.link-text#getting-manzanillo-link{ href: '#' }= t('menu.getting_manzanillo')
+      %li.link.without-border
+        %a.link-text#sponsors-link{ href: 'mailto:info@magmaconf.com', target:'_blank' }= t('menu.contact-us')
+      -#%li.link
+        -#%a.link-text.blog-link{ href: 'http://blog.magmaconf.com/', target: '_blank' }= t('menu.blog')
+      -#%li.link.without-border
+        -#%a.link-text#sponsors-link{ href: 'http://store.magmaconf.com', target: '_blank' }= t('menu.store')
 
     %a#btn-menu
       %span
       %span
       %span
-
-#mobile-header.pure-g-r
-  .pure-u-1-1
-    %a#btn-mobile-header
-      %span
-      %span
-      %span
-      %span#menu.link= t('menu.menu')
-    %a{href: '/'}
-      #magma-logo
 
