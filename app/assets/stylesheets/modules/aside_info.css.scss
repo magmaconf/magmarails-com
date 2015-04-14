@@ -4,8 +4,14 @@
   &.js-full-width { width: 100%; }
   &.js-width-transition { transition: width 1s }
 
+  .logo-container {
+    position: fixed;
+    top: 0;
+    width: inherit;
+    z-index: 999;
+  }
   .thanks {
-    margin: 30px 0 -8px;
+    margin: 80px 0 -8px;
     width: 253px;
   }
 

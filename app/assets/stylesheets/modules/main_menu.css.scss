@@ -14,7 +14,10 @@
   margin: 0 auto;
   width: 100%;
   z-index: 1003;
+  position: fixed;
+  top: 0;
   transition: all .3s ease-in;
+
 
   .nav-menu {
     background-color: $white;
@@ -256,7 +259,6 @@
             color: #847a70;
           }
           &.active {
-            background-position: -155px -139px;
             border-bottom: 0 !important;
             color: #433a36 !important;
             font-weight: 600;
