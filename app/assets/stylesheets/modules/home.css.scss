@@ -3,6 +3,7 @@
   position: absolute;
   right: -70%;
   transition: all 1s;
+  margin-top: 40px;
   @include mq(768px) { position: inherit }
 
   #photo-gallery {
