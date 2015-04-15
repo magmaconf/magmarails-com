@@ -136,7 +136,7 @@
   }
 
   #btn-menu, #btn-mobile-header {
-    padding: 14px 28px 5px 15px;
+    padding: 15px 20px 0 0;
     top: 3px;
 
     span {
@@ -219,10 +219,9 @@
     }
 
     #btn-menu {
-      padding: 15px 28px 5px 15px;
       position: fixed;
-      top: 10px;
-      right: 10px;
+      top: 0;
+      right: 0;
       cursor: pointer;
 
     }
