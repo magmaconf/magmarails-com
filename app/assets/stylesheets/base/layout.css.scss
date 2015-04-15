@@ -72,6 +72,15 @@ input[type=submit] {
   border: none;
 }
 
+.logo-container {
+  background-color: black;
+  transition: background-color 3s ease;
+
+  &.hover {
+    background-color: $bkg;
+  }
+}
+
 .layer { list-style: none }
 
 .a {

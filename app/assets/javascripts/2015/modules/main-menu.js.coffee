@@ -1,9 +1,4 @@
 $(document).ready ->
-
-  setTimeout( ->
-    $('.logo-container').css('background-color', '#e65253')
-  , 3000)
-
   $('#btn-menu').click ->
     toggleMobileMenu()
 
