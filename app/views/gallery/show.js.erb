@@ -2,11 +2,10 @@ $container = $('#gallery-inner');
 
 <% if @boxes.any? %>
   var boxes = "<%= j(render(partial: 'boxes')) %>"
-  var $boxes = $(boxes).css('opacity', '0');
+  var $boxes = $(boxes);
 
   $container.append($boxes).masonry('appended', $boxes, true, function(){
     $container.imagesLoaded(function(){
-      $('.gallery-box').animate({ opacity: 1 });
       $container.masonry('reload');
       $('.spinner').addClass('js-spinner-is-expanded');
     });
