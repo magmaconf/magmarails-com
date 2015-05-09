@@ -17,6 +17,7 @@
 //= require jquery.fancybox
 //= require jquery.fancybox.pack
 //= require jquery.inview
+//= require jquery.mobile.custom.min
 //= require_tree .
 
 $(document).ready(function(){
