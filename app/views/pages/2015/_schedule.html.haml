@@ -1,4 +1,4 @@
-#about-magma.pure-u-2-3{ class: I18n.locale.to_s }
+.pure-u-2-3{ class: I18n.locale.to_s }
   = render 'pages/2015/partials/pages_main_menu'
   #schedule
     .container.schedule-container
@@ -17,20 +17,22 @@
           .pure-g-r.schedule-table-header
             .pure-u-1-1
               %div{ style: 'height: 35px;' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '8:45', class_name: 'break' }
           = render 'pages/2015/partials/schedule/hour', locals: { hour: '9:00', class_name: 'opening' }
-          = render 'pages/2015/partials/schedule/hour', locals: { hour: '10:00', class_name: 'talk big' }
-          = render 'pages/2015/partials/schedule/hour', locals: { hour: '10:40', class_name: 'talk' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '10:00', class_name: 'keynote' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '10:40', class_name: 'talk double' }
           = render 'pages/2015/partials/schedule/hour', locals: { hour: '11:20', class_name: 'break' }
-          = render 'pages/2015/partials/schedule/hour', locals: { hour: '11:40', class_name: 'talk' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '11:40', class_name: 'talk double' }
           = render 'pages/2015/partials/schedule/hour', locals: { hour: '12:20', class_name: 'talk double' }
           = render 'pages/2015/partials/schedule/hour', locals: { hour: '13:00', class_name: 'break' }
           = render 'pages/2015/partials/schedule/hour', locals: { hour: '13:10', class_name: 'break' }
-          = render 'pages/2015/partials/schedule/hour', locals: { hour: '14:40', class_name: 'talk big' }
-          = render 'pages/2015/partials/schedule/hour', locals: { hour: '15:20', class_name: 'talk' }
-          = render 'pages/2015/partials/schedule/hour', locals: { hour: '15:40', class_name: 'break' }
-          = render 'pages/2015/partials/schedule/hour', locals: { hour: '16:00', class_name: 'talk' }
-          = render 'pages/2015/partials/schedule/hour', locals: { hour: '16:40', class_name: 'keynote' }
-          = render 'pages/2015/partials/schedule/hour', locals: { hour: '17:40', class_name: 'break' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '13:15', class_name: 'talk double' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '14:00', class_name: 'talk double' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '14:30', class_name: 'break' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '14:40', class_name: 'break' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '15:20', class_name: 'talk double' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '15:40', class_name: 'talk' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '20:00', class_name: 'break' }
 
         .pure-u-7-24#wednesday.active
           .pure-g-r
@@ -39,59 +41,83 @@
                 .day-image
                   %h2.schedule-day-name
                     thursday
+
+          .pure-g-r.line.break
+            .pure-u-1-1
+              %p.schedule-table-legend Breakfast
+
           .pure-g-r.line.opening
             .pure-u-1-1
-              %p.schedule-table-legend OPENING
-          = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'David Meyer',
-                              talk_name: 'Beyond pushing code: How to optimize your career',
-                              language: 'en',
-                              class_name: 'big' }
-          = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'Joe Wright',
-                              talk_name: 'Are we really engineers?',
+              %p.schedule-table-legend Openning
+
+          = render 'pages/2015/partials/schedule/keynote',
+                    locals: { speaker: 'Ron Evans',
                               language: 'en' }
+
+          = render 'pages/2015/partials/schedule/talk',
+                    locals: { speaker: 'William Kennedy',
+                              talk_name: 'Go In Action: Concurrency',
+                              language: 'en',
+                              class_name: 'double' }
+
           .pure-g-r.line.break
             .pure-u-1-1
               %p.schedule-table-legend Break
+
           = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'Konstantin Haase',
-                              talk_name: 'Death to Cookies',
+                    locals: { speaker: 'Verónica López',
+                              talk_name: 'Androids meet Gophers: creating an Android game with Go',
+                              class_name: 'double',
                               language: 'en' }
+
           = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'Blake Mizerany',
-                              talk_name: 'You should learn Go!',
+                    locals: { speaker: 'Matt Mills',
+                              talk_name: 'Bootstrapping into Hardware Development',
                               language: 'en',
                               class_name: 'double' }
+
           .pure-g-r.line.break
             .pure-u-1-1
               %p.schedule-table-legend Sponsor time
+
           .pure-g-r.line.break
             .pure-u-1-1
               %p.schedule-table-legend Lunch
+
           = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'Daniel Ríos',
-                              talk_name: 'Intro to Computer Vision, Machine Learning and Genetic Algorithms',
+                    locals: { speaker: 'Julian Cheal',
+                              talk_name: 'Dancing with Robots',
                               language: 'en',
-                              class_name: 'big' }
-          .pure-g-r.line.talk
-            .pure-u-1-1
-              %p.speaker-name Lightning Talks
+                              class_name: 'double' }
+
+          = render 'pages/2015/partials/schedule/talk',
+                    locals: { speaker: 'Philip Arndt',
+                              talk_name: 'Emoruby: Use Emoji™',
+                              language: 'en',
+                              class_name: 'double' }
 
           .pure-g-r.line.break
             .pure-u-1-1
               %p.schedule-table-legend Break
-          = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'Nick Rowe',
-                              talk_name: 'Bullet Trains: Performance Tuning Rails',
-                              language: 'en' }
-          = render 'pages/2015/partials/schedule/keynote',
-                    locals: { speaker: 'Fred George',
-                              language: 'en' }
-          .pure-g-r.line.announcements
-            .pure-u-1-1
-              %p.schedule-table-legend EOD Announcements
 
+          .pure-g-r.line.break
+            .pure-u-1-1
+              %p.schedule-table-legend Lightning Talks
+
+          = render 'pages/2015/partials/schedule/talk',
+                    locals: { speaker: 'Ana Rosas',
+                              class_name: 'double',
+                              language: 'es',
+                              talk_name: 'Working from home: mitos y realidades de una geeka' }
+
+          = render 'pages/2015/partials/schedule/talk',
+                    locals: { speaker: 'Panel',
+                              language: 'es',
+                              talk_name: 'Comunidades' }
+
+          .pure-g-r.line.break
+            .pure-u-1-1
+              %p.schedule-table-legend Sponsor Dinner
 
         .pure-u-1-3#thursday
           .pure-g-r
@@ -99,59 +125,83 @@
               .pure-u-1-1
                 .day-image
                   %h2.schedule-day-name
-                    saturday
+                    friday
+
+          .pure-g-r.line.break
+            .pure-u-1-1
+              %p.schedule-table-legend Breakfast
+
           .pure-g-r.line.opening
             .pure-u-1-1
-          = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'David Calavera',
-                              talk_name: "GitHub Enterprise' toolchain",
-                              language: 'en',
-                              class_name: 'big' }
-          = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'Matt Kirk',
-                              talk_name: 'Sentiment Analysis using Support Vector Machines in Ruby',
+
+          = render 'pages/2015/partials/schedule/keynote',
+                    locals: { speaker: 'Sarah Allen',
                               language: 'en' }
-          .pure-g-r.line.break
-            .pure-u-1-1
-              %p.schedule-table-legend Break
+
           = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'Johnny Winn',
-                              talk_name: 'Elixir = Ruby, A Pattern Matching',
-                              language: 'en' }
-          = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'André Arko',
-                              talk_name: 'Software Icebergs: Development Was the Easy Part',
+                    locals: { speaker: 'Developers vs Designers',
+                              talk_name: 'Dominik Bamberger',
                               language: 'en',
                               class_name: 'double' }
-          .pure-g-r.line.break
-            .pure-u-1-1
-              %p.schedule-table-legend Sponsor time
-          .pure-g-r.line.break
-            .pure-u-1-1
-              %p.schedule-table-legend Lunch
-          = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'Jesse Toth',
-                              talk_name: 'Rewriting Critical Parts of Your Application Using... Science!',
-                              language: 'en',
-                              class_name: 'big' }
-          .pure-g-r.line.talk
-            .pure-u-1-1
-              %p.speaker-name Melissa Pegus
-              %p.talk-name TBD
 
           .pure-g-r.line.break
             .pure-u-1-1
               %p.schedule-table-legend Break
+
           = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'Zachary Scott',
-                              talk_name: 'Standing on the shoulders of giants',
+                    locals: { speaker: 'Fernando Perales',
+                              class_name: 'double',
+                              talk_name: 'Accessibility in the Internet 2.0 era',
                               language: 'en' }
-          = render 'pages/2015/partials/schedule/keynote',
-                    locals: { speaker: 'Sandi Metz',
-                              language: 'en' }
+
+          = render 'pages/2015/partials/schedule/talk',
+                    locals: { speaker: 'Noelia Cabane',
+                              talk_name: 'Get the best out of Sass',
+                              language: 'en',
+                              class_name: 'double' }
+
+          .pure-g-r.line.break
+            .pure-u-1-1
+              %p.schedule-table-legend Sponsor time
+
+          .pure-g-r.line.break
+            .pure-u-1-1
+              %p.schedule-table-legend Lunch
+
+          = render 'pages/2015/partials/schedule/talk',
+                    locals: { speaker: 'Sergey Bolshchikov',
+                              talk_name: "Deliver web applications to 50M+ users every 15 minutes. It's not magiс",
+                              language: 'en',
+                              class_name: 'double' }
+
+          = render 'pages/2015/partials/schedule/talk',
+                    locals: { speaker: 'Justin Woo',
+                              talk_name: 'A Credit Card Form walks into a bar....',
+                              language: 'en',
+                              class_name: 'double' }
+
+          .pure-g-r.line.break
+            .pure-u-1-1
+              %p.schedule-table-legend Break
+
           .pure-g-r.line.announcements
             .pure-u-1-1
-              %p.schedule-table-legend EOD Announcements
+              %p.schedule-table-legend LIGHTNING TALKS
+
+          = render 'pages/2015/partials/schedule/talk',
+                    locals: { speaker: 'Konstantin Haase',
+                              talk_name: 'Magenta is a Lie - and other tales of abstraction',
+                              class_name: 'double',
+                              language: 'en' }
+
+          = render 'pages/2015/partials/schedule/talk',
+                    locals: { speaker: 'Panel',
+                              talk_name: '100 desarrolladores dijeron - A one hundred developers said',
+                              language: 'en' }
+
+          .pure-g-r.line.announcements
+            .pure-u-1-1
+              %p.schedule-table-legend SPONSOR DINNER
 
         .pure-u-1-3#friday
           .pure-g-r
@@ -159,62 +209,82 @@
               .pure-u-1-1
                 .day-image
                   %h2.schedule-day-name
-                    friday
+                    saturday
+
+          .pure-g-r.line.break
+            .pure-u-1-1
+              %p.schedule-table-legend Breakfast
+
           .pure-g-r.line.opening
             .pure-u-1-1
+
+          .pure-g-r.line.keynote
+            .pure-u-1-1
+
           = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'PJ Hagerty',
-                              talk_name: 'Urban Legends: What You Code Makes You Who You Are',
+                    locals: { speaker: 'Welcoming Diversity In Your Projects',
+                              talk_name: 'André Arko',
                               language: 'en',
-                              class_name: 'big' }
-          = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'Leo Salazar',
-                              talk_name: 'Refactoring Education',
-                              language: 'en' }
+                              class_name: 'double' }
+
           .pure-g-r.line.break
             .pure-u-1-1
               %p.schedule-table-legend Break
+
           = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'Adam Rogers',
-                              talk_name: 'How to win designers and influence developers',
+                    locals: { speaker: 'Panel',
+                              talk_name: 'Women in tech Comunidades',
+                              class_name: 'double',
                               language: 'en' }
+
           = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'Alex Pyatetsky',
-                              talk_name: "Why MVP Isn't Enough. Minimum Viable Organization - The Best Predictor of Startup Success.",
+                    locals: { speaker: 'Steve Klabnik',
+                              talk_name: 'Dropping down to Rust',
                               language: 'en' ,
                               class_name: 'double' }
 
           .pure-g-r.line.break
             .pure-u-1-1
               %p.schedule-table-legend Sponsor time
+
           .pure-g-r.line.break
             .pure-u-1-1
               %p.schedule-table-legend Lunch
-          .pure-g-r.line.talk.big
-            .pure-u-1-1
-              %p.speaker-name
-                %a.link{ href: 'http://blog.magmaconf.com/2014/05/02/let-s-get-ready-to-rumble-2-to-3-rounds-mv-stack-vs-rails-4-omakase.html',
-                         target: '_blank' } Discussion Panel
-              .schedulte-language-image
-              %p.talk-name.en-sp
-                %a.link{ href: 'http://blog.magmaconf.com/2014/05/02/let-s-get-ready-to-rumble-2-to-3-rounds-mv-stack-vs-rails-4-omakase.html',
-                                       target: '_blank' } Let’s get ready to rumbleeeeeee: MV* stack VS Rails 4 omakase
-          .pure-g-r.line.talk
-            .pure-u-1-1
-              %p.speaker-name Lightning Talks
+
+          = render 'pages/2015/partials/schedule/talk',
+                    locals: { speaker: 'Rachel Myers',
+                              talk_name: 'Service Oriented Disasters',
+                              language: 'en' ,
+                              class_name: 'double' }
+
+          = render 'pages/2015/partials/schedule/talk',
+                    locals: { speaker: 'Janet / Jeremy',
+                              talk_name: 'Product Management Tips for Engineers: 5 Whys Edition',
+                              language: 'en' ,
+                              class_name: 'double' }
+
           .pure-g-r.line.break
             .pure-u-1-1
               %p.schedule-table-legend Break
-          = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'Richard Schneeman',
-                              talk_name: 'The Good Rubyist Challenge',
-                              language: 'en' }
-          = render 'pages/2015/partials/schedule/keynote',
-                    locals: { speaker: 'Desi McAdam',
-                              language: 'en' }
+
+          .pure-g-r.line.break
+            .pure-u-1-1
+              %p.schedule-table-legend LIGHTNING TALKS
+
+          .pure-g-r.line.talk.double
+            .pure-u-1-1
+              %p.speaker-name Panel
+              %p.talk-name Entrepreneurship: construyendo enlaces MX-US
+
+          .pure-g-r.line.talk
+            .pure-u-1-1
+              %p.speaker-name Panel
+              %p.talk-name Go
+
           .pure-g-r.line.announcements
             .pure-u-1-1
-              %p.schedule-table-legend EOD Announcements
+              %p.schedule-table-legend SPONSOR DINNER
+
       .pure-g-r.bottom
         .pure-u-1-1
           .images

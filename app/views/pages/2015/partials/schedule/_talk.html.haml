@@ -2,7 +2,6 @@
   .pure-u-1-1
     %p.speaker-name
       = locals[:speaker]
-    .schedule-language-image
+    .schedule-language-image{ class: "#{ locals[:language]}" }
     %p.talk-name{ class: "#{ locals[:language] }" }
       = locals[:talk_name]
-
