@@ -34,7 +34,7 @@
           = render 'pages/2015/partials/schedule/hour', locals: { hour: '15:40', class_name: 'talk' }
           = render 'pages/2015/partials/schedule/hour', locals: { hour: '20:00', class_name: 'break' }
 
-        .pure-u-7-24#wednesday.active
+        .pure-u-7-24.schedule-first-day.js-first-day.active
           .pure-g-r
             .schedule-table-header{ class: I18n.locale.to_s }
               .pure-u-1-1
@@ -119,7 +119,7 @@
             .pure-u-1-1
               %p.schedule-table-legend Sponsor Dinner
 
-        .pure-u-1-3#thursday
+        .pure-u-1-3.schedule-second-day.js-second-day
           .pure-g-r
             .schedule-table-header
               .pure-u-1-1
@@ -203,7 +203,7 @@
             .pure-u-1-1
               %p.schedule-table-legend SPONSOR DINNER
 
-        .pure-u-1-3#friday
+        .pure-u-1-3.schedule-third-day.js-third-day
           .pure-g-r
             .schedule-table-header
               .pure-u-1-1

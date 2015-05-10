@@ -45,24 +45,22 @@
   width: 201px;
   height: 21px;
   display: inline-block;
-}
+
+  @include retina {
+     background: image_url('2015/sprite_magma_schedule@2x.png') no-repeat -10px -15px;
+     background-size: 220px 100px;
+   }
+ }
 
 .schedule-red-star {
   background: image_url('2015/sprite_magma_schedule.png') no-repeat -10px -49px;
   width: 15px;
   height: 15px;
-}
 
-.schedule-yellow-star {
-  background: image_url('2015/sprite_magma_schedule.png') no-repeat -35px -49px;
-  width: 15px;
-  height: 14px;
-}
-
-.schedule-keynote-star {
-  background: image_url('2015/sprite_magma_schedule.png') no-repeat -59px -46px;
-  width: 21px;
-  height: 21px;
+  @include retina {
+    background: image_url('2015/sprite_magma_schedule@2x.png') no-repeat -10px -49px;
+    background-size: 220px 100px;
+  }
 }
 
 .schedule-table-header {
@@ -113,6 +111,11 @@
     display: block;
     position: absolute;
     top: 4px;
+
+    @include retina {
+      background: image_url('2015/sprite_magma_schedule@2x.png') no-repeat -35px -49px;
+      background-size: 220px 100px;
+    }
   }
 
   &:before { left: -25px; }
@@ -216,6 +219,11 @@
           display: block;
           position: absolute;
           top: 6px;
+
+          @include retina {
+            background: image_url('2015/sprite_magma_schedule@2x.png') no-repeat -35px -49px;
+            background-size: 220px 100px;
+          }
         }
 
         &:before { left: -25px; }
@@ -269,6 +277,11 @@
         margin-left: 60px;
         margin-right: 10px;
 
+        @include retina {
+          background: image_url('2015/sprite_magma_schedule@2x.png') no-repeat -59px -46px;
+          background-size: 220px 100px;
+        }
+
         &.es {
           display: none;
         }
@@ -313,6 +326,11 @@
         margin-left: 60px;
         margin-right: 8px;
         float: left;
+
+        @include retina {
+          background: image_url('2015/sprite_magma_schedule@2x.png') no-repeat -90px -45px;
+          background-size: 220px 100px;
+        }
       }
       span {
         background: transparent;
@@ -494,18 +512,18 @@
       margin-left: -65px;
     }
 
-    #wednesday, #thursday, #friday {
+    .schedule-first-day, .schedule-second-day, .schedule-third-day {
       background: #ebebeb;
       top: auto;
       width: 83%;
       z-index: 997;
     }
 
-    #wednesday {
+    .schedule-first-day {
       position: relative;
     }
 
-    #thursday, #friday {
+    .schedule-second-day, .schedule-third-day {
       left: -100%;
       position: absolute;
     }

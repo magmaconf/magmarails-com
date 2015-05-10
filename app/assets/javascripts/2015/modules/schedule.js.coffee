@@ -28,20 +28,20 @@ $(document).ready ->
     activeDay = $('#schedule [class$=active]')
     activeDay.swipeleft()
 
-  $('#wednesday').swipeleft ->
-    swipeToLeft(@, '#thursday')
+  $('.js-first-day').swipeleft ->
+    swipeToLeft(@, '.js-second-day')
     $('#left.arrow').css('background-image', '')
 
-  $('#thursday').swipeleft ->
-    swipeToLeft(@, '#friday'  )
+  $('.js-second-day').swipeleft ->
+    swipeToLeft(@, '.js-third-day'  )
     $('#right.arrow').css('background-image', 'none')
 
-  $('#friday').swiperight ->
-    swipeToRight(@, '#thursday')
+  $('.js-third-day').swiperight ->
+    swipeToRight(@, '.js-second-day')
     $('#right.arrow').css('background-image', '')
 
-  $('#thursday').swiperight ->
-    swipeToRight(@, '#wednesday')
+  $('.js-second-day').swiperight ->
+    swipeToRight(@, '.js-first-day')
     $('#left.arrow').css('background-image', 'none')
 
   swipeToLeft = (hide, show) ->
@@ -49,18 +49,18 @@ $(document).ready ->
     $(hide).removeClass('active')
     $(hide).animate
       left: '-70%'
-    ,300
+    , 300
     $(show).animate
       left: '14.5%'
-    ,200
+    , 200
 
   swipeToRight = (hide, show) ->
     $(show).addClass('active')
     $(hide).removeClass('active')
     $(hide).animate
       left: '100%'
-    ,300, ->
+    , 300, ->
       $(hide).css('left', '-100%')
     $(show).animate
-      left: if show is '#wednesday' then '0' else '14.5%'
-    ,250
+      left: if show is '.js-first-day' then '0' else '14.5%'
+    , 250
