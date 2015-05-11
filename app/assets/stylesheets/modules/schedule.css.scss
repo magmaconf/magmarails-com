@@ -1,21 +1,17 @@
 .schedule-container {
   padding: 50px 25px 0;
   box-sizing: border-box;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
-.schedule-ta-c {
-  text-align: center;
-}
+.schedule-ta-c { text-align: center; }
 
 .small-stars {
   list-style: none;
   padding: 0;
   margin: 15px 0 0;
 
-  @media (max-width: 767px) {
-    display: none;
-  }
+  @media (max-width: 767px) { display: none; }
 
   > li {
     margin: 0 5px;
@@ -23,20 +19,23 @@
   }
 }
 
-.magma-legend {
+.schedule-title {
+  color: white;
+  font-size: 21px;
+  font-weight: 300;
+  font-family: 'Teko', sans-serif;
+  letter-spacing: 2px;
+  line-height: 30px;
+  margin: 10px auto;
+  text-align: center;
+  text-transform: uppercase;
   background: #e65253;
-  margin: 10px 0;
+  box-sizing: border-box;
+  padding: 0 10px;
 
-  p {
-    color: white;
-    font-size: 21px;
-    font-weight: 300;
-    font-family: 'Teko', sans-serif;
-    letter-spacing: 2px;
-    line-height: 30px;
-    margin: 0px auto;
-    text-align: center;
-    text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    margin: 15px auto;
+    width: 292px;
   }
 }
 
@@ -70,12 +69,6 @@
   min-height: 23px;
   padding: 10px 0 5px;
   width: 100%;
-
-  &.es {
-    img {
-      height: 20px;
-    }
-  }
 }
 
 .schedule-table-time {
@@ -92,6 +85,14 @@
   margin-left: 60px;
   margin-bottom: 0px;
   margin-top: 0px;
+}
+
+.schedule-place-container {
+  background-color: #ebebeb;
+  height: 43px;
+  text-align: center;
+  margin: 24px auto -26px;
+  width: 270px;
 }
 
 .schedule-place-text {
@@ -123,115 +124,81 @@
   &:after { right: -25px; }
 }
 
+.schedule-footer {
+  border-bottom: 2px solid #e65253;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.schedule-day-container {
+  margin: 0 auto;
+  text-align: center;
+
+  @media screen and (max-width: 767px) { margin-left: -65px; }
+}
+
+.schedule-day-name {
+  font-size: 32px;
+  margin: 0;
+  font-family: 'Teko', sans-serif;
+  font-weight: 500;
+  color: #e65253;
+  display: inline-block;
+  position: relative;
+
+  &:before,
+  &:after {
+    background: image_url('2015/sprite_magma_schedule.png') no-repeat -35px -49px;
+    width: 15px;
+    height: 14px;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+
+    @include retina {
+      background: image_url('2015/sprite_magma_schedule@2x.png') no-repeat -35px -49px;
+      background-size: 220px 100px;
+    }
+  }
+
+  &:before {
+    left: -25px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      left: -20px;
+    }
+  }
+
+  &:after {
+    right: -25px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      right: -20px;
+    }
+  }
+}
+
 #schedule {
   background: #ebebeb;
   padding-top: 48px;
 
   .schedule-container {
 
-    .bottom {
-      border-bottom: 2px solid #e65253;
+    &.fixed {
+      padding-top: 110px ;
 
-      .images {
-        background-color: #ebebeb;
-        height: 43px;
-        text-align: center;
-        margin: 24px auto -26px;
-        width: 270px;
-      }
-
-      .register {
-        max-height: 180px;
-        margin: 100px auto 0px;
-        width: 173px;
-        .btn-register {
-          bottom: 208px;
-          margin-left: 11px;
-          position: relative;
-          img {
-            height: 96px;
-            width: 82px;
-          }
-        }
-      }
-
-      &.fixed {
-
-        .line.opening {
-          padding-top: 76px;
-        }
-
-        .schedule-table-header {
-          max-width: 400px;
-          position: fixed;
-          top: 48px;
-          width: 31.7%;
-          z-index: 99;
-        }
-      }
-    }
-    .header {
-      margin: 0 auto;
-      width: 455px;
-      .arena, .star {
-        display: block;
-        float: left;
-      }
-      .arena {
-        margin: 0 14px;
-      }
-      .star {
-        background: image_url('star.png');
-        height: 20px;
-        width: 21px;
-      }
-    }
-    #right-mask {
-      margin-top: 3px;
-      text-align: right;
-    }
-    .right-stars li {
-      margin-left: 12px;
-    }
-    .left-stars li {
-      margin-right: 12px;
-    }
-    
-    
-    .day-image {
-      margin: 0 auto;
-      text-align: center;
-
-      h2 {
-        font-size: 32px;
+      .schedule-table-header {
+        position: fixed;
         margin: 0;
-        font-family: 'Teko', sans-serif;
-        font-weight: 500;
-        color: #e65253;
-        display: inline-block;
-        position: relative;
-
-        &:before, &:after {
-          background: image_url('2015/sprite_magma_schedule.png') no-repeat -35px -49px;
-          width: 15px;
-          height: 14px;
-          content: '';
-          display: block;
-          position: absolute;
-          top: 6px;
-
-          @include retina {
-            background: image_url('2015/sprite_magma_schedule@2x.png') no-repeat -35px -49px;
-            background-size: 220px 100px;
-          }
-        }
-
-        &:before { left: -25px; }
-
-        &:after { right: -25px; }
+        top: 47px;
+        width: 20%;
+        z-index: 99;
       }
     }
-    
+
     .line {
       border-bottom: 1px solid #ccc;
       padding: 14px 0;
@@ -241,6 +208,7 @@
         margin: 0px 0px 6px 60px;
         text-transform: uppercase;
       }
+
       .link {
         color: inherit;
       }
@@ -285,13 +253,10 @@
         &.es {
           display: none;
         }
-
-        &.sp {
-          margin-left: 0;
-        }
       }
 
-      &.break, &.opening {
+      &.break,
+      &.opening {
 
         .schedule-table-legend {
           font-family: 'Teko', sans-serif;
@@ -308,16 +273,20 @@
       &.talk, &.keynote {
         min-height: 86px;
       }
+
       &.opening {
         min-height: 30px;
       }
+
       &.double {
         min-height: 106px;
       }
+
       &.break {
         min-height: 20px;
       }
     }
+
     .keynote {
       .schedule-keynotes-image {
         background: image_url('2015/sprite_magma_schedule.png') no-repeat -90px -45px;
@@ -332,6 +301,7 @@
           background-size: 220px 100px;
         }
       }
+
       span {
         background: transparent;
         font-family: 'Teko', sans-serif;;
@@ -341,9 +311,7 @@
         margin-left: 7px;
         float: left;
       }
-      span {
-        float: left;
-      }
+
       .schedule-language-image {
         margin-left: 0;
         margin-top: 0;
@@ -360,15 +328,12 @@
   .schedule-table-legend {
     margin-left: 30px;
   }
-   
+
   .small-stars {
     > li:nth-child(even) {
       display: none;
     }
   }
-
-  #schedule .schedule-container .day-image h2:before { left: -20px; }
-  #schedule .schedule-container .day-image h2:after { right: -20px; }
 
   #schedule .schedule-container .line .speaker-name {
     margin: 0px 25px 6px 30px;
@@ -434,13 +399,9 @@
 
       &.fixed {
 
-        .line.opening {
-          padding-top: 20px;
-        }
+        .line.opening { padding-top: 20px; }
 
-        #time .schedule-table-header {
-          width: 100%;
-        }
+        #time .schedule-table-header { width: 100%; }
 
         .schedule-table-header {
           max-width: none;
@@ -448,9 +409,7 @@
           width: 100%;
         }
 
-        .arrow {
-          position: fixed;
-        }
+        .arrow { position: fixed; }
 
         #right {
           margin-bottom: 0;
@@ -458,36 +417,9 @@
           top: 6px;
         }
 
-        #left {
-          top: 50px;
-        }
+        #left { top: 50px; }
       }
-    }
 
-    .header {
-      width: 288px;
-
-      .star, .arena {
-        display: inline-block;
-      }
-      .star {
-        background: image_url('sprite.svg');
-        background-size: 174px 180px;
-        background-position: -155px -142px;
-        height: 15px;
-        width: 15px;
-      }
-      .arena {
-        width: 230px;
-      }
-    }
-    .left-stars, #left-mask, #right-mask, .right-stars {
-      display: none;
-    }
-
-    .magma-legend {
-      margin: 15px auto;
-      width: 292px;
     }
 
     .schedule-table-header {
@@ -497,9 +429,6 @@
         padding-bottom: 10px;
       }
     }
-    .bottom {
-      display: none;
-    }
 
     #time {
       background: #ebebeb;
@@ -508,11 +437,9 @@
       z-index: 998;
     }
 
-    .schedule-container .day-image {
-      margin-left: -65px;
-    }
-
-    .schedule-first-day, .schedule-second-day, .schedule-third-day {
+    .schedule-first-day,
+    .schedule-second-day,
+    .schedule-third-day {
       background: #ebebeb;
       top: auto;
       width: 83%;
@@ -523,34 +450,43 @@
       position: relative;
     }
 
-    .schedule-second-day, .schedule-third-day {
+    .schedule-second-day,
+    .schedule-third-day {
       left: -100%;
       position: absolute;
     }
 
     .schedule-container .line {
-      .schedule-table-legend, .speaker-name, .talk-name  {
+
+      .schedule-table-legend,
+      .speaker-name,
+      .talk-name  {
         margin-left: 20px;
       }
+
       .speaker-name {
         margin-bottom: 5px;
         min-height: 0;
       }
+
       .talk-name {
         margin-top: 0px;
         &.en {
           margin-left: 20px;
         }
       }
+
       &.talk .schedule-language-image {
         float: right;
         position: relative;
         top: -29px;
       }
+
       &.talk {
         min-height: 85px;
         padding-bottom: 0;
       }
+
       .speaker-name {
         color: #2f2c25;
       }
@@ -569,7 +505,8 @@
           margin-left: 0px;
         }
 
-        .schedule-keynotes-image, .schedule-language-image {
+        .schedule-keynotes-image,
+        .schedule-language-image {
           float: right;
           position: relative;
           top: -29px;
