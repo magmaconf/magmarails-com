@@ -435,6 +435,7 @@
       padding-left: 2%;
       width: 13%;
       z-index: 998;
+      position: absolute;
     }
 
     .schedule-first-day,
@@ -448,6 +449,7 @@
 
     .schedule-first-day {
       position: relative;
+      margin-left: 13%;
     }
 
     .schedule-second-day,
