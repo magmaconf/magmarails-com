@@ -26,12 +26,13 @@
           = render 'pages/2015/partials/schedule/hour', locals: { hour: '12:20', class_name: 'talk double' }
           = render 'pages/2015/partials/schedule/hour', locals: { hour: '13:00', class_name: 'break' }
           = render 'pages/2015/partials/schedule/hour', locals: { hour: '13:10', class_name: 'break' }
-          = render 'pages/2015/partials/schedule/hour', locals: { hour: '13:15', class_name: 'talk double' }
-          = render 'pages/2015/partials/schedule/hour', locals: { hour: '14:00', class_name: 'talk double' }
-          = render 'pages/2015/partials/schedule/hour', locals: { hour: '14:30', class_name: 'break' }
-          = render 'pages/2015/partials/schedule/hour', locals: { hour: '14:40', class_name: 'break' }
-          = render 'pages/2015/partials/schedule/hour', locals: { hour: '15:20', class_name: 'talk double' }
-          = render 'pages/2015/partials/schedule/hour', locals: { hour: '15:40', class_name: 'talk' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '14:30', class_name: 'talk double' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '15:10', class_name: 'talk double' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '15:50', class_name: 'break' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '16:10', class_name: 'break' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '16:30', class_name: 'talk double' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '17:10', class_name: 'talk' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '17:50', class_name: 'talk' }
           = render 'pages/2015/partials/schedule/hour', locals: { hour: '20:00', class_name: 'break' }
 
         .pure-u-7-24.schedule-first-day.js-first-day.active
@@ -115,6 +116,9 @@
                               language: 'es',
                               talk_name: 'Comunidades' }
 
+          .pure-g-r.line.talk
+            .pure-u-1-1
+
           .pure-g-r.line.break
             .pure-u-1-1
               %p.schedule-table-legend Sponsor Dinner
@@ -139,8 +143,8 @@
                               language: 'en' }
 
           = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'Developers vs Designers',
-                              talk_name: 'Dominik Bamberger',
+                    locals: { talk_name: 'Developers vs Designers',
+                              speaker: 'Dominik Bamberger',
                               language: 'en',
                               class_name: 'double' }
 
@@ -196,8 +200,13 @@
 
           = render 'pages/2015/partials/schedule/talk',
                     locals: { speaker: 'Panel',
-                              talk_name: '100 desarrolladores dijeron - A one hundred developers said',
-                              language: 'en' }
+                              talk_name: '100 desarrolladores dijeron',
+                              language: 'es' }
+
+          = render 'pages/2015/partials/schedule/talk',
+                    locals: { speaker: 'Panel',
+                              language: 'es',
+                              talk_name: 'Entrepreneurship: construyendo enlaces MX-US' }
 
           .pure-g-r.line.announcements
             .pure-u-1-1
@@ -220,6 +229,10 @@
 
           .pure-g-r.line.keynote
             .pure-u-1-1
+              %p.speaker-name
+                TBA
+              %p.talk-name
+                TBA
 
           = render 'pages/2015/partials/schedule/talk',
                     locals: { speaker: 'Welcoming Diversity In Your Projects',
@@ -271,15 +284,19 @@
             .pure-u-1-1
               %p.schedule-table-legend LIGHTNING TALKS
 
-          .pure-g-r.line.talk.double
-            .pure-u-1-1
-              %p.speaker-name Panel
-              %p.talk-name Entrepreneurship: construyendo enlaces MX-US
+          = render 'pages/2015/partials/schedule/talk',
+                    locals: { speaker: 'Melissa Pegus',
+                              talk_name: 'TBA',
+                              language: 'en' ,
+                              class_name: 'double' }
 
           .pure-g-r.line.talk
             .pure-u-1-1
               %p.speaker-name Panel
               %p.talk-name Go
+
+          .pure-g-r.line.talk
+            .pure-u-1-1
 
           .pure-g-r.line.announcements
             .pure-u-1-1
