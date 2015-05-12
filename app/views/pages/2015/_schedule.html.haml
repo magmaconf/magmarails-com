@@ -112,12 +112,14 @@
                               talk_name: 'Working from home: myths and realities of a geek' }
 
           = render 'pages/2015/partials/schedule/talk',
+                    locals: { speaker: 'Yitzchok Willroth',
+                              language: 'en',
+                              talk_name: 'TBA' }
+
+          = render 'pages/2015/partials/schedule/talk',
                     locals: { speaker: 'Panel',
                               language: 'es',
                               talk_name: 'Communities' }
-
-          .pure-g-r.line.talk
-            .pure-u-1-1
 
           .pure-g-r.line.break
             .pure-u-1-1
