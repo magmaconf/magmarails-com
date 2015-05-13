@@ -51,7 +51,7 @@ $(document).ready ->
       left: '-70%'
     , 300
     $(show).animate
-      left: '15%'
+      left: '17%'
     , 200
 
   swipeToRight = (hide, show) ->
@@ -62,5 +62,5 @@ $(document).ready ->
     , 300, ->
       $(hide).css('left', '-100%')
     $(show).animate
-      left: if show is '.js-first-day' then '0' else '15%'
+      left: if show is '.js-first-day' then '0' else '17%'
     , 250

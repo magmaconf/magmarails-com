@@ -325,7 +325,7 @@
 
   @include mq-laptop {
     position: absolute;
-    top: 35px;
+    top: 10px;
     right: 0;
     margin-left: 0;
     margin-right: 0;
@@ -335,7 +335,7 @@
     float: right;
     position: relative;
     margin-left: 20px;
-    right: 26px;
+    right: 0px;
     top: -29px;
   }
 }
@@ -393,7 +393,7 @@
   @include mq-tablet {
     background: #ebebeb;
     top: auto;
-    width: 85% !important;
+    width: 83% !important;
     z-index: 996;
   }
 }
