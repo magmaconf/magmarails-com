@@ -143,10 +143,6 @@
   -o-transform: rotate($degres);
 }
 
-@mixin mq-tablet($orientation: '') {
-  @include mq(1024px, $orientation) { @content; }
-}
-
 @mixin mq-mobile($orientation: '') {
   @include mq(568px, $orientation) { @content; }
 }
@@ -161,6 +157,16 @@
   } @else {
     @media only screen and (max-width: #{$max-width}) and (orientation: #{$orientation}) { @content; }
   }
+}
+
+@mixin mq-laptop {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin mq-tablet {
+  @include mq(767px) { @content; }
 }
 
 @mixin retina {
