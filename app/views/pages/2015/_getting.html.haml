@@ -1,0 +1,67 @@
+#about-magma.pure-u-2-3{ class: I18n.locale.to_s }
+  = render 'pages/2015/partials/pages_main_menu'
+  .container
+    .getting-to-manzanillo-content
+      .pure-g-r.section
+        .pure-u-1-1{ style: 'text-align: center;'}
+          %h2.schedule-place-text
+            It's really easy to get here
+          %br
+          %h4.schedule-place-text
+            June 18, 19 & 20 - Manzanillo, Col. MX
+
+      #map-container.pure-g-r.content
+        .pure-u-1-1
+          #map_canvas
+          .map-legend
+            %p
+              %br
+              = t('getting_manzanillo.map_description')
+
+      .pure-g-r.section#location
+        #location-carousel.pure-u-1-2.content-image
+          %img{src: "#{image_path 'magmaconf-3.jpg'}" }
+        .pure-u-1-2.right-info
+          .content-information
+            %p.title= t('2015.getting_manzanillo.help.title')
+            %br
+            %p.description
+              = t('2015.getting_manzanillo.help.description').html_safe
+      .pure-g-r.section#venue
+        #venue-carousel.pure-u-1-2.content-image
+          %img{src: "#{image_path 'venue-2015-1.jpg'}" }
+        .pure-u-1-2.right-info
+          .content-information
+            %p.title= t('2015.getting_manzanillo.planning.title')
+            %br
+            %p.description
+              = t('2015.getting_manzanillo.planning.description').html_safe
+      .pure-g-r.section#culture
+        #culture-carousel.pure-u-1-2.content-image
+          %img{src: "#{image_path 'culture-2.jpg'}"}
+        .pure-u-1-2.right-info
+          .content-information
+            %p.title= t('2015.getting_manzanillo.manzanillo.title')
+            %br
+            %p.description
+              = t('2015.getting_manzanillo.manzanillo.description').html_safe
+      .pure-g-r.section#magma-village
+        #magma-village-carousel.pure-u-1-2.right.content-image
+          %img{src: "#{image_path 'village3.jpg'}" }
+        .pure-u-1-2.right-info
+          .content-information
+            %p.title= t('2015.getting_manzanillo.guadalajara.title')
+            %br
+            %p.description
+              = t('2015.getting_manzanillo.guadalajara.description').html_safe
+      .pure-g-r.section#magma-village
+        #magma-village-carousel.pure-u-1-2.right.content-image
+          %img{src: "#{image_path 'village3.jpg'}" }
+        .pure-u-1-2.right-info
+          .content-information
+            %p.title= t('2015.getting_manzanillo.about_manzanillo.title')
+            %br
+            %p.description
+              = t('2015.getting_manzanillo.about_manzanillo.description').html_safe
+
+

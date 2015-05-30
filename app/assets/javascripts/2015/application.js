@@ -27,6 +27,8 @@ $(document).ready(function(){
     $('#main-menu, #mobile-header, #footer').addClass('index');
   } else if (pathname == '/about') {
     $('#about-magma-link').addClass('active');
+  } else if (pathname == '/getting') {
+    $('#getting-link').addClass('active');
   } else if (pathname == '/schedule') {
     $('#schedule-link').addClass('active');
   } else if (pathname == '/speakers') {
