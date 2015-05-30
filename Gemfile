@@ -4,7 +4,6 @@ gem 'rails', '4.1'
 
 gem 'pg'
 
-gem 'cactu'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
