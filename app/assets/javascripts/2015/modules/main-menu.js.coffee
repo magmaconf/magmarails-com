@@ -12,7 +12,7 @@ $(document).ready ->
     $('#main-menu').css('right') is '0px'
 
   hideMobileMenu = ->
-    $('#main-menu').animate right: 640
+    $('#main-menu').animate right: '100%'
     $('#btn-menu').removeClass('active')
 
   showMobileMenu = ->
