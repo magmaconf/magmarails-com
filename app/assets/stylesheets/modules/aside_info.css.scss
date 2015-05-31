@@ -5,6 +5,7 @@
   @include mq-tablet {
     margin-bottom: 0px;
     min-height: 880px;
+    padding-bottom: 20px;
   }
 
   &.js-full-width { width: 100%; }
@@ -38,11 +39,12 @@
 
     &.line3 { font-size: 62px; }
 
-    &.line1.about { font-size: 40px; }
-    &.line2.about { font-size: 102px; }
+    &.line1.about { font-size: 37px; }
+    &.line2.about { font-size: 94px; }
     &.line3.about {
-      font-size: 38px;
+      font-size: 35px;
       margin-top: 2px;
+      line-height: 35px;
     }
   }
 
@@ -62,8 +64,8 @@
     font-size: 165%;
     font-family: oswald;
     font-weight: 300;
-    margin: 0 auto;
-    max-width: 178px;
+    margin: 20px auto;
+    max-width: 212px;
     padding-bottom: 5px;
     text-transform: uppercase;
 
@@ -96,7 +98,7 @@
       }
 
       &.line1.about {
-        font-size: 32px;
+        font-size: 34px;
         margin-top: 0;
       }
 
@@ -108,10 +110,10 @@
 
     .content-text {
       font-family: 'Open Sans', sans-serif;
-      font-size: 11px;
+      font-size: 14px;
       color: white;
       display: block;
-      line-height: 13px;
+      line-height: 18px;
 
       &.highlight {
         font-weight: bold;
