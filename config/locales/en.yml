@@ -292,13 +292,12 @@ en:
           International airport offers direct flights to Chicago, Los Angeles, San
           Francisco, Dallas, Atlanta, Houston, Phoenix, Oakland, and Mexico City.
           Major airlines that offer service to Guadalajara include American Airlines,
-          AeroMexico, Delta, United, US Airways, and Volaris.<br/><br/> <span>Photo by:
-          TheJesus1599 "Panoramio </span>'
+          AeroMexico, Delta, United, US Airways, and Volaris.'
       help:
         title: 'We Are Here To Help!'
         description: "If you have any questions about transportation to and from MagmaConf
           or would like assistance booking your flights or buses, please don’t hesitate to
-          reach out to <a href='mailto:info@magmaconf.com'>info@magmaconf.com.</a>. We will
+          reach out to <a href='mailto:info@magmaconf.com'>info@magmaconf.com</a>. We will
           be happy to help you find your ideal itinerary."
       about_manzanillo:
         title: 'About Manzanillo'

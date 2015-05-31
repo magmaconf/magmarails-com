@@ -1,0 +1,42 @@
+.tide {
+  border-bottom: 2px solid $alto;
+}
+
+.tide-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 348px;
+}
+
+.tide-image-container-small {
+  height: 325px;
+}
+
+.tide-text-container {
+  &:before {
+    content: " ";
+    display: inline-block;
+    height: 348px;
+    vertical-align: middle;
+  }
+}
+
+.tide-text-container {
+  &:before { height: 325px; }
+}
+
+.tide-text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 98%;
+  box-sizing: border-box;
+}
+
+.tide-image { max-width: 100% !important; }
+
+.tide-text a {
+  color: $mandy;
+  text-decoration: none;
+
+  &:hover { text-decoration: underline; }
+}
