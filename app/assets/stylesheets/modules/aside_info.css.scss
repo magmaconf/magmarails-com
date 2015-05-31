@@ -49,12 +49,18 @@
   }
 
   .social {
-    margin: 20px auto 0 auto;
-    overflow: hidden;
+    width: 100%;
 
     [class *='icon-'] {
       padding: 20px 0 0 17px;
       margin-top: -13px;
+    }
+
+    a {
+      display: inline-block;
+      float: none;
+
+      &.twitter { margin: 0 35px 0; }
     }
   }
 
