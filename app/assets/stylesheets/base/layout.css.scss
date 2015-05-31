@@ -184,6 +184,7 @@ input[type=submit] {
 // Color
 .c-mdy { color: $mandy; }
 .c-amlo { color: $armadillo; }
+.c-stto { color: $stiletto; }
 
 // Background
 .bgc-gly { background-color: $gallery }
@@ -237,9 +238,13 @@ input[type=submit] {
 .m0 { margin: 0; }
 .m10 { margin: 10px; }
 .mt30 { margin-top: 30px; }
+.mt15 { margin-top: 15px; }
+.mt20 { margin-top: 20px; }
+.mt35 { margin-top: 35px; }
 .mb10 { margin-bottom: 10px; }
 .mb15 { margin-bottom: 15px; }
 .mb30 { margin-bottom: 30px; }
+.mb35 { margin-bottom: 35px; }
 .mx10 {
   margin-left: 10px;
   margin-right: 10px;
