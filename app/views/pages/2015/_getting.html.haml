@@ -11,9 +11,13 @@
             June 18, 19 & 20 - Manzanillo, Col. MX
 
       .pure-g-r
-        .getting-to-mzo-map
+        .getting-to-mzo-map.pos-r
+          .w250.pos-a.pos-b20.pos-l20.ta-l
+            %p.p0.m0.lh-12.ls-0.fz-10.ta-l.opens
+              = t('2015.getting_manzanillo.map_description').html_safe
 
-      .pure-g-r.tide.bdt-w-2.bdt-c-ato.bdt-s-s
+
+      .pure-g-r.tide
         .pure-u-1-2.tide-image-container
           %img.tide-image{src: "#{image_path '2015/getting/compass@2x.jpg'}" }
         .pure-u-1-2.tide-text-container
