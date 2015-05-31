@@ -1,48 +1,64 @@
 #about-magma.pure-u-2-3{ class: I18n.locale.to_s }
   = render 'pages/2015/partials/pages_main_menu'
   .container
-    .bgc-gly.pt50
+    .bgc-gly.pt50.p0--m
       .pure-g-r
-        .pure-u-1-1.ta-c.my30
-          %h2.fz-50.m0.lh-40.dis-ib.bdb.bdc-mdy.c-mdy.fw-r.teko
+        .pure-u-1-1.ta-c.my30.my15--m
+          %h2.fz-50.m0.lh-40.dis-ib.bdb.bdc-mdy.c-mdy.fw-r.teko.fz-30--m.lh-25--m
             About Magma
           %br
-          %h4.fz-30.m0.c-mdy.fw-l.teko.p0.text-with-stars
+          %h4.fz-30.m0.c-mdy.fw-l.teko.p0.text-with-stars.fz-20--m
             June 18, 19 & 20 - Manzanillo, Col. MX
 
-      .pure-g-r.tide.bdt-w-2.bdt-c-ato.bdt-s-s
+      .pure-g-r.tide.bdt-w-2.bdt-c-ato.bdt-s-s.bdt-w-0--m
         .pure-u-1-2.tide-image-container.tide-image-container-small
+          .mx10.my15.dis-b--m
+            .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
+            %p.m0.teko.c-mdy.fw-r.fz-20.tt-u= t('about.magmaconf_is_title')
+
           %img.tide-image{src: "#{image_path '2015/about/magmaconf-1@2x.jpg'}" }
         .pure-u-1-2.tide-text-container.tide-text-container-small
-          .tide-text.p20
-            %p.m0.teko.c-mdy.fw-r.fz-20.mb30.tt-u= t('about.magmaconf_is_title').html_safe
+          .tide-text.p20.p10--m
+            %p.m0.teko.c-mdy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('about.magmaconf_is_title').html_safe
             %p.m0.opens.c-amlo.fw-r.fz-14
               = t('about.magmaconf_description').html_safe
 
       .pure-g-r.tide
         .pure-u-1-2.tide-image-container.tide-image-container-small
+          .mx10.my15.dis-b--m
+            .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
+            %p.m0.teko.c-mdy.fw-r.fz-20.tt-u= t('about.venue')
+
           %img.tide-image{src: "#{image_path '2015/about/venue@2x.jpg'}" }
         .pure-u-1-2.tide-text-container.tide-text-container-small
-          .tide-text.p20
-            %p.m0.teko.c-mdy.fw-r.fz-20.mb30.tt-u= t('about.venue').html_safe
+          .tide-text.p20.p10--m
+            %p.m0.teko.c-mdy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('about.venue')
             %p.m0.opens.c-amlo.fw-r.fz-14
               = t('about.venue_2015_description').html_safe
 
       .pure-g-r.tide
         .pure-u-1-2.tide-image-container.tide-image-container-small
+          .mx10.my15.dis-b--m
+            .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
+            %p.m0.teko.c-mdy.fw-r.fz-20.tt-u= t('about.culture_activities')
+
           %img.tide-image{src: "#{image_path '2015/about/activities@2x.jpg'}"}
         .pure-u-1-2.tide-text-container.tide-text-container-small
-          .tide-text.p20
-            %p.m0.teko.c-mdy.fw-r.fz-20.mb30.tt-u= t('about.culture_activities').html_safe
+          .tide-text.p20.p10--m
+            %p.m0.teko.c-mdy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('about.culture_activities')
             %p.m0.opens.c-amlo.fw-r.fz-14
               = t('about.culture_2015_description').html_safe
 
       .pure-g-r.tide
         .pure-u-1-2.tide-image-container.tide-image-container-small
+          .mx10.my15.dis-b--m
+            .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
+            %p.m0.teko.c-mdy.fw-r.fz-20.tt-u= t('about.magma_village').html_safe
+
           %img.tide-image{src: "#{image_path '2015/about/village@2x.jpg'}" }
         .pure-u-1-2.tide-text-container.tide-text-container-small
-          .tide-text.p20
-            %p.m0.teko.c-mdy.fw-r.fz-20.mb30.tt-u= t('about.magma_village').html_safe
+          .tide-text.p20.p10--m
+            %p.m0.teko.c-mdy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('about.magma_village').html_safe
             %p.m0.opens.c-amlo.fw-r.fz-14
               = t('about.magma_village_description').html_safe
 
