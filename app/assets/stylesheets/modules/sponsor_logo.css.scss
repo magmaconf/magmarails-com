@@ -4,6 +4,11 @@
   background-size: cover;
 }
 
+.sponsor-logo-link {
+  outline: none;
+  &:focus { outline: none; }
+}
+
 .sponsor-logo__big {
   width: 252px;
   height: 272px;
