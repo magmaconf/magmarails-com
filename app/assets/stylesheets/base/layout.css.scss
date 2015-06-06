@@ -223,9 +223,19 @@ input[type=submit] {
   @include mq-mobile { display: none; }
 }
 
+.dis-b-n--t {
+  display: block;
+  @include mq-tablet { display: none; }
+}
+
 .dis-i-n--m {
   display: inline;
-  @include mq-mobile { display: inline; }
+  @include mq-mobile { display: none; }
+}
+
+.dis-b--t {
+  display: none;
+  @include mq-tablet { display: block; }
 }
 
 // Padding
@@ -284,6 +294,12 @@ input[type=submit] {
     margin-bottom: 15px;
   }
 }
+
+
+.m0--t {
+  @include mq-tablet { margin: 0; }
+}
+
 
 // Line height
 .lh-40 { line-height: 40px; }

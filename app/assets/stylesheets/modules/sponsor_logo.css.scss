@@ -2,6 +2,7 @@
   display: block;
   margin: 0 auto;
   background-size: cover;
+  @include mq-tablet { margin-top: 30px; }
 }
 
 .sponsor-logo-link {
