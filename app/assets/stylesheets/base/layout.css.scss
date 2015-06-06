@@ -188,8 +188,10 @@ input[type=submit] {
 .c-mdy { color:  $mandy; }
 .c-bswt { color: $bittersweet; }
 .c-ambr { color: $amber; }
+.c-bwht { color: $barley-white; }
 .c-glry { color: $gallery; }
 .c-amlo { color: $armadillo; }
+.c-whte { color: $white; }
 
 // Background
 .bgc-gly { background-color: $gallery }
@@ -201,6 +203,9 @@ input[type=submit] {
 .fz-20 { font-size: 20px; }
 .fz-14 { font-size: 14px; }
 .fz-10 { font-size: 10px; }
+.fz-50 { font-size: 50px; }
+.fz-85 { font-size: 85px; }
+
 .fz-40--m { @include mq-mobile { font-size: 40px; } }
 .fz-30--m { @include mq-mobile { font-size: 30px; } }
 .fz-25--m { @include mq-mobile { font-size: 25px; } }
@@ -260,6 +265,7 @@ input[type=submit] {
 .m0 { margin: 0; }
 .m10 { margin: 10px; }
 .mt30 { margin-top: 30px; }
+.mt10 { margin-top: 10px; }
 .mt15 { margin-top: 15px; }
 .mt20 { margin-top: 20px; }
 .mt35 { margin-top: 35px; }
