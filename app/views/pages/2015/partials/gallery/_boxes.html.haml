@@ -20,4 +20,4 @@
    }(document, 'script', 'facebook-jssdk'));
 
 -@boxes.each do |box|
-  = render box.type, data: box
+  = render "pages/2015/partials/gallery/#{box.type}", data: box

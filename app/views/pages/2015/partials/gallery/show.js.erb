@@ -1,7 +1,7 @@
 $container = $('#gallery-inner');
 
 <% if @boxes.any? %>
-  var boxes = "<%= j(render(partial: 'boxes')) %>"
+  var boxes = "<%= j(render(partial: 'pages/2015/partials/gallery/boxes')) %>"
   var $boxes = $(boxes);
 
   $container.append($boxes).masonry('appended', $boxes, true, function(){
