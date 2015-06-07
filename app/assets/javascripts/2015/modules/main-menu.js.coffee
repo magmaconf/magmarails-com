@@ -1,4 +1,25 @@
 $(document).ready ->
+  ticking = false
+
+  $(window).resize ->
+    requestTick()
+
+  requestTick = ->
+    if !ticking
+      requestAnimationFrame(updateMobileMenu)
+      ticking = true
+
+  updateMobileMenu = ->
+    if window.innerWidth >= 767
+      $('#main-menu').css right: 'initial'
+    else
+      if isMainMenuOpen()
+        $('#main-menu').css right: '0'
+      else
+        $('#main-menu').css right: '100%'
+
+    ticking = false
+
   $('#btn-menu').click ->
     toggleMobileMenu()
 
@@ -9,7 +30,7 @@ $(document).ready ->
       showMobileMenu()
 
   isMainMenuOpen = ->
-    $('#main-menu').css('right') is '0px'
+    $('#btn-menu').hasClass('active')
 
   hideMobileMenu = ->
     $('#main-menu').animate right: '100%'
@@ -18,4 +39,3 @@ $(document).ready ->
   showMobileMenu = ->
     $('#main-menu').animate right: 0
     $('#btn-menu').addClass('active')
-

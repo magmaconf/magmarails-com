@@ -1,12 +1,6 @@
 html, body {
-  background-color: black !important;
-  transition: background-color 3s ease;
   font-family: 'Oswald', sans-serif;
   font-size: 14px;
-
-  &.hover {
-    background-color: $bkg !important;
-  }
 
   &::-webkit-scrollbar {
     display: none;
@@ -72,14 +66,6 @@ input[type=submit] {
   border: none;
 }
 
-.logo-container {
-  background-color: black;
-  transition: background-color 3s ease;
-
-  &.hover {
-    background-color: $bkg;
-  }
-}
 
 .layer { list-style: none }
 
@@ -164,7 +150,6 @@ input[type=submit] {
 
 @include font_face('Block', 'BLOKKNeue-Regular');
 
-
 // Text align
 .ta-c { text-align: center; }
 .ta-l { text-align: left; }
@@ -196,6 +181,8 @@ input[type=submit] {
 // Background
 .bgc-gly { background-color: $gallery }
 .bgc-wht { background-color: $white }
+.bgc-mndy { background-color: $mandy; }
+.bgc-blck { background-color: $black; }
 
 // Font size
 .fz-50 { font-size: 50px; }
@@ -334,3 +321,8 @@ input[type=submit] {
 .pos-b10 { bottom: 10px; }
 .pos-b20 { bottom: 20px; }
 .pos-l20 { left: 20px; }
+
+.has-animated-background {
+  transition: background-color 3s ease;
+}
+

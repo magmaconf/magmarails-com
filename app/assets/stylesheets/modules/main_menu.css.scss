@@ -16,8 +16,6 @@
   z-index: 1003;
   position: fixed;
   top: 0;
-  transition: all .3s ease-in;
-
 
   .nav-menu {
     background-color: $white;
@@ -47,7 +45,7 @@
 
   ul {
     margin: 0 auto;
-    padding: 20px 0 10px;
+    padding: 20px 0 20px;
     text-align: left;
 
     li {
@@ -128,7 +126,7 @@
 
 .transition-width { transition: width 1s; }
 
-@media screen and (max-width: 640px)  {
+@media screen and (max-width: 767px)  {
 
   #main-section {
     padding-top: 0;
@@ -209,7 +207,7 @@
     height: 100%;
     min-height: 465px;
     position: fixed;
-    right: 640px;
+    right: 100%;
     top: 0;
     transition: 0;
     z-index: 1004;

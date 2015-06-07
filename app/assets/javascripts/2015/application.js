@@ -42,4 +42,13 @@ $(document).ready(function(){
   } else if (pathname == '/gallery') {
     $('#main-menu, #mobile-header, #footer').addClass('gallery');
   }
+
+  if(pathname == '/') {
+    $('.js-animated-background')
+        .addClass('has-animated-background')
+        .removeClass('bgc-blck')
+        .addClass('bgc-mndy');
+  } else {
+    $('.js-animated-background').removeClass('bgc-blck').addClass('bgc-mndy');
+  }
 });
