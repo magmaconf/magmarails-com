@@ -1,13 +1,13 @@
 .pure-u-2-3{ class: I18n.locale.to_s }
   = render 'pages/2015/partials/pages_main_menu'
   .container
-    .bgc-gly.pt50.p0--m
+    .bgc-glry.pt50.p0--m
       .pure-g-r
-        .pure-u-1-1.ta-c.my30.my15--m
-          %h2.fz-50.m0.lh-40.dis-ib.bdb.bdc-mdy.c-mdy.fw-r.teko.fz-30--m.lh-25--m
+        .pure-u-1-1.ta-c.my30.my15--m.mx10
+          %h2.fz-40.m0.lh-40.bdc-mndy.c-mndy.fw-r.teko.fz-30--m.lh-25--m
             It's really easy to get here
-          %br
-          %h4.fz-30.m0.c-mdy.fw-l.teko.p0.text-with-stars.fz-20--m
+          .wp-33.bgc-mndy.m-center.hg2.m5--t.wp-100--t
+          %h4.fz-30.m0.c-mndy.fw-l.teko.p0.text-with-stars.fz-20--m
             June 18, 19 & 20 - Manzanillo, Col. MX
 
       .pure-g-r
@@ -24,12 +24,12 @@
         .pure-u-1-2.tide-image-container
           .mx10.my15.dis-b--m
             .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
-            %p.m0.teko.c-mdy.fw-r.fz-20.tt-u= t('2015.getting_manzanillo.help.title')
+            %p.m0.teko.c-mndy.fw-r.fz-20.tt-u= t('2015.getting_manzanillo.help.title')
 
           %img.tide-image{src: "#{image_path '2015/getting/compass@2x.jpg'}" }
         .pure-u-1-2.tide-text-container
           .tide-text.p20.p10--m
-            %p.m0.teko.c-mdy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('2015.getting_manzanillo.help.title')
+            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('2015.getting_manzanillo.help.title')
             %p.m0.opens.c-amlo.fw-r.fz-14
               = t('2015.getting_manzanillo.help.description').html_safe
 
@@ -37,12 +37,12 @@
         .pure-u-1-2.tide-image-container
           .mx10.my15.dis-b--m
             .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
-            %p.m0.teko.c-mdy.fw-r.fz-20.tt-u= t('2015.getting_manzanillo.planning.title')
+            %p.m0.teko.c-mndy.fw-r.fz-20.tt-u= t('2015.getting_manzanillo.planning.title')
 
           %img.tide-image{src: "#{image_path '2015/getting/planningtrip@2x.jpg'}" }
         .pure-u-1-2.tide-text-container
           .tide-text.p20.p10--m
-            %p.m0.teko.c-mdy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('2015.getting_manzanillo.planning.title')
+            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('2015.getting_manzanillo.planning.title')
             %p.m0.opens.c-amlo.fw-r.fz-14
               = t('2015.getting_manzanillo.planning.description').html_safe
 
@@ -50,12 +50,12 @@
         .pure-u-1-2.tide-image-container
           .mx10.my15.dis-b--m
             .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
-            %p.m0.teko.c-mdy.fw-r.fz-20.tt-u= t('2015.getting_manzanillo.manzanillo.title')
+            %p.m0.teko.c-mndy.fw-r.fz-20.tt-u= t('2015.getting_manzanillo.manzanillo.title')
 
           %img.tide-image{src: "#{image_path '2015/getting/airport_mzo@2x.jpg'}"}
         .pure-u-1-2.tide-text-container
           .tide-text.p20.p10--m
-            %p.m0.teko.c-mdy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('2015.getting_manzanillo.manzanillo.title')
+            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('2015.getting_manzanillo.manzanillo.title')
             %p.m0.opens.c-amlo.fw-r.fz-14
               = t('2015.getting_manzanillo.manzanillo.description').html_safe
 
@@ -63,12 +63,12 @@
         .pure-u-1-2.tide-image-container
           .mx10.my15.dis-b--m
             .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
-            %p.m0.teko.c-mdy.fw-r.fz-20.tt-u= t('2015.getting_manzanillo.guadalajara.title')
+            %p.m0.teko.c-mndy.fw-r.fz-20.tt-u= t('2015.getting_manzanillo.guadalajara.title')
 
           %img.tide-image{src: "#{image_path '2015/getting/airport_gdl@2x.jpg'}" }
         .pure-u-1-2.tide-text-container
           .tide-text.p20.p10--m
-            %p.m0.teko.c-mdy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('2015.getting_manzanillo.guadalajara.title')
+            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('2015.getting_manzanillo.guadalajara.title')
             %p.m0.opens.c-amlo.fw-r.fz-14
               = t('2015.getting_manzanillo.guadalajara.description').html_safe
             .pos-a.pos-b10.fz-10.c-amlo.fw-l.dis-b-n--m Photo by: TheJesus1599 "Panoramio
@@ -77,12 +77,12 @@
         .pure-u-1-2.tide-image-container
           .mx10.my15.dis-b--m
             .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
-            %p.m0.teko.c-mdy.fw-r.fz-20.tt-u= t('2015.getting_manzanillo.about_manzanillo.title')
+            %p.m0.teko.c-mndy.fw-r.fz-20.tt-u= t('2015.getting_manzanillo.about_manzanillo.title')
 
           %img.tide-image{src: "#{image_path '2015/getting/about_mzo@2x.jpg'}" }
         .pure-u-1-2.tide-text-container
           .tide-text.p20.p10--m
-            %p.m0.teko.c-mdy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('2015.getting_manzanillo.about_manzanillo.title')
+            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('2015.getting_manzanillo.about_manzanillo.title')
             %p.m0.opens.c-amlo.fw-r.fz-14
               = t('2015.getting_manzanillo.about_manzanillo.description').html_safe
 

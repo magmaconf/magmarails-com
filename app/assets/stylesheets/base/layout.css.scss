@@ -170,26 +170,30 @@ input[type=submit] {
 .c-cthr { color: $crown-of-thorns; }
 .c-stto { color: $stiletto; }
 .c-tpop { color: $tall-poppy; }
-.c-mdy { color:  $mandy; }
+.c-mndy { color:  $mandy; }
 .c-bswt { color: $bittersweet; }
 .c-ambr { color: $amber; }
 .c-bwht { color: $barley-white; }
+.c-bldr { color: $boulder; }
 .c-glry { color: $gallery; }
 .c-amlo { color: $armadillo; }
 .c-whte { color: $white; }
 
 // Background
-.bgc-gly { background-color: $gallery }
-.bgc-wht { background-color: $white }
+.bgc-glry { background-color: $gallery }
+.bgc-whte { background-color: $white }
 .bgc-mndy { background-color: $mandy; }
 .bgc-blck { background-color: $black; }
 
 // Font size
-.fz-50 { font-size: 50px; }
-.fz-30 { font-size: 30px; }
-.fz-20 { font-size: 20px; }
-.fz-14 { font-size: 14px; }
 .fz-10 { font-size: 10px; }
+.fz-14 { font-size: 14px; }
+.fz-16 { font-size: 16px; }
+.fz-18 { font-size: 18px; }
+.fz-20 { font-size: 20px; }
+.fz-22 { font-size: 22px; }
+.fz-30 { font-size: 30px; }
+.fz-40 { font-size: 40px; }
 .fz-50 { font-size: 50px; }
 .fz-85 { font-size: 85px; }
 
@@ -249,6 +253,7 @@ input[type=submit] {
 .pt20--m { @include mq-mobile { padding: 20px 0 0 0; } }
 
 // Margin
+.m-center { margin: 0 auto; }
 .m0 { margin: 0; }
 .m10 { margin: 10px; }
 .mt30 { margin-top: 30px; }
@@ -264,6 +269,11 @@ input[type=submit] {
 .mx10 {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.my5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .my10 {
@@ -288,9 +298,12 @@ input[type=submit] {
   }
 }
 
-
 .m0--t {
   @include mq-tablet { margin: 0; }
+}
+
+.m5--t {
+  @include mq-tablet { margin: 5px 0; }
 }
 
 
@@ -315,6 +328,16 @@ input[type=submit] {
 // Width
 .w250 { width: 250px; }
 
+.wp-33 { width: 33%; }
+.wp-100 { width: 100%; }
+
+.wp-100--t {
+  @include mq-tablet { width: 100%; }
+}
+
+// Height
+.hg2 { height: 2px; }
+
 // Position
 .pos-r { position: relative; }
 .pos-a { position: absolute; }
@@ -325,4 +348,3 @@ input[type=submit] {
 .has-animated-background {
   transition: background-color 3s ease;
 }
-
