@@ -50,5 +50,6 @@ $(document).ready(function(){
         .addClass('bgc-mndy');
   } else {
     $('.js-animated-background').removeClass('bgc-blck').addClass('bgc-mndy');
+    $('.js-aside-info').addClass('dis-b-n--t ');
   }
 });
