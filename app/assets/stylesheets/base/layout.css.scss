@@ -102,17 +102,6 @@ input[type=submit] {
   margin: 0 auto;
 }
 
-.normal-box {
-  margin: 20px auto;
-  max-width: 170px;
-}
-
-#keynotes, #speaker-cards {
-  .accordion-group {
-    display: none;
-  }
-}
-
 .footer-legend a.policy-page {
   display: none;
 }
@@ -170,7 +159,7 @@ input[type=submit] {
 .c-cthr { color: $crown-of-thorns; }
 .c-stto { color: $stiletto; }
 .c-tpop { color: $tall-poppy; }
-.c-mndy { color:  $mandy; }
+.c-mndy { color: $mandy; }
 .c-bswt { color: $bittersweet; }
 .c-ambr { color: $amber; }
 .c-bwht { color: $barley-white; }
@@ -187,12 +176,14 @@ input[type=submit] {
 
 // Font size
 .fz-10 { font-size: 10px; }
+.fz-l2 { font-size: 12px; }
 .fz-14 { font-size: 14px; }
 .fz-16 { font-size: 16px; }
 .fz-18 { font-size: 18px; }
 .fz-20 { font-size: 20px; }
 .fz-22 { font-size: 22px; }
 .fz-30 { font-size: 30px; }
+.fz-32 { font-size: 32px; }
 .fz-40 { font-size: 40px; }
 .fz-50 { font-size: 50px; }
 .fz-85 { font-size: 85px; }
@@ -318,8 +309,12 @@ input[type=submit] {
 
 
 // Line height
-.lh-40 { line-height: 40px; }
 .lh-12 { line-height: 12px; }
+.lh-15 { line-height: 15px; }
+.lh-25 { line-height: 25px; }
+.lh-35 { line-height: 35px; }
+.lh-40 { line-height: 40px; }
+
 .lh-20--m { @include mq-mobile { line-height: 20px; } }
 .lh-25--m { @include mq-mobile { line-height: 25px; } }
 
@@ -364,3 +359,8 @@ input[type=submit] {
 
   &:focus { outline: none; }
 }
+
+.td-n { text-decoration: none; }
+.td-u { text-decoration: underline; }
+.td-h-n { &:hover { text-decoration: none; } }
+.td-h-u { &:hover { text-decoration: underline; } }
