@@ -1,15 +1,18 @@
-@import '../base/variables.css.scss';
-
 .keynote-star {
 }
 
-
+#keynotes .normal-box img{
+  width: 200px;
+  height: 200px;
+}
 
 #keynotes,
 #speaker-cards {
   .accordion-group {
     display: none;
   }
+
+  > .content { margin-top: 68px; }
 }
 
 #keynotes,
@@ -20,6 +23,11 @@
 }
 
 #speaker-cards {
+
+  .normal-box img{
+    width: 150px;
+    height: 150px;
+  }
 
   .pure-g-r {
     height: 230px;
@@ -34,24 +42,64 @@
   }
 
   padding-bottom: 30px;
-  padding-top: 30px;
   margin-bottom: 40px;
 }
 
 /* flip cards logic */
 .speaker-box {
+  @extend .pure-u-1-4, .teko;
   perspective: 1000;
   -webkit-perspective: 1000;
   -moz-perspective: 1000px;
   -o-perspective: 1000px;
 }
 
-.speaker-box:hover .flipper,
-.speaker-box.hover .flipper {
+.speaker-box-large{
+  @extend .speaker-box, .pure-u-1-2, .teko;
+  .flipper .big-box .twin-image{
+    display: inline-block;
+    width: 150px;
+    margin: 0 10px;
+    position: relative;
+
+    .unmasked{
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.speaker-box.flipped .flipper,
+.speaker-box-large.flipped .flipper {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
+}
+
+.normal-box{
+  position: relative;
+  transition: background-color 0.6s;
+  background-color: transparent;
+  img{ transition: opacity 0.7s; }
+  .masked{ opacity: 1; }
+  .unmasked{
+    position: absolute;
+    opacity: 0;
+    top: 9px;
+    left: 25px;
+  }
+
+  .more{
+    transition: opacity 0.6s;
+    opacity: 0;
+  }
+}
+
+.speaker-box:hover .normal-box{
+  background-color: $white;
+  .masked{ opacity: 0; }
+  .more, .unmasked{ opacity: 1; }
 }
 
 .flipper {
@@ -63,14 +111,86 @@
   position: relative;
 
   .normal-box,
-  .info-box {
+  .info-box, {
+    min-height: 250px;
+    text-align: center;
+    padding-top: 9px;
+
+    .luchador-name-md{
+      @extend .c-mndy, .fw-r, .lh-35, .mt-10, .fz-30, .tt-u;
+    }
+
+    .luchador-name-lg{
+      @extend .luchador-name-md, .fz-40;
+    }
+
+    .luchador-nickname-md{
+      @extend .c-bldr, .fz-24, .fw-r, .lh-25, .tt-u;
+
+      &:before, &:after{
+        content: '';
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        margin: 0 10px 2px;
+        background-image: image_url('2015/Star.svg');
+      }
+    }
+
+    .luchador-nickname-lg{
+      @extend .luchador-nickname-md, .fz-32;
+
+      &:before, &:after{
+        background-size: 18px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    .more{
+      @extend .opens, .fz-12, .fw-r, .c-bldr;
+      cursor: pointer;
+    }
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -118px;
+  }
+
+  .big-box{
+    @extend .normal-box;
+    max-width: 100% !important;
+    width: 450px;
+    left: 0;
+    position: relative;
+  }
+
+  .info-box.big{
+    max-width: 100% !important;
+    width: 450px;
+    margin-left: -225px;
+  }
+}
+
+.flipper-lg {
+  @extend .flipper;
+  .normal-box, .info-box {
+    width: 230px;
+    height: 364px;
+    margin-left: -115px;
+  }
+
+  .normal-box .unmasked{ left: 15px; }
+}
+
+.flipper-md {
+  @extend .flipper;
+  .normal-box, .info-box {
+    width: 200px;
+    height: 250px;
+    margin-left: -100px;
   }
 }
 
@@ -82,7 +202,6 @@
 .info-box {
   margin: 0 auto;
   max-width: 236px;
-  padding: 11px 14px 15px;
   box-sizing: border-box;
 }
 

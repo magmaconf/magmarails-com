@@ -1,7 +1,7 @@
 .pure-u-2-3.main-content-mobile{ class: I18n.locale.to_s }
   = render 'pages/2015/partials/pages_main_menu'
-  .container#speakers
-    .bgc-glry.pt50.p0--m
+  .container.bgc-glry#speakers
+    .pt50.p0--m
       .pure-g-r
         .pure-u-1-1.ta-c.my30.my15--m.mx10
           %h2.fz-40.m0.lh-40.dis-ib.c-mndy.fw-r.teko.fz-30--m.lh-25--m
@@ -10,97 +10,133 @@
           %h4.fz-30.m0.c-mndy.fw-l.teko.p0.text-with-stars.fz-20--m
             June 18, 19 & 20 - Manzanillo, Col. MX
 
-    %section#keynotes.bgc-glry
+    %section#keynotes
       .pure-g-r.content
         .pure-u-1-6
-        .pure-u-1-4.speaker-box
-          .flipper
+        .speaker-box
+          .flipper-lg
             .normal-box
-              %img{ src: "#{ image_path 'fred-george.png' }" }
-              .teko.c-mndy.ta-c.fz-40.fw-r.lh-35.mt10 Fred George
-              .luchador-nickname.teko.c-bldr.ta-c.fz-32.fw-r.lh-25 Nickname
-              .luchador-keynote.teko.c-mndy.fz-20.ta-c.fw-r
-                %span.keynote-star
-                %span Keynote
-            .info-box
-              %img{ src: "#{ image_path 'fred-george.png' }" }
-              .teko.c-mndy.ta-c.fz-40.fw-r.lh-35.mt10 Fred George
-              .luchador-nickname.teko.c-bldr.ta-c.fz-32.fw-r.lh-25 Nickname
-              .luchador-keynote.teko.c-mndy.fz-20.ta-c.fw-r
+              %img.masked{ src: "#{ image_path 'fred-george.png' }" }
+              %img.unmasked{ src: "#{ image_path 'nick.png' }" }
+              .luchador-name-lg Ron Evans
+              .luchador-nickname-lg El espaniol
+              .luchador-keynote.c-mndy.fz-20.ta-c.fw-r
                 %span.keynote-star
                 %span Keynote
               .mt10
-                %a.opens.fz-12.fw-r.c-bldr.dis-b.ta-c.td-n.td-h-u{ href: '#' }
+                %a.more
                   See more >
+            .info-box
+              .luchador-name-lg Ron Evans
+              .mt10
+                %a.more
+                  < See less
           = render 'pages/2014/partials/accordion_mobile', locals: { name: 'Fred George', img: 'fred-george.png', bio: t('keynotes.fred.bio') }
         .pure-u-1-6
-        .pure-u-1-4.speaker-box
-          .flipper
+        .speaker-box
+          .flipper-lg
             .normal-box
-              %img{ src: "#{ image_path 'sandy.png' }" }
-              %span.luchador-name Sandi Metz
-              .luchador-nickname.opens.c-bldr Nickname
-              .luchador-keynote Keynote
+              %img.masked{ src: "#{ image_path 'fred-george.png' }" }
+              %img.unmasked{ src: "#{ image_path 'nick.png' }" }
+              .luchador-name-lg Sarah Allen
+              .luchador-nickname-lg Ultrasaurus
+              .luchador-keynote.c-mndy.fz-20.ta-c.fw-r
+                %span.keynote-star
+                %span Keynote
+                .mt10
+                  %a.more
+                    See more >
             .info-box
-              %span @sandimetz
-              %p= t('keynotes.sandi.bio')
-          = render 'pages/2014/partials/accordion_mobile', locals: { name: 'Sandi Metz', img: 'sandy.png', bio: t('keynotes.sandi.bio') }
+              .luchador-name-lg Sarah Allen
+              .mt10
+                %a.more
+                  < See less
+          = render 'pages/2014/partials/accordion_mobile', locals: { name: 'Fred George', img: 'fred-george.png', bio: t('keynotes.fred.bio') }
 
     %section#speaker-cards
       .pure-g-r.content
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'manuel-vidaurre.png', name: 'Manuel Vidaurre', social: '@mvidaurre', bio: t('speakers.manuel.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'manuel-vidaurre.png', name: 'Manuel Vidaurre', bio: t('speakers.manuel.bio') }
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'jesse-thoth.png', name: 'Jesse Toth', social: '@jesseplusplus', bio: t('speakers.jesse.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'jesse-thoth.png', name: 'Jesse Toth', bio: t('speakers.jesse.bio') }
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'joe-wright.png', name: 'Joe Wright', social: '@joe_jag', bio: t('speakers.joe.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'joe-wright.png', name: 'Joe Wright', bio: t('speakers.joe.bio') }
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'david-calavera.png', name: 'David Calavera', social: '@calavera', bio: t('speakers.david.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'david-calavera.png', name: 'David Calavera', bio: t('speakers.david.bio') }
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'zachary-scott.png', name: 'Zachary Scott', social: '@_zzak', bio: t('speakers.zachary.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'zachary-scott.png', name: 'zachary scott', bio: t('speakers.zachary.bio') }
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'richard-schneeman.png', name: 'Richard Schneeman', social: '@schneems', bio: t('speakers.richard.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'richard-schneeman.png', name: 'Richard Schneeman', bio: t('speakers.richard.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'William Kennedy', nickname: 'mister go', bio: t('speakers.manuel.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'William Kennedy', bio: t('speakers.manuel.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Verónica López', nickname: 'la ratona', bio: t('speakers.jesse.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Verónica López', bio: t('speakers.jesse.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Matt Mills', nickname: 'sr. cámaras', bio: t('speakers.joe.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Matt Mills', bio: t('speakers.joe.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Julian Cheal', nickname: 'nickname', bio: t('speakers.david.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Julian Cheal', bio: t('speakers.david.bio') }
       .pure-g-r.content
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'mark-kirk.png', name: 'Matt Kirk', social: '@mjkirk', bio: t('speakers.matthew.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'mark-kirk.png', name: 'Matt Kirk', bio: t('speakers.matthew.bio') }
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'blake.png', name: 'Blake Mizerany', social: '@bmizerany', bio: t('speakers.blake.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'blake.png', name: 'Blake Mizerany', bio: t('speakers.blake.bio') }
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'daniel-rios.png', name: 'Daniel Ríos', social: '@ieldanr', bio: t('speakers.daniel.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'daniel-rios.png', name: 'Daniel Ríos', bio: t('speakers.daniel.bio') }
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'andre-arko.png', name: 'André;', social: '@indirect', bio: t('speakers.andre.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'andre-arko.png', name: 'André', bio: t('speakers.andre.bio') }
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'johnny-winn.png', name: 'Johnny Winn', social: '@johnny_rugger', bio: t('speakers.johnny.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'johnny-winn.png', name: 'Johnny Winn', bio: t('speakers.johnny.bio') }
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'adam-rogers.png', name: 'Adam Rogers', social: '@rodreegez', bio: t('speakers.adam.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'adam-rogers.png', name: 'Adam Rogers', bio: t('speakers.adam.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Philip Arndt', nickname: 'don felipe', bio: t('speakers.matthew.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Philip Arndt', bio: t('speakers.matthew.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Ana Rosas', nickname: 'lala la railera', bio: t('speakers.blake.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Ana Rosas', bio: t('speakers.blake.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Yitzchok Willroth', nickname: 'nickname', bio: t('speakers.daniel.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Yitzchok Willroth', bio: t('speakers.daniel.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Dominik Bamberger', nickname: 'el rudo', bio: t('speakers.andre.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Dominik Bamberger', bio: t('speakers.andre.bio') }
       .pure-g-r.content
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'leo-salazar.png', name: 'Leo Salazar', social: '@leonor_salazar', bio: t('speakers.leo.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'leo-salazar.png', name: 'Leo Salazar', bio: t('speakers.leo.bio') }
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'nick.png', name: 'Nick Rowe', social: '@nixterrimus', bio: t('speakers.nick.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'nick.png', name: 'Nick Rowe', bio: t('speakers.nick.bio') }
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'konstantin.png', name: 'Konstantin Haase', social: '@konstantinhaase', bio: t('speakers.konstantin.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'konstantin.png', name: 'Konstantin Haase', bio: t('speakers.konstantin.bio') }
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'Alex-Pyatetsky.png', name: 'Alex Pyatetsky', social: '@TheXander', bio: t('speakers.alex.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'Alex-Pyatetsky.png', name: 'Alex Pyatetsky', bio: t('speakers.alex.bio') }
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'pj.png', name: 'PJ Hagerty', social: '@aspleenic', bio: t('speakers.pj.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'pj.png', name: 'PJ Hagerty', bio: t('speakers.pj.bio') }
-        .pure-u-1-6.speaker-box
-          = render 'pages/2015/partials/speakers/speaker_card', locals: { img: 'david-mayer.png', name: 'David Meyer', social: '@meyerwork', bio: t('speakers.david-mayer.bio') }
-          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { img: 'david-mayer.png', name: 'David Meyer', bio: t('speakers.david-mayer.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Fernando Perales', nickname: 'el fer del mal', bio: t('speakers.leo.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Fernando Perales', bio: t('speakers.leo.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Noelia Cabane', nickname: 'la buitresa', bio: t('speakers.nick.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Noelia Cabane', bio: t('speakers.nick.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Sergey Bolshchikov', nickname: 'nickname', bio: t('speakers.konstantin.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Sergey Bolshchikov', bio: t('speakers.konstantin.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Justin Woo', nickname: 'rey bucanero', bio: t('speakers.alex.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Justin Woo', bio: t('speakers.alex.bio') }
+      .pure-g-r.content
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Konstantine Haase', nickname: 'el kompi', bio: t('speakers.leo.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Konstantine Haase', bio: t('speakers.leo.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'André Arko', nickname: 'don andrés', bio: t('speakers.nick.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'André Arko', bio: t('speakers.nick.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Melissa Pegus', nickname: 'nickname', bio: t('speakers.konstantin.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Melissa Pegus', bio: t('speakers.konstantin.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Rachel Myers', nickname: 'raquelita', bio: t('speakers.alex.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Rachel Myers', bio: t('speakers.alex.bio') }
+      .pure-g-r.content
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Steve Klabnik', nickname: 'cibernáutico', bio: t('speakers.leo.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Steve Klabnik', bio: t('speakers.leo.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Adriana Herrera', nickname: 'nickname', bio: t('speakers.nick.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Adriana Herrera', bio: t('speakers.nick.bio') }
+        .speaker-box-large
+          .flipper
+            .big-box
+              .twin-image
+                %img.masked{src: image_path('nick.png')}
+                %img.unmasked{src: image_path('konstantin.png')}
+              .twin-image
+                %img.masked{src: image_path('nick.png')}
+                %img.unmasked{src: image_path('konstantin.png')}
+              .luchador-name-md Janet Brunckhorst / Jeremy Morony
+              .luchador-nickname-md los fantasticos
+              %a.more See more >
+            .info-box.big
+              %p lorem impsum
+              %a.more < See less
+          .accordion-group
+            .accordion-heading
+              %p.person-name
+                %i.bullet Janet Brunckhorst / Jeremy Morony
+              %i.arrow
+            .accordion-body
+              %img{src: "#{image_path 'konstantin.png'}"}
+              .name
+                %i.star
+                %span Janet Brunckhorst / Jeremy Morony
+                %i.star
+              %p lorem impsum

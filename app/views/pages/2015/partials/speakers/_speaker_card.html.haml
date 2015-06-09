@@ -1,7 +1,10 @@
-.flipper
+.flipper-md
   .normal-box
-    %img{src: "#{image_path locals[:img]}"}
-    %span.luchador-name= locals[:name]
+    %img.masked{src: image_path("2015/speakers/#{image_name(locals[:name])}_masked.jpg") }
+    %img.unmasked{src: image_path("2015/speakers/#{image_name(locals[:name])}.jpg")}
+    .luchador-name-md= locals[:name]
+    .luchador-nickname-md= locals[:nickname]
+    %a.more See more >
   .info-box
-    %span= locals[:social]
-    %p= locals[:bio]
+    %p foo bara baraopdoakspdok
+    %a.more < See less
