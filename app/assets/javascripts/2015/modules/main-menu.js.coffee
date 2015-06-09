@@ -12,11 +12,11 @@ $(document).ready ->
   updateMobileMenu = ->
     if window.innerWidth >= 767
       $('#main-menu').css right: 'initial'
-      $('body').css('overflow', 'auto')
+      $('body').css('position', 'auto')
     else
       if isMainMenuOpen()
         $('#main-menu').css right: '12px'
-        $('body').css('overflow', 'hidden')
+        $('body').css('position', 'fixed')
       else
         $('#main-menu').css right: '100%'
 
@@ -37,9 +37,9 @@ $(document).ready ->
   hideMobileMenu = ->
     $('#main-menu').animate right: '100%'
     $('#btn-menu').removeClass('active')
-    $('body').css('overflow', 'auto')
+    $('body').css('position', 'auto')
 
   showMobileMenu = ->
     $('#main-menu').animate right: 12
-    $('body').css('overflow', 'hidden')
+    $('body').css('position', 'fixed')
     $('#btn-menu').addClass('active')
