@@ -39,12 +39,6 @@
   &.js-full-width { width: 100%; }
   &.js-width-transition { transition: width 1s }
 
-  .logo-container {
-    position: fixed;
-    width: inherit;
-    z-index: 999;
-    transform: translateZ(0);
-  }
   .thanks {
     margin: 80px 0 -8px;
     width: 253px;
@@ -246,9 +240,32 @@
   }
 }
 
+.main-content-mobile {
+  padding-top: 48px;
+}
+
+.logo-container {
+  position: fixed;
+  width: inherit;
+  z-index: 999;
+  transform: translateZ(0);
+}
+
+.logo-container-mobile {
+  width: 100%;
+}
+
 .magma-logo {
   display: block;
   height: 37px;
   margin: 10px auto 10px;
   width: 105px;
+}
+
+.magma-logo-mobile{
+  height: 33px;
+  margin: 10px auto 5px;
+  width: 90px;
+  text-align: center;
+  > img { width: 70px; }
 }

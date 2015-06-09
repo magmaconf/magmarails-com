@@ -234,6 +234,11 @@ input[type=submit] {
   @include mq-tablet { display: block; }
 }
 
+.dis-ib-n--t {
+  display: inline-block;
+  @include mq-tablet { display: none; }
+}
+
 // Padding
 .p0 { padding: 0; }
 .p10 { padding: 10px; }
@@ -241,6 +246,7 @@ input[type=submit] {
 
 .pt50 { padding-top: 50px; }
 .pb80 { padding-bottom: 80px; }
+.pl15 { padding-left: 15px; }
 .px20 {
   padding-right: 20px;
   padding-left: 20px;
@@ -251,6 +257,10 @@ input[type=submit] {
 .p20--m { @include mq-mobile { padding: 20px; } }
 .py20--m { @include mq-mobile { padding: 20px 0; } }
 .pt20--m { @include mq-mobile { padding: 20px 0 0 0; } }
+
+.pt0--t {
+  @include mq-tablet { padding-top: 0; }
+}
 
 // Margin
 .m-center { margin: 0 auto; }
@@ -347,4 +357,10 @@ input[type=submit] {
 
 .has-animated-background {
   transition: background-color 3s ease;
+}
+
+.ol-n {
+  outline: none;
+
+  &:focus { outline: none; }
 }
