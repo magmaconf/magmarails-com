@@ -35,6 +35,10 @@
   .normal-box img{
     width: 150px;
     height: 150px;
+    @include mq(768px){
+      width: 140px;
+      height: 140px;
+    }
   }
 
   .pure-g-r {
@@ -55,12 +59,14 @@
 /* flip cards logic */
 .speaker-box {
   @extend .pure-u-1-4, .teko;
+  @include mq(1024px){ width: 33%; }
   perspective: 1000;
   -webkit-perspective: 1000;
   -moz-perspective: 1000px;
   -o-perspective: 1000px;
   height: 230px;
   margin-bottom: 65px;
+  &.keynote{ width: 50%; }
 }
 
 .speaker-box-large{
@@ -97,6 +103,7 @@
     opacity: 0;
     top: 9px;
     left: 25px;
+    @include mq(768px){ left: 10px; }
   }
 
   .more{
@@ -127,6 +134,7 @@
 
     .luchador-name-md{
       @extend .c-mndy, .fw-r, .lh-35, .mt-10, .fz-30, .tt-u;
+      @include mq(768px){ font-size: 25px; }
     }
 
     .luchador-name-lg{
@@ -135,13 +143,14 @@
 
     .luchador-nickname-md{
       @extend .c-bldr, .fz-24, .fw-r, .lh-25, .tt-u;
+      @include mq(768px){ font-size: 20px; }
 
       &:before, &:after{
         content: '';
         width: 15px;
         height: 15px;
         display: inline-block;
-        margin: 0 10px 2px;
+        margin: 0 6px 0;
         background-image: image_url('2015/Star.svg');
       }
     }
@@ -197,6 +206,10 @@
 .flipper-md {
   @extend .flipper;
   .normal-box, .info-box {
+    @include mq(768px){
+      width: 160px;
+      margin-left: -80px;
+    }
     width: 200px;
     height: 250px;
     margin-left: -100px;

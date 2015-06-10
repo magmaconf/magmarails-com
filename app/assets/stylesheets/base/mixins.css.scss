@@ -159,6 +159,14 @@
   }
 }
 
+@mixin min-mq($min-width, $orientation: '') {
+  @if $orientation == '' {
+    @media only screen and (min-width: #{$min-width}) { @content; }
+  } @else {
+    @media only screen and (min-width: #{$min-width}) and (orientation: #{$orientation}) { @content; }
+  }
+}
+
 @mixin mq-laptop {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     @content;

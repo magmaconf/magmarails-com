@@ -12,8 +12,7 @@
 
     %section#keynotes
       .pure-g-r.content
-        .pure-u-1-6
-        .speaker-box
+        .speaker-box.keynote
           .flipper-lg
             .normal-box
               %img.masked{ src: "#{ image_path 'fred-george.png' }" }
@@ -31,8 +30,7 @@
                 %a.more
                   < See less
           = render 'pages/2014/partials/accordion_mobile', locals: { name: 'Fred George', img: 'fred-george.png', bio: t('keynotes.fred.bio') }
-        .pure-u-1-6
-        .speaker-box
+        .speaker-box.keynote
           .flipper-lg
             .normal-box
               %img.masked{ src: "#{ image_path 'fred-george.png' }" }
@@ -53,7 +51,7 @@
           = render 'pages/2014/partials/accordion_mobile', locals: { name: 'Fred George', img: 'fred-george.png', bio: t('keynotes.fred.bio') }
 
     %section#speaker-cards
-      .pure-g-r.content
+      .pure-g.content
         .speaker-box
           = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'William Kennedy', nickname: 'mister go', bio: t('speakers.manuel.bio') }
           = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'William Kennedy', bio: t('speakers.manuel.bio') }
