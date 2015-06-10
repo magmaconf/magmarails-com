@@ -250,6 +250,30 @@ es:
       bio: 'A RoR developer for the last 5 years, PJ currently works at Engine Yard as the Community Engineer. Additionally, he organizes the Western New York Ruby Brigade. Traveling to conferences and Ruby meet ups around the US and Canada, PJ likes to spread the word on the importance of community and coding, stressing the importance of outreach and focusing on the human side of being a coder.'
     david-mayer:
       bio: 'VP of Product, OneLogin. David has built groundbreaking enterprise and consumer software for over 15 years. One of the first employees at Plumtree Software, he drove collaboration and social software into the Fortune 500 until Plumtree was acquired by BEA. David continued running and expanding the business at BEA until the Oracle acquisition. At SAP David led teams that pioneered bringing cloud software to the most demanding companies in the world. Most recently David co-founded and co-ran the education company UniversityNow, Inc.'
+    justin:
+      bio: Justin Woo is a Developer Advocate at Briantree/PayPal and has been programming ever since he got his first IBM XT running DOS. He loves writing mobile applications (especially hybrid-HTML5 applications) and wishes everything could be done in LISP. In his spare time he enjoys tinkering around with cool hardware. He’s built a game for Autistic Children, a Robot that can be controlled remotely and even a Kinect game involving tapeworms. He graduated from Purdue University with a degree in Computer Engineering and was previously a Program Manager at Microsoft. He’s passionate about making payments online as seamless, intuitive and fun (yes fun!) as possible. In his spare time he loves playing squash and board games (his favorite being Settlers of Catan).
+    dominik:
+      bio: I love adventures, the outdoors, decent food, and a good brain teaser. Writing code used to be one of many hobbies that just happened to become my profession. If things had been different, I could easily ended up being a martial arts instructor, a cook, or a teacher. In fact, at certain points in my life, I worked in all of those jobs (among lots of others).
+    philip:
+      bio: A Kiwi programmer and the Director of consulting company Manuka Coalition, Philip is deeply interested in open source, travelling with his wife, sunshine, and great food. Current President of Ruby New Zealand.
+    veronica:
+      bio: I'm a former physicist, Android & Go developer who loves tea, cats and sleeping.
+    noelia:
+      bio: I am a graphic designer from Universidad de Buenos Aires that got started with print design until I discovered my passion for user centered design and site building. As Restorando’s Product Designer and front end dev I work on mobile applications, the public site and the tools for the restaurants. It is there where she discovered the potential of Sass combined with modular approaches.
+    steve:
+      bio: I'm a human who does things. Many different things.
+    andre:
+      bio: André thinks Ruby is pretty neat. He is Bundler team lead, and provides expert development, architecture, and teaching through Cloud City Development in San Francisco.
+    rachel:
+      bio: Rachel's a developer at GitHub who loves Ruby, RailsBridge, Legos, and the Codificadas.
+    ana:
+      bio: "I am a Ruby developer graduated from Telematics at the 'Universidad de Colima', with a Master of Science from the ISIMA at Clermont-Ferrand, France. Currently I work remotely (from: Rio de Janeiro/Brasília/Colima/D.F/Paris/other_cities_to_come) for Tigerlily, a french start-up based in Paris, specialised on the Social Media management.\r\nI'm someone who likes to be challenged with new projects and goals. I love traveling and learning new things, from tech things to day to day ones, like languages and cooking."
+    julian:
+      bio: A British Ruby/Rails developer, with a penchant for tweed, fine coffee, and homebrewing. When not working for clients, I help organise fun events around the world that teach people to program flying robots.
+    sergey:
+      bio: Sergey Bolshchikov (Developer Advocate, Wix)\r\nSoftware engineer at Wix with great passion to technology and knowledge sharing with 7 years of experience. Co-organizer of Ember-IL meetup group in Tel Aviv, Israel. \r\nM.Sc. in Information Systems from Technion - Israel Institute of Technology.\r\nhttp://bolshchikov.net \r\n
+    william:
+      bio: William Kennedy is a managing partner at Ardan Studios in Miami, FL, a mobile, web and systems development company. He is also a co-author of the book Go In Action, the author of the blog GoingGo.Net and the organizer for the Go and MongoDB meetups in Miami. Bill is focused on Go education and through his new venture Ardan Labs where he works with individuals and groups who want to take their Go knowledge and coding skills to the next level.
   sponsors:
     advice: 'necesitamos'
     title: 'de su apoyo'
