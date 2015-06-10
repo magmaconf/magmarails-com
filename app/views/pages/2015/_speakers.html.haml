@@ -66,7 +66,6 @@
         .speaker-box
           = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Julian Cheal', nickname: 'nickname', bio: t('speakers.david.bio') }
           = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Julian Cheal', bio: t('speakers.david.bio') }
-      .pure-g-r.content
         .speaker-box
           = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Philip Arndt', nickname: 'don felipe', bio: t('speakers.matthew.bio') }
           = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Philip Arndt', bio: t('speakers.matthew.bio') }
@@ -79,7 +78,6 @@
         .speaker-box
           = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Dominik Bamberger', nickname: 'el rudo', bio: t('speakers.andre.bio') }
           = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Dominik Bamberger', bio: t('speakers.andre.bio') }
-      .pure-g-r.content
         .speaker-box
           = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Fernando Perales', nickname: 'el fer del mal', bio: t('speakers.leo.bio') }
           = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Fernando Perales', bio: t('speakers.leo.bio') }
@@ -92,7 +90,6 @@
         .speaker-box
           = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Justin Woo', nickname: 'rey bucanero', bio: t('speakers.alex.bio') }
           = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Justin Woo', bio: t('speakers.alex.bio') }
-      .pure-g-r.content
         .speaker-box
           = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Konstantine Haase', nickname: 'el kompi', bio: t('speakers.leo.bio') }
           = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Konstantine Haase', bio: t('speakers.leo.bio') }
@@ -105,37 +102,15 @@
         .speaker-box
           = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Rachel Myers', nickname: 'raquelita', bio: t('speakers.alex.bio') }
           = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Rachel Myers', bio: t('speakers.alex.bio') }
-      .pure-g-r.content
         .speaker-box
           = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Steve Klabnik', nickname: 'cibernáutico', bio: t('speakers.leo.bio') }
           = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Steve Klabnik', bio: t('speakers.leo.bio') }
         .speaker-box
           = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Adriana Herrera', nickname: 'nickname', bio: t('speakers.nick.bio') }
           = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Adriana Herrera', bio: t('speakers.nick.bio') }
-        .speaker-box-large
-          .flipper
-            .big-box
-              .twin-image
-                %img.masked{src: image_path('nick.png')}
-                %img.unmasked{src: image_path('konstantin.png')}
-              .twin-image
-                %img.masked{src: image_path('nick.png')}
-                %img.unmasked{src: image_path('konstantin.png')}
-              .luchador-name-md Janet Brunckhorst / Jeremy Morony
-              .luchador-nickname-md los fantasticos
-              %a.more See more >
-            .info-box.big
-              %p lorem impsum
-              %a.more < See less
-          .accordion-group
-            .accordion-heading
-              %p.person-name
-                %i.bullet Janet Brunckhorst / Jeremy Morony
-              %i.arrow
-            .accordion-body
-              %img{src: "#{image_path 'konstantin.png'}"}
-              .name
-                %i.star
-                %span Janet Brunckhorst / Jeremy Morony
-                %i.star
-              %p lorem impsum
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Janet Brunckhorst', nickname: 'la fantastica', bio: t('speakers.nick.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Janet Brunckhorst', bio: t('speakers.nick.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Jeremy Monrony', nickname: 'el fantastico', bio: t('speakers.nick.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Adriana Herrera', bio: t('speakers.nick.bio') }

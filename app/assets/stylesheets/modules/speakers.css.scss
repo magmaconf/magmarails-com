@@ -38,7 +38,6 @@
   }
 
   .pure-g-r {
-    height: 230px;
 
     .content {
       max-width: 1201px !important;
@@ -60,6 +59,8 @@
   -webkit-perspective: 1000;
   -moz-perspective: 1000px;
   -o-perspective: 1000px;
+  height: 230px;
+  margin-bottom: 65px;
 }
 
 .speaker-box-large{
