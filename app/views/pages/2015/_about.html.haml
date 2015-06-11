@@ -1,41 +1,64 @@
-#about-magma.pure-u-2-3{ class: I18n.locale.to_s }
+.pure-u-2-3.main-content-mobile{ class: I18n.locale.to_s }
   = render 'pages/2015/partials/pages_main_menu'
   .container
-    .about-content
-      .pure-g-r.section#location
-        .pure-u-1-2.right-info
-          .content-information
-            %p.title= t('about.magmaconf_is_title').html_safe
-            %br
-            %p.description
+    .bgc-glry.pt50.p0--m
+      .pure-g-r
+        .pure-u-1-1.ta-c.my30.my15--m.mx10
+          %h2.fz-40.m0.lh-40.dis-ib.c-mndy.fw-r.teko.fz-30--m.lh-25--m
+            About Magma
+          .wp-33.bgc-mndy.m-center.hg2.m5--t.wp-100--t
+          %h4.fz-30.m0.c-mndy.fw-l.teko.p0.text-with-stars.fz-20--m
+            June 18, 19 & 20 - Manzanillo, Col. MX
+
+      .pure-g-r.tide.bdt-w-2.bdt-c-ato.bdt-s-s.bdt-w-0--m
+        .pure-u-1-2.tide-image-container.tide-image-container-small
+          .mx10.my15.dis-b--m
+            .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
+            %p.m0.teko.c-mndy.fw-r.fz-20.tt-u= t('about.magmaconf_is_title')
+
+          %img.tide-image{src: "#{image_path '2015/about/magmaconf-1@2x.jpg'}" }
+        .pure-u-1-2.tide-text-container.tide-text-container-small
+          .tide-text.p20.p10--m
+            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('about.magmaconf_is_title').html_safe
+            %p.m0.opens.c-amlo.fw-r.fz-14
               = t('about.magmaconf_description').html_safe
-        #location-carousel.pure-u-1-2.content-image
-          %img{src: "#{image_path 'magmaconf-3.jpg'}" }
-      .pure-g-r.section#venue
-        .pure-u-1-2.right-info
-          .content-information
-            %p.title= t('about.venue').html_safe
-            %br
-            %p.description
+
+      .pure-g-r.tide
+        .pure-u-1-2.tide-image-container.tide-image-container-small
+          .mx10.my15.dis-b--m
+            .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
+            %p.m0.teko.c-mndy.fw-r.fz-20.tt-u= t('about.venue')
+
+          %img.tide-image{src: "#{image_path '2015/about/venue@2x.jpg'}" }
+        .pure-u-1-2.tide-text-container.tide-text-container-small
+          .tide-text.p20.p10--m
+            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('about.venue')
+            %p.m0.opens.c-amlo.fw-r.fz-14
               = t('about.venue_2015_description').html_safe
-        #venue-carousel.pure-u-1-2.content-image
-          %img{src: "#{image_path 'venue-2015-1.jpg'}" }
-      .pure-g-r.section#culture
-        .pure-u-1-2.right-info
-          .content-information
-            %p.title= t('about.culture_activities').html_safe
-            %br
-            %p.description
+
+      .pure-g-r.tide
+        .pure-u-1-2.tide-image-container.tide-image-container-small
+          .mx10.my15.dis-b--m
+            .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
+            %p.m0.teko.c-mndy.fw-r.fz-20.tt-u= t('about.culture_activities')
+
+          %img.tide-image{src: "#{image_path '2015/about/activities@2x.jpg'}"}
+        .pure-u-1-2.tide-text-container.tide-text-container-small
+          .tide-text.p20.p10--m
+            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('about.culture_activities')
+            %p.m0.opens.c-amlo.fw-r.fz-14
               = t('about.culture_2015_description').html_safe
-        #culture-carousel.pure-u-1-2.content-image
-          %img{src: "#{image_path 'culture-2.jpg'}"}
-      .pure-g-r.section#magma-village
-        .pure-u-1-2.right-info
-          .content-information
-            %p.title= t('about.magma_village').html_safe
-            %br
-            %p.description
+
+      .pure-g-r.tide
+        .pure-u-1-2.tide-image-container.tide-image-container-small
+          .mx10.my15.dis-b--m
+            .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
+            %p.m0.teko.c-mndy.fw-r.fz-20.tt-u= t('about.magma_village').html_safe
+
+          %img.tide-image{src: "#{image_path '2015/about/village@2x.jpg'}" }
+        .pure-u-1-2.tide-text-container.tide-text-container-small
+          .tide-text.p20.p10--m
+            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('about.magma_village').html_safe
+            %p.m0.opens.c-amlo.fw-r.fz-14
               = t('about.magma_village_description').html_safe
-        #magma-village-carousel.pure-u-1-2.right.content-image
-          %img{src: "#{image_path 'village3.jpg'}" }
 

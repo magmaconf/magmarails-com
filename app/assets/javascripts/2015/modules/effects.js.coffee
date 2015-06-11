@@ -20,5 +20,3 @@ $(document).ready ->
   $('.speaker-box').bind 'touchstart', (ev) ->
     this.classList.toggle('hover')
 
-
-  $('body, .logo-container').addClass('hover')

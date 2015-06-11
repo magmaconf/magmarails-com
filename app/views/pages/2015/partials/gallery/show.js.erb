@@ -1,0 +1,15 @@
+$container = $('#gallery-inner');
+
+<% if @boxes.any? %>
+  var boxes = "<%= j(render(partial: 'pages/2015/partials/gallery/boxes')) %>"
+  var $boxes = $(boxes);
+
+  $container.append($boxes).masonry('appended', $boxes, true, function(){
+    $container.imagesLoaded(function(){
+      $container.masonry('reload');
+      $('.spinner').addClass('js-spinner-is-expanded');
+    });
+  });
+<% else %>
+  $('.spinner').hide();
+<% end %>

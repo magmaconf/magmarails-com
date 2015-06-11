@@ -1,0 +1,57 @@
+.sponsor-logo {
+  display: block;
+  margin: 0 auto;
+  background-size: cover;
+  @include mq-tablet { margin-top: 30px; }
+}
+
+.sponsor-logo-link {
+  outline: none;
+  &:focus { outline: none; }
+}
+
+.sponsor-logo__big {
+  width: 252px;
+  height: 272px;
+}
+
+.sponsor-logo__medium {
+  width: 210px;
+  height: 227px;
+}
+
+.sponsor-logo__small {
+  width: 177px;
+  height: 191px;
+}
+
+.sponsor-logo-crowd {
+  background-image: url('2015/sponsors/crowd_interactive.jpg');
+  @include retina { background-image: url('2015/sponsors/crowd_interactive@2x.jpg'); }
+}
+
+.sponsor-logo-github {
+  background-image: url('2015/sponsors/git_hub.jpg');
+  @include retina { background-image: url('2015/sponsors/git_hub@2x.jpg'); }
+}
+
+.sponsor-logo-ardan-labs {
+  background-image: url('2015/sponsors/ardan_labs.jpg');
+  @include retina { background-image: url('2015/sponsors/ardan_labs@2x.jpg'); }
+}
+
+.sponsor-logo-placeholder__medium {
+  background-image: url('2015/sponsors/your_logo_could.jpg');
+  @include retina { background-image: url('2015/sponsors/your_logo_could@2x.jpg'); }
+}
+
+.sponsor-logo-placeholder__small {
+  background-image: url('2015/sponsors/or_here.jpg');
+  @include retina { background-image: url('2015/sponsors/or_here@2x.jpg'); }
+}
+
+.sponsor-logo-contact-button {
+  background-image: url('2015/sponsors/contact_sponsor.jpg');
+  @include retina { background-image: url('2015/sponsors/contact_sponsor@2x.jpg'); }
+}
+

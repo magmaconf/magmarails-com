@@ -1,0 +1,116 @@
+.pure-u-2-3.main-content-mobile{ class: I18n.locale.to_s }
+  = render 'pages/2015/partials/pages_main_menu'
+  .container.bgc-glry#speakers
+    .pt50.p0--m
+      .pure-g-r
+        .pure-u-1-1.ta-c.my30.my15--m.mx10
+          %h2.fz-40.m0.lh-40.dis-ib.c-mndy.fw-r.teko.fz-30--m.lh-25--m
+            Speakers
+          .wp-33.bgc-mndy.m-center.hg2.m5--t.wp-100--t
+          %h4.fz-30.m0.c-mndy.fw-l.teko.p0.text-with-stars.fz-20--m
+            June 18, 19 & 20 - Manzanillo, Col. MX
+
+    %section#keynotes
+      .pure-g-r.content
+        .speaker-box.keynote
+          .flipper-lg
+            .normal-box
+              %img.masked{ src: "#{ image_path '2015/speakers/ron_evans_m.png' }" }
+              %img.unmasked{ src: "#{ image_path '2015/speakers/ron_evans.png' }" }
+              .luchador-name-lg Ron Evans
+              .luchador-nickname-lg El espaniol
+              .luchador-keynote.c-mndy.fz-20.ta-c.fw-r
+                %span.keynote-star Keynote
+              .mt10
+                %a.more
+                  See more >
+            .info-box
+              .luchador-name-lg Ron Evans
+              .bio= t('keynotes.ron.bio')
+              .mt10
+                %a.more
+                  < See less
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Ron Evans', nickname: 'el espaniol', bio: t('keynotes.ron.bio') }
+        .speaker-box.keynote
+          .flipper-lg
+            .normal-box
+              %img.masked{ src: "#{ image_path '2015/speakers/sarah_allen_m.png' }" }
+              %img.unmasked{ src: "#{ image_path '2015/speakers/sarah_allen.png' }" }
+              .luchador-name-lg Sarah Allen
+              .luchador-nickname-lg Ultrasaurus
+              .luchador-keynote.c-mndy.fz-20.ta-c.fw-r
+                %span.keynote-star
+                %span Keynote
+                .mt10
+                  %a.more
+                    See more >
+            .info-box
+              .luchador-name-lg Sarah Allen
+              .bio= t('keynotes.sarah.bio')
+              .mt10
+                %a.more
+                  < See less
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Sarah Allen', nickname: 'ultrasaurus', bio: t('keynotes.sarah.bio') }
+
+    %section#speaker-cards
+      .pure-g.content
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'William Kennedy', nickname: 'mister go', bio: t('speakers.william.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'William Kennedy', nickname: 'mister go', bio: t('speakers.william.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Verónica López', nickname: 'la ratona', bio: t('speakers.veronica.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Verónica López', nickname: 'la ratona', bio: t('speakers.veronica.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Matt Mills', nickname: 'sr. cámaras', bio: t('speakers.matt.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Matt Mills', nickname: 'sr. cámaras', bio: t('speakers.matt.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Julian Cheal', nickname: 'el feróz', bio: t('speakers.julian.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Julian Cheal', nickname: 'el feróz', bio: t('speakers.julian.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Philip Arndt', nickname: 'don felipe', bio: t('speakers.philip.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Philip Arndt', nickname: 'don felipe', bio: t('speakers.philip.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Ana Rosas', nickname: 'lala la railera', bio: t('speakers.ana.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Ana Rosas', nickname: 'lala la railera', bio: t('speakers.ana.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Yitzchok Willroth', nickname: 'el rabino', bio: t('speakers.yitzchok.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Yitzchok Willroth', nickname: 'el rabino', bio: t('speakers.yitzchok.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Dominik Bamberger', nickname: 'el rudo', bio: t('speakers.dominik.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Dominik Bamberger', nickname: 'el rudo', bio: t('speakers.dominik.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Fernando Perales', nickname: 'el fer del mal', bio: t('speakers.fernando.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Fernando Perales', nickname: 'el fer del mal', bio: t('speakers.fernando.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Noelia Cabane', nickname: 'la buitresa', bio: t('speakers.noelia.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Noelia Cabane', nickname: 'la buitresa', bio: t('speakers.noelia.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Sergey Bolshchikov', nickname: 'el bailador', bio: t('speakers.sergey.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Sergey Bolshchikov', nickname: 'el bailador', bio: t('speakers.sergey.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Justin Woo', nickname: 'rey bucanero', bio: t('speakers.justin.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Justin Woo', nickname: 'rey bucanero', bio: t('speakers.justin.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Konstantin Haase', nickname: 'el kompi', bio: t('speakers.konstantin.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Konstantin Haase', nickname: 'el kompi', bio: t('speakers.konstantin.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'André Arko', nickname: 'don andrés', bio: t('speakers.andre.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'André Arko', nickname: 'don andrés', bio: t('speakers.andre.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Melissa Pegus', nickname: 'doña tiendas', bio: t('speakers.melissa.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Melissa Pegus', nickname: 'doña tiendas', bio: t('speakers.melissa.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Rachel Myers', nickname: 'raquelita', bio: t('speakers.rachel.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Rachel Myers', nickname: 'raquelita', bio: t('speakers.rachel.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Steve Klabnik', nickname: 'cibernáutico', bio: t('speakers.steve.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Steve Klabnik', nickname: 'cibernáutico', bio: t('speakers.steve.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Adriana Herrera', nickname: 'la modista', bio: t('speakers.adriana.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Adriana Herrera', nickname: 'la modista', bio: t('speakers.adriana.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Janet Brunckhorst', nickname: 'la fantastica', bio: t('speakers.janet.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Janet Brunckhorst', nickname: 'la fantastica', bio: t('speakers.janet.bio') }
+        .speaker-box
+          = render 'pages/2015/partials/speakers/speaker_card', locals: { name: 'Jeremy Monrony', nickname: 'el fantastico', bio: t('speakers.jeremy.bio') }
+          = render 'pages/2015/partials/speakers/speaker_card_mobile', locals: { name: 'Jeremy Monrony', nickname: 'el fantastico', bio: t('speakers.jeremy.bio') }

@@ -27,6 +27,10 @@ $(document).ready(function(){
     $('#main-menu, #mobile-header, #footer').addClass('index');
   } else if (pathname == '/about') {
     $('#about-magma-link').addClass('active');
+  } else if (pathname == '/getting') {
+    $('#getting-link').addClass('active');
+  } else if (pathname == '/sponsors') {
+    $('#sponsors-link').addClass('active');
   } else if (pathname == '/schedule') {
     $('#schedule-link').addClass('active');
   } else if (pathname == '/speakers') {
@@ -37,5 +41,15 @@ $(document).ready(function(){
     $('#sponsors-link').addClass('active');
   } else if (pathname == '/gallery') {
     $('#main-menu, #mobile-header, #footer').addClass('gallery');
+  }
+
+  if(pathname == '/') {
+    $('.js-animated-background')
+        .addClass('has-animated-background')
+        .removeClass('bgc-blck')
+        .addClass('bgc-mndy');
+  } else {
+    $('.js-animated-background').removeClass('bgc-blck').addClass('bgc-mndy');
+    $('.js-aside-info').addClass('dis-b-n--t ');
   }
 });

@@ -8,8 +8,12 @@
 
   #photo-gallery {
     background-color: #ebebeb;
-    height: 970px;
+    height: 1051px;
     overflow: overlay;
+
+    @include mq-mobile {
+      display: none;
+    }
   }
 
   .spinner, .js-spinner-is-expanded a {

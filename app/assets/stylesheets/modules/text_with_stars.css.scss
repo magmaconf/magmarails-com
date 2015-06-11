@@ -1,0 +1,24 @@
+.text-with-stars {
+  position: relative;
+  display: inline-block;
+
+  &:before, &:after {
+    background: image_url('2015/sprite_magma_schedule.png') no-repeat -35px -49px;
+    width: 15px;
+    height: 15px;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+
+    @include retina {
+      background: image_url('2015/sprite_magma_schedule@2x.png') no-repeat -35px -49px;
+      background-size: 220px 100px;
+    }
+  }
+
+  &:before { left: -25px; }
+
+  &:after { right: -25px; }
+}

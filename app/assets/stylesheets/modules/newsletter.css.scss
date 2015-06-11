@@ -33,6 +33,11 @@
 
   .content {
     height: 230px;
+
+    @include mq-tablet {
+      padding: 30px 10px;
+      height: auto;
+    }
   }
 
   p {
@@ -48,12 +53,16 @@
 
     &.big {
       font-size: 200%;
+
+      @include mq-tablet { font-size: 28px; }
     }
 
     &.small {
       font-weight: 300;
       font-size: 140%;
       margin-top: 20px;
+
+      @include mq-tablet { font-size: 18px; }
     }
   }
 
@@ -77,6 +86,19 @@
     position: relative;
     width: 650px;
 
+    label {
+      @include mq-tablet {
+        font-family: 'Teko', sans-serif;
+        font-size: 25px;
+        color: #514640;
+        margin-top: 15px;
+        display: inline-block;
+
+        &.error{
+          color: #e65253;
+        }
+      }
+    }
     .field {
       display: inline-table;
 
@@ -85,12 +107,17 @@
         margin-top: 5px;
         padding-left: 10px;
         width: 225px;
+
+        &.error {
+          outline-color: #e65253;
+        }
       }
 
       &.name {
         margin-right: 30px;
+
         @include mq(640px) {
-          margin-right: 0px;
+          margin-right: auto;
         }
       }
 
@@ -174,6 +201,7 @@
 
       .submit {
         height: 30px;
+        line-height: 27px;
         margin-top: 23px;
       }
     }
@@ -182,7 +210,7 @@
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
 
   #newsletter{
     &.sent {
@@ -190,7 +218,7 @@
     }
 
     section {
-      height: 278px;
+      height: auto;
       margin: 0 auto;
     }
 
@@ -200,7 +228,6 @@
 
     p {
       line-height: 22px;
-      text-align: center;
       width: 100%;
 
       &.small { margin-top: 0 }
@@ -218,13 +245,26 @@
 
       .submit {
         float: none;
-        margin-top: 13px;
+        margin-top: 60px;
         width: 100%;
       }
 
-      .field input {
-        padding-left: 0;
-        width: 100%;
+      .field {
+        width: 83%;
+        margin: 0 auto;
+        display: block;
+
+        input {
+          height: 39px;
+          margin-top: 0;
+          padding-left: 10px;
+          box-sizing: border-box;
+          width: 100%;
+        }
+
+        &.name {
+          margin-right: auto;
+        }
       }
     }
   }

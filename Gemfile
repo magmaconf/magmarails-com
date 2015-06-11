@@ -4,7 +4,6 @@ gem 'rails', '4.1'
 
 gem 'pg'
 
-gem 'cactu'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
@@ -14,6 +13,7 @@ gem 'sass-rails', '~> 4.0.0'
 gem 'yui-compressor'
 gem 'will_paginate'
 gem 'newrelic_rpm'
+gem 'cactu'
 
 gem 'heroku-deflater', :group => :production
 

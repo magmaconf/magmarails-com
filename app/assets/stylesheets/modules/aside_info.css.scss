@@ -1,21 +1,44 @@
+.side-text {
+  margin: 20px auto;
+  max-width: 212px;
+}
+
+.side-text-hottest { font-size: 37px; }
+
+.side-text-tech {
+  font-size: 94px;
+  margin-top: 13px;
+  line-height: 30px;
+}
+
+.side-text-conference {
+  font-size: 34px;
+  line-height: 30px;
+  margin-top: 15px;
+}
+
+.side-text-mexico {
+  font-size: 31px;
+  line-height: 30px;
+}
+
+.side-text-we-need { font-size: 53px; }
+.side-text-your { font-size: 88px; }
+.side-text-support { font-size: 52px; }
+
 .magma-info {
-  margin-bottom: 83px;
+  margin-bottom: 50px;
   min-height: 927px;
 
   @include mq-tablet {
     margin-bottom: 0px;
     min-height: 880px;
+    padding-bottom: 20px;
   }
 
   &.js-full-width { width: 100%; }
   &.js-width-transition { transition: width 1s }
 
-  .logo-container {
-    position: fixed;
-    width: inherit;
-    z-index: 999;
-    tranform: translateZ(0);
-  }
   .thanks {
     margin: 80px 0 -8px;
     width: 253px;
@@ -38,21 +61,28 @@
 
     &.line3 { font-size: 62px; }
 
-    &.line1.about { font-size: 40px; }
-    &.line2.about { font-size: 102px; }
+    &.line1.about { font-size: 37px; }
+    &.line2.about { font-size: 94px; }
     &.line3.about {
-      font-size: 38px;
+      font-size: 35px;
       margin-top: 2px;
+      line-height: 35px;
     }
   }
 
   .social {
-    margin: 20px auto 0 auto;
-    overflow: hidden;
+    width: 100%;
 
     [class *='icon-'] {
       padding: 20px 0 0 17px;
       margin-top: -13px;
+    }
+
+    a {
+      display: inline-block;
+      float: none;
+
+      &.twitter { margin: 0 35px 0; }
     }
   }
 
@@ -62,8 +92,8 @@
     font-size: 165%;
     font-family: oswald;
     font-weight: 300;
-    margin: 0 auto;
-    max-width: 178px;
+    margin: 20px auto;
+    max-width: 212px;
     padding-bottom: 5px;
     text-transform: uppercase;
 
@@ -96,7 +126,7 @@
       }
 
       &.line1.about {
-        font-size: 32px;
+        font-size: 34px;
         margin-top: 0;
       }
 
@@ -108,10 +138,10 @@
 
     .content-text {
       font-family: 'Open Sans', sans-serif;
-      font-size: 11px;
+      font-size: 14px;
       color: white;
       display: block;
-      line-height: 13px;
+      line-height: 18px;
 
       &.highlight {
         font-weight: bold;
@@ -210,9 +240,32 @@
   }
 }
 
+.main-content-mobile {
+  padding-top: 48px;
+}
+
+.logo-container {
+  position: fixed;
+  width: inherit;
+  z-index: 999;
+  transform: translateZ(0);
+}
+
+.logo-container-mobile {
+  width: 100%;
+}
+
 .magma-logo {
   display: block;
   height: 37px;
-  margin: 15px auto 10px;
+  margin: 10px auto 10px;
   width: 105px;
+}
+
+.magma-logo-mobile{
+  height: 33px;
+  margin: 10px auto 5px;
+  width: 90px;
+  text-align: center;
+  > img { width: 70px; }
 }

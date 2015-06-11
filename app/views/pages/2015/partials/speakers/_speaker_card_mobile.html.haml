@@ -1,0 +1,9 @@
+.accordion-group
+  .accordion-heading
+    %p.luchador-name-md= locals[:name]
+    .luchador-nickname-md= locals[:nickname]
+    %i.arrow
+  .accordion-body
+    %img{src: image_path("2015/speakers/#{image_name(locals[:name])}.png")}
+    %p.luchador-name-md= locals[:name]
+    %p.bio= locals[:bio]
