@@ -212,6 +212,10 @@ es:
       bio: 'Fred George has been writing code for over 45 years in (by his count) over 70 languages. An early adopter of OO and Agile, Fred continues to impact the industry with his leading edge ideas.'
     sandi:
       bio: "Sandi Metz has 30 years of experience working on projects that survived to grow and change. She describes herself as an obsessive programmer, Rubyist, cyclist and recalcitrant blogger. Author of “Practical Object-Oriented Design in Ruby”  http://www.poodr.com/"
+    sarah:
+      bio: Sarah Allen is a technology leader who co-created After Effects, Shockwave and Flash video, and was named one of the top 25 Women of the Web in 1998. In 2009, she started teaching free workshops in web application development to women, co-founding RailsBridge. She now leads its parent organization, Bridge Foundry, a non-profit whose mission is to transform the software industry so that the makers of technology are as diverse as the people who use it.
+    ron:
+      bio: Ron is a well-known software developer who has been very active in the free and open source community for over 25 years. As ringleader of The Hybrid Group, he has been helping clients solve some of their most difficult technical and business problems.
   speakers:
     advice: 'conoce a nuestros'
     title: 'asombrosos luchadores'
@@ -244,7 +248,7 @@ es:
     nick:
       bio: "I'm a software engineer at ModCloth; Amateur juggler; and home automation geek"
     konstantin:
-      bio: 'An Open Source developer by heart. Ruby has been his language of choice since 2005. A regular contributor to different projects, including Sinatra (maintainer), Rubinius, Rack, Rails and MRI. In 2012, he received the Ruby Hero Award for his outstanding contributions to the community. Currently works at Travis CI in Berlin, Germany.'
+      bio: An Open Source developer by heart. Ruby has been his language of choice since 2005. A regular contributor to different projects, including Sinatra, Rubinius, Rack, Rails and MRI. In 2012, he received the Ruby Hero Award for his outstanding contributions to the community.
     zachary:
       bio: 'CRuby committer, contributor to sinatra, rails, rdoc, etc.'
     pj:
@@ -252,15 +256,17 @@ es:
     david-mayer:
       bio: 'VP of Product, OneLogin. David has built groundbreaking enterprise and consumer software for over 15 years. One of the first employees at Plumtree Software, he drove collaboration and social software into the Fortune 500 until Plumtree was acquired by BEA. David continued running and expanding the business at BEA until the Oracle acquisition. At SAP David led teams that pioneered bringing cloud software to the most demanding companies in the world. Most recently David co-founded and co-ran the education company UniversityNow, Inc.'
     justin:
-      bio: Justin Woo is a Developer Advocate at Briantree/PayPal and has been programming ever since he got his first IBM XT running DOS. He loves writing mobile applications (especially hybrid-HTML5 applications) and wishes everything could be done in LISP. In his spare time he enjoys tinkering around with cool hardware. He’s built a game for Autistic Children, a Robot that can be controlled remotely and even a Kinect game involving tapeworms. He graduated from Purdue University with a degree in Computer Engineering and was previously a Program Manager at Microsoft. He’s passionate about making payments online as seamless, intuitive and fun (yes fun!) as possible. In his spare time he loves playing squash and board games (his favorite being Settlers of Catan).
+      bio: Justin Woo is a Developer Advocate at Braintree/PayPal. Graduated from Purdue University with a degree in Computer Engineering.  He’s passionate about making payments online as seamless, intuitive and fun (yes fun!) as possible.
     dominik:
-      bio: I love adventures, the outdoors, decent food, and a good brain teaser. Writing code used to be one of many hobbies that just happened to become my profession. If things had been different, I could easily ended up being a martial arts instructor, a cook, or a teacher. In fact, at certain points in my life, I worked in all of those jobs (among lots of others).
+      bio: I love adventures, the outdoors, decent food, and a good brain teaser. Writing code used to be one of many hobbies that just happened to become my profession.
+    fernando:
+      bio: Software Engineer at Crowd interactive, Lubuntu user, FLOSS advocate, /(.*) metal and beer lover. Passionate about web dev and lean startup.
     philip:
       bio: A Kiwi programmer and the Director of consulting company Manuka Coalition, Philip is deeply interested in open source, travelling with his wife, sunshine, and great food. Current President of Ruby New Zealand.
     veronica:
       bio: I'm a former physicist, Android & Go developer who loves tea, cats and sleeping.
     noelia:
-      bio: I am a graphic designer from Universidad de Buenos Aires that got started with print design until I discovered my passion for user centered design and site building. As Restorando’s Product Designer and front end dev I work on mobile applications, the public site and the tools for the restaurants. It is there where she discovered the potential of Sass combined with modular approaches.
+      bio: I am a Graphic Designer from Universidad de Buenos Aires. As Restorando’s Product Designer and front-end dev, I work on mobile apps, web site and tools for restaurants. This is where I discovered the potential of Sass combined with modular approaches.
     steve:
       bio: I'm a human who does things. Many different things.
     andre:
@@ -268,13 +274,17 @@ es:
     rachel:
       bio: Rachel's a developer at GitHub who loves Ruby, RailsBridge, Legos, and the Codificadas.
     ana:
-      bio: "I am a Ruby developer graduated from Telematics at the 'Universidad de Colima', with a Master of Science from the ISIMA at Clermont-Ferrand, France. Currently I work remotely (from: Rio de Janeiro/Brasília/Colima/D.F/Paris/other_cities_to_come) for Tigerlily, a french start-up based in Paris, specialised on the Social Media management.\r\nI'm someone who likes to be challenged with new projects and goals. I love traveling and learning new things, from tech things to day to day ones, like languages and cooking."
+      bio: "I'm a Ruby developer graduated from Telematics at the 'Universidad de Colima', with a Master of Science from the ISIMA at Clermont-Ferrand, France. Currently I work remotely for Tigerlily, a french start-up based in Paris, specialised on the Social Media management"
     julian:
       bio: A British Ruby/Rails developer, with a penchant for tweed, fine coffee, and homebrewing. When not working for clients, I help organise fun events around the world that teach people to program flying robots.
     sergey:
-      bio: Sergey Bolshchikov (Developer Advocate, Wix)\r\nSoftware engineer at Wix with great passion to technology and knowledge sharing with 7 years of experience. Co-organizer of Ember-IL meetup group in Tel Aviv, Israel. \r\nM.Sc. in Information Systems from Technion - Israel Institute of Technology.\r\nhttp://bolshchikov.net \r\n
+      bio: (Developer Advocate, Wix) Software engineer at Wix with great passion to technology and knowledge sharing with 7 years of experience. Co-organizer of Ember-IL meetup group in Tel Aviv, Israel. M.Sc. in Information Systems from Technion - Israel Institute of Technology. http://bolshchikov.net
     william:
-      bio: William Kennedy is a managing partner at Ardan Studios in Miami, FL, a mobile, web and systems development company. He is also a co-author of the book Go In Action, the author of the blog GoingGo.Net and the organizer for the Go and MongoDB meetups in Miami. Bill is focused on Go education and through his new venture Ardan Labs where he works with individuals and groups who want to take their Go knowledge and coding skills to the next level.
+      bio: Is a managing partner at Ardan Studios in Miami, FL, a mobile, web and systems development company. Focused on Go education and through his new venture Ardan Labs where he works with individuals and groups who want to take their Go knowledge and coding skills to the next level.
+    adriana:
+      bio: Adriana Herrera, is the Co-Founder and CEO of GrandIntent.com. Prior to founding GrandIntent Herrera founded FashioningChange.com, a discovery platform to help shoppers purchase money saving, sustainable and fairly made apparel and accessories.
+    yitzchok:
+      bio: Yitzchok Willroth is an independent application developer and development consultant living in Lakewood, NJ. A start-up vet, dev bootcamp instructor and frequent conference attendee.
   sponsors:
     advice: 'necesitamos'
     title: 'de su apoyo'
