@@ -345,6 +345,8 @@
   }
 
   .bio{
+    height: auto;
+    max-height: 180px;
     font-size: 14px;
     margin: 20px 0;
     padding: 0;
@@ -390,6 +392,7 @@
 
       .accordion-heading {
         height: 30px;
+        padding: 10px 0;
       }
 
       .accordion-body {
@@ -415,4 +418,17 @@
     height: 180px;
   }
 }
+
+//iPhone 5 styles
+
+@media screen and (max-width: 320px) {
+  .luchador-name-md{
+    font-size: 18px;
+  }
+
+  .luchador-nickname-md{
+    font-size: 16px;
+  }
+
+  }
 
