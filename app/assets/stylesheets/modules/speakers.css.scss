@@ -67,7 +67,7 @@
   height: 230px;
   margin-bottom: 65px;
   &.keynote{
-    .bio{ height: 280px !important; }
+    .bio{ height: 280px; }
     width: 50%;
   }
 }
@@ -85,6 +85,53 @@
       left: 0;
     }
   }
+}
+
+.luchador-name-md{
+  @extend .c-mndy, .fw-r, .lh-35, .mt-10, .fz-30, .tt-u;
+  @include mq(768px){
+    line-height: 30px;
+    font-size: 22px; }
+}
+
+.luchador-name-lg{
+  @extend .luchador-name-md, .fz-40;
+}
+
+.luchador-nickname-md{
+  @extend .c-bldr, .fz-24, .fw-r, .lh-25, .tt-u;
+  @include mq(768px){ font-size: 20px; }
+
+  &:before, &:after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin: 0 6px 4px;
+    background-image: image_url('2015/Star.svg');
+  }
+}
+
+.luchador-nickname-lg{
+  @extend .luchador-nickname-md, .fz-32;
+
+  &:before, &:after{
+    background-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.more{
+  @extend .opens, .fz-12, .fw-r, .c-bldr;
+  cursor: pointer;
+}
+
+.bio{
+  @extend .opens, .c-bldr, .fw-r, .fz-12;
+  height: 180px;
+  overflow: hidden;
+  padding: 0 10px;
 }
 
 .speaker-box.flipped .flipper,
@@ -134,51 +181,6 @@
     min-height: 250px;
     text-align: center;
     padding-top: 9px;
-
-    .luchador-name-md{
-      @extend .c-mndy, .fw-r, .lh-35, .mt-10, .fz-30, .tt-u;
-      @include mq(768px){ font-size: 25px; }
-    }
-
-    .luchador-name-lg{
-      @extend .luchador-name-md, .fz-40;
-    }
-
-    .luchador-nickname-md{
-      @extend .c-bldr, .fz-24, .fw-r, .lh-25, .tt-u;
-      @include mq(768px){ font-size: 20px; }
-
-      &:before, &:after{
-        content: '';
-        width: 15px;
-        height: 15px;
-        display: inline-block;
-        margin: 0 6px 0;
-        background-image: image_url('2015/Star.svg');
-      }
-    }
-
-    .luchador-nickname-lg{
-      @extend .luchador-nickname-md, .fz-32;
-
-      &:before, &:after{
-        background-size: 18px;
-        width: 18px;
-        height: 18px;
-      }
-    }
-
-    .more{
-      @extend .opens, .fz-12, .fw-r, .c-bldr;
-      cursor: pointer;
-    }
-
-    .bio{
-      @extend .opens, .c-bldr, .fw-r, .fz-12;
-      height: 180px;
-      overflow: hidden;
-      padding: 0 10px;
-    }
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
@@ -302,6 +304,115 @@
     .google:hover i {
       background-position: -198px -50px;
     }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  #keynotes {
+    height: initial;
+
+    .accordion-heading .luchador-name-md:before{
+      background-image: image_url('2015/keynote.svg');
+      margin: 0 4px;
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  .luchador-name-md{
+    @extend .lh-25, .fz-22;
+    margin: 0;
+    display: inline-block;
+
+    &:before, &:after{
+      content: '';
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      margin: 0 6px 3px;
+      background-image: image_url('2015/Star.svg');
+    }
+  }
+
+  .luchador-nickname-md{
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    @extend .fz-18, .lh-18;
+
+    &:before, &:after{ content: none; }
+  }
+
+  .bio{
+    font-size: 14px;
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  .speaker-box, .speaker-box-large{
+    height: auto;
+    margin-bottom: 0;
+    width: 100% !important;
+  }
+
+  #keynotes, #speaker-cards {
+
+    > .content { margin-top: 0; }
+
+    .flipper { display: none;  }
+
+    .accordion-heading.active {
+      .arrow {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        background-position: 9px 7px;
+      }
+
+      .luchador-name-md, .luchador-nickname-md{ display: none; }
+    }
+
+    .accordion-group {
+      border-bottom: 2px solid $alto;
+      display: block;
+
+      .arrow {
+        background: image_url('2015/down_arrows.svg') no-repeat;
+        background-size: 17px;
+        background-position: 4px 5px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        float: right;
+      }
+
+      .accordion-heading {
+        height: 30px;
+      }
+
+      .accordion-body {
+        display: none;
+        text-align: center;
+        padding: 4px 20px 20px;
+
+        img {
+          width: 150px;
+          height: 150px;
+          display: block;
+          margin: 0 auto 17px;
+        }
+      }
+    }
+  }
+
+  #keynotes .speaker-box:first-child .accordion-group{
+    border-top: 2px solid $alto;
+  }
+
+  #keynotes .speaker-box .accordion-body .bio{
+    height: 180px;
   }
 }
 
