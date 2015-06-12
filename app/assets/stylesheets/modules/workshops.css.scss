@@ -47,8 +47,16 @@
     }
 
     .workshop-title {
-      @extend .teko, .c-mndy, .fw-r, .tt-u, .fz-50;
-      height: 50px;
+      @extend .teko, .c-mndy, .fw-r, .tt-u;
+//      max-height: 50px;
+      font-size: 40px;
+      line-height: 33px;
+      margin-top: 20px;
+
+      @media screen and (min-width: 1147px) and (max-width: 1542px){
+        font-size: 44px;
+      }
+
 
       &:after {
         content: '';
@@ -66,7 +74,6 @@
 
     .workshop-speaker {
       @extend .opens, .c-amlo, .fz-20;
-      margin-top: 3px;
     }
 
     .workshop-location, .workshop-date {
@@ -102,7 +109,7 @@
       }
     }
 
-    @media screen and (max-width: 1220px) {
+    @media screen and (max-width: 1370px) {
 
       .workshop-details {
         width: 60%
@@ -121,8 +128,7 @@
       }
 
       .workshop-title {
-        height: 40px;
-        font-size: 40px;
+        font-size: 38px;
       }
 
       .workshop-speaker {
@@ -146,7 +152,7 @@
 
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
       text-align: center;
 
       .workshop-details {
