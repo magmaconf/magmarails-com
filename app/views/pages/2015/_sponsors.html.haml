@@ -1,4 +1,4 @@
-.pure-u-2-3.main-content-mobile{ class: I18n.locale.to_s }
+.pure-u-2-3.main-content-mobile.sponsors{ class: I18n.locale.to_s }
   = render 'pages/2015/partials/pages_main_menu'
   .container
     .bgc-whte.pt50.pb80.pt0--t
@@ -10,38 +10,23 @@
           %h4.fz-30.m0.c-mndy.fw-l.teko.p0.text-with-stars.fz-20--m
             June 18, 19 & 20 - Manzanillo, Col. MX
       .pure-g-r
-        .pure-u-1-2
+        .main-sponsor
           %a.sponsor-logo-link{ href: 'http://www.crowdint.com/', target: '_blank' }
             .sponsor-logo.sponsor-logo__big.sponsor-logo-crowd.ol-n
-        .pure-u-1-2
+        .main-sponsor
           %a.sponsor-logo-link{ href: 'https://www.github.com/', target: '_blank' }
             .sponsor-logo.sponsor-logo__big.sponsor-logo-github
 
       .pure-g-r.mt85.m0--t
-        .pure-u-1-3
+        .sponsor
           %a.sponsor-logo-link{ href: 'https://www.ardanlabs.com/', target: '_blank' }
             .sponsor-logo.sponsor-logo__medium.sponsor-logo-ardan-labs
-        .pure-u-1-3
-          .sponsor-logo.sponsor-logo__medium.sponsor-logo-placeholder__medium
-        .pure-u-1-3
-          .sponsor-logo.sponsor-logo__medium.sponsor-logo-placeholder__medium
-
-      .pure-g-r.mt85.m0--t.dis-b-n--t
-        .pure-u-1-3
-          .sponsor-logo.sponsor-logo__small.sponsor-logo-placeholder__small
-        .pure-u-1-3
-          .sponsor-logo.sponsor-logo__small.sponsor-logo-placeholder__small
-        .pure-u-1-3
-          .sponsor-logo.sponsor-logo__small.sponsor-logo-placeholder__small
-
-      .pure-g-r.mt85.m0--t.dis-b-n--t
-        .pure-u-1-3
-          .sponsor-logo.sponsor-logo__small.sponsor-logo-placeholder__small
-        .pure-u-1-3
-          .sponsor-logo.sponsor-logo__medium.sponsor-logo-contact-button
-        .pure-u-1-3
-          .sponsor-logo.sponsor-logo__small.sponsor-logo-placeholder__small
-
-      .pure-g-r.dis-b--t
-        .pure-u-1-1
-          .sponsor-logo.sponsor-logo__medium.sponsor-logo-contact-button
+        .sponsor
+          %a.sponsor-logo-link{ href: 'https://travis-ci.org/', target: '_blank' }
+            .sponsor-logo.sponsor-logo__medium.sponsor-logo-travis
+        .sponsor
+          %a.sponsor-logo-link{ href: 'http://sg.com.mx/', target: '_blank' }
+            .sponsor-logo.sponsor-logo__medium.sponsor-logo-sg
+        .sponsor
+          %a.sponsor-logo-link{ href: 'http://www.wix.com/', target: '_blank' }
+            .sponsor-logo.sponsor-logo__medium.sponsor-logo-wix
