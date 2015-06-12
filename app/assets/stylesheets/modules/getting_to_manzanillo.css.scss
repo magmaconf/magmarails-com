@@ -5,4 +5,5 @@
   background-size: cover;
 
   @include retina() { background-image: image_url('2015/getting/map@2x.jpg'); }
+  @media screen and (max-width: 767px){ background-position: -280px 0; }
 }
