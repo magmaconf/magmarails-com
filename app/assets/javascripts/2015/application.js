@@ -22,27 +22,6 @@
 
 $(document).ready(function(){
   var pathname = location.pathname;
-
-  if(pathname == '/') {
-    $('#main-menu, #mobile-header, #footer').addClass('index');
-  } else if (pathname == '/about') {
-    $('#about-magma-link').addClass('active');
-  } else if (pathname == '/getting') {
-    $('#getting-link').addClass('active');
-  } else if (pathname == '/sponsors') {
-    $('#sponsors-link').addClass('active');
-  } else if (pathname == '/schedule') {
-    $('#schedule-link').addClass('active');
-  } else if (pathname == '/speakers') {
-    $('#main-menu, #mobile-header, #footer').addClass('speakers');
-    $('#speakers-link').addClass('active');
-  } else if (pathname == '/sponsors') {
-    $('#main-menu, #mobile-header, #footer').addClass('sponsors');
-    $('#sponsors-link').addClass('active');
-  } else if (pathname == '/gallery') {
-    $('#main-menu, #mobile-header, #footer').addClass('gallery');
-  }
-
   if(pathname == '/') {
     $('.js-animated-background')
         .addClass('has-animated-background')
