@@ -42,6 +42,9 @@
   .thanks {
     margin: 80px 0 -8px;
     width: 253px;
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      margin-top: 20px;
+    }
   }
 
   .hero-text {
@@ -249,6 +252,10 @@
   width: inherit;
   z-index: 999;
   transform: translateZ(0);
+  @media screen and (min-width: 767px) and (max-width: 1150px) {
+    margin: 80px auto 0;
+    position: relative;
+  }
 }
 
 .logo-container-mobile {
