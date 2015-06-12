@@ -2,6 +2,10 @@
   border-bottom: 2px solid $alto;
 
   @include mq-mobile { border-bottom: none; }
+
+  @media screen and (max-width: 1024px){
+    > div{ width: 100%; }
+  }
 }
 
 .tide-image-container {
