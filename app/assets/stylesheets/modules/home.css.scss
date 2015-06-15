@@ -9,7 +9,7 @@
   #photo-gallery {
     background-color: #ebebeb;
     height: 1051px;
-    overflow: overlay;
+    overflow: auto;
 
     @include mq-mobile {
       display: none;
