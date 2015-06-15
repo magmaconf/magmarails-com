@@ -1,3 +1,7 @@
+@-moz-document url-prefix(){
+ .sponsors{ min-height: 1025px; }
+}
+
 .main-sponsor{
   width: 50%;
   float: left;
@@ -12,7 +16,10 @@
     margin: 40px 0;
   }
 
-  @media screen and (max-width: 767px) { width: 100%; }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    clear: both;
+  }
 }
 
 .sponsor-logo {
