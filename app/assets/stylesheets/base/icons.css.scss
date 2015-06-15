@@ -29,17 +29,43 @@
   }
 }
 
+@-moz-document url-prefix(){
+  .icon-facebook {
+    @include footer-icons(20px, 11px);
+
+    &:hover {
+      @include footer-icons(20px, -86px);
+    }
+  }
+
+  .icon-twitter {
+    @include footer-icons(-40px, 11px);
+
+    &:hover {
+      @include footer-icons(-40px, -86px);
+    }
+  }
+
+  .icon-google {
+    @include footer-icons(-101px, 11px);
+
+    &:hover {
+      @include footer-icons(-101px, -86px);
+    }
+  }
+};
+
 .social {
   margin-top: 18px;
+  margin-bottom: 50px;
   width: 170px;
 
   a {
     background-color: $social-bkg;
     border-radius: 50%;
     float: left;
-    height: 32px;
+    height: 47px;
     outline: 0;
-    padding-top: 15px;
     transition: background-color .5s ease;
     width: 47px;
 
@@ -53,3 +79,10 @@
     }
   }
 }
+
+@-moz-document url-prefix() {
+  .social {
+    margin-bottom: 45px;
+  }
+}
+

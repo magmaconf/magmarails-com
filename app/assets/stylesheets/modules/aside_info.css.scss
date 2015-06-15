@@ -26,9 +26,11 @@
 .side-text-your { font-size: 88px; }
 .side-text-support { font-size: 52px; }
 
+@-moz-document url-prefix(){
+ .magma-info{ background: $mandy; }
+}
 .magma-info {
   float: left;
-  margin-bottom: 50px;
   min-height: 927px;
 
   @include mq-tablet {
@@ -76,11 +78,6 @@
 
   .social {
     width: 100%;
-
-    [class *='icon-'] {
-      padding: 20px 0 0 17px;
-      margin-top: -13px;
-    }
 
     a {
       display: inline-block;

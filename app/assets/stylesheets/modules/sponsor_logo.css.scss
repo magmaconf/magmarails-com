@@ -1,12 +1,12 @@
 .main-sponsor{
   width: 50%;
-
+  float: left;
   @media screen and (max-width: 767px) { width: 100%; }
 }
 
 .sponsor{
   width: 25%;
-
+  float: left;
   @media screen and (min-width: 768px) and (max-width: 1300px){
     width: 50%;
     margin: 40px 0;
