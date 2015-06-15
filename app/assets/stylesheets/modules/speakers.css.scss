@@ -69,10 +69,12 @@
     .bio{ height: 280px; }
     width: 50%;
   }
+}
 
+@-moz-document url-prefix() {
   .luchador-name-md, .luchador-nickname-md, .luchador-keynote, .more{ transition: opacity 0.2s 0.2s; }
 
-  &.flipped .normal-box{
+  .speaker-box.flipped .normal-box{
     .masked, .unmasked{ opacity: 0 !important; }
     .luchador-name-md, .luchador-nickname-md, .luchador-keynote, .more{ opacity: 0 !important; }
   }
