@@ -26,7 +26,7 @@
               %div{ style: 'height: 35px;' }
           = render 'pages/2015/partials/schedule/hour', locals: { hour: '8:45', class_name: 'schedule-table-row__small' }
           = render 'pages/2015/partials/schedule/hour', locals: { hour: '9:00', class_name: 'schedule-table-row__small' }
-          = render 'pages/2015/partials/schedule/hour', locals: { hour: '10:00', class_name: 'schedule-table-row__normal' }
+          = render 'pages/2015/partials/schedule/hour', locals: { hour: '10:00', class_name: 'schedule-table-row__big' }
           = render 'pages/2015/partials/schedule/hour', locals: { hour: '10:40', class_name: 'schedule-table-row__big' }
           = render 'pages/2015/partials/schedule/hour', locals: { hour: '11:20', class_name: 'schedule-table-row__small' }
           = render 'pages/2015/partials/schedule/hour', locals: { hour: '11:40', class_name: 'schedule-table-row__big' }
@@ -121,7 +121,7 @@
           = render 'pages/2015/partials/schedule/talk',
                     locals: { speaker: 'Yitzchok Willroth',
                               language: 'en',
-                              talk_name: 'TBA' }
+                              talk_name: 'Talmudic Maxims to Maximize Your Growth as a Developer' }
 
           = render 'pages/2015/partials/schedule/talk',
                     locals: { speaker: 'Panel',
@@ -238,12 +238,12 @@
           .pure-g-r.schedule-table-row.schedule-table-row__small
             .pure-u-1-1
 
-          .pure-g-r.schedule-table-row.schedule-table-row__normal
+          .pure-g-r.schedule-table-row.schedule-table-row__big
             .pure-u-1-1
               %p.speaker-name
-                TBA
+                Adriana Herrera
               %p.talk-name
-                TBA
+                Where Engineering & Business Fuse Together: How-to Use Internal Data to Track Biz Drivers
 
           = render 'pages/2015/partials/schedule/talk',
                     locals: { speaker: 'André Arko',
@@ -263,7 +263,7 @@
 
           = render 'pages/2015/partials/schedule/talk',
                     locals: { speaker: 'Melissa Pegus',
-                              talk_name: 'TBA',
+                              talk_name: 'eCommerce through diversity.',
                               language: 'en' ,
                               class_name: 'schedule-table-row__big' }
 
