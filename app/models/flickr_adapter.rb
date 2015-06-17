@@ -12,11 +12,11 @@ class FlickrPhoto
 end
 
 class FlickrAdapter
-  def initialize
+  def initialize(photo_set)
     @user_id = '63319310@N04'
     @api_key = FlickRaw.api_key
     @secret = FlickRaw.shared_secret
-    @photoset = '72157645528624066'
+    @photoset = photo_set
   end
 
   def get_photos(page = 1, per_page = 10)

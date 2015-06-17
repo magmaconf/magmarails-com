@@ -1,6 +1,9 @@
 class @Gallery
-  constructor: (container) ->
+  #72157645528624066 is default flicker photoSet
+  constructor: (container, photoSet = '72157645528624066') ->
     @container = $(container)
+    @containerSelector = container
+    @photoSet = photoSet
 
   page: 1
 
@@ -8,17 +11,20 @@ class @Gallery
     min_width = 280
     @container.imagesLoaded =>
       @container.masonry
-        itemSelector: '.gallery-box'
+        itemSelector: @getNestedSelector('.gallery-box')
         gutter: 0
-        columnWidth: (containerWidth) ->
+        columnWidth: (containerWidth) =>
           num_of_boxes = (containerWidth / min_width | 0)
           box_width = ((containerWidth  / num_of_boxes) | 0)
           box_width = containerWidth  if containerWidth < min_width
 
-          $('.gallery-box').width box_width
-          $('.large').width box_width * 2 if num_of_boxes > 1
-          $('.x-large').width (if (num_of_boxes > 1) then box_width * 3 else box_width * num_of_boxes)
+          $(@getNestedSelector('.gallery-box')).width box_width
+          $(@getNestedSelector('.large')).width box_width * 2 if num_of_boxes > 1
+          $(@getNestedSelector('.x-large')).width (if (num_of_boxes > 1) then box_width * 3 else box_width * num_of_boxes)
           box_width
+
+  getNestedSelector: (selector) ->
+    return "#{@containerSelector} #{selector}"
 
   setPhotos: (per_page = 16) ->
     $.ajax(
@@ -27,10 +33,13 @@ class @Gallery
         page: @page
         per_page: per_page
         flickr: true
+        container: @containerSelector
+        photo_set: @photoSet
     ).done =>
       $('#main-section').css('right', '0%')
       $('.magma-info').addClass('js-width-transition')
       $('.magma-info').removeClass('js-full-width')
+
 
     @page += 1
 

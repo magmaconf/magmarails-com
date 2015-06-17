@@ -1,0 +1,84 @@
+.pure-u-2-3.main-content-mobile#summary-container{ class: I18n.locale.to_s }
+  = render 'pages/2015/partials/pages_main_menu'
+  .container.bgc-glry#summary
+    .js-first-day.active-day.activated.pt50.p0--m
+      .pure-g-r
+        .pure-u-1-24
+          .summary-arrow-prev.js-prev-day
+            .summary-arrow-line.summary-arrow-prev__right
+            .summary-arrow-line.summary-arrow-prev__left
+        .pure-u-21-24.ta-c.my30.my15--m.mx10
+          %h2.fz-40.m0.lh-40.dis-ib.c-mndy.fw-r.teko.fz-30--m.lh-25--m
+            Day One
+          .wp-33.bgc-mndy.m-center.hg2.m5--t.wp-100--t
+          %h4.fz-30.m0.c-mndy.fw-l.teko.p0.text-with-stars.fz-20--m
+            June 18, 19 & 20 - Manzanillo, Col. MX
+        .pure-u-1-24
+          .summary-arrow-next.js-next-day
+            .summary-arrow-line.summary-arrow-next__right
+            .summary-arrow-line.summary-arrow-next__left
+      #gallery-inner-day-1
+        #home-info.gallery-box.large
+          .inner-box
+            .content-information
+              %p= t('home.one_of_the_most_important')
+              %p= t('home.magma_welcome_dev')
+    .js-second-day.pt50.p0--m
+      .pure-g-r
+        .pure-u-1-24
+          .summary-arrow-prev.js-prev-day
+            .summary-arrow-line.summary-arrow-prev__right
+            .summary-arrow-line.summary-arrow-prev__left
+        .pure-u-21-24.ta-c.my30.my15--m.mx10
+          %h2.fz-40.m0.lh-40.dis-ib.c-mndy.fw-r.teko.fz-30--m.lh-25--m
+            Day Two
+          .wp-33.bgc-mndy.m-center.hg2.m5--t.wp-100--t
+          %h4.fz-30.m0.c-mndy.fw-l.teko.p0.text-with-stars.fz-20--m
+            June 18, 19 & 20 - Manzanillo, Col. MX
+        .pure-u-1-24
+          .summary-arrow-next.js-next-day
+            .summary-arrow-line.summary-arrow-next__right
+            .summary-arrow-line.summary-arrow-next__left
+      #gallery-inner-day-2
+        #home-info.gallery-box.large
+          .inner-box
+            .content-information
+              %p= t('home.one_of_the_most_important')
+              %p= t('home.magma_welcome_dev')
+    .js-third-day.pt50.p0--m
+      .pure-g-r
+        .pure-u-1-24
+          .summary-arrow-prev.js-prev-day
+            .summary-arrow-line.summary-arrow-prev__right
+            .summary-arrow-line.summary-arrow-prev__left
+        .pure-u-21-24.ta-c.my30.my15--m.mx10
+          %h2.fz-40.m0.lh-40.dis-ib.c-mndy.fw-r.teko.fz-30--m.lh-25--m
+            Day Three
+          .wp-33.bgc-mndy.m-center.hg2.m5--t.wp-100--t
+          %h4.fz-30.m0.c-mndy.fw-l.teko.p0.text-with-stars.fz-20--m
+            June 18, 19 & 20 - Manzanillo, Col. MX
+        .pure-u-1-24
+          .summary-arrow-next.js-next-day
+            .summary-arrow-line.summary-arrow-next__right
+            .summary-arrow-line.summary-arrow-next__left
+      #gallery-inner-day-3
+        #home-info.gallery-box.large
+          .inner-box
+            .content-information
+              %p= t('home.one_of_the_most_important')
+              %p= t('home.magma_welcome_dev')
+    -#.spinner.js-spinner-is-expanded
+    -#  %a#load-more-items{ href: '#' }
+
+:coffee
+  $(document).ready ->
+    new Gallery('#gallery-inner-day-1').start();
+
+
+-#.pure-g-r
+-#  .pure-u-1-2
+-#    %p Lorem ipsum dolor sit amet, et vis perpetua similique, elit graece accusata ei nam, brute autem vim id. Verear appareat et sea. Sed vide augue indoctum ei, te nam purto prompta moderatius. Sea et ipsum volutpat intellegebat, ne qui cetero posidonium, eos zril inimicus ad. Inermis appetere incorrupte duo no.
+-#    %p Lorem ipsum dolor sit amet, et vis perpetua similique, elit graece accusata ei nam, brute autem vim id. Verear appareat et sea. Sed vide augue indoctum ei, te nam purto prompta moderatius. Sea et ipsum volutpat intellegebat, ne qui cetero posidonium, eos zril inimicus ad. Inermis appetere incorrupte duo no.
+-#  .pure-u-1-2
+-#    = image_tag '2015/getting/planningtrip@2x.jpg'
+-#

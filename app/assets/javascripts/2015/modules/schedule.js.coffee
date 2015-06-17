@@ -18,31 +18,31 @@ $(document).ready ->
    #   $('#schedule .schedule-container').removeClass('fixed')
 
 
-  $('.js-prev-day').css('display', 'none')
+  $('#schedule .js-prev-day').css('display', 'none')
 
-  $('.js-prev-day').click ->
+  $('#schedule .js-prev-day').click ->
     activeDay = $('.active-day')
     activeDay.swiperight()
 
-  $('.js-next-day').click ->
+  $('#schedule .js-next-day').click ->
     activeDay = $('.active-day')
     activeDay.swipeleft()
 
-  $('.js-first-day').swipeleft ->
-    swipeToLeft(@, '.js-second-day')
-    $('.js-prev-day').css('display', 'block')
+  $('#schedule .js-first-day').swipeleft ->
+    swipeToLeft(@, '#schedule  .js-second-day')
+    $('#schedule  .js-prev-day').css('display', 'block')
 
-  $('.js-second-day').swipeleft ->
-    swipeToLeft(@, '.js-third-day'  )
-    $('.js-next-day').css('display', 'none')
+  $('#schedule .js-second-day').swipeleft ->
+    swipeToLeft(@, '#schedule  .js-third-day'  )
+    $('#schedule .js-next-day').css('display', 'none')
 
-  $('.js-third-day').swiperight ->
-    swipeToRight(@, '.js-second-day')
-    $('.js-next-day').css('display', 'block')
+  $('#schedule .js-third-day').swiperight ->
+    swipeToRight(@, '#schedule .js-second-day')
+    $('#schedule .js-next-day').css('display', 'block')
 
-  $('.js-second-day').swiperight ->
-    swipeToRight(@, '.js-first-day')
-    $('.js-prev-day').css('display', 'none')
+  $('#schedule .js-second-day').swiperight ->
+    swipeToRight(@, '#schedule .js-first-day')
+    $('#schedule .js-prev-day').css('display', 'none')
 
   swipeToLeft = (hide, show) ->
     $(show).addClass('active-day').css('left', '95%')
@@ -62,5 +62,5 @@ $(document).ready ->
     , 300, ->
       $(hide).css('left', '-100%')
     $(show).animate
-      left: if show is '.js-first-day' then '0' else '17%'
+      left: if show is '#schedule .js-first-day' then '0' else '17%'
     , 250

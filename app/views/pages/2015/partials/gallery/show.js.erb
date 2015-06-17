@@ -1,4 +1,4 @@
-$container = $('#gallery-inner');
+$container = $("<%= @gallery_container %>");
 
 <% if @boxes.any? %>
   var boxes = "<%= j(render(partial: 'pages/2015/partials/gallery/boxes')) %>"
