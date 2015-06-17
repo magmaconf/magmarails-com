@@ -1,7 +1,9 @@
 .encore-button
-  %a.btn-call-for-papers{ href: 'http://magmaconf2015.eventbrite.com', target: '_blank' }
-    =image_tag '2015/register-hover.svg'
-    =image_tag '2015/register.svg', class: 'original'
+  %a.btn-call-for-papers{ href: 'http://install.diawi.com/3tEQMW', target: '_blank' }
+    =image_tag '2015/download_button.svg' if @is_iphone
+    - unless @is_iphone
+      =image_tag '2015/register-hover.svg'
+      =image_tag '2015/register.svg', class: 'original'
 
 %p{ class: "#{ I18n.locale.to_s } over over-small" }
   %span.conference-date

@@ -7,5 +7,6 @@ class ApplicationController < ActionController::Base
 
   def set_id
     @id = params[:id]
+    @is_iphone = request.env['HTTP_USER_AGENT'].scan(/iPhone|iPad|iPod/).any?
   end
 end
