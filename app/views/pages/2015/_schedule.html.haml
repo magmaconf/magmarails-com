@@ -255,17 +255,18 @@
             .pure-u-1-1
               %p.schedule-table-legend Break
 
-          = render 'pages/2015/partials/schedule/talk',
-                    locals: { speaker: 'Panel',
-                              talk_name: 'Women in tech',
-                              class_name: 'schedule-table-row__big',
-                              language: 'en' }
 
           = render 'pages/2015/partials/schedule/talk',
                     locals: { speaker: 'Melissa Pegus',
                               talk_name: 'eCommerce through diversity.',
                               language: 'en' ,
                               class_name: 'schedule-table-row__big' }
+
+          = render 'pages/2015/partials/schedule/talk',
+                    locals: { speaker: 'Panel',
+                              talk_name: 'Women in tech',
+                              class_name: 'schedule-table-row__big',
+                              language: 'en' }
 
           .pure-g-r.schedule-table-row.schedule-table-row__small
             .pure-u-1-1
@@ -295,16 +296,17 @@
             .pure-u-1-1
               %p.schedule-table-legend LIGHTNING TALKS
 
+
+          .pure-g-r.schedule-table-row.schedule-table-row__big
+            .pure-u-1-1
+              %p.speaker-name Panel
+              %p.talk-name Go
+
           = render 'pages/2015/partials/schedule/talk',
                     locals: { speaker: 'Steve Klabnik',
                               talk_name: 'Dropping down to Rust',
                               language: 'en' ,
-                              class_name: 'schedule-table-row__big' }
-
-          .pure-g-r.schedule-table-row.schedule-table-row__normal
-            .pure-u-1-1
-              %p.speaker-name Panel
-              %p.talk-name Go
+                              class_name: 'schedule-table-row__normal' }
 
           .pure-g-r.schedule-table-row.schedule-table-row__big
             .pure-u-1-1
