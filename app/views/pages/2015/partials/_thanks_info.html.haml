@@ -1,0 +1,18 @@
+.thanks-info
+  %p{ class: "#{ I18n.locale.to_s } over over-small" }
+    %span.content-text.highlight= t('home.content_text')
+    %span.content-text= t('home.content_text_line2')
+    %span.content-text= t('home.content_text_line3')
+
+  %span.separator.separator-normal
+
+  = render 'partials/social_buttons'
+
+  .mb35.mt20
+    %a{href: 'http://www.crowdint.com'}
+      %img{ src: image_path('2015/LogoCrowd2.svg'), width: '100' }
+
+  .rights
+    %span= t('home.footer.organised_by')
+    %span= '|'
+    %span= t('home.footer.copyright')
