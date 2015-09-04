@@ -145,7 +145,7 @@ en:
     work: 'We have a lot of work to do. Meanwhile please checkout'
     limit_ticket: 'limited to <span>50 tickets</span>'
     footer:
-      organised_by: Proudly sponsored by Crowd Interactive © 2015
+      organised_by: Proudly sponsored by MagmaLabs © 2015
       copyright: This site is protected by Copyright under U.S. and International
         law. All rights reserved.
     policy:
@@ -193,7 +193,7 @@ en:
       email: 'E-mail'
       submit: 'Subscribe'
   daily:
-    copy-right: 'Crowd Interactive &copy; 2015. This site is protected by copyright under US and international law. All rights reserved'
+    copy-right: 'MagmaLabs &copy; 2015. This site is protected by copyright under US and international law. All rights reserved'
     five: 'NO. 5'
     page: 'PAGE 1'
     page_two: 'PAGE 2'
@@ -272,7 +272,7 @@ en:
     dominik:
       bio: I love adventures, the outdoors, decent food, and a good brain teaser. Writing code used to be one of many hobbies that just happened to become my profession.
     fernando:
-      bio: Software Engineer at Crowd interactive, Lubuntu user, FLOSS advocate, /(.*) metal and beer lover. Passionate about web dev and lean startup.
+      bio: Software Engineer at MagmaLabs, Lubuntu user, FLOSS advocate, /(.*) metal and beer lover. Passionate about web dev and lean startup.
     philip:
       bio: A Kiwi programmer and the Director of consulting company Manuka Coalition, Philip is deeply interested in open source, travelling with his wife, sunshine, and great food. Current President of Ruby New Zealand.
     veronica:
