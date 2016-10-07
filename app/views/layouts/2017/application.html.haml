@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    = render 'partials/application_header'
+    = stylesheet_link_tag 'application', media: "all"
+    = javascript_include_tag '2015/application'
+  %body
+    .pure-g-r.bgc-blck.js-animated-background
+      = render 'pages/2017/partials/aside_info'
+      .logo-container.logo-container-mobile.bgc-mndy.dis-b--t
+        %a.magma-logo.magma-logo-mobile{ href: '/' }
+          = image_tag('2015/logo-magma.svg')
+      = yield
+    = render 'partials/newsletter' if @id == 'home'
+    %footer
+      = render 'partials/footer'
