@@ -1,5 +1,6 @@
 class SiteController < ApplicationController
   include HighVoltage::StaticPage
+  before_filter :set_year
 
   layout :set_layout
 
@@ -8,12 +9,23 @@ class SiteController < ApplicationController
     render nothing: true
   end
 
-  private
-  def set_layout
-    is2014? && '2014/application' || '2015/application'
+  def speakers
+    @id = 'speakers'
+    render "site/#{sanitize_year}/speakers.html.haml"
   end
 
-  def is2014?
-    params[:id].match(/^2014/)
+  private
+  def set_layout
+    @year = sanitize_year
+    "#{sanitize_year}/application"
   end
+
+  def sanitize_year
+    params[:year] ||= ENV["DEFAULT_YEAR"]
+  end
+
+  def set_year
+    @year = sanitize_year
+  end
+
 end
