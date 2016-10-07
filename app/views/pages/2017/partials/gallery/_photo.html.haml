@@ -1,0 +1,13 @@
+.gallery-box
+  .inner-box
+    %img{ src: data.thumbnail }
+    %a.fancybox{ href: data.url, rel: 'gallery' }
+      .mask
+    .desc
+      .photo-info
+        %h1= data.title
+        %p= data.description.html_safe
+      = render 'pages/2015/partials/gallery/share_buttons', data: data
+
+    %h1= data.title
+    = render 'pages/2015/partials/gallery/share_buttons', data: data

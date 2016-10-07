@@ -1,0 +1,30 @@
+#main-menu.index.pure-g-r{ class: "#{I18n.locale.to_s}" }
+  .nav-menu
+    %ul
+      %li.link
+        = active_link_to t('menu.about'), '/2017/about', id: 'about-magma-link', class: 'link-text'
+      %li.link
+        = active_link_to t('menu.speakers'), '/2017/speakers', id: 'speakers-link', class: 'link-text'
+      %li.link
+        = active_link_to t('menu.schedule'), '/2017/schedule', id: 'schedule-link', class: 'link-text'
+      %li.link
+        = active_link_to t('menu.sponsors'), '/2017/sponsors', id: 'sponsors-link', class: 'link-text'
+      %li.link#getting-to-manzanillo
+        = active_link_to t('menu.getting_manzanillo'), '/2017/getting', id: 'getting-link', class: 'link-text'
+      %li.link
+        = active_link_to t('menu.workshops'), '/2017/workshops', id: 'workshops-link', class: 'link-text'
+      %li.link
+        %a.link-text#sponsors-link{ href: 'mailto:info@magmaconf.com', target:'_blank' }= t('menu.contact-us')
+
+    %div.dis-b--t.pl15
+      .nav-menu-separator
+      %h2.teko.fw-r.fz-30.c-amlo.tt-u.ls-0.m-center.dis-b.ta-c
+        Anti-harassment policy
+      %p.policy-legend-mobile
+        = t('home.policy.description')
+        %a.open-popup{ href: '#' }= t('home.policy.here')
+
+    %a#btn-menu
+      %span
+      %span
+      %span

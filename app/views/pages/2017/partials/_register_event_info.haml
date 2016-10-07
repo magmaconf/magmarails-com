@@ -1,0 +1,27 @@
+.encore-button
+  %a.btn-call-for-papers{ href: 'http://install.diawi.com/3tEQMW', target: '_blank' }
+    =image_tag '2015/download_button.svg' if @is_iphone
+    - unless @is_iphone
+      =image_tag '2015/register-hover.svg'
+      =image_tag '2015/register.svg', class: 'original'
+
+%p{ class: "#{ I18n.locale.to_s } over over-small" }
+  %span.conference-date
+    = image_tag '2015/Star.svg', class: 'star'
+    %span.dates-text= t('home.dates_text')
+    = image_tag '2015/Star.svg', class: 'star'
+  %span.separator.separator-big
+  %span.sub-content-text.expanded= 'MANZANILLO, COL. MX'
+  %span.separator.separator-big
+
+%p{ class: "#{ I18n.locale.to_s } over over-small" }
+  %span.content-text.highlight= t('home.content_text')
+  %span.content-text= t('home.content_text_line2')
+  %span.content-text= t('home.content_text_line3')
+
+%p.m0.p0.teko.fw-l.fz-20.c-stto.mt35.mb20.tt-u
+  proudly sponsored by
+
+.mb35.mt20
+  %a{href: 'http://www.magmalabs.io/'}
+    %img{ src: image_path('2015/magmalabs-logo.svg'), width: '100' }
