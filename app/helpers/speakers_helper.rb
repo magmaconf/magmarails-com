@@ -12,4 +12,13 @@ module SpeakersHelper
   def image_name(speaker_name)
     transliterate(speaker_name).downcase.gsub(' ', '_')
   end
+
+  def speaker_label(event_data)
+    if event_data['speaker']
+      event_data['speaker']['name']
+    else
+      event_data['name']
+    end
+  end
+
 end

@@ -12,48 +12,25 @@
 
     %section#keynotes
       .pure-g-r.content
-        .speaker-box.keynote
-          .flipper-lg
-            .normal-box
-              %img.masked{ src: "#{ image_path '2015/speakers/ron_evans_m.png' }" }
-              %img.unmasked{ src: "#{ image_path '2015/speakers/ron_evans.png' }" }
-              .luchador-name-lg Ron Evans
-              .luchador-nickname-lg El espaniol
-              .luchador-keynote.c-mndy.fz-20.ta-c.fw-r
-                %span.keynote-star Keynote
-              .mt10
-                %a.more
-                  See more >
-            .info-box
-              .luchador-name-lg Ron Evans
-              .bio= t('keynotes.ron.bio')
-              .mt10
-                %a.more
-                  < See less
-          = render 'pages/2017/partials/speakers/speaker_card_mobile', locals: { name: 'Ron Evans', nickname: 'el espaniol', bio: t('keynotes.ron.bio') }
-        .speaker-box.keynote
-          .flipper-lg
-            .normal-box
-              %img.masked{ src: "#{ image_path '2015/speakers/sarah_allen_m.png' }" }
-              %img.unmasked{ src: "#{ image_path '2015/speakers/sarah_allen.png' }" }
-              .luchador-name-lg Sarah Allen
-              .luchador-nickname-lg Ultrasauria
-              .luchador-keynote.c-mndy.fz-20.ta-c.fw-r
-                %span.keynote-star
-                %span Keynote
+        - @speakers.each do |speaker|
+          .speaker-box.keynote
+            .flipper-lg
+              .normal-box
+                %img.masked{ src: speaker['image'] }
+                %img.unmasked{ src: speaker['image'] }
+                .luchador-name-lg
+                  =speaker['name']
+                .luchador-nickname-lg
+                  =speaker['nickname']
+                .luchador-keynote.c-mndy.fz-20.ta-c.fw-r
+                  %span.keynote-star Keynote
                 .mt10
                   %a.more
                     See more >
-            .info-box
-              .luchador-name-lg Sarah Allen
-              .bio= t('keynotes.sarah.bio')
-              .mt10
-                %a.more
-                  < See less
-          = render 'pages/2017/partials/speakers/speaker_card_mobile', locals: { name: 'Sarah Allen', nickname: 'ultrasauria', bio: t('keynotes.sarah.bio') }
-
-    %section#speaker-cards
-      .pure-g.content
-        .speaker-box
-          = render 'pages/2017/partials/speakers/speaker_card', locals: { name: 'William Kennedy', nickname: 'mister go', bio: t('speakers.william.bio') }
-          = render 'pages/2017/partials/speakers/speaker_card_mobile', locals: { name: 'William Kennedy', nickname: 'mister go', bio: t('speakers.william.bio') }
+              .info-box
+                .luchador-name-lg
+                  =speaker['name']
+                .bio= speaker['bio']
+                .mt10
+                  %a.more
+                    < See less

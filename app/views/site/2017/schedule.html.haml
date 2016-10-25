@@ -1,0 +1,34 @@
+.pure-u-2-3.main-content-mobile{ class: I18n.locale.to_s }
+  = render 'pages/2017/partials/pages_main_menu'
+  #schedule
+    .container.schedule-container
+      .pure-g-
+        .pure-u-1-1.ta-c
+          .schedule-text-arena-magma
+      .pure-g-r
+        .pure-u-1-3.ta-c
+          = render 'pages/2017/partials/schedule/small_stars_list'
+        .pure-u-1-3
+          %p.schedule-title= "#{ t('title') } #{ t('menu.schedule') }"
+        .pure-u-1-3.ta-c
+          = render 'pages/2017/partials/schedule/small_stars_list'
+      %table.schedule-table
+        %thead
+          %tr
+            %th
+            -@schedule_data[:events].each do |e|
+              %th.table-day-header
+                .schedule-day-container
+                  %h2.schedule-day-name
+                    =e['day_name']
+        %tbody
+          -@schedule_data[:schedule].each do |s|
+            %tr
+              -if has_talks? s 
+                %td{ colspan: 4, class: 'schedule-table-row schedule-table-row__small' }
+                  %h2.schedule-time-legend.text-left=show_hour s
+              -else
+                %td.schedule-table-row.schedule-table-row__small
+                  %h2.schedule-time-legend=show_hour s
+                - @schedule_data[:events].each do |event|
+                  =show_talk s[1][event['date']]
