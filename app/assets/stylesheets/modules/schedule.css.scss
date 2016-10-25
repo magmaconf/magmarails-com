@@ -1,23 +1,23 @@
 .schedule-container {
-  padding: 50px 25px 0;
   box-sizing: border-box;
   overflow-y: scroll;
+  padding: 50px 25px 0;
 
   @include mq-laptop {
     padding: 20px 10px 0;
   }
 
   @include mq-tablet {
-    width: 100%;
-    position: relative;
     padding: 0;
+    position: relative;
+    width: 100%;
   }
 }
 
 .small-stars {
   list-style: none;
-  padding: 0;
   margin: 15px 0 0;
+  padding: 0;
 
   @include mq-laptop {
     > li:nth-child(even) {
@@ -28,24 +28,24 @@
   @media (max-width: 767px) { display: none; }
 
   > li {
-    margin: 0 5px;
     display: inline-block;
+    margin: 0 5px;
   }
 }
 
 .schedule-title {
+  background: #e65253;
+  box-sizing: border-box;
   color: white;
+  font-family: 'Teko', sans-serif;
   font-size: 21px;
   font-weight: 300;
-  font-family: 'Teko', sans-serif;
   letter-spacing: 2px;
   line-height: 30px;
   margin: 10px auto;
+  padding: 0 10px;
   text-align: center;
   text-transform: uppercase;
-  background: #e65253;
-  box-sizing: border-box;
-  padding: 0 10px;
 
   @include mq-tablet {
     margin: 15px auto;
@@ -55,9 +55,9 @@
 
 .schedule-text-arena-magma {
   background: image_url('2015/sprite_magma_schedule.png') no-repeat -10px -15px;
-  width: 201px;
-  height: 21px;
   display: inline-block;
+  height: 21px;
+  width: 201px;
 
   @include retina {
      background: image_url('2015/sprite_magma_schedule@2x.png') no-repeat -10px -15px;
@@ -67,8 +67,8 @@
 
 .schedule-red-star {
   background: image_url('2015/sprite_magma_schedule.png') no-repeat -10px -49px;
-  width: 15px;
   height: 15px;
+  width: 15px;
 
   @include retina {
     background: image_url('2015/sprite_magma_schedule@2x.png') no-repeat -10px -49px;
@@ -87,27 +87,27 @@
 
 .schedule-time-legend {
   color: #7E7B79;
+  font-family: 'Teko', sans-serif;
   font-size: 140%;
+  font-weight: 300;
+  margin-bottom: 0px;
   margin-left: 5px;
   margin-top: 0px;
-  margin-bottom: 0px;
   text-align: center;
-  font-family: 'Teko', sans-serif;
-  font-weight: 300;
 }
 
 .schedule-table-legend {
-  font-size: 140%;
-  text-transform: uppercase;
   font-family: 'Teko', sans-serif;
+  font-size: 140%;
   letter-spacing: 1px;
-  margin-left: 60px;
   margin-bottom: 0px;
   margin-top: 0px;
+  padding-left: 60px;
+  text-transform: uppercase;
 
   @include mq-laptop {
-    margin-left: 25px;
     font-size: 135%;
+    margin-left: 25px;
   }
 
   @include mq-tablet {
@@ -118,28 +118,28 @@
 .schedule-place-container {
   background-color: #ebebeb;
   height: 43px;
-  text-align: center;
   margin: 24px auto -26px;
+  text-align: center;
   width: 270px;
 }
 
 .schedule-place-text {
-  font-size: 25px;
-  margin: 8px 0 0;
-  font-family: 'Teko', sans-serif;
-  font-weight: 500;
   color: #e65253;
   display: inline-block;
+  font-family: 'Teko', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 8px 0 0;
   position: relative;
 
   &:before, &:after {
     background: image_url('2015/sprite_magma_schedule.png') no-repeat -10px -49px;
-    width: 15px;
-    height: 15px;
     content: '';
     display: block;
+    height: 15px;
     position: absolute;
     top: 4px;
+    width: 15px;
 
     @include retina {
       background: image_url('2015/sprite_magma_schedule@2x.png') no-repeat -35px -49px;
@@ -168,23 +168,23 @@
 }
 
 .schedule-day-name {
-  font-size: 32px;
-  margin: 0;
-  font-family: 'Teko', sans-serif;
-  font-weight: 500;
   color: #e65253;
   display: inline-block;
+  font-family: 'Teko', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
   position: relative;
 
   &:before,
   &:after {
     background: image_url('2015/sprite_magma_schedule.png') no-repeat -35px -49px;
-    width: 15px;
-    height: 14px;
     content: '';
     display: block;
+    height: 14px;
     position: absolute;
     top: 6px;
+    width: 15px;
 
     @include retina {
       background: image_url('2015/sprite_magma_schedule@2x.png') no-repeat -35px -49px;
@@ -227,17 +227,17 @@
 }
 
 .talk-name {
-  font-family: 'Open Sans', sans-serif;
   color: #7E7B79;
-  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
   font-size: 98%;
+  font-weight: 400;
+  margin-bottom: 0;
   margin-left: 60px;
   margin-top: 0;
-  margin-bottom: 0;
 
   @include mq-laptop {
-    margin-left: 25px;
     font-size: 95%;
+    margin-left: 25px;
   }
 
   @include mq-tablet {
@@ -246,13 +246,13 @@
 }
 
 .schedule-language-badge {
-  display: block;
   background: image_url('2015/sprite_magma_schedule.png') no-repeat -59px -46px;
+  display: block;
   float: left;
-  width: 21px;
   height: 21px;
   margin-left: 60px;
   margin-right: 10px;
+  width: 21px;
 
   @include retina {
     background: image_url('2015/sprite_magma_schedule@2x.png') no-repeat -59px -46px;
@@ -260,11 +260,11 @@
   }
 
   @include mq-laptop {
-    position: absolute;
-    top: 10px;
-    right: 0;
     margin-left: 0;
     margin-right: 0;
+    position: absolute;
+    right: 0;
+    top: 10px;
   }
 
   @include mq-tablet {
@@ -282,10 +282,10 @@
   margin-left: 0px;
 
   @include mq-tablet {
-    top: -28px;
-    left: 52px;
     float: right;
+    left: 52px;
     position: relative;
+    top: -28px;
   }
 }
 
@@ -310,11 +310,11 @@
 
 .schedule-keynote-badge {
   background: image_url('2015/sprite_magma_schedule.png') no-repeat -90px -45px;
-  width: 22px;
+  float: left;
   height: 22px;
   margin-left: 60px;
   margin-right: 8px;
-  float: left;
+  width: 22px;
 
   @include retina {
     background: image_url('2015/sprite_magma_schedule@2x.png') no-repeat -90px -45px;
@@ -322,17 +322,17 @@
   }
 
   @include mq-laptop {
-    position: absolute;
-    top: 10px;
-    right: 0;
     margin-left: 0;
     margin-right: 0;
+    position: absolute;
+    right: 0;
+    top: 10px;
   }
 
   @include mq-tablet {
     float: right;
-    position: relative;
     margin-left: 20px;
+    position: relative;
     right: 0px;
     top: -29px;
   }
@@ -351,8 +351,8 @@
   min-height: 86px;
 
   @include mq-laptop {
-    position: relative;
     min-height: 66px;
+    position: relative;
   }
 
   @include mq-tablet {
@@ -379,9 +379,9 @@
 .schedule-table-col-time {
   @include mq-tablet {
     background: #ebebeb;
+    position: absolute;
     width: 17% !important;
     z-index: 997;
-    position: absolute;
   }
 }
 
@@ -398,8 +398,8 @@
 
 .schedule-table-col-first-day {
   @include mq-tablet {
-    position: relative;
     margin-left: 17%;
+    position: relative;
   }
 }
 
@@ -413,8 +413,8 @@
 
 .schedule-arrow-next,
 .schedule-arrow-prev {
-  display: none;
   cursor: pointer;
+  display: none;
   position: absolute;
   top: 100px;
   width: 40px;
@@ -435,9 +435,9 @@
 
 .schedule-arrow-line {
   @include mq-tablet {
-    width: 3px;
     background: #e65253;
     height: 20px;
+    width: 3px;
   }
 }
 
@@ -480,8 +480,8 @@
       padding-top: 110px ;
 
       .schedule-table-header {
-        position: fixed;
         margin: 0;
+        position: fixed;
         top: 47px;
         width: 20%;
         z-index: 99;
@@ -544,5 +544,17 @@
       left: 2%;
       top: 44px;
     }
+  }
+}
+
+.schedule-table {
+  thead > tr {
+    border-bottom: 2px solid $mandy;
+  }
+
+  .table-day-header {
+    min-height: 23px;
+    padding: 20px 0;
+    width: calc(100%/3);
   }
 }
