@@ -22,6 +22,8 @@ gem 'high_voltage', '~> 2.1.0'
 gem 'mandrill_mailer'
 gem 'flickraw'
 
+gem 'rest-client'
+
 group :development do
   gem 'pry-rails'
   gem 'quiet_assets'
