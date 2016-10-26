@@ -4,11 +4,12 @@
     .bgc-glry.pt50.p0--m
       .pure-g-r
         .pure-u-1-1.ta-c.my30.my15--m.mx10
-          %h2.fz-40.m0.lh-40.dis-ib.c-mndy.fw-r.teko.fz-30--m.lh-25--m
-            About Magma
-          .wp-33.bgc-mndy.m-center.hg2.m5--t.wp-100--t
-          %h4.fz-30.m0.c-mndy.fw-l.teko.p0.text-with-stars.fz-20--m
-            June 18, 19 & 20 - Manzanillo, Col. MX
+          .ring-icon
+            %h2.about-magma-title
+              About Magma
+          .wp-33.m-center.hg2.m5--t.wp-100--t
+          %h4.about-magma-subtitle
+            MARCH 29, 30 & 31 - Manzanillo, Col. MX
 
       .pure-g-r.tide.bdt-w-2.bdt-c-ato.bdt-s-s.bdt-w-0--m
         .pure-u-1-2.tide-image-container.tide-image-container-small
@@ -18,9 +19,9 @@
 
           %img.tide-image{src: "#{image_path '2015/about/magmaconf-1@2x.jpg'}" }
         .pure-u-1-2.tide-text-container.tide-text-container-small
-          .tide-text.p20.p10--m
-            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('about.magmaconf_is_title').html_safe
-            %p.m0.opens.c-amlo.fw-r.fz-14
+          .about-container
+            %p.magmaconf-title= t('about.magmaconf_is_title').html_safe
+            %p.magmaconf-item-description
               = t('about.magmaconf_description').html_safe
 
       .pure-g-r.tide
@@ -31,9 +32,9 @@
 
           %img.tide-image{src: "#{image_path '2015/about/venue@2x.jpg'}" }
         .pure-u-1-2.tide-text-container.tide-text-container-small
-          .tide-text.p20.p10--m
-            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('about.venue')
-            %p.m0.opens.c-amlo.fw-r.fz-14
+          .about-container
+            %p.magmaconf-title= t('about.venue')
+            %p.magmaconf-item-description
               = t('about.venue_2015_description').html_safe
 
       .pure-g-r.tide
@@ -44,9 +45,9 @@
 
           %img.tide-image{src: "#{image_path '2015/about/activities@2x.jpg'}"}
         .pure-u-1-2.tide-text-container.tide-text-container-small
-          .tide-text.p20.p10--m
-            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('about.culture_activities')
-            %p.m0.opens.c-amlo.fw-r.fz-14
+          .about-container
+            %p.magmaconf-title= t('about.culture_activities')
+            %p.magmaconf-item-description
               = t('about.culture_2015_description').html_safe
 
       .pure-g-r.tide
@@ -57,8 +58,7 @@
 
           %img.tide-image{src: "#{image_path '2015/about/village@2x.jpg'}" }
         .pure-u-1-2.tide-text-container.tide-text-container-small
-          .tide-text.p20.p10--m
-            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('about.magma_village').html_safe
-            %p.m0.opens.c-amlo.fw-r.fz-14
+          .about-container
+            %p.magmaconf-title= t('about.magma_village').html_safe
+            %p.magmaconf-item-description
               = t('about.magma_village_description').html_safe
-

@@ -148,6 +148,7 @@ input[type=submit] {
 .teko { font-family: 'Teko', sans-serif; }
 .opens { font-family: 'Open Sans', sans-serif; }
 .oswald { font-family: 'Oswald', sans-serif; }
+.lato { font-family: 'Lato', sans-serif; }
 
 // Font weight
 .fw-r { font-weight: 400; }
@@ -368,3 +369,54 @@ input[type=submit] {
 .td-u { text-decoration: underline; }
 .td-h-n { &:hover { text-decoration: none; } }
 .td-h-u { &:hover { text-decoration: underline; } }
+.pl5 { padding-left: 5px; }
+.pt30 { padding-top: 30px; }
+.magmaconf-title {
+  @extend .c-stratos,.dis-b-n--m, .fw-r, .fz-18, .lato, .m0, .tt-u;
+  font-weight: bold;
+  margin-bottom: 23px;
+}
+
+.about-container {
+  @extend .tide-text, .p20, .p10--m, .pl5, .pt30;
+}
+
+.magmaconf-item-description {
+  @extend .m0, .opens, .c-amlo, .fw-r, .fz-14;
+  color: $boulder; 
+  font-weight: 300;
+  line-height: 1.4;
+  padding-right: 20px;
+}
+
+.about-magma-title {
+  color: $bittersweet;
+  display: inline-block;
+  font-size: 46px;
+  font-family: 'Lato';
+  font-weight: bold;
+  line-height: 40px;
+  margin: 0;
+}
+
+.about-magma-subtitle {
+  @extend .text-with-stars;
+  color: $mandy;
+  font-family: 'OpenSans';
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.ring-icon {
+  background-image: asset_url('2017/ring_icon.png');
+  background-position: 1%;
+  background-repeat: no-repeat;
+  background-size: 382px;
+  height: 39px;
+  margin: 0 auto;
+  width: 382px;
+}
