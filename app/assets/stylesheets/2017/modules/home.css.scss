@@ -1,0 +1,204 @@
+#main-section {
+  padding: 44px 0 0;
+  background: image-url('bkg.jpg');
+  .container {
+    background: image-url('background-image.png');
+    background-position: -105px -105px;
+    margin: 0 auto;
+    margin-top: 60px;
+    max-width: 1200px;
+    .right {
+      #info {
+        margin-top: 101px;
+        p {
+          color: #9D8D79;
+          font-size: 100%;
+          font-weight: 300;
+          line-height: 17px;
+          letter-spacing: 0;
+          margin: 0;
+          word-spacing: 0;
+          width: 202px;
+          font-family: Roboto;
+          text-align: left;
+          span {
+            font-size: 150%;
+            font-weight: 400;
+            font-family: oswald;
+            letter-spacing: 1px;
+          }
+          &:last-child {
+            border-bottom: 4px solid #423732;
+            margin-top: 21px;
+            padding-bottom: 12px;
+          }
+        }
+      }
+      .social {
+        [class *='icon-'] {
+          padding: 20px 0 0 17px;
+          margin-top: -13px;
+        }
+      }
+    }
+    .center {
+      .social {
+        [class *='icon-'] {
+          padding: 20px 0 0 17px;
+          margin-top: -13px;
+        }
+      }
+      #date {
+        margin-left: 0;
+        margin-bottom: 11px;
+        width: 178px;
+      }
+      p {
+        max-width: 170px;
+        border-bottom: 4px solid #423732;
+        color: #D4D3C6;
+        font-size: 100%;
+        font-family: oswald;
+        font-weight: 300;
+        margin: 0 auto;
+        text-transform: uppercase;
+        word-spacing: 0;
+        padding-bottom: 5px;
+      }
+      .register {
+        max-height: 180px;
+        margin: 69px auto 10px;
+        width: 173px;
+        .btn-register {
+          position: relative;
+          top: -205px;
+          margin-left: -3px;
+          img {
+            height: 96px;
+          }
+        }
+      }
+    }
+    .left {
+      #reylero {
+        margin-top: 93px;
+        margin-left: 37px;
+      }
+    }
+    .mobile-date { display: none; }
+  }
+
+  #help-section {
+    background-color: #fff;
+    margin-top: 30px;
+    .container {
+      background: none;
+      height: 225px;
+      margin-top: 0;
+      max-width: 1150px;
+    }
+    .sand-background {
+      background-color: #ede7e0;
+    }
+    .link {
+      background-color: #29a8a3;
+      color: #fff;
+      display: block;
+      text-align: center;
+    }
+    .description {
+      font-weight: 300;
+    }
+  }
+
+  #here-to-help {
+    background-color: #483d3a;
+    height: 225px;
+    .image {
+      display: block;
+      &.title {
+        margin: 25px auto 0;
+      }
+      &:last-child {
+        margin: 18px 0 0 39px;
+        position: absolute;
+      }
+    }
+  }
+
+  #contact-us .content {
+    margin: 30px auto;
+    width: 200px;
+
+    .title {
+      font-weight: 400;
+      font-size: 15px;
+      margin-bottom: 6px;
+      &:first-child {
+        display: none;
+      }
+    }
+
+    .description {
+      font-family: Roboto;
+      font-size: 13px;
+      letter-spacing: 0px;
+      line-height: 18px;
+      margin-bottom: 16px;
+    }
+
+    .link {
+      font: 300 15px oswald;
+      height: 24px;
+      padding-top: 2px;
+      width: 90px;
+    }
+  }
+
+  #check-out-more .content {
+    width: 246px;
+    margin: 43px auto 0;
+
+    .title {
+      border-bottom: 1px solid #b0a8a1;
+      color: #3c2f2d;
+      font-size: 24px;
+      letter-spacing: 0.5px;
+      margin: 0;
+      padding-bottom: 10px;
+      &:first-child { border-bottom: 0; }
+    }
+
+    .description {
+      border-top: 5px solid #b0a8a1;
+      margin-top: 3px;
+      margin-bottom: 12px;
+      padding-top: 8px;
+      font-size: 16px;
+    }
+
+    .link {
+      font: 300 17px oswald;
+      height: 28px;
+      padding-top: 4px;
+      width: 130px;
+    }
+  }
+
+  #swimmer-image {
+    position: absolute;
+    margin-top: -17px;
+    margin-left: -92px;
+    z-index: 1;
+  }
+  #village-image .content {
+    position: absolute;
+    width: 40%;
+    z-index: 0;
+    max-height: 225px;
+    overflow: hidden;
+    img {
+      margin-top: -3px;
+    }
+  }
+}

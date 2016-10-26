@@ -188,3 +188,16 @@
          }
 }
 
+@mixin span-cfp($color, $font-size, $font-family, $font-weight, $text-transform, $font-size-sm: $font-size) {
+  color: $color;
+  display: inline-block;
+  font-family: $font-family, sans-serif;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: 1;
+  text-transform: $text-transform;
+
+  @media screen and (max-width: 350px) {
+    font-size: $font-size-sm;
+  }
+}

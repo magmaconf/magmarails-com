@@ -1,0 +1,185 @@
+@media screen and (max-width: 640px)  {
+
+  #schedule {
+    padding-top: 80px;
+    .container {
+      width: 100%;
+      &.fixed {
+
+        .line.opening {
+          padding-top: 113px;
+        }
+
+        #time .head {
+          width: 15%;
+        }
+
+        .head {
+          max-width: none;
+          top: 40px;
+          width: 83%;
+        }
+
+        .arrow {
+          position: fixed;
+        }
+
+        #right {
+          margin-bottom: 0;
+          right: 0;
+          top: 6px;
+        }
+
+        #left {
+          top: 50px;
+        }
+      }
+    }
+    .header {
+      width: 288px;
+      .star, .arena {
+        display: inline-block;
+      }
+      .star {
+        background: image_url('sprite.svg');
+        background-size: 174px 180px;
+        background-position: -155px -142px;
+        height: 15px;
+        width: 15px;
+      }
+      .arena {
+        width: 230px;
+      }
+    }
+    .left-stars, #left-mask, #right-mask, .right-stars {
+      display: none;
+    }
+    #magma-legend {
+      margin: 15px auto -15px;
+      width: 292px;
+    }
+
+    .head {
+      border-top: 0;
+      padding: 8px 0 12px;
+      &.es {
+        padding-bottom: 10px;
+      }
+    }
+    .bottom {
+      display: none;
+    }
+
+    #time {
+      background: #d8d6c5;
+      padding-left: 2%;
+      width: 13%;
+      z-index: 1001;
+    }
+
+    .day-image {
+      margin-left: 20px;
+    }
+
+    #wednesday, #thursday, #friday {
+      background: #d8d6c5;
+      top: auto;
+      width: 83%;
+      z-index: 999;
+    }
+
+    #wednesday {
+      position: relative;
+      .day-image {
+        margin-left: 20px;
+      }
+    }
+
+    #thursday, #friday {
+      left: -100%;
+      position: absolute;
+    }
+
+    .line {
+      .legend, .speaker-name, .talk-name  {
+        margin-left: 20px;
+      }
+      .speaker-name {
+        margin-bottom: 5px;
+        min-height: 0;
+      }
+      .talk-name {
+        margin-top: 0px;
+        &.en {
+          margin-left: 20px;
+        }
+      }
+      &.talk .language-image {
+        display: none;
+      }
+      &.talk {
+        min-height: 65px;
+        padding-bottom: 0;
+      }
+      .speaker-name {
+        color: #2f2c25;
+      }
+
+      &.keynote {
+        min-height: 55px;
+        padding-bottom: 0;
+        .keynotes-image {
+          margin-left: 20px;
+          right: 26px;
+        }
+        .language-image {
+          left: 52px;
+          margin-left: 0px;
+        }
+        .keynotes-image, .language-image {
+          float: right;
+          position: relative;
+          top: -29px;
+          width: 22px;
+        }
+        span {
+          float: none;
+          font-size: 120%;
+          margin-left: 20px;
+        }
+      }
+      &.break { min-height: 20px; }
+    }
+    .arrow {
+      background: image_url('arrows-sprite.svg') no-repeat;
+      background-color: #d8d6c5;
+      background-size: 35px 175px;
+      height: 30px;
+      position: relative;
+      width: 20px;
+      z-index: 1002;
+    }
+
+    #right {
+      background-position: -7px -41px;
+      display: inline-block;
+      float: right;
+      margin-top: 44px;
+      margin-left: -8%;
+      padding-right: 2%;
+    }
+
+    #left {
+      background-position: -7px 1px;
+      display: inline-block;
+      left: 2%;
+      top: 44px;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #schedule .line.double {
+    min-height: 85px;
+  }
+}

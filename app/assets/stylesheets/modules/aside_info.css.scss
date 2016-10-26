@@ -1,6 +1,6 @@
 .side-text {
   margin: 20px auto;
-  max-width: 212px;
+  max-width: 243px;
 }
 
 .side-text-have{
@@ -23,28 +23,99 @@
   line-height: 25px;
 }
 
-.side-text-hottest { font-size: 37px; }
-
-.side-text-tech {
-  font-size: 94px;
-  margin-top: 13px;
-  line-height: 30px;
-}
-
-.side-text-conference {
-  font-size: 34px;
-  line-height: 30px;
-  margin-top: 15px;
-}
-
-.side-text-mexico {
-  font-size: 31px;
-  line-height: 30px;
-}
-
 .side-text-we-need { font-size: 53px; }
 .side-text-your { font-size: 88px; }
 .side-text-support { font-size: 52px; }
+.side-text-welcome {
+  @include span-cfp($white, 33.8px, 'Oswald', 300, uppercase);
+}
+.side-text-hottest {
+  @include span-cfp($koromiko, 30.8px, 'Oswald', 400, uppercase);
+}
+
+.side-text-tech {
+  @include span-cfp($bittersweet, 79.2px, 'Oswald', bold, uppercase);
+}
+
+.side-text-conference {
+  @include span-cfp($koromiko, 32px, 'Oswald', 400, uppercase);
+}
+
+.side-text-in-all-mx {
+  @include span-cfp($white, 25.6px, 'Oswald', 300, uppercase);
+}
+
+.side-text-march {
+  @include span-cfp($koromiko, 43.7px, 'Oswald', bold, uppercase);
+  letter-spacing: -0.8px;
+  &:before {
+    background: asset_url('2017/star_grey_1.png');
+    background-size: 22px;
+    content: ' ';
+    display: inline-block;
+    height: 20px;
+    margin: 15px;
+    width: 20px;
+  }
+
+  &:after {
+    background: asset_url('2017/star_grey_1.png');
+    background-size: 22px;
+    content: ' ';
+    display: inline-block;
+    height: 20px;
+    margin: 10px;
+    margin-left: 10px;
+    width: 20px;
+  }
+}
+
+.side-text-date {
+  @include span-cfp($bittersweet, 43.7px, 'Oswald', bold, none);
+  letter-spacing: -0.8px;
+  margin-top: 5px;
+}
+
+.side-text-cfp-place {
+  @include span-cfp($white, 25.7px, 'Oswald', bold, none);
+  letter-spacing: -0.5px;
+  margin-top: 10px;
+}
+
+.btn-register-circular {
+  background-color: $white;
+  border-radius: 50%;
+  height: 209px;
+  margin: 50px auto;
+  position: relative;
+  width: 209px;
+
+  .register {
+    @include span-cfp($stratos, 46px, 'Teko', 400, uppercase);
+    left: 50%;
+    position: absolute;
+    top: 31%;
+    transform: translateY(-31%) translateX(-50%);
+  }
+
+  .now {
+    @include span-cfp($stratos, 84px, 'Teko', 500, uppercase);
+    position: absolute;
+    top: 71%;
+    transform: translateY(-70%) translateX(-50%);
+  }
+}
+
+.dotted-circle {
+  border-radius: 50%;
+  border-style: dotted;
+  height: 184px;
+  left: 10px;
+  margin: 0 auto;
+  position: absolute;
+  top: 10px;
+  width: 184px;
+}
 
 @-moz-document url-prefix(){
  .magma-info{ background: $mandy; }
@@ -68,6 +139,13 @@
     @media screen and (min-width: 767px) and (max-width: 1150px) {
       margin-top: 20px;
     }
+
+    &.iphone{ margin: 30px 0 12px -50px; }
+  }
+
+  .reylero-beach {
+    height: 220px;
+    width: 280px;
 
     &.iphone{ margin: 30px 0 12px -50px; }
   }
@@ -160,16 +238,26 @@
     }
 
     .content-text {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 14px;
       color: white;
       display: block;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
       line-height: 18px;
 
       &.highlight {
         font-weight: bold;
         margin: 5px 0 0 0;
       }
+    }
+
+    .sponsored-by {
+      color: $picton-blue;
+      display: block;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      letter-spacing: -0.4px;
+      line-height: 18px;
+      padding-top: 15px;
     }
 
     .sub-content-text {
@@ -284,9 +372,9 @@
 
 .magma-logo {
   display: block;
-  height: 37px;
+  height: 50px;
   margin: 10px auto 10px;
-  width: 105px;
+  width: 143px;
 }
 
 .magma-logo-mobile{
@@ -295,4 +383,10 @@
   width: 90px;
   text-align: center;
   > img { width: 70px; }
+}
+
+.magmaconf-logo {
+  height: 43px;
+  margin-top: 5px;
+  width: 124px;
 }
