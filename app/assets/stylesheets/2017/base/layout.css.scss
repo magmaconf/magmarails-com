@@ -153,6 +153,7 @@ input[type=submit] {
 // Font weight
 .fw-r { font-weight: 400; }
 .fw-l { font-weight: 200; }
+.fw-bld { font-weight: 700; }
 
 // Text transform
 .tt-u { text-transform: uppercase; }
@@ -173,6 +174,7 @@ input[type=submit] {
 
 // Background
 .bgc-glry { background-color: $gallery }
+.bgc-wld-sand { background-color: $wild-sand }
 .bgc-whte { background-color: $white }
 .bgc-mndy { background-color: $mandy; }
 .bgc-blck { background-color: $black; }
@@ -182,6 +184,7 @@ input[type=submit] {
 .fz-10 { font-size: 10px; }
 .fz-12 { font-size: 12px; }
 .fz-14 { font-size: 14px; }
+.fz-15 { font-size: 15px; }
 .fz-16 { font-size: 16px; }
 .fz-18 { font-size: 18px; }
 .fz-20 { font-size: 20px; }
@@ -304,6 +307,19 @@ input[type=submit] {
   }
 }
 
+.my10--m {
+  @include mq-mobile {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.mt0--m {
+  @include mq-mobile {
+    margin-top: 0px;
+  }
+}
+
 .m0--t {
   @include mq-tablet { margin: 0; }
 }
@@ -372,13 +388,28 @@ input[type=submit] {
 .pl5 { padding-left: 5px; }
 .pt30 { padding-top: 30px; }
 .magmaconf-title {
-  @extend .c-stratos,.dis-b-n--m, .fw-r, .fz-18, .lato, .m0, .tt-u;
+  @extend .c-stratos, .fw-r, .fz-18, .lato, .m0, .tt-u, .dis-b-n--m;
   font-weight: bold;
   margin-bottom: 23px;
 }
 
+.magmaconf-title-m {
+  @extend .c-stratos, .fw-r, .fz-15, .lato, .m0, .tt-u;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  padding: 15px 10px;
+  
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
 .about-container {
   @extend .tide-text, .p20, .p10--m, .pl5, .pt30;
+  @include mq-mobile {
+    padding: 0;
+  }
 }
 
 .magmaconf-item-description {
@@ -387,6 +418,11 @@ input[type=submit] {
   font-weight: 300;
   line-height: 1.4;
   padding-right: 20px;
+
+  @include mq-mobile {
+    padding-left: 10px;
+    padding-right: 25px;
+  }
 }
 
 .about-magma-title {
@@ -397,6 +433,10 @@ input[type=submit] {
   font-weight: bold;
   line-height: 40px;
   margin: 0;
+
+  @include mq-mobile {
+    font-size: 27.6px;
+  }
 }
 
 .about-magma-subtitle {
@@ -406,9 +446,15 @@ input[type=submit] {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.3px;
-  margin: 0;
   margin-top: 5px;
+  margin: 0;
   padding: 0;
+  
+  @include mq-mobile {
+    font-size: 9.6px;
+    letter-spacing: 0.2px;
+    top: -10px;
+  }
 }
 
 .ring-icon {
@@ -419,4 +465,9 @@ input[type=submit] {
   height: 39px;
   margin: 0 auto;
   width: 382px;
+
+  @include mq-mobile {
+    background-size: 231px;
+    width: 231px;
+  }
 }

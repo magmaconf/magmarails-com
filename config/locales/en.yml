@@ -145,11 +145,11 @@ en:
     work: 'We have a lot of work to do. Meanwhile please checkout'
     limit_ticket: 'limited to <span>50 tickets</span>'
     footer:
-      organised_by: Proudly sponsored by MagmaLabs © 2015
+      organised_by: Event sponsored by MagmaLabs © 2017
       copyright: This site is protected by Copyright under U.S. and International
         law. All rights reserved.
     policy:
-      magma: 'Magma Conf 2015'
+      magma: 'Magma Conf 2017'
       title: 'Anti-Harassment Policy'
       description: 'Magma Conf is designed to be a harassment-free conference
         experience for everyone involved. We basically ask all participants
