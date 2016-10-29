@@ -4,15 +4,15 @@
     .pt50.p0--m
       .pure-g-r
         .pure-u-1-1.ta-c.my30.my15--m.mx10
-          %h2.fz-40.m0.lh-40.dis-ib.c-mndy.fw-r.teko.fz-30--m.lh-25--m
-            Speakers
-          .wp-33.bgc-mndy.m-center.hg2.m5--t.wp-100--t
-          %h4.fz-30.m0.c-mndy.fw-l.teko.p0.text-with-stars.fz-20--m
-            June 18, 19 & 20 - Manzanillo, Col. MX
+          .ring-icon
+            %h2.about-magma-title
+              Speakers
+            %h4.about-magma-subtitle
+              March 29, 30 & 31 - Manzanillo, Col. MX
 
     %section#keynotes
       .pure-g-r.content
-        - @speakers.each do |speaker|
+        - @speakers_data[:keynotes].each do |speaker|
           .speaker-box.keynote
             .flipper-lg
               .normal-box
@@ -26,11 +26,36 @@
                   %span.keynote-star Keynote
                 .mt10
                   %a.more
-                    See more >
+                    See bio >
               .info-box
+                .close-icon &times;
                 .luchador-name-lg
                   =speaker['name']
-                .bio= speaker['bio']
+                .bio
+                  = speaker['bio']
+                .company-name
+                  = speaker['company']
+
+    %section#speaker-cards
+      .pure-g-r.content
+        - @speakers_data[:speakers].each do |speaker|
+          .speaker-box
+            .flipper-md
+              .normal-box
+                %img.masked{ src: speaker['image'] }
+                %img.unmasked{ src: speaker['image'] }
+                .luchador-name-md
+                  =speaker['name']
+                .luchador-nickname-md
+                  =speaker['nickname']
                 .mt10
                   %a.more
-                    < See less
+                    See bio >
+              .info-box
+                .close-icon &times; 
+                .luchador-name-md
+                  =speaker['name']
+                .bio
+                  = speaker['bio']
+                .company-name
+                  = speaker['company']

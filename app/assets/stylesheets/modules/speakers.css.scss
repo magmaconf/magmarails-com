@@ -1,12 +1,12 @@
 .keynote-star:before {
-  content: '';
-  width: 22px;
-  height: 22px;
-  display: inline-block;
   background-image: image_url('2015/keynote.svg');
-  position: relative;
+  content: '';
+  display: inline-block;
+  height: 22px;
   left: -3px;
+  position: relative;
   top: 4px;
+  width: 22px;
 }
 
 #keynotes .normal-box img{
@@ -38,6 +38,10 @@
       width: 140px;
       height: 140px;
     }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .pure-g-r {
@@ -66,7 +70,7 @@
   height: 230px;
   margin-bottom: 65px;
   &.keynote{
-    .bio{ height: 280px; }
+    .bio{ height: 250px; }
     width: 50%;
   }
 }
@@ -95,51 +99,81 @@
   }
 }
 
-.luchador-name-md{
-  @extend .c-mndy, .fw-r, .lh-35, .mt-10, .fz-30, .tt-u;
+.luchador-name-md {
+  @extend .oswald;
+  color: $stratos;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: -0.7px;
+  text-transform: uppercase;
+
   @include mq(768px){
     line-height: 30px;
     font-size: 22px; }
 }
 
-.luchador-name-lg{
-  @extend .luchador-name-md, .fz-40;
+.luchador-name-lg {
+  @extend .luchador-name-md, .oswald;
+  color: $stratos;
+  font-size: 25.2px;
+  font-weight: bold;
+  letter-spacing: -0.8px;
 }
 
-.luchador-nickname-md{
-  @extend .c-bldr, .fz-24, .fw-r, .lh-25, .tt-u;
-  @include mq(768px){ font-size: 20px; }
+.luchador-nickname-md {
+  @extend .lato, .lh-25, .tt-u;
+  color: $boulder;
+  font-size: 15px;
+  font-weight: 300;
 
-  &:before, &:after{
-    content: '';
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    margin: 0 6px 4px;
+  @include mq(768px) { font-size: 20px; }
+
+  &:before, &:after {
     background-image: image_url('2015/Star.svg');
+    content: '';
+    display: inline-block;
+    height: 15px;
+    margin: 0 6px -1px;
+    width: 15px;
   }
 }
 
-.luchador-nickname-lg{
-  @extend .luchador-nickname-md, .fz-32;
+.luchador-nickname-lg {
+  @extend .lato, .fz-18;
+  color: $boulder;
+  font-weight: 300;
+  text-transform: uppercase;
 
-  &:before, &:after{
+  &:before, &:after {
+    background-image: image_url('2015/Star.svg');
     background-size: 18px;
-    width: 18px;
+    content: '';
+    display: inline-block;
     height: 18px;
+    margin: 0 6px -1px;
+    width: 18px;
   }
+
 }
 
 .more{
-  @extend .opens, .fz-12, .fw-r, .c-bldr;
+  @extend .lato;
+  color: $bittersweet;
   cursor: pointer;
+  font-size: 11px;
+  font-weight: 300;
 }
 
 .bio{
-  @extend .opens, .c-bldr, .fw-r, .fz-12;
-  height: 180px;
-  overflow: hidden;
-  padding: 0 10px;
+  @extend .opens;
+  font-size: 11px;
+  font-weight: 300;
+  height: 153px;
+  letter-spacing: -0.5px;
+  line-height: 1.5;
+  overflow: auto;
+  padding: 10px 10px;
+  padding-left: 20px;
 }
 
 .speaker-box.flipped .flipper,
@@ -154,18 +188,20 @@
   position: relative;
   transition: background-color 0.6s;
   background-color: transparent;
-  img{ transition: opacity 0.7s; }
+  img { transition: opacity 0.7s; }
+
   .masked{
     opacity: 1;
     &.overflow-8{ margin-top: -11px; }
     &.overflow-13{ margin-top: -13px; }
     &.overflow-15{ margin-top: -15px; }
   }
+
   .unmasked{
     position: absolute;
     opacity: 0;
     top: 9px;
-    left: 25px;
+    left: 30px;
     @include mq(768px){ left: 10px; }
   }
 
@@ -204,25 +240,25 @@
 
   .big-box{
     @extend .normal-box;
-    max-width: 100% !important;
-    width: 450px;
     left: 0;
+    max-width: 100% !important;
     position: relative;
+    width: 450px;
   }
 
   .info-box.big{
+    margin-left: -225px;
     max-width: 100% !important;
     width: 450px;
-    margin-left: -225px;
   }
 }
 
 .flipper-lg {
   @extend .flipper;
   .normal-box, .info-box {
-    width: 230px;
-    height: 364px;
+    height: 340px;
     margin-left: -115px;
+    width: 230px;
   }
 
   .normal-box .unmasked{ left: 15px; }
@@ -232,12 +268,12 @@
   @extend .flipper;
   .normal-box, .info-box {
     @include mq(768px){
-      width: 160px;
       margin-left: -80px;
+      width: 160px;
     }
-    width: 200px;
-    height: 250px;
+    height: 260px;
     margin-left: -100px;
+    width: 210px;
   }
 }
 
@@ -262,7 +298,7 @@
 /* end of flip cards */
 
 #keynotes {
-  height: 340px;
+  height: auto;
 }
 
 
@@ -325,18 +361,20 @@
   #keynotes {
     height: initial;
 
-    .accordion-heading .luchador-name-md:before{
+    .accordion-heading .luchador-name-md:before {
       background-image: image_url('2015/keynote.svg');
+      height: 22px;
       margin: 0 4px;
       width: 22px;
-      height: 22px;
     }
   }
 
-  .luchador-name-md{
-    @extend .lh-25, .fz-22;
-    margin: 0;
+  .luchador-name-md {
+    @extend .oswald, .lh-25;
+    color: $stratos;
     display: inline-block;
+    font-size: 21px;
+    margin: 0;
 
     &:before, &:after{
       content: '';
@@ -348,11 +386,10 @@
     }
   }
 
-  .luchador-nickname-md{
+  .luchador-nickname-md {
     display: inline-block;
     position: relative;
     top: -3px;
-    @extend .fz-18, .lh-18;
 
     &:before, &:after{ content: none; }
   }
@@ -434,6 +471,7 @@
 //iPhone 5 styles
 
 @media screen and (max-width: 320px) {
+
   .luchador-name-md{
     font-size: 18px;
   }
@@ -442,5 +480,31 @@
     font-size: 16px;
   }
 
-  }
+}
 
+.company-name {
+  @extend .oswald;
+  border-top: 2px solid $bittersweet;
+  bottom: 0;
+  font-size: 13px;
+  left: 5%;
+  margin: 0 auto;
+  padding: 10px 0;
+  position: absolute;
+  text-transform: uppercase;
+  width: 90%;
+}
+
+.close-icon {
+  color: $alto2;
+  float: right;
+  font-size: 60px;
+  font-weight: 300;
+  position: relative;
+  right: 5px;
+  top: -30px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
