@@ -437,6 +437,19 @@ input[type=submit] {
   @include mq-mobile {
     font-size: 27.6px;
   }
+
+  &.star {
+    &:before {
+      background-image: image_url('2015/Star.svg');
+      content: '';
+      height: 15px;
+      left: 46%;
+      position: absolute;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 15px;
+    }
+  }
 }
 
 .about-magma-subtitle {
@@ -464,6 +477,7 @@ input[type=submit] {
   background-size: 382px;
   height: 39px;
   margin: 0 auto;
+  position: relative;
   width: 382px;
 
   @include mq-mobile {
