@@ -4,10 +4,10 @@
     .bgc-glry.pt50.p0--m
       .pure-g-r
         .pure-u-1-1.ta-c.my30.my15--m.mx10
-          %h2.fz-40.m0.lh-40.bdc-mndy.c-mndy.fw-r.teko.fz-30--m.lh-25--m
-            It's really easy to get here
-          .wp-33.bgc-mndy.m-center.hg2.m5--t.wp-100--t
-          %h4.fz-30.m0.c-mndy.fw-l.teko.p0.text-with-stars.fz-20--m
+          .ring-icon
+            %h2.about-magma-title
+              It's really easy to get here
+            %h4.about-magma-subtitle
             June 18, 19 & 20 - Manzanillo, Col. MX
 
       .pure-g-r
@@ -17,59 +17,55 @@
               = t('2015.getting_manzanillo.map_description').html_safe
 
       .pure-g-r.dis-b--m.p10
-        %p.p0.m0.fz-14.opens.ls-0
+        %p.p0.m0.fz-14.opens.ls-0.magmaconf-item-description
           = t('2015.getting_manzanillo.map_description')
 
       .pure-g-r.tide
         .pure-u-1-2.tide-image-container
           .mx10.my15.dis-b--m
             .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
-            %p.m0.teko.c-mndy.fw-r.fz-20.tt-u= t('2015.getting_manzanillo.help.title')
-
           %img.tide-image{src: "#{image_path '2015/getting/compass@2x.jpg'}" }
+          %p.magmaconf-title-m= t('2015.getting_manzanillo.help.title')
         .pure-u-1-2.tide-text-container
-          .tide-text.p20.p10--m
-            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('2015.getting_manzanillo.help.title')
-            %p.m0.opens.c-amlo.fw-r.fz-14
+          .about-container
+            %p.magmaconf-title= t('2015.getting_manzanillo.help.title')
+            %p.magmaconf-item-description
               = t('2015.getting_manzanillo.help.description').html_safe
 
       .pure-g-r.tide
         .pure-u-1-2.tide-image-container
           .mx10.my15.dis-b--m
             .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
-            %p.m0.teko.c-mndy.fw-r.fz-20.tt-u= t('2015.getting_manzanillo.planning.title')
-
           %img.tide-image{src: "#{image_path '2015/getting/planningtrip@2x.jpg'}" }
+          %p.magmaconf-title-m= t('2015.getting_manzanillo.planning.title')
         .pure-u-1-2.tide-text-container
-          .tide-text.p20.p10--m
-            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('2015.getting_manzanillo.planning.title')
-            %p.m0.opens.c-amlo.fw-r.fz-14
+          .about-container
+            %p.magmaconf-title= t('2015.getting_manzanillo.planning.title')
+            %p.magmaconf-item-description
               = t('2015.getting_manzanillo.planning.description').html_safe
 
       .pure-g-r.tide
         .pure-u-1-2.tide-image-container
           .mx10.my15.dis-b--m
             .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
-            %p.m0.teko.c-mndy.fw-r.fz-20.tt-u= t('2015.getting_manzanillo.manzanillo.title')
-
           %img.tide-image{src: "#{image_path '2015/getting/airport_mzo@2x.jpg'}"}
+          %p.magmaconf-title-m= t('2015.getting_manzanillo.manzanillo.title')
         .pure-u-1-2.tide-text-container
-          .tide-text.p20.p10--m
-            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('2015.getting_manzanillo.manzanillo.title')
-            %p.m0.opens.c-amlo.fw-r.fz-14
+          .about-container
+            %p.magmaconf-title= t('2015.getting_manzanillo.manzanillo.title')
+            %p.magmaconf-item-description
               = t('2015.getting_manzanillo.manzanillo.description').html_safe
 
       .pure-g-r.tide.pos-r
         .pure-u-1-2.tide-image-container
           .mx10.my15.dis-b--m
             .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
-            %p.m0.teko.c-mndy.fw-r.fz-20.tt-u= t('2015.getting_manzanillo.guadalajara.title')
-
           %img.tide-image{src: "#{image_path '2015/getting/airport_gdl@2x.jpg'}" }
+          %p.magmaconf-title-m= t('2015.getting_manzanillo.guadalajara.title')
         .pure-u-1-2.tide-text-container
           .tide-text.p20.p10--m
-            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('2015.getting_manzanillo.guadalajara.title')
-            %p.m0.opens.c-amlo.fw-r.fz-14
+            %p.magmaconf-title= t('2015.getting_manzanillo.guadalajara.title')
+            %p.magmaconf-item-description
               = t('2015.getting_manzanillo.guadalajara.description').html_safe
             .pos-a.pos-b10.fz-10.c-amlo.fw-l.dis-b-n--m Photo by: TheJesus1599 "Panoramio
 
@@ -77,13 +73,10 @@
         .pure-u-1-2.tide-image-container
           .mx10.my15.dis-b--m
             .mb15.bdt-w-3.bdt-c-ato.bdt-s-s
-            %p.m0.teko.c-mndy.fw-r.fz-20.tt-u= t('2015.getting_manzanillo.about_manzanillo.title')
-
           %img.tide-image{src: "#{image_path '2015/getting/about_mzo@2x.jpg'}" }
+          %p.magmaconf-title-m= t('2015.getting_manzanillo.about_manzanillo.title')
         .pure-u-1-2.tide-text-container
-          .tide-text.p20.p10--m
-            %p.m0.teko.c-mndy.fw-r.fz-20.mb30.tt-u.dis-b-n--m= t('2015.getting_manzanillo.about_manzanillo.title')
-            %p.m0.opens.c-amlo.fw-r.fz-14
+          .about-container
+            %p.magmaconf-title= t('2015.getting_manzanillo.about_manzanillo.title')
+            %p.magmaconf-item-description
               = t('2015.getting_manzanillo.about_manzanillo.description').html_safe
-
-
