@@ -403,9 +403,14 @@
   width: 40px;
   z-index: 998;
 
-  @include mq-tablet {
+  @media only screen and (max-width: 568px) {
     display: block;
     margin-top: 70px;
+  }
+
+  @media only screen and (min-width: 568px) and (max-width: 768px) {
+    display: block;
+    margin-top: 25px;
   }
 }
 

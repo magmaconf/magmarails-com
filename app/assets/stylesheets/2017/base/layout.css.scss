@@ -428,11 +428,18 @@ input[type=submit] {
 .about-magma-title {
   color: $bittersweet;
   display: inline-block;
-  font-size: 40px;
   font-family: 'Lato';
+  font-size: 40px;
   font-weight: bold;
   line-height: 40px;
   margin: 0;
+
+  &.fbg {
+    font-size: 46px;
+    @include mq-mobile {
+      font-size: 23px;
+    }
+  }
 
   @include mq-mobile {
     font-size: 23px;
@@ -445,7 +452,7 @@ input[type=submit] {
       height: 15px;
       left: 47%;
       position: absolute;
-      top: 50%;
+      top: 47%;
       transform: translateX(-50%) translateY(-50%);
       width: 15px;
     }
@@ -470,14 +477,19 @@ input[type=submit] {
   }
 }
 
-.ring-icon {
+.ring {
   background-image: asset_url('2017/ring_icon.png');
-  background-position: 1%;
+  background-position: 1% 1px;
   background-repeat: no-repeat;
-  background-size: 472px;
-  height: 39px;
   margin: 0 auto;
   position: relative;
+}
+
+.ring-icon {
+  @extend .ring;
+  background-position: 1px;
+  background-size: 472px;
+  height: 39px;
   width: 472px;
 
   @include mq-mobile {
@@ -533,18 +545,41 @@ input[type=submit] {
 }
 
 .getting-ring-icon {
-  background-image: asset_url('2017/ring_icon.png');
-  background-position: 1%;
-  background-repeat: no-repeat;
+  @extend .ring;
+  background-position: 1% -1px;
   background-size: 523px;
-  height: 41px;
-  margin: 0 auto;
-  position: relative;
+  height: 46px;
   width: 523px;
 
   @include mq-mobile {
     background-size: 283px;
     height: 18px;
+    width: 283px;
+  }
+}
+
+.schedule-ring-icon {
+  @extend .ring;
+  background-size: 394px;
+  height: 41px;
+  width: 394px;
+
+  @include mq-mobile {
+    background-position: 1px;
+    background-size: 283px;
+    width: 283px;
+  }
+}
+
+.speakers-ring-icon {
+  @extend .ring;
+  background-size: 385px;
+  width: 385px;
+
+  @include mq-mobile {
+    background-position: 1px;
+    background-size: 283px;
+    height: 39px;
     width: 283px;
   }
 }

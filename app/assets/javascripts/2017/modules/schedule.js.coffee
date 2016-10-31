@@ -22,6 +22,7 @@ $(document).ready ->
   initSchedule = ->
     if $(window).width() < 568 
       $('.day_2,.day_3').removeClass 'active'
+      $('.day_1').addClass 'active'
     else
       $('.day_1,.day_2,.day_3').addClass 'active'
 
