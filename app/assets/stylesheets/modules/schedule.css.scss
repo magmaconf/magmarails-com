@@ -106,6 +106,10 @@
   margin-top: 0px;
   padding-left: 80px;
   text-transform: uppercase;
+
+  @include mq-mobile {
+    padding-left: 40px;
+  }
 }
 
 .schedule-place-container {
@@ -295,6 +299,10 @@
     background: image_url('2015/sprite_magma_schedule@2x.png') no-repeat -90px -45px;
     background-size: 220px 100px;
   }
+
+  @include mq-mobile {
+    margin-left: 40px;
+  }
 }
 
 .schedule-table-row {
@@ -381,6 +389,7 @@
 
   @include mq-tablet {
     display: block;
+    margin-top: 70px;
   }
 }
 
@@ -514,5 +523,23 @@
     min-height: 23px;
     padding: 20px 0;
     width: calc(100%/3);
+
+    @include mq-mobile {
+      width: 100%;
+    }
+  }
+}
+
+.schedule-table {
+  @include mq-mobile {
+    margin-top: 20px;
+  }
+}
+
+.schedule-table {
+  th, td {
+    &:not(.active):not(.hour_slot) {
+      display: none;
+    }
   }
 }

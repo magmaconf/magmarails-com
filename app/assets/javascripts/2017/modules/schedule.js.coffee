@@ -19,48 +19,25 @@ $(document).ready ->
 
 
   $('#schedule .js-prev-day').css('display', 'none')
-
-  $('#schedule .js-prev-day').click ->
-    activeDay = $('.active-day')
-    activeDay.swiperight()
-
-  $('#schedule .js-next-day').click ->
-    activeDay = $('.active-day')
-    activeDay.swipeleft()
-
-  $('#schedule .js-first-day').swipeleft ->
-    swipeToLeft(@, '#schedule  .js-second-day')
-    $('#schedule  .js-prev-day').css('display', 'block')
-
-  $('#schedule .js-second-day').swipeleft ->
-    swipeToLeft(@, '#schedule  .js-third-day'  )
-    $('#schedule .js-next-day').css('display', 'none')
-
-  $('#schedule .js-third-day').swiperight ->
-    swipeToRight(@, '#schedule .js-second-day')
-    $('#schedule .js-next-day').css('display', 'block')
-
-  $('#schedule .js-second-day').swiperight ->
-    swipeToRight(@, '#schedule .js-first-day')
-    $('#schedule .js-prev-day').css('display', 'none')
-
-  swipeToLeft = (hide, show) ->
-    $(show).addClass('active-day').css('left', '95%')
-    $(hide).removeClass('active-day')
-    $(hide).animate
-      left: '-70%'
-    , 300
-    $(show).animate
-      left: '17%'
-    , 200
-
-  swipeToRight = (hide, show) ->
-    $(show).addClass('active-day')
-    $(hide).removeClass('active-day')
-    $(hide).animate
-      left: '100%'
-    , 300, ->
-      $(hide).css('left', '-100%')
-    $(show).animate
-      left: if show is '#schedule .js-first-day' then '0' else '17%'
-    , 250
+  $('.day_1').addClass('active');
+  $('.js-next-day').on 'click', ->
+    if $('th.active').next().length
+      $('td.active').removeClass('active').next().addClass 'active'
+      $('th.active').removeClass('active').next().addClass 'active'
+      if $('th.active').hasClass('day_2')
+        $('.js-next-day').show()
+        $('.js-prev-day').show()
+      else
+        $('.js-next-day').hide()
+        $('.js-prev-day').show()
+  
+  $('.js-prev-day').on 'click', ->
+    if $('th.active').prev().length
+      $('td.active').removeClass('active').prev().addClass 'active'
+      $('th.active').removeClass('active').prev().addClass 'active'
+      if $('td.active').hasClass('day_2')
+        $('.js-next-day').show()
+        $('.js-prev-day').show()
+      else
+        $('.js-next-day').show()
+        $('.js-prev-day').hide()

@@ -23,15 +23,15 @@ module TalksHelper
   end
 
   def has_talks? schedule
-    !schedule[1].length == 0
+    schedule[1].length != 0
   end
 
   def show_hour schedule
     schedule[0]
   end
 
-  def show_talk talk
-    content_tag :td, class: 'schedule-table-row schedule-table-row__small' do
+  def show_talk talk, counter
+    content_tag :td, class: "schedule-table-row schedule-table-row__small day_#{counter}" do
       if talk
         concat(content_tag(:h2,speaker_label(talk[0]), class: 'schedule-table-legend'))
         concat(show_talk_info(talk[0]))
