@@ -4,16 +4,17 @@
     .bgc-glry.pt50.p0--m
       .pure-g-r
         .pure-u-1-1.ta-c.my30.my15--m.mx10
-          .ring-icon
-            %h2.about-magma-title
-              It's really easy to get here
-            %h4.about-magma-subtitle
+          .getting-ring-icon
+            %h2.getting-to-magma-title
+              It's really easy to get there
+          %h4.getting-to-magma-subtitle
             June 18, 19 & 20 - Manzanillo, Col. MX
 
       .pure-g-r
         .getting-to-mzo-map.pos-r
+          = image_tag('2017/ship02.png', class: 'ship-icon')
           .w250.pos-a.pos-b20.pos-l20.ta-l.dis-b-n--m
-            %p.p0.m0.lh-12.ls-0.fz-10.ta-l.opens
+            %p.map-description
               = t('2015.getting_manzanillo.map_description').html_safe
 
       .pure-g-r.dis-b--m.p10

@@ -485,3 +485,92 @@ input[type=submit] {
     width: 263px;
   }
 }
+
+.getting-to-magma-title {
+  color: $bittersweet;
+  display: inline-block;
+  font-size: 35px;
+  font-family: 'Lato';
+  font-weight: bold;
+  letter-spacing: -0.8px;
+  margin: 0;
+
+  @include mq-mobile {
+    font-size: 18.9px;
+    letter-spacing: -0.4px;
+  }
+
+  &.star {
+    &:before {
+      background-image: image_url('2015/Star.svg');
+      content: '';
+      height: 15px;
+      left: 47%;
+      position: absolute;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 15px;
+    }
+  }
+}
+
+.getting-to-magma-subtitle {
+  @extend .text-with-stars;
+  color: $mandy;
+  font-family: 'OpenSans';
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  margin-top: 5px;
+  margin: 0;
+  padding: 0;
+  
+  @include mq-mobile {
+    font-size: 9.6px;
+    letter-spacing: 0.2px;
+    margin-top: 2px;
+  }
+}
+
+.getting-ring-icon {
+  background-image: asset_url('2017/ring_icon.png');
+  background-position: 1%;
+  background-repeat: no-repeat;
+  background-size: 523px;
+  height: 41px;
+  margin: 0 auto;
+  position: relative;
+  width: 523px;
+
+  @include mq-mobile {
+    background-size: 283px;
+    height: 18px;
+    width: 283px;
+  }
+}
+
+.ship-icon {
+  left: 45px;
+  position: absolute;
+  top: -25px;
+  width: 208px;
+  @media only screen and (max-width: 1024px) {
+    left: 20px;
+    top: 15px;
+    width: 142px;
+  }
+
+  @include mq-tablet {
+    display: none;
+  }
+}
+
+.map-description {
+  @extend .p0,.m0,.opens,.magmaconf-item-description;
+  color: $armadillo;
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  @media only screen and (max-width: 1024px) {
+    padding-right: 80px;
+  }
+}
