@@ -91,17 +91,20 @@
   width: 209px;
 
   .register {
-    @include span-cfp($stratos, 46px, 'Teko', 400, uppercase);
+    @include span-cfp($stratos, 34px, 'Oswald', 400, uppercase);
     left: 50%;
+    letter-spacing: -1px;
     position: absolute;
     top: 31%;
     transform: translateY(-31%) translateX(-50%);
   }
 
   .now {
-    @include span-cfp($stratos, 84px, 'Teko', 500, uppercase);
+    @include span-cfp($stratos, 69px, 'Oswald', 500, uppercase);
+    left: 49%;
+    letter-spacing: -3.8px;
     position: absolute;
-    top: 71%;
+    top: 68%;
     transform: translateY(-70%) translateX(-50%);
   }
 }
