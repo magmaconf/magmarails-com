@@ -156,7 +156,7 @@
 
 }
 
-.more{
+.more {
   @extend .lato;
   color: $bittersweet;
   cursor: pointer;
@@ -164,7 +164,7 @@
   font-weight: 300;
 }
 
-.bio{
+.bio {
   @extend .opens;
   font-size: 11px;
   font-weight: 300;
@@ -184,10 +184,10 @@
   -o-transform: rotateY(180deg);
 }
 
-.normal-box{
+.normal-box {
+  background-color: transparent;
   position: relative;
   transition: background-color 0.6s;
-  background-color: transparent;
   img { transition: opacity 0.7s; }
 
   .masked{
@@ -198,21 +198,22 @@
   }
 
   .unmasked{
-    position: absolute;
-    opacity: 0;
-    top: 9px;
     left: 30px;
+    opacity: 0;
+    position: absolute;
+    top: 9px;
     @include mq(768px){ left: 10px; }
   }
 
   .more{
-    transition: opacity 0.6s;
     opacity: 0;
+    transition: opacity 0.6s;
   }
 }
 
 .speaker-box:hover .normal-box{
   background-color: $white;
+  cursor: pointer;
   .masked{ opacity: 0; }
   .more, .unmasked{ opacity: 1; }
 }

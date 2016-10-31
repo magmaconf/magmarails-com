@@ -227,15 +227,6 @@
   margin-bottom: 0;
   margin-left: 80px;
   margin-top: 5px;
-
-  @include mq-laptop {
-    font-size: 95%;
-    margin-left: 25px;
-  }
-
-  @include mq-tablet {
-    margin-left: 20px;
-  }
 }
 
 .schedule-language-badge {

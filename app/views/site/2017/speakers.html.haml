@@ -35,6 +35,9 @@
                   = speaker['bio']
                 .company-name
                   = speaker['company']
+            = render 'pages/2017/partials/speakers/speaker_card_mobile', 
+              locals: { name: speaker['name'], nickname: speaker['nickname'], bio: speaker['bio'],
+              image_src: speaker['image'] }
 
     %section#speaker-cards
       .pure-g-r.content
@@ -59,3 +62,6 @@
                   = speaker['bio']
                 .company-name
                   = speaker['company']
+            = render 'pages/2017/partials/speakers/speaker_card_mobile', 
+              locals: { name: speaker['name'], nickname: speaker['nickname'], bio: speaker['bio'],
+              image_src: speaker['image'] }
