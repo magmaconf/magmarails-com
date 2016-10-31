@@ -110,6 +110,10 @@
   @include mq-mobile {
     padding-left: 40px;
   }
+
+  @media only screen and (max-width: 768px) {
+    padding-left: 40px;
+  }
 }
 
 .schedule-place-container {
@@ -173,6 +177,10 @@
   margin: 0;
   position: relative;
 
+  @media only screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+
   &:before,
   &:after {
     background: image_url('2015/sprite_magma_schedule.png') no-repeat -35px -49px;
@@ -231,6 +239,10 @@
   margin-bottom: 0;
   margin-left: 80px;
   margin-top: 5px;
+
+  @media only screen and (max-width: 768px) {
+    margin-left: 40px;
+  }
 }
 
 .schedule-language-badge {
@@ -301,6 +313,10 @@
   }
 
   @include mq-mobile {
+    margin-left: 40px;
+  }
+
+  @media only screen and (max-width: 768px) {
     margin-left: 40px;
   }
 }
