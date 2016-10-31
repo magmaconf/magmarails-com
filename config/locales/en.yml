@@ -37,6 +37,35 @@ en:
       dining under a breezy, thatched-roof palapa, El Oasis restaurant has become an icon for
       tourists and locals, offering an international cuisine menu.
     culture_activities: Activities
+  about2017:
+    culture_2017_description:
+      After the conferences are done for the day, the MagmaVillage is where it’s all at.
+      Enjoy a traditional dinner party, where there may be some mariachi music, outdoor games, hang
+      out with other attendees, take a swim in a pool or the warm ocean, or join the acoustic
+      impromptu MagmaBand. You’ll wish you had more time to spend there!
+    in_all: in all of Mexico
+    experience: Experience
+    hottest: The Hottest Tech Conference
+    magmaconf_is_title: What is MagmaConf? 
+    magmaconf_description: MagmaConf is one of the most important community tech conferences in
+      Mexico. We showcase innovative Software Development, UX/UI Design and Mobile sessions for
+      engineers and designers that build cutting edge websites and applications. Our Conference
+      takes place at a tropical venue that allows fun and casual networking.
+      Get involved in the MagmaConf experience to evolve your knowledge and meet new friends!
+    magma_village: What is the Magma Village? 
+    magma_village_description: An unique alternative to a traditional hotel, MagmaVillage offers
+      attendees the opportunity to continue learning from each other even after talks have
+      finished for the day. Part of the exclusive Santiago Beach Club, MagmaVillage is located on
+      the best beach in Manzanillo. Relax on the sand after a long day of talks, or dip your toes
+      in the balmy Mexican ocean.
+    manzanillo: Manzanillo, Mexico
+    venue: Where is the event happening?
+    venue_2015_description: The venue of MagmaConf is the <b>Oasis Ocean Club</b> in
+      <b>Club Santiago</b>. It offers a distinctive experience with its exclusive beachfront
+      setting, rustic, yet elegant furnishings, and relaxed dining under a breezy, thatched-roof
+      palapa. El Oasis restaurant has become an icon for tourists and locals,
+      offering an international cuisine menu. 
+    culture_activities: What activities are there? 
   getting_manzanillo:
     its_really_easy: "it's really easy"
     manzanillo:
@@ -99,7 +128,7 @@ en:
       from numerous major hubs across the United States and Canada.'
     to_get_there: 'to get there'
   menu:
-    about: About Magma
+    about: About MagmaConf
     blog: Blog
     getting_manzanillo: 'Getting to manzanillo'
     magma_blog: Magma Blog

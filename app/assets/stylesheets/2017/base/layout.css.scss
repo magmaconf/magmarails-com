@@ -428,14 +428,14 @@ input[type=submit] {
 .about-magma-title {
   color: $bittersweet;
   display: inline-block;
-  font-size: 46px;
+  font-size: 40px;
   font-family: 'Lato';
   font-weight: bold;
   line-height: 40px;
   margin: 0;
 
   @include mq-mobile {
-    font-size: 27.6px;
+    font-size: 23px;
   }
 
   &.star {
@@ -474,14 +474,14 @@ input[type=submit] {
   background-image: asset_url('2017/ring_icon.png');
   background-position: 1%;
   background-repeat: no-repeat;
-  background-size: 382px;
+  background-size: 472px;
   height: 39px;
   margin: 0 auto;
   position: relative;
-  width: 382px;
+  width: 472px;
 
   @include mq-mobile {
-    background-size: 231px;
-    width: 231px;
+    background-size: 263px;
+    width: 263px;
   }
 }
