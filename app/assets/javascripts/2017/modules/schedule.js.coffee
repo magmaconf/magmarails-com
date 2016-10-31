@@ -19,7 +19,17 @@ $(document).ready ->
 
 
   $('#schedule .js-prev-day').css('display', 'none')
-  $('.day_1').addClass('active');
+  initSchedule = ->
+    if $(window).width() < 768
+      $('.day_2,.day_3').removeClass 'active'
+    else
+      $('.day_1,.day_2,.day_3').addClass 'active'
+
+  initSchedule();
+
+  $(window).on 'resize', ->
+    initSchedule()
+
   $('.js-next-day').on 'click', ->
     if $('th.active').next().length
       $('td.active').removeClass('active').next().addClass 'active'
