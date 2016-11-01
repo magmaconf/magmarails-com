@@ -171,6 +171,7 @@ input[type=submit] {
 .c-amlo { color: $armadillo; }
 .c-whte { color: $white; }
 .c-stratos { color: $stratos }
+.c-stratos2 { color: $stratos2 }
 
 // Background
 .bgc-glry { background-color: $gallery }
@@ -591,8 +592,8 @@ input[type=submit] {
   width: 208px;
   @media only screen and (max-width: 1024px) {
     left: 20px;
-    top: 15px;
-    width: 142px;
+    top: 0;
+    width: 170px;
   }
 
   @include mq-tablet {
@@ -606,6 +607,6 @@ input[type=submit] {
   font-size: 12px;
   letter-spacing: -0.3px;
   @media only screen and (max-width: 1024px) {
-    padding-right: 80px;
+    padding-right: 20px;
   }
 }

@@ -25,10 +25,10 @@ $(document).ready(function(){
   if(pathname == '/') {
     $('.js-animated-background')
         .addClass('has-animated-background')
-        .removeClass('bgc-blck')
+        .removeClass('bgc-stratos2')
         .addClass('bgc-stratos');
   } else {
-    $('.js-animated-background').removeClass('bgc-blck').addClass('bgc-stratos');
+    $('.js-animated-background').removeClass('bgc-stratos2').addClass('bgc-stratos');
     $('.js-aside-info').addClass('dis-b-n--t ');
   }
 });
