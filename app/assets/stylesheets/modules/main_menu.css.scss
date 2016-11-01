@@ -70,8 +70,13 @@
         &:hover, &.active, &.register-now-link {
           color: #fff;
         }
+
         &.active {
           border-bottom: 2px solid #fff;
+        }
+
+        @media only screen and (min-width: 468px) and (max-width: 768px) {
+          font-size: 9.6px;
         }
       }
 
