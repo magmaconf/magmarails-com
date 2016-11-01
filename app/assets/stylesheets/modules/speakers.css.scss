@@ -1,12 +1,18 @@
-.keynote-star:before {
-  background-image: image_url('2015/keynote.svg');
-  content: '';
-  display: inline-block;
-  height: 22px;
-  left: -3px;
-  position: relative;
-  top: 4px;
-  width: 22px;
+.keynote-star {
+  @extend .oswald;
+  color: $curious-blue;
+  font-size: 15px;
+  text-transform: uppercase;
+  &:before {
+    background-image: image_url('2015/keynote.svg');
+    content: '';
+    display: inline-block;
+    height: 22px;
+    left: -3px;
+    position: relative;
+    top: 4px;
+    width: 22px;
+  }
 }
 
 #keynotes .normal-box img{
