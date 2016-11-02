@@ -42,6 +42,10 @@ class @Gallery
 
 
     @page += 1
+  setGalleryHeight: ->
+    $('#photo-gallery').css 'height', ($('.magma-info').height() - $(".nav-menu").height()) + 15
+    $(window).on 'resize', ->
+      $('#photo-gallery').css 'height', ($('.magma-info').height() - $(".nav-menu").height()) + 15
 
   bindLoadMoreItemEvents: ->
     $loadMoreItemsButton = $('#load-more-items')
@@ -81,4 +85,4 @@ class @Gallery
     @setPhotos()
     @bindLoadMoreItemEvents()
     @bindShareWithFacebookEvents()
-
+    @setGalleryHeight()
