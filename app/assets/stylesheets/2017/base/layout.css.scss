@@ -442,6 +442,23 @@ input[type=submit] {
     }
   }
 
+  &.flb {
+    font-size: 40px;
+  }
+
+  &.mtm {
+    margin-top: -3px;
+    @media only screen and (min-width: 468px) and (max-width: 768px) {
+      margin-top: -6px;
+    }
+  }
+
+  &.sponsors {
+    @media only screen and (min-width: 468px) and (max-width: 768px) {
+      font-size: 32px;
+    }
+  }
+
   @include mq-mobile {
     font-size: 23px;
   }
@@ -479,11 +496,7 @@ input[type=submit] {
 }
 
 .ring {
-  background-image: asset_url('2017/ring_icon.png');
-  background-position: 1% 1px;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  position: relative;
+  @include ring-icon('2017/ring_icon.png');
 }
 
 .ring-icon {
@@ -576,6 +589,27 @@ input[type=submit] {
   @extend .ring;
   background-size: 385px;
   width: 385px;
+
+  @include mq-mobile {
+    background-position: 1px;
+    background-size: 283px;
+    height: 39px;
+    width: 283px;
+  }
+}
+
+.sponsors-ring-icon {
+  @include ring-icon('2017/ring-icon-sponsors.png');
+  background-size: 510px;
+  background-position: 1% 1px;
+  height: 45px;
+  width: 510px;
+
+  @media only screen and (min-width: 468px) and (max-width: 768px) {
+    background-size: 417px;
+    height: 39px;
+    width: 417px;
+  }
 
   @include mq-mobile {
     background-position: 1px;

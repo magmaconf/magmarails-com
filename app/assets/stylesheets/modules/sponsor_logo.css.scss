@@ -3,22 +3,27 @@
 }
 
 .main-sponsor{
-  width: 50%;
   float: left;
+  width: 50%;
   @media screen and (max-width: 767px) { width: 100%; }
 }
 
 .sponsor{
-  width: 25%;
   float: left;
-  @media screen and (min-width: 768px) and (max-width: 1300px){
-    width: 50%;
+  width: 25%;
+  @media screen and (min-width: 769px) and (max-width: 1300px){
     margin: 40px 0;
+    width: 50%;
   }
 
-  @media screen and (max-width: 767px) {
-    width: 100%;
+  @media screen and (min-width: 468px) and (max-width: 768px) {
+    margin: 40px 0;
+    width: 33.3%;
+  }
+
+  @media screen and (max-width: 468px) {
     clear: both;
+    width: 100%;
   }
 }
 
@@ -35,13 +40,18 @@
 }
 
 .sponsor-logo__big {
+  height: 252px;
   width: 252px;
-  height: 272px;
 }
 
 .sponsor-logo__medium {
-  width: 210px;
-  height: 227px;
+  height: 201px;
+  width: 200px;
+
+  @media only screen and (min-width: 468px) and (max-width: 768px) {
+    height: 131px;
+    width: 121px;
+  }
 }
 
 .sponsor-logo__small {
@@ -50,47 +60,62 @@
 }
 
 .sponsor-logo-magmalabs {
-  background-image: url('2015/sponsors/magmalabs-sponsor.png');
-  @include retina { background-image: url('2015/sponsors/magmalabs-sponsor.png'); }
+  background-image: url('2017/sponsors/magmalabs-sponsor.png');
+  @include retina { background-image: url('2017/sponsors/magmalabs-sponsor.png'); }
 }
 
 .sponsor-logo-github {
-  background-image: url('2015/sponsors/git_hub@2x.png');
-  @include retina { background-image: url('2015/sponsors/git_hub@2x.png'); }
+  background-image: url('2017/sponsors/git_hub@2x.png');
+  @include retina { background-image: url('2017/sponsors/git_hub@2x.png'); }
+  &:hover {
+    background-image: url('2017/sponsors/git-hub-hover@2x.png');
+  }
 }
 
 .sponsor-logo-ardan-labs {
-  background-image: url('2015/sponsors/ardan_labs@2x.png');
-  @include retina { background-image: url('2015/sponsors/ardan_labs@2x.png'); }
+  background-image: url('2017/sponsors/ardan-labs@2x.png');
+  @include retina { background-image: url('2017/sponsors/ardan-labs@2x.png'); }
+  &:hover {
+    background-image: url('2017/sponsors/ardan-labs-hover@2x.png');
+  }
 }
 
 .sponsor-logo-sg {
-  background-image: url('2015/sponsors/guru_logo@2x.png');
-  @include retina { background-image: url('2015/sponsors/guru_logo@2x.png'); }
+  background-image: url('2017/sponsors/guru-logo@2x.png');
+  @include retina { background-image: url('2017/sponsors/guru-logo@2x.png'); }
+  &:hover {
+    background-image: url('2017/sponsors/guru-logo-hover@2x.png');
+  }
 }
 
 .sponsor-logo-travis {
-  background-image: url('2015/sponsors/travis_ci@2x.png');
-  @include retina { background-image: url('2015/sponsors/travis_ci@2x.png'); }
+  background-image: url('2017/sponsors/travis-ci@2x.png');
+  @include retina { background-image: url('2017/sponsors/travis-ci@2x.png'); }
+  &:hover {
+    background-image: url('2017/sponsors/travis-ci-hover@2x.png');
+  }
 }
 
 .sponsor-logo-wix {
-  background-image: url('2015/sponsors/wix_logo@2x.png');
-  @include retina { background-image: url('2015/sponsors/wix_logo@2x.png'); }
+  background-image: url('2017/sponsors/wix-logo@2x.png');
+  @include retina { background-image: url('2017/sponsors/wix-logo@2x.png'); }
+  &:hover {
+    background-image: url('2017/sponsors/wix-logo-hover@2x.png');
+  }
 }
 
 .sponsor-logo-placeholder__medium {
-  background-image: url('2015/sponsors/your_logo_could@2x.jpg');
-  @include retina { background-image: url('2015/sponsors/your_logo_could@2x.jpg'); }
+  background-image: url('2017/sponsors/your_logo_could@2x.jpg');
+  @include retina { background-image: url('2017/sponsors/your_logo_could@2x.jpg'); }
 }
 
 .sponsor-logo-placeholder__small {
-  background-image: url('2015/sponsors/or_here@2x.jpg');
-  @include retina { background-image: url('2015/sponsors/or_here@2x.jpg'); }
+  background-image: url('2017/sponsors/or_here@2x.jpg');
+  @include retina { background-image: url('2017/sponsors/or_here@2x.jpg'); }
 }
 
 .sponsor-logo-contact-button {
-  background-image: url('2015/sponsors/contact_sponsor@2x.jpg');
-  @include retina { background-image: url('2015/sponsors/contact_sponsor@2x.jpg'); }
+  background-image: url('2017/sponsors/contact_sponsor@2x.jpg');
+  @include retina { background-image: url('2017/sponsors/contact_sponsor@2x.jpg'); }
 }
 

@@ -1,6 +1,12 @@
 .side-text {
   margin: 20px auto;
   max-width: 243px;
+
+  &.border {
+    border-bottom: 4px $picton-blue solid;
+    border-top: 4px $picton-blue solid; 
+    width: 158.3px;
+  }
 }
 
 .side-text-have{
@@ -43,6 +49,21 @@
 
 .side-text-in-all-mx {
   @include span-cfp($white, 25.6px, 'Oswald', 300, uppercase);
+}
+
+.side-text-we-need {
+  @include span-cfp($wild-sand, 36.5px, 'Lato', 300, uppercase);
+  letter-spacing: -0.7px;
+  margin-top: 8px;
+}
+
+.side-text-your {
+  @include span-cfp($koromiko, 71px, 'Oswald', bold, uppercase);
+}
+
+.side-text-support {
+  @include span-cfp($bittersweet, 43px, 'Oswald', bold, uppercase);
+  margin-bottom: 8px;
 }
 
 .side-text-march {
@@ -393,4 +414,9 @@
   height: 43px;
   margin-top: 5px;
   width: 124px;
+}
+
+.reylero-sponsor {
+  height: 275px;
+  width: 206px;
 }
