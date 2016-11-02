@@ -19,6 +19,7 @@
 
   .nav-menu {
     background-color: $white;
+    overflow: auto;
     width: 100%;
 
     .link-text { color: $kabul; }
