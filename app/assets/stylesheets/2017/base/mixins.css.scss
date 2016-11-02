@@ -201,3 +201,11 @@
     font-size: $font-size-sm;
   }
 }
+
+@mixin ring-icon($image-src) {
+  background-image: asset_url($image-src);
+  background-position: 1% 1px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: relative;
+}
