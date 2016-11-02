@@ -424,6 +424,10 @@ input[type=submit] {
     padding-left: 10px;
     padding-right: 25px;
   }
+
+  &.last-paragraph {
+    padding-bottom: 10px;
+  }
 }
 
 .about-magma-title {
