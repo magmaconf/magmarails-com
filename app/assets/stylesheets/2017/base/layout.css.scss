@@ -651,3 +651,11 @@ input[type=submit] {
     padding-right: 20px;
   }
 }
+
+//pureimgfix
+.pure-g-r img {
+  height: 100%;
+  @media only screen and (max-width: 1024px) {
+    height: auto;
+  }
+}
