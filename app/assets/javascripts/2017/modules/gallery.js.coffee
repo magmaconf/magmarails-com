@@ -43,7 +43,10 @@ class @Gallery
 
     @page += 1
   setGalleryHeight: ->
-    $('#photo-gallery').css 'height', ($('.magma-info').height() - $(".nav-menu").height()) + 15
+    setTimeout (->
+      console.log("set");
+      $('#photo-gallery').css 'height', ($('.magma-info').height() - $(".nav-menu").height()) + 15
+    ), 2000
     $(window).on 'resize', ->
       $('#photo-gallery').css 'height', ($('.magma-info').height() - $(".nav-menu").height()) + 15
 
