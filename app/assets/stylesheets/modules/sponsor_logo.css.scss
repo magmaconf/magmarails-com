@@ -2,13 +2,13 @@
  .sponsors{ min-height: 1025px; }
 }
 
-.main-sponsor{
+.main-sponsor {
   float: left;
-  width: 50%;
+  width: 33.3%;
   @media screen and (max-width: 767px) { width: 100%; }
 }
 
-.sponsor{
+.sponsor {
   float: left;
   width: 25%;
   @media screen and (min-width: 769px) and (max-width: 1300px){
@@ -43,6 +43,16 @@
   height: 252px;
   width: 252px;
 
+  @media only screen and (min-width: 1024px) and (max-width: 1151px) {
+    height: 225px;
+    width: 225px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    height: 150px;
+    width: 150px;
+  }
+
   @include mq-mobile {
     height: 202px;
     width: 202px;
@@ -53,12 +63,17 @@
   height: 201px;
   width: 200px;
 
-  @media only screen and (min-width: 468px) and (max-width: 768px) {
-    height: 131px;
-    width: 121px;
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    height: 150px;
+    width: 150px;
   }
 
-  @include mq-mobile {
+  @media only screen and (min-width: 468px) and (max-width: 767px) {
+    height: 150px;
+    width: 150px;
+  }
+
+  @media only screen and (max-width: 468px) { 
     height: 202px;
     width: 202px;
   }
@@ -70,13 +85,16 @@
 }
 
 .sponsor-logo-magmalabs {
-  background-image: url('2017/sponsors/magmalabs-sponsor.png');
-  @include retina { background-image: url('2017/sponsors/magmalabs-sponsor.png'); }
+  background-image: url('2017/sponsors/magmalabs-sponsor@2x.png');
+  @include retina { background-image: url('2017/sponsors/magmalabs-sponsor@2x.png'); }
+  &:hover {
+    background-image: url('2017/sponsors/magmalabs-sponsor-hover@2x.png');
+  }
 }
 
 .sponsor-logo-github {
-  background-image: url('2017/sponsors/git_hub@2x.png');
-  @include retina { background-image: url('2017/sponsors/git_hub@2x.png'); }
+  background-image: url('2017/sponsors/git-hub@2x.png');
+  @include retina { background-image: url('2017/sponsors/git-hub@2x.png'); }
   &:hover {
     background-image: url('2017/sponsors/git-hub-hover@2x.png');
   }

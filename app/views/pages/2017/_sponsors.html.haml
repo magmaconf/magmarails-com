@@ -1,4 +1,4 @@
-.pure-u-2-3.main-content-mobile.sponsors{ class: I18n.locale.to_s }
+.pure-u-2-3.main-content-mobile.sponsors.sponsors-section{ class: I18n.locale.to_s }
   = render 'pages/2017/partials/pages_main_menu'
   .container
     .pt50.pb80.pt0--t
@@ -7,8 +7,17 @@
           .sponsors-ring-icon
             %h2.about-magma-title.flb.mtm.sponsors
               We need your support
-          %h4.about-magma-subtitle
+          %h4.about-magma-subtitle.sponsors
             March 29, 30 & 31 - Manzanillo, Col. MX
+      .pure-g-r.mt30.m0--t
+        .sponsors-text-container
+          .text-would-you Would you
+          .text-like-to-sponsor Like to sponsor?
+          .text-magmaconf-spn MagmaConf
+          =link_to '', class: 'spnsr-button' do
+            %span.spnsr-text1 Download
+            %span.spnsr-text2 PDF
+          .text-for-more-info For More Info
       .pure-g-r.mt30.m0--t
         .main-sponsor
           %a.sponsor-logo-link{ href: 'http://www.magmalabs.io/', target: '_blank' }
@@ -16,8 +25,11 @@
         .main-sponsor
           %a.sponsor-logo-link{ href: 'https://www.github.com/', target: '_blank' }
             .logo-sp.sponsor-logo__big.sponsor-logo-github
+        .main-sponsor
+          %a.sponsor-logo-link{ href: 'http://www.magmalabs.io/', target: '_blank' }
+            .logo-sp.sponsor-logo__big.sponsor-logo-magmalabs.ol-n
 
-      .pure-g-r.mt85.m0--t
+      .pure-g-r.mt85.m0--t.mt20--tb
         .sponsor
           %a.sponsor-logo-link{ href: 'https://www.ardanlabs.com/', target: '_blank' }
             .logo-sp.sponsor-logo__medium.sponsor-logo-ardan-labs
@@ -30,3 +42,4 @@
         .sponsor
           %a.sponsor-logo-link{ href: 'http://www.wix.com/', target: '_blank' }
             .logo-sp.sponsor-logo__medium.sponsor-logo-wix
+  .media-spnsrs
