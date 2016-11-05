@@ -2,8 +2,8 @@ $(document).ready ->
   # Popup
   $('.open-popup').click (e) ->
     e.preventDefault()
-    $('#popup').fadeIn()
     $('#policy').slideToggle()
+    $("body").scrollTop(0)
 
   closePopup = ->
     $('#popup').fadeOut()
