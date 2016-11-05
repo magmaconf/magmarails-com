@@ -20,7 +20,7 @@ $(document).ready ->
 
   $('#schedule .js-prev-day').css('display', 'none')
   initSchedule = ->
-    if $(window).width() < 568 
+    if $(window).width() < 768 
       $('.day_2,.day_3').removeClass 'active'
       $('.day_1').addClass 'active'
     else

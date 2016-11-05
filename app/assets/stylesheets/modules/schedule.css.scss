@@ -545,7 +545,7 @@
     padding: 20px 0;
     width: calc(100%/3);
 
-    @include mq-mobile {
+    @media only screen and (max-width: 768px) {
       width: 100%;
     }
   }
