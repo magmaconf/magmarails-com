@@ -4,6 +4,7 @@ $(document).ready ->
     e.preventDefault()
     $('#policy').slideToggle()
     $("body").scrollTop(0)
+    $("#btn-menu").click()
 
   closePopup = ->
     $('#popup').fadeOut()
@@ -20,3 +21,5 @@ $(document).ready ->
   $('.speaker-box').bind 'touchstart', (ev) ->
     this.classList.toggle('hover')
 
+  $('.close-policie').click (e) ->
+    closePopup()

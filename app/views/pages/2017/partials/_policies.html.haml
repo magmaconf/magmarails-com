@@ -3,10 +3,8 @@
     .twelve-columns.top
       %p.copy-right= t('daily.copy-right').html_safe
   .row
-    .two-columns.logo
-      %img{ src: "#{ image_path '2015/magmalabs-logo.svg' }" }
-    .eight-columns.title
-      %img.tit{ src: "#{ image_path 'title-news.svg' }" }
+    .close-policie &times;
+    %img.tit.policies-title{ src: "#{ image_path 'title-news.svg' }" }
     .two-columns.mask
       %img{ src: "#{ image_path 'mask.svg' }", width: '60', height: '66' }
     .twelve-columns.line
@@ -25,10 +23,10 @@
   .row.anti-harassment
     .twelve-columns
       %h1.magma-title= t('home.policy.magma')
-      %h2= t('home.policy.title')
+      %h2.magma-subtitle= t('home.policy.title')
     .twelve-columns
       .line
-    .eight-columns
+    .eight-columns.policies-text
       %p= t('home.policy.s_one').html_safe
       %p
         = t('home.policy.s_two').html_safe
