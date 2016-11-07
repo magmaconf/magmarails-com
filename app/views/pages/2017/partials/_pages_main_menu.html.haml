@@ -10,7 +10,8 @@
       %li.link
         = active_link_to t('menu.sponsors'), '/2017/sponsors', id: 'sponsors-link', class: 'link-text'
       %li.link#getting-to-manzanillo
-        = active_link_to t('menu.getting_manzanillo'), '/2017/getting', id: 'getting-link', class: 'link-text'
+        = active_link_to t('menu.getting_manzanillo'), '/2017/getting', id: 'getting-link', class: 'link-text getting-to-desktop'
+        = active_link_to t('menu.getting_manzanillo_abr'), '/2017/getting', id: 'getting-link', class: 'link-text getting-to-tbt'
       %li.link
         %a.link-text#sponsors-link{ href: 'mailto:info@magmaconf.com', target:'_blank' }= t('menu.contact-us')
       %li.link

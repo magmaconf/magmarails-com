@@ -539,7 +539,7 @@ input[type=submit] {
 .getting-to-magma-title {
   color: $bittersweet;
   display: inline-block;
-  font-size: 35px;
+  font-size: 40px;
   font-family: 'Lato';
   font-weight: bold;
   letter-spacing: -0.8px;
@@ -588,12 +588,13 @@ input[type=submit] {
 
 .getting-ring-icon {
   @extend .ring;
-  background-position: 1% -1px;
-  background-size: 523px;
+  background-position: 1% 3px;
+  background-size: 459px;
   height: 46px;
-  width: 523px;
+  width: 459px;
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    background-position: 1% -2px;
     background-size: 450px;
     width: 450px;
   }
