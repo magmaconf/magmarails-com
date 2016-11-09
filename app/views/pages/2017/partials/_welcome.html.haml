@@ -1,18 +1,18 @@
 .logo-container.bgc-blck.js-animated-background
-%a.magma-logo{href: '/'}
+= link_to root_url, class: 'magma-logo' do
   = image_tag('2017/magmaconf2017.png')
-%img.reylero-beach{src: "#{image_path '2017/reylero_beach.svg'}"}
-  .side-text
-    %span.side-text-welcome Welcome to
-    %span.side-text-hottest The Hottest
-    %span.side-text-tech Tech
-    %span.side-text-conference Conference
-    %span.side-text-in-all-mx In all of Mexico
-  .btn-register-circular
-    .dotted-circle
-      %span.register Register
-      %span.now Now
-  .side-text
-    %span.side-text-march March
-    %span.side-text-date 29, 30 and 31
-    %span.side-text-cfp-place Manzanillo, Colima - MX
+= render_reylero_img @id
+.side-text
+  %span.side-text-welcome Welcome to
+  %span.side-text-hottest The Hottest
+  %span.side-text-tech Tech
+  %span.side-text-conference Conference
+  %span.side-text-in-all-mx In all of Mexico
+.btn-register-circular
+  .dotted-circle
+    %span.register Register
+    %span.now Now
+.side-text
+  %span.side-text-march March
+  %span.side-text-date 29, 30 and 31
+  %span.side-text-cfp-place Manzanillo, Colima - MX
