@@ -1,6 +1,6 @@
 .side-text {
   margin: 20px auto;
-  max-width: 243px;
+  max-width: 300px;
 
   &.border {
     border-bottom: 4px $picton-blue solid;
@@ -32,23 +32,19 @@
 .side-text-we-need { font-size: 53px; }
 .side-text-your { font-size: 88px; }
 .side-text-support { font-size: 52px; }
-.side-text-welcome {
-  @include span-cfp($white, 33.8px, 'Oswald', 300, uppercase);
+
+.side-text-evolution {
+  @include span-cfp($bittersweet, 71.5px, 'Oswald', bold, uppercase);
+  letter-spacing: -2px;
 }
-.side-text-hottest {
-  @include span-cfp($koromiko, 30.8px, 'Oswald', 400, uppercase);
+.side-text-has-come {
+  @include span-cfp($wild-sand, 71.5px, 'Oswald', bold, uppercase);
+  letter-spacing: -2px;
 }
 
-.side-text-tech {
-  @include span-cfp($bittersweet, 79.2px, 'Oswald', bold, uppercase);
-}
-
-.side-text-conference {
-  @include span-cfp($koromiko, 32px, 'Oswald', 400, uppercase);
-}
-
-.side-text-in-all-mx {
-  @include span-cfp($white, 25.6px, 'Oswald', 300, uppercase);
+.side-text-get-involved {
+  @include span-cfp($koromiko, 54px, 'Oswald', bold, uppercase);
+  letter-spacing: 0.1px;
 }
 
 .side-text-we-need {
@@ -111,21 +107,22 @@
   position: relative;
   width: 209px;
 
-  .register {
-    @include span-cfp($stratos, 34px, 'Oswald', 400, uppercase);
+  .tickets {
+    @include span-cfp($stratos, 21px, 'Oswald', 400, uppercase);
     left: 50%;
     letter-spacing: -1px;
     position: absolute;
     top: 31%;
     transform: translateY(-31%) translateX(-50%);
+    width: 139px;
   }
 
-  .now {
+  .soon {
     @include span-cfp($stratos, 69px, 'Oswald', 500, uppercase);
     left: 49%;
     letter-spacing: -3.8px;
     position: absolute;
-    top: 68%;
+    top: 65%;
     transform: translateY(-70%) translateX(-50%);
   }
 }
@@ -173,6 +170,18 @@
     width: 280px;
 
     &.iphone{ margin: 30px 0 12px -50px; }
+  }
+
+  .reylero-selfie {
+    height: 439px;
+    position: relative;
+    top: -80px;
+    width: 407px;
+  }
+
+  .reylero-sponsor {
+    height: 262px;
+    width: 264px;
   }
 
   .hero-text {

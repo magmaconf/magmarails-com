@@ -1,10 +1,14 @@
+isMobile = ->
+  $(window).width() < 768
+
 $(document).ready ->
   # Popup
   $('.open-popup').click (e) ->
     e.preventDefault()
     $('#policy').slideToggle()
     $("body").scrollTop(0)
-    $("#btn-menu").click()
+    if isMobile()
+      $("#btn-menu").click()
 
   closePopup = ->
     $('#popup').fadeOut()

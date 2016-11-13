@@ -6,21 +6,19 @@ module ApplicationHelper
     link_to(name, options, html_options, &block)
   end
 
-  def get_cfp_partial_view id
-    case id
-      when 'sponsors'
-        "pages/2017/partials/asides/sponsors_info"
-      else
-        "pages/2017/partials/welcome"
+  def find_cfp_partial_view id
+    if id == 'sponsors'
+      "pages/2017/partials/asides/sponsors_info"
+    else
+      "pages/2017/partials/welcome"
     end
   end
 
   def render_reylero_img id
-    case id
-      when 'sponsors'
-        image_tag('2017/reylero_beach.svg', class: 'reylero-beach')
-      else
-        image_tag('2017/reylero_beach.svg', class: 'reylero-beach')
+    if id == 'sponsors'
+      image_tag('2017/reylero_sponsor_1.png', class: 'reylero-sponsor')
+    else
+      image_tag('2017/reyleros_selfie.png', class: 'reylero-selfie')
     end
   end
 end

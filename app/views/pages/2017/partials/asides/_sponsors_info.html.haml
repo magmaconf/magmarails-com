@@ -1,16 +1,16 @@
 .logo-container.bgc-blck.js-animated-background
 %a.magma-logo{href: '/'}
   = image_tag('2017/magmaconf2017.png')
-%img.reylero-sponsor{src: "#{image_path '2017/luchador-sponsors-image.svg'}"}
-  .side-text.border
-    %span.side-text-we-need We Need 
-    %span.side-text-your Your
-    %span.side-text-support Support
-  .btn-register-circular
-    .dotted-circle
-      %span.register Register
-      %span.now Now
-  .side-text
-    %span.side-text-march March
-    %span.side-text-date 29, 30 and 31
-    %span.side-text-cfp-place Manzanillo, Colima - MX
+= render_reylero_img @id
+.side-text.border
+  %span.side-text-we-need We Need 
+  %span.side-text-your Your
+  %span.side-text-support Support
+.btn-register-circular
+  .dotted-circle
+    %span.tickets Tickets on Sale
+    %span.soon Soon
+.side-text
+  %span.side-text-march March
+  %span.side-text-date 29, 30 and 31
+  %span.side-text-cfp-place Manzanillo, Colima - MX
