@@ -4,8 +4,12 @@
       %li.link
         = active_link_to t('menu.about'), '/2017/about', id: 'about-magma-link', class: 'link-text'
       %li.link
+        = active_link_to t('menu.ready_to_evolve'), '/2017/ready_to_evolve', id: 'ready-to-evolve-link', class: 'link-text'
+      %li.link
         = active_link_to t('menu.speakers'), '/2017/speakers', id: 'speakers-link', class: 'link-text'
       %li.link
+        = active_link_to t('menu.talks'), '/2017/talks', id: 'talks-link', class: 'link-text'
+      -#%li.link
         = active_link_to t('menu.schedule'), '/2017/schedule', id: 'schedule-link', class: 'link-text'
       %li.link
         = active_link_to t('menu.sponsors'), '/2017/sponsors', id: 'sponsors-link', class: 'link-text'
@@ -14,8 +18,6 @@
         = active_link_to t('menu.getting_manzanillo_abr'), '/2017/getting', id: 'getting-link', class: 'link-text getting-to-tbt'
       %li.link
         %a.link-text#sponsors-link{ href: 'mailto:info@magmaconf.com', target:'_blank' }= t('menu.contact-us')
-      %li.link
-        = active_link_to t('menu.store'), '/2017/store', id: 'store-link', class: 'link-text'
 
     %div.dis-b--t.pl15
       .nav-menu-separator

@@ -129,6 +129,8 @@ en:
     to_get_there: 'to get there'
   menu:
     about: About Magma
+    ready_to_evolve: Ready to Evolve
+    talks: Talks
     blog: Blog
     getting_manzanillo: 'Getting to Manzanillo'
     getting_manzanillo_abr: 'Getting to MZO'
@@ -136,7 +138,7 @@ en:
     menu: MENU
     register: REGISTER
     schedule: Schedule
-    speakers: Speakes
+    speakers: Speakers
     sponsors: Sponsors
     workshops: Workshops
     contact-us: CONTACT US
