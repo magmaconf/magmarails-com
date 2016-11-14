@@ -145,9 +145,9 @@ en:
   home:
     hero_text: "WE'RE BACK!"
     dates_text: 'MARCH 29, 30 & 31'
-    content_text: 'WEB/MOBILE DEVELOPMENT'
-    content_text_line2: 'RUBY, RAILS, GO, JAVASCRIPT'
-    content_text_line3: 'AND MORE!'
+    content_text: 'SOFTWARE DEVELOPMENT'
+    content_text_line2: 'UX/UI DESIGN, MOBILE'
+    content_text_line3: 'SESSIONS AND MORE!'
     keynote_text: "2 KEYNOTES"
     keynote_text_line2: "AWESOME TALKS!"
     keynote_text_line3: "ROUNDTABLE DISCUSSIONS"
