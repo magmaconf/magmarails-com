@@ -16,9 +16,9 @@ module ApplicationHelper
 
   def render_reylero_img id
     if id == 'sponsors'
-      image_tag('2017/reylero_sponsor_1.png', class: 'reylero-sponsor')
+      image_tag('2017/reylero_sponsors.svg', class: 'reylero-sponsor')
     else
-      image_tag('2017/reyleros_selfie.png', class: 'reylero-selfie')
+      image_tag('2017/reyleros_selfie.svg', class: 'reylero-selfie')
     end
   end
 end
