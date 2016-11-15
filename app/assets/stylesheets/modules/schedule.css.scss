@@ -601,6 +601,10 @@
 
 .talks-container {
 
+  &.main {
+    margin-top: 60px;
+  }
+
   .talk-name {
     font-family: 'Open Sans';
     font-size: 16.8px;
@@ -619,4 +623,9 @@
     margin-bottom: 5px;
     margin-top: 60px;
   }
+}
+
+.border-red {
+  border-bottom: 2px solid $mandy; 
+  padding-bottom: 10px;
 }

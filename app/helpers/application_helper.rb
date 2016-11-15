@@ -8,17 +8,28 @@ module ApplicationHelper
 
   def find_cfp_partial_view id
     if id == 'sponsors'
-      "pages/2017/partials/asides/sponsors_info"
+      'pages/2017/partials/asides/sponsors_info'
     else
-      "pages/2017/partials/welcome"
+      'pages/2017/partials/welcome'
     end
   end
 
   def render_reylero_img id
-    if id == 'sponsors'
+    case id
+    when 'sponsors'
       image_tag('2017/reylero_sponsors.svg', class: 'reylero-sponsor')
+    when 'talks'
+      image_tag('2017/godin.png', class: 'reylero-godinez')
     else
       image_tag('2017/reyleros_selfie.svg', class: 'reylero-selfie')
+    end
+  end
+
+  def render_class_name id
+    if id == 'talks'
+      ''
+    else
+      'less'
     end
   end
 end

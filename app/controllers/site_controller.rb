@@ -34,6 +34,7 @@ class SiteController < ApplicationController
   end
 
   def talks
+    @id = 'talks'
     render "site/#{sanitize_year}/talks.html.haml"
   end
 

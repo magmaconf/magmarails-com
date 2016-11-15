@@ -7,14 +7,14 @@
           .schedule-ring-icon
             %h2.about-magma-title.star.fbg
               Arena&nbsp;&nbsp;&nbsp;Magma 
-      .pure-g-r
+      .pure-g-r.border-red
         .pure-u-1-3.ta-c
           = render 'pages/2017/partials/schedule/small_stars_list'
         .pure-u-1-3
           %p.schedule-title= "#{ t('title') } #{ t('menu.schedule') }"
         .pure-u-1-3.ta-c
           = render 'pages/2017/partials/schedule/small_stars_list'
-      .container.talks-container
+      .container.talks-container.main
         .offset-one.five-columns.keynotes-container
           .talk-container
             %h1.keynote-name Katrina Owen
@@ -23,53 +23,50 @@
               The Bait & Switch of Open Source.
         .offset-one.five-columns.keynotes-container
           .talk-container
-            %h1.keynote-name OBIE FERNÁNDEZ 
+            %h1.keynote-name Obie Fernández 
             %span.keynote-star Keynote
             %p.talk-name
-              The Bait & Switch of Open Source.
       .container.talks-container
-        .four-columns
-          .talk-container
-            %h2.speaker-talk-name Agustín Ramos
-            %p.talk-name
-              El Zen de Elixir/Erlang
-        .four-columns
-          .talk-container
-            %h2.speaker-talk-name Clarke Brunsdon
-            %p.talk-name
-              Ecommerce is hard
-        .four-columns
-          .talk-container
-            %h2.speaker-talk-name Yegor Bugayenko
-            %p.talk-name
-              Continuous integration may have negative effects
-        .four-columns
-          .talk-container
-            %h2.speaker-talk-name Agustín Ramos
-            %p.talk-name
-              El Zen de Elixir/Erlang
-        .four-columns
-          .talk-container
-            %h2.speaker-talk-name Clarke Brunsdon
-            %p.talk-name
-              Ecommerce is hard
-        .four-columns
-          .talk-container
-            %h2.speaker-talk-name Yegor Bugayenko
-            %p.talk-name
-              Continuous integration may have negative effects
-        .four-columns
-          .talk-container
-            %h2.speaker-talk-name Agustín Ramos
-            %p.talk-name
-              El Zen de Elixir/Erlang
-        .four-columns
-          .talk-container
-            %h2.speaker-talk-name Clarke Brunsdon
-            %p.talk-name
-              Ecommerce is hard
-        .four-columns
-          .talk-container
-            %h2.speaker-talk-name Yegor Bugayenko
-            %p.talk-name
-              Continuous integration may have negative effects
+        .twelve-columns
+          .four-columns.talk
+            .talk-container
+              %h2.speaker-talk-name Agustín Ramos
+              %p.talk-name
+                El Zen de Elixir/Erlang
+          .four-columns.talk
+            .talk-container
+              %h2.speaker-talk-name Clarke Brunsdon
+              %p.talk-name
+                Ecommerce is Hard
+          .four-columns.talk
+            .talk-container
+              %h2.speaker-talk-name Yegor Bugayenko
+              %p.talk-name
+                Continuous Integration May Have Negative Effects
+        .twelve-columns
+          .four-columns.talk
+            .talk-container
+              %h2.speaker-talk-name Matt Mills
+              %p.talk-name
+                Why we need Open Source Internet-of-Things
+          .four-columns.talk
+            .talk-container
+              %h2.speaker-talk-name Caleb Thompson
+              %p.talk-name
+                The Hacker's Diet
+          .four-columns.talk
+            .talk-container
+              %h2.speaker-talk-name Jordán López 
+              %p.talk-name
+                U, I & Ur Ex
+        .twelve-columns
+          .four-columns.talk
+            .talk-container
+              %h2.speaker-talk-name Amy Wibowo 
+              %p.talk-name
+                Fold, Paper, Scissors—an mathematical exploration of origami's Fold-and-Cut Problem
+          .four-columns.talk
+            .talk-container
+              %h2.speaker-talk-name Julian Cheal 
+              %p.talk-name
+                It's More Fun to Compute
