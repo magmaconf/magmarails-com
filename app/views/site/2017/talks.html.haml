@@ -1,0 +1,75 @@
+.pure-u-2-3.main-content-mobile{ class: I18n.locale.to_s }
+  = render 'pages/2017/partials/pages_main_menu'
+  #schedule
+    .container.schedule-container
+      .pure-g-r
+        .pure-u-1-1.ta-c.mt10.my15--m.mx10
+          .schedule-ring-icon
+            %h2.about-magma-title.star.fbg
+              Arena&nbsp;&nbsp;&nbsp;Magma 
+      .pure-g-r
+        .pure-u-1-3.ta-c
+          = render 'pages/2017/partials/schedule/small_stars_list'
+        .pure-u-1-3
+          %p.schedule-title= "#{ t('title') } #{ t('menu.schedule') }"
+        .pure-u-1-3.ta-c
+          = render 'pages/2017/partials/schedule/small_stars_list'
+      .container.talks-container
+        .offset-one.five-columns.keynotes-container
+          .talk-container
+            %h1.keynote-name Katrina Owen
+            %span.keynote-star Keynote
+            %p.talk-name
+              The Bait & Switch of Open Source.
+        .offset-one.five-columns.keynotes-container
+          .talk-container
+            %h1.keynote-name OBIE FERNÁNDEZ 
+            %span.keynote-star Keynote
+            %p.talk-name
+              The Bait & Switch of Open Source.
+      .container.talks-container
+        .four-columns
+          .talk-container
+            %h2.speaker-talk-name Agustín Ramos
+            %p.talk-name
+              El Zen de Elixir/Erlang
+        .four-columns
+          .talk-container
+            %h2.speaker-talk-name Clarke Brunsdon
+            %p.talk-name
+              Ecommerce is hard
+        .four-columns
+          .talk-container
+            %h2.speaker-talk-name Yegor Bugayenko
+            %p.talk-name
+              Continuous integration may have negative effects
+        .four-columns
+          .talk-container
+            %h2.speaker-talk-name Agustín Ramos
+            %p.talk-name
+              El Zen de Elixir/Erlang
+        .four-columns
+          .talk-container
+            %h2.speaker-talk-name Clarke Brunsdon
+            %p.talk-name
+              Ecommerce is hard
+        .four-columns
+          .talk-container
+            %h2.speaker-talk-name Yegor Bugayenko
+            %p.talk-name
+              Continuous integration may have negative effects
+        .four-columns
+          .talk-container
+            %h2.speaker-talk-name Agustín Ramos
+            %p.talk-name
+              El Zen de Elixir/Erlang
+        .four-columns
+          .talk-container
+            %h2.speaker-talk-name Clarke Brunsdon
+            %p.talk-name
+              Ecommerce is hard
+        .four-columns
+          .talk-container
+            %h2.speaker-talk-name Yegor Bugayenko
+            %p.talk-name
+              Continuous integration may have negative effects

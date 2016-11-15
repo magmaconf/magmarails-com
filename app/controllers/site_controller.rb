@@ -33,6 +33,10 @@ class SiteController < ApplicationController
     render "site/#{sanitize_year}/schedule.html.haml"
   end
 
+  def talks
+    render "site/#{sanitize_year}/talks.html.haml"
+  end
+
   private
 
   def init_magmaconf_api_service
