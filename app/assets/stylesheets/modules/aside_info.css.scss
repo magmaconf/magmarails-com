@@ -427,10 +427,14 @@
 }
 
 .magma-logo {
-  display: block;
+  display: flex;
   height: 50px;
   margin: 10px auto 30px;
   width: 143px;
+  
+  img {
+    z-index: 1;
+  }
 }
 
 .magma-logo-mobile{
