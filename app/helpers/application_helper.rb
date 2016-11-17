@@ -18,15 +18,19 @@ module ApplicationHelper
     case id
     when 'sponsors'
       image_tag('2017/reylero_sponsors.svg', class: 'reylero-sponsor')
-    when 'talks'
+    when 'speakers'
       image_tag('2017/godin.png', class: 'reylero-godinez')
+    when 'talks'
+      image_tag('2017/quetzal.png', class: 'reylero-godinez')
+    when 'getting'
+      image_tag('2017/pirata.png', class: 'reylero-pirata')
     else
       image_tag('2017/reyleros_selfie.svg', class: 'reylero-selfie')
     end
   end
 
   def render_class_name id
-    if id == 'talks'
+    if id == 'talks' || id == 'getting'
       ''
     else
       'less'

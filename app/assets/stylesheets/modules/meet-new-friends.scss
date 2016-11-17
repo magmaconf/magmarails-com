@@ -1,0 +1,47 @@
+.meet-new-friends-paragraph {
+  background-color: white;
+  color: $gulf-blue;
+  font-family: 'Open Sans';
+  font-size: 14px;
+
+  &.bold {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+}
+
+.cfp-container {
+  background-color: $white;
+  padding: 20px 80px;
+  margin-top: 20px;
+  width: auto; 
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.reylero-futuro {
+  height: 295px;
+  width: 279px;
+}
+
+.reyleros-container {
+  h3 {
+    color: $stratos;
+    font-family: 'Lato';
+    font-size: 18px;
+    text-transform: none;
+  }
+
+  p {
+    color: $boulder;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    width: 440px;
+  }
+}
+
+.reylero-container-left {
+  padding-left: 40px;
+}

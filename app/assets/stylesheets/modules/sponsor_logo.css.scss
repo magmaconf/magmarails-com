@@ -93,6 +93,22 @@
   }
 }
 
+.sponsor-logo-your-logo {
+  background-image: url('2017/sponsors/your-logo@2x.png');
+  @include retina { background-image: url('2017/sponsors/your-logo@2x.png'); }
+  &:hover {
+    background-image: url('2017/sponsors/your-logo@2x.png');
+  }
+}
+
+.sponsor-logo-or-here {
+  background-image: url('2017/sponsors/or-here@2x.png');
+  @include retina { background-image: url('2017/sponsors/or-here@2x.png'); }
+  &:hover {
+    background-image: url('2017/sponsors/or-here@2x.png');
+  }
+}
+
 .sponsor-logo-github {
   background-image: url('2017/sponsors/git-hub@2x.png');
   @include retina { background-image: url('2017/sponsors/git-hub@2x.png'); }

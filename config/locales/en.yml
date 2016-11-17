@@ -50,28 +50,24 @@ en:
     magmaconf_description: MagmaConf is one of the most important community tech conferences in
       Mexico. We showcase innovative Software Development, UX/UI Design and Mobile sessions for
       engineers and designers that build cutting edge websites and applications. Our Conference
-      takes place at a tropical venue that allows fun and casual networking.
-      Get involved in the MagmaConf experience to evolve your knowledge and meet new friends!
+      takes place at a tropical venue that allows fun and casual networking.<br/><br/><br/>
+      <span class="fw-bld">Get involved in the MagmaConf experience to evolve your knowledge and meet new friends!</span>
     magma_village: What is the Magma Village? 
     magma_village_description: An unique alternative to a traditional hotel, MagmaVillage offers
       attendees the opportunity to continue learning from each other even after talks have
-      finished for the day. Part of the exclusive Santiago Beach Club, MagmaVillage is located on
+      finished for the day. <br/>Part of the exclusive Santiago Beach Club, MagmaVillage is located on
       the best beach in Manzanillo. Relax on the sand after a long day of talks, or dip your toes
       in the balmy Mexican ocean.
     manzanillo: Manzanillo, Mexico
     venue: Where is the event happening?
-    venue_2015_description: The venue of MagmaConf is the <b>Oasis Ocean Club</b> in
-      <b>Club Santiago</b>. It offers a distinctive experience with its exclusive beachfront
-      setting, rustic, yet elegant furnishings, and relaxed dining under a breezy, thatched-roof
-      palapa. El Oasis restaurant has become an icon for tourists and locals,
-      offering an international cuisine menu. 
+    venue_2015_description: On this edition, the venue of MagmaConf will be the <b>“Centro de Tecnología Educativa Universidad de Colima Campus El Naranjo”</b>. The auditorium offers a comfortable and fresh ambient to enjoy every talk and do networking during coffee breaks. When daily sessions end, we will be ready to hit the beach to live the whole MagmaConf Experience. 
     culture_activities: What activities are there? 
   getting_manzanillo:
     its_really_easy: "it's really easy"
     manzanillo:
       title: 'flying to manzanillo'
       description: 'Just fifteen minutes from the conference venue,
-        the Playa de Oro International Airport connects directly with Los Angeles,
+        the <b>Playa de Oro</b> International Airport connects directly with Los Angeles,
         Vancouver, Houston, Phoenix, and Mexico City. Major airlines that offer
         service to the airport include Alaska Airlines, Delta, AeroMexico,
         Interjet, CanJet, US Airways, United Express, and Volaris. Flights with
@@ -346,7 +342,7 @@ en:
       manzanillo:
         title: 'flying to manzanillo'
         description: 'Just fifteen minutes from the conference venue,
-          the Playa de Oro International Airport connects directly with Los Angeles,
+          the <b>Playa de Oro International Airport</b> connects directly with Los Angeles,
           Vancouver, Houston, Phoenix, and Mexico City. Major airlines that offer
           service to the airport include Alaska Airlines, Delta, AeroMexico,
           Interjet, CanJet, US Airways, United Express, and Volaris. Flights with
@@ -354,8 +350,8 @@ en:
           Chicago, and Washington D.C.'
       guadalajara:
         title: 'flying to guadalajara'
-        description: 'Located just over three hours from Manzanillo, the Guadalajara
-          International airport offers direct flights to Chicago, Los Angeles, San
+        description: 'Located just over three hours from Manzanillo, the <b>Guadalajara
+          International Airport</b> offers direct flights to Chicago, Los Angeles, San
           Francisco, Dallas, Atlanta, Houston, Phoenix, Oakland, and Mexico City.
           Major airlines that offer service to Guadalajara include American Airlines,
           AeroMexico, Delta, United, US Airways, and Volaris.'
