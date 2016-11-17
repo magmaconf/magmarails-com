@@ -414,6 +414,7 @@ input[type=submit] {
 
 .about-container {
   @extend .tide-text, .p20, .p10--m, .pl5, .pt30;
+  padding-right: 0;
   @include mq-mobile {
     padding: 0;
   }
@@ -423,6 +424,7 @@ input[type=submit] {
   @extend .m0, .opens, .c-amlo, .fw-r, .fz-14;
   color: $boulder; 
   font-weight: 300;
+  letter-spacing: -0.2px;
   line-height: 1.4;
   padding-right: 20px;
 
@@ -433,6 +435,18 @@ input[type=submit] {
 
   &.last-paragraph {
     padding-bottom: 10px;
+  }
+
+  &.pr {
+    padding-right: 30px;
+  }
+
+  &.pr-more {
+    padding-right: 50px;
+  }
+
+  &.pr45 {
+    padding-right: 45px;
   }
 }
 
@@ -542,7 +556,7 @@ input[type=submit] {
   font-size: 40px;
   font-family: 'Lato';
   font-weight: bold;
-  letter-spacing: -0.8px;
+  letter-spacing: -1.1px;
   margin: 0;
 
   @include mq-mobile {
@@ -587,10 +601,12 @@ input[type=submit] {
 }
 
 .getting-ring-icon {
-  @extend .ring;
-  background-position: 1% 3px;
+  background-image: asset_url('2017/getting-ring-icon.png');
+  background-position: 1%;
+  background-repeat: no-repeat;
   background-size: 459px;
   height: 46px;
+  margin: 0 auto;
   width: 459px;
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
