@@ -30,7 +30,7 @@ module ApplicationHelper
   end
 
   def render_class_name id
-    if id == 'talks' || id == 'getting'
+    if id == 'talks' || id == 'getting' || id == 'speakers'
       ''
     else
       'less'

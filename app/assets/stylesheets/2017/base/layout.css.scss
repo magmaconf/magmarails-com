@@ -644,6 +644,7 @@ input[type=submit] {
 
 .schedule-ring-icon {
   @extend .ring;
+  background-position: 1% 4px;
   background-size: 394px;
   height: 41px;
   width: 394px;
