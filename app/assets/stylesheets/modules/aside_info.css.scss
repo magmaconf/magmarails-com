@@ -446,12 +446,15 @@
   }
 }
 
-.magma-logo-mobile{
+.magma-logo-mobile {
   height: 33px;
   margin: 10px auto 5px;
-  width: 90px;
   text-align: center;
-  > img { width: 70px; }
+  width: 90px;
+  > img { 
+    position: relative;
+    top: -5px;
+  }
 }
 
 .magmaconf-logo {
