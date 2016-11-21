@@ -34,13 +34,24 @@
   margin-left: 20px;
   width: 279px;
 
+  &.no-lg {
+    @media only screen and (max-width: 768px) {
+      left: 50%;
+      margin-left: 0;
+      margin-top: 20px;
+      position: relative;
+      transform: translateX(-50%);
+      width: 91px;
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     left: 50%;
     margin-left: 0;
     margin-top: 20px;
     position: relative;
     transform: translateX(-50%);
-    width: 91px;
+    width: auto;
   }
 }
 
