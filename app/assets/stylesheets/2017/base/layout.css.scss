@@ -138,6 +138,8 @@ input[type=submit] {
 }
 
 @include font_face('Block', 'BLOKKNeue-Regular');
+@include font_face('Thinking of Betty', 'ThinkingOfBetty');
+@include font_face('Thinking of Betty Light', 'ThinkingOfBettyLight');
 
 // Text align
 .ta-c { text-align: center; }
@@ -149,6 +151,8 @@ input[type=submit] {
 .opens { font-family: 'Open Sans', sans-serif; }
 .oswald { font-family: 'Oswald', sans-serif; }
 .lato { font-family: 'Lato', sans-serif; }
+.f-betty { font-family: 'Thinking of Betty'; }
+.f-betty-lt { font-family: 'Thinking of Betty Light'; }
 
 // Font weight
 .fw-r { font-weight: 400; }
@@ -582,6 +586,39 @@ input[type=submit] {
   }
 }
 
+.ready-to-evolve-title {
+  color: $bittersweet;
+  display: inline-block;
+  font-size: 40px;
+  font-family: 'Lato';
+  font-weight: bold;
+  letter-spacing: -1.1px;
+  margin: 0;
+
+  @include mq-mobile {
+    font-size: 24px;
+    letter-spacing: -0.7px;
+    margin-top: 1px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    font-size: 29px;
+  }
+
+  &.star {
+    &:before {
+      background-image: image_url('2015/Star.svg');
+      content: '';
+      height: 15px;
+      left: 47%;
+      position: absolute;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 15px;
+    }
+  }
+}
+
 .getting-to-magma-subtitle {
   @extend .text-with-stars;
   color: $mandy;
@@ -636,9 +673,10 @@ input[type=submit] {
   }
 
   @include mq-mobile {
-    background-size: 283px;
-    height: 18px;
-    width: 283px;
+    background-position: 1% 2px;
+    background-size: 287px;
+    height: 27px;
+    width: 287px;
   }
 }
 
@@ -887,5 +925,18 @@ input[type=submit] {
   height: 100%;
   @media only screen and (max-width: 1024px) {
     height: auto;
+  }
+}
+
+.clearfix {
+  &:before {
+    content: ' ';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+    content: ' ';
+    display: table;
   }
 }

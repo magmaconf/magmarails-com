@@ -15,7 +15,6 @@
     font-family: $font;
     font-style: normal;
     src: local("#{$font}"),
-    font-url("#{$url}.otf"),
     font-url("#{$url}.eot"),
     font-url("#{$url}.ttf"),
     font-url("#{$url}.svg"),

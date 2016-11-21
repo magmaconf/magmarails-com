@@ -434,8 +434,12 @@
 .magma-logo {
   display: flex;
   height: 50px;
-  margin: 60px auto 30px;
+  margin: 10px auto 30px;
   width: 143px;
+
+  @media only screen and (max-width: 768px) {
+    margin: 60px auto 30px;
+  }
   
   img {
     z-index: 1;
