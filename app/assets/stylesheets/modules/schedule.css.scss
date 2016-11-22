@@ -569,6 +569,18 @@
   }
 }
 
+.talk-container {
+  &.separate {
+    @media only screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+  }
+}
+
 // style for the temporary 'talks' page
 .keynotes-container {
   
@@ -612,6 +624,10 @@
     margin: 5px 0;
     max-width: 215px;
     text-align: left;
+    @media only screen and (max-width: 768px) {
+      max-width: 100%;
+      text-align: center;
+    }
   }
 
   .speaker-talk-name {
@@ -622,6 +638,9 @@
     line-height: 1.2;
     margin-bottom: 5px;
     margin-top: 60px;
+    @media only screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
   }
 }
 
