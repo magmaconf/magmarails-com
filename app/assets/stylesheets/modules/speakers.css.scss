@@ -73,6 +73,7 @@
   -webkit-perspective: 1000;
   -moz-perspective: 1000px;
   -o-perspective: 1000px;
+  -ms-perspective: 1000px;
   height: 230px;
   margin-bottom: 65px;
   &.keynote{
@@ -188,6 +189,7 @@
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
 }
 
 .normal-box {
@@ -230,6 +232,7 @@
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
   position: relative;
 
   .normal-box,
@@ -240,6 +243,7 @@
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 50%;
@@ -299,6 +303,7 @@
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
 
   background-color: $white;
 }
@@ -384,12 +389,12 @@
     margin: 0;
 
     &:before, &:after{
-      content: '';
-      width: 15px;
-      height: 15px;
-      display: inline-block;
-      margin: 0 6px 3px;
       background-image: image_url('2015/Star.svg');
+      content: '';
+      display: inline-block;
+      height: 15px;
+      margin: 0 6px 3px;
+      width: 15px;
     }
   }
 
@@ -427,6 +432,7 @@
         -webkit-transform: rotate(180deg);
         -moz-transform: rotate(180deg);
         -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
         background-position: 9px 7px;
       }
 
