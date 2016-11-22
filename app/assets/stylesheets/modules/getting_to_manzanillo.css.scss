@@ -13,4 +13,11 @@
     background-image: image_url('2015/getting/map_mobile@2x.jpg');
     height: 380px;
   }
+
+  @media screen and (max-width: 767px) and (orientation: landscape) {
+    background-image: image_url('2015/getting/map_mobile@2x.jpg');
+    height: 380px;
+    background-position-y: -250px;
+    background-repeat: no-repeat;
+  }
 }
