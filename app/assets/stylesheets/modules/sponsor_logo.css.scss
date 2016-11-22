@@ -97,7 +97,7 @@
   background-image: url('2017/sponsors/your-logo@2x.png');
   @include retina { background-image: url('2017/sponsors/your-logo@2x.png'); }
   &:hover {
-    background-image: url('2017/sponsors/your-logo@2x.png');
+    background-image: url('2017/sponsors/your_logo-hover@2x.png');
   }
 }
 
@@ -105,7 +105,7 @@
   background-image: url('2017/sponsors/or-here@2x.png');
   @include retina { background-image: url('2017/sponsors/or-here@2x.png'); }
   &:hover {
-    background-image: url('2017/sponsors/or-here@2x.png');
+    background-image: url('2017/sponsors/or-here-hover@2x.png');
   }
 }
 
