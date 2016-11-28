@@ -38,8 +38,10 @@ $(document).ready ->
     $('#main-menu').animate right: '100%'
     $('#btn-menu').removeClass('active')
     $('body').css('position', 'auto')
+    $("#main-menu").css('overflow-y', 'initial')
 
   showMobileMenu = ->
     $('#main-menu').animate right: 12
     $('body').css('position', 'fixed')
     $('#btn-menu').addClass('active')
+    $("#main-menu").css('overflow-y', 'auto')
