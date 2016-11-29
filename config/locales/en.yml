@@ -134,6 +134,7 @@ en:
     menu: MENU
     register: REGISTER
     schedule: Schedule
+    talks: Talks
     speakers: Speakers
     sponsors: Sponsors
     workshops: Workshops
