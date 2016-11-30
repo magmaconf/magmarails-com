@@ -14,6 +14,9 @@
 
   &.more {
     margin-top: 350px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      margin-top: 290px;
+    }
   }
 }
 
@@ -214,30 +217,40 @@
     width: 273px;
   }
 
-  .reylero-macfly {
+  .reylero-macfly-extended {
     height: 340px;
-    left: -90px;
+    left: 0;
     position: absolute;
     top: 60px;
-    width: 830px;
+  }
+
+  .reylero-macfly {
+    height: 340px;
+    left: 0;
+    position: absolute;
+    top: 60px;
+    width: 666px;
     @media only screen and (min-width: 1880px) {
       left: 0;
     }
-    @media only screen and (min-width: 1150px) and (max-width: 1300px) {
-      width: 760px;
+    @media only screen and (min-width: 1150px) and (max-width: 1320px) {
+      width: 600px;
     }
     @media only screen and (max-width: 1150px) {
       top: 120px;
       width: 690px;
     }
     @media only screen and (min-width: 1024px) and (max-width: 1150px) {
-      width: 630px;
+      width: 527px;
     }
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
-      width: 620px;
+      width: 472px;
     }
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-      width: 500px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+      width: 472px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+      width: 355px;
     }
   }
 

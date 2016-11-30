@@ -25,7 +25,7 @@ module ApplicationHelper
     when 'getting'
       image_tag('2017/pirata.png', class: 'reylero-pirata')
     when 'ready_to_evolve'
-      image_tag('2017/macfly_auto.svg', class: 'reylero-macfly')
+      image_tag('2017/futuro_auto.svg', class: 'reylero-macfly')
     else
       image_tag('2017/reyleros_selfie.svg', class: 'reylero-selfie')
     end
