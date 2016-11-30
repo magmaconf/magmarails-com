@@ -11,6 +11,10 @@
   &.less {
     margin-top: -50px;
   }
+
+  &.more {
+    margin-top: 350px;
+  }
 }
 
 .side-text-have{
@@ -208,6 +212,33 @@
   .reylero-pirata {
     height: 450px;
     width: 273px;
+  }
+
+  .reylero-macfly {
+    height: 340px;
+    left: -90px;
+    position: absolute;
+    top: 60px;
+    width: 830px;
+    @media only screen and (min-width: 1880px) {
+      left: 0;
+    }
+    @media only screen and (min-width: 1150px) and (max-width: 1300px) {
+      width: 760px;
+    }
+    @media only screen and (max-width: 1150px) {
+      top: 120px;
+      width: 690px;
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1150px) {
+      width: 630px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      width: 620px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+      width: 500px;
+    }
   }
 
   .hero-text {

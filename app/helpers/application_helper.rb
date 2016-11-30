@@ -24,6 +24,8 @@ module ApplicationHelper
       image_tag('2017/quetzal.png', class: 'reylero-godinez')
     when 'getting'
       image_tag('2017/pirata.png', class: 'reylero-pirata')
+    when 'ready_to_evolve'
+      image_tag('2017/macfly_auto.svg', class: 'reylero-macfly')
     else
       image_tag('2017/reyleros_selfie.svg', class: 'reylero-selfie')
     end
@@ -32,6 +34,8 @@ module ApplicationHelper
   def render_class_name id
     if id == 'talks' || id == 'getting' || id == 'speakers'
       ''
+    elsif id == 'ready_to_evolve'
+      'more'
     else
       'less'
     end

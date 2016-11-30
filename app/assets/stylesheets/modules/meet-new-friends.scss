@@ -16,12 +16,16 @@
 
 .cfp-container {
   background-color: $white;
-  padding: 20px 80px;
+  padding: 20px 80px 20px 200px;
   margin-top: 20px;
   width: auto; 
 
-  @media only screen and (max-width: 768px) {
-    padding: 10px 31px 31px 24px;
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    padding: 20px 80px 20px 100px;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    padding: 20px 80px;
   }
 
   span {
@@ -87,7 +91,7 @@
     }
 
     @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-      font-size: 30px;
+      font-size: 27px;
     }
 
     @media only screen and (max-width: 768px) {
@@ -206,7 +210,7 @@
 
 .container-mobile {
   display: none;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     display: block;
   }
 }
