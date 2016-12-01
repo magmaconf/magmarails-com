@@ -1,6 +1,6 @@
 class @Gallery
   #72157645528624066 is default flicker photoSet
-  constructor: (container, photoSet = '72157655221443116') ->
+  constructor: (container, photoSet = '72157676573305506') ->
     @container = $(container)
     @containerSelector = container
     @photoSet = photoSet
@@ -44,7 +44,6 @@ class @Gallery
     @page += 1
   setGalleryHeight: ->
     setTimeout (->
-      console.log("set");
       $('#photo-gallery').css 'height', ($('.magma-info').height() - $(".nav-menu").height()) + 15
     ), 2000
     $(window).on 'resize', ->

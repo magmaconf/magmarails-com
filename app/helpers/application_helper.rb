@@ -27,14 +27,15 @@ module ApplicationHelper
     when 'ready_to_evolve'
       image_tag('2017/futuro_auto.svg', class: 'reylero-macfly')
     else
-      image_tag('2017/reyleros_selfie.svg', class: 'reylero-selfie')
+      image_tag('2017/futuro_auto.svg', class: 'reylero-macfly')
+      #image_tag('2017/reyleros_selfie.svg', class: 'reylero-selfie')
     end
   end
 
   def render_class_name id
     if id == 'talks' || id == 'getting' || id == 'speakers'
       ''
-    elsif id == 'ready_to_evolve'
+    elsif id == 'ready_to_evolve' or id == 'home' or id == 'about'
       'more'
     else
       'less'

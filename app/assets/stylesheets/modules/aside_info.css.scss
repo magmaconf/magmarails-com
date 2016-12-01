@@ -224,12 +224,17 @@
     top: 60px;
   }
 
+  .reylero-macfly-extended-home {
+    height: 340px;
+  }
+
   .reylero-macfly {
     height: 340px;
     left: 0;
     position: absolute;
     top: 60px;
     width: 666px;
+    z-index: 1;
     @media only screen and (min-width: 1880px) {
       left: 0;
     }
@@ -251,6 +256,12 @@
     }
     @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
       width: 355px;
+    }
+    @media only screen and (max-width: 767px) and (orientation: landscape) {
+      left: 50%;
+      margin: 0 auto;
+      transform: translateX(-50%);
+      width: 400px;
     }
   }
 
