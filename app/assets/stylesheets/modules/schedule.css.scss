@@ -243,6 +243,11 @@
   @media only screen and (max-width: 768px) {
     margin-left: 40px;
   }
+
+  &.cooming-soon {
+    color: $bittersweet;
+    font-style: italic;
+  }
 }
 
 .schedule-language-badge {
