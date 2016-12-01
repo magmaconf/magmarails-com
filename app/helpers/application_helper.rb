@@ -27,7 +27,7 @@ module ApplicationHelper
     when 'ready_to_evolve'
       image_tag('2017/futuro_auto.svg', class: 'reylero-macfly')
     else
-      image_tag('2017/futuro_auto.svg', class: 'reylero-macfly')
+      image_tag('2017/futuro_home.svg', class: 'reylero-home')
       #image_tag('2017/reyleros_selfie.svg', class: 'reylero-selfie')
     end
   end
@@ -35,7 +35,7 @@ module ApplicationHelper
   def render_class_name id
     if id == 'talks' || id == 'getting' || id == 'speakers'
       ''
-    elsif id == 'ready_to_evolve' or id == 'home' or id == 'about'
+    elsif id == 'ready_to_evolve'
       'more'
     else
       'less'
