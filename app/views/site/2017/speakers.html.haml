@@ -16,8 +16,8 @@
           .speaker-box.keynote
             .flipper-lg
               .normal-box
-                %img.masked.speaker-img{ src: speaker['image'] }
-                %img.unmasked.speaker-img{ src: speaker['image'] }
+                %img.masked.speaker-img{ src: get_image_url(speaker['image_field']['url'])}
+                %img.unmasked.speaker-img{ src: get_image_url(speaker['image_field']['url'])}
                 .luchador-name-lg
                   =speaker['name']
                 -#.luchador-nickname-lg
@@ -45,8 +45,8 @@
           .speaker-box
             .flipper-md
               .normal-box
-                %img.masked.speaker-img{ src: speaker['image'] }
-                %img.unmasked.speaker-img{ src: speaker['image'] }
+                %img.masked.speaker-img{ src: get_image_url(speaker['image_field']['url']) }
+                %img.unmasked.speaker-img{ src: get_image_url(speaker['image_field']['url'])}
                 .luchador-name-md
                   =speaker['name']
                 -#.luchador-nickname-md

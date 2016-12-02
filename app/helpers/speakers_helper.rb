@@ -21,4 +21,10 @@ module SpeakersHelper
     end
   end
 
+  def get_image_url(image)
+    if image
+      ENV['MAGMACONF_API_URL']+"/"+image
+    end
+  end
+
 end
