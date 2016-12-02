@@ -37,7 +37,7 @@
                   = speaker['company']
             = render 'pages/2017/partials/speakers/speaker_card_mobile', 
               locals: { name: speaker['name'], nickname: speaker['nickname'], bio: speaker['bio'],
-              image_src: speaker['image'] }
+              image_src: get_image_url(speaker['image_field']['url'])}
 
     %section#speaker-cards
       .pure-g-r.content
@@ -63,4 +63,4 @@
                   = speaker['company']
             = render 'pages/2017/partials/speakers/speaker_card_mobile', 
               locals: { name: speaker['name'], nickname: speaker['nickname'], bio: speaker['bio'],
-              image_src: speaker['image'] }
+              image_src: get_image_url(speaker['image_field']['url'])}
