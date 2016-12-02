@@ -10,9 +10,15 @@ $ ->
       $(this).find('p').hide()
 
   $('.normal-box').on 'click', ->
-    if !$(this).parent().parent().hasClass('flipped')
-      $('.flipped').removeClass 'flipped'
-    $(this).parent().parent().toggleClass 'flipped'
+    if !$(this).hasClass('no-bio')
+      if !$(this).parent().parent().hasClass('flipped')
+        $('.flipped').removeClass 'flipped'
+      $(this).parent().parent().toggleClass 'flipped'
 
   $('.close-icon').on 'click', (event) ->
     $(this).parent().parent().parent().removeClass('flipped');
+  
+  $('.no-bio').on 'mouseenter', (event) ->
+    $(this).css('cursor', 'default')
+    image = $(this).find('.speaker-img')
+    $(image).css('cursor', 'default')

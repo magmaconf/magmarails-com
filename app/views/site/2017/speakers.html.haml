@@ -15,7 +15,7 @@
         - @speakers_data[:keynotes].each do |speaker|
           .speaker-box.keynote
             .flipper-lg
-              .normal-box
+              %div{ class: "normal-box #{render_speaker_class(speaker['bio'])}"}
                 %img.masked.speaker-img{ src: get_image_url(speaker['image_field']['url'])}
                 %img.unmasked.speaker-img{ src: get_image_url(speaker['image_field']['url'])}
                 .luchador-name-lg
@@ -44,7 +44,7 @@
         - @speakers_data[:speakers].each do |speaker|
           .speaker-box
             .flipper-md
-              .normal-box
+              %div{ class: "normal-box #{render_speaker_class(speaker['bio'])}"}
                 %img.masked.speaker-img{ src: get_image_url(speaker['image_field']['url']) }
                 %img.unmasked.speaker-img{ src: get_image_url(speaker['image_field']['url'])}
                 .luchador-name-md
@@ -52,8 +52,7 @@
                 -#.luchador-nickname-md
                   =speaker['nickname']
                 .mt10
-                  %a.more
-                    See bio >
+                  =show_text_see_more speaker['bio']
               .info-box
                 .close-icon &times; 
                 .luchador-name-md

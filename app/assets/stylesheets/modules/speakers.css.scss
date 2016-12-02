@@ -48,6 +48,10 @@
     &:hover {
       cursor: pointer;
     }
+    
+    &.no-bio {
+      cursor: none;
+    }
   }
 
   .pure-g-r {
@@ -225,6 +229,10 @@
   cursor: pointer;
   .masked{ opacity: 0; }
   .more, .unmasked{ opacity: 1; }
+}
+
+.no-bio{
+  cursor: default;
 }
 
 .flipper {
