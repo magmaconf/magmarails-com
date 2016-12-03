@@ -16,8 +16,8 @@
           .speaker-box.keynote
             .flipper-lg
               %div{ class: "normal-box #{render_speaker_class(speaker['bio'])}"}
-                %img.masked.speaker-img{ src: get_image_url(speaker['image_field']['url'])}
-                %img.unmasked.speaker-img{ src: get_image_url(speaker['image_field']['url'])}
+                %img.masked.speaker-img{ src: speaker['image_field']['url']}
+                %img.unmasked.speaker-img{ src: speaker['image_field']['url']}
                 .luchador-name-lg
                   =speaker['name']
                 -#.luchador-nickname-lg
@@ -37,7 +37,7 @@
                   = speaker['company']
             = render 'pages/2017/partials/speakers/speaker_card_mobile', 
               locals: { name: speaker['name'], nickname: speaker['nickname'], bio: speaker['bio'],
-              image_src: get_image_url(speaker['image_field']['url'])}
+              image_src: speaker['image_field']['url']}
 
     %section#speaker-cards
       .pure-g-r.content
@@ -45,8 +45,8 @@
           .speaker-box
             .flipper-md
               %div{ class: "normal-box #{render_speaker_class(speaker['bio'])}"}
-                %img.masked.speaker-img{ src: get_image_url(speaker['image_field']['url']) }
-                %img.unmasked.speaker-img{ src: get_image_url(speaker['image_field']['url'])}
+                %img.masked.speaker-img{ src: speaker['image_field']['url'] }
+                %img.unmasked.speaker-img{ src: speaker['image_field']['url']}
                 .luchador-name-md
                   =speaker['name']
                 -#.luchador-nickname-md
@@ -63,4 +63,4 @@
                   = speaker['company']
             = render 'pages/2017/partials/speakers/speaker_card_mobile', 
               locals: { name: speaker['name'], nickname: speaker['nickname'], bio: speaker['bio'],
-              image_src: get_image_url(speaker['image_field']['url'])}
+              image_src: speaker['image_field']['url']}
