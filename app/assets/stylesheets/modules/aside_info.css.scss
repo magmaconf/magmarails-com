@@ -53,7 +53,7 @@
   }
 }
 .side-text-has-come {
-  @include span-cfp($wild-sand, 71.5px, 'Oswald', bold, uppercase, 71px);
+  @include span-cfp($wild-sand, 71px, 'Oswald', bold, uppercase);
   letter-spacing: -2px;
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
