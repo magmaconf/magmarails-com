@@ -169,27 +169,27 @@ en:
     span-time: 'From Nov. 1st to Dec. 30th 2013'
     stay: 'stay tuned'
     newsletter:
-      stay_up_to_day: 'Stay up-to-date on all things Magma Conf.'
+      stay_up_to_day: 'Stay up-to-date on all things MagmaConf.'
       subscribe: 'Subscribe to our newsletter.'
       thanks: 'Thanks for subscribing to our newsletter'
       keep: "We'll keep in touch!"
     work: 'We have a lot of work to do. Meanwhile please checkout'
     limit_ticket: 'limited to <span>50 tickets</span>'
     footer:
-      organised_by: Event sponsored by MagmaLabs © 2017
-      copyright: This site is protected by Copyright under U.S. and International
-        law. All rights reserved.
+      organised_by: Proudly sponsored by 
+      copyright: "&copy; 2016 This site is protected by Copyright under U.S. and International
+        law. All rights reserved."
     policy:
-      magma: 'Magma Conf 2017'
+      magma: 'MagmaConf 2017'
       title: 'Anti-Harassment Policy'
-      description: 'Magma Conf is designed to be a harassment-free conference
+      description: 'MagmaConf is designed to be a harassment-free conference
         experience for everyone involved. We basically ask all participants
         (Speakers, Staff, Attendees) to respect one another. Our anti-harassment
         policy can be found'
       here: 'here >>'
-      s_one: 'Magma Conf is designed to be a harassment-free conference experience for all participants. We welcome everyone regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, mother tongue, operational system of your devices, preferred programming language/framework, or anything else.  We embrace diversity.'
+      s_one: 'MagmaConf is designed to be a harassment-free conference experience for all participants. We welcome everyone regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, mother tongue, operational system of your devices, preferred programming language/framework, or anything else.  We embrace diversity.'
       s_two: 'We ask all participants to respect one another, and we will not tolerate harassment of conference participants in any form. Harassment includes offensive verbal comments related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention. Participants asked to stop any harassing behavior are expected to comply immediately.'
-      s_three: 'We reserve the right to warn or expel offenders from the event without a right of refund, and they will not be able to attend any future Magma Conf related events in any way.'
+      s_three: 'We reserve the right to warn or expel offenders from the event without a right of refund, and they will not be able to attend any future MagmaConf related events in any way.'
       s_four: 'Please contact a staff member in case you are being harassed, or are concerned about anything that might be related to this subject.'
       s_five: 'Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.'
       adapted: 'This anti-harassment policy was adapted from a sample provided by'
@@ -198,7 +198,7 @@ en:
       mail: 'info@magmaconf.com'
       phones: 'Telephones:'
       staff: 'Magma Staff'
-      emergency: 'Emergencies: 066'
+      emergency: 'Emergencies: 911'
       taxi: 'Taxi: 33 6 90 40'
       back_to: 'Back to MagmaConf'
   images:
