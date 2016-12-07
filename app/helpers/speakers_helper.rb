@@ -36,4 +36,8 @@ module SpeakersHelper
       content_tag :a, 'See bio >', class: 'more'
     end
   end
+  
+  def class_name name
+    "short" if name.length>20
+  end
 end

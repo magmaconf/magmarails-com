@@ -1,6 +1,6 @@
 .accordion-group
   .accordion-heading
-    %p.luchador-name-md= locals[:name]
+    %p{class: "luchador-name-md #{class_name(locals[:name])}"}= locals[:name]
     -#.luchador-nickname-md= locals[:nickname]
     %i.arrow
   .accordion-body
