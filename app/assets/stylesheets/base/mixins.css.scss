@@ -10,6 +10,12 @@
   width: #{$width}px;
 }
 
+@mixin sprite-icon-file($file, $x, $y, $height, $width, $ext: 'svg') {
+  background: image_url("#{$file}.#{$ext}") no-repeat #{$x}px #{$y}px;
+  height: #{$height}px;
+  width: #{$width}px;
+}
+
 @mixin footer-icons($pos-x, $pos-y) {
   width: 47px;
   height: 47px;

@@ -303,9 +303,9 @@
 
 .normal-box,
 .info-box {
+  box-sizing: border-box;
   margin: 0 auto;
   max-width: 236px;
-  box-sizing: border-box;
 }
 
 .info-box {
@@ -350,12 +350,12 @@
     overflow: hidden;
     width: 170px;
     a {
-      width: 47px;
-      height: 32px;
-      padding-top: 15px;
-      float: left;
       background: $social-bkg;
       border-radius: 50%;
+      float: left;
+      height: 32px;
+      padding-top: 15px;
+      width: 47px;
       &.twitter {
         margin: 0 8% 0;
       }

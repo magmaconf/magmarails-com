@@ -55,8 +55,11 @@
 .tide-image { max-width: 100% !important; }
 
 .tide-text a {
-  color: $mandy;
+  color: $picton-blue;
   text-decoration: none;
 
-  &:hover { text-decoration: underline; }
+  &:hover { 
+    color: $mandy;
+    text-decoration: underline; 
+  }
 }

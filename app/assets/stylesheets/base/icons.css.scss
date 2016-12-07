@@ -47,22 +47,7 @@
   width: 170px;
 
   a {
-    background-color: $social-bkg;
-    border-radius: 50%;
     float: left;
-    height: 47px;
-    outline: 0;
-    transition: background-color .5s ease;
-    width: 47px;
-
-
-    &.twitter {
-      margin: 0 8% 0;
-    }
-
-    &:hover {
-      background-color: $social-hover;
-    }
   }
 }
 
@@ -72,3 +57,19 @@
   }
 }
 
+.facebook {
+  @include sprite-icon-file('2017/assets', -435, -441, 43, 43);
+  @extend .social-shares;
+  margin-right: 10px;
+  &:hover {
+    @include sprite-icon-file('2017/assets', -588, -441, 43, 43);
+  }
+}
+
+.twitter {
+  @include sprite-icon-file('2017/assets', -505, -441, 43, 43);
+  @extend .social-shares;
+  &:hover {
+    @include sprite-icon-file('2017/assets', -658, -441, 43, 43);
+  }
+}
