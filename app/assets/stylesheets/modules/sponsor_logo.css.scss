@@ -93,6 +93,14 @@
   }
 }
 
+.sponsor-logo-stickermule {
+  background-image: url('2017/sponsors/sponsor-sticker-mule-blue@2x.png');
+  @include retina { background-image: url('2017/sponsors/sponsor-sticker-mule-blue@2x.png'); }
+  &:hover {
+    background-image: url('2017/sponsors/sponsor-sticker-mule-red@2x.png');
+  }
+}
+
 .sponsor-logo-your-logo {
   background-image: url('2017/sponsors/your-logo@2x.png');
   @include retina { background-image: url('2017/sponsors/your-logo@2x.png'); }
@@ -163,4 +171,18 @@
   background-image: url('2017/sponsors/contact_sponsor@2x.jpg');
   @include retina { background-image: url('2017/sponsors/contact_sponsor@2x.jpg'); }
 }
+//Media sponsors
+.stickermule {
+  background-image: url('2017/sponsors/stickermule.png');
+}
 
+.m-sponsor {
+  float: left;
+  width: 33.3%;
+}
+
+.centered {
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
