@@ -317,6 +317,10 @@ input[type=submit] {
   @include mq-tablet { margin: 5px 0; }
 }
 
+.mt0--s {
+  @include mq-mobile { margin-top: 0; }
+}
+
 
 // Line height
 .lh-12 { line-height: 12px; }
