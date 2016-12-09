@@ -44,10 +44,10 @@ class @Gallery
     @page += 1
   setGalleryHeight: ->
     setTimeout (->
-      $('#photo-gallery').css 'height', ($('.magma-info').height() - $(".nav-menu").height()) + 15
+      $('#photo-gallery').css 'height', ($('.magma-info').height() - $(".nav-menu").height()) + 16
     ), 2000
     $(window).on 'resize', ->
-      $('#photo-gallery').css 'height', ($('.magma-info').height() - $(".nav-menu").height()) + 15
+      $('#photo-gallery').css 'height', ($('.magma-info').height() - $(".nav-menu").height()) + 16
 
   bindLoadMoreItemEvents: ->
     $loadMoreItemsButton = $('#load-more-items')
