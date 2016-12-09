@@ -17,6 +17,10 @@
   width: 100%;
   z-index: 1003;
 
+  @media only screen and (max-width: 1320px) {
+    left: 0;
+  }
+
   .nav-menu {
     background-color: $white;
     overflow: auto;
@@ -74,14 +78,6 @@
 
         &.active {
           border-bottom: 2px solid #fff;
-        }
-
-        @media only screen and (min-width: 468px) and (max-width: 768px) {
-          font-size: 9.6px;
-        }
-
-        @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-          font-size: 9.6px;
         }
       }
 
