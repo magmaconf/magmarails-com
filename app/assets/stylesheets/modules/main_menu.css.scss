@@ -12,19 +12,21 @@
 
 #main-menu {
   margin: 0 auto;
-  width: 100%;
-  z-index: 1003;
   position: fixed;
   top: 0;
-  @media screen and (min-width: 767px) and (max-width: 1150px) {
+  width: 100%;
+  z-index: 1003;
+
+  @media only screen and (max-width: 1320px) {
     left: 0;
   }
 
   .nav-menu {
     background-color: $white;
+    overflow: auto;
     width: 100%;
 
-    .link-text { color: $fonts; }
+    .link-text { color: $kabul; }
     .link {
       border-right: 1px solid $bkg;
       &:last-child{ border: none; }
@@ -32,8 +34,8 @@
 
 
     a, span {
-      &:hover, &.active { color: $active-link-color; }
-      &.active { font-weight: 500; }
+      &:hover, &.active { color: $bittersweet; }
+      &.active { font-weight: bold; }
     }
   }
 
@@ -55,17 +57,17 @@
       border-right: 1px solid #ada193;
       display: inline-block;
       height: 15px;
-      padding: 0 15px;
+      padding: 0 10px;
 
       @media screen and (max-width: 839px){ padding: 0 9px; }
 
       a , span, &:after {
         color: #ada193;
         display: block;
-        font-size: 95%;
-        font-family: Oswald;
+        font-family: 'Lato';
+        font-size: 16px; 
         font-weight: 300;
-        letter-spacing: 2px;
+        letter-spacing: -0.5px;
         margin-top: -2px;
         text-decoration: none;
         text-transform: uppercase;
@@ -73,6 +75,7 @@
         &:hover, &.active, &.register-now-link {
           color: #fff;
         }
+
         &.active {
           border-bottom: 2px solid #fff;
         }
@@ -212,7 +215,7 @@
 
     .nav-menu {
       .link { border: none; }
-      .link-text { color: #514640; }
+      .link-text { color: $stratos; }
     }
 
     ul {
@@ -301,5 +304,18 @@
     &:hover {
       color: white !important;
     }
+  }
+}
+
+.getting-to-desktop {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    display: none !important;
+  }
+}
+
+.getting-to-tbt {
+  display: none !important;
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    display: block !important;
   }
 }

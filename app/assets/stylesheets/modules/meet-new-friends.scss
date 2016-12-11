@@ -1,0 +1,220 @@
+.meet-new-friends-paragraph {
+  background-color: white;
+  color: $gulf-blue;
+  font-family: 'Open Sans';
+  font-size: 14px;
+
+  &.bold {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.cfp-container {
+  background-color: $white;
+  padding: 20px 50px 20px 230px;
+  margin-top: 20px;
+  width: auto; 
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    padding: 20px 80px 20px 130px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    padding: 20px 80px 20px 150px;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    padding: 20px 80px;
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.reylero-futuro {
+  height: 295px;
+  margin-left: 20px;
+  width: 279px;
+
+  &.no-lg {
+    @media only screen and (max-width: 768px) {
+      left: 50%;
+      margin-left: 0;
+      margin-top: 20px;
+      position: relative;
+      transform: translateX(-50%);
+      width: 91px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    left: 50%;
+    margin-left: 0;
+    margin-top: 20px;
+    position: relative;
+    transform: translateX(-50%);
+    width: auto;
+  }
+}
+
+.reylero-pirata {
+  height: 295px;
+  width: 279px;
+}
+
+.reyleros-container {
+  .r-container {
+    border-bottom: 2px solid $alto; 
+    margin-left: 0;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    @media only screen and (max-width: 768px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  span {
+    color: $stratos;
+    font-family: 'Lato';
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 30px;
+    position: relative;
+    text-transform: uppercase;
+
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      font-size: 20px;
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+      font-size: 27px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      font-size: 20.7px;
+      margin-left: 0;
+    }
+
+    &:before {
+      background: image_url('2017/star-1.png') no-repeat;
+      content: '';
+      height: 25px;
+      left: -30px;
+      position: absolute;
+      top: 10px;
+      width: 25px;
+
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        top: 0;
+      }
+
+      @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+        top: 5px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        background: image_url('2017/small_yellow_star.png') no-repeat;
+        left: -20px;
+        top: 5px;
+      }
+    }
+
+    &:after {
+      background: image_url('2017/star-1.png') no-repeat;
+      content: '';
+      height: 25px;
+      position: absolute;
+      right: -35px;
+      top: 10px;
+
+      width: 25px;
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        top: 0;
+      }
+
+      @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+        top: 5px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        background: image_url('2017/small_yellow_star.png') no-repeat;
+        right: -35px;
+        top: 5px;
+      }
+    }
+  }
+
+  h2 {
+    @extend .f-betty-lt;
+    color: $bittersweet;
+    font-weight: 100;
+    font-size: 28px;
+    margin-left: 5px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    text-transform: none;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 18px;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+
+  h3 {
+    color: $stratos;
+    font-family: 'Lato';
+    font-size: 18px;
+    text-transform: none;
+    @media only screen and (max-width: 768px) {
+      font-size: 12px;
+      margin-top: 5px;
+      text-align: center;
+    }
+  }
+
+  p {
+    color: $boulder;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    width: 440px;
+
+    @media only screen and (max-width: 1300px) {
+      width: auto;
+    }
+
+    @media only screen and (max-width: 768px) {
+      font-size: 13px;
+      letter-spacing: -0.1px;
+      padding: 0 20px;
+      text-align: center;
+      width: auto;
+    }
+  }
+}
+
+.reylero-container-left {
+  padding-left: 40px;
+}
+
+.container-desktop {
+  display: none;
+  @media only screen and (min-width: 767px) {
+    display: block;
+  }
+}
+
+.container-mobile {
+  display: none;
+  @media only screen and (max-width: 767px) {
+    display: block;
+  }
+}

@@ -1,6 +1,23 @@
 .side-text {
   margin: 20px auto;
-  max-width: 212px;
+  max-width: 300px;
+
+  &.border {
+    border-bottom: 4px $picton-blue solid;
+    border-top: 4px $picton-blue solid; 
+    width: 158.3px;
+  }
+
+  &.less {
+    margin-top: -50px;
+  }
+
+  &.more {
+    margin-top: 350px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      margin-top: 290px;
+    }
+  }
 }
 
 .side-text-have{
@@ -23,32 +40,131 @@
   line-height: 25px;
 }
 
-.side-text-hottest { font-size: 37px; }
-
-.side-text-tech {
-  font-size: 94px;
-  margin-top: 13px;
-  line-height: 30px;
-}
-
-.side-text-conference {
-  font-size: 34px;
-  line-height: 30px;
-  margin-top: 15px;
-}
-
-.side-text-mexico {
-  font-size: 31px;
-  line-height: 30px;
-}
-
 .side-text-we-need { font-size: 53px; }
 .side-text-your { font-size: 88px; }
 .side-text-support { font-size: 52px; }
 
-@-moz-document url-prefix(){
- .magma-info{ background: $mandy; }
+.side-text-evolution {
+  @include span-cfp($bittersweet, 71.5px, 'Oswald', bold, uppercase);
+  letter-spacing: -2px;
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 56.5px;
+  }
 }
+.side-text-has-come {
+  @include span-cfp($wild-sand, 71px, 'Oswald', bold, uppercase);
+  letter-spacing: -2px;
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 56.5px;
+  }
+}
+
+.side-text-get-involved {
+  @include span-cfp($koromiko, 54px, 'Oswald', bold, uppercase);
+  letter-spacing: 0.1px;
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 42px;
+  }
+}
+
+.side-text-we-need {
+  @include span-cfp($wild-sand, 36.5px, 'Lato', 300, uppercase);
+  letter-spacing: -0.7px;
+  margin-top: 8px;
+}
+
+.side-text-your {
+  @include span-cfp($koromiko, 71px, 'Oswald', bold, uppercase);
+}
+
+.side-text-support {
+  @include span-cfp($bittersweet, 43px, 'Oswald', bold, uppercase);
+  margin-bottom: 8px;
+}
+
+.side-text-march {
+  @include span-cfp($koromiko, 43.7px, 'Oswald', bold, uppercase);
+  letter-spacing: -0.8px;
+  &:before {
+    background: asset_url('2017/star_grey_1.png');
+    background-size: 22px;
+    content: ' ';
+    display: inline-block;
+    height: 20px;
+    margin: 15px;
+    width: 20px;
+  }
+
+  &:after {
+    background: asset_url('2017/star_grey_1.png');
+    background-size: 22px;
+    content: ' ';
+    display: inline-block;
+    height: 20px;
+    margin: 10px;
+    margin-left: 10px;
+    width: 20px;
+  }
+}
+
+.side-text-date {
+  @include span-cfp($bittersweet, 43.7px, 'Oswald', bold, none);
+  letter-spacing: -0.8px;
+  margin-top: 5px;
+}
+
+.side-text-cfp-place {
+  @include span-cfp($white, 25.7px, 'Oswald', bold, none);
+  letter-spacing: -0.5px;
+  margin-top: 10px;
+}
+
+.btn-register-circular {
+  background-color: $white;
+  border-radius: 50%;
+  height: 209px;
+  margin: 50px auto;
+  position: relative;
+  width: 209px;
+
+  .tickets {
+    @include span-cfp($stratos, 21px, 'Oswald', 400, uppercase);
+    left: 50%;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 31%;
+    transform: translateY(-31%) translateX(-50%);
+    width: 139px;
+  }
+
+  .soon {
+    @include span-cfp($stratos, 69px, 'Oswald', 500, uppercase);
+    left: 49%;
+    letter-spacing: -3.8px;
+    position: absolute;
+    top: 65%;
+    transform: translateY(-70%) translateX(-50%);
+  }
+}
+
+.dotted-circle {
+  border-radius: 50%;
+  border-style: dotted;
+  height: 184px;
+  left: 10px;
+  margin: 0 auto;
+  position: absolute;
+  top: 10px;
+  width: 184px;
+}
+
+@-moz-document url-prefix(){
+ .magma-info{ background: $stratos; }
+}
+
 .magma-info {
   float: left;
   min-height: 927px;
@@ -70,6 +186,90 @@
     }
 
     &.iphone{ margin: 30px 0 12px -50px; }
+  }
+
+  .reylero-beach {
+    height: 220px;
+    width: 280px;
+
+    &.iphone{ margin: 30px 0 12px -50px; }
+  }
+
+  .reylero-selfie {
+    height: 439px;
+    position: relative;
+    top: -80px;
+    width: 407px;
+  }
+
+  .reylero-sponsor {
+    height: 262px;
+    width: 264px;
+  }
+
+  .reylero-godinez {
+    height: 457px;
+    width: 279px;
+  }
+
+  .reylero-home {
+    height: auto;
+    margin-bottom: 70px;
+    width: 479px;
+  }
+
+  .reylero-pirata {
+    height: 450px;
+    width: 273px;
+  }
+
+  .reylero-macfly-extended {
+    display: none;
+    height: 340px;
+    left: 0;
+    position: absolute;
+    top: 60px;
+  }
+
+  .reylero-macfly-extended-home {
+    height: 340px;
+  }
+
+  .reylero-macfly {
+    height: 340px;
+    left: 0;
+    position: absolute;
+    top: 60px;
+    width: 666px;
+    z-index: 1;
+    @media only screen and (min-width: 1880px) {
+      left: 0;
+    }
+    @media only screen and (min-width: 1150px) and (max-width: 1320px) {
+      width: 600px;
+    }
+    @media only screen and (max-width: 1150px) {
+      top: 120px;
+      width: 690px;
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1150px) {
+      width: 527px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      width: 472px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+      width: 472px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+      width: 355px;
+    }
+    @media only screen and (max-width: 767px) and (orientation: landscape) {
+      left: 50%;
+      margin: 0 auto;
+      transform: translateX(-50%);
+      width: 400px;
+    }
   }
 
   .hero-text {
@@ -104,8 +304,6 @@
     a {
       display: inline-block;
       float: none;
-
-      &.twitter { margin: 0 35px 0; }
     }
   }
 
@@ -160,16 +358,26 @@
     }
 
     .content-text {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 14px;
       color: white;
       display: block;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
       line-height: 18px;
 
       &.highlight {
         font-weight: bold;
         margin: 5px 0 0 0;
       }
+    }
+
+    .sponsored-by {
+      color: $picton-blue;
+      display: block;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      letter-spacing: -0.4px;
+      line-height: 18px;
+      padding-top: 15px;
     }
 
     .sub-content-text {
@@ -280,19 +488,42 @@
 
 .logo-container-mobile {
   width: 100%;
+  height: 40px;
 }
 
 .magma-logo {
-  display: block;
-  height: 37px;
-  margin: 10px auto 10px;
-  width: 105px;
+  display: flex;
+  height: 50px;
+  margin: 10px auto 30px;
+  width: 143px;
+
+  @media only screen and (max-width: 768px) {
+    margin: 60px auto 30px;
+  }
+  
+  img {
+    z-index: 1;
+  }
 }
 
-.magma-logo-mobile{
+.magma-logo-mobile {
   height: 33px;
   margin: 10px auto 5px;
-  width: 90px;
   text-align: center;
-  > img { width: 70px; }
+  width: 90px;
+  > img { 
+    position: relative;
+    top: -5px;
+  }
+}
+
+.magmaconf-logo {
+  height: 43px;
+  margin-top: 5px;
+  width: 124px;
+}
+
+.reylero-sponsor {
+  height: 275px;
+  width: 206px;
 }

@@ -1,0 +1,17 @@
+.logo-container.bgc-blck.js-animated-background
+= link_to root_url, class: 'magma-logo' do
+  = image_tag('2017/magmaconf2017.png')
+= render_reylero_img @id
+=image_tag('2017/futuro_auto_extendido.svg', class: 'hidden reylero-macfly-extended')
+%div{ class: "side-text #{render_class_name @id}"}
+  %span.side-text-evolution Evolution 
+  %span.side-text-has-come Has Come!
+  %span.side-text-get-involved Get Involved
+.btn-register-circular
+  .dotted-circle
+    %span.tickets Tickets on Sale 
+    %span.soon Soon
+.side-text
+  %span.side-text-march March
+  %span.side-text-date 29, 30 and 31
+  %span.side-text-cfp-place Manzanillo, Colima - MX

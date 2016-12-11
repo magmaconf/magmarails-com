@@ -2,9 +2,11 @@
   = render 'pages/2017/partials/pages_main_menu'
   #schedule
     .container.schedule-container
-      .pure-g-
-        .pure-u-1-1.ta-c
-          .schedule-text-arena-magma
+      .pure-g-r
+        .pure-u-1-1.ta-c.mt10.my15--m.mx10
+          .schedule-ring-icon
+            %h2.about-magma-title.star.fbg
+              Arena&nbsp;&nbsp;&nbsp;Magma 
       .pure-g-r
         .pure-u-1-3.ta-c
           = render 'pages/2017/partials/schedule/small_stars_list'
@@ -12,23 +14,32 @@
           %p.schedule-title= "#{ t('title') } #{ t('menu.schedule') }"
         .pure-u-1-3.ta-c
           = render 'pages/2017/partials/schedule/small_stars_list'
+      .schedule-arrow-prev.js-prev-day
+        .schedule-arrow-line.schedule-arrow-prev__right
+        .schedule-arrow-line.schedule-arrow-prev__left
+
+      .schedule-arrow-next.js-next-day
+        .schedule-arrow-line.schedule-arrow-next__right
+        .schedule-arrow-line.schedule-arrow-next__left
+
       %table.schedule-table
         %thead
           %tr
-            %th
+            %th.hour_slot
+            - counter = 0
             -@schedule_data[:events].each do |e|
-              %th.table-day-header
+              -counter+=1
+              %th{class: "table-day-header day_#{counter}"}
                 .schedule-day-container
                   %h2.schedule-day-name
                     =e['day_name']
         %tbody
           -@schedule_data[:schedule].each do |s|
             %tr
-              -if has_talks? s 
-                %td{ colspan: 4, class: 'schedule-table-row schedule-table-row__small' }
-                  %h2.schedule-time-legend.text-left=show_hour s
-              -else
-                %td.schedule-table-row.schedule-table-row__small
-                  %h2.schedule-time-legend=show_hour s
+              %td.schedule-table-row.schedule-table-row__small.hour_slot
+                %h2.schedule-time-legend=show_hour s
+                - counter = 0
                 - @schedule_data[:events].each do |event|
-                  =show_talk s[1][event['date']]
+                  - counter+=1
+                  =show_talk s[1][event['date']], counter
+                - counter = 0 if counter == 3

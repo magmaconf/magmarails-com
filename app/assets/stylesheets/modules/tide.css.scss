@@ -17,7 +17,11 @@
 }
 
 .tide-image-container-small {
-  height: 325px;
+  height: 348px;
+
+  @include mq-mobile {
+    height: auto;
+  }
 }
 
 .tide-text-container {
@@ -27,12 +31,16 @@
     height: 348px;
     vertical-align: middle;
 
+    @media (min-width: 768px) and (max-width: 1024px) { 
+      height: 200px;
+    }
+
+    @media (min-width: 568px) and (max-width: 768px) {
+      height: auto;
+    }
+
     @include mq-mobile { display: none; }
   }
-}
-
-.tide-text-container {
-  &:before { height: 325px; }
 }
 
 .tide-text {
@@ -47,8 +55,11 @@
 .tide-image { max-width: 100% !important; }
 
 .tide-text a {
-  color: $mandy;
+  color: $picton-blue;
   text-decoration: none;
 
-  &:hover { text-decoration: underline; }
+  &:hover { 
+    color: $mandy;
+    text-decoration: underline; 
+  }
 }

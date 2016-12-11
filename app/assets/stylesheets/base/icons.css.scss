@@ -1,82 +1,53 @@
 //ICONS
-[class *='icon-'] {
-  background: image_url('sprite.svg') no-repeat;
-  background-size: 174px 180px;
-  display: inline-block;
-}
-
 .icon-facebook {
-  @include footer-icons(20px, -8px);
+  @include sprite-icon(0, 0, 24, 12);
+  display: block;
+  left: 0;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 
   &:hover {
-    @include footer-icons(20px, -83px);
+    @include sprite-icon(0, -49, 24, 12);
   }
 }
 
 .icon-twitter {
-  @include footer-icons(-40px, -8px);
+  @include sprite-icon(-76, -4, 18, 16);
+  display: block;
+  left: 0;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 
   &:hover {
-    @include footer-icons(-40px, -83px);
+    @include sprite-icon(-75, -53, 18, 16);
   }
 }
 
 .icon-google {
-  @include footer-icons(-101px, -8px);
+  @include sprite-icon(-157, -3, 21, 21);
+  display: block;
+  left: 0;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 
   &:hover {
-    @include footer-icons(-101px, -83px);
+    @include sprite-icon(-157, -52, 21, 21);
   }
 }
 
-@-moz-document url-prefix(){
-  .icon-facebook {
-    @include footer-icons(20px, 11px);
-
-    &:hover {
-      @include footer-icons(20px, -86px);
-    }
-  }
-
-  .icon-twitter {
-    @include footer-icons(-40px, 11px);
-
-    &:hover {
-      @include footer-icons(-40px, -86px);
-    }
-  }
-
-  .icon-google {
-    @include footer-icons(-101px, 11px);
-
-    &:hover {
-      @include footer-icons(-101px, -86px);
-    }
-  }
-};
-
 .social {
-  margin-top: 18px;
+  margin-top: 25px;
   margin-bottom: 30px;
   width: 170px;
 
   a {
-    background-color: $social-bkg;
-    border-radius: 50%;
     float: left;
-    height: 47px;
-    outline: 0;
-    transition: background-color .5s ease;
-    width: 47px;
-
-
-    &.twitter {
-      margin: 0 8% 0;
-    }
-
-    &:hover {
-      background-color: $social-hover;
-    }
   }
 }
 
@@ -86,3 +57,19 @@
   }
 }
 
+.facebook {
+  @include sprite-icon-file('2017/assets', -435, -441, 43, 43);
+  @extend .social-shares;
+  margin-right: 10px;
+  &:hover {
+    @include sprite-icon-file('2017/assets', -588, -441, 43, 43);
+  }
+}
+
+.twitter {
+  @include sprite-icon-file('2017/assets', -505, -441, 43, 43);
+  @extend .social-shares;
+  &:hover {
+    @include sprite-icon-file('2017/assets', -658, -441, 43, 43);
+  }
+}

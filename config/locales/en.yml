@@ -6,7 +6,7 @@ en:
       wrestling matches and the occasional drink-a-thon. It is sure to be an
       unforgettable experience.
     culture_2015_description:
-      After the conferences are done for the day, the Magma Village is where it´s all at.
+      After the conferences are done for the day, the MagmaVillage is where it´s all at.
       Enjoy a traditional dinner party, where there may be some mariachi music, outdoor games,
       hang out with other attendees, take a swim in a pool or the warm ocean, or join the
       acoustic impromptu Magma band. You’ll wish you had more time to spend there!
@@ -19,11 +19,11 @@ en:
       engineers with experience, or hoping to gain experience, building
       cutting-edge web apps. Come and learn not only from our awesome speakers,
       but also from our diverse and experienced audience.
-    magma_village: <span>Welcome to</span><br/><span>the magma village</span>
-    magma_village_description: An unique alternative to a traditional hotel, Magma Village
+    magma_village: Welcome to the magma village
+    magma_village_description: An unique alternative to a traditional hotel, MagmaVillage
       offers attendees the opportunity to continue learning from each other
       even after talks have finished for the day.<br/><br/> Part of the
-      exclusive Santiago Beach Club, Magma Village is located on the best
+      exclusive Santiago Beach Club, MagmaVillage is located on the best
       beach in Manzanillo. Relax on the sand after a long day of talks, or
       dip your toes in the balmy Mexican ocean.
     manzanillo: Manzanillo, Mexico
@@ -37,19 +37,44 @@ en:
       dining under a breezy, thatched-roof palapa, El Oasis restaurant has become an icon for
       tourists and locals, offering an international cuisine menu.
     culture_activities: Activities
+  about2017:
+    culture_2017_description:
+      After the conferences are done for the day, the MagmaVillage is where it’s all at.
+      Enjoy a traditional dinner party, where there may be some mariachi music, outdoor games, hang
+      out with other attendees, take a swim in a pool or the warm ocean, or join the acoustic
+      impromptu MagmaBand. You’ll wish you had more time to spend there!
+    in_all: in all of Mexico
+    experience: Experience
+    hottest: The Hottest Tech Conference
+    magmaconf_is_title: What is MagmaConf? 
+    magmaconf_description: MagmaConf is one of the most important community tech conferences in
+      Mexico. We showcase innovative Software Development, UX/UI Design and Mobile sessions for
+      engineers and designers that build cutting edge websites and applications. Our Conference
+      takes place at a tropical venue that allows fun and casual networking.<br/><br/><br/>
+      <span class="fw-bld">Get involved in the MagmaConf experience to evolve your knowledge and meet new friends!</span>
+    magma_village: What is the MagmaVillage? 
+    magma_village_description: An unique alternative to a traditional hotel, MagmaVillage offers
+      attendees the opportunity to continue learning from each other even after talks have
+      finished for the day. <br/>Part of the exclusive Santiago Beach Club, MagmaVillage is located on
+      the best beach in Manzanillo. Relax on the sand after a long day of talks, or dip your toes
+      in the balmy Mexican ocean.
+    manzanillo: Manzanillo, Mexico
+    venue: Where is the event happening?
+    venue_2015_description: On this edition, the venue of MagmaConf will be the <b>“Centro de Tecnología Educativa Universidad de Colima Campus El Naranjo”</b>. The auditorium offers a comfortable and fresh ambient to enjoy every talk and do networking during coffee breaks. When daily sessions end, we will be ready to hit the beach to live the whole MagmaConf Experience. 
+    culture_activities: What activities are there? 
   getting_manzanillo:
     its_really_easy: "it's really easy"
     manzanillo:
       title: 'flying to manzanillo'
-      description: 'Just fifteen minutes from the conference venue,
-        the Playa de Oro International Airport connects directly with Los Angeles,
+      description: 'Just twenty five minutes from the conference venue,
+        the <b>Playa de Oro</b> International Airport connects directly with Los Angeles,
         Vancouver, Houston, Phoenix, and Mexico City. Major airlines that offer
         service to the airport include Alaska Airlines, Delta, AeroMexico,
         Interjet, CanJet, US Airways, United Express, and Volaris. Flights with
         one or two stops are available from San Francisco, Denver, New York,
         Chicago, and Washington D.C. <br/><br/> Free shuttles from the Manzanillo airport to
-        Magma Village will be available on Tuesday, June 3rd and Wednesday, June 4th.
-        <br/><br/>Free shuttles from Magma Village to the Manzanillo airport will be
+        MagmaVillage will be available on Tuesday, June 3rd and Wednesday, June 4th.
+        <br/><br/>Free shuttles from MagmaVillage to the Manzanillo airport will be
         available on Friday, June 6th, Saturday, June 7th and Sunday, June 8th.'
     guadalajara:
       title: 'flying to guadalajara'
@@ -62,7 +87,7 @@ en:
     bus:
       title: 'getting from guadalajara to manzanillo'
       description: "
-        Shuttles from the Guadalajara airport to Magma Village will be available
+        Shuttles from the Guadalajara airport to MagmaVillage will be available
         on Tuesday, June 3rd. Tickets are $25 and can be purchased in the
         <a href='https://store.magmaconf.com/products/guadalajara-airport-shuttle'
         target='_blank'>Magma Store</a>.<br/><br/> If you will be taking a bus to
@@ -79,7 +104,7 @@ en:
       description: "The city of Manzanillo, in the Mexican state of Colima, is known for
         its large and bustling port and beautiful beaches. Known as the “Sailfish Capital of
         the World”, the city is popular for its deep-sea fishing and temperate waters. The De
-        Santiago peninsula, where MagmaConf and Magma Village are located, is a well-known
+        Santiago peninsula, where MagmaConf and MagmaVillage are located, is a well-known
         tourist destination with excellent swimming, snorkeling and scuba diving available.
         <br/><br/> Manzanillo is also home to the twin bays, almost identical in length. Bahia
         de Manzanillo hosts much of the shipping and commercial activities of Manzanillo, while
@@ -88,36 +113,40 @@ en:
         With the advent of MagmaConf, we hope to develop a new reputation - the city of hackers."
     planning:
       title: 'Planning Your Trip'
-      description: "We recommend that conference attendees arrive in Manzanillo on Tuesday,
-        June 3rd, and stay through Saturday, June 7th. Housing will be available at Magma
-        Village from the 3rd to the 7th and arriving the day before the conference begins
-        ensures that you will have time to settle in and meet your fellow conference attendees.
-        Shuttles will be available on both days to take attendees to and from the airport and
-        Magma Village/nearby hotels. For more information about Magma Village or recommendations
-        for nearby hotels, please contact <a href='mailto:info@magmaconf.com'>info@magmaconf.com.</a>"
-    map_description: 'A beautiful oasis on the Weast Coast of Mexico, Manzanillo is easy accessible
+      description: "We recommend that conference attendees arrive in Manzanillo on Tuesday, March
+        28th, and stay through Saturday, April 1st. Housing will be available at MagmaVillage from
+        the 28th to the 1st and arriving the day before the conference begins ensures that you
+        will have time to settle in and meet your fellow conference attendees. Shuttles will be
+        available on both days to take attendees to and from the airport and MagmaVillage/nearby
+        hotels. For more information about MagmaVillage or recommendations for nearby hotels,
+        please contact <a href='mailto:info@magmaconf.com'>info@magmaconf.com.</a>"
+    map_description: 'A beautiful oasis on the West Coast of Mexico, Manzanillo is easy accessible
       from numerous major hubs across the United States and Canada.'
     to_get_there: 'to get there'
   menu:
-    about: About Magma
+    about: About
+    ready_to_evolve: Ready to Evolve
+    talks: Talks
     blog: Blog
-    getting_manzanillo: 'Getting to manzanillo'
+    getting_manzanillo: 'Getting to Manzanillo'
+    getting_manzanillo_abr: 'Getting to MZO'
     magma_blog: Magma Blog
     menu: MENU
     register: REGISTER
     schedule: Schedule
+    talks: Talks
     speakers: Speakers
     sponsors: Sponsors
     workshops: Workshops
     contact-us: CONTACT US
     store: STORE
-  title: 'MagmaConf 2015'
+  title: 'MagmaConf 2017'
   home:
     hero_text: "WE'RE BACK!"
-    dates_text: 'JUNE 18, 19 & 20'
-    content_text: 'WEB/MOBILE DEVELOPMENT'
-    content_text_line2: 'RUBY, RAILS, GO, JAVASCRIPT,'
-    content_text_line3: 'AND MORE!'
+    dates_text: 'MARCH 29, 30 & 31'
+    content_text: 'SOFTWARE DEVELOPMENT'
+    content_text_line2: 'UX/UI DESIGN, MOBILE'
+    content_text_line3: 'SESSIONS AND MORE!'
     keynote_text: "2 KEYNOTES"
     keynote_text_line2: "AWESOME TALKS!"
     keynote_text_line3: "ROUNDTABLE DISCUSSIONS"
@@ -127,38 +156,40 @@ en:
     venue_text: 'MANZANILLO, COL. MX'
     for: 'for-en.svg'
     cfp: 'cfp-en.svg'
+    magma_is_a: MagmaConf is a unique interactive experience that allows you to learn, network and
+      have fun with Engineering and Design experts from all over the world in a tropical ambient. 
+      Get involved to evolve your knowledge and meet new friends!
     magma_welcome_dev: MagmaConf welcomes developers, engineers and designers
       from all over the world. Come and learn from our speakers and participants
       about the hottest tools and techniques out there!
     mexico_primer_dev_conf: Mexico's Premier modern web development conference
-    one_of_the_most_important: One of the most important web development
-      conferences in Mexico, MagmaConf features talks and discussions about
-      Ruby, Rails, Front-end and more.
+    magmaconf_come_and_live: Come and live the hottest tech conference in all of Mexico!
+    magmaconf_description: MagmaConf is a unique interactive experience that allows you to learn, network and have fun with Engineering and Design experts from all over the world in a tropical ambient. Get involved to evolve your knowledge and meet new friends!
     ticket: 'buy-ticket.svg'
     span-time: 'From Nov. 1st to Dec. 30th 2013'
     stay: 'stay tuned'
     newsletter:
-      stay_up_to_day: 'Stay up-to-date on all things Magma Conf.'
+      stay_up_to_day: 'Stay up-to-date on all things MagmaConf.'
       subscribe: 'Subscribe to our newsletter.'
       thanks: 'Thanks for subscribing to our newsletter'
       keep: "We'll keep in touch!"
     work: 'We have a lot of work to do. Meanwhile please checkout'
     limit_ticket: 'limited to <span>50 tickets</span>'
     footer:
-      organised_by: Proudly sponsored by MagmaLabs © 2015
-      copyright: This site is protected by Copyright under U.S. and International
-        law. All rights reserved.
+      organised_by: Proudly sponsored by 
+      copyright: "&copy; 2016 This site is protected by Copyright under U.S. and International
+        law. All rights reserved."
     policy:
-      magma: 'Magma Conf 2015'
+      magma: 'MagmaConf 2017'
       title: 'Anti-Harassment Policy'
-      description: 'Magma Conf is designed to be a harassment-free conference
+      description: 'MagmaConf is designed to be a harassment-free conference
         experience for everyone involved. We basically ask all participants
         (Speakers, Staff, Attendees) to respect one another. Our anti-harassment
         policy can be found'
       here: 'here >>'
-      s_one: 'Magma Conf is designed to be a harassment-free conference experience for all participants. We welcome everyone regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, mother tongue, operational system of your devices, preferred programming language/framework, or anything else.  We embrace diversity.'
+      s_one: 'MagmaConf is designed to be a harassment-free conference experience for all participants. We welcome everyone regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, mother tongue, operational system of your devices, preferred programming language/framework, or anything else.  We embrace diversity.'
       s_two: 'We ask all participants to respect one another, and we will not tolerate harassment of conference participants in any form. Harassment includes offensive verbal comments related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention. Participants asked to stop any harassing behavior are expected to comply immediately.'
-      s_three: 'We reserve the right to warn or expel offenders from the event without a right of refund, and they will not be able to attend any future Magma Conf related events in any way.'
+      s_three: 'We reserve the right to warn or expel offenders from the event without a right of refund, and they will not be able to attend any future MagmaConf related events in any way.'
       s_four: 'Please contact a staff member in case you are being harassed, or are concerned about anything that might be related to this subject.'
       s_five: 'Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.'
       adapted: 'This anti-harassment policy was adapted from a sample provided by'
@@ -167,7 +198,7 @@ en:
       mail: 'info@magmaconf.com'
       phones: 'Telephones:'
       staff: 'Magma Staff'
-      emergency: 'Emergencies: 066'
+      emergency: 'Emergencies: 911'
       taxi: 'Taxi: 33 6 90 40'
       back_to: 'Back to MagmaConf'
   images:
@@ -193,7 +224,7 @@ en:
       email: 'E-mail'
       submit: 'Subscribe'
   daily:
-    copy-right: 'MagmaLabs &copy; 2015. This site is protected by copyright under US and international law. All rights reserved'
+    copy-right: 'MagmaLabs &copy; 2016. This site is protected by copyright under US and international law. All rights reserved'
     five: 'NO. 5'
     page: 'PAGE 1'
     page_two: 'PAGE 2'
@@ -314,8 +345,8 @@ en:
       its_really_easy: "it's really easy"
       manzanillo:
         title: 'flying to manzanillo'
-        description: 'Just fifteen minutes from the conference venue,
-          the Playa de Oro International Airport connects directly with Los Angeles,
+        description: 'Just twenty five minutes from the conference venue,
+          the <b>Playa de Oro International Airport</b> connects directly with Los Angeles,
           Vancouver, Houston, Phoenix, and Mexico City. Major airlines that offer
           service to the airport include Alaska Airlines, Delta, AeroMexico,
           Interjet, CanJet, US Airways, United Express, and Volaris. Flights with
@@ -323,8 +354,8 @@ en:
           Chicago, and Washington D.C.'
       guadalajara:
         title: 'flying to guadalajara'
-        description: 'Located just over three hours from Manzanillo, the Guadalajara
-          International airport offers direct flights to Chicago, Los Angeles, San
+        description: 'Located just over three hours from Manzanillo, the <b>Guadalajara
+          International Airport</b> offers direct flights to Chicago, Los Angeles, San
           Francisco, Dallas, Atlanta, Houston, Phoenix, Oakland, and Mexico City.
           Major airlines that offer service to Guadalajara include American Airlines,
           AeroMexico, Delta, United, US Airways, and Volaris.'
@@ -339,7 +370,7 @@ en:
         description: "The city of Manzanillo, in the Mexican state of Colima, is known for
           its large and bustling port and beautiful beaches. Known as the “Sailfish Capital of
           the World”, the city is popular for its deep-sea fishing and temperate waters. The De
-          Santiago peninsula, where MagmaConf and Magma Village are located, is a well-known
+          Santiago peninsula, where MagmaConf and MagmaVillage are located, is a well-known
           tourist destination with excellent swimming, snorkeling and scuba diving available.
           <br/><br/> Manzanillo is also home to the twin bays, almost identical in length. Bahia
           de Manzanillo hosts much of the shipping and commercial activities of Manzanillo, while
@@ -348,12 +379,12 @@ en:
           With the advent of MagmaConf, we hope to develop a new reputation - the city of hackers."
       planning:
         title: 'Planning Your Trip'
-        description: "We recommend that conference attendees arrive in Manzanillo on Wednesday,
-          June 17th, and stay through Sunday, June 20th. Housing will be available at Magma
-          Village from the 17th to the 20th and arriving the day before the conference begins
-          ensures that you will have time to settle in and meet your fellow conference attendees.
-          Shuttles will be available on both days to take attendees to and from the airport and
-          Magma Village/nearby hotels. For more information about Magma Village or recommendations
-          for nearby hotels, please contact <a href='mailto:info@magmaconf.com'>info@magmaconf.com.</a>"
-      map_description: 'A beautiful oasis on the Weast Coast of Mexico, Manzanillo is easy accessible
+        description: "We recommend that conference attendees arrive in Manzanillo on Tuesday, March
+        28th, and stay through Saturday, April 1st. Housing will be available at MagmaVillage from
+        the 28th to the 1st and arriving the day before the conference begins ensures that you
+        will have time to settle in and meet your fellow conference attendees. Shuttles will be
+        available on both days to take attendees to and from the airport and MagmaVillage/nearby
+        hotels. For more information about MagmaVillage or recommendations for nearby hotels,
+        please contact <a href='mailto:info@magmaconf.com'>info@magmaconf.com.</a>"
+      map_description: 'A beautiful oasis on the West Coast of Mexico, Manzanillo is easy accessible
         from numerous major hubs across the United States and Canada.'

@@ -1,0 +1,81 @@
+// GRID -------------
+$max-cols: 12;
+
+//Grid Large
+$gl-column: 70px;
+$gl-gutter: 30px;
+
+//grid Medium
+$gm-column: 60px;
+$gm-gutter: 20px;
+
+//Colors -----------
+$bkg: #312926;
+$white: #ffffff;
+$main-bkg: asset-url('bkg.jpg') no-repeat top center fixed;
+$social-bkg: #443A35;
+$social-hover: #b5a898;
+$dark-brownn: #51463e;
+$fonts: #39322b;
+$btn-hover: #e7e4df;
+$bkg-close-popup: #1fb6b4;
+$curious-blue:    #1396EB;
+$light-brown: #ADA193;
+$arrow-enabled: #DDD8D1;
+$arrow-hover: #D7D0C9;
+$arrow-disabled: #C0C0C0;
+$button-color: #D1481D;
+$breadcrumb-color: #F0BCAC;
+$black-text: #000;
+$crown-of-thorns: #A02D2E;
+$table-text: #545454;
+$white: #FFF;
+$font-color: #B1B1B1;
+$header-color: #272727;
+$link-color: #07B4B4;
+$product-title: #221F1F;
+$login-bg: #159D9B;
+$login-main-bg: #EDEDED;
+$disable-tab: #80D2CD;
+$stiletto:        #A02D2E;
+$login-labels: #999999;
+$button-login: #78c2c3;
+$github-bg: #575757;
+$twitter-bg: #00a9e5;
+$facebook-bg: #3f5f9c;
+$border-line: #CCCCCC;
+$row-selected: #FAFAF5;
+$aqua-button: #00a496;
+$checkout-step: #AAAAAA;
+$checkout-labels: #333;
+$tall-poppy:      #BA2B32;
+$bg: #f6f6f6;
+$label-color: #999;
+$main-bg: #CCE5E2;
+$title_text_color: #404042;
+
+
+$alto:            #D2D2D2;
+$alto2:           #D8D8D8;
+$amber:           #FFC200;
+$armadillo:       #514640;
+$barley-white:    #FFF3CC;
+$bittersweet:     #FF6666;
+$black:           #000000;
+$boulder:         #767676;
+$crown-of-thorns: #A02D2E;
+$gallery:         #EBEBEB;
+$kabul:           #5D4D47;
+$koromiko:        #FFBE66;
+$mandy:           #E65253;
+$mine-shaft:      #262626;
+$picton-blue:     #33A3EB;
+$stiletto:        #A02D2E;
+$stratos:         #070243;
+$stratos2:        #040035;
+$tall-poppy:      #BA2B32;
+$white:           #FFFFFF;
+$wild-sand:       #F6F6F6;
+
+//Global variables
+$condensed-bold: 'Open Sans Condensed', sans-serif;

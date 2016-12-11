@@ -12,9 +12,12 @@ class SiteController < ApplicationController
 
   def speakers
     @id = 'speakers'
-    @speakers_response = @magmaconf_service.get_speakers
-    if is_response_ok? @speakers_response
-      @speakers = JSON.parse(@speakers_response[:data])['speakers']
+    speakers_response = @magmaconf_service.get_speakers
+    if is_response_ok? speakers_response
+      @speakers_data = {
+        keynotes: get_keynotes(speakers_response),
+        speakers: get_speakers(speakers_response)
+      }
     else
       @speakers = {}
     end
@@ -28,6 +31,11 @@ class SiteController < ApplicationController
       events: set_events(@magmaconf_service.get_events)
     }
     render "site/#{sanitize_year}/schedule.html.haml"
+  end
+
+  def talks
+    @id = 'talks'
+    render "site/#{sanitize_year}/talks.html.haml"
   end
 
   private
@@ -51,6 +59,18 @@ class SiteController < ApplicationController
 
   def is_response_ok? response
     response[:status] == MagmaconfApiService::HTTP_SUCCESS_CODE
+  end
+
+  def get_keynotes speakers_response
+    JSON.parse(speakers_response[:data]).fetch('speakers', {}).keep_if do |speaker|
+      speaker["is_keynote"]
+    end
+  end
+
+  def get_speakers speakers_response
+    JSON.parse(speakers_response[:data]).fetch('speakers', {}).keep_if do |speaker|
+      !speaker["is_keynote"]
+    end
   end
 
   def set_events events_response

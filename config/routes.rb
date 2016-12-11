@@ -4,6 +4,7 @@ MagmarailsCom::Application.routes.draw do
   post '/newsletter',     to: 'newsletter_subscriptions#create'
   get '/:year/speakers',  to: 'site#speakers'
   get '/:year/schedule',  to: 'site#schedule'
+  get '/:year/talks',  to: 'site#talks'
   get '/:year/*id',       to: 'site#show', format: false
   root to: 'site#show', id: 'home'
   get '/*id',             to: 'site#show'

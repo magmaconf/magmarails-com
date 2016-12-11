@@ -1,13 +1,14 @@
-#footer.bgc-mndy
+#footer.bgc-stratos
   .container
     .pure-g-r
       .pure-u-1-1
         #copy-right{ class: I18n.locale.to_s }
-          %a{href: 'http://www.magmalabs.io/'}
-            %img#logo-magmalabs{ src: image_path('2015/magmalabs-logo.svg') }
           .title
             %p= t('home.footer.organised_by')
-            %p= t('home.footer.copyright')
+            %a{href: 'http://www.magmalabs.io/'}
+              %img#logo-magmalabs{ src: image_path('2017/logo-magmalabs.svg') }
+            |
+            %p= raw(t('home.footer.copyright'))
     .pure-g-r
       .anti
         .pure-u-1-4
@@ -19,5 +20,3 @@
               %a.open-popup{ href: '#' }= t('home.policy.here')
               %a.policy-page{ href: '/policies' }= t('home.policy.here')
 #popup
-#policy.container
-  = render 'pages/2015/partials/policies'

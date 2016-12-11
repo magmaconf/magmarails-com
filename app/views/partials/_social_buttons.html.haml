@@ -1,11 +1,11 @@
 .over
-  %span.content-text
-    stay tuned:
+  %span.content-text.sponsored-by
+    Proudly Sponsored by
+  .mb25.mt20
+    %a{href: 'http://www.magmalabs.io/'}
+      %img{ src: image_path('2017/logo-magmalabs.svg'), class: 'magmaconf-logo' }
+
 .social
-  %a.facebook{href: 'http://www.facebook.com/magmaconf', target: '_blank'}
-    %i.icon-facebook
-  %a.twitter{href: 'http://twitter.com/magmaconf', target: '_blank'}
-    %i.icon-twitter
-  %a.google{href: 'https://plus.google.com/+Magmaconf/posts', target: '_blank'}
-    %i.icon-google
+  = link_to '', 'https://www.facebook.com/MagmaConf', target: "_blank", class: 'facebook'
+  = link_to '', 'https://twitter.com/magmaconference', target: "_blank",  class: 'twitter'
 
