@@ -26,7 +26,7 @@ class @Gallery
   getNestedSelector: (selector) ->
     return "#{@containerSelector} #{selector}"
 
-  setPhotos: (per_page = 16) ->
+  setPhotos: (per_page = 27) ->
     $.ajax(
       url: '/gallery_photos/'
       data:
@@ -42,6 +42,7 @@ class @Gallery
 
 
     @page += 1
+
   setGalleryHeight: ->
     setTimeout (->
       $('#photo-gallery').css 'height', ($('.magma-info').height() - $(".nav-menu").height()) + 16
