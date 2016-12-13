@@ -36,7 +36,7 @@ class FlickrAdapter
   end
 
   def photos_left?(page, per_page)
-    (page.to_i * per_page.to_i) < total_photos
+    (page.to_i * per_page.to_i) <= total_photos
   end
 
   def total_photos
