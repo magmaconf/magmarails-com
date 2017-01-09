@@ -177,7 +177,7 @@ en:
     limit_ticket: 'limited to <span>50 tickets</span>'
     footer:
       organised_by: Proudly sponsored by 
-      copyright: "&copy; 2016 This site is protected by Copyright under U.S. and International
+      copyright: "&copy; 2017 This site is protected by Copyright under U.S. and International
         law. All rights reserved."
     policy:
       magma: 'MagmaConf 2017'
@@ -224,7 +224,7 @@ en:
       email: 'E-mail'
       submit: 'Subscribe'
   daily:
-    copy-right: 'MagmaLabs &copy; 2016. This site is protected by copyright under US and international law. All rights reserved'
+    copy-right: 'MagmaLabs &copy; 2017. This site is protected by copyright under US and international law. All rights reserved'
     five: 'NO. 5'
     page: 'PAGE 1'
     page_two: 'PAGE 2'
