@@ -41,8 +41,8 @@
 }
 
 .sponsor-logo__big {
-  height: 252px;
-  width: 252px;
+  height: 227px;
+  width: 227px;
 
   @media only screen and (min-width: 1024px) and (max-width: 1151px) {
     height: 225px;
@@ -61,22 +61,22 @@
 }
 
 .sponsor-logo__medium {
-  height: 201px;
-  width: 200px;
+  height: 182px;
+  width: 182px;
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    height: 150px;
-    width: 150px;
+    height: 110px;
+    width: 110px;
   }
 
   @media only screen and (min-width: 468px) and (max-width: 767px) {
-    height: 150px;
-    width: 150px;
+    height: 182px;
+    width: 182px;
   }
 
   @media only screen and (max-width: 468px) { 
-    height: 202px;
-    width: 202px;
+    height: 170px;
+    width: 170px;
   }
 }
 
