@@ -32,6 +32,31 @@
       &:last-child{ border: none; }
     }
 
+    .link-buy-tickets {
+      background-color: $koromiko;
+      color: white;
+      font-size: 16px;
+      letter-spacing: -0.5px;
+      padding: 2px 0;
+      position: relative;
+      text-align: center;
+      top: 50%;
+      width: 80px;
+      
+      &:hover {
+        background-color: $bittersweet;
+        color: white;
+      }
+    }
+
+    .css-2x1 {
+      color: white;
+      display: inline-block;
+      font-weight: bold;
+      &:hover {
+        color: white;
+      }
+    }
 
     a, span {
       &:hover, &.active { color: $bittersweet; }
@@ -50,7 +75,7 @@
 
   ul {
     margin: 0 auto;
-    padding: 20px 0 20px;
+    padding: 10px 0 20px;
     text-align: left;
 
     li {
