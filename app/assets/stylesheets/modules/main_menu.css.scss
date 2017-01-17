@@ -34,8 +34,9 @@
 
     .link-buy-tickets {
       background-color: $koromiko;
-      color: white;
+      color: $stratos;
       font-size: 16px;
+      font-weight: normal;
       letter-spacing: -0.5px;
       padding: 2px 0;
       position: relative;
@@ -46,16 +47,16 @@
       &:hover {
         background-color: $bittersweet;
         color: white;
+        .css-2x1 {
+          color: white;
+        }
       }
     }
 
     .css-2x1 {
-      color: white;
+      color: $stratos;
       display: inline-block;
       font-weight: bold;
-      &:hover {
-        color: white;
-      }
     }
 
     a, span {
