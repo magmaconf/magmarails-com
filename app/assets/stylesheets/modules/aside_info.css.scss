@@ -20,6 +20,11 @@
   }
 }
 
+.side-text-mtop {
+  margin-bottom: 25px;
+  margin-top: 60px;
+}
+
 .side-text-have{
   font-size: 58px;
   line-height: 58px;
@@ -62,8 +67,20 @@
 }
 
 .side-text-get-involved {
-  @include span-cfp($koromiko, 54px, 'Oswald', bold, uppercase);
+  @include span-cfp($bittersweet, 40px, 'Oswald', bold, uppercase);
   letter-spacing: 0.1px;
+  margin-top: 3px;
+  width: 100%;
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 28px;
+  }
+}
+
+.side-text-get-a-friend {
+  @include span-cfp($picton-blue, 56px, 'Oswald', bold, uppercase);
+  letter-spacing: 0.1px;
+  margin-top: 3px;
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     font-size: 42px;
@@ -86,7 +103,7 @@
 }
 
 .side-text-march {
-  @include span-cfp($koromiko, 43.7px, 'Oswald', bold, uppercase);
+  @include span-cfp($picton-blue, 43.7px, 'Oswald', bold, uppercase);
   letter-spacing: -0.8px;
   &:before {
     background: asset_url('2017/star_grey_1.png');
@@ -530,4 +547,15 @@
 .reylero-sponsor {
   height: 275px;
   width: 206px;
+}
+
+.home-arrow-down {
+  margin-top: 30px;
+  height: 37px;
+  width: 66px;
+}
+
+.tickets-image {
+  height: 226px !important;
+  width: 210px;
 }
