@@ -250,6 +250,10 @@
     .nav-menu {
       .link { border: none; }
       .link-text { color: $stratos; }
+      .link-buy-tickets {
+        font-size: 24px;
+        width: 140px;
+      }
     }
 
     ul {
