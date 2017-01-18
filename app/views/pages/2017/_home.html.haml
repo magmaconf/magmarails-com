@@ -4,7 +4,7 @@
     .dis-b--m.bgc-glry.p10
       %p.fz-22.c-mndy.fw-r.teko MAGMACONF EXPERIENCE
       %p.fz-14.c-bldr.fw-r.opens= t('home.magmaconf_come_and_live')
-      %p.fz-14.c-bldr.fw-r.opens= t('home.magma_is_a')
+      %p.fz-14.c-bldr.fw-r.opens= raw t('home.magma_is_a')
     #photo-gallery
       #gallery-inner
         #home-info.gallery-box.large
@@ -12,7 +12,7 @@
             .content-information
               %p.magmaconf-title MAGMACONF EXPERIENCE
               %p.magmaconf-item-description= t('home.magmaconf_come_and_live')
-              %p.magmaconf-item-description= t('home.magma_is_a')
+              %p.magmaconf-item-description= raw t('home.magma_is_a')
       .spinner.js-spinner-is-expanded
         %a#load-more-items{ href: '#' }
 
