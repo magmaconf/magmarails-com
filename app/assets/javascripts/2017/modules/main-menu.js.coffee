@@ -45,3 +45,6 @@ $(document).ready ->
     $('body').css('position', 'fixed')
     $('#btn-menu').addClass('active')
     $("#main-menu").css('overflow-y', 'auto')
+
+  $(".ticket-background").click ->
+    window.open("https://www.eventbrite.com/e/magmaconf-2017-evolution-has-come-tickets-31259518060?aff=magmaconfwebsite")
