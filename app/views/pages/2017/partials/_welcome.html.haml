@@ -2,15 +2,14 @@
 = link_to root_url, class: 'magma-logo' do
   = image_tag('2017/magmaconf2017.png')
 = render_reylero_img @id
-=image_tag('2017/futuro_auto_extendido.svg', class: 'hidden reylero-macfly-extended')
 %div{ class: "side-text #{render_class_name @id}"}
   %span.side-text-evolution Evolution 
   %span.side-text-has-come Has Come!
-  %span.side-text-get-involved Get Involved
-.btn-register-circular
-  .dotted-circle
-    %span.tickets Tickets on Sale 
-    %span.soon Soon
+  %span.side-text-get-a-friend Get a Friend 
+  %span.side-text-get-involved And Get Involved
+  =image_tag('2017/arrow-down.svg', class: 'home-arrow-down')
+= link_to 'https://www.eventbrite.com/e/magmaconf-2017-evolution-has-come-tickets-31259518060?aff=magmaconfwebsite', target: '_blank' ,class: 'tickets-img-link' do
+  .ticket-background
 .side-text
   %span.side-text-march March
   %span.side-text-date 29, 30 and 31

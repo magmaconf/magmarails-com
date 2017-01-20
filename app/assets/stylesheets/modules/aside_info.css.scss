@@ -20,6 +20,15 @@
   }
 }
 
+.hidden {
+  display: none;
+}
+
+.side-text-mtop {
+  margin-bottom: 25px;
+  margin-top: 60px;
+}
+
 .side-text-have{
   font-size: 58px;
   line-height: 58px;
@@ -62,8 +71,20 @@
 }
 
 .side-text-get-involved {
-  @include span-cfp($koromiko, 54px, 'Oswald', bold, uppercase);
+  @include span-cfp($bittersweet, 40px, 'Oswald', bold, uppercase);
   letter-spacing: 0.1px;
+  margin-top: 3px;
+  width: 100%;
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 28px;
+  }
+}
+
+.side-text-get-a-friend {
+  @include span-cfp($picton-blue, 56px, 'Oswald', bold, uppercase);
+  letter-spacing: 0.1px;
+  margin-top: 3px;
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     font-size: 42px;
@@ -86,7 +107,7 @@
 }
 
 .side-text-march {
-  @include span-cfp($koromiko, 43.7px, 'Oswald', bold, uppercase);
+  @include span-cfp($picton-blue, 43.7px, 'Oswald', bold, uppercase);
   letter-spacing: -0.8px;
   &:before {
     background: asset_url('2017/star_grey_1.png');
@@ -530,4 +551,58 @@
 .reylero-sponsor {
   height: 275px;
   width: 206px;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+  40% {-webkit-transform: translateY(-30px);}
+  60% {-webkit-transform: translateY(-10px);}
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+  40% {-moz-transform: translateY(-30px);}
+  60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+  40% {-o-transform: translateY(-30px);}
+  60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-10px);}
+}
+
+.home-arrow-down {
+  animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  height: 37px;
+  margin-top: 60px;
+  width: 66px;
+}
+
+.ticket-background {
+  background: url('2017/tickets-img.png');
+  background-size: 210px;
+  cursor: pointer;
+  margin: 0 auto;
+  height: 226px;
+  width: 210px;
+  &:hover {
+    background: url('2017/tickets-img-hover.png');
+    background-size: 210px;
+    margin: 0 auto;
+  }
+}
+
+.tickets-img-link {
+  .tickets-image {
+    width: 210px;
+    height: 226px;
+  }
 }

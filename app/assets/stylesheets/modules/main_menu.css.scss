@@ -32,6 +32,36 @@
       &:last-child{ border: none; }
     }
 
+    .link-buy-tickets {
+      background-color: $koromiko;
+      color: $stratos;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: -0.5px;
+      padding: 2px 0;
+      position: relative;
+      text-align: center;
+      top: 50%;
+      width: 80px;
+      
+      &:hover {
+        background-color: $bittersweet;
+        color: white;
+        .css-2x1 {
+          color: white;
+        }
+      }
+    }
+
+    .css-2x1 {
+      color: $stratos;
+      display: inline-block;
+      font-weight: bold;
+
+      @media screen and (max-width: 767px) {
+        font-size: 21px;
+      }
+    }
 
     a, span {
       &:hover, &.active { color: $bittersweet; }
@@ -50,7 +80,7 @@
 
   ul {
     margin: 0 auto;
-    padding: 20px 0 20px;
+    padding: 10px 0 20px;
     text-align: left;
 
     li {
@@ -224,6 +254,10 @@
     .nav-menu {
       .link { border: none; }
       .link-text { color: $stratos; }
+      .link-buy-tickets {
+        font-size: 24px;
+        width: 140px;
+      }
     }
 
     ul {

@@ -62,4 +62,12 @@
     color: $mandy;
     text-decoration: underline; 
   }
+
+  &.blog-link{
+    color: $mandy;
+    text-decoration: underline; 
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
