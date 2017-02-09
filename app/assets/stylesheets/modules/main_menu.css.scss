@@ -37,12 +37,43 @@
       color: $stratos;
       font-size: 16px;
       font-weight: normal;
+      height: 42px;
       letter-spacing: -0.5px;
       padding: 2px 0;
       position: relative;
       text-align: center;
-      top: 50%;
-      width: 80px;
+      top: -10px; 
+      width: 160px;
+
+      @media only screen and (max-width: 767px) {
+        top: 0;
+      }
+
+      @media only screen and (min-width: 768px) and (max-width: 840px) {
+        height: 50px;
+        top: 0;
+        width: 100px;
+      }
+
+      > label {
+          position: relative;
+          top: 12px;
+
+          @media only screen and (max-width: 767px) {
+              top: 6px;
+          }
+
+          @media only screen and (min-width: 768px) and (max-width: 840px) {
+              top: 7px;
+          }
+
+          label {
+              font-size: 16px;
+              @media only screen and (max-width: 767px) {
+                font-size: 20px;
+              }
+          }
+      }
       
       &:hover {
         background-color: $bittersweet;
@@ -80,8 +111,12 @@
 
   ul {
     margin: 0 auto;
-    padding: 10px 0 20px;
+    padding: 20px 0 20px;
     text-align: left;
+
+    @media only screen and (min-width: 768px) and (max-width: 840px) {
+        padding: 10px 0 20px;
+    }
 
     li {
       border-right: 1px solid #ada193;
@@ -95,7 +130,7 @@
         color: #ada193;
         display: block;
         font-family: 'Lato';
-        font-size: 16px; 
+        font-size: 14px; 
         font-weight: 300;
         letter-spacing: -0.5px;
         margin-top: -2px;
@@ -256,7 +291,7 @@
       .link-text { color: $stratos; }
       .link-buy-tickets {
         font-size: 24px;
-        width: 140px;
+        width: 160px;
       }
     }
 

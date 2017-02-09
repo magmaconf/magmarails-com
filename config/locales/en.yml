@@ -139,7 +139,7 @@ en:
     sponsors: Sponsors
     workshops: Workshops
     contact-us: CONTACT US
-    buy-tickets: 'BUY <span class="css-2x1">2X1</span> TICKETS'
+    buy-tickets: '<label>SAVE <span class="css-2x1"><label>30%</label></span> BUY HERE</label>'
     store: STORE
   title: 'MagmaConf 2017'
   home:
