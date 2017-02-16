@@ -101,6 +101,14 @@
   }
 }
 
+.sponsor-logo-density-labs {
+  background-image: url('2017/sponsors/density_labs.png');
+  @include retina { background-image: url('2017/sponsors/density_labs_red'); }
+  &:hover {
+    background-image: url('2017/sponsors/density_labs_red.png');
+  }
+}
+
 .sponsor-logo-your-logo {
   background-image: url('2017/sponsors/your-logo@2x.png');
   @include retina { background-image: url('2017/sponsors/your-logo@2x.png'); }
