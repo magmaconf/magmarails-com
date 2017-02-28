@@ -114,7 +114,7 @@
 
 .sponsor-logo-cookpad {
   background-image: url('2017/sponsors/cookpad.png');
-  @include retina { background-image: url('2017/sponsors/cookpad-hover.png'); }
+  @include retina { background-image: url('2017/sponsors/cookpad.png'); }
   &:hover {
     background-image: url('2017/sponsors/cookpad-hover.png');
   }
