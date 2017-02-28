@@ -6,6 +6,9 @@
   float: left;
   width: 33.3%;
   @media screen and (max-width: 767px) { width: 100%; }
+  &.right {
+    float: right;
+  }
 }
 
 .sponsor {
@@ -106,6 +109,14 @@
   @include retina { background-image: url('2017/sponsors/density_labs_red'); }
   &:hover {
     background-image: url('2017/sponsors/density_labs_red.png');
+  }
+}
+
+.sponsor-logo-cookpad {
+  background-image: url('2017/sponsors/cookpad.png');
+  @include retina { background-image: url('2017/sponsors/cookpad-hover.png'); }
+  &:hover {
+    background-image: url('2017/sponsors/cookpad-hover.png');
   }
 }
 
