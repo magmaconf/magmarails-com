@@ -106,7 +106,7 @@
 
 .sponsor-logo-density-labs {
   background-image: url('2017/sponsors/density_labs.png');
-  @include retina { background-image: url('2017/sponsors/density_labs_red'); }
+  @include retina { background-image: url('2017/sponsors/density_labs.png'); }
   &:hover {
     background-image: url('2017/sponsors/density_labs_red.png');
   }
