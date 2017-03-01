@@ -6,6 +6,9 @@
   float: left;
   width: 33.3%;
   @media screen and (max-width: 767px) { width: 100%; }
+  &.right {
+    float: right;
+  }
 }
 
 .sponsor {
@@ -103,9 +106,17 @@
 
 .sponsor-logo-density-labs {
   background-image: url('2017/sponsors/density_labs.png');
-  @include retina { background-image: url('2017/sponsors/density_labs_red'); }
+  @include retina { background-image: url('2017/sponsors/density_labs.png'); }
   &:hover {
     background-image: url('2017/sponsors/density_labs_red.png');
+  }
+}
+
+.sponsor-logo-cookpad {
+  background-image: url('2017/sponsors/cookpad.png');
+  @include retina { background-image: url('2017/sponsors/cookpad.png'); }
+  &:hover {
+    background-image: url('2017/sponsors/cookpad-hover.png');
   }
 }
 
