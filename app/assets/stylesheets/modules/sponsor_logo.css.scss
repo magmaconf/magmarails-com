@@ -96,11 +96,10 @@
   }
 }
 
-.sponsor-logo-stickermule {
-  background-image: url('2017/sponsors/sponsor-sticker-mule-blue@2x.png');
-  @include retina { background-image: url('2017/sponsors/sponsor-sticker-mule-blue@2x.png'); }
+.sponsor-logo-ccolima {
+  background-image: url('2017/sponsors/cc_blue.png');
   &:hover {
-    background-image: url('2017/sponsors/sponsor-sticker-mule-red@2x.png');
+    background-image: url('2017/sponsors/cc_red.png');
   }
 }
 
