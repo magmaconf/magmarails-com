@@ -103,6 +103,13 @@
   }
 }
 
+.sponsor-logo-acoco {
+  background-image: url('2017/sponsors/coco_blue.png');
+  &:hover {
+    background-image: url('2017/sponsors/coco_red.png');
+  }
+}
+
 .sponsor-logo-density-labs {
   background-image: url('2017/sponsors/density_labs.png');
   @include retina { background-image: url('2017/sponsors/density_labs.png'); }
