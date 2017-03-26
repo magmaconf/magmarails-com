@@ -40,4 +40,12 @@ module SpeakersHelper
   def class_name name
     "short" if name.length>20
   end
+
+  def speaker_mask_url(speaker)
+    if speaker['mask_image']['url']
+      speaker['mask_image']['url']
+    else
+      speaker['image_field']['url']
+    end
+  end
 end

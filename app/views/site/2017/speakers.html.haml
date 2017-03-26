@@ -17,7 +17,7 @@
             .flipper-lg
               %div{ class: "normal-box #{render_speaker_class(speaker['bio'])}"}
                 %img.masked.speaker-img{ src: speaker['image_field']['url']}
-                %img.unmasked.speaker-img{ src: speaker['image_field']['url']}
+                %img.unmasked.speaker-img{ src: speaker_mask_url(speaker)}
                 .luchador-name-lg
                   =speaker['name']
                 -#.luchador-nickname-lg
@@ -46,7 +46,7 @@
             .flipper-md
               %div{ class: "normal-box #{render_speaker_class(speaker['bio'])}"}
                 %img.masked.speaker-img{ src: speaker['image_field']['url'] }
-                %img.unmasked.speaker-img{ src: speaker['image_field']['url']}
+                %img.unmasked.speaker-img{ src: speaker_mask_url(speaker)}
                 .luchador-name-md
                   =speaker['name']
                 -#.luchador-nickname-md
