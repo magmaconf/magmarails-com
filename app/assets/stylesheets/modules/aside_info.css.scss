@@ -73,7 +73,7 @@
 }
 
 .side-text-get-involved {
-  @include span-cfp($bittersweet, 40px, 'Oswald', bold, uppercase);
+  @include span-cfp($bittersweet, 57px, 'Oswald', bold, uppercase);
   letter-spacing: 0.1px;
   margin-top: 3px;
   width: 100%;
@@ -84,7 +84,7 @@
 }
 
 .side-text-get-a-friend {
-  @include span-cfp($picton-blue, 48px, 'Oswald', bold, uppercase);
+  @include span-cfp($picton-blue, 59px, 'Oswald', bold, uppercase);
   letter-spacing: 0.1px;
   margin-top: 3px;
 
