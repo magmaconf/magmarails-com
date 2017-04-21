@@ -1,6 +1,6 @@
 class @Gallery
   #72157645528624066 is default flicker photoSet
-  constructor: (container, photoSet = '72157676573305506') ->
+  constructor: (container, photoSet = '72157679603555774') ->
     @container = $(container)
     @containerSelector = container
     @photoSet = photoSet
